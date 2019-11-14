@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="VulkanLab"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\usr\lib64\cmake\glm\;CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/mel/Projects/VulkanLab"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/mel/Projects/VulkanLab"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VulkanLab">
+				<Option output="/home/mel/Projects/VulkanLab/bin/VulkanLab" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add directory="/home/mel/Projects/VulkanLab/glfw"/>
+					<Add directory="/home/mel/Projects/VulkanLab/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 VulkanLab"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VulkanLab/fast">
+				<Option output="/home/mel/Projects/VulkanLab/bin/VulkanLab" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add directory="/home/mel/Projects/VulkanLab/glfw"/>
+					<Add directory="/home/mel/Projects/VulkanLab/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 VulkanLab/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/mel/Projects/VulkanLab"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STB_IMAGE">
+				<Option output="/home/mel/Projects/VulkanLab/bin/libSTB_IMAGE.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add directory="/home/mel/Projects/VulkanLab/glfw"/>
+					<Add directory="/home/mel/Projects/VulkanLab/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 STB_IMAGE"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STB_IMAGE/fast">
+				<Option output="/home/mel/Projects/VulkanLab/bin/libSTB_IMAGE.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add directory="/home/mel/Projects/VulkanLab/glfw"/>
+					<Add directory="/home/mel/Projects/VulkanLab/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 STB_IMAGE/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GLAD">
+				<Option output="/home/mel/Projects/VulkanLab/bin/libGLAD.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add directory="/home/mel/Projects/VulkanLab/glfw"/>
+					<Add directory="/home/mel/Projects/VulkanLab/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 GLAD"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GLAD/fast">
+				<Option output="/home/mel/Projects/VulkanLab/bin/libGLAD.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add directory="/home/mel/Projects/VulkanLab/glfw"/>
+					<Add directory="/home/mel/Projects/VulkanLab/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 GLAD/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Window.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Window.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/main.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/vendor/glad.c">
+			<Option target="GLAD"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/vendor/stb_image.cpp">
+			<Option target="STB_IMAGE"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/glm/glmConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\glm\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/glm/glmConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\glm\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/glm/glmTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\glm\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/glfw3/glfw3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/glfw3/glfw3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

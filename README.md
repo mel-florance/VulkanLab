@@ -1,11 +1,7 @@
-# VulkanLab
+# Vulkan Lab
 
-[![GitHub license](https://img.shields.io/github/license/Vyraax/VulkanLab.svg)](https://github.com/Vyraax/VulkanLab/blob/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/release/Vyraax/VulkanLab.svg)](https://gitHub.com/Vyraax/VulkanLab/releases/)
-[![GitHub commits](https://img.shields.io/github/commits-since/Vyraax/VulkanLab/0.1.0.svg)](https://gitHub.com/Vyraax/VulkanLab/commit/)
-[![Github all releases](https://img.shields.io/github/downloads/Vyraax/VulkanLab/total.svg)](https://gitHub.com/Vyraax/VulkanLab/releases/)
-[![GitHub contributors](https://img.shields.io/github/contributors/Vyraax/VulkanLab.svg)](https://GgtHub.com/VulkanLab/graphs/contributors/)
-[![GitHub issues](https://img.shields.io/github/issues/Vyraax/VulkanLab.svg)](https://gitHub.com/Vyraax/VulkanLab/issues/)
+[![GitHub license](https://img.shields.io/github/license/Vyraax/VulkanLab.svg)](https://github.com/Vyraax/VulkanLab/blob/master/LICENSE)&nbsp;
+[![GitHub tag](https://img.shields.io/github/tag/Vyraax/VulkanLab.svg)](https://gitHub.com/Vyraax/VulkanLab/tags/)&nbsp;
 
 VulkanLab is just a test project to discover Vulkan.
 
@@ -13,29 +9,41 @@ VulkanLab is just a test project to discover Vulkan.
 
 Use the project generator [premake](https://premake.github.io/) to generate the project files.
 
-### On Linux
+###### Linux
 
 ```bash
 ./GenerateProjectFiles.sh
 ```
 
-### On Windows
+###### Windows
 
 ```bash
 ./GenerateProjectFiles.bat
 ```
 
+###### Mac
+
+```bash
+Coming soon...
+```
+
 ## Compilation
 
-### On Linux
+###### Linux
 
 ```bash
 make
 ```
 
-### On Windows
+###### Windows
 ```bash
 nmake
+```
+
+###### Mac
+
+```bash
+Coming soon...
 ```
 
 ## Contributing

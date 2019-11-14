@@ -35,3 +35,9 @@ Scratchpad.txt
 Unix Worksheet.worksheet
 project.bbprojectdata
 Premake4.tmproj
+
+Engine/vendor/
+bin/
+bin-int/
+CMakeFiles/
+cmake-build-debug/
