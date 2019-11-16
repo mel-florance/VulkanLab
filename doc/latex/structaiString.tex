@@ -1,0 +1,44 @@
+\hypertarget{structaiString}{}\doxysection{ai\+String Struct Reference}
+\label{structaiString}\index{aiString@{aiString}}
+
+
+{\ttfamily \#include $<$types.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{structaiString_a7d77c2031ff0340746aa046f7fbcf313}{length}}
+\item 
+char \mbox{\hyperlink{structaiString_aa90b1da7d347a3dcca0a95061e6ea41d}{data}} \mbox{[}\mbox{\hyperlink{types_8h_ae6648cd71a8bd49d58ae8ed33ba910d1}{M\+A\+X\+L\+EN}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an U\+T\+F-\/8 string, zero byte terminated.
+
+The character set of an \mbox{\hyperlink{structaiString}{ai\+String}} is explicitly defined to be U\+T\+F-\/8. This Unicode transformation was chosen in the belief that most strings in 3d files are limited to A\+S\+C\+II, thus the character set needed to be strictly A\+S\+C\+II compatible.
+
+Most text file loaders provide proper Unicode input file handling, special unicode characters are correctly transcoded to U\+T\+F8 and are kept throughout the libraries\textquotesingle{} import pipeline.
+
+For most applications, it will be absolutely sufficient to interpret the \mbox{\hyperlink{structaiString}{ai\+String}} as A\+S\+C\+II data and work with it as one would work with a plain char$\ast$. Windows users in need of proper support for i.\+e asian characters can use the \#\+Multi\+Byte\+To\+Wide\+Char(), \#\+Wide\+Char\+To\+Multi\+Byte() Win\+A\+PI functionality to convert the U\+T\+F-\/8 strings to their working character set (i.\+e. M\+B\+CS, Wide\+Char).
+
+We use this representation instead of std\+::string to be C-\/compatible. The (binary) length of such a string is limited to M\+A\+X\+L\+EN characters (including the the terminating zero). 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structaiString_aa90b1da7d347a3dcca0a95061e6ea41d}\label{structaiString_aa90b1da7d347a3dcca0a95061e6ea41d}} 
+\index{aiString@{aiString}!data@{data}}
+\index{data@{data}!aiString@{aiString}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily char ai\+String\+::data\mbox{[}\mbox{\hyperlink{types_8h_ae6648cd71a8bd49d58ae8ed33ba910d1}{M\+A\+X\+L\+EN}}\mbox{]}}
+
+String buffer. Size limit is M\+A\+X\+L\+EN \mbox{\Hypertarget{structaiString_a7d77c2031ff0340746aa046f7fbcf313}\label{structaiString_a7d77c2031ff0340746aa046f7fbcf313}} 
+\index{aiString@{aiString}!length@{length}}
+\index{length@{length}!aiString@{aiString}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily size\+\_\+t ai\+String\+::length}
+
+Binary length of the string excluding the terminal 0. This is N\+OT the logical length of strings containing U\+T\+F-\/8 multibyte sequences! It\textquotesingle{}s the number of bytes from the beginning of the string to its end. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/assimp/\mbox{\hyperlink{types_8h}{types.\+h}}\end{DoxyCompactItemize}

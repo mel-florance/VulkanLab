@@ -1,0 +1,56 @@
+\hypertarget{group__gtc__color__space}{}\doxysection{G\+L\+M\+\_\+\+G\+T\+C\+\_\+color\+\_\+space}
+\label{group__gtc__color__space}\index{GLM\_GTC\_color\_space@{GLM\_GTC\_color\_space}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ \mbox{\hyperlink{group__gtc__color__space_ga42239e7b3da900f7ef37cec7e2476579}{glm\+::convert\+Linear\+To\+S\+R\+GB}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&Color\+Linear)
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ \mbox{\hyperlink{group__gtc__color__space_gaace0a21167d13d26116c283009af57f6}{glm\+::convert\+Linear\+To\+S\+R\+GB}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&Color\+Linear, T Gamma)
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ \mbox{\hyperlink{group__gtc__color__space_ga16c798b7a226b2c3079dedc55083d187}{glm\+::convert\+S\+R\+G\+B\+To\+Linear}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&Color\+S\+R\+GB)
+\item 
+\mbox{\Hypertarget{group__gtc__color__space_gad1b91f27a9726c9cb403f9fee6e2e200}\label{group__gtc__color__space_gad1b91f27a9726c9cb403f9fee6e2e200}} 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ \mbox{\hyperlink{group__gtc__color__space_gad1b91f27a9726c9cb403f9fee6e2e200}{glm\+::convert\+S\+R\+G\+B\+To\+Linear}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&Color\+S\+R\+GB, T Gamma)
+\begin{DoxyCompactList}\small\item\em Convert a s\+R\+GB color to linear color using a custom gamma correction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Include $<$\mbox{\hyperlink{gtc_2color__space_8hpp}{glm/gtc/color\+\_\+space.\+hpp}}$>$ to use the features of this extension.
+
+Allow to perform bit operations on integer values 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__gtc__color__space_ga42239e7b3da900f7ef37cec7e2476579}\label{group__gtc__color__space_ga42239e7b3da900f7ef37cec7e2476579}} 
+\index{GLM\_GTC\_color\_space@{GLM\_GTC\_color\_space}!convertLinearToSRGB@{convertLinearToSRGB}}
+\index{convertLinearToSRGB@{convertLinearToSRGB}!GLM\_GTC\_color\_space@{GLM\_GTC\_color\_space}}
+\doxysubsubsection{\texorpdfstring{convertLinearToSRGB()}{convertLinearToSRGB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$L, T, Q$>$ glm\+::convert\+Linear\+To\+S\+R\+GB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{Color\+Linear }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{gtc_2color__space_8hpp}{include/glm/gtc/color\+\_\+space.\+hpp}}$>$}
+
+Convert a linear color to s\+R\+GB color using a standard gamma correction. I\+EC 61966-\/2-\/1\+:1999 / Rec. 709 specification \href{https://www.w3.org/Graphics/Color/srgb}{\texttt{ https\+://www.\+w3.\+org/\+Graphics/\+Color/srgb}} \mbox{\Hypertarget{group__gtc__color__space_gaace0a21167d13d26116c283009af57f6}\label{group__gtc__color__space_gaace0a21167d13d26116c283009af57f6}} 
+\index{GLM\_GTC\_color\_space@{GLM\_GTC\_color\_space}!convertLinearToSRGB@{convertLinearToSRGB}}
+\index{convertLinearToSRGB@{convertLinearToSRGB}!GLM\_GTC\_color\_space@{GLM\_GTC\_color\_space}}
+\doxysubsubsection{\texorpdfstring{convertLinearToSRGB()}{convertLinearToSRGB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$L, T, Q$>$ glm\+::convert\+Linear\+To\+S\+R\+GB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{Color\+Linear,  }\item[{T}]{Gamma }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{gtc_2color__space_8hpp}{include/glm/gtc/color\+\_\+space.\+hpp}}$>$}
+
+Convert a linear color to s\+R\+GB color using a custom gamma correction. I\+EC 61966-\/2-\/1\+:1999 / Rec. 709 specification \href{https://www.w3.org/Graphics/Color/srgb}{\texttt{ https\+://www.\+w3.\+org/\+Graphics/\+Color/srgb}} \mbox{\Hypertarget{group__gtc__color__space_ga16c798b7a226b2c3079dedc55083d187}\label{group__gtc__color__space_ga16c798b7a226b2c3079dedc55083d187}} 
+\index{GLM\_GTC\_color\_space@{GLM\_GTC\_color\_space}!convertSRGBToLinear@{convertSRGBToLinear}}
+\index{convertSRGBToLinear@{convertSRGBToLinear}!GLM\_GTC\_color\_space@{GLM\_GTC\_color\_space}}
+\doxysubsubsection{\texorpdfstring{convertSRGBToLinear()}{convertSRGBToLinear()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$L, T, Q$>$ glm\+::convert\+S\+R\+G\+B\+To\+Linear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{Color\+S\+R\+GB }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{gtc_2color__space_8hpp}{include/glm/gtc/color\+\_\+space.\+hpp}}$>$}
+
+Convert a s\+R\+GB color to linear color using a standard gamma correction. I\+EC 61966-\/2-\/1\+:1999 / Rec. 709 specification \href{https://www.w3.org/Graphics/Color/srgb}{\texttt{ https\+://www.\+w3.\+org/\+Graphics/\+Color/srgb}} 

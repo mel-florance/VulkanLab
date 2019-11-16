@@ -1,0 +1,78 @@
+\hypertarget{group__gtx__rotate__normalized__axis}{}\doxysection{G\+L\+M\+\_\+\+G\+T\+X\+\_\+rotate\+\_\+normalized\+\_\+axis}
+\label{group__gtx__rotate__normalized__axis}\index{GLM\_GTX\_rotate\_normalized\_axis@{GLM\_GTX\_rotate\_normalized\_axis}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 4, 4, T, Q $>$ \mbox{\hyperlink{group__gtx__rotate__normalized__axis_ga50efd7ebca0f7a603bb3cc11e34c708d}{glm\+::rotate\+Normalized\+Axis}} (\mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 4, 4, T, Q $>$ const \&m, T const \&\mbox{\hyperlink{group__ext__quaternion__trigonometric_ga8aa248b31d5ade470c87304df5eb7bd8}{angle}}, \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ 3, T, Q $>$ const \&\mbox{\hyperlink{group__ext__quaternion__trigonometric_ga764254f10248b505e936e5309a88c23d}{axis}})
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ \mbox{\hyperlink{group__gtx__rotate__normalized__axis_ga08f9c5411437d528019a25bfc01473d1}{glm\+::rotate\+Normalized\+Axis}} (\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&q, T const \&\mbox{\hyperlink{group__ext__quaternion__trigonometric_ga8aa248b31d5ade470c87304df5eb7bd8}{angle}}, \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ 3, T, Q $>$ const \&\mbox{\hyperlink{group__ext__quaternion__trigonometric_ga764254f10248b505e936e5309a88c23d}{axis}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Include $<$\mbox{\hyperlink{rotate__normalized__axis_8hpp}{glm/gtx/rotate\+\_\+normalized\+\_\+axis.\+hpp}}$>$ to use the features of this extension.
+
+Quaternions and matrices rotations around normalized axis. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__gtx__rotate__normalized__axis_ga50efd7ebca0f7a603bb3cc11e34c708d}\label{group__gtx__rotate__normalized__axis_ga50efd7ebca0f7a603bb3cc11e34c708d}} 
+\index{GLM\_GTX\_rotate\_normalized\_axis@{GLM\_GTX\_rotate\_normalized\_axis}!rotateNormalizedAxis@{rotateNormalizedAxis}}
+\index{rotateNormalizedAxis@{rotateNormalizedAxis}!GLM\_GTX\_rotate\_normalized\_axis@{GLM\_GTX\_rotate\_normalized\_axis}}
+\doxysubsubsection{\texorpdfstring{rotateNormalizedAxis()}{rotateNormalizedAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1mat}{mat}}$<$4, 4, T, Q$>$ glm\+::rotate\+Normalized\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 4, 4, T, Q $>$ const \&}]{m,  }\item[{T const \&}]{angle,  }\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ 3, T, Q $>$ const \&}]{axis }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{rotate__normalized__axis_8hpp}{include/glm/gtx/rotate\+\_\+normalized\+\_\+axis.\+hpp}}$>$}
+
+Builds a rotation 4 $\ast$ 4 matrix created from a normalized axis and an angle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Input matrix multiplied by this rotation matrix. \\
+\hline
+{\em angle} & Rotation angle expressed in radians. \\
+\hline
+{\em axis} & Rotation axis, must be normalized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Value type used to build the matrix. Currently supported\+: half (not recommended), float or double.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__gtx__rotate__normalized__axis}{G\+L\+M\+\_\+\+G\+T\+X\+\_\+rotate\+\_\+normalized\+\_\+axis}} 
+
+-\/ rotate(\+T angle, T x, T y, T z) 
+
+-\/ rotate(mat$<$4, 4, T, Q$>$ const\& m, T angle, T x, T y, T z) 
+
+-\/ \mbox{\hyperlink{group__gtx__transform_gaf599be4c0e9d99be1f9cddba79b6018b}{rotate(\+T angle, vec$<$3, T, Q$>$ const\& v)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__gtx__rotate__normalized__axis_ga08f9c5411437d528019a25bfc01473d1}\label{group__gtx__rotate__normalized__axis_ga08f9c5411437d528019a25bfc01473d1}} 
+\index{GLM\_GTX\_rotate\_normalized\_axis@{GLM\_GTX\_rotate\_normalized\_axis}!rotateNormalizedAxis@{rotateNormalizedAxis}}
+\index{rotateNormalizedAxis@{rotateNormalizedAxis}!GLM\_GTX\_rotate\_normalized\_axis@{GLM\_GTX\_rotate\_normalized\_axis}}
+\doxysubsubsection{\texorpdfstring{rotateNormalizedAxis()}{rotateNormalizedAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1qua}{qua}}$<$T, Q$>$ glm\+::rotate\+Normalized\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&}]{q,  }\item[{T const \&}]{angle,  }\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ 3, T, Q $>$ const \&}]{axis }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{rotate__normalized__axis_8hpp}{include/glm/gtx/rotate\+\_\+normalized\+\_\+axis.\+hpp}}$>$}
+
+Rotates a quaternion from a vector of 3 components normalized axis and an angle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & Source orientation \\
+\hline
+{\em angle} & Angle expressed in radians. \\
+\hline
+{\em axis} & Normalized axis of the rotation, must be normalized.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__gtx__rotate__normalized__axis}{G\+L\+M\+\_\+\+G\+T\+X\+\_\+rotate\+\_\+normalized\+\_\+axis}} 
+\end{DoxySeeAlso}

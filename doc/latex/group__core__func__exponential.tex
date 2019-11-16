@@ -1,0 +1,234 @@
+\hypertarget{group__core__func__exponential}{}\doxysection{Exponential functions}
+\label{group__core__func__exponential}\index{Exponential functions@{Exponential functions}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ \mbox{\hyperlink{group__core__func__exponential_ga2254981952d4f333b900a6bf5167a6c4}{glm\+::pow}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&base, \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&exponent)
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ \mbox{\hyperlink{group__core__func__exponential_ga071566cadc7505455e611f2a0353f4d4}{glm\+::exp}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v)
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ \mbox{\hyperlink{group__core__func__exponential_ga918c9f3fd086ce20e6760c903bd30fa9}{glm\+::log}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v)
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ \mbox{\hyperlink{group__core__func__exponential_gaff17ace6b579a03bf223ed4d1ed2cd16}{glm\+::exp2}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v)
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ \mbox{\hyperlink{group__core__func__exponential_ga82831c7d9cca777cebedfe03a19c8d75}{glm\+::log2}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v)
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ \mbox{\hyperlink{group__core__func__exponential_gaa83e5f1648b7ccdf33b87c07c76cb77c}{glm\+::sqrt}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v)
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ \mbox{\hyperlink{group__core__func__exponential_ga523dd6bd0ad9f75ae2d24c8e4b017b7a}{glm\+::inversesqrt}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides G\+L\+SL exponential functions
+
+These all operate component-\/wise. The description is per component.
+
+Include $<$\mbox{\hyperlink{exponential_8hpp}{glm/exponential.\+hpp}}$>$ to use these core features. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__core__func__exponential_ga071566cadc7505455e611f2a0353f4d4}\label{group__core__func__exponential_ga071566cadc7505455e611f2a0353f4d4}} 
+\index{Exponential functions@{Exponential functions}!exp@{exp}}
+\index{exp@{exp}!Exponential functions@{Exponential functions}}
+\doxysubsubsection{\texorpdfstring{exp()}{exp()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$L, T, Q$>$ glm\+::exp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{exponential_8hpp}{include/glm/exponential.\+hpp}}$>$}
+
+Returns the natural exponentiation of x, i.\+e., e$^\wedge$x.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & exp function is defined for input values of v defined in the range (inf-\/, inf+) in the limit of the type qualifier. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em L} & An integer between 1 and 4 included that qualify the dimension of the vector. \\
+\hline
+{\em T} & Floating-\/point scalar types.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://www.opengl.org/sdk/docs/manglsl/xhtml/exp.xml}{\texttt{ G\+L\+SL exp man page}} 
+
+\href{http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf}{\texttt{ G\+L\+SL 4.\+20.\+8 specification, section 8.\+2 Exponential Functions}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__core__func__exponential_gaff17ace6b579a03bf223ed4d1ed2cd16}\label{group__core__func__exponential_gaff17ace6b579a03bf223ed4d1ed2cd16}} 
+\index{Exponential functions@{Exponential functions}!exp2@{exp2}}
+\index{exp2@{exp2}!Exponential functions@{Exponential functions}}
+\doxysubsubsection{\texorpdfstring{exp2()}{exp2()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$L, T, Q$>$ glm\+::exp2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{exponential_8hpp}{include/glm/exponential.\+hpp}}$>$}
+
+Returns 2 raised to the v power.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & exp2 function is defined for input values of v defined in the range (inf-\/, inf+) in the limit of the type qualifier. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em L} & An integer between 1 and 4 included that qualify the dimension of the vector. \\
+\hline
+{\em T} & Floating-\/point scalar types.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://www.opengl.org/sdk/docs/manglsl/xhtml/exp2.xml}{\texttt{ G\+L\+SL exp2 man page}} 
+
+\href{http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf}{\texttt{ G\+L\+SL 4.\+20.\+8 specification, section 8.\+2 Exponential Functions}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__core__func__exponential_ga523dd6bd0ad9f75ae2d24c8e4b017b7a}\label{group__core__func__exponential_ga523dd6bd0ad9f75ae2d24c8e4b017b7a}} 
+\index{Exponential functions@{Exponential functions}!inversesqrt@{inversesqrt}}
+\index{inversesqrt@{inversesqrt}!Exponential functions@{Exponential functions}}
+\doxysubsubsection{\texorpdfstring{inversesqrt()}{inversesqrt()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$L, T, Q$>$ glm\+::inversesqrt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{exponential_8hpp}{include/glm/exponential.\+hpp}}$>$}
+
+Returns the reciprocal of the positive square root of v.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & inversesqrt function is defined for input values of v defined in the range \mbox{[}0, inf+) in the limit of the type qualifier. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em L} & An integer between 1 and 4 included that qualify the dimension of the vector. \\
+\hline
+{\em T} & Floating-\/point scalar types.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://www.opengl.org/sdk/docs/manglsl/xhtml/inversesqrt.xml}{\texttt{ G\+L\+SL inversesqrt man page}} 
+
+\href{http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf}{\texttt{ G\+L\+SL 4.\+20.\+8 specification, section 8.\+2 Exponential Functions}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__core__func__exponential_ga918c9f3fd086ce20e6760c903bd30fa9}\label{group__core__func__exponential_ga918c9f3fd086ce20e6760c903bd30fa9}} 
+\index{Exponential functions@{Exponential functions}!log@{log}}
+\index{log@{log}!Exponential functions@{Exponential functions}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$L, T, Q$>$ glm\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{exponential_8hpp}{include/glm/exponential.\+hpp}}$>$}
+
+Returns the natural logarithm of v, i.\+e., returns the value y which satisfies the equation x = e$^\wedge$y. Results are undefined if v $<$= 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & log function is defined for input values of v defined in the range (0, inf+) in the limit of the type qualifier. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em L} & An integer between 1 and 4 included that qualify the dimension of the vector. \\
+\hline
+{\em T} & Floating-\/point scalar types.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://www.opengl.org/sdk/docs/manglsl/xhtml/log.xml}{\texttt{ G\+L\+SL log man page}} 
+
+\href{http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf}{\texttt{ G\+L\+SL 4.\+20.\+8 specification, section 8.\+2 Exponential Functions}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__core__func__exponential_ga82831c7d9cca777cebedfe03a19c8d75}\label{group__core__func__exponential_ga82831c7d9cca777cebedfe03a19c8d75}} 
+\index{Exponential functions@{Exponential functions}!log2@{log2}}
+\index{log2@{log2}!Exponential functions@{Exponential functions}}
+\doxysubsubsection{\texorpdfstring{log2()}{log2()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$L, T, Q$>$ glm\+::log2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{exponential_8hpp}{include/glm/exponential.\+hpp}}$>$}
+
+Returns the base 2 log of x, i.\+e., returns the value y, which satisfies the equation x = 2 $^\wedge$ y.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & log2 function is defined for input values of v defined in the range (0, inf+) in the limit of the type qualifier. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em L} & An integer between 1 and 4 included that qualify the dimension of the vector. \\
+\hline
+{\em T} & Floating-\/point scalar types.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://www.opengl.org/sdk/docs/manglsl/xhtml/log2.xml}{\texttt{ G\+L\+SL log2 man page}} 
+
+\href{http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf}{\texttt{ G\+L\+SL 4.\+20.\+8 specification, section 8.\+2 Exponential Functions}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__core__func__exponential_ga2254981952d4f333b900a6bf5167a6c4}\label{group__core__func__exponential_ga2254981952d4f333b900a6bf5167a6c4}} 
+\index{Exponential functions@{Exponential functions}!pow@{pow}}
+\index{pow@{pow}!Exponential functions@{Exponential functions}}
+\doxysubsubsection{\texorpdfstring{pow()}{pow()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$L, T, Q$>$ glm\+::pow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{base,  }\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{exponent }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{exponential_8hpp}{include/glm/exponential.\+hpp}}$>$}
+
+Returns \textquotesingle{}base\textquotesingle{} raised to the power \textquotesingle{}exponent\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & Floating point value. pow function is defined for input values of \textquotesingle{}base\textquotesingle{} defined in the range (inf-\/, inf+) in the limit of the type qualifier. \\
+\hline
+{\em exponent} & Floating point value representing the \textquotesingle{}exponent\textquotesingle{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://www.opengl.org/sdk/docs/manglsl/xhtml/pow.xml}{\texttt{ G\+L\+SL pow man page}} 
+
+\href{http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf}{\texttt{ G\+L\+SL 4.\+20.\+8 specification, section 8.\+2 Exponential Functions}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__core__func__exponential_gaa83e5f1648b7ccdf33b87c07c76cb77c}\label{group__core__func__exponential_gaa83e5f1648b7ccdf33b87c07c76cb77c}} 
+\index{Exponential functions@{Exponential functions}!sqrt@{sqrt}}
+\index{sqrt@{sqrt}!Exponential functions@{Exponential functions}}
+\doxysubsubsection{\texorpdfstring{sqrt()}{sqrt()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$L, T, Q$>$ glm\+::sqrt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{exponential_8hpp}{include/glm/exponential.\+hpp}}$>$}
+
+Returns the positive square root of v.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & sqrt function is defined for input values of v defined in the range \mbox{[}0, inf+) in the limit of the type qualifier. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em L} & An integer between 1 and 4 included that qualify the dimension of the vector. \\
+\hline
+{\em T} & Floating-\/point scalar types.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://www.opengl.org/sdk/docs/manglsl/xhtml/sqrt.xml}{\texttt{ G\+L\+SL sqrt man page}} 
+
+\href{http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf}{\texttt{ G\+L\+SL 4.\+20.\+8 specification, section 8.\+2 Exponential Functions}} 
+\end{DoxySeeAlso}

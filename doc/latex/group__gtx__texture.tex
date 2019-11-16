@@ -1,0 +1,42 @@
+\hypertarget{group__gtx__texture}{}\doxysection{G\+L\+M\+\_\+\+G\+T\+X\+\_\+texture}
+\label{group__gtx__texture}\index{GLM\_GTX\_texture@{GLM\_GTX\_texture}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\T \mbox{\hyperlink{group__gtx__texture_gaa8c377f4e63486db4fa872d77880da73}{glm\+::levels}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&Extent)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Include $<$\mbox{\hyperlink{texture_8hpp}{glm/gtx/texture.\+hpp}}$>$ to use the features of this extension.
+
+Wrapping mode of texture coordinates. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__gtx__texture_gaa8c377f4e63486db4fa872d77880da73}\label{group__gtx__texture_gaa8c377f4e63486db4fa872d77880da73}} 
+\index{GLM\_GTX\_texture@{GLM\_GTX\_texture}!levels@{levels}}
+\index{levels@{levels}!GLM\_GTX\_texture@{GLM\_GTX\_texture}}
+\doxysubsubsection{\texorpdfstring{levels()}{levels()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+T glm\+::levels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{Extent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{texture_8hpp}{include/glm/gtx/texture.\+hpp}}$>$}
+
+Compute the number of mipmaps levels necessary to create a mipmap complete texture
+
+
+\begin{DoxyParams}{Parameters}
+{\em Extent} & Extent of the texture base level mipmap \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em L} & Integer between 1 and 4 included that qualify the dimension of the vector \\
+\hline
+{\em T} & Floating-\/point or signed integer scalar types \\
+\hline
+{\em Q} & Value from qualifier enum \\
+\hline
+\end{DoxyTemplParams}

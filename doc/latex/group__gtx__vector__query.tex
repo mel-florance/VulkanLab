@@ -1,0 +1,109 @@
+\hypertarget{group__gtx__vector__query}{}\doxysection{G\+L\+M\+\_\+\+G\+T\+X\+\_\+vector\+\_\+query}
+\label{group__gtx__vector__query}\index{GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL bool \mbox{\hyperlink{group__gtx__vector__query_ga13da4a787a2ff70e95d561fb19ff91b4}{glm\+::are\+Collinear}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v0, \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v1, T const \&\mbox{\hyperlink{group__ext__scalar__constants_ga2a1e57fc5592b69cfae84174cbfc9429}{epsilon}})
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL bool \mbox{\hyperlink{group__gtx__vector__query_gac7b95b3f798e3c293262b2bdaad47c57}{glm\+::are\+Orthogonal}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v0, \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v1, T const \&\mbox{\hyperlink{group__ext__scalar__constants_ga2a1e57fc5592b69cfae84174cbfc9429}{epsilon}})
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL bool \mbox{\hyperlink{group__gtx__vector__query_gac3c974f459fd75453134fad7ae89a39e}{glm\+::is\+Normalized}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v, T const \&\mbox{\hyperlink{group__ext__scalar__constants_ga2a1e57fc5592b69cfae84174cbfc9429}{epsilon}})
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL bool \mbox{\hyperlink{group__gtx__vector__query_gab4a3637dbcb4bb42dc55caea7a1e0495}{glm\+::is\+Null}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v, T const \&\mbox{\hyperlink{group__ext__scalar__constants_ga2a1e57fc5592b69cfae84174cbfc9429}{epsilon}})
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, bool, Q $>$ \mbox{\hyperlink{group__gtx__vector__query_gaf6ec1688eab7442fe96fe4941d5d4e76}{glm\+::is\+Comp\+Null}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v, T const \&\mbox{\hyperlink{group__ext__scalar__constants_ga2a1e57fc5592b69cfae84174cbfc9429}{epsilon}})
+\item 
+{\footnotesize template$<$length\+\_\+t L, typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL bool \mbox{\hyperlink{group__gtx__vector__query_ga1b091c3d7f9ee3b0708311c001c293e3}{glm\+::are\+Orthonormal}} (\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v0, \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&v1, T const \&\mbox{\hyperlink{group__ext__scalar__constants_ga2a1e57fc5592b69cfae84174cbfc9429}{epsilon}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Include $<$\mbox{\hyperlink{vector__query_8hpp}{glm/gtx/vector\+\_\+query.\+hpp}}$>$ to use the features of this extension.
+
+Query informations of vector types 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__gtx__vector__query_ga13da4a787a2ff70e95d561fb19ff91b4}\label{group__gtx__vector__query_ga13da4a787a2ff70e95d561fb19ff91b4}} 
+\index{GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}!areCollinear@{areCollinear}}
+\index{areCollinear@{areCollinear}!GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}}
+\doxysubsubsection{\texorpdfstring{areCollinear()}{areCollinear()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL bool glm\+::are\+Collinear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v0,  }\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v1,  }\item[{T const \&}]{epsilon }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{vector__query_8hpp}{include/glm/gtx/vector\+\_\+query.\+hpp}}$>$}
+
+Check whether two vectors are collinears. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__gtx__vector__query}{G\+L\+M\+\_\+\+G\+T\+X\+\_\+vector\+\_\+query}} extensions. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__gtx__vector__query_gac7b95b3f798e3c293262b2bdaad47c57}\label{group__gtx__vector__query_gac7b95b3f798e3c293262b2bdaad47c57}} 
+\index{GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}!areOrthogonal@{areOrthogonal}}
+\index{areOrthogonal@{areOrthogonal}!GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}}
+\doxysubsubsection{\texorpdfstring{areOrthogonal()}{areOrthogonal()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL bool glm\+::are\+Orthogonal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v0,  }\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v1,  }\item[{T const \&}]{epsilon }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{vector__query_8hpp}{include/glm/gtx/vector\+\_\+query.\+hpp}}$>$}
+
+Check whether two vectors are orthogonals. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__gtx__vector__query}{G\+L\+M\+\_\+\+G\+T\+X\+\_\+vector\+\_\+query}} extensions. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__gtx__vector__query_ga1b091c3d7f9ee3b0708311c001c293e3}\label{group__gtx__vector__query_ga1b091c3d7f9ee3b0708311c001c293e3}} 
+\index{GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}!areOrthonormal@{areOrthonormal}}
+\index{areOrthonormal@{areOrthonormal}!GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}}
+\doxysubsubsection{\texorpdfstring{areOrthonormal()}{areOrthonormal()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL bool glm\+::are\+Orthonormal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v0,  }\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v1,  }\item[{T const \&}]{epsilon }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{vector__query_8hpp}{include/glm/gtx/vector\+\_\+query.\+hpp}}$>$}
+
+Check whether two vectors are orthonormal. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__gtx__vector__query}{G\+L\+M\+\_\+\+G\+T\+X\+\_\+vector\+\_\+query}} extensions. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__gtx__vector__query_gaf6ec1688eab7442fe96fe4941d5d4e76}\label{group__gtx__vector__query_gaf6ec1688eab7442fe96fe4941d5d4e76}} 
+\index{GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}!isCompNull@{isCompNull}}
+\index{isCompNull@{isCompNull}!GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}}
+\doxysubsubsection{\texorpdfstring{isCompNull()}{isCompNull()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$L, bool, Q$>$ glm\+::is\+Comp\+Null (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v,  }\item[{T const \&}]{epsilon }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{vector__query_8hpp}{include/glm/gtx/vector\+\_\+query.\+hpp}}$>$}
+
+Check whether a each component of a vector is null. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__gtx__vector__query}{G\+L\+M\+\_\+\+G\+T\+X\+\_\+vector\+\_\+query}} extensions. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__gtx__vector__query_gac3c974f459fd75453134fad7ae89a39e}\label{group__gtx__vector__query_gac3c974f459fd75453134fad7ae89a39e}} 
+\index{GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}!isNormalized@{isNormalized}}
+\index{isNormalized@{isNormalized}!GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}}
+\doxysubsubsection{\texorpdfstring{isNormalized()}{isNormalized()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL bool glm\+::is\+Normalized (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v,  }\item[{T const \&}]{epsilon }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{vector__query_8hpp}{include/glm/gtx/vector\+\_\+query.\+hpp}}$>$}
+
+Check whether a vector is normalized. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__gtx__vector__query}{G\+L\+M\+\_\+\+G\+T\+X\+\_\+vector\+\_\+query}} extensions. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__gtx__vector__query_gab4a3637dbcb4bb42dc55caea7a1e0495}\label{group__gtx__vector__query_gab4a3637dbcb4bb42dc55caea7a1e0495}} 
+\index{GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}!isNull@{isNull}}
+\index{isNull@{isNull}!GLM\_GTX\_vector\_query@{GLM\_GTX\_vector\_query}}
+\doxysubsubsection{\texorpdfstring{isNull()}{isNull()}}
+{\footnotesize\ttfamily template$<$length\+\_\+t L, typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL bool glm\+::is\+Null (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ L, T, Q $>$ const \&}]{v,  }\item[{T const \&}]{epsilon }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{vector__query_8hpp}{include/glm/gtx/vector\+\_\+query.\+hpp}}$>$}
+
+Check whether a vector is null. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__gtx__vector__query}{G\+L\+M\+\_\+\+G\+T\+X\+\_\+vector\+\_\+query}} extensions. 
+\end{DoxySeeAlso}

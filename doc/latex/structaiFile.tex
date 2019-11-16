@@ -1,0 +1,85 @@
+\hypertarget{structaiFile}{}\doxysection{ai\+File Struct Reference}
+\label{structaiFile}\index{aiFile@{aiFile}}
+
+
+C-\/\+A\+PI\+: File callbacks.  
+
+
+
+
+{\ttfamily \#include $<$cfileio.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ai\+File\+Read\+Proc \mbox{\hyperlink{structaiFile_a52287e81ca67b9d43cc1ce6142f781fa}{Read\+Proc}}
+\item 
+ai\+File\+Write\+Proc \mbox{\hyperlink{structaiFile_ab9fca3a62e34a33592c13a6f31db7d1d}{Write\+Proc}}
+\item 
+ai\+File\+Tell\+Proc \mbox{\hyperlink{structaiFile_aaf2d88a3b2fcbdacf51119658283d27e}{Tell\+Proc}}
+\item 
+ai\+File\+Tell\+Proc \mbox{\hyperlink{structaiFile_aff2fff8c0458e7ec71f7de217c3a3033}{File\+Size\+Proc}}
+\item 
+ai\+File\+Seek \mbox{\hyperlink{structaiFile_a7a07b499be4ad433669246479a4d4ad2}{Seek\+Proc}}
+\item 
+ai\+File\+Flush\+Proc \mbox{\hyperlink{structaiFile_a1102d28d1c0be68ffed20476669bdb0d}{Flush\+Proc}}
+\item 
+ai\+User\+Data \mbox{\hyperlink{structaiFile_aec528fa18f4755fe4f28d604fde28aad}{User\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+C-\/\+A\+PI\+: File callbacks. 
+
+Actually, it\textquotesingle{}s a data structure to wrap a set of f\+X\+X\+XX (e.\+g fopen) replacement functions.
+
+The default implementation of the functions utilizes the f\+X\+XX functions from the C\+RT. However, you can supply a custom implementation to \mbox{\hyperlink{namespaceAssimp}{Assimp}} by delivering a custom \mbox{\hyperlink{structaiFileIO}{ai\+File\+IO}}. Use this to enable reading from other sources, such as Z\+IP archives or memory locations. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structaiFile_aff2fff8c0458e7ec71f7de217c3a3033}\label{structaiFile_aff2fff8c0458e7ec71f7de217c3a3033}} 
+\index{aiFile@{aiFile}!FileSizeProc@{FileSizeProc}}
+\index{FileSizeProc@{FileSizeProc}!aiFile@{aiFile}}
+\doxysubsubsection{\texorpdfstring{FileSizeProc}{FileSizeProc}}
+{\footnotesize\ttfamily ai\+File\+Tell\+Proc ai\+File\+::\+File\+Size\+Proc}
+
+Callback to retrieve the size of the file, in bytes \mbox{\Hypertarget{structaiFile_a1102d28d1c0be68ffed20476669bdb0d}\label{structaiFile_a1102d28d1c0be68ffed20476669bdb0d}} 
+\index{aiFile@{aiFile}!FlushProc@{FlushProc}}
+\index{FlushProc@{FlushProc}!aiFile@{aiFile}}
+\doxysubsubsection{\texorpdfstring{FlushProc}{FlushProc}}
+{\footnotesize\ttfamily ai\+File\+Flush\+Proc ai\+File\+::\+Flush\+Proc}
+
+Callback to flush the file contents \mbox{\Hypertarget{structaiFile_a52287e81ca67b9d43cc1ce6142f781fa}\label{structaiFile_a52287e81ca67b9d43cc1ce6142f781fa}} 
+\index{aiFile@{aiFile}!ReadProc@{ReadProc}}
+\index{ReadProc@{ReadProc}!aiFile@{aiFile}}
+\doxysubsubsection{\texorpdfstring{ReadProc}{ReadProc}}
+{\footnotesize\ttfamily ai\+File\+Read\+Proc ai\+File\+::\+Read\+Proc}
+
+Callback to read from a file \mbox{\Hypertarget{structaiFile_a7a07b499be4ad433669246479a4d4ad2}\label{structaiFile_a7a07b499be4ad433669246479a4d4ad2}} 
+\index{aiFile@{aiFile}!SeekProc@{SeekProc}}
+\index{SeekProc@{SeekProc}!aiFile@{aiFile}}
+\doxysubsubsection{\texorpdfstring{SeekProc}{SeekProc}}
+{\footnotesize\ttfamily ai\+File\+Seek ai\+File\+::\+Seek\+Proc}
+
+Callback to set the current position of the file cursor (fseek()) \mbox{\Hypertarget{structaiFile_aaf2d88a3b2fcbdacf51119658283d27e}\label{structaiFile_aaf2d88a3b2fcbdacf51119658283d27e}} 
+\index{aiFile@{aiFile}!TellProc@{TellProc}}
+\index{TellProc@{TellProc}!aiFile@{aiFile}}
+\doxysubsubsection{\texorpdfstring{TellProc}{TellProc}}
+{\footnotesize\ttfamily ai\+File\+Tell\+Proc ai\+File\+::\+Tell\+Proc}
+
+Callback to retrieve the current position of the file cursor (ftell()) \mbox{\Hypertarget{structaiFile_aec528fa18f4755fe4f28d604fde28aad}\label{structaiFile_aec528fa18f4755fe4f28d604fde28aad}} 
+\index{aiFile@{aiFile}!UserData@{UserData}}
+\index{UserData@{UserData}!aiFile@{aiFile}}
+\doxysubsubsection{\texorpdfstring{UserData}{UserData}}
+{\footnotesize\ttfamily ai\+User\+Data ai\+File\+::\+User\+Data}
+
+User-\/defined, opaque data \mbox{\Hypertarget{structaiFile_ab9fca3a62e34a33592c13a6f31db7d1d}\label{structaiFile_ab9fca3a62e34a33592c13a6f31db7d1d}} 
+\index{aiFile@{aiFile}!WriteProc@{WriteProc}}
+\index{WriteProc@{WriteProc}!aiFile@{aiFile}}
+\doxysubsubsection{\texorpdfstring{WriteProc}{WriteProc}}
+{\footnotesize\ttfamily ai\+File\+Write\+Proc ai\+File\+::\+Write\+Proc}
+
+Callback to write to a file 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/assimp/cfileio.\+h\end{DoxyCompactItemize}

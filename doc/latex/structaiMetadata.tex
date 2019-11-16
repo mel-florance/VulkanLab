@@ -1,0 +1,46 @@
+\hypertarget{structaiMetadata}{}\doxysection{ai\+Metadata Struct Reference}
+\label{structaiMetadata}\index{aiMetadata@{aiMetadata}}
+
+
+{\ttfamily \#include $<$metadata.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{structaiMetadata_a32c4587c53dd402a5878ffc94088e528}{m\+Num\+Properties}}
+\item 
+C\+\_\+\+S\+T\+R\+U\+CT \mbox{\hyperlink{structaiString}{ai\+String}} $\ast$ \mbox{\hyperlink{structaiMetadata_aa8c77a263443658737ee51a74e3c292e}{m\+Keys}}
+\item 
+C\+\_\+\+S\+T\+R\+U\+CT \mbox{\hyperlink{structaiMetadataEntry}{ai\+Metadata\+Entry}} $\ast$ \mbox{\hyperlink{structaiMetadata_a34b515fcb5b806c471d3c6ce7bc76beb}{m\+Values}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Container for holding metadata.
+
+Metadata is a key-\/value store using string keys and values. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structaiMetadata_aa8c77a263443658737ee51a74e3c292e}\label{structaiMetadata_aa8c77a263443658737ee51a74e3c292e}} 
+\index{aiMetadata@{aiMetadata}!mKeys@{mKeys}}
+\index{mKeys@{mKeys}!aiMetadata@{aiMetadata}}
+\doxysubsubsection{\texorpdfstring{mKeys}{mKeys}}
+{\footnotesize\ttfamily C\+\_\+\+S\+T\+R\+U\+CT \mbox{\hyperlink{structaiString}{ai\+String}}$\ast$ ai\+Metadata\+::m\+Keys}
+
+Arrays of keys, may not be N\+U\+LL. Entries in this array may not be N\+U\+LL as well. \mbox{\Hypertarget{structaiMetadata_a32c4587c53dd402a5878ffc94088e528}\label{structaiMetadata_a32c4587c53dd402a5878ffc94088e528}} 
+\index{aiMetadata@{aiMetadata}!mNumProperties@{mNumProperties}}
+\index{mNumProperties@{mNumProperties}!aiMetadata@{aiMetadata}}
+\doxysubsubsection{\texorpdfstring{mNumProperties}{mNumProperties}}
+{\footnotesize\ttfamily unsigned int ai\+Metadata\+::m\+Num\+Properties}
+
+Length of the m\+Keys and m\+Values arrays, respectively \mbox{\Hypertarget{structaiMetadata_a34b515fcb5b806c471d3c6ce7bc76beb}\label{structaiMetadata_a34b515fcb5b806c471d3c6ce7bc76beb}} 
+\index{aiMetadata@{aiMetadata}!mValues@{mValues}}
+\index{mValues@{mValues}!aiMetadata@{aiMetadata}}
+\doxysubsubsection{\texorpdfstring{mValues}{mValues}}
+{\footnotesize\ttfamily C\+\_\+\+S\+T\+R\+U\+CT \mbox{\hyperlink{structaiMetadataEntry}{ai\+Metadata\+Entry}}$\ast$ ai\+Metadata\+::m\+Values}
+
+Arrays of values, may not be N\+U\+LL. Entries in this array may be N\+U\+LL if the corresponding property key has no assigned value. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/assimp/\mbox{\hyperlink{metadata_8h}{metadata.\+h}}\end{DoxyCompactItemize}
