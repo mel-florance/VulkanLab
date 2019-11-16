@@ -15,6 +15,10 @@ src/host/scripts.c
 **.lnt
 **.vlstatus
 
+.idea/
+CMakeCache.txt
+cmake_install.cmake
+VulkanLab.cbp
 Makefile
 *.make
 *.xcodeproj

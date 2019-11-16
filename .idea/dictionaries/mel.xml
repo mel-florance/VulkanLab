@@ -2,14 +2,18 @@
   <dictionary name="mel">
     <words>
       <w>applicationevent</w>
+      <w>arraybuffer</w>
+      <w>assetmanager</w>
       <w>entrypoint</w>
       <w>glfw</w>
       <w>keycode</w>
       <w>linuxwindow</w>
       <w>mouseevent</w>
       <w>premake</w>
+      <w>verts</w>
       <w>vulkan</w>
       <w>vulkanlab</w>
+      <w>wireframe</w>
     </words>
   </dictionary>
 </component>

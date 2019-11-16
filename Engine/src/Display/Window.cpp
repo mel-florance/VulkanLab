@@ -8,7 +8,7 @@
  * @param title
  */
 Window::Window(
-        const glm::vec2 &size,
+        const glm::ivec2 &size,
         const std::string &title,
         const glm::vec2 &position
 ) :
@@ -45,7 +45,7 @@ Window::Window(
  * Window update
  * @return
  */
-void Window::update(std::function<void(glm::vec2 &size)> callback) {
+void Window::update(std::function<void(glm::ivec2 &size)> callback) {
     while (!glfwWindowShouldClose(instance)) {
         glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 

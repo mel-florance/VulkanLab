@@ -164,6 +164,36 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/AssetManager.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/AssetManager.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Buffers/IndexBuffer.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Buffers/VertexBuffer.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Geometry/Mesh.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Geometry/Mesh.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Materials/Material.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Shaders/Shader.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Texturing/Texture.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Texturing/Texture.h">
+			<Option target="VulkanLab"/>
+		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Window.cpp">
 			<Option target="VulkanLab"/>
 		</Unit>

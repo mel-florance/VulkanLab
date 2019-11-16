@@ -10,17 +10,17 @@
 class Window {
 public:
     Window(
-            const glm::vec2 &size = glm::vec2(1280, 720),
+            const glm::ivec2 &size = glm::ivec2(1280, 720),
             const std::string &title = "Vulkan Lab",
             const glm::vec2 &position = glm::vec2(0.0f)
     );
 
     ~Window();
 
-    void update(std::function<void(glm::vec2 &size)> callback);
+    void update(std::function<void(glm::ivec2 &size)> callback);
 
 private:
-    glm::vec2 size;
+    glm::ivec2 size;
     std::string title;
     glm::vec2 position;
 
