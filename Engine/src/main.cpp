@@ -1,6 +1,7 @@
 #include <glad/glad.h>
 #include <glm/glm.hpp>
 
+#include "Core/Engine.h"
 #include "Display/Window.h"
 #include "Display/Viewport.h"
 #include "Assets/AssetManager.h"
@@ -17,7 +18,7 @@ int main(int argc, char **argv) {
     // Initialize engine classes.
     const char *self_path = argv[0];
     Window *window = new Window();
-    Viewport *viewport = new Viewport();
+    Engine* engine = new Engine();
     AssetManager *am = new AssetManager(self_path);
 
     // Load some stuff.
@@ -90,18 +91,20 @@ int main(int argc, char **argv) {
     defaultShader->bind();
     defaultShader->setUniform1i("textureMap", 0);
 
-    // Main render loop
-    window->update([=](glm::ivec2 &size) {
-        viewport->setSize(size);
-        viewport->apply();
-        viewport->clear();
+    engine->start();
 
-        texture->bind();
-        vao->bind();
-        triangle->draw();
-    });
+//    // Main render loop
+//    window->update([=](glm::ivec2 &size) {
+//        viewport->setSize(size);
+//        viewport->apply();
+//        viewport->clear();
+//
+//        texture->bind();
+//        vao->bind();
+//        triangle->draw();
+//    });
 
-    delete window;
+//    delete window;
 
     return 0;
 }

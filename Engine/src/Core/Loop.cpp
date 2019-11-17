@@ -1,3 +1,4 @@
+#include <iostream>
 #include <unistd.h>
 #include "Loop.h"
 #include "Engine.h"
@@ -53,7 +54,7 @@ void Loop::start()
         this->unprocessedTime += this->passedTime;
         this->frameCounter += this->passedTime;
 
-        if (this->frameCounter >= 0.05f)
+        if (this->frameCounter >= 0.5f)
         {
             this->fps = computeAverageFps(1.0f / (float)this->passedTime);
             this->frames = 0;
