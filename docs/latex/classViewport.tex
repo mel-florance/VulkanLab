@@ -1,0 +1,98 @@
+\hypertarget{classViewport}{}\doxysection{Viewport Class Reference}
+\label{classViewport}\index{Viewport@{Viewport}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classViewport_a9fde8f966d9802dd42254acf0ed05386}{Viewport}} ()
+\item 
+\mbox{\hyperlink{classViewport_a1e18a1ff4a52be33ef63d25034561850}{$\sim$\+Viewport}} ()
+\item 
+void \mbox{\hyperlink{classViewport_a2f9df9148822f45b7de33b784e9fc3ed}{apply}} ()
+\item 
+const glm\+::vec2 \& \mbox{\hyperlink{classViewport_ad538eb6188cbd91518ab3ae8316d63d4}{get\+Size}} () const
+\item 
+void \mbox{\hyperlink{classViewport_a2d6a2829fd7dc1b21fb747612001645a}{set\+Size}} (const glm\+::vec2 \&size)
+\item 
+const glm\+::vec4 \& \mbox{\hyperlink{classViewport_a77a9a4393149830cb9704305e74a6944}{get\+Color}} () const
+\item 
+void \mbox{\hyperlink{classViewport_a68fbc08f5bf66aa19d282b9a73048602}{set\+Color}} (const glm\+::vec4 \&color)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classViewport_a4f388600f6ca80ab62b0ffc56b9f24dc}{clear}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classViewport_a27c4e64e5624a629ac25323ac27b7386}\label{classViewport_a27c4e64e5624a629ac25323ac27b7386}} 
+glm\+::vec2 {\bfseries position}
+\item 
+\mbox{\Hypertarget{classViewport_a1abf902ec30e5b468d32edbeaeeed106}\label{classViewport_a1abf902ec30e5b468d32edbeaeeed106}} 
+glm\+::vec2 {\bfseries size}
+\item 
+\mbox{\Hypertarget{classViewport_a1a9cacc800f1114adc837c41c9dd022e}\label{classViewport_a1a9cacc800f1114adc837c41c9dd022e}} 
+glm\+::vec4 {\bfseries color}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classViewport_a9fde8f966d9802dd42254acf0ed05386}\label{classViewport_a9fde8f966d9802dd42254acf0ed05386}} 
+\index{Viewport@{Viewport}!Viewport@{Viewport}}
+\index{Viewport@{Viewport}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{Viewport()}{Viewport()}}
+{\footnotesize\ttfamily Viewport\+::\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classViewport}{Viewport}} constructor \mbox{\Hypertarget{classViewport_a1e18a1ff4a52be33ef63d25034561850}\label{classViewport_a1e18a1ff4a52be33ef63d25034561850}} 
+\index{Viewport@{Viewport}!````~Viewport@{$\sim$Viewport}}
+\index{````~Viewport@{$\sim$Viewport}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{$\sim$Viewport()}{~Viewport()}}
+{\footnotesize\ttfamily Viewport\+::$\sim$\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classViewport}{Viewport}} destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classViewport_a2f9df9148822f45b7de33b784e9fc3ed}\label{classViewport_a2f9df9148822f45b7de33b784e9fc3ed}} 
+\index{Viewport@{Viewport}!apply@{apply}}
+\index{apply@{apply}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily void Viewport\+::apply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Apply the viewport dimensions to the gpu. \mbox{\Hypertarget{classViewport_a4f388600f6ca80ab62b0ffc56b9f24dc}\label{classViewport_a4f388600f6ca80ab62b0ffc56b9f24dc}} 
+\index{Viewport@{Viewport}!clear@{clear}}
+\index{clear@{clear}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily static void Viewport\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Clear the viewport. \mbox{\Hypertarget{classViewport_a77a9a4393149830cb9704305e74a6944}\label{classViewport_a77a9a4393149830cb9704305e74a6944}} 
+\index{Viewport@{Viewport}!getColor@{getColor}}
+\index{getColor@{getColor}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily const glm\+::vec4\& Viewport\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the clear color of the viewport. \mbox{\Hypertarget{classViewport_ad538eb6188cbd91518ab3ae8316d63d4}\label{classViewport_ad538eb6188cbd91518ab3ae8316d63d4}} 
+\index{Viewport@{Viewport}!getSize@{getSize}}
+\index{getSize@{getSize}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily const glm\+::vec2\& Viewport\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the size of the viewport. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classViewport_a68fbc08f5bf66aa19d282b9a73048602}\label{classViewport_a68fbc08f5bf66aa19d282b9a73048602}} 
+\index{Viewport@{Viewport}!setColor@{setColor}}
+\index{setColor@{setColor}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Viewport\+::set\+Color (\begin{DoxyParamCaption}\item[{const glm\+::vec4 \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the clear color of the viewport. \mbox{\Hypertarget{classViewport_a2d6a2829fd7dc1b21fb747612001645a}\label{classViewport_a2d6a2829fd7dc1b21fb747612001645a}} 
+\index{Viewport@{Viewport}!setSize@{setSize}}
+\index{setSize@{setSize}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Viewport\+::set\+Size (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the dimensions of the viewport. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+Display/Viewport.\+h\end{DoxyCompactItemize}

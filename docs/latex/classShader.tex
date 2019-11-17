@@ -1,0 +1,299 @@
+\hypertarget{classShader}{}\doxysection{Shader Class Reference}
+\label{classShader}\index{Shader@{Shader}}
+Inheritance diagram for Shader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classShader}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structShader_1_1ShaderData}{Shader\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classShader_a4cab4ea28e17d2a932ffd64800d01cf4}\label{classShader_a4cab4ea28e17d2a932ffd64800d01cf4}} 
+enum {\bfseries Shader\+Type} \{ \newline
+{\bfseries V\+E\+R\+T\+EX} = 0x8\+B31, 
+{\bfseries F\+R\+A\+G\+M\+E\+NT} = 0x8\+B30, 
+{\bfseries G\+E\+O\+M\+E\+T\+RY} = 0x8\+D\+D9, 
+{\bfseries C\+O\+M\+P\+U\+TE} = 0x91\+B9, 
+\newline
+{\bfseries T\+E\+S\+S\+\_\+\+E\+V\+AL} = 0x8\+E87, 
+{\bfseries T\+E\+S\+S\+\_\+\+C\+T\+RL} = 0x8\+E88
+ \}
+\item 
+\mbox{\Hypertarget{classShader_ae64a650a76a4ca1e711ba774d3cd859b}\label{classShader_ae64a650a76a4ca1e711ba774d3cd859b}} 
+enum {\bfseries Shader\+Error} \{ \newline
+{\bfseries I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+N\+UM} = 0x0500, 
+{\bfseries I\+N\+V\+A\+L\+I\+D\+\_\+\+V\+A\+L\+UE} = 0x0501, 
+{\bfseries I\+N\+V\+A\+L\+I\+D\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON} = 0x0502, 
+{\bfseries S\+T\+A\+C\+K\+\_\+\+O\+V\+E\+R\+F\+L\+OW} = 0x0503, 
+\newline
+{\bfseries S\+T\+A\+C\+K\+\_\+\+U\+N\+D\+E\+R\+F\+L\+OW} = 0x0504, 
+{\bfseries O\+U\+T\+\_\+\+O\+F\+\_\+\+M\+E\+M\+O\+RY} = 0x0505, 
+{\bfseries I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON} = 0x0506, 
+{\bfseries C\+O\+N\+T\+E\+X\+T\+\_\+\+L\+O\+ST} = 0x0507, 
+\newline
+{\bfseries T\+A\+B\+L\+E\+\_\+\+T\+O\+O\+\_\+\+L\+A\+R\+GE} = 0x8031
+ \}
+\item 
+\mbox{\Hypertarget{classShader_a5c8eb7fc35e0e22f86512642fd0615c7}\label{classShader_a5c8eb7fc35e0e22f86512642fd0615c7}} 
+enum {\bfseries Shader\+Status} \{ {\bfseries Loaded} = 1 $<$$<$ 0, 
+{\bfseries Compiled} = 1 $<$$<$ 1, 
+{\bfseries Linked} = 1 $<$$<$ 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classShader_a41c317492f3e715bd2debfd3d875cda1}{Shader}} (const std\+::string \&name, const std\+::string \&vs\+\_\+src, const std\+::string \&fs\+\_\+src)
+\item 
+\mbox{\hyperlink{classShader_aff01df87e8a102f270b5b135a295e59d}{$\sim$\+Shader}} ()
+\item 
+bool \mbox{\hyperlink{classShader_aa9413a27c7e5247d67c624a561e31d3e}{load}} ()
+\item 
+bool \mbox{\hyperlink{classShader_a75512fd8255dc4442d65f1fde2d5feb2}{compile}} ()
+\item 
+bool \mbox{\hyperlink{classShader_a161808c663dc259fd5db2be34aa62e83}{link}} ()
+\item 
+unsigned int \mbox{\hyperlink{classShader_ad71a00bfa9bbcdfd1448966d0ca362c1}{get\+Program}} ()
+\item 
+std\+::string \mbox{\hyperlink{classShader_a7982747baa5d27f1f533b995e584c939}{get\+Name}} ()
+\item 
+std\+::unordered\+\_\+map$<$ Shader\+Type, \mbox{\hyperlink{structShader_1_1ShaderData}{Shader\+Data}} $>$ \mbox{\hyperlink{classShader_a3e143724cc385e34b7b48138a1207f34}{get\+Data}} ()
+\item 
+\mbox{\Hypertarget{classShader_a6f6e280a343d6c7662909f7dfbc89ad9}\label{classShader_a6f6e280a343d6c7662909f7dfbc89ad9}} 
+void {\bfseries bind} ()
+\item 
+void \mbox{\hyperlink{classShader_a6a3ad7b19c1b78b851a21dcfb69ed6c2}{set\+Uniform1i}} (const std\+::string \&name, int value)
+\item 
+\mbox{\Hypertarget{classShader_a514a718cd4afdbe525cc977963d46c54}\label{classShader_a514a718cd4afdbe525cc977963d46c54}} 
+void {\bfseries set\+Uniform1f} (const std\+::string \&name, float value)
+\item 
+void \mbox{\hyperlink{classShader_a7d2089bc189b4546b1b12d831346dccd}{set\+Uniform2f}} (const std\+::string \&name, float x, float y)
+\item 
+void \mbox{\hyperlink{classShader_a1fc8695974689072af9a6a0b72d730f2}{set\+Uniform2f}} (const std\+::string \&name, const glm\+::vec2 \&value)
+\item 
+void \mbox{\hyperlink{classShader_a0dec027bcce58039d4a82941d12e4b34}{set\+Uniform3f}} (const std\+::string \&name, const glm\+::vec3 \&value)
+\item 
+void \mbox{\hyperlink{classShader_afba7caa09572bd17885835697369150a}{set\+Uniform3f}} (const std\+::string \&name, float x, float y, float z)
+\item 
+void \mbox{\hyperlink{classShader_af31ded6413555fc0f03094e503c5d5d6}{set\+Uniform4f}} (const std\+::string \&name, const glm\+::vec4 \&value)
+\item 
+void \mbox{\hyperlink{classShader_aa09f462c0e8f75e9833fe9e934f54d8e}{set\+Uniform4f}} (const std\+::string \&name, float x, float y, float z, float w)
+\item 
+void \mbox{\hyperlink{classShader_a20e4c7647a1d79a18977d45747c4ed8b}{set\+Uniform\+Mat4f}} (const std\+::string \&name, const glm\+::mat4 \&matrix)
+\item 
+\mbox{\Hypertarget{classShader_abe52a17214908086e9cd7fd63dc27e5d}\label{classShader_abe52a17214908086e9cd7fd63dc27e5d}} 
+unsigned int {\bfseries get\+Uniform\+Location} (const std\+::string \&uniform\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \mbox{\hyperlink{classShader_a232e3eac4e91c3c8203524fbad428e63}{shader\+Type\+To\+String}} (Shader\+Type type)
+\item 
+static const char $\ast$ \mbox{\hyperlink{classShader_a518f83cb9fd1eeaf38ddf28558672b9b}{error\+To\+String}} (Shader\+Error error)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classShader_a841722b84ae83d1dbc1b529d9fca6a4c}\label{classShader_a841722b84ae83d1dbc1b529d9fca6a4c}} 
+char {\bfseries status}
+\item 
+\mbox{\Hypertarget{classShader_aef2c8e52af39986935a5e5296e6d05e6}\label{classShader_aef2c8e52af39986935a5e5296e6d05e6}} 
+unsigned int {\bfseries program}
+\item 
+\mbox{\Hypertarget{classShader_a8c8fba8311ca3a7cfeac5afeb346e51b}\label{classShader_a8c8fba8311ca3a7cfeac5afeb346e51b}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{classShader_af8a317d2f687126788b96e2e90219a31}\label{classShader_af8a317d2f687126788b96e2e90219a31}} 
+std\+::string {\bfseries vs\+\_\+src}
+\item 
+\mbox{\Hypertarget{classShader_a53a689df05ee22636d54ee0f3f3ca5f4}\label{classShader_a53a689df05ee22636d54ee0f3f3ca5f4}} 
+std\+::string {\bfseries fs\+\_\+src}
+\item 
+\mbox{\Hypertarget{classShader_a0dfd60451dfed8b9622f95edfcb5dc4d}\label{classShader_a0dfd60451dfed8b9622f95edfcb5dc4d}} 
+std\+::unordered\+\_\+map$<$ Shader\+Type, int $>$ {\bfseries shaders}
+\item 
+\mbox{\Hypertarget{classShader_abce93c99451a2efee2222cc487295744}\label{classShader_abce93c99451a2efee2222cc487295744}} 
+std\+::unordered\+\_\+map$<$ Shader\+Type, \mbox{\hyperlink{structShader_1_1ShaderData}{Shader\+Data}} $>$ {\bfseries data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classShader_a41c317492f3e715bd2debfd3d875cda1}\label{classShader_a41c317492f3e715bd2debfd3d875cda1}} 
+\index{Shader@{Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}}
+{\footnotesize\ttfamily Shader\+::\+Shader (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{vs\+\_\+src,  }\item[{const std\+::string \&}]{fs\+\_\+src }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classShader}{Shader}} constructor \mbox{\Hypertarget{classShader_aff01df87e8a102f270b5b135a295e59d}\label{classShader_aff01df87e8a102f270b5b135a295e59d}} 
+\index{Shader@{Shader}!````~Shader@{$\sim$Shader}}
+\index{````~Shader@{$\sim$Shader}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{$\sim$Shader()}{~Shader()}}
+{\footnotesize\ttfamily Shader\+::$\sim$\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classShader}{Shader}} destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classShader_a75512fd8255dc4442d65f1fde2d5feb2}\label{classShader_a75512fd8255dc4442d65f1fde2d5feb2}} 
+\index{Shader@{Shader}!compile@{compile}}
+\index{compile@{compile}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{compile()}{compile()}}
+{\footnotesize\ttfamily bool Shader\+::compile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Compile the shader given its type. \mbox{\Hypertarget{classShader_a518f83cb9fd1eeaf38ddf28558672b9b}\label{classShader_a518f83cb9fd1eeaf38ddf28558672b9b}} 
+\index{Shader@{Shader}!errorToString@{errorToString}}
+\index{errorToString@{errorToString}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{errorToString()}{errorToString()}}
+{\footnotesize\ttfamily static const char$\ast$ Shader\+::error\+To\+String (\begin{DoxyParamCaption}\item[{Shader\+Error}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Convert Open\+GL error to string. 
+\begin{DoxyParams}{Parameters}
+{\em error} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShader_a3e143724cc385e34b7b48138a1207f34}\label{classShader_a3e143724cc385e34b7b48138a1207f34}} 
+\index{Shader@{Shader}!getData@{getData}}
+\index{getData@{getData}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$Shader\+Type, \mbox{\hyperlink{structShader_1_1ShaderData}{Shader\+Data}}$>$ Shader\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the source data of the shader. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShader_a7982747baa5d27f1f533b995e584c939}\label{classShader_a7982747baa5d27f1f533b995e584c939}} 
+\index{Shader@{Shader}!getName@{getName}}
+\index{getName@{getName}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Shader\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the shader name. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShader_ad71a00bfa9bbcdfd1448966d0ca362c1}\label{classShader_ad71a00bfa9bbcdfd1448966d0ca362c1}} 
+\index{Shader@{Shader}!getProgram@{getProgram}}
+\index{getProgram@{getProgram}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{getProgram()}{getProgram()}}
+{\footnotesize\ttfamily unsigned int Shader\+::get\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the Open\+GL shader id. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShader_a161808c663dc259fd5db2be34aa62e83}\label{classShader_a161808c663dc259fd5db2be34aa62e83}} 
+\index{Shader@{Shader}!link@{link}}
+\index{link@{link}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{link()}{link()}}
+{\footnotesize\ttfamily bool Shader\+::link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Link the shader given its type. 
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShader_aa9413a27c7e5247d67c624a561e31d3e}\label{classShader_aa9413a27c7e5247d67c624a561e31d3e}} 
+\index{Shader@{Shader}!load@{load}}
+\index{load@{load}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily bool Shader\+::load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Load the shader sources. \mbox{\Hypertarget{classShader_a6a3ad7b19c1b78b851a21dcfb69ed6c2}\label{classShader_a6a3ad7b19c1b78b851a21dcfb69ed6c2}} 
+\index{Shader@{Shader}!setUniform1i@{setUniform1i}}
+\index{setUniform1i@{setUniform1i}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{setUniform1i()}{setUniform1i()}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform1i (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set uniform integer. \mbox{\Hypertarget{classShader_a1fc8695974689072af9a6a0b72d730f2}\label{classShader_a1fc8695974689072af9a6a0b72d730f2}} 
+\index{Shader@{Shader}!setUniform2f@{setUniform2f}}
+\index{setUniform2f@{setUniform2f}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{setUniform2f()}{setUniform2f()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform2f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::vec2 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set uniform of a vector 2D. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShader_a7d2089bc189b4546b1b12d831346dccd}\label{classShader_a7d2089bc189b4546b1b12d831346dccd}} 
+\index{Shader@{Shader}!setUniform2f@{setUniform2f}}
+\index{setUniform2f@{setUniform2f}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{setUniform2f()}{setUniform2f()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform2f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set uniform of 2 floats. \mbox{\Hypertarget{classShader_a0dec027bcce58039d4a82941d12e4b34}\label{classShader_a0dec027bcce58039d4a82941d12e4b34}} 
+\index{Shader@{Shader}!setUniform3f@{setUniform3f}}
+\index{setUniform3f@{setUniform3f}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{setUniform3f()}{setUniform3f()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform3f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::vec3 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set uniform of a vector 3D. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShader_afba7caa09572bd17885835697369150a}\label{classShader_afba7caa09572bd17885835697369150a}} 
+\index{Shader@{Shader}!setUniform3f@{setUniform3f}}
+\index{setUniform3f@{setUniform3f}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{setUniform3f()}{setUniform3f()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform3f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set uniform of 3 floats. \mbox{\Hypertarget{classShader_af31ded6413555fc0f03094e503c5d5d6}\label{classShader_af31ded6413555fc0f03094e503c5d5d6}} 
+\index{Shader@{Shader}!setUniform4f@{setUniform4f}}
+\index{setUniform4f@{setUniform4f}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{setUniform4f()}{setUniform4f()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform4f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::vec4 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set uniform vector 4D. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShader_aa09f462c0e8f75e9833fe9e934f54d8e}\label{classShader_aa09f462c0e8f75e9833fe9e934f54d8e}} 
+\index{Shader@{Shader}!setUniform4f@{setUniform4f}}
+\index{setUniform4f@{setUniform4f}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{setUniform4f()}{setUniform4f()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform4f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set uniform 4 floats. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+{\em w} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShader_a20e4c7647a1d79a18977d45747c4ed8b}\label{classShader_a20e4c7647a1d79a18977d45747c4ed8b}} 
+\index{Shader@{Shader}!setUniformMat4f@{setUniformMat4f}}
+\index{setUniformMat4f@{setUniformMat4f}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{setUniformMat4f()}{setUniformMat4f()}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform\+Mat4f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat4 \&}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set uniform matrix 4x4. \mbox{\Hypertarget{classShader_a232e3eac4e91c3c8203524fbad428e63}\label{classShader_a232e3eac4e91c3c8203524fbad428e63}} 
+\index{Shader@{Shader}!shaderTypeToString@{shaderTypeToString}}
+\index{shaderTypeToString@{shaderTypeToString}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{shaderTypeToString()}{shaderTypeToString()}}
+{\footnotesize\ttfamily static const char$\ast$ Shader\+::shader\+Type\+To\+String (\begin{DoxyParamCaption}\item[{Shader\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Convert a enum Shader\+::\+Shader\+Type to string. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+Shaders/Shader.\+h\item 
+Engine/src/\+Shaders/Shader.\+cpp\end{DoxyCompactItemize}

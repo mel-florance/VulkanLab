@@ -1,0 +1,150 @@
+\hypertarget{classMesh}{}\doxysection{Mesh Class Reference}
+\label{classMesh}\index{Mesh@{Mesh}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMesh_a2af137f1571af89172b9c102302c416b}{Mesh}} ()
+\item 
+\mbox{\hyperlink{classMesh_a5efe4da1a4c0971cfb037bd70304c303}{$\sim$\+Mesh}} ()
+\item 
+\mbox{\Hypertarget{classMesh_a4060b21a507f3cd18ceb1a36d68b78c6}\label{classMesh_a4060b21a507f3cd18ceb1a36d68b78c6}} 
+void {\bfseries set\+Vertices} (std\+::vector$<$ float $>$ verts)
+\item 
+const std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classMesh_a3975a57573aa543e3c39acbe2a8566cb}{get\+Vertices}} () const
+\item 
+float \mbox{\hyperlink{classMesh_a6d63f26cd67650d06ddb72bcd4d59df6}{get\+Vertices\+Memory\+Size}} ()
+\item 
+unsigned int \mbox{\hyperlink{classMesh_a09f597db1ca847f56a3b6d67e0479988}{get\+Vertex\+Count}} () const
+\item 
+void \mbox{\hyperlink{classMesh_a25843b82a4ccba520195c66e170be3fc}{set\+Vertex\+Count}} (unsigned int count)
+\item 
+void \mbox{\hyperlink{classMesh_a996a8668fa2ca7d95d6d10744c833bc8}{draw}} ()
+\item 
+const std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classMesh_adff434672a84240ef8bc24e98d091479}{get\+Uvs}} () const
+\item 
+void \mbox{\hyperlink{classMesh_a29d3d37a9fe658ad216860b5d85c4a84}{set\+Uvs}} (std\+::vector$<$ float $>$ uvs)
+\item 
+float \mbox{\hyperlink{classMesh_a41756799d1d904f6faa390b038cfe65b}{get\+Uvs\+Memory\+Size}} ()
+\item 
+bool \mbox{\hyperlink{classMesh_a76ac540c1cbd21634fbe27b4aa85ab50}{is\+Wireframe}} () const
+\item 
+void \mbox{\hyperlink{classMesh_a75a296d00b2be8ebc6315ef875132595}{set\+Wireframe}} (bool wireframe)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMesh_a6ad1226aabf6b2a0ded67b8dee1fb514}\label{classMesh_a6ad1226aabf6b2a0ded67b8dee1fb514}} 
+std\+::vector$<$ float $>$ {\bfseries vertices}
+\item 
+\mbox{\Hypertarget{classMesh_a9f5e428a8cbddaec56be1979741661f6}\label{classMesh_a9f5e428a8cbddaec56be1979741661f6}} 
+std\+::vector$<$ float $>$ {\bfseries uvs}
+\item 
+\mbox{\Hypertarget{classMesh_a2c56ce7eb4124760b990410c2d0339e3}\label{classMesh_a2c56ce7eb4124760b990410c2d0339e3}} 
+unsigned int {\bfseries vertex\+Count}
+\item 
+\mbox{\Hypertarget{classMesh_a01f560d804a533fe7ff145fd53ff12f2}\label{classMesh_a01f560d804a533fe7ff145fd53ff12f2}} 
+bool {\bfseries wireframe}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMesh_a2af137f1571af89172b9c102302c416b}\label{classMesh_a2af137f1571af89172b9c102302c416b}} 
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{Mesh()}{Mesh()}}
+{\footnotesize\ttfamily Mesh\+::\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classMesh}{Mesh}} constructor. \mbox{\Hypertarget{classMesh_a5efe4da1a4c0971cfb037bd70304c303}\label{classMesh_a5efe4da1a4c0971cfb037bd70304c303}} 
+\index{Mesh@{Mesh}!````~Mesh@{$\sim$Mesh}}
+\index{````~Mesh@{$\sim$Mesh}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mesh()}{~Mesh()}}
+{\footnotesize\ttfamily Mesh\+::$\sim$\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classMesh}{Mesh}} destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMesh_a996a8668fa2ca7d95d6d10744c833bc8}\label{classMesh_a996a8668fa2ca7d95d6d10744c833bc8}} 
+\index{Mesh@{Mesh}!draw@{draw}}
+\index{draw@{draw}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Mesh\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Draw the mesh. \mbox{\Hypertarget{classMesh_adff434672a84240ef8bc24e98d091479}\label{classMesh_adff434672a84240ef8bc24e98d091479}} 
+\index{Mesh@{Mesh}!getUvs@{getUvs}}
+\index{getUvs@{getUvs}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{getUvs()}{getUvs()}}
+{\footnotesize\ttfamily const std\+::vector$<$float$>$\& Mesh\+::get\+Uvs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the mesh uvs array. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMesh_a41756799d1d904f6faa390b038cfe65b}\label{classMesh_a41756799d1d904f6faa390b038cfe65b}} 
+\index{Mesh@{Mesh}!getUvsMemorySize@{getUvsMemorySize}}
+\index{getUvsMemorySize@{getUvsMemorySize}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{getUvsMemorySize()}{getUvsMemorySize()}}
+{\footnotesize\ttfamily float Mesh\+::get\+Uvs\+Memory\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the size in bytes of the uvs. \mbox{\Hypertarget{classMesh_a09f597db1ca847f56a3b6d67e0479988}\label{classMesh_a09f597db1ca847f56a3b6d67e0479988}} 
+\index{Mesh@{Mesh}!getVertexCount@{getVertexCount}}
+\index{getVertexCount@{getVertexCount}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{getVertexCount()}{getVertexCount()}}
+{\footnotesize\ttfamily unsigned int Mesh\+::get\+Vertex\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the mesh vertex count. \mbox{\Hypertarget{classMesh_a3975a57573aa543e3c39acbe2a8566cb}\label{classMesh_a3975a57573aa543e3c39acbe2a8566cb}} 
+\index{Mesh@{Mesh}!getVertices@{getVertices}}
+\index{getVertices@{getVertices}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{getVertices()}{getVertices()}}
+{\footnotesize\ttfamily const std\+::vector$<$float$>$\& Mesh\+::get\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the mesh vertices. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMesh_a6d63f26cd67650d06ddb72bcd4d59df6}\label{classMesh_a6d63f26cd67650d06ddb72bcd4d59df6}} 
+\index{Mesh@{Mesh}!getVerticesMemorySize@{getVerticesMemorySize}}
+\index{getVerticesMemorySize@{getVerticesMemorySize}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{getVerticesMemorySize()}{getVerticesMemorySize()}}
+{\footnotesize\ttfamily float Mesh\+::get\+Vertices\+Memory\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the size in bytes of the vertices. \mbox{\Hypertarget{classMesh_a76ac540c1cbd21634fbe27b4aa85ab50}\label{classMesh_a76ac540c1cbd21634fbe27b4aa85ab50}} 
+\index{Mesh@{Mesh}!isWireframe@{isWireframe}}
+\index{isWireframe@{isWireframe}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{isWireframe()}{isWireframe()}}
+{\footnotesize\ttfamily bool Mesh\+::is\+Wireframe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return wireframe enabled. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMesh_a29d3d37a9fe658ad216860b5d85c4a84}\label{classMesh_a29d3d37a9fe658ad216860b5d85c4a84}} 
+\index{Mesh@{Mesh}!setUvs@{setUvs}}
+\index{setUvs@{setUvs}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{setUvs()}{setUvs()}}
+{\footnotesize\ttfamily void Mesh\+::set\+Uvs (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$}]{uvs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the mesh uvs array. 
+\begin{DoxyParams}{Parameters}
+{\em uvs} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMesh_a25843b82a4ccba520195c66e170be3fc}\label{classMesh_a25843b82a4ccba520195c66e170be3fc}} 
+\index{Mesh@{Mesh}!setVertexCount@{setVertexCount}}
+\index{setVertexCount@{setVertexCount}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{setVertexCount()}{setVertexCount()}}
+{\footnotesize\ttfamily void Mesh\+::set\+Vertex\+Count (\begin{DoxyParamCaption}\item[{unsigned int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the vertex count of the mesh. \mbox{\Hypertarget{classMesh_a75a296d00b2be8ebc6315ef875132595}\label{classMesh_a75a296d00b2be8ebc6315ef875132595}} 
+\index{Mesh@{Mesh}!setWireframe@{setWireframe}}
+\index{setWireframe@{setWireframe}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{setWireframe()}{setWireframe()}}
+{\footnotesize\ttfamily void Mesh\+::set\+Wireframe (\begin{DoxyParamCaption}\item[{bool}]{wireframe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set wireframe enabled. 
+\begin{DoxyParams}{Parameters}
+{\em wireframe} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+Geometry/Mesh.\+h\item 
+Engine/src/\+Geometry/Mesh.\+cpp\end{DoxyCompactItemize}
