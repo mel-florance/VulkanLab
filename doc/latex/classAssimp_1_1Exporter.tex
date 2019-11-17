@@ -1,0 +1,244 @@
+\hypertarget{classAssimp_1_1Exporter}{}\doxysection{Assimp\+::Exporter Class Reference}
+\label{classAssimp_1_1Exporter}\index{Assimp::Exporter@{Assimp::Exporter}}
+
+
+{\ttfamily \#include $<$Exporter.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structAssimp_1_1Exporter_1_1ExportFormatEntry}{Export\+Format\+Entry}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{classAssimp_1_1Exporter_a6641de13026c5ce4a05ead71a8097204}{fp\+Export\+Func}}) (const char $\ast$, \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} $\ast$, const ai\+Scene $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Exporter_a054201cf78fa352b1281ea8b484f6e3a}{Set\+I\+O\+Handler}} (\mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} $\ast$p\+I\+O\+Handler)
+\item 
+\mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} $\ast$ \mbox{\hyperlink{classAssimp_1_1Exporter_a360f711e560410ce55f6bd2673a6cd85}{Get\+I\+O\+Handler}} () const
+\item 
+bool \mbox{\hyperlink{classAssimp_1_1Exporter_a78735bb79173a37f9d3126577244be7b}{Is\+Default\+I\+O\+Handler}} () const
+\item 
+const \mbox{\hyperlink{structaiExportDataBlob}{ai\+Export\+Data\+Blob}} $\ast$ \mbox{\hyperlink{classAssimp_1_1Exporter_a390c0950a3a164fc431e0797ae1a84d1}{Export\+To\+Blob}} (const ai\+Scene $\ast$p\+Scene, const char $\ast$p\+Format\+Id, unsigned int p\+Preprocessing=0u)
+\item 
+\mbox{\Hypertarget{classAssimp_1_1Exporter_a02aa8c453879dc9365e7ec4d1e8d7413}\label{classAssimp_1_1Exporter_a02aa8c453879dc9365e7ec4d1e8d7413}} 
+const \mbox{\hyperlink{structaiExportDataBlob}{ai\+Export\+Data\+Blob}} $\ast$ {\bfseries Export\+To\+Blob} (const ai\+Scene $\ast$p\+Scene, const std\+::string \&p\+Format\+Id, unsigned int p\+Preprocessing=0u)
+\item 
+ai\+Return \mbox{\hyperlink{classAssimp_1_1Exporter_ab8edf249172567a78ca302278a415e35}{Export}} (const ai\+Scene $\ast$p\+Scene, const char $\ast$p\+Format\+Id, const char $\ast$p\+Path, unsigned int p\+Preprocessing=0u)
+\item 
+\mbox{\Hypertarget{classAssimp_1_1Exporter_aec681d38ca0bef85a015c64831a3566a}\label{classAssimp_1_1Exporter_aec681d38ca0bef85a015c64831a3566a}} 
+ai\+Return {\bfseries Export} (const ai\+Scene $\ast$p\+Scene, const std\+::string \&p\+Format\+Id, const std\+::string \&p\+Path, unsigned int p\+Preprocessing=0u)
+\item 
+const char $\ast$ \mbox{\hyperlink{classAssimp_1_1Exporter_a5033fb7490dc2f4ac4d69d4d146a690a}{Get\+Error\+String}} () const
+\item 
+const \mbox{\hyperlink{structaiExportDataBlob}{ai\+Export\+Data\+Blob}} $\ast$ \mbox{\hyperlink{classAssimp_1_1Exporter_af6d84e8c9775de2d11666dad15c11f06}{Get\+Blob}} () const
+\item 
+const \mbox{\hyperlink{structaiExportDataBlob}{ai\+Export\+Data\+Blob}} $\ast$ \mbox{\hyperlink{classAssimp_1_1Exporter_acc64a9737f5d9e0efc03088cadce0096}{Get\+Orphaned\+Blob}} () const
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Exporter_a8200b618c21c272c839c37060a871d48}{Free\+Blob}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classAssimp_1_1Exporter_abc7d35254b0191ba97dccee597364084}{Get\+Export\+Format\+Count}} () const
+\item 
+const \mbox{\hyperlink{structaiExportFormatDesc}{ai\+Export\+Format\+Desc}} $\ast$ \mbox{\hyperlink{classAssimp_1_1Exporter_afd770d782263123f4d6c14f2f8648b04}{Get\+Export\+Format\+Description}} (size\+\_\+t p\+Index) const
+\item 
+ai\+Return \mbox{\hyperlink{classAssimp_1_1Exporter_ae65025d7c5a06a0c3e8655585f87e1c4}{Register\+Exporter}} (const \mbox{\hyperlink{structAssimp_1_1Exporter_1_1ExportFormatEntry}{Export\+Format\+Entry}} \&desc)
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Exporter_afa5956ce18138b90396c505468d1e52b}{Unregister\+Exporter}} (const char $\ast$id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAssimp_1_1Exporter_a75bc178ae29edc192e1c1935c31c42b2}\label{classAssimp_1_1Exporter_a75bc178ae29edc192e1c1935c31c42b2}} 
+Exporter\+Pimpl $\ast$ {\bfseries pimpl}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+C\+P\+P-\/\+A\+PI\+: The \mbox{\hyperlink{classAssimp_1_1Exporter}{Exporter}} class forms an C++ interface to the export functionality of the Open \mbox{\hyperlink{classAsset}{Asset}} Import Library. Note that the export interface is available only if \mbox{\hyperlink{namespaceAssimp}{Assimp}} has been built with A\+S\+S\+I\+M\+P\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+O\+\_\+\+E\+X\+P\+O\+RT not defined.
+
+The interface is modelled after the importer interface and mostly symmetric. The same rules for threading etc. apply.
+
+In a nutshell, there are two export interfaces\+: \mbox{\hyperlink{classAssimp_1_1Exporter_ab8edf249172567a78ca302278a415e35}{Export}}, which writes the output file(s) either to the regular file system or to a user-\/supplied \#\+I\+O\+System, and \mbox{\hyperlink{classAssimp_1_1Exporter_a390c0950a3a164fc431e0797ae1a84d1}{Export\+To\+Blob}} which returns a linked list of memory buffers (blob), each referring to one output file (in most cases there will be only one output file of course, but this extra complexity is needed since \mbox{\hyperlink{namespaceAssimp}{Assimp}} aims at supporting a wide range of file formats).
+
+\mbox{\hyperlink{classAssimp_1_1Exporter_a390c0950a3a164fc431e0797ae1a84d1}{Export\+To\+Blob}} is especially useful if you intend to work with the data in-\/memory. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classAssimp_1_1Exporter_a6641de13026c5ce4a05ead71a8097204}\label{classAssimp_1_1Exporter_a6641de13026c5ce4a05ead71a8097204}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!fpExportFunc@{fpExportFunc}}
+\index{fpExportFunc@{fpExportFunc}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{fpExportFunc}{fpExportFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ Assimp\+::\+Exporter\+::fp\+Export\+Func) (const char $\ast$, \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} $\ast$, const ai\+Scene $\ast$)}
+
+Function pointer type of a Export worker function 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAssimp_1_1Exporter_ab8edf249172567a78ca302278a415e35}\label{classAssimp_1_1Exporter_ab8edf249172567a78ca302278a415e35}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!Export@{Export}}
+\index{Export@{Export}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{Export()}{Export()}}
+{\footnotesize\ttfamily ai\+Return Assimp\+::\+Exporter\+::\+Export (\begin{DoxyParamCaption}\item[{const ai\+Scene $\ast$}]{p\+Scene,  }\item[{const char $\ast$}]{p\+Format\+Id,  }\item[{const char $\ast$}]{p\+Path,  }\item[{unsigned int}]{p\+Preprocessing = {\ttfamily 0u} }\end{DoxyParamCaption})}
+
+Convenience function to export directly to a file. Use \#\+Set\+I\+O\+System to supply a custom \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} to gain fine-\/grained control about the output data flow of the export process. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Blob} & A data blob obtained from a previous call to \mbox{\hyperlink{cexport_8h_a9615510b8430a9da4f435a72148128dd}{ai\+Export\+Scene}}. Must not be N\+U\+LL. \\
+\hline
+{\em p\+Path} & Full target file name. Target must be accessible. \\
+\hline
+{\em p\+Preprocessing} & Accepts any choice of the \#ai\+Post\+Processing enumerated flags, but in reality only a subset of them makes sense here. Specifying \textquotesingle{}preprocessing\textquotesingle{} flags is useful if the input scene does not conform to \mbox{\hyperlink{namespaceAssimp}{Assimp}}\textquotesingle{}s default conventions as specified in the \mbox{\hyperlink{}{Data Structures Page }}. In short, this means the geometry data should use a right-\/handed coordinate systems, face winding should be counter-\/clockwise and the UV coordinate origin is assumed to be in the upper left. The \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a133fd1162674e68bf8cd17070898a936}{ai\+Process\+\_\+\+Make\+Left\+Handed}}, \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a06922b6a1f1cd8186f9fdafb471c813e}{ai\+Process\+\_\+\+Flip\+U\+Vs}} and \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a429a11bf7ace46f039f55de895505d4a}{ai\+Process\+\_\+\+Flip\+Winding\+Order}} flags are used in the import side to allow users to have those defaults automatically adapted to their conventions. Specifying those flags for exporting has the opposite effect, respectively. Some other of the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}} enumerated values may be useful as well, but you\textquotesingle{}ll need to try out what their effect on the exported file is. Many formats impose their own restrictions on the structure of the geometry stored therein, so some preprocessing may have little or no effect at all, or may be redundant as exporters would apply them anyhow. A good example is triangulation -\/ whilst you can enforce it by specifying the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b}{ai\+Process\+\_\+\+Triangulate}} flag, most export formats support only triangulate data so they would run the step even if it wasn\textquotesingle{}t requested.\\
+\hline
+\end{DoxyParams}
+If assimp detects that the input scene was directly taken from the importer side of the library (i.\+e. not copied using ai\+Copy\+Scene and potetially modified afterwards), any postprocessing steps already applied to the scene will not be applied again, unless they show non-\/idempotent behaviour (\mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a133fd1162674e68bf8cd17070898a936}{ai\+Process\+\_\+\+Make\+Left\+Handed}}, \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a06922b6a1f1cd8186f9fdafb471c813e}{ai\+Process\+\_\+\+Flip\+U\+Vs}} and \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a429a11bf7ace46f039f55de895505d4a}{ai\+Process\+\_\+\+Flip\+Winding\+Order}}). \begin{DoxyReturn}{Returns}
+A\+I\+\_\+\+S\+U\+C\+C\+E\+SS if everything was fine. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Use \mbox{\hyperlink{cexport_8h_a3b462a882e970cd7f492e293e5dee4fe}{ai\+Copy\+Scene()}} to get a modifiable copy of a previously imported scene. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classAssimp_1_1Exporter_a390c0950a3a164fc431e0797ae1a84d1}\label{classAssimp_1_1Exporter_a390c0950a3a164fc431e0797ae1a84d1}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!ExportToBlob@{ExportToBlob}}
+\index{ExportToBlob@{ExportToBlob}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{ExportToBlob()}{ExportToBlob()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structaiExportDataBlob}{ai\+Export\+Data\+Blob}}$\ast$ Assimp\+::\+Exporter\+::\+Export\+To\+Blob (\begin{DoxyParamCaption}\item[{const ai\+Scene $\ast$}]{p\+Scene,  }\item[{const char $\ast$}]{p\+Format\+Id,  }\item[{unsigned int}]{p\+Preprocessing = {\ttfamily 0u} }\end{DoxyParamCaption})}
+
+Exports the given scene to a chosen file format. Returns the exported data as a binary blob which you can write into a file or something. When you\textquotesingle{}re done with the data, simply let the \#\+Exporter instance go out of scope to have it released automatically. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Scene} & The scene to export. Stays in possession of the caller, is not changed by the function. \\
+\hline
+{\em p\+Format\+Id} & ID string to specify to which format you want to export to. Use \mbox{\hyperlink{classAssimp_1_1Exporter_abc7d35254b0191ba97dccee597364084}{Get\+Export\+Format\+Count}} / \mbox{\hyperlink{classAssimp_1_1Exporter_afd770d782263123f4d6c14f2f8648b04}{Get\+Export\+Format\+Description}} to learn which export formats are available. \\
+\hline
+{\em p\+Preprocessing} & See the documentation for \mbox{\hyperlink{classAssimp_1_1Exporter_ab8edf249172567a78ca302278a415e35}{Export}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the exported data or N\+U\+LL in case of error. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+If the \mbox{\hyperlink{classAssimp_1_1Exporter}{Exporter}} instance did already hold a blob from a previous call to \mbox{\hyperlink{classAssimp_1_1Exporter_a390c0950a3a164fc431e0797ae1a84d1}{Export\+To\+Blob}}, it will be disposed. Any IO handlers set via \mbox{\hyperlink{classAssimp_1_1Exporter_a054201cf78fa352b1281ea8b484f6e3a}{Set\+I\+O\+Handler}} are ignored here. 
+
+Use \mbox{\hyperlink{cexport_8h_a3b462a882e970cd7f492e293e5dee4fe}{ai\+Copy\+Scene()}} to get a modifiable copy of a previously imported scene. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classAssimp_1_1Exporter_a8200b618c21c272c839c37060a871d48}\label{classAssimp_1_1Exporter_a8200b618c21c272c839c37060a871d48}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!FreeBlob@{FreeBlob}}
+\index{FreeBlob@{FreeBlob}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{FreeBlob()}{FreeBlob()}}
+{\footnotesize\ttfamily void Assimp\+::\+Exporter\+::\+Free\+Blob (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Frees the current blob.
+
+The function does nothing if no blob has previously been previously produced via \mbox{\hyperlink{classAssimp_1_1Exporter_a390c0950a3a164fc431e0797ae1a84d1}{Export\+To\+Blob}}. \mbox{\hyperlink{classAssimp_1_1Exporter_a8200b618c21c272c839c37060a871d48}{Free\+Blob}} is called automatically by the destructor. The only reason to call it manually would be to reclain as much storage as possible without giving up the \#\+Exporter instance yet. \mbox{\Hypertarget{classAssimp_1_1Exporter_af6d84e8c9775de2d11666dad15c11f06}\label{classAssimp_1_1Exporter_af6d84e8c9775de2d11666dad15c11f06}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!GetBlob@{GetBlob}}
+\index{GetBlob@{GetBlob}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{GetBlob()}{GetBlob()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structaiExportDataBlob}{ai\+Export\+Data\+Blob}}$\ast$ Assimp\+::\+Exporter\+::\+Get\+Blob (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the blob obtained from the last call to \mbox{\hyperlink{classAssimp_1_1Exporter_a390c0950a3a164fc431e0797ae1a84d1}{Export\+To\+Blob}} \mbox{\Hypertarget{classAssimp_1_1Exporter_a5033fb7490dc2f4ac4d69d4d146a690a}\label{classAssimp_1_1Exporter_a5033fb7490dc2f4ac4d69d4d146a690a}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!GetErrorString@{GetErrorString}}
+\index{GetErrorString@{GetErrorString}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{GetErrorString()}{GetErrorString()}}
+{\footnotesize\ttfamily const char$\ast$ Assimp\+::\+Exporter\+::\+Get\+Error\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns an error description of an error that occurred in \mbox{\hyperlink{classAssimp_1_1Exporter_ab8edf249172567a78ca302278a415e35}{Export}} or \mbox{\hyperlink{classAssimp_1_1Exporter_a390c0950a3a164fc431e0797ae1a84d1}{Export\+To\+Blob}}
+
+Returns an empty string if no error occurred. \begin{DoxyReturn}{Returns}
+A description of the last error, an empty string if no error occurred. The string is never N\+U\+LL.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned function remains valid until one of the following methods is called\+: \mbox{\hyperlink{classAssimp_1_1Exporter_ab8edf249172567a78ca302278a415e35}{Export}}, \mbox{\hyperlink{classAssimp_1_1Exporter_a390c0950a3a164fc431e0797ae1a84d1}{Export\+To\+Blob}}, \mbox{\hyperlink{classAssimp_1_1Exporter_a8200b618c21c272c839c37060a871d48}{Free\+Blob}} 
+\end{DoxyNote}
+\mbox{\Hypertarget{classAssimp_1_1Exporter_abc7d35254b0191ba97dccee597364084}\label{classAssimp_1_1Exporter_abc7d35254b0191ba97dccee597364084}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!GetExportFormatCount@{GetExportFormatCount}}
+\index{GetExportFormatCount@{GetExportFormatCount}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{GetExportFormatCount()}{GetExportFormatCount()}}
+{\footnotesize\ttfamily size\+\_\+t Assimp\+::\+Exporter\+::\+Get\+Export\+Format\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the number of export file formats available in the current \mbox{\hyperlink{namespaceAssimp}{Assimp}} build. Use \#\+Exporter\+::\+Get\+Export\+Format\+Description to retrieve infos of a specific export format \mbox{\Hypertarget{classAssimp_1_1Exporter_afd770d782263123f4d6c14f2f8648b04}\label{classAssimp_1_1Exporter_afd770d782263123f4d6c14f2f8648b04}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!GetExportFormatDescription@{GetExportFormatDescription}}
+\index{GetExportFormatDescription@{GetExportFormatDescription}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{GetExportFormatDescription()}{GetExportFormatDescription()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structaiExportFormatDesc}{ai\+Export\+Format\+Desc}}$\ast$ Assimp\+::\+Exporter\+::\+Get\+Export\+Format\+Description (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{p\+Index }\end{DoxyParamCaption}) const}
+
+Returns a description of the nth export file format. Use \# \#\+Exporter\+::\+Get\+Export\+Format\+Count to learn how many export formats are supported. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Index} & Index of the export format to retrieve information for. Valid range is 0 to \#\+Exporter\+::\+Get\+Export\+Format\+Count \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A description of that specific export format. N\+U\+LL if p\+Index is out of range. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Exporter_a360f711e560410ce55f6bd2673a6cd85}\label{classAssimp_1_1Exporter_a360f711e560410ce55f6bd2673a6cd85}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!GetIOHandler@{GetIOHandler}}
+\index{GetIOHandler@{GetIOHandler}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{GetIOHandler()}{GetIOHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}}$\ast$ Assimp\+::\+Exporter\+::\+Get\+I\+O\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retrieves the IO handler that is currently set. You can use \mbox{\hyperlink{classAssimp_1_1Exporter_a78735bb79173a37f9d3126577244be7b}{Is\+Default\+I\+O\+Handler()}} to check whether the returned interface is the default IO handler provided by A\+S\+S\+I\+MP. The default handler is active as long the application doesn\textquotesingle{}t supply its own custom IO handler via \mbox{\hyperlink{classAssimp_1_1Exporter_a054201cf78fa352b1281ea8b484f6e3a}{Set\+I\+O\+Handler()}}. \begin{DoxyReturn}{Returns}
+A valid \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} interface, never N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Exporter_acc64a9737f5d9e0efc03088cadce0096}\label{classAssimp_1_1Exporter_acc64a9737f5d9e0efc03088cadce0096}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!GetOrphanedBlob@{GetOrphanedBlob}}
+\index{GetOrphanedBlob@{GetOrphanedBlob}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{GetOrphanedBlob()}{GetOrphanedBlob()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structaiExportDataBlob}{ai\+Export\+Data\+Blob}}$\ast$ Assimp\+::\+Exporter\+::\+Get\+Orphaned\+Blob (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Orphan the blob from the last call to \mbox{\hyperlink{classAssimp_1_1Exporter_a390c0950a3a164fc431e0797ae1a84d1}{Export\+To\+Blob}}. This means the caller takes ownership and is thus responsible for calling the C A\+PI function \mbox{\hyperlink{cexport_8h_a0998064849f2ef5544f6fd30cda0b964}{ai\+Release\+Export\+Blob}} to release it. \mbox{\Hypertarget{classAssimp_1_1Exporter_a78735bb79173a37f9d3126577244be7b}\label{classAssimp_1_1Exporter_a78735bb79173a37f9d3126577244be7b}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!IsDefaultIOHandler@{IsDefaultIOHandler}}
+\index{IsDefaultIOHandler@{IsDefaultIOHandler}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{IsDefaultIOHandler()}{IsDefaultIOHandler()}}
+{\footnotesize\ttfamily bool Assimp\+::\+Exporter\+::\+Is\+Default\+I\+O\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Checks whether a default IO handler is active A default handler is active as long the application doesn\textquotesingle{}t supply its own custom IO handler via \mbox{\hyperlink{classAssimp_1_1Exporter_a054201cf78fa352b1281ea8b484f6e3a}{Set\+I\+O\+Handler()}}. \begin{DoxyReturn}{Returns}
+true by default 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Exporter_ae65025d7c5a06a0c3e8655585f87e1c4}\label{classAssimp_1_1Exporter_ae65025d7c5a06a0c3e8655585f87e1c4}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!RegisterExporter@{RegisterExporter}}
+\index{RegisterExporter@{RegisterExporter}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{RegisterExporter()}{RegisterExporter()}}
+{\footnotesize\ttfamily ai\+Return Assimp\+::\+Exporter\+::\+Register\+Exporter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structAssimp_1_1Exporter_1_1ExportFormatEntry}{Export\+Format\+Entry}} \&}]{desc }\end{DoxyParamCaption})}
+
+Register a custom exporter. Custom export formats are limited to to the current \#\+Exporter instance and do not affect the library globally. 
+\begin{DoxyParams}{Parameters}
+{\em desc} & \mbox{\hyperlink{classAssimp_1_1Exporter}{Exporter}} description. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ai\+Return\+\_\+\+S\+U\+C\+C\+E\+SS if the export format was successfully registered. A common cause that would prevent an exporter from being registered is that its format id is already occupied by another format. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Exporter_a054201cf78fa352b1281ea8b484f6e3a}\label{classAssimp_1_1Exporter_a054201cf78fa352b1281ea8b484f6e3a}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!SetIOHandler@{SetIOHandler}}
+\index{SetIOHandler@{SetIOHandler}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{SetIOHandler()}{SetIOHandler()}}
+{\footnotesize\ttfamily void Assimp\+::\+Exporter\+::\+Set\+I\+O\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} $\ast$}]{p\+I\+O\+Handler }\end{DoxyParamCaption})}
+
+Supplies a custom IO handler to the exporter to use to open and access files.
+
+If you need \mbox{\hyperlink{classAssimp_1_1Exporter_ab8edf249172567a78ca302278a415e35}{Export}} to use custom IO logic to access the files, you need to supply a custom implementation of \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} and I\+O\+File to the exporter.
+
+\#\+Exporter takes ownership of the object and will destroy it afterwards. The previously assigned handler will be deleted. Pass N\+U\+LL to take again ownership of your \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} and reset \mbox{\hyperlink{namespaceAssimp}{Assimp}} to use its default implementation, which uses plain file IO.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+I\+O\+Handler} & The IO handler to be used in all file accesses of the \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssimp_1_1Exporter_afa5956ce18138b90396c505468d1e52b}\label{classAssimp_1_1Exporter_afa5956ce18138b90396c505468d1e52b}} 
+\index{Assimp::Exporter@{Assimp::Exporter}!UnregisterExporter@{UnregisterExporter}}
+\index{UnregisterExporter@{UnregisterExporter}!Assimp::Exporter@{Assimp::Exporter}}
+\doxysubsubsection{\texorpdfstring{UnregisterExporter()}{UnregisterExporter()}}
+{\footnotesize\ttfamily void Assimp\+::\+Exporter\+::\+Unregister\+Exporter (\begin{DoxyParamCaption}\item[{const char $\ast$}]{id }\end{DoxyParamCaption})}
+
+Remove an export format previously registered with \mbox{\hyperlink{classAssimp_1_1Exporter_ae65025d7c5a06a0c3e8655585f87e1c4}{Register\+Exporter}} from the \#\+Exporter instance (this can also be used to drop builtin exporters because those are implicitly registered using \mbox{\hyperlink{classAssimp_1_1Exporter_ae65025d7c5a06a0c3e8655585f87e1c4}{Register\+Exporter}}). 
+\begin{DoxyParams}{Parameters}
+{\em id} & Format id to be unregistered, this refers to the \textquotesingle{}id\textquotesingle{} field of \mbox{\hyperlink{structaiExportFormatDesc}{ai\+Export\+Format\+Desc}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Calling this method on a format description not yet registered has no effect. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/assimp/Exporter.\+hpp\end{DoxyCompactItemize}

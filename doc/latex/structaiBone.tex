@@ -1,0 +1,44 @@
+\hypertarget{structaiBone}{}\doxysection{ai\+Bone Struct Reference}
+\label{structaiBone}\index{aiBone@{aiBone}}
+
+
+A single bone of a mesh.  
+
+
+
+
+{\ttfamily \#include $<$mesh.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structaiBone_acfb9bfd2a2c6302181d7c3cc1bb8bbf0}\label{structaiBone_acfb9bfd2a2c6302181d7c3cc1bb8bbf0}} 
+C\+\_\+\+S\+T\+R\+U\+CT \mbox{\hyperlink{structaiString}{ai\+String}} \mbox{\hyperlink{structaiBone_acfb9bfd2a2c6302181d7c3cc1bb8bbf0}{m\+Name}}
+\begin{DoxyCompactList}\small\item\em The name of the bone. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structaiBone_a87a79d42a0132753aac66397ad6f9b71}{m\+Num\+Weights}}
+\item 
+\mbox{\Hypertarget{structaiBone_ade36319714b58c03ad46aae30a2724a4}\label{structaiBone_ade36319714b58c03ad46aae30a2724a4}} 
+C\+\_\+\+S\+T\+R\+U\+CT \mbox{\hyperlink{structaiVertexWeight}{ai\+Vertex\+Weight}} $\ast$ \mbox{\hyperlink{structaiBone_ade36319714b58c03ad46aae30a2724a4}{m\+Weights}}
+\begin{DoxyCompactList}\small\item\em The vertices affected by this bone. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structaiBone_a1dd6c4f24a1384c05da281692be3e78d}\label{structaiBone_a1dd6c4f24a1384c05da281692be3e78d}} 
+C\+\_\+\+S\+T\+R\+U\+CT \mbox{\hyperlink{structaiMatrix4x4}{ai\+Matrix4x4}} \mbox{\hyperlink{structaiBone_a1dd6c4f24a1384c05da281692be3e78d}{m\+Offset\+Matrix}}
+\begin{DoxyCompactList}\small\item\em Matrix that transforms from mesh space to bone space in bind pose. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A single bone of a mesh. 
+
+A bone has a name by which it can be found in the frame hierarchy and by which it can be addressed by animations. In addition it has a number of influences on vertices. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structaiBone_a87a79d42a0132753aac66397ad6f9b71}\label{structaiBone_a87a79d42a0132753aac66397ad6f9b71}} 
+\index{aiBone@{aiBone}!mNumWeights@{mNumWeights}}
+\index{mNumWeights@{mNumWeights}!aiBone@{aiBone}}
+\doxysubsubsection{\texorpdfstring{mNumWeights}{mNumWeights}}
+{\footnotesize\ttfamily unsigned int ai\+Bone\+::m\+Num\+Weights}
+
+The number of vertices affected by this bone The maximum value for this member is \mbox{\hyperlink{mesh_8h_a565e88bbf36ef4957f1229609e51b7f6}{A\+I\+\_\+\+M\+A\+X\+\_\+\+B\+O\+N\+E\+\_\+\+W\+E\+I\+G\+H\+TS}}. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/assimp/\mbox{\hyperlink{mesh_8h}{mesh.\+h}}\end{DoxyCompactItemize}

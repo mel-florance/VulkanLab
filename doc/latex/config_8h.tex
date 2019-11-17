@@ -1,0 +1,816 @@
+\hypertarget{config_8h}{}\doxysection{include/assimp/config.h File Reference}
+\label{config_8h}\index{include/assimp/config.h@{include/assimp/config.h}}
+
+
+Defines constants for configurable properties for the library.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{config_8h_ae67105a77014e256f4c242504881c261}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+G\+L\+O\+B\+\_\+\+M\+E\+A\+S\+U\+R\+E\+\_\+\+T\+I\+ME}}~\char`\"{}G\+L\+O\+B\+\_\+\+M\+E\+A\+S\+U\+R\+E\+\_\+\+T\+I\+ME\char`\"{}
+\begin{DoxyCompactList}\small\item\em Enables time measurements. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a75351a98fd8d4c367d326b914169f9d6}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+N\+O\+\_\+\+S\+K\+E\+L\+E\+T\+O\+N\+\_\+\+M\+E\+S\+H\+ES}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+N\+O\+\_\+\+S\+K\+E\+L\+E\+T\+O\+N\+\_\+\+M\+E\+S\+H\+ES\char`\"{}
+\begin{DoxyCompactList}\small\item\em Global setting to disable generation of skeleton dummy meshes. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_ada7420ed15ce65797bcb1943feab2085}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+S\+B\+B\+C\+\_\+\+M\+A\+X\+\_\+\+B\+O\+N\+ES}}~\char`\"{}P\+P\+\_\+\+S\+B\+B\+C\+\_\+\+M\+A\+X\+\_\+\+B\+O\+N\+ES\char`\"{}
+\begin{DoxyCompactList}\small\item\em Maximum bone count per mesh for the Splitby\+Bone\+Count step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_a5241c80c29b4ef83683f34b58ca230dc}\label{config_8h_a5241c80c29b4ef83683f34b58ca230dc}} 
+\#define {\bfseries A\+I\+\_\+\+S\+B\+B\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+B\+O\+N\+ES}~60
+\item 
+\#define \mbox{\hyperlink{config_8h_a17376a5a00287843581a4f668291f49d}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+C\+T\+\_\+\+M\+A\+X\+\_\+\+S\+M\+O\+O\+T\+H\+I\+N\+G\+\_\+\+A\+N\+G\+LE}}~\char`\"{}P\+P\+\_\+\+C\+T\+\_\+\+M\+A\+X\+\_\+\+S\+M\+O\+O\+T\+H\+I\+N\+G\+\_\+\+A\+N\+G\+LE\char`\"{}
+\begin{DoxyCompactList}\small\item\em Specifies the maximum angle that may be between two vertex tangents that their tangents and bi-\/tangents are smoothed. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a1b2fa19a9636ba523569f0106dfe2c14}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+C\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+I\+N\+D\+EX}}~\char`\"{}P\+P\+\_\+\+C\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+I\+N\+D\+EX\char`\"{}
+\begin{DoxyCompactList}\small\item\em Source UV channel for tangent space computation. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a412ab4b92d48adbddc81c1c9a190493f}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+G\+S\+N\+\_\+\+M\+A\+X\+\_\+\+S\+M\+O\+O\+T\+H\+I\+N\+G\+\_\+\+A\+N\+G\+LE}}~\char`\"{}P\+P\+\_\+\+G\+S\+N\+\_\+\+M\+A\+X\+\_\+\+S\+M\+O\+O\+T\+H\+I\+N\+G\+\_\+\+A\+N\+G\+LE\char`\"{}
+\begin{DoxyCompactList}\small\item\em Specifies the maximum angle that may be between two face normals at the same vertex position that their are smoothed together. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a243ffb53e27a913b92cdb38bb951da7d}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D\+L\+\_\+\+C\+O\+L\+O\+R\+M\+AP}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D\+L\+\_\+\+C\+O\+L\+O\+R\+M\+AP\char`\"{}
+\begin{DoxyCompactList}\small\item\em Sets the colormap (= palette) to be used to decode embedded textures in M\+DL (Quake or 3D\+GS) files. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a5a7a5d8c18ffe39d29834a0737e2bce9}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+R\+R\+M\+\_\+\+E\+X\+C\+L\+U\+D\+E\+\_\+\+L\+I\+ST}}~\char`\"{}P\+P\+\_\+\+R\+R\+M\+\_\+\+E\+X\+C\+L\+U\+D\+E\+\_\+\+L\+I\+ST\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a052d2921c33cd21141480b8f25524bb1}{ai\+Process\+\_\+\+Remove\+Redundant\+Materials}} step to keep materials matching a name in a given list. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a04cc3d3a549efd8db4a56eaf554fd327}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+P\+T\+V\+\_\+\+K\+E\+E\+P\+\_\+\+H\+I\+E\+R\+A\+R\+C\+HY}}~\char`\"{}P\+P\+\_\+\+P\+T\+V\+\_\+\+K\+E\+E\+P\+\_\+\+H\+I\+E\+R\+A\+R\+C\+HY\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the \#ai\+Process\+\_\+\+Pretransform\+Vertices step to keep the scene hierarchy. Meshes are moved to worldspace, but no optimization is performed (read\+: meshes with equal materials are not joined. The total number of meshes won\textquotesingle{}t change). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_ad1bf07f321c6f075e9c67f26b551b323}\label{config_8h_ad1bf07f321c6f075e9c67f26b551b323}} 
+\#define \mbox{\hyperlink{config_8h_ad1bf07f321c6f075e9c67f26b551b323}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+P\+T\+V\+\_\+\+N\+O\+R\+M\+A\+L\+I\+ZE}}~\char`\"{}P\+P\+\_\+\+P\+T\+V\+\_\+\+N\+O\+R\+M\+A\+L\+I\+ZE\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the \#ai\+Process\+\_\+\+Pretransform\+Vertices step to normalize all vertex components into the \mbox{[}-\/1,1\mbox{]} range. That is, a bounding box for the whole scene is computed, the maximum component is taken and all meshes are scaled appropriately (uniformly of course!). This might be useful if you don\textquotesingle{}t know the spatial dimension of the input data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_a7548eebdefb242392d23adc61f33fbb4}\label{config_8h_a7548eebdefb242392d23adc61f33fbb4}} 
+\#define \mbox{\hyperlink{config_8h_a7548eebdefb242392d23adc61f33fbb4}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+P\+T\+V\+\_\+\+A\+D\+D\+\_\+\+R\+O\+O\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+ON}}~\char`\"{}P\+P\+\_\+\+P\+T\+V\+\_\+\+A\+D\+D\+\_\+\+R\+O\+O\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+ON\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the \#ai\+Process\+\_\+\+Pretransform\+Vertices step to use a users defined matrix as the scene root node transformation before transforming vertices. Property type\+: bool. Default value\+: false. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_a76b170493e12273427e2b96263c9bf21}\label{config_8h_a76b170493e12273427e2b96263c9bf21}} 
+\#define \mbox{\hyperlink{config_8h_a76b170493e12273427e2b96263c9bf21}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+P\+T\+V\+\_\+\+R\+O\+O\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+ON}}~\char`\"{}P\+P\+\_\+\+P\+T\+V\+\_\+\+R\+O\+O\+T\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+ON\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the \#ai\+Process\+\_\+\+Pretransform\+Vertices step to use a users defined matrix as the scene root node transformation before transforming vertices. This property correspond to the \textquotesingle{}a1\textquotesingle{} component of the transformation matrix. Property type\+: \mbox{\hyperlink{structaiMatrix4x4}{ai\+Matrix4x4}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a3d9c02c1676aae7baf5e079fc72e08d1}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+F\+D\+\_\+\+R\+E\+M\+O\+VE}}~\char`\"{}P\+P\+\_\+\+F\+D\+\_\+\+R\+E\+M\+O\+VE\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410ae1311236ea7a55b7355c5aa535586ad0}{ai\+Process\+\_\+\+Find\+Degenerates}} step to remove degenerated primitives from the import -\/ immediately. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_aa5943736f9c90b709c4bd819afca9798}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+O\+G\+\_\+\+E\+X\+C\+L\+U\+D\+E\+\_\+\+L\+I\+ST}}~\char`\"{}P\+P\+\_\+\+O\+G\+\_\+\+E\+X\+C\+L\+U\+D\+E\+\_\+\+L\+I\+ST\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a3bf6b8cb30289fd27fb2734d67a0889f}{ai\+Process\+\_\+\+Optimize\+Graph}} step to preserve nodes matching a name in a given list. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a28b904b69e6e5261aaae50b858316041}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+S\+L\+M\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+L\+I\+M\+IT}}~\char`\"{}P\+P\+\_\+\+S\+L\+M\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+L\+I\+M\+IT\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set the maximum number of triangles in a mesh. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_abfe0ddcde0e04816e7bc9e429dcd8185}\label{config_8h_abfe0ddcde0e04816e7bc9e429dcd8185}} 
+\#define {\bfseries A\+I\+\_\+\+S\+L\+M\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+T\+R\+I\+A\+N\+G\+L\+ES}~1000000
+\item 
+\#define \mbox{\hyperlink{config_8h_a67d3e772a82c3bbb921ce4d8f2448f2f}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+S\+L\+M\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+L\+I\+M\+IT}}~\char`\"{}P\+P\+\_\+\+S\+L\+M\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+L\+I\+M\+IT\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set the maximum number of vertices in a mesh. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_a3d82573abff7d733ec1f24456662a99d}\label{config_8h_a3d82573abff7d733ec1f24456662a99d}} 
+\#define {\bfseries A\+I\+\_\+\+S\+L\+M\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+V\+E\+R\+T\+I\+C\+ES}~1000000
+\item 
+\#define \mbox{\hyperlink{config_8h_a37c3ad7872523b615d42761f2dc1bdf5}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+L\+B\+W\+\_\+\+M\+A\+X\+\_\+\+W\+E\+I\+G\+H\+TS}}~\char`\"{}P\+P\+\_\+\+L\+B\+W\+\_\+\+M\+A\+X\+\_\+\+W\+E\+I\+G\+H\+TS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set the maximum number of bones affecting a single vertex. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_ab0dbe36911bd9df0661bdb69ecadb2e1}\label{config_8h_ab0dbe36911bd9df0661bdb69ecadb2e1}} 
+\#define {\bfseries A\+I\+\_\+\+L\+M\+W\+\_\+\+M\+A\+X\+\_\+\+W\+E\+I\+G\+H\+TS}~0x4
+\item 
+\#define \mbox{\hyperlink{config_8h_a3f19ce3619d0d54a1bc51cd5e6c73e41}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+D\+B\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}}~\char`\"{}P\+P\+\_\+\+D\+B\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD\char`\"{}
+\begin{DoxyCompactList}\small\item\em Lower the deboning threshold in order to remove more bones. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_ae26293714611a49e9492b0689f74ec04}\label{config_8h_ae26293714611a49e9492b0689f74ec04}} 
+\#define {\bfseries A\+I\+\_\+\+D\+E\+B\+O\+N\+E\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}~1.\+0f
+\item 
+\#define \mbox{\hyperlink{config_8h_a884736c7d7809ad88eec646e9cccbfba}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+D\+B\+\_\+\+A\+L\+L\+\_\+\+O\+R\+\_\+\+N\+O\+NE}}~\char`\"{}P\+P\+\_\+\+D\+B\+\_\+\+A\+L\+L\+\_\+\+O\+R\+\_\+\+N\+O\+NE\char`\"{}
+\begin{DoxyCompactList}\small\item\em Require all bones qualify for deboning before removing any. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_a52df90ae1346e6b39048f7218e04d2f6}\label{config_8h_a52df90ae1346e6b39048f7218e04d2f6}} 
+\#define \mbox{\hyperlink{config_8h_a52df90ae1346e6b39048f7218e04d2f6}{P\+P\+\_\+\+I\+C\+L\+\_\+\+P\+T\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE}}~12
+\begin{DoxyCompactList}\small\item\em Default value for the \mbox{\hyperlink{config_8h_a851b513ea20c4d66a1c012d63dd8e78b}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+I\+C\+L\+\_\+\+P\+T\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE}} property. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a851b513ea20c4d66a1c012d63dd8e78b}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+I\+C\+L\+\_\+\+P\+T\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE}}~\char`\"{}P\+P\+\_\+\+I\+C\+L\+\_\+\+P\+T\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set the size of the post-\/transform vertex cache to optimize the vertices for. This configures the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a16979c68f93d283c6886abf580d557b1}{ai\+Process\+\_\+\+Improve\+Cache\+Locality}} step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_a35df2898d17364850ee68e2fedeb5684}\label{config_8h_a35df2898d17364850ee68e2fedeb5684}} 
+\#define {\bfseries ai\+Component\+\_\+\+C\+O\+L\+O\+R\+Sn}(n)~(1u $<$$<$ (n+20u))
+\item 
+\mbox{\Hypertarget{config_8h_a2dbd50d22cac50370e693912448d1c56}\label{config_8h_a2dbd50d22cac50370e693912448d1c56}} 
+\#define {\bfseries ai\+Component\+\_\+\+T\+E\+X\+C\+O\+O\+R\+D\+Sn}(n)~(1u $<$$<$ (n+25u))
+\item 
+\#define \mbox{\hyperlink{config_8h_afc0a4c00fb90c345eb38fe3f7d7c8637}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+R\+V\+C\+\_\+\+F\+L\+A\+GS}}~\char`\"{}P\+P\+\_\+\+R\+V\+C\+\_\+\+F\+L\+A\+GS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Input parameter to the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a0ab270168bd7a707c0f279045c265e08}{ai\+Process\+\_\+\+Remove\+Component}} step\+: Specifies the parts of the data structure to be removed. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a971e337cb0d526861142586b8341cb98}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+S\+B\+P\+\_\+\+R\+E\+M\+O\+VE}}~\char`\"{}P\+P\+\_\+\+S\+B\+P\+\_\+\+R\+E\+M\+O\+VE\char`\"{}
+\begin{DoxyCompactList}\small\item\em Input parameter to the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410ab4484f73635d633cd79973bac1431ed6}{ai\+Process\+\_\+\+Sort\+By\+P\+Type}} step\+: Specifies which primitive types are removed by the step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_ad223c5e7e63d2937685cc704a181b950}\label{config_8h_ad223c5e7e63d2937685cc704a181b950}} 
+\#define \mbox{\hyperlink{config_8h_ad223c5e7e63d2937685cc704a181b950}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+F\+I\+D\+\_\+\+A\+N\+I\+M\+\_\+\+A\+C\+C\+U\+R\+A\+CY}}~\char`\"{}P\+P\+\_\+\+F\+I\+D\+\_\+\+A\+N\+I\+M\+\_\+\+A\+C\+C\+U\+R\+A\+CY\char`\"{}
+\begin{DoxyCompactList}\small\item\em Input parameter to the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a42a93fc16a7a3b6df509bab503945421}{ai\+Process\+\_\+\+Find\+Invalid\+Data}} step\+: Specifies the floating-\/point accuracy for animation values. The step checks for animation tracks where all frame values are absolutely equal and removes them. This tweakable controls the epsilon for floating-\/point comparisons -\/ two keys are considered equal if the invariant abs(n0-\/n1)$>$epsilon holds true for all vector respectively quaternion components. The default value is 0.\+f -\/ comparisons are exact then. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_a8b39361e58739557a51c97ce92bdf99f}\label{config_8h_a8b39361e58739557a51c97ce92bdf99f}} 
+\#define {\bfseries A\+I\+\_\+\+U\+V\+T\+R\+A\+F\+O\+\_\+\+S\+C\+A\+L\+I\+NG}~0x1
+\item 
+\mbox{\Hypertarget{config_8h_ac0e92a0403c280ec53466de02d430921}\label{config_8h_ac0e92a0403c280ec53466de02d430921}} 
+\#define {\bfseries A\+I\+\_\+\+U\+V\+T\+R\+A\+F\+O\+\_\+\+R\+O\+T\+A\+T\+I\+ON}~0x2
+\item 
+\mbox{\Hypertarget{config_8h_a7ae0ca81d951cb0c16daf5c1bef60de5}\label{config_8h_a7ae0ca81d951cb0c16daf5c1bef60de5}} 
+\#define {\bfseries A\+I\+\_\+\+U\+V\+T\+R\+A\+F\+O\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+ON}~0x4
+\item 
+\mbox{\Hypertarget{config_8h_a1d13742213d0cdec9d5a123b7b58bc45}\label{config_8h_a1d13742213d0cdec9d5a123b7b58bc45}} 
+\#define {\bfseries A\+I\+\_\+\+U\+V\+T\+R\+A\+F\+O\+\_\+\+A\+LL}~(A\+I\+\_\+\+U\+V\+T\+R\+A\+F\+O\+\_\+\+S\+C\+A\+L\+I\+NG $\vert$ A\+I\+\_\+\+U\+V\+T\+R\+A\+F\+O\+\_\+\+R\+O\+T\+A\+T\+I\+ON $\vert$ A\+I\+\_\+\+U\+V\+T\+R\+A\+F\+O\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+ON)
+\item 
+\#define \mbox{\hyperlink{config_8h_a6e4d6d6bccf5407432bb137468997f90}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+T\+U\+V\+\_\+\+E\+V\+A\+L\+U\+A\+TE}}~\char`\"{}P\+P\+\_\+\+T\+U\+V\+\_\+\+E\+V\+A\+L\+U\+A\+TE\char`\"{}
+\begin{DoxyCompactList}\small\item\em Input parameter to the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a87577c60885b193571a10237341b237f}{ai\+Process\+\_\+\+Transform\+U\+V\+Coords}} step\+: Specifies which UV transformations are evaluated. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_ac19aa56fa892f712fd3fb4d95be19114}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+A\+V\+O\+U\+R\+\_\+\+S\+P\+E\+ED}}~\char`\"{}F\+A\+V\+O\+U\+R\+\_\+\+S\+P\+E\+ED\char`\"{}
+\begin{DoxyCompactList}\small\item\em A hint to assimp to favour speed against import quality. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a1c886c292d6da748aa5c298118bbb330}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+A\+L\+L\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+L\+A\+Y\+E\+RS}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+A\+L\+L\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+L\+A\+Y\+E\+RS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set whether the fbx importer will merge all geometry layers present in the source file or take only the first. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a1bdbd5504eb2794f2257dacfbe9de98b}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+A\+L\+L\+\_\+\+M\+A\+T\+E\+R\+I\+A\+LS}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+A\+L\+L\+\_\+\+M\+A\+T\+E\+R\+I\+A\+LS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set whether the fbx importer will read all materials present in the source file or take only the referenced materials. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a65ad7b34f2db3bf5d4fda9bed579d992}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+LS}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+LS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set whether the fbx importer will read materials. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a4b5d39fd0bfa03661de06f870c8ed60d}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+C\+A\+M\+E\+R\+AS}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+C\+A\+M\+E\+R\+AS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set whether the fbx importer will read cameras. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_ac64b303bd269641b5214f67fc6b4c7ff}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+L\+I\+G\+H\+TS}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+L\+I\+G\+H\+TS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set whether the fbx importer will read light sources. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a89f65cee36448e653e07e42263a16e09}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+NS}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+NS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set whether the fbx importer will read animations. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a79ccfadb16e9825d3f9cbc1924d73105}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+S\+T\+R\+I\+C\+T\+\_\+\+M\+O\+DE}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+S\+T\+R\+I\+C\+T\+\_\+\+M\+O\+DE\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set whether the fbx importer will act in strict mode in which only F\+BX 2013 is supported and any other sub formats are rejected. F\+BX 2013 is the primary target for the importer, so this format is best supported and well-\/tested. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_aa288cad0d93533c7d4a06347e5096cd9}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+\_\+\+P\+I\+V\+O\+TS}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+\_\+\+P\+I\+V\+O\+TS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set whether the fbx importer will preserve pivot points for transformations (as extra nodes). If set to false, pivots and offsets will be evaluated whenever possible. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a5b4f9cc390a8d9cf09868e19ac573655}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+O\+P\+T\+I\+M\+I\+Z\+E\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+C\+U\+R\+V\+ES}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+O\+P\+T\+I\+M\+I\+Z\+E\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+C\+U\+R\+V\+ES\char`\"{}
+\begin{DoxyCompactList}\small\item\em Specifies whether the importer will drop empty animation curves or animation curves which match the bind pose transformation over their entire defined range. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_ad8670ee6d237f2d2f3b60c61e0dead15}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+G\+L\+O\+B\+A\+L\+\_\+\+K\+E\+Y\+F\+R\+A\+ME}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+G\+L\+O\+B\+A\+L\+\_\+\+K\+E\+Y\+F\+R\+A\+ME\char`\"{}
+\begin{DoxyCompactList}\small\item\em Set the vertex animation keyframe to be imported. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_ade66e668151d5d1468116ffde6954f2a}\label{config_8h_ade66e668151d5d1468116ffde6954f2a}} 
+\#define {\bfseries A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+K\+E\+Y\+F\+R\+A\+ME}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+K\+E\+Y\+F\+R\+A\+ME\char`\"{}
+\item 
+\mbox{\Hypertarget{config_8h_a00845e63629bb9c20473122130a2286f}\label{config_8h_a00845e63629bb9c20473122130a2286f}} 
+\#define {\bfseries A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D2\+\_\+\+K\+E\+Y\+F\+R\+A\+ME}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D2\+\_\+\+K\+E\+Y\+F\+R\+A\+ME\char`\"{}
+\item 
+\mbox{\Hypertarget{config_8h_a5a9b8a7407fce531b8442f07de548b8e}\label{config_8h_a5a9b8a7407fce531b8442f07de548b8e}} 
+\#define {\bfseries A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D\+L\+\_\+\+K\+E\+Y\+F\+R\+A\+ME}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D\+L\+\_\+\+K\+E\+Y\+F\+R\+A\+ME\char`\"{}
+\item 
+\mbox{\Hypertarget{config_8h_a3797029e51b77f9ef5227555f3b806b4}\label{config_8h_a3797029e51b77f9ef5227555f3b806b4}} 
+\#define {\bfseries A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D\+C\+\_\+\+K\+E\+Y\+F\+R\+A\+ME}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D\+C\+\_\+\+K\+E\+Y\+F\+R\+A\+ME\char`\"{}
+\item 
+\mbox{\Hypertarget{config_8h_aa15c7351629af8e1df6ae3e4e06e5ba7}\label{config_8h_aa15c7351629af8e1df6ae3e4e06e5ba7}} 
+\#define {\bfseries A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+S\+M\+D\+\_\+\+K\+E\+Y\+F\+R\+A\+ME}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+S\+M\+D\+\_\+\+K\+E\+Y\+F\+R\+A\+ME\char`\"{}
+\item 
+\mbox{\Hypertarget{config_8h_ace574a15cd1257216ec6c48acdaa91a0}\label{config_8h_ace574a15cd1257216ec6c48acdaa91a0}} 
+\#define {\bfseries A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+U\+N\+R\+E\+A\+L\+\_\+\+K\+E\+Y\+F\+R\+A\+ME}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+U\+N\+R\+E\+A\+L\+\_\+\+K\+E\+Y\+F\+R\+A\+ME\char`\"{}
+\item 
+\#define \mbox{\hyperlink{config_8h_a82ea1d5c67f6202bd7719b25de1179c9}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+A\+C\+\_\+\+S\+E\+P\+A\+R\+A\+T\+E\+\_\+\+B\+F\+C\+U\+LL}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+A\+C\+\_\+\+S\+E\+P\+A\+R\+A\+T\+E\+\_\+\+B\+F\+C\+U\+LL\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the AC loader to collect all surfaces which have the \char`\"{}\+Backface cull\char`\"{} flag set in separate meshes. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a2fef864730c1eace9bc78a2513a5abe6}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+A\+C\+\_\+\+E\+V\+A\+L\+\_\+\+S\+U\+B\+D\+I\+V\+I\+S\+I\+ON}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+A\+C\+\_\+\+E\+V\+A\+L\+\_\+\+S\+U\+B\+D\+I\+V\+I\+S\+I\+ON\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures whether the AC loader evaluates subdivision surfaces ( indicated by the presence of the \textquotesingle{}subdiv\textquotesingle{} attribute in the file). By default, \mbox{\hyperlink{namespaceAssimp}{Assimp}} performs the subdivision using the standard Catmull-\/\+Clark algorithm. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a54dfdedf42b694596552488b31cf2a12}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+U\+N\+R\+E\+A\+L\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+F\+L\+A\+GS}}~\char`\"{}U\+N\+R\+E\+A\+L\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+F\+L\+A\+GS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the U\+N\+R\+E\+AL 3D loader to separate faces with different surface flags (e.\+g. two-\/sided vs. single-\/sided). \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a7ea74e123ac238824a5b60b2b6caf3f3}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+T\+E\+R\+\_\+\+M\+A\+K\+E\+\_\+\+U\+VS}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+T\+E\+R\+\_\+\+M\+A\+K\+E\+\_\+\+U\+VS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the terragen import plugin to compute uv\textquotesingle{}s for terrains, if not given. Furthermore a default texture is assigned. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a03e84782d043362cdf836420d7cff53c}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+A\+S\+E\+\_\+\+R\+E\+C\+O\+N\+S\+T\+R\+U\+C\+T\+\_\+\+N\+O\+R\+M\+A\+LS}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+A\+S\+E\+\_\+\+R\+E\+C\+O\+N\+S\+T\+R\+U\+C\+T\+\_\+\+N\+O\+R\+M\+A\+LS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the A\+SE loader to always reconstruct normal vectors basing on the smoothing groups loaded from the file. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a77411c162d7840282c85250c92c89354}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+M\+U\+L\+T\+I\+P\+A\+RT}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+M\+U\+L\+T\+I\+P\+A\+RT\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the M3D loader to detect and process multi-\/part Quake player models. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a1d2fb0e3ed40231c294fc327a822de6c}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+S\+K\+I\+N\+\_\+\+N\+A\+ME}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+S\+K\+I\+N\+\_\+\+N\+A\+ME\char`\"{}
+\begin{DoxyCompactList}\small\item\em Tells the M\+D3 loader which skin files to load. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a58558385cdb3cf18c66ade9fce5f738e}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+S\+RC}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+S\+RC\char`\"{}
+\begin{DoxyCompactList}\small\item\em Specify the Quake 3 shader file to be used for a particular M\+D3 file. This can also be a search path. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_ae890df205a2234b5a85a6e8b3f6f5fda}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+L\+W\+O\+\_\+\+O\+N\+E\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+O\+N\+LY}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+L\+W\+O\+\_\+\+O\+N\+E\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+O\+N\+LY\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the L\+WO loader to load just one layer from the model. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a0854acdd45ff0752475f5ab8fe15d905}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D5\+\_\+\+N\+O\+\_\+\+A\+N\+I\+M\+\_\+\+A\+U\+T\+O\+L\+O\+AD}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D5\+\_\+\+N\+O\+\_\+\+A\+N\+I\+M\+\_\+\+A\+U\+T\+O\+L\+O\+AD\char`\"{}
+\begin{DoxyCompactList}\small\item\em Configures the M\+D5 loader to not load the M\+D5\+A\+N\+IM file for a M\+D5\+M\+E\+SH file automatically. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a61aa54f23a5b5270c756db279b0e1c57}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+L\+W\+S\+\_\+\+A\+N\+I\+M\+\_\+\+S\+T\+A\+RT}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+L\+W\+S\+\_\+\+A\+N\+I\+M\+\_\+\+S\+T\+A\+RT\char`\"{}
+\begin{DoxyCompactList}\small\item\em Defines the begin of the time range for which the L\+WS loader evaluates animations and computes ai\+Node\+Anim\textquotesingle{}s. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_a9a5d00b6e7808cfd0d21cec7c6072bdf}\label{config_8h_a9a5d00b6e7808cfd0d21cec7c6072bdf}} 
+\#define {\bfseries A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+L\+W\+S\+\_\+\+A\+N\+I\+M\+\_\+\+E\+ND}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+L\+W\+S\+\_\+\+A\+N\+I\+M\+\_\+\+E\+ND\char`\"{}
+\item 
+\#define \mbox{\hyperlink{config_8h_ac0fa56e7d9a68b3e164c2cada6350d39}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+I\+R\+R\+\_\+\+A\+N\+I\+M\+\_\+\+F\+PS}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+I\+R\+R\+\_\+\+A\+N\+I\+M\+\_\+\+F\+PS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Defines the output frame rate of the I\+RR loader. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_acb55d5bf44d7ee13bd03f0197ac2e4da}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+O\+G\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+LE}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+O\+G\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+LE\char`\"{}
+\begin{DoxyCompactList}\small\item\em Ogre Importer will try to find referenced materials from this file. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_acec7a56a1defbd37b8807fcfe08ab88c}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+O\+G\+R\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+T\+Y\+P\+E\+\_\+\+F\+R\+O\+M\+\_\+\+F\+I\+L\+E\+N\+A\+ME}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+O\+G\+R\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+T\+Y\+P\+E\+\_\+\+F\+R\+O\+M\+\_\+\+F\+I\+L\+E\+N\+A\+ME\char`\"{}
+\begin{DoxyCompactList}\small\item\em Ogre Importer detect the texture usage from its filename. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_ac53f1c99fc7f86b4a555ff1f4763819b}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+I\+F\+C\+\_\+\+S\+K\+I\+P\+\_\+\+S\+P\+A\+C\+E\+\_\+\+R\+E\+P\+R\+E\+S\+E\+N\+T\+A\+T\+I\+O\+NS}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+I\+F\+C\+\_\+\+S\+K\+I\+P\+\_\+\+S\+P\+A\+C\+E\+\_\+\+R\+E\+P\+R\+E\+S\+E\+N\+T\+A\+T\+I\+O\+NS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Specifies whether the I\+FC loader skips over Ifc\+Space elements. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a2058cb1db1e96bfe3b6595f4333f8476}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+I\+F\+C\+\_\+\+S\+K\+I\+P\+\_\+\+C\+U\+R\+V\+E\+\_\+\+R\+E\+P\+R\+E\+S\+E\+N\+T\+A\+T\+I\+O\+NS}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+I\+F\+C\+\_\+\+S\+K\+I\+P\+\_\+\+C\+U\+R\+V\+E\+\_\+\+R\+E\+P\+R\+E\+S\+E\+N\+T\+A\+T\+I\+O\+NS\char`\"{}
+\begin{DoxyCompactList}\small\item\em Specifies whether the I\+FC loader skips over shape representations of type \textquotesingle{}Curve2D\textquotesingle{}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a7ec9ae953df9409eba917b77a29c8148}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+I\+F\+C\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+T\+I\+ON}}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+I\+F\+C\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+T\+I\+ON\char`\"{}
+\begin{DoxyCompactList}\small\item\em Specifies whether the I\+FC loader will use its own, custom triangulation algorithm to triangulate wall and floor meshes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{config_8h_a0592c18a068e25e47f1a4fbe00ef89d4}\label{config_8h_a0592c18a068e25e47f1a4fbe00ef89d4}} 
+\#define {\bfseries A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+U\+P\+\_\+\+D\+I\+R\+E\+C\+T\+I\+ON}~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+U\+P\+\_\+\+D\+I\+R\+E\+C\+T\+I\+ON\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3}{ai\+Component}} \{ \newline
+\mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a041f3a06b4266389628bbf6d7c972e16}{ai\+Component\+\_\+\+N\+O\+R\+M\+A\+LS}} = 0x2u, 
+\mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a3735667dae4d12e0573b049be86158af}{ai\+Component\+\_\+\+T\+A\+N\+G\+E\+N\+T\+S\+\_\+\+A\+N\+D\+\_\+\+B\+I\+T\+A\+N\+G\+E\+N\+TS}} = 0x4u, 
+\mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a66f2439356e377d9182a34e4d11b89aa}{ai\+Component\+\_\+\+C\+O\+L\+O\+RS}} = 0x8, 
+\mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a119bc187db7e081af2e5b9732060623d}{ai\+Component\+\_\+\+T\+E\+X\+C\+O\+O\+R\+DS}} = 0x10, 
+\newline
+\mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3ad37e83da41d8e9b17c2634bacc42925c}{ai\+Component\+\_\+\+B\+O\+N\+E\+W\+E\+I\+G\+H\+TS}} = 0x20, 
+\mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a8affaed18f69210bcbf20adeba16050a}{ai\+Component\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+NS}} = 0x40, 
+\mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3ab6bcf49132356c2034491b6bf367d328}{ai\+Component\+\_\+\+T\+E\+X\+T\+U\+R\+ES}} = 0x80, 
+\mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a9764d42f6546101a555a9e2d87c3b3d9}{ai\+Component\+\_\+\+L\+I\+G\+H\+TS}} = 0x100, 
+\newline
+\mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3aa4741bd21f4259301bb326e3b74dce29}{ai\+Component\+\_\+\+C\+A\+M\+E\+R\+AS}} = 0x200, 
+\mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a297ca9db243a718dc3bfb3502cfc9b7a}{ai\+Component\+\_\+\+M\+E\+S\+H\+ES}} = 0x400, 
+\mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a842d010d9211947c65eed564672677ed}{ai\+Component\+\_\+\+M\+A\+T\+E\+R\+I\+A\+LS}} = 0x800, 
+\mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a45b57c0405db34d9394193232abb1762}{\+\_\+ai\+Component\+\_\+\+Force32\+Bit}} = 0x9fffffff
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates components of the ai\+Scene and \mbox{\hyperlink{structaiMesh}{ai\+Mesh}} data structures that can be excluded from the import using the \#ai\+Prpcess\+\_\+\+Remove\+Component step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines constants for configurable properties for the library. 
+
+Typically these properties are set via \mbox{\hyperlink{classAssimp_1_1Importer_ab264807393b68662d1672c2b05e1c0cd}{Assimp\+::\+Importer\+::\+Set\+Property\+Float}}, \mbox{\hyperlink{classAssimp_1_1Importer_aa50eba6120a9b9805d0c2b02f1187165}{Assimp\+::\+Importer\+::\+Set\+Property\+Integer}} or \mbox{\hyperlink{classAssimp_1_1Importer_a8f79ecb5c6f67a76fc87654c32986e8e}{Assimp\+::\+Importer\+::\+Set\+Property\+String}}, depending on the data type of a property. All properties have a default value. See the doc for the mentioned methods for more details.
+
+~\newline
+~\newline
+ The corresponding functions for use with the plain-\/c A\+PI are\+: \#ai\+Set\+Import\+Property\+Integer, \#ai\+Set\+Import\+Property\+Float, \#ai\+Set\+Import\+Property\+String 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{config_8h_ac19aa56fa892f712fd3fb4d95be19114}\label{config_8h_ac19aa56fa892f712fd3fb4d95be19114}} 
+\index{config.h@{config.h}!AI\_CONFIG\_FAVOUR\_SPEED@{AI\_CONFIG\_FAVOUR\_SPEED}}
+\index{AI\_CONFIG\_FAVOUR\_SPEED@{AI\_CONFIG\_FAVOUR\_SPEED}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_FAVOUR\_SPEED}{AI\_CONFIG\_FAVOUR\_SPEED}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+A\+V\+O\+U\+R\+\_\+\+S\+P\+E\+ED~\char`\"{}F\+A\+V\+O\+U\+R\+\_\+\+S\+P\+E\+ED\char`\"{}}
+
+
+
+A hint to assimp to favour speed against import quality. 
+
+Enabling this option may result in faster loading, but it needn\textquotesingle{}t. It represents just a hint to loaders and post-\/processing steps to use faster code paths, if possible. This property is expected to be an integer, != 0 stands for true. The default value is 0. \mbox{\Hypertarget{config_8h_ae67105a77014e256f4c242504881c261}\label{config_8h_ae67105a77014e256f4c242504881c261}} 
+\index{config.h@{config.h}!AI\_CONFIG\_GLOB\_MEASURE\_TIME@{AI\_CONFIG\_GLOB\_MEASURE\_TIME}}
+\index{AI\_CONFIG\_GLOB\_MEASURE\_TIME@{AI\_CONFIG\_GLOB\_MEASURE\_TIME}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_GLOB\_MEASURE\_TIME}{AI\_CONFIG\_GLOB\_MEASURE\_TIME}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+G\+L\+O\+B\+\_\+\+M\+E\+A\+S\+U\+R\+E\+\_\+\+T\+I\+ME~\char`\"{}G\+L\+O\+B\+\_\+\+M\+E\+A\+S\+U\+R\+E\+\_\+\+T\+I\+ME\char`\"{}}
+
+
+
+Enables time measurements. 
+
+If enabled, measures the time needed for each part of the loading process (i.\+e. IO time, importing, postprocessing, ..) and dumps these timings to the Default\+Logger. See the \mbox{\hyperlink{}{Performance Page}} for more information on this topic.
+
+Property type\+: bool. Default value\+: false. \mbox{\Hypertarget{config_8h_a2fef864730c1eace9bc78a2513a5abe6}\label{config_8h_a2fef864730c1eace9bc78a2513a5abe6}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_AC\_EVAL\_SUBDIVISION@{AI\_CONFIG\_IMPORT\_AC\_EVAL\_SUBDIVISION}}
+\index{AI\_CONFIG\_IMPORT\_AC\_EVAL\_SUBDIVISION@{AI\_CONFIG\_IMPORT\_AC\_EVAL\_SUBDIVISION}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_AC\_EVAL\_SUBDIVISION}{AI\_CONFIG\_IMPORT\_AC\_EVAL\_SUBDIVISION}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+A\+C\+\_\+\+E\+V\+A\+L\+\_\+\+S\+U\+B\+D\+I\+V\+I\+S\+I\+ON~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+A\+C\+\_\+\+E\+V\+A\+L\+\_\+\+S\+U\+B\+D\+I\+V\+I\+S\+I\+ON\char`\"{}}
+
+
+
+Configures whether the AC loader evaluates subdivision surfaces ( indicated by the presence of the \textquotesingle{}subdiv\textquotesingle{} attribute in the file). By default, \mbox{\hyperlink{namespaceAssimp}{Assimp}} performs the subdivision using the standard Catmull-\/\+Clark algorithm. 
+
+
+\begin{DoxyItemize}
+\item Property type\+: bool. Default value\+: true. 
+\end{DoxyItemize}\mbox{\Hypertarget{config_8h_a82ea1d5c67f6202bd7719b25de1179c9}\label{config_8h_a82ea1d5c67f6202bd7719b25de1179c9}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_AC\_SEPARATE\_BFCULL@{AI\_CONFIG\_IMPORT\_AC\_SEPARATE\_BFCULL}}
+\index{AI\_CONFIG\_IMPORT\_AC\_SEPARATE\_BFCULL@{AI\_CONFIG\_IMPORT\_AC\_SEPARATE\_BFCULL}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_AC\_SEPARATE\_BFCULL}{AI\_CONFIG\_IMPORT\_AC\_SEPARATE\_BFCULL}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+A\+C\+\_\+\+S\+E\+P\+A\+R\+A\+T\+E\+\_\+\+B\+F\+C\+U\+LL~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+A\+C\+\_\+\+S\+E\+P\+A\+R\+A\+T\+E\+\_\+\+B\+F\+C\+U\+LL\char`\"{}}
+
+
+
+Configures the AC loader to collect all surfaces which have the \char`\"{}\+Backface cull\char`\"{} flag set in separate meshes. 
+
+Property type\+: bool. Default value\+: true. \mbox{\Hypertarget{config_8h_a03e84782d043362cdf836420d7cff53c}\label{config_8h_a03e84782d043362cdf836420d7cff53c}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_ASE\_RECONSTRUCT\_NORMALS@{AI\_CONFIG\_IMPORT\_ASE\_RECONSTRUCT\_NORMALS}}
+\index{AI\_CONFIG\_IMPORT\_ASE\_RECONSTRUCT\_NORMALS@{AI\_CONFIG\_IMPORT\_ASE\_RECONSTRUCT\_NORMALS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_ASE\_RECONSTRUCT\_NORMALS}{AI\_CONFIG\_IMPORT\_ASE\_RECONSTRUCT\_NORMALS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+A\+S\+E\+\_\+\+R\+E\+C\+O\+N\+S\+T\+R\+U\+C\+T\+\_\+\+N\+O\+R\+M\+A\+LS~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+A\+S\+E\+\_\+\+R\+E\+C\+O\+N\+S\+T\+R\+U\+C\+T\+\_\+\+N\+O\+R\+M\+A\+LS\char`\"{}}
+
+
+
+Configures the A\+SE loader to always reconstruct normal vectors basing on the smoothing groups loaded from the file. 
+
+Some A\+SE files have carry invalid normals, other don\textquotesingle{}t.
+\begin{DoxyItemize}
+\item Property type\+: bool. Default value\+: true. 
+\end{DoxyItemize}\mbox{\Hypertarget{config_8h_a5b4f9cc390a8d9cf09868e19ac573655}\label{config_8h_a5b4f9cc390a8d9cf09868e19ac573655}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_FBX\_OPTIMIZE\_EMPTY\_ANIMATION\_CURVES@{AI\_CONFIG\_IMPORT\_FBX\_OPTIMIZE\_EMPTY\_ANIMATION\_CURVES}}
+\index{AI\_CONFIG\_IMPORT\_FBX\_OPTIMIZE\_EMPTY\_ANIMATION\_CURVES@{AI\_CONFIG\_IMPORT\_FBX\_OPTIMIZE\_EMPTY\_ANIMATION\_CURVES}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_FBX\_OPTIMIZE\_EMPTY\_ANIMATION\_CURVES}{AI\_CONFIG\_IMPORT\_FBX\_OPTIMIZE\_EMPTY\_ANIMATION\_CURVES}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+O\+P\+T\+I\+M\+I\+Z\+E\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+C\+U\+R\+V\+ES~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+O\+P\+T\+I\+M\+I\+Z\+E\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+C\+U\+R\+V\+ES\char`\"{}}
+
+
+
+Specifies whether the importer will drop empty animation curves or animation curves which match the bind pose transformation over their entire defined range. 
+
+The default value is true (1) Property type\+: bool \mbox{\Hypertarget{config_8h_aa288cad0d93533c7d4a06347e5096cd9}\label{config_8h_aa288cad0d93533c7d4a06347e5096cd9}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_FBX\_PRESERVE\_PIVOTS@{AI\_CONFIG\_IMPORT\_FBX\_PRESERVE\_PIVOTS}}
+\index{AI\_CONFIG\_IMPORT\_FBX\_PRESERVE\_PIVOTS@{AI\_CONFIG\_IMPORT\_FBX\_PRESERVE\_PIVOTS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_FBX\_PRESERVE\_PIVOTS}{AI\_CONFIG\_IMPORT\_FBX\_PRESERVE\_PIVOTS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+\_\+\+P\+I\+V\+O\+TS~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+\_\+\+P\+I\+V\+O\+TS\char`\"{}}
+
+
+
+Set whether the fbx importer will preserve pivot points for transformations (as extra nodes). If set to false, pivots and offsets will be evaluated whenever possible. 
+
+The default value is true (1) Property type\+: bool \mbox{\Hypertarget{config_8h_a1c886c292d6da748aa5c298118bbb330}\label{config_8h_a1c886c292d6da748aa5c298118bbb330}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_FBX\_READ\_ALL\_GEOMETRY\_LAYERS@{AI\_CONFIG\_IMPORT\_FBX\_READ\_ALL\_GEOMETRY\_LAYERS}}
+\index{AI\_CONFIG\_IMPORT\_FBX\_READ\_ALL\_GEOMETRY\_LAYERS@{AI\_CONFIG\_IMPORT\_FBX\_READ\_ALL\_GEOMETRY\_LAYERS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_FBX\_READ\_ALL\_GEOMETRY\_LAYERS}{AI\_CONFIG\_IMPORT\_FBX\_READ\_ALL\_GEOMETRY\_LAYERS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+A\+L\+L\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+L\+A\+Y\+E\+RS~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+A\+L\+L\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+L\+A\+Y\+E\+RS\char`\"{}}
+
+
+
+Set whether the fbx importer will merge all geometry layers present in the source file or take only the first. 
+
+The default value is true (1) Property type\+: bool \mbox{\Hypertarget{config_8h_a1bdbd5504eb2794f2257dacfbe9de98b}\label{config_8h_a1bdbd5504eb2794f2257dacfbe9de98b}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_FBX\_READ\_ALL\_MATERIALS@{AI\_CONFIG\_IMPORT\_FBX\_READ\_ALL\_MATERIALS}}
+\index{AI\_CONFIG\_IMPORT\_FBX\_READ\_ALL\_MATERIALS@{AI\_CONFIG\_IMPORT\_FBX\_READ\_ALL\_MATERIALS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_FBX\_READ\_ALL\_MATERIALS}{AI\_CONFIG\_IMPORT\_FBX\_READ\_ALL\_MATERIALS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+A\+L\+L\+\_\+\+M\+A\+T\+E\+R\+I\+A\+LS~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+A\+L\+L\+\_\+\+M\+A\+T\+E\+R\+I\+A\+LS\char`\"{}}
+
+
+
+Set whether the fbx importer will read all materials present in the source file or take only the referenced materials. 
+
+This is void unless I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+LS=1.
+
+The default value is false (0) Property type\+: bool \mbox{\Hypertarget{config_8h_a89f65cee36448e653e07e42263a16e09}\label{config_8h_a89f65cee36448e653e07e42263a16e09}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_FBX\_READ\_ANIMATIONS@{AI\_CONFIG\_IMPORT\_FBX\_READ\_ANIMATIONS}}
+\index{AI\_CONFIG\_IMPORT\_FBX\_READ\_ANIMATIONS@{AI\_CONFIG\_IMPORT\_FBX\_READ\_ANIMATIONS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_FBX\_READ\_ANIMATIONS}{AI\_CONFIG\_IMPORT\_FBX\_READ\_ANIMATIONS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+NS~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+NS\char`\"{}}
+
+
+
+Set whether the fbx importer will read animations. 
+
+The default value is true (1) Property type\+: bool \mbox{\Hypertarget{config_8h_a4b5d39fd0bfa03661de06f870c8ed60d}\label{config_8h_a4b5d39fd0bfa03661de06f870c8ed60d}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_FBX\_READ\_CAMERAS@{AI\_CONFIG\_IMPORT\_FBX\_READ\_CAMERAS}}
+\index{AI\_CONFIG\_IMPORT\_FBX\_READ\_CAMERAS@{AI\_CONFIG\_IMPORT\_FBX\_READ\_CAMERAS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_FBX\_READ\_CAMERAS}{AI\_CONFIG\_IMPORT\_FBX\_READ\_CAMERAS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+C\+A\+M\+E\+R\+AS~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+C\+A\+M\+E\+R\+AS\char`\"{}}
+
+
+
+Set whether the fbx importer will read cameras. 
+
+The default value is true (1) Property type\+: bool \mbox{\Hypertarget{config_8h_ac64b303bd269641b5214f67fc6b4c7ff}\label{config_8h_ac64b303bd269641b5214f67fc6b4c7ff}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_FBX\_READ\_LIGHTS@{AI\_CONFIG\_IMPORT\_FBX\_READ\_LIGHTS}}
+\index{AI\_CONFIG\_IMPORT\_FBX\_READ\_LIGHTS@{AI\_CONFIG\_IMPORT\_FBX\_READ\_LIGHTS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_FBX\_READ\_LIGHTS}{AI\_CONFIG\_IMPORT\_FBX\_READ\_LIGHTS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+L\+I\+G\+H\+TS~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+L\+I\+G\+H\+TS\char`\"{}}
+
+
+
+Set whether the fbx importer will read light sources. 
+
+The default value is true (1) Property type\+: bool \mbox{\Hypertarget{config_8h_a65ad7b34f2db3bf5d4fda9bed579d992}\label{config_8h_a65ad7b34f2db3bf5d4fda9bed579d992}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_FBX\_READ\_MATERIALS@{AI\_CONFIG\_IMPORT\_FBX\_READ\_MATERIALS}}
+\index{AI\_CONFIG\_IMPORT\_FBX\_READ\_MATERIALS@{AI\_CONFIG\_IMPORT\_FBX\_READ\_MATERIALS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_FBX\_READ\_MATERIALS}{AI\_CONFIG\_IMPORT\_FBX\_READ\_MATERIALS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+LS~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+R\+E\+A\+D\+\_\+\+M\+A\+T\+E\+R\+I\+A\+LS\char`\"{}}
+
+
+
+Set whether the fbx importer will read materials. 
+
+The default value is true (1) Property type\+: bool \mbox{\Hypertarget{config_8h_a79ccfadb16e9825d3f9cbc1924d73105}\label{config_8h_a79ccfadb16e9825d3f9cbc1924d73105}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_FBX\_STRICT\_MODE@{AI\_CONFIG\_IMPORT\_FBX\_STRICT\_MODE}}
+\index{AI\_CONFIG\_IMPORT\_FBX\_STRICT\_MODE@{AI\_CONFIG\_IMPORT\_FBX\_STRICT\_MODE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_FBX\_STRICT\_MODE}{AI\_CONFIG\_IMPORT\_FBX\_STRICT\_MODE}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+S\+T\+R\+I\+C\+T\+\_\+\+M\+O\+DE~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+F\+B\+X\+\_\+\+S\+T\+R\+I\+C\+T\+\_\+\+M\+O\+DE\char`\"{}}
+
+
+
+Set whether the fbx importer will act in strict mode in which only F\+BX 2013 is supported and any other sub formats are rejected. F\+BX 2013 is the primary target for the importer, so this format is best supported and well-\/tested. 
+
+The default value is false (0) Property type\+: bool \mbox{\Hypertarget{config_8h_ad8670ee6d237f2d2f3b60c61e0dead15}\label{config_8h_ad8670ee6d237f2d2f3b60c61e0dead15}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_GLOBAL\_KEYFRAME@{AI\_CONFIG\_IMPORT\_GLOBAL\_KEYFRAME}}
+\index{AI\_CONFIG\_IMPORT\_GLOBAL\_KEYFRAME@{AI\_CONFIG\_IMPORT\_GLOBAL\_KEYFRAME}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_GLOBAL\_KEYFRAME}{AI\_CONFIG\_IMPORT\_GLOBAL\_KEYFRAME}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+G\+L\+O\+B\+A\+L\+\_\+\+K\+E\+Y\+F\+R\+A\+ME~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+G\+L\+O\+B\+A\+L\+\_\+\+K\+E\+Y\+F\+R\+A\+ME\char`\"{}}
+
+
+
+Set the vertex animation keyframe to be imported. 
+
+A\+S\+S\+I\+MP does not support vertex keyframes (only bone animation is supported). The library reads only one frame of models with vertex animations. By default this is the first frame. \begin{DoxyNote}{Note}
+The default value is 0. This option applies to all importers. However, it is also possible to override the global setting for a specific loader. You can use the A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+X\+X\+X\+\_\+\+K\+E\+Y\+F\+R\+A\+ME options (where X\+XX is a placeholder for the file format for which you want to override the global setting). Property type\+: integer. 
+\end{DoxyNote}
+\mbox{\Hypertarget{config_8h_a7ec9ae953df9409eba917b77a29c8148}\label{config_8h_a7ec9ae953df9409eba917b77a29c8148}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_IFC\_CUSTOM\_TRIANGULATION@{AI\_CONFIG\_IMPORT\_IFC\_CUSTOM\_TRIANGULATION}}
+\index{AI\_CONFIG\_IMPORT\_IFC\_CUSTOM\_TRIANGULATION@{AI\_CONFIG\_IMPORT\_IFC\_CUSTOM\_TRIANGULATION}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_IFC\_CUSTOM\_TRIANGULATION}{AI\_CONFIG\_IMPORT\_IFC\_CUSTOM\_TRIANGULATION}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+I\+F\+C\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+T\+I\+ON~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+I\+F\+C\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+T\+I\+ON\char`\"{}}
+
+
+
+Specifies whether the I\+FC loader will use its own, custom triangulation algorithm to triangulate wall and floor meshes. 
+
+If this property is set to false, walls will be either triangulated by \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b}{ai\+Process\+\_\+\+Triangulate}} or will be passed through as huge polygons with faked holes (i.\+e. holes that are connected with the outer boundary using a dummy edge). It is highly recommended to set this property to true if you want triangulated data because \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b}{ai\+Process\+\_\+\+Triangulate}} is known to have problems with the kind of polygons that the I\+FC loader spits out for complicated meshes. Property type\+: Bool. Default value\+: true. \mbox{\Hypertarget{config_8h_a2058cb1db1e96bfe3b6595f4333f8476}\label{config_8h_a2058cb1db1e96bfe3b6595f4333f8476}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_IFC\_SKIP\_CURVE\_REPRESENTATIONS@{AI\_CONFIG\_IMPORT\_IFC\_SKIP\_CURVE\_REPRESENTATIONS}}
+\index{AI\_CONFIG\_IMPORT\_IFC\_SKIP\_CURVE\_REPRESENTATIONS@{AI\_CONFIG\_IMPORT\_IFC\_SKIP\_CURVE\_REPRESENTATIONS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_IFC\_SKIP\_CURVE\_REPRESENTATIONS}{AI\_CONFIG\_IMPORT\_IFC\_SKIP\_CURVE\_REPRESENTATIONS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+I\+F\+C\+\_\+\+S\+K\+I\+P\+\_\+\+C\+U\+R\+V\+E\+\_\+\+R\+E\+P\+R\+E\+S\+E\+N\+T\+A\+T\+I\+O\+NS~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+I\+F\+C\+\_\+\+S\+K\+I\+P\+\_\+\+C\+U\+R\+V\+E\+\_\+\+R\+E\+P\+R\+E\+S\+E\+N\+T\+A\+T\+I\+O\+NS\char`\"{}}
+
+
+
+Specifies whether the I\+FC loader skips over shape representations of type \textquotesingle{}Curve2D\textquotesingle{}. 
+
+A lot of files contain both a faceted mesh representation and a outline with a presentation type of \textquotesingle{}Curve2D\textquotesingle{}. Currently \mbox{\hyperlink{namespaceAssimp}{Assimp}} doesn\textquotesingle{}t convert those, so turning this option off just clutters the log with errors.~\newline
+ Property type\+: Bool. Default value\+: true. \mbox{\Hypertarget{config_8h_ac53f1c99fc7f86b4a555ff1f4763819b}\label{config_8h_ac53f1c99fc7f86b4a555ff1f4763819b}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_IFC\_SKIP\_SPACE\_REPRESENTATIONS@{AI\_CONFIG\_IMPORT\_IFC\_SKIP\_SPACE\_REPRESENTATIONS}}
+\index{AI\_CONFIG\_IMPORT\_IFC\_SKIP\_SPACE\_REPRESENTATIONS@{AI\_CONFIG\_IMPORT\_IFC\_SKIP\_SPACE\_REPRESENTATIONS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_IFC\_SKIP\_SPACE\_REPRESENTATIONS}{AI\_CONFIG\_IMPORT\_IFC\_SKIP\_SPACE\_REPRESENTATIONS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+I\+F\+C\+\_\+\+S\+K\+I\+P\+\_\+\+S\+P\+A\+C\+E\+\_\+\+R\+E\+P\+R\+E\+S\+E\+N\+T\+A\+T\+I\+O\+NS~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+I\+F\+C\+\_\+\+S\+K\+I\+P\+\_\+\+S\+P\+A\+C\+E\+\_\+\+R\+E\+P\+R\+E\+S\+E\+N\+T\+A\+T\+I\+O\+NS\char`\"{}}
+
+
+
+Specifies whether the I\+FC loader skips over Ifc\+Space elements. 
+
+Ifc\+Space elements (and their geometric representations) are used to represent, well, free space in a building storey.~\newline
+ Property type\+: Bool. Default value\+: true. \mbox{\Hypertarget{config_8h_ac0fa56e7d9a68b3e164c2cada6350d39}\label{config_8h_ac0fa56e7d9a68b3e164c2cada6350d39}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_IRR\_ANIM\_FPS@{AI\_CONFIG\_IMPORT\_IRR\_ANIM\_FPS}}
+\index{AI\_CONFIG\_IMPORT\_IRR\_ANIM\_FPS@{AI\_CONFIG\_IMPORT\_IRR\_ANIM\_FPS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_IRR\_ANIM\_FPS}{AI\_CONFIG\_IMPORT\_IRR\_ANIM\_FPS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+I\+R\+R\+\_\+\+A\+N\+I\+M\+\_\+\+F\+PS~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+I\+R\+R\+\_\+\+A\+N\+I\+M\+\_\+\+F\+PS\char`\"{}}
+
+
+
+Defines the output frame rate of the I\+RR loader. 
+
+I\+RR animations are difficult to convert for \mbox{\hyperlink{namespaceAssimp}{Assimp}} and there will always be a loss of quality. This setting defines how many keys per second are returned by the converter.~\newline
+ Property type\+: integer. Default value\+: 100 \mbox{\Hypertarget{config_8h_ae890df205a2234b5a85a6e8b3f6f5fda}\label{config_8h_ae890df205a2234b5a85a6e8b3f6f5fda}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_LWO\_ONE\_LAYER\_ONLY@{AI\_CONFIG\_IMPORT\_LWO\_ONE\_LAYER\_ONLY}}
+\index{AI\_CONFIG\_IMPORT\_LWO\_ONE\_LAYER\_ONLY@{AI\_CONFIG\_IMPORT\_LWO\_ONE\_LAYER\_ONLY}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_LWO\_ONE\_LAYER\_ONLY}{AI\_CONFIG\_IMPORT\_LWO\_ONE\_LAYER\_ONLY}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+L\+W\+O\+\_\+\+O\+N\+E\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+O\+N\+LY~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+L\+W\+O\+\_\+\+O\+N\+E\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+O\+N\+LY\char`\"{}}
+
+
+
+Configures the L\+WO loader to load just one layer from the model. 
+
+L\+WO files consist of layers and in some cases it could be useful to load only one of them. This property can be either a string -\/ which specifies the name of the layer -\/ or an integer -\/ the index of the layer. If the property is not set the whole L\+WO model is loaded. Loading fails if the requested layer is not available. The layer index is zero-\/based and the layer name may not be empty.~\newline
+ Property type\+: Integer. Default value\+: all layers are loaded. \mbox{\Hypertarget{config_8h_a61aa54f23a5b5270c756db279b0e1c57}\label{config_8h_a61aa54f23a5b5270c756db279b0e1c57}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_LWS\_ANIM\_START@{AI\_CONFIG\_IMPORT\_LWS\_ANIM\_START}}
+\index{AI\_CONFIG\_IMPORT\_LWS\_ANIM\_START@{AI\_CONFIG\_IMPORT\_LWS\_ANIM\_START}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_LWS\_ANIM\_START}{AI\_CONFIG\_IMPORT\_LWS\_ANIM\_START}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+L\+W\+S\+\_\+\+A\+N\+I\+M\+\_\+\+S\+T\+A\+RT~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+L\+W\+S\+\_\+\+A\+N\+I\+M\+\_\+\+S\+T\+A\+RT\char`\"{}}
+
+
+
+Defines the begin of the time range for which the L\+WS loader evaluates animations and computes ai\+Node\+Anim\textquotesingle{}s. 
+
+\mbox{\hyperlink{namespaceAssimp}{Assimp}} provides full conversion of Light\+Wave\textquotesingle{}s envelope system, including pre and post conditions. The loader computes linearly subsampled animation chanels with the frame rate given in the L\+WS file. This property defines the start time. Note\+: animation channels are only generated if a node has at least one envelope with more tan one key assigned. This property. is given in frames, \textquotesingle{}0\textquotesingle{} is the first frame. By default, if this property is not set, the importer takes the animation start from the input L\+WS file (\textquotesingle{}First\+Frame\textquotesingle{} line)~\newline
+ Property type\+: Integer. Default value\+: taken from file.
+
+\begin{DoxySeeAlso}{See also}
+A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+L\+W\+S\+\_\+\+A\+N\+I\+M\+\_\+\+E\+ND -\/ end of the imported time range 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{config_8h_a77411c162d7840282c85250c92c89354}\label{config_8h_a77411c162d7840282c85250c92c89354}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_MD3\_HANDLE\_MULTIPART@{AI\_CONFIG\_IMPORT\_MD3\_HANDLE\_MULTIPART}}
+\index{AI\_CONFIG\_IMPORT\_MD3\_HANDLE\_MULTIPART@{AI\_CONFIG\_IMPORT\_MD3\_HANDLE\_MULTIPART}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_MD3\_HANDLE\_MULTIPART}{AI\_CONFIG\_IMPORT\_MD3\_HANDLE\_MULTIPART}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+M\+U\+L\+T\+I\+P\+A\+RT~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+M\+U\+L\+T\+I\+P\+A\+RT\char`\"{}}
+
+
+
+Configures the M3D loader to detect and process multi-\/part Quake player models. 
+
+These models usually consist of 3 files, lower.\+md3, upper.\+md3 and head.\+md3. If this property is set to true, \mbox{\hyperlink{namespaceAssimp}{Assimp}} will try to load and combine all three files if one of them is loaded. Property type\+: bool. Default value\+: true. \mbox{\Hypertarget{config_8h_a58558385cdb3cf18c66ade9fce5f738e}\label{config_8h_a58558385cdb3cf18c66ade9fce5f738e}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_MD3\_SHADER\_SRC@{AI\_CONFIG\_IMPORT\_MD3\_SHADER\_SRC}}
+\index{AI\_CONFIG\_IMPORT\_MD3\_SHADER\_SRC@{AI\_CONFIG\_IMPORT\_MD3\_SHADER\_SRC}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_MD3\_SHADER\_SRC}{AI\_CONFIG\_IMPORT\_MD3\_SHADER\_SRC}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+S\+RC~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+S\+RC\char`\"{}}
+
+
+
+Specify the Quake 3 shader file to be used for a particular M\+D3 file. This can also be a search path. 
+
+By default \mbox{\hyperlink{namespaceAssimp}{Assimp}}\textquotesingle{}s behaviour is as follows\+: If a M\+D3 file {\ttfamily $<$any\+\_\+path$>$/models/$<$any\+\_\+q3\+\_\+subdir$>$/$<$model\+\_\+name$>$/$<$file\+\_\+name$>$.md3} is loaded, the library tries to locate the corresponding shader file in {\ttfamily $<$any\+\_\+path$>$/scripts/$<$model\+\_\+name$>$.shader}. This property overrides this behaviour. It can either specify a full path to the shader to be loaded or alternatively the path (relative or absolute) to the directory where the shaders for all M\+D3s to be loaded reside. \mbox{\hyperlink{namespaceAssimp}{Assimp}} attempts to open {\ttfamily $<$dir$>$/$<$model\+\_\+name$>$.shader} first, {\ttfamily $<$dir$>$/$<$file\+\_\+name$>$.shader} is the fallback file. Note that $<$dir$>$ should have a terminal (back)slash. Property type\+: String. Default value\+: n/a. \mbox{\Hypertarget{config_8h_a1d2fb0e3ed40231c294fc327a822de6c}\label{config_8h_a1d2fb0e3ed40231c294fc327a822de6c}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_MD3\_SKIN\_NAME@{AI\_CONFIG\_IMPORT\_MD3\_SKIN\_NAME}}
+\index{AI\_CONFIG\_IMPORT\_MD3\_SKIN\_NAME@{AI\_CONFIG\_IMPORT\_MD3\_SKIN\_NAME}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_MD3\_SKIN\_NAME}{AI\_CONFIG\_IMPORT\_MD3\_SKIN\_NAME}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+S\+K\+I\+N\+\_\+\+N\+A\+ME~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D3\+\_\+\+S\+K\+I\+N\+\_\+\+N\+A\+ME\char`\"{}}
+
+
+
+Tells the M\+D3 loader which skin files to load. 
+
+When loading M\+D3 files, \mbox{\hyperlink{namespaceAssimp}{Assimp}} checks whether a file $<$md3\+\_\+file\+\_\+name$>$\+\_\+$<$skin\+\_\+name$>$.\+skin is existing. These files are used by Quake I\+II to be able to assign different skins (e.\+g. red and blue team) to models. \textquotesingle{}default\textquotesingle{}, \textquotesingle{}red\textquotesingle{}, \textquotesingle{}blue\textquotesingle{} are typical skin names. Property type\+: String. Default value\+: \char`\"{}default\char`\"{}. \mbox{\Hypertarget{config_8h_a0854acdd45ff0752475f5ab8fe15d905}\label{config_8h_a0854acdd45ff0752475f5ab8fe15d905}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_MD5\_NO\_ANIM\_AUTOLOAD@{AI\_CONFIG\_IMPORT\_MD5\_NO\_ANIM\_AUTOLOAD}}
+\index{AI\_CONFIG\_IMPORT\_MD5\_NO\_ANIM\_AUTOLOAD@{AI\_CONFIG\_IMPORT\_MD5\_NO\_ANIM\_AUTOLOAD}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_MD5\_NO\_ANIM\_AUTOLOAD}{AI\_CONFIG\_IMPORT\_MD5\_NO\_ANIM\_AUTOLOAD}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D5\+\_\+\+N\+O\+\_\+\+A\+N\+I\+M\+\_\+\+A\+U\+T\+O\+L\+O\+AD~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D5\+\_\+\+N\+O\+\_\+\+A\+N\+I\+M\+\_\+\+A\+U\+T\+O\+L\+O\+AD\char`\"{}}
+
+
+
+Configures the M\+D5 loader to not load the M\+D5\+A\+N\+IM file for a M\+D5\+M\+E\+SH file automatically. 
+
+The default strategy is to look for a file with the same name but the M\+D5\+A\+N\+IM extension in the same directory. If it is found, it is loaded and combined with the M\+D5\+M\+E\+SH file. This configuration option can be used to disable this behaviour.
+
+
+\begin{DoxyItemize}
+\item Property type\+: bool. Default value\+: false. 
+\end{DoxyItemize}\mbox{\Hypertarget{config_8h_a243ffb53e27a913b92cdb38bb951da7d}\label{config_8h_a243ffb53e27a913b92cdb38bb951da7d}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_MDL\_COLORMAP@{AI\_CONFIG\_IMPORT\_MDL\_COLORMAP}}
+\index{AI\_CONFIG\_IMPORT\_MDL\_COLORMAP@{AI\_CONFIG\_IMPORT\_MDL\_COLORMAP}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_MDL\_COLORMAP}{AI\_CONFIG\_IMPORT\_MDL\_COLORMAP}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+M\+D\+L\+\_\+\+C\+O\+L\+O\+R\+M\+AP~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+M\+D\+L\+\_\+\+C\+O\+L\+O\+R\+M\+AP\char`\"{}}
+
+
+
+Sets the colormap (= palette) to be used to decode embedded textures in M\+DL (Quake or 3D\+GS) files. 
+
+This must be a valid path to a file. The file is 768 (256$\ast$3) bytes large and contains R\+GB triplets for each of the 256 palette entries. The default value is colormap.\+lmp. If the file is not found, a default palette (from Quake 1) is used. Property type\+: string. \mbox{\Hypertarget{config_8h_a75351a98fd8d4c367d326b914169f9d6}\label{config_8h_a75351a98fd8d4c367d326b914169f9d6}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_NO\_SKELETON\_MESHES@{AI\_CONFIG\_IMPORT\_NO\_SKELETON\_MESHES}}
+\index{AI\_CONFIG\_IMPORT\_NO\_SKELETON\_MESHES@{AI\_CONFIG\_IMPORT\_NO\_SKELETON\_MESHES}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_NO\_SKELETON\_MESHES}{AI\_CONFIG\_IMPORT\_NO\_SKELETON\_MESHES}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+N\+O\+\_\+\+S\+K\+E\+L\+E\+T\+O\+N\+\_\+\+M\+E\+S\+H\+ES~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+N\+O\+\_\+\+S\+K\+E\+L\+E\+T\+O\+N\+\_\+\+M\+E\+S\+H\+ES\char`\"{}}
+
+
+
+Global setting to disable generation of skeleton dummy meshes. 
+
+Skeleton dummy meshes are generated as a visualization aid in cases which the input data contains no geometry, but only animation data. Property data type\+: bool. Default value\+: false \mbox{\Hypertarget{config_8h_acb55d5bf44d7ee13bd03f0197ac2e4da}\label{config_8h_acb55d5bf44d7ee13bd03f0197ac2e4da}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_OGRE\_MATERIAL\_FILE@{AI\_CONFIG\_IMPORT\_OGRE\_MATERIAL\_FILE}}
+\index{AI\_CONFIG\_IMPORT\_OGRE\_MATERIAL\_FILE@{AI\_CONFIG\_IMPORT\_OGRE\_MATERIAL\_FILE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_OGRE\_MATERIAL\_FILE}{AI\_CONFIG\_IMPORT\_OGRE\_MATERIAL\_FILE}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+O\+G\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+LE~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+O\+G\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+LE\char`\"{}}
+
+
+
+Ogre Importer will try to find referenced materials from this file. 
+
+Ogre meshes reference with material names, this does not tell \mbox{\hyperlink{namespaceAssimp}{Assimp}} the file where it is located in. \mbox{\hyperlink{namespaceAssimp}{Assimp}} will try to find the source file in the following order\+: $<$material-\/name$>$.material, $<$mesh-\/filename-\/base$>$.material and lastly the material name defined by this config property. ~\newline
+ Property type\+: String. Default value\+: Scene.\+material. \mbox{\Hypertarget{config_8h_acec7a56a1defbd37b8807fcfe08ab88c}\label{config_8h_acec7a56a1defbd37b8807fcfe08ab88c}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_OGRE\_TEXTURETYPE\_FROM\_FILENAME@{AI\_CONFIG\_IMPORT\_OGRE\_TEXTURETYPE\_FROM\_FILENAME}}
+\index{AI\_CONFIG\_IMPORT\_OGRE\_TEXTURETYPE\_FROM\_FILENAME@{AI\_CONFIG\_IMPORT\_OGRE\_TEXTURETYPE\_FROM\_FILENAME}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_OGRE\_TEXTURETYPE\_FROM\_FILENAME}{AI\_CONFIG\_IMPORT\_OGRE\_TEXTURETYPE\_FROM\_FILENAME}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+O\+G\+R\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+T\+Y\+P\+E\+\_\+\+F\+R\+O\+M\+\_\+\+F\+I\+L\+E\+N\+A\+ME~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+O\+G\+R\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+T\+Y\+P\+E\+\_\+\+F\+R\+O\+M\+\_\+\+F\+I\+L\+E\+N\+A\+ME\char`\"{}}
+
+
+
+Ogre Importer detect the texture usage from its filename. 
+
+Ogre material texture units do not define texture type, the textures usage depends on the used shader or Ogres fixed pipeline. If this config property is true \mbox{\hyperlink{namespaceAssimp}{Assimp}} will try to detect the type from the textures filename postfix\+: {\itshape n, \+\_\+nrm, \+\_\+nrml, \+\_\+normal, \+\_\+normals and \+\_\+normalmap for normal map, \+\_\+s, \+\_\+spec, \+\_\+specular and \+\_\+specularmap for specular map, \+\_\+l, \+\_\+light, \+\_\+lightmap, \+\_\+occ and \+\_\+occlusion for light map, \+\_\+disp and \+\_\+displacement for displacement map. The matching is case insensitive. Post fix is taken between last \char`\"{}$<$/em$>$\char`\"{} and last \char`\"{}.\char`\"{}. Default behavior is to detect type from lower cased texture unit name by matching against\+: normalmap, specularmap, lightmap and displacementmap. For both cases if no match is found ai\+Texture\+Type\+\_\+\+D\+I\+F\+F\+U\+SE is used. ~\newline
+ Property type\+: Bool. Default value\+: false. }\mbox{\Hypertarget{config_8h_a7ea74e123ac238824a5b60b2b6caf3f3}\label{config_8h_a7ea74e123ac238824a5b60b2b6caf3f3}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_TER\_MAKE\_UVS@{AI\_CONFIG\_IMPORT\_TER\_MAKE\_UVS}}
+\index{AI\_CONFIG\_IMPORT\_TER\_MAKE\_UVS@{AI\_CONFIG\_IMPORT\_TER\_MAKE\_UVS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_TER\_MAKE\_UVS}{AI\_CONFIG\_IMPORT\_TER\_MAKE\_UVS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+T\+E\+R\+\_\+\+M\+A\+K\+E\+\_\+\+U\+VS~\char`\"{}I\+M\+P\+O\+R\+T\+\_\+\+T\+E\+R\+\_\+\+M\+A\+K\+E\+\_\+\+U\+VS\char`\"{}}
+
+
+
+Configures the terragen import plugin to compute uv\textquotesingle{}s for terrains, if not given. Furthermore a default texture is assigned. 
+
+UV coordinates for terrains are so simple to compute that you\textquotesingle{}ll usually want to compute them on your own, if you need them. This option is intended for model viewers which want to offer an easy way to apply textures to terrains.
+\begin{DoxyItemize}
+\item Property type\+: bool. Default value\+: false. 
+\end{DoxyItemize}\mbox{\Hypertarget{config_8h_a54dfdedf42b694596552488b31cf2a12}\label{config_8h_a54dfdedf42b694596552488b31cf2a12}} 
+\index{config.h@{config.h}!AI\_CONFIG\_IMPORT\_UNREAL\_HANDLE\_FLAGS@{AI\_CONFIG\_IMPORT\_UNREAL\_HANDLE\_FLAGS}}
+\index{AI\_CONFIG\_IMPORT\_UNREAL\_HANDLE\_FLAGS@{AI\_CONFIG\_IMPORT\_UNREAL\_HANDLE\_FLAGS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_IMPORT\_UNREAL\_HANDLE\_FLAGS}{AI\_CONFIG\_IMPORT\_UNREAL\_HANDLE\_FLAGS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+U\+N\+R\+E\+A\+L\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+F\+L\+A\+GS~\char`\"{}U\+N\+R\+E\+A\+L\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+F\+L\+A\+GS\char`\"{}}
+
+
+
+Configures the U\+N\+R\+E\+AL 3D loader to separate faces with different surface flags (e.\+g. two-\/sided vs. single-\/sided). 
+
+
+\begin{DoxyItemize}
+\item Property type\+: bool. Default value\+: true. 
+\end{DoxyItemize}\mbox{\Hypertarget{config_8h_a17376a5a00287843581a4f668291f49d}\label{config_8h_a17376a5a00287843581a4f668291f49d}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_CT\_MAX\_SMOOTHING\_ANGLE@{AI\_CONFIG\_PP\_CT\_MAX\_SMOOTHING\_ANGLE}}
+\index{AI\_CONFIG\_PP\_CT\_MAX\_SMOOTHING\_ANGLE@{AI\_CONFIG\_PP\_CT\_MAX\_SMOOTHING\_ANGLE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_CT\_MAX\_SMOOTHING\_ANGLE}{AI\_CONFIG\_PP\_CT\_MAX\_SMOOTHING\_ANGLE}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+C\+T\+\_\+\+M\+A\+X\+\_\+\+S\+M\+O\+O\+T\+H\+I\+N\+G\+\_\+\+A\+N\+G\+LE~\char`\"{}P\+P\+\_\+\+C\+T\+\_\+\+M\+A\+X\+\_\+\+S\+M\+O\+O\+T\+H\+I\+N\+G\+\_\+\+A\+N\+G\+LE\char`\"{}}
+
+
+
+Specifies the maximum angle that may be between two vertex tangents that their tangents and bi-\/tangents are smoothed. 
+
+This applies to the Calc\+Tangent\+Space-\/\+Step. The angle is specified in degrees. The maximum value is 175. Property type\+: float. Default value\+: 45 degrees \mbox{\Hypertarget{config_8h_a1b2fa19a9636ba523569f0106dfe2c14}\label{config_8h_a1b2fa19a9636ba523569f0106dfe2c14}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_CT\_TEXTURE\_CHANNEL\_INDEX@{AI\_CONFIG\_PP\_CT\_TEXTURE\_CHANNEL\_INDEX}}
+\index{AI\_CONFIG\_PP\_CT\_TEXTURE\_CHANNEL\_INDEX@{AI\_CONFIG\_PP\_CT\_TEXTURE\_CHANNEL\_INDEX}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_CT\_TEXTURE\_CHANNEL\_INDEX}{AI\_CONFIG\_PP\_CT\_TEXTURE\_CHANNEL\_INDEX}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+C\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+I\+N\+D\+EX~\char`\"{}P\+P\+\_\+\+C\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+I\+N\+D\+EX\char`\"{}}
+
+
+
+Source UV channel for tangent space computation. 
+
+The specified channel must exist or an error will be raised. Property type\+: integer. Default value\+: 0 \mbox{\Hypertarget{config_8h_a884736c7d7809ad88eec646e9cccbfba}\label{config_8h_a884736c7d7809ad88eec646e9cccbfba}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_DB\_ALL\_OR\_NONE@{AI\_CONFIG\_PP\_DB\_ALL\_OR\_NONE}}
+\index{AI\_CONFIG\_PP\_DB\_ALL\_OR\_NONE@{AI\_CONFIG\_PP\_DB\_ALL\_OR\_NONE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_DB\_ALL\_OR\_NONE}{AI\_CONFIG\_PP\_DB\_ALL\_OR\_NONE}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+D\+B\+\_\+\+A\+L\+L\+\_\+\+O\+R\+\_\+\+N\+O\+NE~\char`\"{}P\+P\+\_\+\+D\+B\+\_\+\+A\+L\+L\+\_\+\+O\+R\+\_\+\+N\+O\+NE\char`\"{}}
+
+
+
+Require all bones qualify for deboning before removing any. 
+
+This is used by the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a8e14bca58301e2ee29cf928156c3a9f9}{ai\+Process\+\_\+\+Debone}} Post\+Process-\/\+Step. \begin{DoxyNote}{Note}
+The default value is 0 Property type\+: bool. 
+\end{DoxyNote}
+\mbox{\Hypertarget{config_8h_a3f19ce3619d0d54a1bc51cd5e6c73e41}\label{config_8h_a3f19ce3619d0d54a1bc51cd5e6c73e41}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_DB\_THRESHOLD@{AI\_CONFIG\_PP\_DB\_THRESHOLD}}
+\index{AI\_CONFIG\_PP\_DB\_THRESHOLD@{AI\_CONFIG\_PP\_DB\_THRESHOLD}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_DB\_THRESHOLD}{AI\_CONFIG\_PP\_DB\_THRESHOLD}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+D\+B\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD~\char`\"{}P\+P\+\_\+\+D\+B\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD\char`\"{}}
+
+
+
+Lower the deboning threshold in order to remove more bones. 
+
+This is used by the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a8e14bca58301e2ee29cf928156c3a9f9}{ai\+Process\+\_\+\+Debone}} Post\+Process-\/\+Step. \begin{DoxyNote}{Note}
+The default value is A\+I\+\_\+\+D\+E\+B\+O\+N\+E\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD Property type\+: float. 
+\end{DoxyNote}
+\mbox{\Hypertarget{config_8h_a3d9c02c1676aae7baf5e079fc72e08d1}\label{config_8h_a3d9c02c1676aae7baf5e079fc72e08d1}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_FD\_REMOVE@{AI\_CONFIG\_PP\_FD\_REMOVE}}
+\index{AI\_CONFIG\_PP\_FD\_REMOVE@{AI\_CONFIG\_PP\_FD\_REMOVE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_FD\_REMOVE}{AI\_CONFIG\_PP\_FD\_REMOVE}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+F\+D\+\_\+\+R\+E\+M\+O\+VE~\char`\"{}P\+P\+\_\+\+F\+D\+\_\+\+R\+E\+M\+O\+VE\char`\"{}}
+
+
+
+Configures the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410ae1311236ea7a55b7355c5aa535586ad0}{ai\+Process\+\_\+\+Find\+Degenerates}} step to remove degenerated primitives from the import -\/ immediately. 
+
+The default behaviour converts degenerated triangles to lines and degenerated lines to points. See the documentation to the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410ae1311236ea7a55b7355c5aa535586ad0}{ai\+Process\+\_\+\+Find\+Degenerates}} step for a detailed example of the various ways to get rid of these lines and points if you don\textquotesingle{}t want them. Property type\+: bool. Default value\+: false. \mbox{\Hypertarget{config_8h_a412ab4b92d48adbddc81c1c9a190493f}\label{config_8h_a412ab4b92d48adbddc81c1c9a190493f}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_GSN\_MAX\_SMOOTHING\_ANGLE@{AI\_CONFIG\_PP\_GSN\_MAX\_SMOOTHING\_ANGLE}}
+\index{AI\_CONFIG\_PP\_GSN\_MAX\_SMOOTHING\_ANGLE@{AI\_CONFIG\_PP\_GSN\_MAX\_SMOOTHING\_ANGLE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_GSN\_MAX\_SMOOTHING\_ANGLE}{AI\_CONFIG\_PP\_GSN\_MAX\_SMOOTHING\_ANGLE}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+G\+S\+N\+\_\+\+M\+A\+X\+\_\+\+S\+M\+O\+O\+T\+H\+I\+N\+G\+\_\+\+A\+N\+G\+LE~\char`\"{}P\+P\+\_\+\+G\+S\+N\+\_\+\+M\+A\+X\+\_\+\+S\+M\+O\+O\+T\+H\+I\+N\+G\+\_\+\+A\+N\+G\+LE\char`\"{}}
+
+
+
+Specifies the maximum angle that may be between two face normals at the same vertex position that their are smoothed together. 
+
+Sometimes referred to as \textquotesingle{}crease angle\textquotesingle{}. This applies to the Gen\+Smooth\+Normals-\/\+Step. The angle is specified in degrees, so 180 is PI. The default value is 175 degrees (all vertex normals are smoothed). The maximum value is 175, too. Property type\+: float. Warning\+: setting this option may cause a severe loss of performance. The performance is unaffected if the \mbox{\hyperlink{config_8h_ac19aa56fa892f712fd3fb4d95be19114}{A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+A\+V\+O\+U\+R\+\_\+\+S\+P\+E\+ED}} flag is set but the output quality may be reduced. \mbox{\Hypertarget{config_8h_a851b513ea20c4d66a1c012d63dd8e78b}\label{config_8h_a851b513ea20c4d66a1c012d63dd8e78b}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_ICL\_PTCACHE\_SIZE@{AI\_CONFIG\_PP\_ICL\_PTCACHE\_SIZE}}
+\index{AI\_CONFIG\_PP\_ICL\_PTCACHE\_SIZE@{AI\_CONFIG\_PP\_ICL\_PTCACHE\_SIZE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_ICL\_PTCACHE\_SIZE}{AI\_CONFIG\_PP\_ICL\_PTCACHE\_SIZE}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+I\+C\+L\+\_\+\+P\+T\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE~\char`\"{}P\+P\+\_\+\+I\+C\+L\+\_\+\+P\+T\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE\char`\"{}}
+
+
+
+Set the size of the post-\/transform vertex cache to optimize the vertices for. This configures the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a16979c68f93d283c6886abf580d557b1}{ai\+Process\+\_\+\+Improve\+Cache\+Locality}} step. 
+
+The size is given in vertices. Of course you can\textquotesingle{}t know how the vertex format will exactly look like after the import returns, but you can still guess what your meshes will probably have. \begin{DoxyNote}{Note}
+The default value is \mbox{\hyperlink{config_8h_a52df90ae1346e6b39048f7218e04d2f6}{P\+P\+\_\+\+I\+C\+L\+\_\+\+P\+T\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE}}. That results in slight performance improvements for most n\+Vidia/\+A\+MD cards since 2002. Property type\+: integer. 
+\end{DoxyNote}
+\mbox{\Hypertarget{config_8h_a37c3ad7872523b615d42761f2dc1bdf5}\label{config_8h_a37c3ad7872523b615d42761f2dc1bdf5}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_LBW\_MAX\_WEIGHTS@{AI\_CONFIG\_PP\_LBW\_MAX\_WEIGHTS}}
+\index{AI\_CONFIG\_PP\_LBW\_MAX\_WEIGHTS@{AI\_CONFIG\_PP\_LBW\_MAX\_WEIGHTS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_LBW\_MAX\_WEIGHTS}{AI\_CONFIG\_PP\_LBW\_MAX\_WEIGHTS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+L\+B\+W\+\_\+\+M\+A\+X\+\_\+\+W\+E\+I\+G\+H\+TS~\char`\"{}P\+P\+\_\+\+L\+B\+W\+\_\+\+M\+A\+X\+\_\+\+W\+E\+I\+G\+H\+TS\char`\"{}}
+
+
+
+Set the maximum number of bones affecting a single vertex. 
+
+This is used by the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a9fc450a103aa2831c145c49bc56c9439}{ai\+Process\+\_\+\+Limit\+Bone\+Weights}} Post\+Process-\/\+Step. \begin{DoxyNote}{Note}
+The default value is A\+I\+\_\+\+L\+B\+W\+\_\+\+M\+A\+X\+\_\+\+W\+E\+I\+G\+H\+TS Property type\+: integer. 
+\end{DoxyNote}
+\mbox{\Hypertarget{config_8h_aa5943736f9c90b709c4bd819afca9798}\label{config_8h_aa5943736f9c90b709c4bd819afca9798}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_OG\_EXCLUDE\_LIST@{AI\_CONFIG\_PP\_OG\_EXCLUDE\_LIST}}
+\index{AI\_CONFIG\_PP\_OG\_EXCLUDE\_LIST@{AI\_CONFIG\_PP\_OG\_EXCLUDE\_LIST}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_OG\_EXCLUDE\_LIST}{AI\_CONFIG\_PP\_OG\_EXCLUDE\_LIST}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+O\+G\+\_\+\+E\+X\+C\+L\+U\+D\+E\+\_\+\+L\+I\+ST~\char`\"{}P\+P\+\_\+\+O\+G\+\_\+\+E\+X\+C\+L\+U\+D\+E\+\_\+\+L\+I\+ST\char`\"{}}
+
+
+
+Configures the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a3bf6b8cb30289fd27fb2734d67a0889f}{ai\+Process\+\_\+\+Optimize\+Graph}} step to preserve nodes matching a name in a given list. 
+
+This is a list of 1 to n strings, \textquotesingle{} \textquotesingle{} serves as delimiter character. Identifiers containing whitespaces must be enclosed in {\itshape single} quotation marks. For example\+:{\ttfamily  \char`\"{}keep-\/me and\+\_\+me\+\_\+to another\+Node\+To\+Be\+Kept \textbackslash{}\textquotesingle{}name with whitespace\textbackslash{}\textquotesingle{}\char`\"{}}. If a node matches on of these names, it will not be modified or removed by the postprocessing step.~\newline
+ This option might be useful if you are using some magic node names to pass additional semantics through the content pipeline. This ensures they won\textquotesingle{}t be optimized away, but a general optimization is still performed for nodes not contained in the list. Property type\+: String. Default value\+: n/a \begin{DoxyNote}{Note}
+Linefeeds, tabs or carriage returns are treated as whitespace. Node names are case sensitive. 
+\end{DoxyNote}
+\mbox{\Hypertarget{config_8h_a04cc3d3a549efd8db4a56eaf554fd327}\label{config_8h_a04cc3d3a549efd8db4a56eaf554fd327}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_PTV\_KEEP\_HIERARCHY@{AI\_CONFIG\_PP\_PTV\_KEEP\_HIERARCHY}}
+\index{AI\_CONFIG\_PP\_PTV\_KEEP\_HIERARCHY@{AI\_CONFIG\_PP\_PTV\_KEEP\_HIERARCHY}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_PTV\_KEEP\_HIERARCHY}{AI\_CONFIG\_PP\_PTV\_KEEP\_HIERARCHY}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+P\+T\+V\+\_\+\+K\+E\+E\+P\+\_\+\+H\+I\+E\+R\+A\+R\+C\+HY~\char`\"{}P\+P\+\_\+\+P\+T\+V\+\_\+\+K\+E\+E\+P\+\_\+\+H\+I\+E\+R\+A\+R\+C\+HY\char`\"{}}
+
+
+
+Configures the \#ai\+Process\+\_\+\+Pretransform\+Vertices step to keep the scene hierarchy. Meshes are moved to worldspace, but no optimization is performed (read\+: meshes with equal materials are not joined. The total number of meshes won\textquotesingle{}t change). 
+
+This option could be of use for you if the scene hierarchy contains important additional information which you intend to parse. For rendering, you can still render all meshes in the scene without any transformations. Property type\+: bool. Default value\+: false. \mbox{\Hypertarget{config_8h_a5a7a5d8c18ffe39d29834a0737e2bce9}\label{config_8h_a5a7a5d8c18ffe39d29834a0737e2bce9}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_RRM\_EXCLUDE\_LIST@{AI\_CONFIG\_PP\_RRM\_EXCLUDE\_LIST}}
+\index{AI\_CONFIG\_PP\_RRM\_EXCLUDE\_LIST@{AI\_CONFIG\_PP\_RRM\_EXCLUDE\_LIST}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_RRM\_EXCLUDE\_LIST}{AI\_CONFIG\_PP\_RRM\_EXCLUDE\_LIST}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+R\+R\+M\+\_\+\+E\+X\+C\+L\+U\+D\+E\+\_\+\+L\+I\+ST~\char`\"{}P\+P\+\_\+\+R\+R\+M\+\_\+\+E\+X\+C\+L\+U\+D\+E\+\_\+\+L\+I\+ST\char`\"{}}
+
+
+
+Configures the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a052d2921c33cd21141480b8f25524bb1}{ai\+Process\+\_\+\+Remove\+Redundant\+Materials}} step to keep materials matching a name in a given list. 
+
+This is a list of 1 to n strings, \textquotesingle{} \textquotesingle{} serves as delimiter character. Identifiers containing whitespaces must be enclosed in {\itshape single} quotation marks. For example\+:{\ttfamily  \char`\"{}keep-\/me and\+\_\+me\+\_\+to another\+Material\+To\+Be\+Kept \textbackslash{}\textquotesingle{}name with whitespace\textbackslash{}\textquotesingle{}\char`\"{}}. If a material matches on of these names, it will not be modified or removed by the postprocessing step nor will other materials be replaced by a reference to it. ~\newline
+ This option might be useful if you are using some magic material names to pass additional semantics through the content pipeline. This ensures they won\textquotesingle{}t be optimized away, but a general optimization is still performed for materials not contained in the list. Property type\+: String. Default value\+: n/a \begin{DoxyNote}{Note}
+Linefeeds, tabs or carriage returns are treated as whitespace. \mbox{\hyperlink{classMaterial}{Material}} names are case sensitive. 
+\end{DoxyNote}
+\mbox{\Hypertarget{config_8h_afc0a4c00fb90c345eb38fe3f7d7c8637}\label{config_8h_afc0a4c00fb90c345eb38fe3f7d7c8637}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_RVC\_FLAGS@{AI\_CONFIG\_PP\_RVC\_FLAGS}}
+\index{AI\_CONFIG\_PP\_RVC\_FLAGS@{AI\_CONFIG\_PP\_RVC\_FLAGS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_RVC\_FLAGS}{AI\_CONFIG\_PP\_RVC\_FLAGS}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+R\+V\+C\+\_\+\+F\+L\+A\+GS~\char`\"{}P\+P\+\_\+\+R\+V\+C\+\_\+\+F\+L\+A\+GS\char`\"{}}
+
+
+
+Input parameter to the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a0ab270168bd7a707c0f279045c265e08}{ai\+Process\+\_\+\+Remove\+Component}} step\+: Specifies the parts of the data structure to be removed. 
+
+See the documentation to this step for further details. The property is expected to be an integer, a bitwise combination of the \mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3}{ai\+Component}} flags defined above in this header. The default value is 0. Important\+: if no valid mesh is remaining after the step has been executed (e.\+g you thought it was funny to specify A\+LL of the flags defined above) the import F\+A\+I\+LS. Mainly because there is no data to work on anymore ... \mbox{\Hypertarget{config_8h_ada7420ed15ce65797bcb1943feab2085}\label{config_8h_ada7420ed15ce65797bcb1943feab2085}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_SBBC\_MAX\_BONES@{AI\_CONFIG\_PP\_SBBC\_MAX\_BONES}}
+\index{AI\_CONFIG\_PP\_SBBC\_MAX\_BONES@{AI\_CONFIG\_PP\_SBBC\_MAX\_BONES}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_SBBC\_MAX\_BONES}{AI\_CONFIG\_PP\_SBBC\_MAX\_BONES}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+S\+B\+B\+C\+\_\+\+M\+A\+X\+\_\+\+B\+O\+N\+ES~\char`\"{}P\+P\+\_\+\+S\+B\+B\+C\+\_\+\+M\+A\+X\+\_\+\+B\+O\+N\+ES\char`\"{}}
+
+
+
+Maximum bone count per mesh for the Splitby\+Bone\+Count step. 
+
+Meshes are split until the maximum number of bones is reached. The default value is A\+I\+\_\+\+S\+B\+B\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+B\+O\+N\+ES, which may be altered at compile-\/time. Property data type\+: integer. \mbox{\Hypertarget{config_8h_a971e337cb0d526861142586b8341cb98}\label{config_8h_a971e337cb0d526861142586b8341cb98}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_SBP\_REMOVE@{AI\_CONFIG\_PP\_SBP\_REMOVE}}
+\index{AI\_CONFIG\_PP\_SBP\_REMOVE@{AI\_CONFIG\_PP\_SBP\_REMOVE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_SBP\_REMOVE}{AI\_CONFIG\_PP\_SBP\_REMOVE}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+S\+B\+P\+\_\+\+R\+E\+M\+O\+VE~\char`\"{}P\+P\+\_\+\+S\+B\+P\+\_\+\+R\+E\+M\+O\+VE\char`\"{}}
+
+
+
+Input parameter to the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410ab4484f73635d633cd79973bac1431ed6}{ai\+Process\+\_\+\+Sort\+By\+P\+Type}} step\+: Specifies which primitive types are removed by the step. 
+
+This is a bitwise combination of the ai\+Primitive\+Type flags. Specifying all of them is illegal, of course. A typical use would be to exclude all line and point meshes from the import. This is an integer property, its default value is 0. \mbox{\Hypertarget{config_8h_a28b904b69e6e5261aaae50b858316041}\label{config_8h_a28b904b69e6e5261aaae50b858316041}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_SLM\_TRIANGLE\_LIMIT@{AI\_CONFIG\_PP\_SLM\_TRIANGLE\_LIMIT}}
+\index{AI\_CONFIG\_PP\_SLM\_TRIANGLE\_LIMIT@{AI\_CONFIG\_PP\_SLM\_TRIANGLE\_LIMIT}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_SLM\_TRIANGLE\_LIMIT}{AI\_CONFIG\_PP\_SLM\_TRIANGLE\_LIMIT}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+S\+L\+M\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+L\+I\+M\+IT~\char`\"{}P\+P\+\_\+\+S\+L\+M\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+L\+I\+M\+IT\char`\"{}}
+
+
+
+Set the maximum number of triangles in a mesh. 
+
+This is used by the \char`\"{}\+Split\+Large\+Meshes\char`\"{} Post\+Process-\/\+Step to determine whether a mesh must be split or not. \begin{DoxyNote}{Note}
+The default value is A\+I\+\_\+\+S\+L\+M\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+T\+R\+I\+A\+N\+G\+L\+ES Property type\+: integer. 
+\end{DoxyNote}
+\mbox{\Hypertarget{config_8h_a67d3e772a82c3bbb921ce4d8f2448f2f}\label{config_8h_a67d3e772a82c3bbb921ce4d8f2448f2f}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_SLM\_VERTEX\_LIMIT@{AI\_CONFIG\_PP\_SLM\_VERTEX\_LIMIT}}
+\index{AI\_CONFIG\_PP\_SLM\_VERTEX\_LIMIT@{AI\_CONFIG\_PP\_SLM\_VERTEX\_LIMIT}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_SLM\_VERTEX\_LIMIT}{AI\_CONFIG\_PP\_SLM\_VERTEX\_LIMIT}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+S\+L\+M\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+L\+I\+M\+IT~\char`\"{}P\+P\+\_\+\+S\+L\+M\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+L\+I\+M\+IT\char`\"{}}
+
+
+
+Set the maximum number of vertices in a mesh. 
+
+This is used by the \char`\"{}\+Split\+Large\+Meshes\char`\"{} Post\+Process-\/\+Step to determine whether a mesh must be split or not. \begin{DoxyNote}{Note}
+The default value is A\+I\+\_\+\+S\+L\+M\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+V\+E\+R\+T\+I\+C\+ES Property type\+: integer. 
+\end{DoxyNote}
+\mbox{\Hypertarget{config_8h_a6e4d6d6bccf5407432bb137468997f90}\label{config_8h_a6e4d6d6bccf5407432bb137468997f90}} 
+\index{config.h@{config.h}!AI\_CONFIG\_PP\_TUV\_EVALUATE@{AI\_CONFIG\_PP\_TUV\_EVALUATE}}
+\index{AI\_CONFIG\_PP\_TUV\_EVALUATE@{AI\_CONFIG\_PP\_TUV\_EVALUATE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AI\_CONFIG\_PP\_TUV\_EVALUATE}{AI\_CONFIG\_PP\_TUV\_EVALUATE}}
+{\footnotesize\ttfamily \#define A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+P\+\_\+\+T\+U\+V\+\_\+\+E\+V\+A\+L\+U\+A\+TE~\char`\"{}P\+P\+\_\+\+T\+U\+V\+\_\+\+E\+V\+A\+L\+U\+A\+TE\char`\"{}}
+
+
+
+Input parameter to the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a87577c60885b193571a10237341b237f}{ai\+Process\+\_\+\+Transform\+U\+V\+Coords}} step\+: Specifies which UV transformations are evaluated. 
+
+This is a bitwise combination of the A\+I\+\_\+\+U\+V\+T\+R\+A\+F\+O\+\_\+\+X\+XX flags (integer property, of course). By default all transformations are enabled (A\+I\+\_\+\+U\+V\+T\+R\+A\+F\+O\+\_\+\+A\+LL). 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3}} 
+\index{config.h@{config.h}!aiComponent@{aiComponent}}
+\index{aiComponent@{aiComponent}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{aiComponent}{aiComponent}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{config_8h_a97ac2ef7a3967402a223f3da2640b2b3}{ai\+Component}}}
+
+
+
+Enumerates components of the ai\+Scene and \mbox{\hyperlink{structaiMesh}{ai\+Mesh}} data structures that can be excluded from the import using the \#ai\+Prpcess\+\_\+\+Remove\+Component step. 
+
+See the documentation to \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a0ab270168bd7a707c0f279045c265e08}{ai\+Process\+\_\+\+Remove\+Component}} for more details. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiComponent\_NORMALS@{aiComponent\_NORMALS}!config.h@{config.h}}\index{config.h@{config.h}!aiComponent\_NORMALS@{aiComponent\_NORMALS}}}\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a041f3a06b4266389628bbf6d7c972e16}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a041f3a06b4266389628bbf6d7c972e16}} 
+ai\+Component\+\_\+\+N\+O\+R\+M\+A\+LS&Normal vectors \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiComponent\_TANGENTS\_AND\_BITANGENTS@{aiComponent\_TANGENTS\_AND\_BITANGENTS}!config.h@{config.h}}\index{config.h@{config.h}!aiComponent\_TANGENTS\_AND\_BITANGENTS@{aiComponent\_TANGENTS\_AND\_BITANGENTS}}}\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a3735667dae4d12e0573b049be86158af}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a3735667dae4d12e0573b049be86158af}} 
+ai\+Component\+\_\+\+T\+A\+N\+G\+E\+N\+T\+S\+\_\+\+A\+N\+D\+\_\+\+B\+I\+T\+A\+N\+G\+E\+N\+TS&Tangents and bitangents go always together ... \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiComponent\_COLORS@{aiComponent\_COLORS}!config.h@{config.h}}\index{config.h@{config.h}!aiComponent\_COLORS@{aiComponent\_COLORS}}}\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a66f2439356e377d9182a34e4d11b89aa}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a66f2439356e377d9182a34e4d11b89aa}} 
+ai\+Component\+\_\+\+C\+O\+L\+O\+RS&A\+LL color sets Use ai\+Component\+\_\+\+C\+O\+L\+O\+Rn(\+N) to specify the N\textquotesingle{}th set \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiComponent\_TEXCOORDS@{aiComponent\_TEXCOORDS}!config.h@{config.h}}\index{config.h@{config.h}!aiComponent\_TEXCOORDS@{aiComponent\_TEXCOORDS}}}\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a119bc187db7e081af2e5b9732060623d}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a119bc187db7e081af2e5b9732060623d}} 
+ai\+Component\+\_\+\+T\+E\+X\+C\+O\+O\+R\+DS&A\+LL texture UV sets ai\+Component\+\_\+\+T\+E\+X\+C\+O\+O\+R\+Dn(\+N) to specify the N\textquotesingle{}th set ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiComponent\_BONEWEIGHTS@{aiComponent\_BONEWEIGHTS}!config.h@{config.h}}\index{config.h@{config.h}!aiComponent\_BONEWEIGHTS@{aiComponent\_BONEWEIGHTS}}}\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3ad37e83da41d8e9b17c2634bacc42925c}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3ad37e83da41d8e9b17c2634bacc42925c}} 
+ai\+Component\+\_\+\+B\+O\+N\+E\+W\+E\+I\+G\+H\+TS&Removes all bone weights from all meshes. The scenegraph nodes corresponding to the bones are N\+OT removed. use the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a3bf6b8cb30289fd27fb2734d67a0889f}{ai\+Process\+\_\+\+Optimize\+Graph}} step to do this \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiComponent\_ANIMATIONS@{aiComponent\_ANIMATIONS}!config.h@{config.h}}\index{config.h@{config.h}!aiComponent\_ANIMATIONS@{aiComponent\_ANIMATIONS}}}\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a8affaed18f69210bcbf20adeba16050a}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a8affaed18f69210bcbf20adeba16050a}} 
+ai\+Component\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+NS&Removes all node animations (ai\+Scene\+::m\+Animations). The corresponding scenegraph nodes are N\+OT removed. use the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a3bf6b8cb30289fd27fb2734d67a0889f}{ai\+Process\+\_\+\+Optimize\+Graph}} step to do this \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiComponent\_TEXTURES@{aiComponent\_TEXTURES}!config.h@{config.h}}\index{config.h@{config.h}!aiComponent\_TEXTURES@{aiComponent\_TEXTURES}}}\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3ab6bcf49132356c2034491b6bf367d328}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3ab6bcf49132356c2034491b6bf367d328}} 
+ai\+Component\+\_\+\+T\+E\+X\+T\+U\+R\+ES&Removes all embedded textures (ai\+Scene\+::m\+Textures) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiComponent\_LIGHTS@{aiComponent\_LIGHTS}!config.h@{config.h}}\index{config.h@{config.h}!aiComponent\_LIGHTS@{aiComponent\_LIGHTS}}}\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a9764d42f6546101a555a9e2d87c3b3d9}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a9764d42f6546101a555a9e2d87c3b3d9}} 
+ai\+Component\+\_\+\+L\+I\+G\+H\+TS&Removes all light sources (ai\+Scene\+::m\+Lights). The corresponding scenegraph nodes are N\+OT removed. use the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a3bf6b8cb30289fd27fb2734d67a0889f}{ai\+Process\+\_\+\+Optimize\+Graph}} step to do this \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiComponent\_CAMERAS@{aiComponent\_CAMERAS}!config.h@{config.h}}\index{config.h@{config.h}!aiComponent\_CAMERAS@{aiComponent\_CAMERAS}}}\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3aa4741bd21f4259301bb326e3b74dce29}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3aa4741bd21f4259301bb326e3b74dce29}} 
+ai\+Component\+\_\+\+C\+A\+M\+E\+R\+AS&Removes all cameras (ai\+Scene\+::m\+Cameras). The corresponding scenegraph nodes are N\+OT removed. use the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410a3bf6b8cb30289fd27fb2734d67a0889f}{ai\+Process\+\_\+\+Optimize\+Graph}} step to do this \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiComponent\_MESHES@{aiComponent\_MESHES}!config.h@{config.h}}\index{config.h@{config.h}!aiComponent\_MESHES@{aiComponent\_MESHES}}}\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a297ca9db243a718dc3bfb3502cfc9b7a}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a297ca9db243a718dc3bfb3502cfc9b7a}} 
+ai\+Component\+\_\+\+M\+E\+S\+H\+ES&Removes all meshes (ai\+Scene\+::m\+Meshes). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiComponent\_MATERIALS@{aiComponent\_MATERIALS}!config.h@{config.h}}\index{config.h@{config.h}!aiComponent\_MATERIALS@{aiComponent\_MATERIALS}}}\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a842d010d9211947c65eed564672677ed}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a842d010d9211947c65eed564672677ed}} 
+ai\+Component\+\_\+\+M\+A\+T\+E\+R\+I\+A\+LS&Removes all materials. One default material will be generated, so ai\+Scene\+::m\+Num\+Materials will be 1. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{\_aiComponent\_Force32Bit@{\_aiComponent\_Force32Bit}!config.h@{config.h}}\index{config.h@{config.h}!\_aiComponent\_Force32Bit@{\_aiComponent\_Force32Bit}}}\mbox{\Hypertarget{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a45b57c0405db34d9394193232abb1762}\label{config_8h_a97ac2ef7a3967402a223f3da2640b2b3a45b57c0405db34d9394193232abb1762}} 
+\+\_\+ai\+Component\+\_\+\+Force32\+Bit&This value is not used. It is just there to force the compiler to map this enum to a 32 Bit integer. \\
+\hline
+
+\end{DoxyEnumFields}

@@ -2,7 +2,9 @@
 #define VULKANLAB_ASSET_H
 
 class Asset {
-
+public:
+    Asset();
+    ~Asset();
 };
 
 #endif //VULKANLAB_ASSET_H

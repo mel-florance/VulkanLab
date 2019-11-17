@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Vulkan Lab
+Comment=A discovery travel towards vulkan.
+Exec=/home/mel/Projects/VulkanLab/bin/VulkanLab
+Icon=VulkanLab.png
+Terminal=false

@@ -1,0 +1,66 @@
+\hypertarget{structaiTexture}{}\doxysection{ai\+Texture Struct Reference}
+\label{structaiTexture}\index{aiTexture@{aiTexture}}
+
+
+{\ttfamily \#include $<$texture.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{structaiTexture_aaa3ad8cfe44fdc4dea2db91977d92234}{m\+Width}}
+\item 
+unsigned int \mbox{\hyperlink{structaiTexture_ac1e2fa6f1f646e9c55e3985d4418a752}{m\+Height}}
+\item 
+char \mbox{\hyperlink{structaiTexture_aa9f44996acf3b301bfeb4e5348311540}{ach\+Format\+Hint}} \mbox{[}4\mbox{]}
+\item 
+C\+\_\+\+S\+T\+R\+U\+CT \mbox{\hyperlink{structaiTexel}{ai\+Texel}} $\ast$ \mbox{\hyperlink{structaiTexture_aeb07528748b6e49d2d81c60006024f9a}{pc\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper structure to describe an embedded texture
+
+Normally textures are contained in external files but some file formats embed them directly in the model file. There are two types of embedded textures\+:
+\begin{DoxyEnumerate}
+\item Uncompressed textures. The color data is given in an uncompressed format.
+\item Compressed textures stored in a file format like png or jpg. The raw file bytes are given so the application must utilize an image decoder (e.\+g. Dev\+IL) to get access to the actual color data. 
+\end{DoxyEnumerate}
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structaiTexture_aa9f44996acf3b301bfeb4e5348311540}\label{structaiTexture_aa9f44996acf3b301bfeb4e5348311540}} 
+\index{aiTexture@{aiTexture}!achFormatHint@{achFormatHint}}
+\index{achFormatHint@{achFormatHint}!aiTexture@{aiTexture}}
+\doxysubsubsection{\texorpdfstring{achFormatHint}{achFormatHint}}
+{\footnotesize\ttfamily char ai\+Texture\+::ach\+Format\+Hint\mbox{[}4\mbox{]}}
+
+A hint from the loader to make it easier for applications to determine the type of embedded compressed textures.
+
+If m\+Height != 0 this member is undefined. Otherwise it is set set to \textquotesingle{}\textbackslash{}0\textbackslash{}0\textbackslash{}0\textbackslash{}0\textquotesingle{} if the loader has no additional information about the texture file format used OR the file extension of the format without a trailing dot. If there are multiple file extensions for a format, the shortest extension is chosen (J\+P\+EG maps to \textquotesingle{}jpg\textquotesingle{}, not to \textquotesingle{}jpeg\textquotesingle{}). E.\+g. \textquotesingle{}dds\textbackslash{}0\textquotesingle{}, \textquotesingle{}pcx\textbackslash{}0\textquotesingle{}, \textquotesingle{}jpg\textbackslash{}0\textquotesingle{}. All characters are lower-\/case. The fourth character will always be \textquotesingle{}\textbackslash{}0\textquotesingle{}. \mbox{\Hypertarget{structaiTexture_ac1e2fa6f1f646e9c55e3985d4418a752}\label{structaiTexture_ac1e2fa6f1f646e9c55e3985d4418a752}} 
+\index{aiTexture@{aiTexture}!mHeight@{mHeight}}
+\index{mHeight@{mHeight}!aiTexture@{aiTexture}}
+\doxysubsubsection{\texorpdfstring{mHeight}{mHeight}}
+{\footnotesize\ttfamily unsigned int ai\+Texture\+::m\+Height}
+
+Height of the texture, in pixels
+
+If this value is zero, pc\+Data points to an compressed texture in any format (e.\+g. J\+P\+EG). \mbox{\Hypertarget{structaiTexture_aaa3ad8cfe44fdc4dea2db91977d92234}\label{structaiTexture_aaa3ad8cfe44fdc4dea2db91977d92234}} 
+\index{aiTexture@{aiTexture}!mWidth@{mWidth}}
+\index{mWidth@{mWidth}!aiTexture@{aiTexture}}
+\doxysubsubsection{\texorpdfstring{mWidth}{mWidth}}
+{\footnotesize\ttfamily unsigned int ai\+Texture\+::m\+Width}
+
+Width of the texture, in pixels
+
+If m\+Height is zero the texture is compressed in a format like J\+P\+EG. In this case m\+Width specifies the size of the memory area pc\+Data is pointing to, in bytes. \mbox{\Hypertarget{structaiTexture_aeb07528748b6e49d2d81c60006024f9a}\label{structaiTexture_aeb07528748b6e49d2d81c60006024f9a}} 
+\index{aiTexture@{aiTexture}!pcData@{pcData}}
+\index{pcData@{pcData}!aiTexture@{aiTexture}}
+\doxysubsubsection{\texorpdfstring{pcData}{pcData}}
+{\footnotesize\ttfamily C\+\_\+\+S\+T\+R\+U\+CT \mbox{\hyperlink{structaiTexel}{ai\+Texel}}$\ast$ ai\+Texture\+::pc\+Data}
+
+Data of the texture.
+
+Points to an array of m\+Width $\ast$ m\+Height \mbox{\hyperlink{structaiTexel}{ai\+Texel}}\textquotesingle{}s. The format of the texture data is always A\+R\+G\+B8888 to make the implementation for user of the library as easy as possible. If m\+Height = 0 this is a pointer to a memory buffer of size m\+Width containing the compressed texture data. Good luck, have fun! 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/assimp/\mbox{\hyperlink{texture_8h}{texture.\+h}}\end{DoxyCompactItemize}

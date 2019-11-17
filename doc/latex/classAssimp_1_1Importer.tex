@@ -1,0 +1,698 @@
+\hypertarget{classAssimp_1_1Importer}{}\doxysection{Assimp\+::Importer Class Reference}
+\label{classAssimp_1_1Importer}\index{Assimp::Importer@{Assimp::Importer}}
+
+
+{\ttfamily \#include $<$Importer.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAssimp_1_1Importer_a2c207299ed05f1db1ad1e6dab005f719}{Importer}} ()
+\item 
+\mbox{\hyperlink{classAssimp_1_1Importer_a69743664b5a7a8c195be48265144317b}{Importer}} (const \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} \&other)
+\item 
+\mbox{\hyperlink{classAssimp_1_1Importer_a3d65af5286ba22f46220a72a6eb2a1c9}{$\sim$\+Importer}} ()
+\item 
+ai\+Return \mbox{\hyperlink{classAssimp_1_1Importer_a3846294ffe76d91a1d3096d22d7c6b7d}{Register\+Loader}} (Base\+Importer $\ast$p\+Imp)
+\item 
+ai\+Return \mbox{\hyperlink{classAssimp_1_1Importer_a3b1f5af2c763b13aca0f324b19001722}{Unregister\+Loader}} (Base\+Importer $\ast$p\+Imp)
+\item 
+ai\+Return \mbox{\hyperlink{classAssimp_1_1Importer_a102650d3648c0e414a1e73bdad9bed35}{Register\+P\+P\+Step}} (Base\+Process $\ast$p\+Imp)
+\item 
+ai\+Return \mbox{\hyperlink{classAssimp_1_1Importer_a3a683671c7c40638b1103c5d3648d86c}{Unregister\+P\+P\+Step}} (Base\+Process $\ast$p\+Imp)
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Importer_aa50eba6120a9b9805d0c2b02f1187165}{Set\+Property\+Integer}} (const char $\ast$sz\+Name, int i\+Value, bool $\ast$b\+Was\+Existing=N\+U\+LL)
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Importer_acf161a9fdd0d2ed3902e325351311389}{Set\+Property\+Bool}} (const char $\ast$sz\+Name, bool value, bool $\ast$b\+Was\+Existing=N\+U\+LL)
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Importer_ab264807393b68662d1672c2b05e1c0cd}{Set\+Property\+Float}} (const char $\ast$sz\+Name, float f\+Value, bool $\ast$b\+Was\+Existing=N\+U\+LL)
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Importer_a8f79ecb5c6f67a76fc87654c32986e8e}{Set\+Property\+String}} (const char $\ast$sz\+Name, const std\+::string \&s\+Value, bool $\ast$b\+Was\+Existing=N\+U\+LL)
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Importer_a3231ab8031c6fff87c0ce9eba0314a02}{Set\+Property\+Matrix}} (const char $\ast$sz\+Name, const \mbox{\hyperlink{structaiMatrix4x4}{ai\+Matrix4x4}} \&s\+Value, bool $\ast$b\+Was\+Existing=N\+U\+LL)
+\item 
+int \mbox{\hyperlink{classAssimp_1_1Importer_ac6f348464e03176bc6dd790226122b36}{Get\+Property\+Integer}} (const char $\ast$sz\+Name, int i\+Error\+Return=0xffffffff) const
+\item 
+bool \mbox{\hyperlink{classAssimp_1_1Importer_a39e654c887f684cc12f792ca1daebfee}{Get\+Property\+Bool}} (const char $\ast$sz\+Name, bool b\+Error\+Return=false) const
+\item 
+float \mbox{\hyperlink{classAssimp_1_1Importer_aa84bb4b381be09ad156eb713debc50e1}{Get\+Property\+Float}} (const char $\ast$sz\+Name, float f\+Error\+Return=10e10f) const
+\item 
+const std\+::string \mbox{\hyperlink{classAssimp_1_1Importer_afc97e5eeaa39c9d7b6fb60703b78cdf0}{Get\+Property\+String}} (const char $\ast$sz\+Name, const std\+::string \&s\+Error\+Return=\char`\"{}\char`\"{}) const
+\item 
+const \mbox{\hyperlink{structaiMatrix4x4}{ai\+Matrix4x4}} \mbox{\hyperlink{classAssimp_1_1Importer_a53665d41547cc298c53b5341c99ee60e}{Get\+Property\+Matrix}} (const char $\ast$sz\+Name, const \mbox{\hyperlink{structaiMatrix4x4}{ai\+Matrix4x4}} \&s\+Error\+Return=\mbox{\hyperlink{structaiMatrix4x4}{ai\+Matrix4x4}}()) const
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Importer_a1161f46318af18bb86dfe0fc3edea4df}{Set\+I\+O\+Handler}} (\mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} $\ast$p\+I\+O\+Handler)
+\item 
+\mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_a72f4d2821d38b97f630981f9236901e8}{Get\+I\+O\+Handler}} () const
+\item 
+bool \mbox{\hyperlink{classAssimp_1_1Importer_ad2c940def9c4d01709e44a4e781e757d}{Is\+Default\+I\+O\+Handler}} () const
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Importer_a6a4d830ffb3f77a3c7c919e0af006920}{Set\+Progress\+Handler}} (\mbox{\hyperlink{classAssimp_1_1ProgressHandler}{Progress\+Handler}} $\ast$p\+Handler)
+\item 
+\mbox{\hyperlink{classAssimp_1_1ProgressHandler}{Progress\+Handler}} $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_a14201de344db7c66fa514f7f092ae10b}{Get\+Progress\+Handler}} () const
+\item 
+bool \mbox{\hyperlink{classAssimp_1_1Importer_a34062906cb6b9af8abaeda36737d14ae}{Is\+Default\+Progress\+Handler}} () const
+\item 
+bool \mbox{\hyperlink{classAssimp_1_1Importer_af0292c1603ff9b483a5deba4d183eba5}{Validate\+Flags}} (unsigned int p\+Flags) const
+\begin{DoxyCompactList}\small\item\em Check whether a given set of postprocessing flags is supported. \end{DoxyCompactList}\item 
+const ai\+Scene $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File}} (const char $\ast$p\+File, unsigned int p\+Flags)
+\item 
+const ai\+Scene $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_a9b3c5e8b1042702f449e84a95b3324f6}{Read\+File\+From\+Memory}} (const void $\ast$p\+Buffer, size\+\_\+t p\+Length, unsigned int p\+Flags, const char $\ast$p\+Hint=\char`\"{}\char`\"{})
+\item 
+const ai\+Scene $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_a5872e749c1451fee64183fc14f1fc81d}{Apply\+Post\+Processing}} (unsigned int p\+Flags)
+\item 
+const ai\+Scene $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_ad9a9f3905924744b2cdce0f3fc131a87}{Read\+File}} (const std\+::string \&p\+File, unsigned int p\+Flags)
+\begin{DoxyCompactList}\small\item\em Reads the given file and returns its contents if successful. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssimp_1_1Importer_a53dafc3046abc33365a07c605716c5d4}{Free\+Scene}} ()
+\item 
+const char $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_a3ac36c9ab8668bd368de516c19bdcc11}{Get\+Error\+String}} () const
+\item 
+const ai\+Scene $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_ae5f94a29007ed7c873be138ecdb4b056}{Get\+Scene}} () const
+\item 
+ai\+Scene $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_a60eb9042fb85bfbd61a863e131a56ecd}{Get\+Orphaned\+Scene}} ()
+\item 
+bool \mbox{\hyperlink{classAssimp_1_1Importer_a22bbe0ca29cc685b110b6853dd1e4157}{Is\+Extension\+Supported}} (const char $\ast$sz\+Extension) const
+\item 
+bool \mbox{\hyperlink{classAssimp_1_1Importer_a4d49e3c8ecf28336d78f9f5e502990ce}{Is\+Extension\+Supported}} (const std\+::string \&sz\+Extension) const
+\begin{DoxyCompactList}\small\item\em Returns whether a given file extension is supported by A\+S\+S\+I\+MP. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssimp_1_1Importer_ab06927d45d5adbf909040c8f5bac1e4d}{Get\+Extension\+List}} (\mbox{\hyperlink{structaiString}{ai\+String}} \&sz\+Out) const
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Importer_acdc70c6efdf1b572094fe01089ceb158}{Get\+Extension\+List}} (std\+::string \&sz\+Out) const
+\begin{DoxyCompactList}\small\item\em Get a full list of all file extensions supported by A\+S\+S\+I\+MP. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classAssimp_1_1Importer_a5397c7d93358b1a6983c74c5eb5c64a6}{Get\+Importer\+Count}} () const
+\item 
+const \mbox{\hyperlink{structaiImporterDesc}{ai\+Importer\+Desc}} $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_a2f9db052a2507d3a77aec782dc8149cf}{Get\+Importer\+Info}} (size\+\_\+t index) const
+\item 
+Base\+Importer $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_a913543b8db0f09f286cc1b4f20bb3d35}{Get\+Importer}} (size\+\_\+t index) const
+\item 
+Base\+Importer $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_a35d624811e9ddfcd0a898797e6263c22}{Get\+Importer}} (const char $\ast$sz\+Extension) const
+\item 
+size\+\_\+t \mbox{\hyperlink{classAssimp_1_1Importer_aa9158a5ec0caba90cb1a3183c065634f}{Get\+Importer\+Index}} (const char $\ast$sz\+Extension) const
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Importer_a6d6cd3b06de9438744a17f61395a0bf0}{Get\+Memory\+Requirements}} (ai\+Memory\+Info \&in) const
+\item 
+void \mbox{\hyperlink{classAssimp_1_1Importer_a9bb793072c84c784279d0f6e870bb42d}{Set\+Extra\+Verbose}} (bool b\+Do)
+\item 
+Importer\+Pimpl $\ast$ \mbox{\hyperlink{classAssimp_1_1Importer_ac112839f323a630f83395acb74746827}{Pimpl}} ()
+\item 
+\mbox{\Hypertarget{classAssimp_1_1Importer_a5a85077725374402b4d6e107b03ce845}\label{classAssimp_1_1Importer_a5a85077725374402b4d6e107b03ce845}} 
+const Importer\+Pimpl $\ast$ {\bfseries Pimpl} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAssimp_1_1Importer_a3928bb8d375fd676dd5dbe33382e46ce}\label{classAssimp_1_1Importer_a3928bb8d375fd676dd5dbe33382e46ce}} 
+Importer\+Pimpl $\ast$ {\bfseries pimpl}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+C\+P\+P-\/\+A\+PI\+: The \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} class forms an C++ interface to the functionality of the Open \mbox{\hyperlink{classAsset}{Asset}} Import Library.
+
+Create an object of this class and call \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}} to import a file. If the import succeeds, the function returns a pointer to the imported data. The data remains property of the object, it is intended to be accessed read-\/only. The imported data will be destroyed along with the \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} object. If the import fails, \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}} returns a N\+U\+LL pointer. In this case you can retrieve a human-\/readable error description be calling \mbox{\hyperlink{classAssimp_1_1Importer_a3ac36c9ab8668bd368de516c19bdcc11}{Get\+Error\+String()}}. You can call \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}} multiple times with a single \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} instance. Actually, constructing \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} objects involves quite many allocations and may take some time, so it\textquotesingle{}s better to reuse them as often as possible.
+
+If you need the \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} to do custom file handling to access the files, implement \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} and \mbox{\hyperlink{classAssimp_1_1IOStream}{I\+O\+Stream}} and supply an instance of your custom \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} implementation by calling \mbox{\hyperlink{classAssimp_1_1Importer_a1161f46318af18bb86dfe0fc3edea4df}{Set\+I\+O\+Handler()}} before calling \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}}. If you do not assign a custion IO handler, a default handler using the standard C++ IO logic will be used.
+
+\begin{DoxyNote}{Note}
+One \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} instance is not thread-\/safe. If you use multiple threads for loading, each thread should maintain its own \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} instance. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a2c207299ed05f1db1ad1e6dab005f719}\label{classAssimp_1_1Importer_a2c207299ed05f1db1ad1e6dab005f719}} 
+\index{Assimp::Importer@{Assimp::Importer}!Importer@{Importer}}
+\index{Importer@{Importer}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{Importer()}{Importer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Assimp\+::\+Importer\+::\+Importer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. Creates an empty importer object.
+
+Call \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}} to start the import process. The configuration property table is initially empty. \mbox{\Hypertarget{classAssimp_1_1Importer_a69743664b5a7a8c195be48265144317b}\label{classAssimp_1_1Importer_a69743664b5a7a8c195be48265144317b}} 
+\index{Assimp::Importer@{Assimp::Importer}!Importer@{Importer}}
+\index{Importer@{Importer}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{Importer()}{Importer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Assimp\+::\+Importer\+::\+Importer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} \&}]{other }\end{DoxyParamCaption})}
+
+Copy constructor.
+
+This copies the configuration properties of another \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}}. If this \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} owns a scene it won\textquotesingle{}t be copied. Call \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}} to start the import process. \mbox{\Hypertarget{classAssimp_1_1Importer_a3d65af5286ba22f46220a72a6eb2a1c9}\label{classAssimp_1_1Importer_a3d65af5286ba22f46220a72a6eb2a1c9}} 
+\index{Assimp::Importer@{Assimp::Importer}!````~Importer@{$\sim$Importer}}
+\index{````~Importer@{$\sim$Importer}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Importer()}{~Importer()}}
+{\footnotesize\ttfamily Assimp\+::\+Importer\+::$\sim$\+Importer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. The object kept ownership of the imported data, which now will be destroyed along with the object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a5872e749c1451fee64183fc14f1fc81d}\label{classAssimp_1_1Importer_a5872e749c1451fee64183fc14f1fc81d}} 
+\index{Assimp::Importer@{Assimp::Importer}!ApplyPostProcessing@{ApplyPostProcessing}}
+\index{ApplyPostProcessing@{ApplyPostProcessing}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{ApplyPostProcessing()}{ApplyPostProcessing()}}
+{\footnotesize\ttfamily const ai\+Scene$\ast$ Assimp\+::\+Importer\+::\+Apply\+Post\+Processing (\begin{DoxyParamCaption}\item[{unsigned int}]{p\+Flags }\end{DoxyParamCaption})}
+
+Apply post-\/processing to an already-\/imported scene.
+
+This is strictly equivalent to calling \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}} with the same flags. However, you can use this separate function to inspect the imported scene first to fine-\/tune your post-\/processing setup. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & Provide a bitwise combination of the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}} flags. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the post-\/processed data. This is still the same as the pointer returned by \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}}. However, if post-\/processing fails, the scene could now be N\+U\+LL. That\textquotesingle{}s quite a rare case, post processing steps are not really designed to \textquotesingle{}fail\textquotesingle{}. To be exact, the \#ai\+Process\+\_\+\+Validate\+DS flag is currently the only post processing step which can actually cause the scene to be reset to N\+U\+LL.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The method does nothing if no scene is currently bound to the \mbox{\hyperlink{classAssimp_1_1Importer_a2c207299ed05f1db1ad1e6dab005f719}{Importer}} instance. ~\newline
+ 
+\end{DoxyNote}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a53dafc3046abc33365a07c605716c5d4}\label{classAssimp_1_1Importer_a53dafc3046abc33365a07c605716c5d4}} 
+\index{Assimp::Importer@{Assimp::Importer}!FreeScene@{FreeScene}}
+\index{FreeScene@{FreeScene}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{FreeScene()}{FreeScene()}}
+{\footnotesize\ttfamily void Assimp\+::\+Importer\+::\+Free\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Frees the current scene.
+
+The function does nothing if no scene has previously been read via \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}}. \mbox{\hyperlink{classAssimp_1_1Importer_a53dafc3046abc33365a07c605716c5d4}{Free\+Scene()}} is called automatically by the destructor and \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}} itself. ~\newline
+ \mbox{\Hypertarget{classAssimp_1_1Importer_a3ac36c9ab8668bd368de516c19bdcc11}\label{classAssimp_1_1Importer_a3ac36c9ab8668bd368de516c19bdcc11}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetErrorString@{GetErrorString}}
+\index{GetErrorString@{GetErrorString}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetErrorString()}{GetErrorString()}}
+{\footnotesize\ttfamily const char$\ast$ Assimp\+::\+Importer\+::\+Get\+Error\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns an error description of an error that occurred in \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}}.
+
+Returns an empty string if no error occurred. \begin{DoxyReturn}{Returns}
+A description of the last error, an empty string if no error occurred. The string is never N\+U\+LL.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned function remains valid until one of the following methods is called\+: \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}}, \mbox{\hyperlink{classAssimp_1_1Importer_a53dafc3046abc33365a07c605716c5d4}{Free\+Scene()}}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classAssimp_1_1Importer_ab06927d45d5adbf909040c8f5bac1e4d}\label{classAssimp_1_1Importer_ab06927d45d5adbf909040c8f5bac1e4d}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetExtensionList@{GetExtensionList}}
+\index{GetExtensionList@{GetExtensionList}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetExtensionList()}{GetExtensionList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Assimp\+::\+Importer\+::\+Get\+Extension\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structaiString}{ai\+String}} \&}]{sz\+Out }\end{DoxyParamCaption}) const}
+
+Get a full list of all file extensions supported by A\+S\+S\+I\+MP.
+
+If a file extension is contained in the list this does of course not mean that A\+S\+S\+I\+MP is able to load all files with this extension --- it simply means there is an importer loaded which claims to handle files with this file extension. 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Out} & String to receive the extension list. Format of the list\+: \char`\"{}$\ast$.\+3ds;$\ast$.\+obj;$\ast$.\+dae\char`\"{}. This is useful for use with the Win\+A\+PI call Get\+Open\+File\+Name(\+Ex). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssimp_1_1Importer_acdc70c6efdf1b572094fe01089ceb158}\label{classAssimp_1_1Importer_acdc70c6efdf1b572094fe01089ceb158}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetExtensionList@{GetExtensionList}}
+\index{GetExtensionList@{GetExtensionList}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetExtensionList()}{GetExtensionList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily A\+I\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE void Assimp\+::\+Importer\+::\+Get\+Extension\+List (\begin{DoxyParamCaption}\item[{std\+::string \&}]{sz\+Out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a full list of all file extensions supported by A\+S\+S\+I\+MP. 
+
+This function is provided for backward compatibility. See the \mbox{\hyperlink{structaiString}{ai\+String}} version for detailed and up-\/to-\/date docs. \begin{DoxySeeAlso}{See also}
+Get\+Extension\+List(ai\+String\&) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a35d624811e9ddfcd0a898797e6263c22}\label{classAssimp_1_1Importer_a35d624811e9ddfcd0a898797e6263c22}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetImporter@{GetImporter}}
+\index{GetImporter@{GetImporter}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetImporter()}{GetImporter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Base\+Importer$\ast$ Assimp\+::\+Importer\+::\+Get\+Importer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Extension }\end{DoxyParamCaption}) const}
+
+Find the importer corresponding to a specific file extension.
+
+This is quite similar to \mbox{\hyperlink{classAssimp_1_1Importer_a22bbe0ca29cc685b110b6853dd1e4157}{Is\+Extension\+Supported}} except a Base\+Importer instance is returned. 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Extension} & Extension to check for. The following formats are recognized (B\+AH being the file extension)\+: \char`\"{}\+B\+A\+H\char`\"{} (comparison is case-\/insensitive), \char`\"{}.\+bah\char`\"{}, \char`\"{}$\ast$.\+bah\char`\"{} (wild card and dot characters at the beginning of the extension are skipped). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+U\+LL if no importer is found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a913543b8db0f09f286cc1b4f20bb3d35}\label{classAssimp_1_1Importer_a913543b8db0f09f286cc1b4f20bb3d35}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetImporter@{GetImporter}}
+\index{GetImporter@{GetImporter}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetImporter()}{GetImporter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Base\+Importer$\ast$ Assimp\+::\+Importer\+::\+Get\+Importer (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption}) const}
+
+Find the importer corresponding to a specific index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index to query, must be within \mbox{[}0,\mbox{\hyperlink{classAssimp_1_1Importer_a5397c7d93358b1a6983c74c5eb5c64a6}{Get\+Importer\+Count()}}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} instance. N\+U\+LL if the index does not exist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a5397c7d93358b1a6983c74c5eb5c64a6}\label{classAssimp_1_1Importer_a5397c7d93358b1a6983c74c5eb5c64a6}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetImporterCount@{GetImporterCount}}
+\index{GetImporterCount@{GetImporterCount}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetImporterCount()}{GetImporterCount()}}
+{\footnotesize\ttfamily size\+\_\+t Assimp\+::\+Importer\+::\+Get\+Importer\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the number of importrs currently registered with \mbox{\hyperlink{namespaceAssimp}{Assimp}}. \mbox{\Hypertarget{classAssimp_1_1Importer_aa9158a5ec0caba90cb1a3183c065634f}\label{classAssimp_1_1Importer_aa9158a5ec0caba90cb1a3183c065634f}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetImporterIndex@{GetImporterIndex}}
+\index{GetImporterIndex@{GetImporterIndex}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetImporterIndex()}{GetImporterIndex()}}
+{\footnotesize\ttfamily size\+\_\+t Assimp\+::\+Importer\+::\+Get\+Importer\+Index (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Extension }\end{DoxyParamCaption}) const}
+
+Find the importer index corresponding to a specific file extension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Extension} & Extension to check for. The following formats are recognized (B\+AH being the file extension)\+: \char`\"{}\+B\+A\+H\char`\"{} (comparison is case-\/insensitive), \char`\"{}.\+bah\char`\"{}, \char`\"{}$\ast$.\+bah\char`\"{} (wild card and dot characters at the beginning of the extension are skipped). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(size\+\_\+t)-\/1 if no importer is found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a2f9db052a2507d3a77aec782dc8149cf}\label{classAssimp_1_1Importer_a2f9db052a2507d3a77aec782dc8149cf}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetImporterInfo@{GetImporterInfo}}
+\index{GetImporterInfo@{GetImporterInfo}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetImporterInfo()}{GetImporterInfo()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structaiImporterDesc}{ai\+Importer\+Desc}}$\ast$ Assimp\+::\+Importer\+::\+Get\+Importer\+Info (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption}) const}
+
+Get meta data for the importer corresponding to a specific index..
+
+For the declaration of \mbox{\hyperlink{structaiImporterDesc}{ai\+Importer\+Desc}}, include $<$\mbox{\hyperlink{importerdesc_8h}{assimp/importerdesc.\+h}}$>$. 
+\begin{DoxyParams}{Parameters}
+{\em index} & Index to query, must be within \mbox{[}0,\mbox{\hyperlink{classAssimp_1_1Importer_a5397c7d93358b1a6983c74c5eb5c64a6}{Get\+Importer\+Count()}}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} meta data structure, N\+U\+LL if the index does not exist or if the importer doesn\textquotesingle{}t offer meta information ( importers may do this at the cost of being hated by their peers). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a72f4d2821d38b97f630981f9236901e8}\label{classAssimp_1_1Importer_a72f4d2821d38b97f630981f9236901e8}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetIOHandler@{GetIOHandler}}
+\index{GetIOHandler@{GetIOHandler}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetIOHandler()}{GetIOHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}}$\ast$ Assimp\+::\+Importer\+::\+Get\+I\+O\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retrieves the IO handler that is currently set. You can use \mbox{\hyperlink{classAssimp_1_1Importer_ad2c940def9c4d01709e44a4e781e757d}{Is\+Default\+I\+O\+Handler()}} to check whether the returned interface is the default IO handler provided by A\+S\+S\+I\+MP. The default handler is active as long the application doesn\textquotesingle{}t supply its own custom IO handler via \mbox{\hyperlink{classAssimp_1_1Importer_a1161f46318af18bb86dfe0fc3edea4df}{Set\+I\+O\+Handler()}}. \begin{DoxyReturn}{Returns}
+A valid \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} interface, never N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a6d6cd3b06de9438744a17f61395a0bf0}\label{classAssimp_1_1Importer_a6d6cd3b06de9438744a17f61395a0bf0}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetMemoryRequirements@{GetMemoryRequirements}}
+\index{GetMemoryRequirements@{GetMemoryRequirements}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetMemoryRequirements()}{GetMemoryRequirements()}}
+{\footnotesize\ttfamily void Assimp\+::\+Importer\+::\+Get\+Memory\+Requirements (\begin{DoxyParamCaption}\item[{ai\+Memory\+Info \&}]{in }\end{DoxyParamCaption}) const}
+
+Returns the storage allocated by A\+S\+S\+I\+MP to hold the scene data in memory.
+
+This refers to the currently loaded file, see \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}}. 
+\begin{DoxyParams}{Parameters}
+{\em in} & Data structure to be filled. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The returned memory statistics refer to the actual size of the use data of the ai\+Scene. Heap-\/related overhead is (naturally) not included. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a60eb9042fb85bfbd61a863e131a56ecd}\label{classAssimp_1_1Importer_a60eb9042fb85bfbd61a863e131a56ecd}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetOrphanedScene@{GetOrphanedScene}}
+\index{GetOrphanedScene@{GetOrphanedScene}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetOrphanedScene()}{GetOrphanedScene()}}
+{\footnotesize\ttfamily ai\+Scene$\ast$ Assimp\+::\+Importer\+::\+Get\+Orphaned\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the scene loaded by the last successful call to \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}} and releases the scene from the ownership of the \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} instance. The application is now responsible for deleting the scene. Any further calls to \mbox{\hyperlink{classAssimp_1_1Importer_ae5f94a29007ed7c873be138ecdb4b056}{Get\+Scene()}} or \mbox{\hyperlink{classAssimp_1_1Importer_a60eb9042fb85bfbd61a863e131a56ecd}{Get\+Orphaned\+Scene()}} will return N\+U\+LL -\/ until a new scene has been loaded via \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}}.
+
+\begin{DoxyReturn}{Returns}
+Current scene or N\+U\+LL if there is currently no scene loaded 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Use this method with maximal caution, and only if you have to. By design, ai\+Scene\textquotesingle{}s are exclusively maintained, allocated and deallocated by \mbox{\hyperlink{namespaceAssimp}{Assimp}} and no one else. The reasoning behind this is the golden rule that deallocations should always be done by the module that did the original allocation because heaps are not necessarily shared. \mbox{\hyperlink{classAssimp_1_1Importer_a60eb9042fb85bfbd61a863e131a56ecd}{Get\+Orphaned\+Scene()}} enforces you to delete the returned scene by yourself, but this will only be fine if and only if you\textquotesingle{}re using the same heap as assimp. On Windows, it\textquotesingle{}s typically fine provided everything is linked against the multithreaded-\/dll version of the runtime library. It will work as well for static linkage with \mbox{\hyperlink{namespaceAssimp}{Assimp}}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a14201de344db7c66fa514f7f092ae10b}\label{classAssimp_1_1Importer_a14201de344db7c66fa514f7f092ae10b}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetProgressHandler@{GetProgressHandler}}
+\index{GetProgressHandler@{GetProgressHandler}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetProgressHandler()}{GetProgressHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAssimp_1_1ProgressHandler}{Progress\+Handler}}$\ast$ Assimp\+::\+Importer\+::\+Get\+Progress\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retrieves the progress handler that is currently set. You can use \mbox{\hyperlink{classAssimp_1_1Importer_a34062906cb6b9af8abaeda36737d14ae}{Is\+Default\+Progress\+Handler()}} to check whether the returned interface is the default handler provided by A\+S\+S\+I\+MP. The default handler is active as long the application doesn\textquotesingle{}t supply its own custom handler via \mbox{\hyperlink{classAssimp_1_1Importer_a6a4d830ffb3f77a3c7c919e0af006920}{Set\+Progress\+Handler()}}. \begin{DoxyReturn}{Returns}
+A valid \mbox{\hyperlink{classAssimp_1_1ProgressHandler}{Progress\+Handler}} interface, never N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a39e654c887f684cc12f792ca1daebfee}\label{classAssimp_1_1Importer_a39e654c887f684cc12f792ca1daebfee}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetPropertyBool@{GetPropertyBool}}
+\index{GetPropertyBool@{GetPropertyBool}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetPropertyBool()}{GetPropertyBool()}}
+{\footnotesize\ttfamily bool Assimp\+::\+Importer\+::\+Get\+Property\+Bool (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Name,  }\item[{bool}]{b\+Error\+Return = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a boolean configuration property. Boolean properties are stored on the integer stack internally so it\textquotesingle{}s possible to set them via \mbox{\hyperlink{classAssimp_1_1Importer_acf161a9fdd0d2ed3902e325351311389}{Set\+Property\+Bool}} and query them with \mbox{\hyperlink{classAssimp_1_1Importer_a39e654c887f684cc12f792ca1daebfee}{Get\+Property\+Bool}} and vice versa. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classAssimp_1_1Importer_ac6f348464e03176bc6dd790226122b36}{Get\+Property\+Integer()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classAssimp_1_1Importer_aa84bb4b381be09ad156eb713debc50e1}\label{classAssimp_1_1Importer_aa84bb4b381be09ad156eb713debc50e1}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetPropertyFloat@{GetPropertyFloat}}
+\index{GetPropertyFloat@{GetPropertyFloat}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetPropertyFloat()}{GetPropertyFloat()}}
+{\footnotesize\ttfamily float Assimp\+::\+Importer\+::\+Get\+Property\+Float (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Name,  }\item[{float}]{f\+Error\+Return = {\ttfamily 10e10f} }\end{DoxyParamCaption}) const}
+
+Get a floating-\/point configuration property \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classAssimp_1_1Importer_ac6f348464e03176bc6dd790226122b36}{Get\+Property\+Integer()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classAssimp_1_1Importer_ac6f348464e03176bc6dd790226122b36}\label{classAssimp_1_1Importer_ac6f348464e03176bc6dd790226122b36}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetPropertyInteger@{GetPropertyInteger}}
+\index{GetPropertyInteger@{GetPropertyInteger}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetPropertyInteger()}{GetPropertyInteger()}}
+{\footnotesize\ttfamily int Assimp\+::\+Importer\+::\+Get\+Property\+Integer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Name,  }\item[{int}]{i\+Error\+Return = {\ttfamily 0xffffffff} }\end{DoxyParamCaption}) const}
+
+Get a configuration property. 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Name} & Name of the property. All supported properties are defined in the ai\+Config.\+g header (all constants share the prefix A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+X\+XX). \\
+\hline
+{\em i\+Error\+Return} & Value that is returned if the property is not found. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current value of the property 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Property of different types (float, int, string ..) are kept on different lists, so calling \mbox{\hyperlink{classAssimp_1_1Importer_aa50eba6120a9b9805d0c2b02f1187165}{Set\+Property\+Integer()}} for a floating-\/point property has no effect -\/ the loader will call \mbox{\hyperlink{classAssimp_1_1Importer_aa84bb4b381be09ad156eb713debc50e1}{Get\+Property\+Float()}} to read the property, but it won\textquotesingle{}t be there. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a53665d41547cc298c53b5341c99ee60e}\label{classAssimp_1_1Importer_a53665d41547cc298c53b5341c99ee60e}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetPropertyMatrix@{GetPropertyMatrix}}
+\index{GetPropertyMatrix@{GetPropertyMatrix}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetPropertyMatrix()}{GetPropertyMatrix()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structaiMatrix4x4}{ai\+Matrix4x4}} Assimp\+::\+Importer\+::\+Get\+Property\+Matrix (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Name,  }\item[{const \mbox{\hyperlink{structaiMatrix4x4}{ai\+Matrix4x4}} \&}]{s\+Error\+Return = {\ttfamily \mbox{\hyperlink{structaiMatrix4x4}{ai\+Matrix4x4}}()} }\end{DoxyParamCaption}) const}
+
+Get a matrix configuration property
+
+The return value remains valid until the property is modified. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classAssimp_1_1Importer_ac6f348464e03176bc6dd790226122b36}{Get\+Property\+Integer()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classAssimp_1_1Importer_afc97e5eeaa39c9d7b6fb60703b78cdf0}\label{classAssimp_1_1Importer_afc97e5eeaa39c9d7b6fb60703b78cdf0}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetPropertyString@{GetPropertyString}}
+\index{GetPropertyString@{GetPropertyString}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetPropertyString()}{GetPropertyString()}}
+{\footnotesize\ttfamily const std\+::string Assimp\+::\+Importer\+::\+Get\+Property\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Name,  }\item[{const std\+::string \&}]{s\+Error\+Return = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption}) const}
+
+Get a string configuration property
+
+The return value remains valid until the property is modified. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classAssimp_1_1Importer_ac6f348464e03176bc6dd790226122b36}{Get\+Property\+Integer()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classAssimp_1_1Importer_ae5f94a29007ed7c873be138ecdb4b056}\label{classAssimp_1_1Importer_ae5f94a29007ed7c873be138ecdb4b056}} 
+\index{Assimp::Importer@{Assimp::Importer}!GetScene@{GetScene}}
+\index{GetScene@{GetScene}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{GetScene()}{GetScene()}}
+{\footnotesize\ttfamily const ai\+Scene$\ast$ Assimp\+::\+Importer\+::\+Get\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the scene loaded by the last successful call to \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}}
+
+\begin{DoxyReturn}{Returns}
+Current scene or N\+U\+LL if there is currently no scene loaded 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_ad2c940def9c4d01709e44a4e781e757d}\label{classAssimp_1_1Importer_ad2c940def9c4d01709e44a4e781e757d}} 
+\index{Assimp::Importer@{Assimp::Importer}!IsDefaultIOHandler@{IsDefaultIOHandler}}
+\index{IsDefaultIOHandler@{IsDefaultIOHandler}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{IsDefaultIOHandler()}{IsDefaultIOHandler()}}
+{\footnotesize\ttfamily bool Assimp\+::\+Importer\+::\+Is\+Default\+I\+O\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Checks whether a default IO handler is active A default handler is active as long the application doesn\textquotesingle{}t supply its own custom IO handler via \mbox{\hyperlink{classAssimp_1_1Importer_a1161f46318af18bb86dfe0fc3edea4df}{Set\+I\+O\+Handler()}}. \begin{DoxyReturn}{Returns}
+true by default 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a34062906cb6b9af8abaeda36737d14ae}\label{classAssimp_1_1Importer_a34062906cb6b9af8abaeda36737d14ae}} 
+\index{Assimp::Importer@{Assimp::Importer}!IsDefaultProgressHandler@{IsDefaultProgressHandler}}
+\index{IsDefaultProgressHandler@{IsDefaultProgressHandler}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{IsDefaultProgressHandler()}{IsDefaultProgressHandler()}}
+{\footnotesize\ttfamily bool Assimp\+::\+Importer\+::\+Is\+Default\+Progress\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Checks whether a default progress handler is active A default handler is active as long the application doesn\textquotesingle{}t supply its own custom progress handler via \mbox{\hyperlink{classAssimp_1_1Importer_a6a4d830ffb3f77a3c7c919e0af006920}{Set\+Progress\+Handler()}}. \begin{DoxyReturn}{Returns}
+true by default 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a22bbe0ca29cc685b110b6853dd1e4157}\label{classAssimp_1_1Importer_a22bbe0ca29cc685b110b6853dd1e4157}} 
+\index{Assimp::Importer@{Assimp::Importer}!IsExtensionSupported@{IsExtensionSupported}}
+\index{IsExtensionSupported@{IsExtensionSupported}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{IsExtensionSupported()}{IsExtensionSupported()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Assimp\+::\+Importer\+::\+Is\+Extension\+Supported (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Extension }\end{DoxyParamCaption}) const}
+
+Returns whether a given file extension is supported by A\+S\+S\+I\+MP.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Extension} & Extension to be checked. Must include a trailing dot \textquotesingle{}.\textquotesingle{}. Example\+: \char`\"{}.\+3ds\char`\"{}, \char`\"{}.\+md3\char`\"{}. Cases-\/insensitive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the extension is supported, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a4d49e3c8ecf28336d78f9f5e502990ce}\label{classAssimp_1_1Importer_a4d49e3c8ecf28336d78f9f5e502990ce}} 
+\index{Assimp::Importer@{Assimp::Importer}!IsExtensionSupported@{IsExtensionSupported}}
+\index{IsExtensionSupported@{IsExtensionSupported}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{IsExtensionSupported()}{IsExtensionSupported()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily A\+I\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bool Assimp\+::\+Importer\+::\+Is\+Extension\+Supported (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{sz\+Extension }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns whether a given file extension is supported by A\+S\+S\+I\+MP. 
+
+This function is provided for backward compatibility. See the const char$\ast$ version for detailed and up-\/to-\/date docs. \begin{DoxySeeAlso}{See also}
+Is\+Extension\+Supported(const char$\ast$) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classAssimp_1_1Importer_ac112839f323a630f83395acb74746827}\label{classAssimp_1_1Importer_ac112839f323a630f83395acb74746827}} 
+\index{Assimp::Importer@{Assimp::Importer}!Pimpl@{Pimpl}}
+\index{Pimpl@{Pimpl}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{Pimpl()}{Pimpl()}}
+{\footnotesize\ttfamily Importer\+Pimpl$\ast$ Assimp\+::\+Importer\+::\+Pimpl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Private, do not use. \mbox{\Hypertarget{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}\label{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}} 
+\index{Assimp::Importer@{Assimp::Importer}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const ai\+Scene$\ast$ Assimp\+::\+Importer\+::\+Read\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{p\+File,  }\item[{unsigned int}]{p\+Flags }\end{DoxyParamCaption})}
+
+Reads the given file and returns its contents if successful.
+
+If the call succeeds, the contents of the file are returned as a pointer to an ai\+Scene object. The returned data is intended to be read-\/only, the importer object keeps ownership of the data and will destroy it upon destruction. If the import fails, N\+U\+LL is returned. A human-\/readable error description can be retrieved by calling \mbox{\hyperlink{classAssimp_1_1Importer_a3ac36c9ab8668bd368de516c19bdcc11}{Get\+Error\+String()}}. The previous scene will be deleted during this call. 
+\begin{DoxyParams}{Parameters}
+{\em p\+File} & Path and filename to the file to be imported. \\
+\hline
+{\em p\+Flags} & Optional post processing steps to be executed after a successful import. Provide a bitwise combination of the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}} flags. If you wish to inspect the imported scene first in order to fine-\/tune your post-\/processing setup, consider to use \mbox{\hyperlink{classAssimp_1_1Importer_a5872e749c1451fee64183fc14f1fc81d}{Apply\+Post\+Processing()}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the imported data, N\+U\+LL if the import failed. The pointer to the scene remains in possession of the \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} instance. Use \mbox{\hyperlink{classAssimp_1_1Importer_a60eb9042fb85bfbd61a863e131a56ecd}{Get\+Orphaned\+Scene()}} to take ownership of it.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{namespaceAssimp}{Assimp}} is able to determine the file format of a file automatically. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classAssimp_1_1Importer_ad9a9f3905924744b2cdce0f3fc131a87}\label{classAssimp_1_1Importer_ad9a9f3905924744b2cdce0f3fc131a87}} 
+\index{Assimp::Importer@{Assimp::Importer}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const A\+I\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE ai\+Scene $\ast$ Assimp\+::\+Importer\+::\+Read\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+File,  }\item[{unsigned int}]{p\+Flags }\end{DoxyParamCaption})}
+
+
+
+Reads the given file and returns its contents if successful. 
+
+class \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}}
+
+This function is provided for backward compatibility. See the const char$\ast$ version for detailled docs. \begin{DoxySeeAlso}{See also}
+Read\+File(const char$\ast$, p\+Flags) ~\newline
+ 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a9b3c5e8b1042702f449e84a95b3324f6}\label{classAssimp_1_1Importer_a9b3c5e8b1042702f449e84a95b3324f6}} 
+\index{Assimp::Importer@{Assimp::Importer}!ReadFileFromMemory@{ReadFileFromMemory}}
+\index{ReadFileFromMemory@{ReadFileFromMemory}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{ReadFileFromMemory()}{ReadFileFromMemory()}}
+{\footnotesize\ttfamily const ai\+Scene$\ast$ Assimp\+::\+Importer\+::\+Read\+File\+From\+Memory (\begin{DoxyParamCaption}\item[{const void $\ast$}]{p\+Buffer,  }\item[{size\+\_\+t}]{p\+Length,  }\item[{unsigned int}]{p\+Flags,  }\item[{const char $\ast$}]{p\+Hint = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Reads the given file from a memory buffer and returns its contents if successful.
+
+If the call succeeds, the contents of the file are returned as a pointer to an ai\+Scene object. The returned data is intended to be read-\/only, the importer object keeps ownership of the data and will destroy it upon destruction. If the import fails, N\+U\+LL is returned. A human-\/readable error description can be retrieved by calling \mbox{\hyperlink{classAssimp_1_1Importer_a3ac36c9ab8668bd368de516c19bdcc11}{Get\+Error\+String()}}. The previous scene will be deleted during this call. Calling this method doesn\textquotesingle{}t affect the active \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}}. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Buffer} & Pointer to the file data \\
+\hline
+{\em p\+Length} & Length of p\+Buffer, in bytes \\
+\hline
+{\em p\+Flags} & Optional post processing steps to be executed after a successful import. Provide a bitwise combination of the \mbox{\hyperlink{postprocess_8h_a64795260b95f5a4b3f3dc1be4f52e410}{ai\+Post\+Process\+Steps}} flags. If you wish to inspect the imported scene first in order to fine-\/tune your post-\/processing setup, consider to use \mbox{\hyperlink{classAssimp_1_1Importer_a5872e749c1451fee64183fc14f1fc81d}{Apply\+Post\+Processing()}}. \\
+\hline
+{\em p\+Hint} & An additional hint to the library. If this is a non empty string, the library looks for a loader to support the file extension specified by p\+Hint and passes the file to the first matching loader. If this loader is unable to completely the request, the library continues and tries to determine the file format on its own, a task that may or may not be successful. Check the return value, and you\textquotesingle{}ll know ... \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the imported data, N\+U\+LL if the import failed. The pointer to the scene remains in possession of the \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} instance. Use \mbox{\hyperlink{classAssimp_1_1Importer_a60eb9042fb85bfbd61a863e131a56ecd}{Get\+Orphaned\+Scene()}} to take ownership of it.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This is a straightforward way to decode models from memory buffers, but it doesn\textquotesingle{}t handle model formats that spread their data across multiple files or even directories. Examples include O\+BJ or M\+D3, which outsource parts of their material info into external scripts. If you need full functionality, provide a custom \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} to make \mbox{\hyperlink{namespaceAssimp}{Assimp}} find these files and use the regular \mbox{\hyperlink{classAssimp_1_1Importer_a174418ab41d5b8bc51a044895cb991e5}{Read\+File()}} A\+PI. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a3846294ffe76d91a1d3096d22d7c6b7d}\label{classAssimp_1_1Importer_a3846294ffe76d91a1d3096d22d7c6b7d}} 
+\index{Assimp::Importer@{Assimp::Importer}!RegisterLoader@{RegisterLoader}}
+\index{RegisterLoader@{RegisterLoader}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{RegisterLoader()}{RegisterLoader()}}
+{\footnotesize\ttfamily ai\+Return Assimp\+::\+Importer\+::\+Register\+Loader (\begin{DoxyParamCaption}\item[{Base\+Importer $\ast$}]{p\+Imp }\end{DoxyParamCaption})}
+
+Registers a new loader.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Imp} & \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} to be added. The \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} instance takes ownership of the pointer, so it will be automatically deleted with the \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+I\+\_\+\+S\+U\+C\+C\+E\+SS if the loader has been added. The registration fails if there is already a loader for a specific file extension. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a102650d3648c0e414a1e73bdad9bed35}\label{classAssimp_1_1Importer_a102650d3648c0e414a1e73bdad9bed35}} 
+\index{Assimp::Importer@{Assimp::Importer}!RegisterPPStep@{RegisterPPStep}}
+\index{RegisterPPStep@{RegisterPPStep}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{RegisterPPStep()}{RegisterPPStep()}}
+{\footnotesize\ttfamily ai\+Return Assimp\+::\+Importer\+::\+Register\+P\+P\+Step (\begin{DoxyParamCaption}\item[{Base\+Process $\ast$}]{p\+Imp }\end{DoxyParamCaption})}
+
+Registers a new post-\/process step.
+
+At the moment, there\textquotesingle{}s a small limitation\+: new post processing steps are added to end of the list, or in other words, executed last, after all built-\/in steps. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Imp} & Post-\/process step to be added. The \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} instance takes ownership of the pointer, so it will be automatically deleted with the \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+I\+\_\+\+S\+U\+C\+C\+E\+SS if the step has been added correctly. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a9bb793072c84c784279d0f6e870bb42d}\label{classAssimp_1_1Importer_a9bb793072c84c784279d0f6e870bb42d}} 
+\index{Assimp::Importer@{Assimp::Importer}!SetExtraVerbose@{SetExtraVerbose}}
+\index{SetExtraVerbose@{SetExtraVerbose}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{SetExtraVerbose()}{SetExtraVerbose()}}
+{\footnotesize\ttfamily void Assimp\+::\+Importer\+::\+Set\+Extra\+Verbose (\begin{DoxyParamCaption}\item[{bool}]{b\+Do }\end{DoxyParamCaption})}
+
+Enables \char`\"{}extra verbose\char`\"{} mode.
+
+\textquotesingle{}Extra verbose\textquotesingle{} means the data structure is validated after {\itshape every} single post processing step to make sure everyone modifies the data structure in a well-\/defined manner. This is a debug feature and not intended for use in production environments. \mbox{\Hypertarget{classAssimp_1_1Importer_a1161f46318af18bb86dfe0fc3edea4df}\label{classAssimp_1_1Importer_a1161f46318af18bb86dfe0fc3edea4df}} 
+\index{Assimp::Importer@{Assimp::Importer}!SetIOHandler@{SetIOHandler}}
+\index{SetIOHandler@{SetIOHandler}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{SetIOHandler()}{SetIOHandler()}}
+{\footnotesize\ttfamily void Assimp\+::\+Importer\+::\+Set\+I\+O\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} $\ast$}]{p\+I\+O\+Handler }\end{DoxyParamCaption})}
+
+Supplies a custom IO handler to the importer to use to open and access files. If you need the importer to use custion IO logic to access the files, you need to provide a custom implementation of \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} and I\+O\+File to the importer. Then create an instance of your custion \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} implementation and supply it by this function.
+
+The \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} takes ownership of the object and will destroy it afterwards. The previously assigned handler will be deleted. Pass N\+U\+LL to take again ownership of your \mbox{\hyperlink{classAssimp_1_1IOSystem}{I\+O\+System}} and reset \mbox{\hyperlink{namespaceAssimp}{Assimp}} to use its default implementation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+I\+O\+Handler} & The IO handler to be used in all file accesses of the \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a6a4d830ffb3f77a3c7c919e0af006920}\label{classAssimp_1_1Importer_a6a4d830ffb3f77a3c7c919e0af006920}} 
+\index{Assimp::Importer@{Assimp::Importer}!SetProgressHandler@{SetProgressHandler}}
+\index{SetProgressHandler@{SetProgressHandler}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{SetProgressHandler()}{SetProgressHandler()}}
+{\footnotesize\ttfamily void Assimp\+::\+Importer\+::\+Set\+Progress\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAssimp_1_1ProgressHandler}{Progress\+Handler}} $\ast$}]{p\+Handler }\end{DoxyParamCaption})}
+
+Supplies a custom progress handler to the importer. This interface exposes a \#\+Update() callback, which is called more or less periodically (please don\textquotesingle{}t sue us if it isn\textquotesingle{}t as periodically as you\textquotesingle{}d like it to have ...). This can be used to implement progress bars and loading timeouts. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Handler} & Progress callback interface. Pass N\+U\+LL to disable progress reporting. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Progress handlers can be used to abort the loading at almost any time. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classAssimp_1_1Importer_acf161a9fdd0d2ed3902e325351311389}\label{classAssimp_1_1Importer_acf161a9fdd0d2ed3902e325351311389}} 
+\index{Assimp::Importer@{Assimp::Importer}!SetPropertyBool@{SetPropertyBool}}
+\index{SetPropertyBool@{SetPropertyBool}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{SetPropertyBool()}{SetPropertyBool()}}
+{\footnotesize\ttfamily void Assimp\+::\+Importer\+::\+Set\+Property\+Bool (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Name,  }\item[{bool}]{value,  }\item[{bool $\ast$}]{b\+Was\+Existing = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set a boolean configuration property. Boolean properties are stored on the integer stack internally so it\textquotesingle{}s possible to set them via \mbox{\hyperlink{classAssimp_1_1Importer_acf161a9fdd0d2ed3902e325351311389}{Set\+Property\+Bool}} and query them with \mbox{\hyperlink{classAssimp_1_1Importer_a39e654c887f684cc12f792ca1daebfee}{Get\+Property\+Bool}} and vice versa. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classAssimp_1_1Importer_aa50eba6120a9b9805d0c2b02f1187165}{Set\+Property\+Integer()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classAssimp_1_1Importer_ab264807393b68662d1672c2b05e1c0cd}\label{classAssimp_1_1Importer_ab264807393b68662d1672c2b05e1c0cd}} 
+\index{Assimp::Importer@{Assimp::Importer}!SetPropertyFloat@{SetPropertyFloat}}
+\index{SetPropertyFloat@{SetPropertyFloat}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{SetPropertyFloat()}{SetPropertyFloat()}}
+{\footnotesize\ttfamily void Assimp\+::\+Importer\+::\+Set\+Property\+Float (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Name,  }\item[{float}]{f\+Value,  }\item[{bool $\ast$}]{b\+Was\+Existing = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Set a floating-\/point configuration property. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classAssimp_1_1Importer_aa50eba6120a9b9805d0c2b02f1187165}{Set\+Property\+Integer()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classAssimp_1_1Importer_aa50eba6120a9b9805d0c2b02f1187165}\label{classAssimp_1_1Importer_aa50eba6120a9b9805d0c2b02f1187165}} 
+\index{Assimp::Importer@{Assimp::Importer}!SetPropertyInteger@{SetPropertyInteger}}
+\index{SetPropertyInteger@{SetPropertyInteger}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{SetPropertyInteger()}{SetPropertyInteger()}}
+{\footnotesize\ttfamily void Assimp\+::\+Importer\+::\+Set\+Property\+Integer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Name,  }\item[{int}]{i\+Value,  }\item[{bool $\ast$}]{b\+Was\+Existing = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Set an integer configuration property. 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Name} & Name of the property. All supported properties are defined in the ai\+Config.\+g header (all constants share the prefix A\+I\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+X\+XX and are simple strings). \\
+\hline
+{\em i\+Value} & New value of the property \\
+\hline
+{\em b\+Was\+Existing} & Optional pointer to receive true if the property was set before. The new value replaces the previous value in this case. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Property of different types (float, int, string ..) are kept on different stacks, so calling \mbox{\hyperlink{classAssimp_1_1Importer_aa50eba6120a9b9805d0c2b02f1187165}{Set\+Property\+Integer()}} for a floating-\/point property has no effect -\/ the loader will call \mbox{\hyperlink{classAssimp_1_1Importer_aa84bb4b381be09ad156eb713debc50e1}{Get\+Property\+Float()}} to read the property, but it won\textquotesingle{}t be there. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a3231ab8031c6fff87c0ce9eba0314a02}\label{classAssimp_1_1Importer_a3231ab8031c6fff87c0ce9eba0314a02}} 
+\index{Assimp::Importer@{Assimp::Importer}!SetPropertyMatrix@{SetPropertyMatrix}}
+\index{SetPropertyMatrix@{SetPropertyMatrix}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{SetPropertyMatrix()}{SetPropertyMatrix()}}
+{\footnotesize\ttfamily void Assimp\+::\+Importer\+::\+Set\+Property\+Matrix (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Name,  }\item[{const \mbox{\hyperlink{structaiMatrix4x4}{ai\+Matrix4x4}} \&}]{s\+Value,  }\item[{bool $\ast$}]{b\+Was\+Existing = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Set a matrix configuration property. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classAssimp_1_1Importer_aa50eba6120a9b9805d0c2b02f1187165}{Set\+Property\+Integer()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a8f79ecb5c6f67a76fc87654c32986e8e}\label{classAssimp_1_1Importer_a8f79ecb5c6f67a76fc87654c32986e8e}} 
+\index{Assimp::Importer@{Assimp::Importer}!SetPropertyString@{SetPropertyString}}
+\index{SetPropertyString@{SetPropertyString}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{SetPropertyString()}{SetPropertyString()}}
+{\footnotesize\ttfamily void Assimp\+::\+Importer\+::\+Set\+Property\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Name,  }\item[{const std\+::string \&}]{s\+Value,  }\item[{bool $\ast$}]{b\+Was\+Existing = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Set a string configuration property. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classAssimp_1_1Importer_aa50eba6120a9b9805d0c2b02f1187165}{Set\+Property\+Integer()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a3b1f5af2c763b13aca0f324b19001722}\label{classAssimp_1_1Importer_a3b1f5af2c763b13aca0f324b19001722}} 
+\index{Assimp::Importer@{Assimp::Importer}!UnregisterLoader@{UnregisterLoader}}
+\index{UnregisterLoader@{UnregisterLoader}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{UnregisterLoader()}{UnregisterLoader()}}
+{\footnotesize\ttfamily ai\+Return Assimp\+::\+Importer\+::\+Unregister\+Loader (\begin{DoxyParamCaption}\item[{Base\+Importer $\ast$}]{p\+Imp }\end{DoxyParamCaption})}
+
+Unregisters a loader.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Imp} & \mbox{\hyperlink{classAssimp_1_1Importer}{Importer}} to be unregistered. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+I\+\_\+\+S\+U\+C\+C\+E\+SS if the loader has been removed. The function fails if the loader is currently in use (this could happen if the \mbox{\hyperlink{classAssimp_1_1Importer_a2c207299ed05f1db1ad1e6dab005f719}{Importer}} instance is used by more than one thread) or if it has not yet been registered. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_a3a683671c7c40638b1103c5d3648d86c}\label{classAssimp_1_1Importer_a3a683671c7c40638b1103c5d3648d86c}} 
+\index{Assimp::Importer@{Assimp::Importer}!UnregisterPPStep@{UnregisterPPStep}}
+\index{UnregisterPPStep@{UnregisterPPStep}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{UnregisterPPStep()}{UnregisterPPStep()}}
+{\footnotesize\ttfamily ai\+Return Assimp\+::\+Importer\+::\+Unregister\+P\+P\+Step (\begin{DoxyParamCaption}\item[{Base\+Process $\ast$}]{p\+Imp }\end{DoxyParamCaption})}
+
+Unregisters a post-\/process step.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Imp} & Step to be unregistered. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+I\+\_\+\+S\+U\+C\+C\+E\+SS if the step has been removed. The function fails if the step is currently in use (this could happen if the \mbox{\hyperlink{classAssimp_1_1Importer_a2c207299ed05f1db1ad1e6dab005f719}{Importer}} instance is used by more than one thread) or if it has not yet been registered. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAssimp_1_1Importer_af0292c1603ff9b483a5deba4d183eba5}\label{classAssimp_1_1Importer_af0292c1603ff9b483a5deba4d183eba5}} 
+\index{Assimp::Importer@{Assimp::Importer}!ValidateFlags@{ValidateFlags}}
+\index{ValidateFlags@{ValidateFlags}!Assimp::Importer@{Assimp::Importer}}
+\doxysubsubsection{\texorpdfstring{ValidateFlags()}{ValidateFlags()}}
+{\footnotesize\ttfamily bool Assimp\+::\+Importer\+::\+Validate\+Flags (\begin{DoxyParamCaption}\item[{unsigned int}]{p\+Flags }\end{DoxyParamCaption}) const}
+
+
+
+Check whether a given set of postprocessing flags is supported. 
+
+Some flags are mutually exclusive, others are probably not available because your excluded them from your \mbox{\hyperlink{namespaceAssimp}{Assimp}} builds. Calling this function is recommended if you\textquotesingle{}re unsure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Flags} & Bitwise combination of the ai\+Post\+Process flags. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this flag combination is fine. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/assimp/Importer.\+hpp\end{DoxyCompactItemize}

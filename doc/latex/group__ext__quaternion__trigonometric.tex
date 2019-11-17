@@ -1,0 +1,101 @@
+\hypertarget{group__ext__quaternion__trigonometric}{}\doxysection{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+trigonometric}
+\label{group__ext__quaternion__trigonometric}\index{GLM\_EXT\_quaternion\_trigonometric@{GLM\_EXT\_quaternion\_trigonometric}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL T \mbox{\hyperlink{group__ext__quaternion__trigonometric_ga8aa248b31d5ade470c87304df5eb7bd8}{glm\+::angle}} (\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&x)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ 3, T, Q $>$ \mbox{\hyperlink{group__ext__quaternion__trigonometric_ga764254f10248b505e936e5309a88c23d}{glm\+::axis}} (\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&x)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ \mbox{\hyperlink{group__ext__quaternion__trigonometric_ga5c0095cfcb218c75a4b79d7687950036}{glm\+::angle\+Axis}} (T const \&\mbox{\hyperlink{group__ext__quaternion__trigonometric_ga8aa248b31d5ade470c87304df5eb7bd8}{angle}}, \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ 3, T, Q $>$ const \&\mbox{\hyperlink{group__ext__quaternion__trigonometric_ga764254f10248b505e936e5309a88c23d}{axis}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides trigonometric functions for quaternion types
+
+Include $<$\mbox{\hyperlink{quaternion__trigonometric_8hpp}{glm/ext/quaternion\+\_\+trigonometric.\+hpp}}$>$ to use the features of this extension.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__ext__quaternion__float}{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+float}} 
+
+\mbox{\hyperlink{group__ext__quaternion__double}{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+double}} 
+
+\mbox{\hyperlink{group__ext__quaternion__exponential}{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+exponential}} 
+
+\mbox{\hyperlink{group__ext__quaternion__geometric}{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+geometric}} 
+
+\mbox{\hyperlink{group__ext__quaternion__relational}{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+relational}} 
+
+\mbox{\hyperlink{group__ext__quaternion__transform}{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+transform}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__ext__quaternion__trigonometric_ga8aa248b31d5ade470c87304df5eb7bd8}\label{group__ext__quaternion__trigonometric_ga8aa248b31d5ade470c87304df5eb7bd8}} 
+\index{GLM\_EXT\_quaternion\_trigonometric@{GLM\_EXT\_quaternion\_trigonometric}!angle@{angle}}
+\index{angle@{angle}!GLM\_EXT\_quaternion\_trigonometric@{GLM\_EXT\_quaternion\_trigonometric}}
+\doxysubsubsection{\texorpdfstring{angle()}{angle()}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL T glm\+::angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&}]{x }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{quaternion__trigonometric_8hpp}{include/glm/ext/quaternion\+\_\+trigonometric.\+hpp}}$>$}
+
+Returns the quaternion rotation angle.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & A floating-\/point scalar type \\
+\hline
+{\em Q} & A value from qualifier enum \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{group__ext__quaternion__trigonometric_ga5c0095cfcb218c75a4b79d7687950036}\label{group__ext__quaternion__trigonometric_ga5c0095cfcb218c75a4b79d7687950036}} 
+\index{GLM\_EXT\_quaternion\_trigonometric@{GLM\_EXT\_quaternion\_trigonometric}!angleAxis@{angleAxis}}
+\index{angleAxis@{angleAxis}!GLM\_EXT\_quaternion\_trigonometric@{GLM\_EXT\_quaternion\_trigonometric}}
+\doxysubsubsection{\texorpdfstring{angleAxis()}{angleAxis()}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1qua}{qua}}$<$T, Q$>$ glm\+::angle\+Axis (\begin{DoxyParamCaption}\item[{T const \&}]{angle,  }\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ 3, T, Q $>$ const \&}]{axis }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{quaternion__trigonometric_8hpp}{include/glm/ext/quaternion\+\_\+trigonometric.\+hpp}}$>$}
+
+Build a quaternion from an angle and a normalized axis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Angle expressed in radians. \\
+\hline
+{\em axis} & Axis of the quaternion, must be normalized.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & A floating-\/point scalar type \\
+\hline
+{\em Q} & A value from qualifier enum \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{group__ext__quaternion__trigonometric_ga764254f10248b505e936e5309a88c23d}\label{group__ext__quaternion__trigonometric_ga764254f10248b505e936e5309a88c23d}} 
+\index{GLM\_EXT\_quaternion\_trigonometric@{GLM\_EXT\_quaternion\_trigonometric}!axis@{axis}}
+\index{axis@{axis}!GLM\_EXT\_quaternion\_trigonometric@{GLM\_EXT\_quaternion\_trigonometric}}
+\doxysubsubsection{\texorpdfstring{axis()}{axis()}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$3, T, Q$>$ glm\+::axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&}]{x }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{quaternion__trigonometric_8hpp}{include/glm/ext/quaternion\+\_\+trigonometric.\+hpp}}$>$}
+
+Returns the q rotation axis.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & A floating-\/point scalar type \\
+\hline
+{\em Q} & A value from qualifier enum \\
+\hline
+\end{DoxyTemplParams}

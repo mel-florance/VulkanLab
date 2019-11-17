@@ -1,0 +1,122 @@
+\hypertarget{group__ext__quaternion__geometric}{}\doxysection{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+geometric}
+\label{group__ext__quaternion__geometric}\index{GLM\_EXT\_quaternion\_geometric@{GLM\_EXT\_quaternion\_geometric}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL T \mbox{\hyperlink{group__ext__quaternion__geometric_gab703732449be6c7199369b3f9a91ed38}{glm\+::length}} (\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&q)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ \mbox{\hyperlink{group__ext__quaternion__geometric_gabf30e3263fffe8dcc6659aea76ae8927}{glm\+::normalize}} (\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&q)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL T \mbox{\hyperlink{group__ext__quaternion__geometric_ga84865a56acb8fbd7bc4f5c0b928e3cfc}{glm\+::dot}} (\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&x, \mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&y)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER \mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ \mbox{\hyperlink{group__ext__quaternion__geometric_ga63d6be2046911ac43234578b56e0b8fb}{glm\+::cross}} (\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&q1, \mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&q2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides geometric functions for quaternion types
+
+Include $<$\mbox{\hyperlink{quaternion__geometric_8hpp}{glm/ext/quaternion\+\_\+geometric.\+hpp}}$>$ to use the features of this extension.
+
+\begin{DoxySeeAlso}{See also}
+core\+\_\+geometric 
+
+\mbox{\hyperlink{group__ext__quaternion__float}{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+float}} 
+
+\mbox{\hyperlink{group__ext__quaternion__double}{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+double}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__ext__quaternion__geometric_ga63d6be2046911ac43234578b56e0b8fb}\label{group__ext__quaternion__geometric_ga63d6be2046911ac43234578b56e0b8fb}} 
+\index{GLM\_EXT\_quaternion\_geometric@{GLM\_EXT\_quaternion\_geometric}!cross@{cross}}
+\index{cross@{cross}!GLM\_EXT\_quaternion\_geometric@{GLM\_EXT\_quaternion\_geometric}}
+\doxysubsubsection{\texorpdfstring{cross()}{cross()}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER \mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ glm\+::cross (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&}]{q1,  }\item[{\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&}]{q2 }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{quaternion__geometric_8hpp}{include/glm/ext/quaternion\+\_\+geometric.\+hpp}}$>$}
+
+Compute a cross product.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Floating-\/point scalar types \\
+\hline
+{\em Q} & Value from qualifier enum\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__ext__quaternion__geometric}{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+geometric}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__ext__quaternion__geometric_ga84865a56acb8fbd7bc4f5c0b928e3cfc}\label{group__ext__quaternion__geometric_ga84865a56acb8fbd7bc4f5c0b928e3cfc}} 
+\index{GLM\_EXT\_quaternion\_geometric@{GLM\_EXT\_quaternion\_geometric}!dot@{dot}}
+\index{dot@{dot}!GLM\_EXT\_quaternion\_geometric@{GLM\_EXT\_quaternion\_geometric}}
+\doxysubsubsection{\texorpdfstring{dot()}{dot()}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL T glm\+::dot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&}]{x,  }\item[{\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&}]{y }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{quaternion__geometric_8hpp}{include/glm/ext/quaternion\+\_\+geometric.\+hpp}}$>$}
+
+Returns dot product of q1 and q2, i.\+e., q1\mbox{[}0\mbox{]} $\ast$ q2\mbox{[}0\mbox{]} + q1\mbox{[}1\mbox{]} $\ast$ q2\mbox{[}1\mbox{]} + ...
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Floating-\/point scalar types. \\
+\hline
+{\em Q} & Value from qualifier enum\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__ext__quaternion__geometric}{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+geometric}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__ext__quaternion__geometric_gab703732449be6c7199369b3f9a91ed38}\label{group__ext__quaternion__geometric_gab703732449be6c7199369b3f9a91ed38}} 
+\index{GLM\_EXT\_quaternion\_geometric@{GLM\_EXT\_quaternion\_geometric}!length@{length}}
+\index{length@{length}!GLM\_EXT\_quaternion\_geometric@{GLM\_EXT\_quaternion\_geometric}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL T glm\+::length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&}]{q }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{quaternion__geometric_8hpp}{include/glm/ext/quaternion\+\_\+geometric.\+hpp}}$>$}
+
+Returns the norm of a quaternions
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Floating-\/point scalar types \\
+\hline
+{\em Q} & Value from qualifier enum\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__ext__quaternion__geometric}{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+geometric}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__ext__quaternion__geometric_gabf30e3263fffe8dcc6659aea76ae8927}\label{group__ext__quaternion__geometric_gabf30e3263fffe8dcc6659aea76ae8927}} 
+\index{GLM\_EXT\_quaternion\_geometric@{GLM\_EXT\_quaternion\_geometric}!normalize@{normalize}}
+\index{normalize@{normalize}!GLM\_EXT\_quaternion\_geometric@{GLM\_EXT\_quaternion\_geometric}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL \mbox{\hyperlink{structglm_1_1qua}{qua}}$<$T, Q$>$ glm\+::normalize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1qua}{qua}}$<$ T, Q $>$ const \&}]{q }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{quaternion__geometric_8hpp}{include/glm/ext/quaternion\+\_\+geometric.\+hpp}}$>$}
+
+Returns the normalized quaternion.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Floating-\/point scalar types \\
+\hline
+{\em Q} & Value from qualifier enum\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__ext__quaternion__geometric}{G\+L\+M\+\_\+\+E\+X\+T\+\_\+quaternion\+\_\+geometric}} 
+\end{DoxySeeAlso}

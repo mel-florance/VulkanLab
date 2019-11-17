@@ -5,6 +5,7 @@
 #include <functional>
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
+#include <glm/gtx/transform.hpp>
 
 class Window {
 public:
@@ -17,19 +18,12 @@ public:
     ~Window();
 
     void update(std::function<void(glm::ivec2 &size)> callback);
-    static void onResize(GLFWwindow *window, int width, int height);
-    static void onClose(GLFWwindow *window);
-    static void onKey(GLFWwindow *window, int key, int scanCode, int action, int mods);
-    static void onChar(GLFWwindow *window, unsigned int keyCode);
-    static void onMouseButton(GLFWwindow *window, int button, int action, int mods);
-    static void onMouseMove(GLFWwindow *window, double x, double y);
-    static void onDrop(GLFWwindow *window, int count, const char **paths);
-    static void onScroll(GLFWwindow *window, double x, double y);
 
-    static glm::ivec2 size;
-    static glm::vec2 position;
-    static std::string title;
 private:
+    glm::ivec2 size;
+    std::string title;
+    glm::vec2 position;
+
     GLFWwindow *instance;
 };
 

@@ -1,0 +1,58 @@
+\hypertarget{gtx_2quaternion_8hpp}{}\doxysection{include/glm/gtx/quaternion.hpp File Reference}
+\label{gtx_2quaternion_8hpp}\index{include/glm/gtx/quaternion.hpp@{include/glm/gtx/quaternion.hpp}}
+{\ttfamily \#include \char`\"{}../glm.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../gtc/constants.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../gtc/quaternion.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../ext/quaternion\+\_\+exponential.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../gtx/norm.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}quaternion.\+inl\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceglm}{glm}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{group__core}{Core features}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL qua$<$ T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_ga5ee8332600b2aca3a77622a28d857b55}{glm\+::quat\+\_\+identity}} ()
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL vec$<$ 3, T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_ga2f32f970411c44cdd38bb98960198385}{glm\+::cross}} (qua$<$ T, Q $>$ const \&q, vec$<$ 3, T, Q $>$ const \&v)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL vec$<$ 3, T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_ga9f5f77255756e5668dfee7f0d07ed021}{glm\+::cross}} (vec$<$ 3, T, Q $>$ const \&v, qua$<$ T, Q $>$ const \&q)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL qua$<$ T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_ga0b9bf3459e132ad8a18fe970669e3e35}{glm\+::squad}} (qua$<$ T, Q $>$ const \&q1, qua$<$ T, Q $>$ const \&q2, qua$<$ T, Q $>$ const \&s1, qua$<$ T, Q $>$ const \&s2, T const \&h)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL qua$<$ T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_gacc5cd5f3e78de61d141c2355417424de}{glm\+::intermediate}} (qua$<$ T, Q $>$ const \&prev, qua$<$ T, Q $>$ const \&curr, qua$<$ T, Q $>$ const \&next)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL vec$<$ 3, T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_ga07da6ef58646442efe93b0c273d73776}{glm\+::rotate}} (qua$<$ T, Q $>$ const \&q, vec$<$ 3, T, Q $>$ const \&v)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL vec$<$ 4, T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_gafcb78dfff45fbf19a7fcb2bd03fbf196}{glm\+::rotate}} (qua$<$ T, Q $>$ const \&q, vec$<$ 4, T, Q $>$ const \&v)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL T \mbox{\hyperlink{group__gtx__quaternion_ga321953c1b2e7befe6f5dcfddbfc6b76b}{glm\+::extract\+Real\+Component}} (qua$<$ T, Q $>$ const \&q)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL mat$<$ 3, 3, T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_gaab0afabb894b28a983fb8ec610409d56}{glm\+::to\+Mat3}} (qua$<$ T, Q $>$ const \&x)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL mat$<$ 4, 4, T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_gadfa2c77094e8cc9adad321d938855ffb}{glm\+::to\+Mat4}} (qua$<$ T, Q $>$ const \&x)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL qua$<$ T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_ga798de5d186499c9a9231cd92c8afaef1}{glm\+::to\+Quat}} (mat$<$ 3, 3, T, Q $>$ const \&x)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL qua$<$ T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_ga5eb36f51e1638e710451eba194dbc011}{glm\+::to\+Quat}} (mat$<$ 4, 4, T, Q $>$ const \&x)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL qua$<$ T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_gadc576cc957adc2a568cdcbc3799175bc}{glm\+::short\+Mix}} (qua$<$ T, Q $>$ const \&x, qua$<$ T, Q $>$ const \&y, T const \&a)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL qua$<$ T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_ga264e10708d58dd0ff53b7902a2bd2561}{glm\+::fast\+Mix}} (qua$<$ T, Q $>$ const \&x, qua$<$ T, Q $>$ const \&y, T const \&a)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL qua$<$ T, Q $>$ \mbox{\hyperlink{group__gtx__quaternion_ga03e61282831cc3f52cc76f72f52ad2c5}{glm\+::rotation}} (vec$<$ 3, T, Q $>$ const \&orig, vec$<$ 3, T, Q $>$ const \&dest)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+D\+E\+CL T \mbox{\hyperlink{group__gtx__quaternion_ga58a609b1b8ab965f5df2702e8ca4e75b}{glm\+::length2}} (qua$<$ T, Q $>$ const \&q)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{group__gtx__quaternion}{G\+L\+M\+\_\+\+G\+T\+X\+\_\+quaternion}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__core}{Core features}} (dependence) 
+
+gtx\+\_\+extented\+\_\+min\+\_\+max (dependence) 
+\end{DoxySeeAlso}

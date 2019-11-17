@@ -1,0 +1,100 @@
+\hypertarget{classVertexBuffer}{}\doxysection{Vertex\+Buffer Class Reference}
+\label{classVertexBuffer}\index{VertexBuffer@{VertexBuffer}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structVertexBuffer_1_1AttributeData}{Attribute\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVertexBuffer_ab0b5468ca28d3eebedd619d0671bb3d7}\label{classVertexBuffer_ab0b5468ca28d3eebedd619d0671bb3d7}} 
+enum {\bfseries Buffer\+Usage} \{ \newline
+{\bfseries S\+T\+R\+E\+A\+M\+\_\+\+D\+R\+AW} = 0x88\+E0, 
+{\bfseries S\+T\+R\+E\+A\+M\+\_\+\+R\+E\+AD} = 0x88\+E1, 
+{\bfseries S\+T\+R\+E\+A\+M\+\_\+\+C\+O\+PY} = 0x88\+E2, 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+D\+R\+AW} = 0x88\+E4, 
+\newline
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+R\+E\+AD} = 0x88\+E5, 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+PY} = 0x88\+E6, 
+{\bfseries D\+Y\+N\+A\+M\+I\+C\+\_\+\+D\+R\+AW} = 0x88\+E8, 
+{\bfseries D\+Y\+N\+A\+M\+I\+C\+\_\+\+R\+E\+AD} = 0x88\+E9, 
+\newline
+{\bfseries D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+O\+PY} = 0x88\+EA
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVertexBuffer_adb25d82a47ad82d5b69a75ac111401b8}{Vertex\+Buffer}} ()
+\item 
+\mbox{\hyperlink{classVertexBuffer_a5216726fdd43b2ae8e1439e347717fdd}{$\sim$\+Vertex\+Buffer}} ()
+\item 
+void \mbox{\hyperlink{classVertexBuffer_a6df5e12fe3d34a66128212d51f346a6c}{set\+Data}} (void $\ast$data, G\+Lsizei size, int mode=G\+L\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+D\+R\+AW)
+\item 
+void \mbox{\hyperlink{classVertexBuffer_a2af46cc2ddf65613c8173651d773a5a1}{bind}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classVertexBuffer_af7872907cf3897c8a032ed8baa6400e4}{set\+Attribute}} (\mbox{\hyperlink{structVertexBuffer_1_1AttributeData}{Attribute\+Data}} $\ast$data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVertexBuffer_ac73999a2a53112205411ca9dfb4be9df}\label{classVertexBuffer_ac73999a2a53112205411ca9dfb4be9df}} 
+unsigned int {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVertexBuffer_adb25d82a47ad82d5b69a75ac111401b8}\label{classVertexBuffer_adb25d82a47ad82d5b69a75ac111401b8}} 
+\index{VertexBuffer@{VertexBuffer}!VertexBuffer@{VertexBuffer}}
+\index{VertexBuffer@{VertexBuffer}!VertexBuffer@{VertexBuffer}}
+\doxysubsubsection{\texorpdfstring{VertexBuffer()}{VertexBuffer()}}
+{\footnotesize\ttfamily Vertex\+Buffer\+::\+Vertex\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classVertexBuffer}{Vertex\+Buffer}} constructor \mbox{\Hypertarget{classVertexBuffer_a5216726fdd43b2ae8e1439e347717fdd}\label{classVertexBuffer_a5216726fdd43b2ae8e1439e347717fdd}} 
+\index{VertexBuffer@{VertexBuffer}!````~VertexBuffer@{$\sim$VertexBuffer}}
+\index{````~VertexBuffer@{$\sim$VertexBuffer}!VertexBuffer@{VertexBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$VertexBuffer()}{~VertexBuffer()}}
+{\footnotesize\ttfamily Vertex\+Buffer\+::$\sim$\+Vertex\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classVertexBuffer}{Vertex\+Buffer}} destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVertexBuffer_a2af46cc2ddf65613c8173651d773a5a1}\label{classVertexBuffer_a2af46cc2ddf65613c8173651d773a5a1}} 
+\index{VertexBuffer@{VertexBuffer}!bind@{bind}}
+\index{bind@{bind}!VertexBuffer@{VertexBuffer}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void Vertex\+Buffer\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Bind the vertex buffer. \mbox{\Hypertarget{classVertexBuffer_af7872907cf3897c8a032ed8baa6400e4}\label{classVertexBuffer_af7872907cf3897c8a032ed8baa6400e4}} 
+\index{VertexBuffer@{VertexBuffer}!setAttribute@{setAttribute}}
+\index{setAttribute@{setAttribute}!VertexBuffer@{VertexBuffer}}
+\doxysubsubsection{\texorpdfstring{setAttribute()}{setAttribute()}}
+{\footnotesize\ttfamily static void Vertex\+Buffer\+::set\+Attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertexBuffer_1_1AttributeData}{Attribute\+Data}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Set a specific attribute on the vertex buffer. 
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVertexBuffer_a6df5e12fe3d34a66128212d51f346a6c}\label{classVertexBuffer_a6df5e12fe3d34a66128212d51f346a6c}} 
+\index{VertexBuffer@{VertexBuffer}!setData@{setData}}
+\index{setData@{setData}!VertexBuffer@{VertexBuffer}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily void Vertex\+Buffer\+::set\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{G\+Lsizei}]{size,  }\item[{int}]{mode = {\ttfamily GL\+\_\+STATIC\+\_\+DRAW} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Push data to the vertex buffer. 
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+{\em mode} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+Buffers/Vertex\+Buffer.\+h\end{DoxyCompactItemize}

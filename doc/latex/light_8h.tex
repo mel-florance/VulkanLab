@@ -1,0 +1,57 @@
+\hypertarget{light_8h}{}\doxysection{include/assimp/light.h File Reference}
+\label{light_8h}\index{include/assimp/light.h@{include/assimp/light.h}}
+
+
+Defines the \mbox{\hyperlink{structaiLight}{ai\+Light}} data structure.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structaiLight}{ai\+Light}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{light_8h_a7a75cb224d903e71e8daede432449766}{ai\+Light\+Source\+Type}} \{ \newline
+{\bfseries ai\+Light\+Source\+\_\+\+U\+N\+D\+E\+F\+I\+N\+ED} = 0x0, 
+\mbox{\hyperlink{light_8h_a7a75cb224d903e71e8daede432449766ab2dd8e6f09a9ca0efcf22457da2e8724}{ai\+Light\+Source\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL}} = 0x1, 
+\mbox{\hyperlink{light_8h_a7a75cb224d903e71e8daede432449766a0f5bf9437cd16516e15c095309476d37}{ai\+Light\+Source\+\_\+\+P\+O\+I\+NT}} = 0x2, 
+\mbox{\hyperlink{light_8h_a7a75cb224d903e71e8daede432449766a05ef88df7bae63499a8ed950c995e392}{ai\+Light\+Source\+\_\+\+S\+P\+OT}} = 0x3, 
+\newline
+\mbox{\hyperlink{light_8h_a7a75cb224d903e71e8daede432449766a110c3b047ed41a1656849921d75e83a1}{\+\_\+ai\+Light\+Source\+\_\+\+Force32\+Bit}} = I\+N\+T\+\_\+\+M\+AX
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines the \mbox{\hyperlink{structaiLight}{ai\+Light}} data structure. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{light_8h_a7a75cb224d903e71e8daede432449766}\label{light_8h_a7a75cb224d903e71e8daede432449766}} 
+\index{light.h@{light.h}!aiLightSourceType@{aiLightSourceType}}
+\index{aiLightSourceType@{aiLightSourceType}!light.h@{light.h}}
+\doxysubsubsection{\texorpdfstring{aiLightSourceType}{aiLightSourceType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{light_8h_a7a75cb224d903e71e8daede432449766}{ai\+Light\+Source\+Type}}}
+
+Enumerates all supported types of light sources. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiLightSource\_DIRECTIONAL@{aiLightSource\_DIRECTIONAL}!light.h@{light.h}}\index{light.h@{light.h}!aiLightSource\_DIRECTIONAL@{aiLightSource\_DIRECTIONAL}}}\mbox{\Hypertarget{light_8h_a7a75cb224d903e71e8daede432449766ab2dd8e6f09a9ca0efcf22457da2e8724}\label{light_8h_a7a75cb224d903e71e8daede432449766ab2dd8e6f09a9ca0efcf22457da2e8724}} 
+ai\+Light\+Source\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+AL&A directional light source has a well-\/defined direction but is infinitely far away. That\textquotesingle{}s quite a good approximation for sun light. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiLightSource\_POINT@{aiLightSource\_POINT}!light.h@{light.h}}\index{light.h@{light.h}!aiLightSource\_POINT@{aiLightSource\_POINT}}}\mbox{\Hypertarget{light_8h_a7a75cb224d903e71e8daede432449766a0f5bf9437cd16516e15c095309476d37}\label{light_8h_a7a75cb224d903e71e8daede432449766a0f5bf9437cd16516e15c095309476d37}} 
+ai\+Light\+Source\+\_\+\+P\+O\+I\+NT&A point light source has a well-\/defined position in space but no direction -\/ it emits light in all directions. A normal bulb is a point light. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiLightSource\_SPOT@{aiLightSource\_SPOT}!light.h@{light.h}}\index{light.h@{light.h}!aiLightSource\_SPOT@{aiLightSource\_SPOT}}}\mbox{\Hypertarget{light_8h_a7a75cb224d903e71e8daede432449766a05ef88df7bae63499a8ed950c995e392}\label{light_8h_a7a75cb224d903e71e8daede432449766a05ef88df7bae63499a8ed950c995e392}} 
+ai\+Light\+Source\+\_\+\+S\+P\+OT&A spot light source emits light in a specific angle. It has a position and a direction it is pointing to. A good example for a spot light is a light spot in sport arenas. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{\_aiLightSource\_Force32Bit@{\_aiLightSource\_Force32Bit}!light.h@{light.h}}\index{light.h@{light.h}!\_aiLightSource\_Force32Bit@{\_aiLightSource\_Force32Bit}}}\mbox{\Hypertarget{light_8h_a7a75cb224d903e71e8daede432449766a110c3b047ed41a1656849921d75e83a1}\label{light_8h_a7a75cb224d903e71e8daede432449766a110c3b047ed41a1656849921d75e83a1}} 
+\+\_\+ai\+Light\+Source\+\_\+\+Force32\+Bit&This value is not used. It is just there to force the compiler to map this enum to a 32 Bit integer. \\
+\hline
+
+\end{DoxyEnumFields}

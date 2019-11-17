@@ -1,0 +1,123 @@
+\hypertarget{group__gtx__matrix__transform__2d}{}\doxysection{G\+L\+M\+\_\+\+G\+T\+X\+\_\+matrix\+\_\+transform\+\_\+2d}
+\label{group__gtx__matrix__transform__2d}\index{GLM\_GTX\_matrix\_transform\_2d@{GLM\_GTX\_matrix\_transform\_2d}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER \mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ \mbox{\hyperlink{group__gtx__matrix__transform__2d_gaa862e868893cf0b963e1d52e5dfb20c0}{glm\+::translate}} (\mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ const \&m, \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ 2, T, Q $>$ const \&v)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER \mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ \mbox{\hyperlink{group__gtx__matrix__transform__2d_gaddca86444c3dee30a0aa07673d68743d}{glm\+::rotate}} (\mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ const \&m, T \mbox{\hyperlink{group__ext__quaternion__trigonometric_ga8aa248b31d5ade470c87304df5eb7bd8}{angle}})
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER \mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ \mbox{\hyperlink{group__gtx__matrix__transform__2d_ga6fd2493e8271ee595898e9b3d434c1a7}{glm\+::scale}} (\mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ const \&m, \mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ 2, T, Q $>$ const \&v)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER \mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ \mbox{\hyperlink{group__gtx__matrix__transform__2d_gab0c6659f6895e2536aed6c893d70aa74}{glm\+::shearX}} (\mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ const \&m, T y)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER \mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ \mbox{\hyperlink{group__gtx__matrix__transform__2d_ga2587e46b06a9801aba9ded45cc73445b}{glm\+::shearY}} (\mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ const \&m, T x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Include $<$\mbox{\hyperlink{matrix__transform__2d_8hpp}{glm/gtx/matrix\+\_\+transform\+\_\+2d.\+hpp}}$>$ to use the features of this extension.
+
+Defines functions that generate common 2d transformation matrices. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__gtx__matrix__transform__2d_gaddca86444c3dee30a0aa07673d68743d}\label{group__gtx__matrix__transform__2d_gaddca86444c3dee30a0aa07673d68743d}} 
+\index{GLM\_GTX\_matrix\_transform\_2d@{GLM\_GTX\_matrix\_transform\_2d}!rotate@{rotate}}
+\index{rotate@{rotate}!GLM\_GTX\_matrix\_transform\_2d@{GLM\_GTX\_matrix\_transform\_2d}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER \mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ glm\+::rotate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ const \&}]{m,  }\item[{T}]{angle }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{matrix__transform__2d_8hpp}{include/glm/gtx/matrix\+\_\+transform\+\_\+2d.\+hpp}}$>$}
+
+Builds a rotation 3 $\ast$ 3 matrix created from an angle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Input matrix multiplied by this translation matrix. \\
+\hline
+{\em angle} & Rotation angle expressed in radians. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__gtx__matrix__transform__2d_ga6fd2493e8271ee595898e9b3d434c1a7}\label{group__gtx__matrix__transform__2d_ga6fd2493e8271ee595898e9b3d434c1a7}} 
+\index{GLM\_GTX\_matrix\_transform\_2d@{GLM\_GTX\_matrix\_transform\_2d}!scale@{scale}}
+\index{scale@{scale}!GLM\_GTX\_matrix\_transform\_2d@{GLM\_GTX\_matrix\_transform\_2d}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER \mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ glm\+::scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ const \&}]{m,  }\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ 2, T, Q $>$ const \&}]{v }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{matrix__transform__2d_8hpp}{include/glm/gtx/matrix\+\_\+transform\+\_\+2d.\+hpp}}$>$}
+
+Builds a scale 3 $\ast$ 3 matrix created from a vector of 2 components.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Input matrix multiplied by this translation matrix. \\
+\hline
+{\em v} & Coordinates of a scale vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__gtx__matrix__transform__2d_gab0c6659f6895e2536aed6c893d70aa74}\label{group__gtx__matrix__transform__2d_gab0c6659f6895e2536aed6c893d70aa74}} 
+\index{GLM\_GTX\_matrix\_transform\_2d@{GLM\_GTX\_matrix\_transform\_2d}!shearX@{shearX}}
+\index{shearX@{shearX}!GLM\_GTX\_matrix\_transform\_2d@{GLM\_GTX\_matrix\_transform\_2d}}
+\doxysubsubsection{\texorpdfstring{shearX()}{shearX()}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER \mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ glm\+::shearX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ const \&}]{m,  }\item[{T}]{y }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{matrix__transform__2d_8hpp}{include/glm/gtx/matrix\+\_\+transform\+\_\+2d.\+hpp}}$>$}
+
+Builds an horizontal (parallel to the x axis) shear 3 $\ast$ 3 matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Input matrix multiplied by this translation matrix. \\
+\hline
+{\em y} & Shear factor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__gtx__matrix__transform__2d_ga2587e46b06a9801aba9ded45cc73445b}\label{group__gtx__matrix__transform__2d_ga2587e46b06a9801aba9ded45cc73445b}} 
+\index{GLM\_GTX\_matrix\_transform\_2d@{GLM\_GTX\_matrix\_transform\_2d}!shearY@{shearY}}
+\index{shearY@{shearY}!GLM\_GTX\_matrix\_transform\_2d@{GLM\_GTX\_matrix\_transform\_2d}}
+\doxysubsubsection{\texorpdfstring{shearY()}{shearY()}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER \mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ glm\+::shearY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ const \&}]{m,  }\item[{T}]{x }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{matrix__transform__2d_8hpp}{include/glm/gtx/matrix\+\_\+transform\+\_\+2d.\+hpp}}$>$}
+
+Builds a vertical (parallel to the y axis) shear 3 $\ast$ 3 matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Input matrix multiplied by this translation matrix. \\
+\hline
+{\em x} & Shear factor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__gtx__matrix__transform__2d_gaa862e868893cf0b963e1d52e5dfb20c0}\label{group__gtx__matrix__transform__2d_gaa862e868893cf0b963e1d52e5dfb20c0}} 
+\index{GLM\_GTX\_matrix\_transform\_2d@{GLM\_GTX\_matrix\_transform\_2d}!translate@{translate}}
+\index{translate@{translate}!GLM\_GTX\_matrix\_transform\_2d@{GLM\_GTX\_matrix\_transform\_2d}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily template$<$typename T , qualifier Q$>$ \\
+G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER \mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ glm\+::translate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structglm_1_1mat}{mat}}$<$ 3, 3, T, Q $>$ const \&}]{m,  }\item[{\mbox{\hyperlink{structglm_1_1vec}{vec}}$<$ 2, T, Q $>$ const \&}]{v }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{matrix__transform__2d_8hpp}{include/glm/gtx/matrix\+\_\+transform\+\_\+2d.\+hpp}}$>$}
+
+Builds a translation 3 $\ast$ 3 matrix created from a vector of 2 components.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Input matrix multiplied by this translation matrix. \\
+\hline
+{\em v} & Coordinates of a translation vector. \\
+\hline
+\end{DoxyParams}
