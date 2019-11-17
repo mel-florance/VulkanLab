@@ -1,6 +1,9 @@
 #include <iostream>
+#include <string>
+#include <functional>
 #include <glad/glad.h>
 #include "Window.h"
+#include "../Events/Event.h"
 
 /**
  * Window constructor
@@ -21,7 +24,7 @@ Window::Window(
         std::cout << "Can't init GLFW.";
     }
 
-    instance = glfwCreateWindow(size.x, size.y, "Vulkan Lab", nullptr, nullptr);
+    this->instance = glfwCreateWindow(size.x, size.y, "Vulkan Lab", nullptr, nullptr);
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
@@ -35,6 +38,14 @@ Window::Window(
     if (gladLoadGLLoader((GLADloadproc) glfwGetProcAddress) == 0) {
         std::cout << "Can't init glad loader.";
     }
+
+    Event<std::string, int> signal;
+
+    signal.connect([](std::string arg1, int arg2) {
+        std::cout << arg1 << " " << arg2 << std::endl;
+    });
+
+    signal.emit("The answer:", 42);
 }
 
 /**
