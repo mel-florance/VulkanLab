@@ -5,9 +5,13 @@
 
 VulkanLab is just a test project to discover Vulkan.
 
+## Documentation
+
+You can find the documentation at [https://vyraax.github.io/VulkanLab/html](https://vyraax.github.io/VulkanLab/html/)
+
 ## Installation
 
-Use the project generator [premake](https://premake.github.io/) to generate the project files.
+Use the project generator [https://cmake.org/](https://cmake.org/) to generate the project files.
 
 ###### Linux
 
@@ -52,4 +56,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[License](https://github.com/Vyraax/VulkanLab/blob/master/LICENSE)
+[License](https://github.com/Vyraax/VulkanLab/tree/master/LICENSE)
