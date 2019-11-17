@@ -4,12 +4,12 @@
 #include <glad/glad.h>
 
 #define STB_IMAGE_IMPLEMENTATION
-
 #include "stb_image.h"
 
 Texture::Texture(const char *name, const char *path) : Asset(), name(name) {
 
-    data = stbi_load(path, &width, &height, &channels, 0);
+    stbi_set_flip_vertically_on_load(true);
+    data = stbi_load(path, &width, &height, &channels, 4);
 
     if (data == nullptr) {
         std::cout << "Can't load texture \"" << path << "\"." << std::endl;
@@ -22,7 +22,7 @@ Texture::Texture(const char *name, const char *path) : Asset(), name(name) {
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
     }
 

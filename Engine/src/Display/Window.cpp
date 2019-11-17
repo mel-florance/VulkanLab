@@ -17,9 +17,7 @@ Window::Window(
         position(position),
         instance(nullptr) {
 
-    int init_status = glfwInit();
-
-    if (init_status == 0) {
+    if (glfwInit() == 0) {
         std::cout << "Can't init GLFW.";
     }
 
@@ -34,9 +32,7 @@ Window::Window(
     glfwMakeContextCurrent(instance);
     glfwSwapInterval(0);
 
-    int glad_status = gladLoadGLLoader((GLADloadproc) glfwGetProcAddress);
-
-    if (glad_status == 0) {
+    if (gladLoadGLLoader((GLADloadproc) glfwGetProcAddress) == 0) {
         std::cout << "Can't init glad loader.";
     }
 }

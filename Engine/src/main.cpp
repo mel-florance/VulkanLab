@@ -24,72 +24,66 @@ int main(int argc, char **argv) {
     Mesh *triangle = new Mesh();
 
     std::vector vertices = {
-            0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
-            0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
-            -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
-            -0.5f, 0.5f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f
+            -1.0f,  1.0f, 0.0f,
+            -1.0f, -1.0f, 0.0f,
+            1.0f, -1.0f, 1.0f,
+
+            -1.0f,  1.0f, 0.0f,
+            1.0f, -1.0f, 1.0f,
+            1.0f,  1.0f, 1.0f
     };
 
-    unsigned int indices[] = {
-            0, 1, 3,
-            1, 2, 3
-    };
+    std::vector uvs = {
+            0.0f, 1.0f,
+            0.0f, 0.0f,
+            1.0f, 0.0f,
 
+            0.0f, 1.0f,
+            1.0f, 0.0f,
+            1.0f, 1.0f
+    };
 
     triangle->setVertices(vertices);
-
+    triangle->setUvs(uvs);
     defaultShader->bind();
-
 
     ArrayBuffer *vao = new ArrayBuffer();
     vao->bind();
 
-    VertexBuffer *vbo = new VertexBuffer();
-    vbo->bind();
-    vbo->setData(&vertices[0], vertices.size() * sizeof(float));
-
-    // Index buffer
-    IndexBuffer *indexBuffer = new IndexBuffer();
-    indexBuffer->setData(indices, sizeof(indices));
+    VertexBuffer *vbo_position = new VertexBuffer();
+    vbo_position->bind();
+    vbo_position->setData(vertices.data(), vertices.size() * sizeof(float));
 
     // Position buffer
     VertexBuffer::AttributeData *position_attribute = new VertexBuffer::AttributeData();
     position_attribute->index = 0;
     position_attribute->size = 3;
-    position_attribute->stride = 3 * sizeof(float);
-    vbo->setAttribute(position_attribute);
-    vao->enableAttribute(0);
+    vbo_position->setAttribute(position_attribute);
 
-    // Color buffer
-    VertexBuffer::AttributeData *color_attribute = new VertexBuffer::AttributeData();
-    color_attribute->index = 1;
-    color_attribute->size = 3;
-    color_attribute->stride = 6 * sizeof(float);
-    color_attribute->pointer = (void *) (3 * sizeof(float));
-    vbo->setAttribute(color_attribute);
-    vao->enableAttribute(1);
+    VertexBuffer *vbo_uvs = new VertexBuffer();
+    vbo_uvs->bind();
+    vbo_uvs->setData(uvs.data(), uvs.size() * sizeof(float));
 
     // Texture coordinates
     VertexBuffer::AttributeData *texture_attribute = new VertexBuffer::AttributeData();
-    texture_attribute->index = 2;
+    texture_attribute->index = 1;
     texture_attribute->size = 2;
-    texture_attribute->stride = 8 * sizeof(float);
-    texture_attribute->pointer = (void *) (6 * sizeof(float));
-    vbo->setAttribute(texture_attribute);
-    vao->enableAttribute(2);
+    vbo_uvs->setAttribute(texture_attribute);
+
+//    // Index buffer
+//    IndexBuffer *indexBuffer = new IndexBuffer();
+//    indexBuffer->setData(indices, sizeof(indices));
 
     defaultShader->bind();
     defaultShader->setUniform1i("textureMap", 0);
 
-    window->update([=](glm::ivec2 &size)
-    {
+    window->update([=](glm::ivec2 &size) {
         viewport->setSize(size);
         viewport->apply();
         viewport->clear();
 
-        vao->bind();
-        indexBuffer->bind();
         texture->bind();
+        vao->bind();
         triangle->draw();
     });
 

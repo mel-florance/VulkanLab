@@ -15,8 +15,5 @@ void Mesh::draw() {
     if (wireframe)
         glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
-    glEnable(GL_CULL_FACE);
-    glFrontFace(GL_CW);
-    glCullFace(GL_BACK);
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    glDrawArrays(GL_TRIANGLES, 0, 6);
 }

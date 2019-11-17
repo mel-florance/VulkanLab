@@ -21,7 +21,7 @@ public:
      * Bind the buffer to the gpu.
      */
     inline void bind() {
-        glBindBuffer(GL_ARRAY_BUFFER, this->id);
+        glBindVertexArray(this->id);
     }
 
     /**
