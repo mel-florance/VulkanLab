@@ -1,0 +1,170 @@
+\hypertarget{classEvent}{}\doxysection{Event$<$ Args $>$ Class Template Reference}
+\label{classEvent}\index{Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEvent_a6341f64eac001da3458910e4a4c89ad9}{Event}} ()
+\item 
+\mbox{\hyperlink{classEvent_ac38dc034fc781bde4d8b72bed916aad5}{Event}} (const \mbox{\hyperlink{classEvent}{Event}} \&other)
+\item 
+{\footnotesize template$<$typename T $>$ }\\int \mbox{\hyperlink{classEvent_ace3437435354bf463d5e5b76d490769d}{attach}} (T $\ast$instance, void(T\+::$\ast$func)(Args...))
+\item 
+int \mbox{\hyperlink{classEvent_aa3776cfca5cd3fa53f609e5657243d6b}{connect}} (std\+::function$<$ void(Args...)$>$ const \&slot)
+\item 
+void \mbox{\hyperlink{classEvent_aed3c7ce3ad5c1250e0599d6d7857b362}{disconnect}} (int id) const
+\item 
+void \mbox{\hyperlink{classEvent_aa168becc920162e0eef606e632bd2cf2}{emit}} (Args... p)
+\item 
+\mbox{\hyperlink{classEvent}{Event}} \& \mbox{\hyperlink{classEvent_aac076d6eac40fbf429e95e192940d896}{operator=}} (\mbox{\hyperlink{classEvent}{Event}} const \&other)
+\item 
+void \mbox{\hyperlink{classEvent_a8fd6384526d341c4206dc6c3507a57e4}{disconnect\+All}} () const
+\item 
+int \mbox{\hyperlink{classEvent_ace105c7b97c8960443e3795cd53921bb}{get\+Current\+Id}} () const
+\item 
+void \mbox{\hyperlink{classEvent_a89dc7ff1bd02eaf80f76188c6661205b}{set\+Current\+Id}} (int current\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEvent_ab7cec5cf105320211b205e14e7ca7d36}\label{classEvent_ab7cec5cf105320211b205e14e7ca7d36}} 
+int {\bfseries current\+Id}
+\item 
+\mbox{\Hypertarget{classEvent_acb095e33231ea99892f289761754187a}\label{classEvent_acb095e33231ea99892f289761754187a}} 
+std\+::unordered\+\_\+map$<$ int, std\+::function$<$ void(Args...)$>$ $>$ {\bfseries slots}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEvent_a6341f64eac001da3458910e4a4c89ad9}\label{classEvent_a6341f64eac001da3458910e4a4c89ad9}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!Event@{Event}}
+\index{Event@{Event}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{Event()}{Event()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+\mbox{\hyperlink{classEvent}{Event}}$<$ Args $>$\+::\mbox{\hyperlink{classEvent}{Event}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classEvent}{Event}} constructor \mbox{\Hypertarget{classEvent_ac38dc034fc781bde4d8b72bed916aad5}\label{classEvent_ac38dc034fc781bde4d8b72bed916aad5}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!Event@{Event}}
+\index{Event@{Event}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{Event()}{Event()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+\mbox{\hyperlink{classEvent}{Event}}$<$ Args $>$\+::\mbox{\hyperlink{classEvent}{Event}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEvent}{Event}}$<$ Args $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classEvent}{Event}} copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEvent_ace3437435354bf463d5e5b76d490769d}\label{classEvent_ace3437435354bf463d5e5b76d490769d}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!attach@{attach}}
+\index{attach@{attach}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+template$<$typename T $>$ \\
+int \mbox{\hyperlink{classEvent}{Event}}$<$ Args $>$\+::attach (\begin{DoxyParamCaption}\item[{T $\ast$}]{instance,  }\item[{void(T\+::$\ast$)(Args...)}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Connect a function to the event. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & \\
+\hline
+{\em func} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Connect function response 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvent_aa3776cfca5cd3fa53f609e5657243d6b}\label{classEvent_aa3776cfca5cd3fa53f609e5657243d6b}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!connect@{connect}}
+\index{connect@{connect}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+int \mbox{\hyperlink{classEvent}{Event}}$<$ Args $>$\+::connect (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(Args...)$>$ const \&}]{slot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Connect a std\+::function to the event. 
+\begin{DoxyParams}{Parameters}
+{\em std\+::function} & -\/ slot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ current\+Id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvent_aed3c7ce3ad5c1250e0599d6d7857b362}\label{classEvent_aed3c7ce3ad5c1250e0599d6d7857b362}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void \mbox{\hyperlink{classEvent}{Event}}$<$ Args $>$\+::disconnect (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Disconnect a previously connected function 
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEvent_a8fd6384526d341c4206dc6c3507a57e4}\label{classEvent_a8fd6384526d341c4206dc6c3507a57e4}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!disconnectAll@{disconnectAll}}
+\index{disconnectAll@{disconnectAll}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{disconnectAll()}{disconnectAll()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void \mbox{\hyperlink{classEvent}{Event}}$<$ Args $>$\+::disconnect\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Disconnect all the previously connected functions. \mbox{\Hypertarget{classEvent_aa168becc920162e0eef606e632bd2cf2}\label{classEvent_aa168becc920162e0eef606e632bd2cf2}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!emit@{emit}}
+\index{emit@{emit}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{emit()}{emit()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void \mbox{\hyperlink{classEvent}{Event}}$<$ Args $>$\+::emit (\begin{DoxyParamCaption}\item[{Args...}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Call all the connected functions 
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEvent_ace105c7b97c8960443e3795cd53921bb}\label{classEvent_ace105c7b97c8960443e3795cd53921bb}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!getCurrentId@{getCurrentId}}
+\index{getCurrentId@{getCurrentId}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{getCurrentId()}{getCurrentId()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+int \mbox{\hyperlink{classEvent}{Event}}$<$ Args $>$\+::get\+Current\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the current event id. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvent_aac076d6eac40fbf429e95e192940d896}\label{classEvent_aac076d6eac40fbf429e95e192940d896}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+\mbox{\hyperlink{classEvent}{Event}}\& \mbox{\hyperlink{classEvent}{Event}}$<$ Args $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEvent}{Event}}$<$ Args $>$ const \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Assignment operator, creates a new signal. 
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvent_a89dc7ff1bd02eaf80f76188c6661205b}\label{classEvent_a89dc7ff1bd02eaf80f76188c6661205b}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!setCurrentId@{setCurrentId}}
+\index{setCurrentId@{setCurrentId}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{setCurrentId()}{setCurrentId()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void \mbox{\hyperlink{classEvent}{Event}}$<$ Args $>$\+::set\+Current\+Id (\begin{DoxyParamCaption}\item[{int}]{current\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the current event id. 
+\begin{DoxyParams}{Parameters}
+{\em current\+Id} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+Events/Event.\+h\end{DoxyCompactItemize}

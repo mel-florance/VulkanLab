@@ -1,0 +1,172 @@
+\hypertarget{classEngine}{}\doxysection{Engine Class Reference}
+\label{classEngine}\index{Engine@{Engine}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLoop}{Loop}} $\ast$ \mbox{\hyperlink{classEngine_aacb9251cd60a59ecd13cb63cda11a174}{get\+Loop}} () const
+\item 
+void \mbox{\hyperlink{classEngine_aa39e422f51aa83d854597ec6500f6b9e}{set\+Loop}} (\mbox{\hyperlink{classLoop}{Loop}} $\ast$loop)
+\item 
+\mbox{\hyperlink{classViewport}{Viewport}} $\ast$ \mbox{\hyperlink{classEngine_a69a377a2abd2a0dc432531bf7f19e63c}{get\+Viewport}} () const
+\item 
+void \mbox{\hyperlink{classEngine_a652ef5accfc1879858cc537ab4277e85}{set\+Viewport}} (\mbox{\hyperlink{classViewport}{Viewport}} $\ast$viewport)
+\item 
+\mbox{\hyperlink{classRenderer}{Renderer}} $\ast$ \mbox{\hyperlink{classEngine_a13a74eae23b166f801a4df9c8eddc857}{get\+Renderer}} () const
+\item 
+void \mbox{\hyperlink{classEngine_ab4536d56a03a884a7d0973d6687fbeaa}{set\+Renderer}} (\mbox{\hyperlink{classRenderer}{Renderer}} $\ast$renderer)
+\item 
+\mbox{\hyperlink{classWindow}{Window}} $\ast$ \mbox{\hyperlink{classEngine_a489f7416219428daaf485df049051bd9}{get\+Window}} () const
+\item 
+void \mbox{\hyperlink{classEngine_a91cbb1c8a67e9353735f004d2d3fdd86}{set\+Window}} (\mbox{\hyperlink{classWindow}{Window}} $\ast$window)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classEngine_a4d8066dd213a03f5420d1bf60f150ca7}{start}} ()
+\item 
+static void \mbox{\hyperlink{classEngine_ac88ada17b33bc5ddaf6bb73e0cdc67f3}{stop}} ()
+\item 
+static void \mbox{\hyperlink{classEngine_af4e46c0122281e3892f6ba1241225208}{update}} (\mbox{\hyperlink{classLoop}{Loop}} $\ast$loop, \mbox{\hyperlink{classEngine}{Engine}} $\ast$self)
+\item 
+static void \mbox{\hyperlink{classEngine_ab4be5b320148b83636c74e3103d747a6}{render}} (\mbox{\hyperlink{classLoop}{Loop}} $\ast$loop, \mbox{\hyperlink{classEngine}{Engine}} $\ast$self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_ab44caa70713c4df4bbf157687cda6048}\label{classEngine_ab44caa70713c4df4bbf157687cda6048}} 
+static \mbox{\hyperlink{classLoop}{Loop}} $\ast$ {\bfseries loop} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEngine_ac0f751dbfd692994d5f2a1853389cfcc}\label{classEngine_ac0f751dbfd692994d5f2a1853389cfcc}} 
+\mbox{\hyperlink{classWindow}{Window}} $\ast$ {\bfseries window}
+\item 
+\mbox{\Hypertarget{classEngine_a9a64160d8b6eeded2289cfbd9f0ca629}\label{classEngine_a9a64160d8b6eeded2289cfbd9f0ca629}} 
+\mbox{\hyperlink{classViewport}{Viewport}} $\ast$ {\bfseries viewport}
+\item 
+\mbox{\Hypertarget{classEngine_a416f9015daddbd77c7edbca311116a5d}\label{classEngine_a416f9015daddbd77c7edbca311116a5d}} 
+\mbox{\hyperlink{classRenderer}{Renderer}} $\ast$ {\bfseries renderer}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_aacb9251cd60a59ecd13cb63cda11a174}\label{classEngine_aacb9251cd60a59ecd13cb63cda11a174}} 
+\index{Engine@{Engine}!getLoop@{getLoop}}
+\index{getLoop@{getLoop}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{getLoop()}{getLoop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLoop}{Loop}}$\ast$ Engine\+::get\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the engine loop. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_a13a74eae23b166f801a4df9c8eddc857}\label{classEngine_a13a74eae23b166f801a4df9c8eddc857}} 
+\index{Engine@{Engine}!getRenderer@{getRenderer}}
+\index{getRenderer@{getRenderer}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{getRenderer()}{getRenderer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRenderer}{Renderer}}$\ast$ Engine\+::get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the currently attached renderer. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_a69a377a2abd2a0dc432531bf7f19e63c}\label{classEngine_a69a377a2abd2a0dc432531bf7f19e63c}} 
+\index{Engine@{Engine}!getViewport@{getViewport}}
+\index{getViewport@{getViewport}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{getViewport()}{getViewport()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classViewport}{Viewport}}$\ast$ Engine\+::get\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the currently attached viewport. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_a489f7416219428daaf485df049051bd9}\label{classEngine_a489f7416219428daaf485df049051bd9}} 
+\index{Engine@{Engine}!getWindow@{getWindow}}
+\index{getWindow@{getWindow}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWindow}{Window}}$\ast$ Engine\+::get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the current window \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_ab4be5b320148b83636c74e3103d747a6}\label{classEngine_ab4be5b320148b83636c74e3103d747a6}} 
+\index{Engine@{Engine}!render@{render}}
+\index{render@{render}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Engine\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLoop}{Loop}} $\ast$}]{loop,  }\item[{\mbox{\hyperlink{classEngine}{Engine}} $\ast$}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Call the attached renderer. 
+\begin{DoxyParams}{Parameters}
+{\em loop} & \\
+\hline
+{\em self} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_aa39e422f51aa83d854597ec6500f6b9e}\label{classEngine_aa39e422f51aa83d854597ec6500f6b9e}} 
+\index{Engine@{Engine}!setLoop@{setLoop}}
+\index{setLoop@{setLoop}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{setLoop()}{setLoop()}}
+{\footnotesize\ttfamily void Engine\+::set\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLoop}{Loop}} $\ast$}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the engine loop. 
+\begin{DoxyParams}{Parameters}
+{\em loop} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_ab4536d56a03a884a7d0973d6687fbeaa}\label{classEngine_ab4536d56a03a884a7d0973d6687fbeaa}} 
+\index{Engine@{Engine}!setRenderer@{setRenderer}}
+\index{setRenderer@{setRenderer}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{setRenderer()}{setRenderer()}}
+{\footnotesize\ttfamily void Engine\+::set\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderer}{Renderer}} $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the renderer used to draw. 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_a652ef5accfc1879858cc537ab4277e85}\label{classEngine_a652ef5accfc1879858cc537ab4277e85}} 
+\index{Engine@{Engine}!setViewport@{setViewport}}
+\index{setViewport@{setViewport}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{setViewport()}{setViewport()}}
+{\footnotesize\ttfamily void Engine\+::set\+Viewport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classViewport}{Viewport}} $\ast$}]{viewport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the viewport to display to. 
+\begin{DoxyParams}{Parameters}
+{\em viewport} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEngine_a91cbb1c8a67e9353735f004d2d3fdd86}\label{classEngine_a91cbb1c8a67e9353735f004d2d3fdd86}} 
+\index{Engine@{Engine}!setWindow@{setWindow}}
+\index{setWindow@{setWindow}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{setWindow()}{setWindow()}}
+{\footnotesize\ttfamily void Engine\+::set\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWindow}{Window}} $\ast$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the current window \mbox{\Hypertarget{classEngine_a4d8066dd213a03f5420d1bf60f150ca7}\label{classEngine_a4d8066dd213a03f5420d1bf60f150ca7}} 
+\index{Engine@{Engine}!start@{start}}
+\index{start@{start}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Engine\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Start the engine \mbox{\Hypertarget{classEngine_ac88ada17b33bc5ddaf6bb73e0cdc67f3}\label{classEngine_ac88ada17b33bc5ddaf6bb73e0cdc67f3}} 
+\index{Engine@{Engine}!stop@{stop}}
+\index{stop@{stop}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Engine\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Stop the engine \mbox{\Hypertarget{classEngine_af4e46c0122281e3892f6ba1241225208}\label{classEngine_af4e46c0122281e3892f6ba1241225208}} 
+\index{Engine@{Engine}!update@{update}}
+\index{update@{update}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Engine\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLoop}{Loop}} $\ast$}]{loop,  }\item[{\mbox{\hyperlink{classEngine}{Engine}} $\ast$}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Update routine of the engine 
+\begin{DoxyParams}{Parameters}
+{\em loop} & \\
+\hline
+{\em self} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+Core/Engine.\+h\item 
+Engine/src/\+Core/Engine.\+cpp\end{DoxyCompactItemize}

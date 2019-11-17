@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['indexbuffer_29',['IndexBuffer',['../classIndexBuffer.html',1,'IndexBuffer'],['../classIndexBuffer.html#a9484706e14f9ab9dbcbb35c8f1b58d99',1,'IndexBuffer::IndexBuffer()']]],
-  ['iswireframe_30',['isWireframe',['../classMesh.html#a76ac540c1cbd21634fbe27b4aa85ab50',1,'Mesh']]]
+  ['has_82',['has',['../classECS_1_1Entity.html#ac59ca658abb333047122236593fdf863',1,'ECS::Entity::has() const'],['../classECS_1_1Entity.html#ac2b919b03ebdf0c6873ee09f578e6a35',1,'ECS::Entity::has() const']]]
 ];

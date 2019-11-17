@@ -1,0 +1,106 @@
+\hypertarget{classTestSystem}{}\doxysection{Test\+System Class Reference}
+\label{classTestSystem}\index{TestSystem@{TestSystem}}
+Inheritance diagram for Test\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.676329cm]{classTestSystem}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classTestSystem_ad91c9683b913e1d0af16e319faf128af}{configure}} (class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$world) override
+\item 
+virtual void \mbox{\hyperlink{classTestSystem_a0a2aab73d52fd9ba2b66799a28c95994}{unconfigure}} (class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$world) override
+\item 
+\mbox{\Hypertarget{classTestSystem_a0e9c92a5d89c3d592b035170e6c95a28}\label{classTestSystem_a0e9c92a5d89c3d592b035170e6c95a28}} 
+virtual void {\bfseries tick} (class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$world, float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classTestSystem_aa4389bba918269c018b25c3c6e916eba}{receive}} (class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$world, const \mbox{\hyperlink{structECS_1_1Events_1_1OnEntityCreated}{Events\+::\+On\+Entity\+Created}} \&event) override
+\item 
+virtual void \mbox{\hyperlink{classTestSystem_a7fc850f879ce2cdfdb69a93aa17b6588}{receive}} (class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$world, const \mbox{\hyperlink{structECS_1_1Events_1_1OnEntityDestroyed}{Events\+::\+On\+Entity\+Destroyed}} \&event) override
+\item 
+virtual void \mbox{\hyperlink{classTestSystem_a5f7c26823131445c210ea39a49a8e389}{receive}} (class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$world, const \mbox{\hyperlink{structECS_1_1Events_1_1OnComponentRemoved}{Events\+::\+On\+Component\+Removed}}$<$ \mbox{\hyperlink{structPosition}{Position}} $>$ \&event) override
+\item 
+virtual void \mbox{\hyperlink{classTestSystem_a935cfe63a870cae9eaf1e546cad51241}{receive}} (class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$world, const \mbox{\hyperlink{structECS_1_1Events_1_1OnComponentRemoved}{Events\+::\+On\+Component\+Removed}}$<$ \mbox{\hyperlink{structRotation}{Rotation}} $>$ \&event) override
+\item 
+virtual void \mbox{\hyperlink{classTestSystem_a446cdd024d781b2f626dafad39e24368}{receive}} (class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$world, const \mbox{\hyperlink{structSomeEvent}{Some\+Event}} \&event) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTestSystem_ad91c9683b913e1d0af16e319faf128af}\label{classTestSystem_ad91c9683b913e1d0af16e319faf128af}} 
+\index{TestSystem@{TestSystem}!configure@{configure}}
+\index{configure@{configure}!TestSystem@{TestSystem}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily virtual void Test\+System\+::configure (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$}]{world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when this system is added to a world. 
+
+Reimplemented from \mbox{\hyperlink{classECS_1_1EntitySystem_af3b321db010c23da73fa270b8c7fb865}{E\+C\+S\+::\+Entity\+System}}.
+
+\mbox{\Hypertarget{classTestSystem_a5f7c26823131445c210ea39a49a8e389}\label{classTestSystem_a5f7c26823131445c210ea39a49a8e389}} 
+\index{TestSystem@{TestSystem}!receive@{receive}}
+\index{receive@{receive}!TestSystem@{TestSystem}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily virtual void Test\+System\+::receive (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$}]{world,  }\item[{const \mbox{\hyperlink{structECS_1_1Events_1_1OnComponentRemoved}{Events\+::\+On\+Component\+Removed}}$<$ \mbox{\hyperlink{structPosition}{Position}} $>$ \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when an event is emitted by the world. 
+
+Implements \mbox{\hyperlink{classECS_1_1EventSubscriber_a4de8a075a0e50b4096ffaf7f7f5cd93e}{E\+C\+S\+::\+Event\+Subscriber$<$ Events\+::\+On\+Component\+Removed$<$ Position $>$ $>$}}.
+
+\mbox{\Hypertarget{classTestSystem_a935cfe63a870cae9eaf1e546cad51241}\label{classTestSystem_a935cfe63a870cae9eaf1e546cad51241}} 
+\index{TestSystem@{TestSystem}!receive@{receive}}
+\index{receive@{receive}!TestSystem@{TestSystem}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily virtual void Test\+System\+::receive (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$}]{world,  }\item[{const \mbox{\hyperlink{structECS_1_1Events_1_1OnComponentRemoved}{Events\+::\+On\+Component\+Removed}}$<$ \mbox{\hyperlink{structRotation}{Rotation}} $>$ \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when an event is emitted by the world. 
+
+Implements \mbox{\hyperlink{classECS_1_1EventSubscriber_a4de8a075a0e50b4096ffaf7f7f5cd93e}{E\+C\+S\+::\+Event\+Subscriber$<$ Events\+::\+On\+Component\+Removed$<$ Rotation $>$ $>$}}.
+
+\mbox{\Hypertarget{classTestSystem_aa4389bba918269c018b25c3c6e916eba}\label{classTestSystem_aa4389bba918269c018b25c3c6e916eba}} 
+\index{TestSystem@{TestSystem}!receive@{receive}}
+\index{receive@{receive}!TestSystem@{TestSystem}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily virtual void Test\+System\+::receive (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$}]{world,  }\item[{const \mbox{\hyperlink{structECS_1_1Events_1_1OnEntityCreated}{Events\+::\+On\+Entity\+Created}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when an event is emitted by the world. 
+
+Implements \mbox{\hyperlink{classECS_1_1EventSubscriber_a4de8a075a0e50b4096ffaf7f7f5cd93e}{E\+C\+S\+::\+Event\+Subscriber$<$ Events\+::\+On\+Entity\+Created $>$}}.
+
+\mbox{\Hypertarget{classTestSystem_a7fc850f879ce2cdfdb69a93aa17b6588}\label{classTestSystem_a7fc850f879ce2cdfdb69a93aa17b6588}} 
+\index{TestSystem@{TestSystem}!receive@{receive}}
+\index{receive@{receive}!TestSystem@{TestSystem}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily virtual void Test\+System\+::receive (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$}]{world,  }\item[{const \mbox{\hyperlink{structECS_1_1Events_1_1OnEntityDestroyed}{Events\+::\+On\+Entity\+Destroyed}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when an event is emitted by the world. 
+
+Implements \mbox{\hyperlink{classECS_1_1EventSubscriber_a4de8a075a0e50b4096ffaf7f7f5cd93e}{E\+C\+S\+::\+Event\+Subscriber$<$ Events\+::\+On\+Entity\+Destroyed $>$}}.
+
+\mbox{\Hypertarget{classTestSystem_a446cdd024d781b2f626dafad39e24368}\label{classTestSystem_a446cdd024d781b2f626dafad39e24368}} 
+\index{TestSystem@{TestSystem}!receive@{receive}}
+\index{receive@{receive}!TestSystem@{TestSystem}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily virtual void Test\+System\+::receive (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$}]{world,  }\item[{const \mbox{\hyperlink{structSomeEvent}{Some\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when an event is emitted by the world. 
+
+Implements \mbox{\hyperlink{classECS_1_1EventSubscriber_a4de8a075a0e50b4096ffaf7f7f5cd93e}{E\+C\+S\+::\+Event\+Subscriber$<$ Some\+Event $>$}}.
+
+\mbox{\Hypertarget{classTestSystem_a0a2aab73d52fd9ba2b66799a28c95994}\label{classTestSystem_a0a2aab73d52fd9ba2b66799a28c95994}} 
+\index{TestSystem@{TestSystem}!unconfigure@{unconfigure}}
+\index{unconfigure@{unconfigure}!TestSystem@{TestSystem}}
+\doxysubsubsection{\texorpdfstring{unconfigure()}{unconfigure()}}
+{\footnotesize\ttfamily virtual void Test\+System\+::unconfigure (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$}]{world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when this system is being removed from a world. 
+
+Reimplemented from \mbox{\hyperlink{classECS_1_1EntitySystem_afa595ef472522135f8736940c98d0aa0}{E\+C\+S\+::\+Entity\+System}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/main.\+cpp\end{DoxyCompactItemize}

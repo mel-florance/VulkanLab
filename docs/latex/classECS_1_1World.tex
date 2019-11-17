@@ -1,0 +1,257 @@
+\hypertarget{classECS_1_1World}{}\doxysection{E\+CS\+::World Class Reference}
+\label{classECS_1_1World}\index{ECS::World@{ECS::World}}
+
+
+{\ttfamily \#include $<$E\+C\+S.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a96c7e909ad4ce70ae4d52951ecae2aae}\label{classECS_1_1World_a96c7e909ad4ce70ae4d52951ecae2aae}} 
+using {\bfseries World\+Allocator} = std\+::allocator\+\_\+traits$<$ Allocator $>$\+::template rebind\+\_\+alloc$<$ \mbox{\hyperlink{classECS_1_1World}{World}} $>$
+\item 
+\mbox{\Hypertarget{classECS_1_1World_ad401895f4d3feb48cacbbac6de3bff0b}\label{classECS_1_1World_ad401895f4d3feb48cacbbac6de3bff0b}} 
+using {\bfseries Entity\+Allocator} = std\+::allocator\+\_\+traits$<$ Allocator $>$\+::template rebind\+\_\+alloc$<$ \mbox{\hyperlink{classECS_1_1Entity}{Entity}} $>$
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a78a6d3971dc3898f7b1b078f9977dd01}\label{classECS_1_1World_a78a6d3971dc3898f7b1b078f9977dd01}} 
+using {\bfseries System\+Allocator} = std\+::allocator\+\_\+traits$<$ Allocator $>$\+::template rebind\+\_\+alloc$<$ \mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}} $>$
+\item 
+\mbox{\Hypertarget{classECS_1_1World_ad8b3c9ba7fe6a19e3a66b05463e7be6c}\label{classECS_1_1World_ad8b3c9ba7fe6a19e3a66b05463e7be6c}} 
+using {\bfseries Entity\+Ptr\+Allocator} = std\+::allocator\+\_\+traits$<$ Allocator $>$\+::template rebind\+\_\+alloc$<$ \mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$ $>$
+\item 
+\mbox{\Hypertarget{classECS_1_1World_aa1704ef7dbcc9807fc30a7c16117d325}\label{classECS_1_1World_aa1704ef7dbcc9807fc30a7c16117d325}} 
+using {\bfseries System\+Ptr\+Allocator} = std\+::allocator\+\_\+traits$<$ Allocator $>$\+::template rebind\+\_\+alloc$<$ \mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}} $\ast$ $>$
+\item 
+\mbox{\Hypertarget{classECS_1_1World_ab7dec190440ac899cb7efb9f30c1a517}\label{classECS_1_1World_ab7dec190440ac899cb7efb9f30c1a517}} 
+using {\bfseries Subscriber\+Ptr\+Allocator} = std\+::allocator\+\_\+traits$<$ Allocator $>$\+::template rebind\+\_\+alloc$<$ \mbox{\hyperlink{classECS_1_1Internal_1_1BaseEventSubscriber}{Internal\+::\+Base\+Event\+Subscriber}} $\ast$ $>$
+\item 
+\mbox{\Hypertarget{classECS_1_1World_afd28d4ca046581bb1161ba86004515f6}\label{classECS_1_1World_afd28d4ca046581bb1161ba86004515f6}} 
+using {\bfseries Subscriber\+Pair\+Allocator} = std\+::allocator\+\_\+traits$<$ Allocator $>$\+::template rebind\+\_\+alloc$<$ std\+::pair$<$ const Type\+Index, std\+::vector$<$ \mbox{\hyperlink{classECS_1_1Internal_1_1BaseEventSubscriber}{Internal\+::\+Base\+Event\+Subscriber}} $\ast$, Subscriber\+Ptr\+Allocator $>$ $>$$>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a120055055c5cd7673c6358d2e0f731c0}\label{classECS_1_1World_a120055055c5cd7673c6358d2e0f731c0}} 
+void {\bfseries destroy\+World} ()
+\item 
+\mbox{\Hypertarget{classECS_1_1World_af890bbde5e3c41a763cc670cea3ac2bd}\label{classECS_1_1World_af890bbde5e3c41a763cc670cea3ac2bd}} 
+{\bfseries World} (Allocator alloc)
+\item 
+\mbox{\hyperlink{classECS_1_1World_a88c1a8eb01efe2ec276db14bae65a602}{$\sim$\+World}} ()
+\item 
+\mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$ \mbox{\hyperlink{classECS_1_1World_ace76688de52081be71766282adedf01b}{create}} ()
+\item 
+void \mbox{\hyperlink{classECS_1_1World_adf932a5fe983db0a6fa21c2a36a32521}{destroy}} (\mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$ent, bool immediate=false)
+\item 
+bool \mbox{\hyperlink{classECS_1_1World_a6a9fd886acec3cdec144a5a8e62b0d26}{cleanup}} ()
+\item 
+void \mbox{\hyperlink{classECS_1_1World_a705ae68ce4870776667ddedfd9ad73de}{reset}} ()
+\item 
+\mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}} $\ast$ \mbox{\hyperlink{classECS_1_1World_a5ee52601d4beb39939aa360febd61dde}{register\+System}} (\mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}} $\ast$system)
+\item 
+void \mbox{\hyperlink{classECS_1_1World_a8dd5a66d25597955be27b6b1bc251cb5}{unregister\+System}} (\mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}} $\ast$system)
+\item 
+\mbox{\Hypertarget{classECS_1_1World_abd81576db8030d6533c6160bc51c5b22}\label{classECS_1_1World_abd81576db8030d6533c6160bc51c5b22}} 
+void {\bfseries enable\+System} (\mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}} $\ast$system)
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a8dcb1557dce7a03b6a57b8b7acea13cf}\label{classECS_1_1World_a8dcb1557dce7a03b6a57b8b7acea13cf}} 
+void {\bfseries disable\+System} (\mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}} $\ast$system)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classECS_1_1World_aa2db19a953f848953be9d16f9179baef}{subscribe}} (\mbox{\hyperlink{classECS_1_1EventSubscriber}{Event\+Subscriber}}$<$ T $>$ $\ast$subscriber)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classECS_1_1World_ac1b90014c228b00b59eaf7dade6c66b7}{unsubscribe}} (\mbox{\hyperlink{classECS_1_1EventSubscriber}{Event\+Subscriber}}$<$ T $>$ $\ast$subscriber)
+\item 
+void \mbox{\hyperlink{classECS_1_1World_a6ad62e75db172d6a57a1bdcd434fa782}{unsubscribe\+All}} (void $\ast$subscriber)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classECS_1_1World_a1860aecfe93fed38b4b0c918f0e17bf4}{emit}} (const T \&event)
+\item 
+{\footnotesize template$<$typename... Types$>$ }\\void \mbox{\hyperlink{classECS_1_1World_ac1060983911a221c120ef1bf370a6eee}{each}} (typename std\+::common\+\_\+type$<$ std\+::function$<$ void(\mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$, \mbox{\hyperlink{classECS_1_1ComponentHandle}{Component\+Handle}}$<$ Types $>$...)$>$$>$\+::type view\+Func, bool b\+Include\+Pending\+Destroy=false)
+\item 
+void \mbox{\hyperlink{classECS_1_1World_a0242fa4d1ad76970de27ec897907705e}{all}} (std\+::function$<$ void(\mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$)$>$ view\+Func, bool b\+Include\+Pending\+Destroy=false)
+\item 
+{\footnotesize template$<$typename... Types$>$ }\\\mbox{\hyperlink{classECS_1_1Internal_1_1EntityComponentView}{Internal\+::\+Entity\+Component\+View}}$<$ Types... $>$ \mbox{\hyperlink{classECS_1_1World_a8ab7fc08cb14e9226c9ad03345ee751c}{each}} (bool b\+Include\+Pending\+Destroy=false)
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a8589c820200f86251e28ac86af46bc5e}\label{classECS_1_1World_a8589c820200f86251e28ac86af46bc5e}} 
+\mbox{\hyperlink{classECS_1_1Internal_1_1EntityView}{Internal\+::\+Entity\+View}} {\bfseries all} (bool b\+Include\+Pending\+Destroy=false)
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a2562a3a2a82dfdd6273199615ac24648}\label{classECS_1_1World_a2562a3a2a82dfdd6273199615ac24648}} 
+size\+\_\+t {\bfseries get\+Count} () const
+\item 
+\mbox{\Hypertarget{classECS_1_1World_aa21a1d007334f060ab10065af11a1528}\label{classECS_1_1World_aa21a1d007334f060ab10065af11a1528}} 
+\mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$ {\bfseries get\+By\+Index} (size\+\_\+t idx)
+\item 
+\mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$ \mbox{\hyperlink{classECS_1_1World_ae2dc49a3f819f1f1cf295717b785a003}{get\+By\+Id}} (size\+\_\+t id) const
+\item 
+void \mbox{\hyperlink{classECS_1_1World_aac33fad54c600dc5e5f477a663ede9c7}{tick}} (E\+C\+S\+\_\+\+T\+I\+C\+K\+\_\+\+T\+Y\+PE data)
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a8c7462770ce1c070d5e1053225cc2007}\label{classECS_1_1World_a8c7462770ce1c070d5e1053225cc2007}} 
+Entity\+Allocator \& {\bfseries get\+Primary\+Allocator} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$ \mbox{\hyperlink{classECS_1_1World_a5f475f6c1d5c3dc4722284dbc82a2298}{create\+World}} (Allocator alloc)
+\item 
+static \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$ \mbox{\hyperlink{classECS_1_1World_a2a559e39040bdbe201c87a7bd9bfb909}{create\+World}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a2ac9cda326ec407189b494544c3a58df}\label{classECS_1_1World_a2ac9cda326ec407189b494544c3a58df}} 
+Entity\+Allocator {\bfseries ent\+Alloc}
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a640ee5a15fd3dd66c14084441d00da1c}\label{classECS_1_1World_a640ee5a15fd3dd66c14084441d00da1c}} 
+System\+Allocator {\bfseries system\+Alloc}
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a86de68d87f1ff106f935a3eb13f69059}\label{classECS_1_1World_a86de68d87f1ff106f935a3eb13f69059}} 
+std\+::vector$<$ \mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$, Entity\+Ptr\+Allocator $>$ {\bfseries entities}
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a8ff09765f370aec56f78ed5e2e475523}\label{classECS_1_1World_a8ff09765f370aec56f78ed5e2e475523}} 
+std\+::vector$<$ \mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}} $\ast$, System\+Ptr\+Allocator $>$ {\bfseries systems}
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a68946b9742426073d0205c9b5f5faa99}\label{classECS_1_1World_a68946b9742426073d0205c9b5f5faa99}} 
+std\+::vector$<$ \mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}} $\ast$ $>$ {\bfseries disabled\+Systems}
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a91da7962f2929a2fb4302791862976b4}\label{classECS_1_1World_a91da7962f2929a2fb4302791862976b4}} 
+std\+::unordered\+\_\+map$<$ Type\+Index, std\+::vector$<$ \mbox{\hyperlink{classECS_1_1Internal_1_1BaseEventSubscriber}{Internal\+::\+Base\+Event\+Subscriber}} $\ast$, Subscriber\+Ptr\+Allocator $>$, std\+::hash$<$ Type\+Index $>$, std\+::equal\+\_\+to$<$ Type\+Index $>$, Subscriber\+Pair\+Allocator $>$ {\bfseries subscribers}
+\item 
+\mbox{\Hypertarget{classECS_1_1World_a397dfcc77641c401a6797a779a4fd182}\label{classECS_1_1World_a397dfcc77641c401a6797a779a4fd182}} 
+size\+\_\+t {\bfseries last\+Entity\+Id} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The world creates, destroys, and manages entities. The lifetime of entities and {\itshape registered} systems are handled by the world (don\textquotesingle{}t delete a system without unregistering it from the world first!), while event subscribers have their own lifetimes (the world doesn\textquotesingle{}t delete them automatically when the world is deleted). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classECS_1_1World_a88c1a8eb01efe2ec276db14bae65a602}\label{classECS_1_1World_a88c1a8eb01efe2ec276db14bae65a602}} 
+\index{ECS::World@{ECS::World}!````~World@{$\sim$World}}
+\index{````~World@{$\sim$World}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{$\sim$World()}{~World()}}
+{\footnotesize\ttfamily E\+C\+S\+::\+World\+::$\sim$\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destroying the world will emit On\+Entity\+Destroyed events and call \mbox{\hyperlink{classECS_1_1EntitySystem_afa595ef472522135f8736940c98d0aa0}{Entity\+System\+::unconfigure()}} as appropriate.
+
+Use World\+::destroy\+World to destroy and deallocate the world, do not manually delete the world! 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classECS_1_1World_a0242fa4d1ad76970de27ec897907705e}\label{classECS_1_1World_a0242fa4d1ad76970de27ec897907705e}} 
+\index{ECS::World@{ECS::World}!all@{all}}
+\index{all@{all}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily void E\+C\+S\+::\+World\+::all (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(\mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$)$>$}]{view\+Func,  }\item[{bool}]{b\+Include\+Pending\+Destroy = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Run a function on all entities. \mbox{\Hypertarget{classECS_1_1World_a6a9fd886acec3cdec144a5a8e62b0d26}\label{classECS_1_1World_a6a9fd886acec3cdec144a5a8e62b0d26}} 
+\index{ECS::World@{ECS::World}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily bool E\+C\+S\+::\+World\+::cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Delete all entities in the pending destroy queue. Returns true if any entities were cleaned up, false if there were no entities to clean up. \mbox{\Hypertarget{classECS_1_1World_ace76688de52081be71766282adedf01b}\label{classECS_1_1World_ace76688de52081be71766282adedf01b}} 
+\index{ECS::World@{ECS::World}!create@{create}}
+\index{create@{create}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classECS_1_1Entity}{Entity}}$\ast$ E\+C\+S\+::\+World\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new entity. This will emit the On\+Entity\+Created event. \mbox{\Hypertarget{classECS_1_1World_a2a559e39040bdbe201c87a7bd9bfb909}\label{classECS_1_1World_a2a559e39040bdbe201c87a7bd9bfb909}} 
+\index{ECS::World@{ECS::World}!createWorld@{createWorld}}
+\index{createWorld@{createWorld}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{createWorld()}{createWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classECS_1_1World}{World}}$\ast$ E\+C\+S\+::\+World\+::create\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Use this function to construct the world with the default allocator. \mbox{\Hypertarget{classECS_1_1World_a5f475f6c1d5c3dc4722284dbc82a2298}\label{classECS_1_1World_a5f475f6c1d5c3dc4722284dbc82a2298}} 
+\index{ECS::World@{ECS::World}!createWorld@{createWorld}}
+\index{createWorld@{createWorld}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{createWorld()}{createWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classECS_1_1World}{World}}$\ast$ E\+C\+S\+::\+World\+::create\+World (\begin{DoxyParamCaption}\item[{Allocator}]{alloc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Use this function to construct the world with a custom allocator. \mbox{\Hypertarget{classECS_1_1World_adf932a5fe983db0a6fa21c2a36a32521}\label{classECS_1_1World_adf932a5fe983db0a6fa21c2a36a32521}} 
+\index{ECS::World@{ECS::World}!destroy@{destroy}}
+\index{destroy@{destroy}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void E\+C\+S\+::\+World\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$}]{ent,  }\item[{bool}]{immediate = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destroy an entity. This will emit the On\+Entity\+Destroy event.
+
+If immediate is false (recommended), then the entity won\textquotesingle{}t be immediately deleted but instead will be removed at the beginning of the next \mbox{\hyperlink{classECS_1_1World_aac33fad54c600dc5e5f477a663ede9c7}{tick()}} or when \mbox{\hyperlink{classECS_1_1World_a6a9fd886acec3cdec144a5a8e62b0d26}{cleanup()}} is called. On\+Entity\+Destroyed will still be called immediately.
+
+This function is safe to call multiple times on a single entity. Note that calling this once with immediate = false and then calling it with immediate = true will remove the entity from the pending destroy queue and will immediately destroy it {\itshape without} emitting a second On\+Entity\+Destroyed event.
+
+A warning\+: Do not set immediate to true if you are currently iterating through entities! \mbox{\Hypertarget{classECS_1_1World_a8ab7fc08cb14e9226c9ad03345ee751c}\label{classECS_1_1World_a8ab7fc08cb14e9226c9ad03345ee751c}} 
+\index{ECS::World@{ECS::World}!each@{each}}
+\index{each@{each}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{each()}{each()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Types$>$ \\
+\mbox{\hyperlink{classECS_1_1Internal_1_1EntityComponentView}{Internal\+::\+Entity\+Component\+View}}$<$Types...$>$ E\+C\+S\+::\+World\+::each (\begin{DoxyParamCaption}\item[{bool}]{b\+Include\+Pending\+Destroy = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a view for entities with a specific set of components. The list of entities is calculated on the fly, so this method itself has little overhead. This is mostly useful with a range based for loop. \mbox{\Hypertarget{classECS_1_1World_ac1060983911a221c120ef1bf370a6eee}\label{classECS_1_1World_ac1060983911a221c120ef1bf370a6eee}} 
+\index{ECS::World@{ECS::World}!each@{each}}
+\index{each@{each}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{each()}{each()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename... Types$>$ \\
+void E\+C\+S\+::\+World\+::each (\begin{DoxyParamCaption}\item[{typename std\+::common\+\_\+type$<$ std\+::function$<$ void(\mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$, \mbox{\hyperlink{classECS_1_1ComponentHandle}{Component\+Handle}}$<$ Types $>$}]{... }\end{DoxyParamCaption})}
+
+Run a function on each entity with a specific set of components. This is useful for implementing an \mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}}.
+
+If you want to include entities that are pending destruction, set include\+Pending\+Destroy to true. \mbox{\Hypertarget{classECS_1_1World_a1860aecfe93fed38b4b0c918f0e17bf4}\label{classECS_1_1World_a1860aecfe93fed38b4b0c918f0e17bf4}} 
+\index{ECS::World@{ECS::World}!emit@{emit}}
+\index{emit@{emit}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{emit()}{emit()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void E\+C\+S\+::\+World\+::emit (\begin{DoxyParamCaption}\item[{const T \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Emit an event. This will do nothing if there are no subscribers for the event type. \mbox{\Hypertarget{classECS_1_1World_ae2dc49a3f819f1f1cf295717b785a003}\label{classECS_1_1World_ae2dc49a3f819f1f1cf295717b785a003}} 
+\index{ECS::World@{ECS::World}!getById@{getById}}
+\index{getById@{getById}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{getById()}{getById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$ E\+C\+S\+::\+World\+::get\+By\+Id (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get an entity by an id. This is a slow process. \mbox{\Hypertarget{classECS_1_1World_a5ee52601d4beb39939aa360febd61dde}\label{classECS_1_1World_a5ee52601d4beb39939aa360febd61dde}} 
+\index{ECS::World@{ECS::World}!registerSystem@{registerSystem}}
+\index{registerSystem@{registerSystem}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{registerSystem()}{registerSystem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}}$\ast$ E\+C\+S\+::\+World\+::register\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}} $\ast$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Register a system. The world will manage the memory of the system unless you unregister the system. \mbox{\Hypertarget{classECS_1_1World_a705ae68ce4870776667ddedfd9ad73de}\label{classECS_1_1World_a705ae68ce4870776667ddedfd9ad73de}} 
+\index{ECS::World@{ECS::World}!reset@{reset}}
+\index{reset@{reset}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void E\+C\+S\+::\+World\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reset the world, destroying all entities. \mbox{\hyperlink{classECS_1_1Entity}{Entity}} ids will be reset as well. \mbox{\Hypertarget{classECS_1_1World_aa2db19a953f848953be9d16f9179baef}\label{classECS_1_1World_aa2db19a953f848953be9d16f9179baef}} 
+\index{ECS::World@{ECS::World}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void E\+C\+S\+::\+World\+::subscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classECS_1_1EventSubscriber}{Event\+Subscriber}}$<$ T $>$ $\ast$}]{subscriber }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Subscribe to an event. \mbox{\Hypertarget{classECS_1_1World_aac33fad54c600dc5e5f477a663ede9c7}\label{classECS_1_1World_aac33fad54c600dc5e5f477a663ede9c7}} 
+\index{ECS::World@{ECS::World}!tick@{tick}}
+\index{tick@{tick}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void E\+C\+S\+::\+World\+::tick (\begin{DoxyParamCaption}\item[{E\+C\+S\+\_\+\+T\+I\+C\+K\+\_\+\+T\+Y\+PE}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tick the world. See the definition for E\+C\+S\+\_\+\+T\+I\+C\+K\+\_\+\+T\+Y\+PE at the top of this file for more information on passing data through \mbox{\hyperlink{classECS_1_1World_aac33fad54c600dc5e5f477a663ede9c7}{tick()}}. \mbox{\Hypertarget{classECS_1_1World_a8dd5a66d25597955be27b6b1bc251cb5}\label{classECS_1_1World_a8dd5a66d25597955be27b6b1bc251cb5}} 
+\index{ECS::World@{ECS::World}!unregisterSystem@{unregisterSystem}}
+\index{unregisterSystem@{unregisterSystem}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{unregisterSystem()}{unregisterSystem()}}
+{\footnotesize\ttfamily void E\+C\+S\+::\+World\+::unregister\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}} $\ast$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unregister a system. \mbox{\Hypertarget{classECS_1_1World_ac1b90014c228b00b59eaf7dade6c66b7}\label{classECS_1_1World_ac1b90014c228b00b59eaf7dade6c66b7}} 
+\index{ECS::World@{ECS::World}!unsubscribe@{unsubscribe}}
+\index{unsubscribe@{unsubscribe}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{unsubscribe()}{unsubscribe()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void E\+C\+S\+::\+World\+::unsubscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classECS_1_1EventSubscriber}{Event\+Subscriber}}$<$ T $>$ $\ast$}]{subscriber }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unsubscribe from an event. \mbox{\Hypertarget{classECS_1_1World_a6ad62e75db172d6a57a1bdcd434fa782}\label{classECS_1_1World_a6ad62e75db172d6a57a1bdcd434fa782}} 
+\index{ECS::World@{ECS::World}!unsubscribeAll@{unsubscribeAll}}
+\index{unsubscribeAll@{unsubscribeAll}!ECS::World@{ECS::World}}
+\doxysubsubsection{\texorpdfstring{unsubscribeAll()}{unsubscribeAll()}}
+{\footnotesize\ttfamily void E\+C\+S\+::\+World\+::unsubscribe\+All (\begin{DoxyParamCaption}\item[{void $\ast$}]{subscriber }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unsubscribe from all events. Don\textquotesingle{}t be afraid of the void pointer, just pass in your subscriber as normal. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+E\+C\+S/E\+C\+S.\+h\end{DoxyCompactItemize}

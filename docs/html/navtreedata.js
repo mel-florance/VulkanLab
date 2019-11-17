@@ -23,11 +23,20 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Vulkan Lab", "index.html", [
+    [ "Contributor Covenant Code of Conduct", "md_CODE_OF_CONDUCT.html", [
+      [ "Our Pledge", "md_CODE_OF_CONDUCT.html#autotoc_md1", null ],
+      [ "Our Standards", "md_CODE_OF_CONDUCT.html#autotoc_md2", null ],
+      [ "Our Responsibilities", "md_CODE_OF_CONDUCT.html#autotoc_md3", null ],
+      [ "Scope", "md_CODE_OF_CONDUCT.html#autotoc_md4", null ],
+      [ "Enforcement", "md_CODE_OF_CONDUCT.html#autotoc_md5", null ],
+      [ "Attribution", "md_CODE_OF_CONDUCT.html#autotoc_md6", null ]
+    ] ],
     [ "Vulkan Lab", "md_README.html", [
-      [ "Installation", "md_README.html#autotoc_md1", null ],
-      [ "Compilation", "md_README.html#autotoc_md2", null ],
-      [ "Contributing", "md_README.html#autotoc_md3", null ],
-      [ "License", "md_README.html#autotoc_md4", null ]
+      [ "Documentation", "md_README.html#autotoc_md8", null ],
+      [ "Installation", "md_README.html#autotoc_md9", null ],
+      [ "Compilation", "md_README.html#autotoc_md10", null ],
+      [ "Contributing", "md_README.html#autotoc_md11", null ],
+      [ "License", "md_README.html#autotoc_md12", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -35,7 +44,9 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -46,7 +57,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"ArrayBuffer_8h_source.html"
+".html",
+"classLoop.html#af9adf7a12efce4aecd7eee525543e3de",
+"structRotation.html#a116c5db8b835d1dbb9307761f7a1fa4d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

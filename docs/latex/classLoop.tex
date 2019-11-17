@@ -1,0 +1,207 @@
+\hypertarget{classLoop}{}\doxysection{Loop Class Reference}
+\label{classLoop}\index{Loop@{Loop}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{classLoop_aa90051e8843ede53fbb9b7a5fed34750}{Loop\+Callback}}) (\mbox{\hyperlink{classLoop}{Loop}} $\ast$loop, \mbox{\hyperlink{classEngine}{Engine}} $\ast$engine)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLoop_ad0a5a704e7ded8df9b60c2ee10558a81}{Loop}} (\mbox{\hyperlink{classEngine}{Engine}} $\ast$engine)
+\item 
+void \mbox{\hyperlink{classLoop_ac898ef45aa95d1f0978526a7a843060f}{start}} ()
+\item 
+void \mbox{\hyperlink{classLoop_af9adf7a12efce4aecd7eee525543e3de}{stop}} ()
+\item 
+bool \mbox{\hyperlink{classLoop_a29f34bd87379543443903055d586889e}{is\+Running}} ()
+\item 
+\mbox{\hyperlink{classProfiler}{Profiler}} $\ast$ \mbox{\hyperlink{classLoop_a6190e1a5a67f3405d476155e681b87b8}{get\+Profiler}} ()
+\item 
+\mbox{\hyperlink{classClock}{Clock}} $\ast$ \mbox{\hyperlink{classLoop_aa7c676752b01d5740ef2b5917610d489}{get\+Clock}} ()
+\item 
+void \mbox{\hyperlink{classLoop_ab3f69051da80b68749d8e180f9547ac1}{set\+Update\+Callback}} (\mbox{\hyperlink{classLoop_aa90051e8843ede53fbb9b7a5fed34750}{Loop\+Callback}} callback)
+\item 
+void \mbox{\hyperlink{classLoop_ae6192ff414b29758f5fe44873f57dda8}{set\+Render\+Callback}} (\mbox{\hyperlink{classLoop_aa90051e8843ede53fbb9b7a5fed34750}{Loop\+Callback}} callback)
+\item 
+double \mbox{\hyperlink{classLoop_af7287343734ba62bd7fb6456d9a8ec04}{get\+Frame\+Time}} ()
+\item 
+\mbox{\Hypertarget{classLoop_a7ec89a485aab244c24b6653c2ce496bd}\label{classLoop_a7ec89a485aab244c24b6653c2ce496bd}} 
+double {\bfseries get\+Passed\+Time} ()
+\item 
+float \mbox{\hyperlink{classLoop_a44fee8c61d865589f91e5ca7fa3911ff}{get\+Fps}} ()
+\item 
+float \mbox{\hyperlink{classLoop_a4229fbed465c0a1d9b82bda401255251}{compute\+Average\+Fps}} (float fps)
+\item 
+std\+::map$<$ int, float $>$ \& \mbox{\hyperlink{classLoop_a8dba0bac5d83e3d21e826bde13e9b8f2}{get\+Fps\+List}} ()
+\item 
+\mbox{\hyperlink{classLoop_ac25ba52a46e689c85e2720718615d767}{$\sim$\+Loop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLoop_a62198e3af2ad24300b1e26379ca0855e}\label{classLoop_a62198e3af2ad24300b1e26379ca0855e}} 
+\mbox{\hyperlink{classClock}{Clock}} $\ast$ {\bfseries clock}
+\item 
+\mbox{\Hypertarget{classLoop_ad1d55da3bc878e15d789f1bc5654dd31}\label{classLoop_ad1d55da3bc878e15d789f1bc5654dd31}} 
+\mbox{\hyperlink{classProfiler}{Profiler}} $\ast$ {\bfseries profiler}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLoop_a7c2cd8609df3d8069a8ee9e0edbd75b3}\label{classLoop_a7c2cd8609df3d8069a8ee9e0edbd75b3}} 
+\mbox{\hyperlink{classEngine}{Engine}} $\ast$ {\bfseries engine}
+\item 
+\mbox{\Hypertarget{classLoop_aa3195e472e0b2f7fb0c48ddacf706e59}\label{classLoop_aa3195e472e0b2f7fb0c48ddacf706e59}} 
+\mbox{\hyperlink{classLoop_aa90051e8843ede53fbb9b7a5fed34750}{Loop\+Callback}} {\bfseries update\+Callback}
+\item 
+\mbox{\Hypertarget{classLoop_a1f57f518c95267c571cb70fa6e1073f3}\label{classLoop_a1f57f518c95267c571cb70fa6e1073f3}} 
+\mbox{\hyperlink{classLoop_aa90051e8843ede53fbb9b7a5fed34750}{Loop\+Callback}} {\bfseries render\+Callback}
+\item 
+\mbox{\Hypertarget{classLoop_a2b8625e921bc0fb3e406eab2ebab2171}\label{classLoop_a2b8625e921bc0fb3e406eab2ebab2171}} 
+bool {\bfseries running}
+\item 
+\mbox{\Hypertarget{classLoop_a68edb96019bd192b7db3a117f6969268}\label{classLoop_a68edb96019bd192b7db3a117f6969268}} 
+bool {\bfseries render}
+\item 
+\mbox{\Hypertarget{classLoop_add82f2144c27800749b529e2d2dbca00}\label{classLoop_add82f2144c27800749b529e2d2dbca00}} 
+int {\bfseries sleep\+Time}
+\item 
+\mbox{\Hypertarget{classLoop_a25f47b9f19fcd514e2e713f2519ec3dc}\label{classLoop_a25f47b9f19fcd514e2e713f2519ec3dc}} 
+float {\bfseries fps}
+\item 
+\mbox{\Hypertarget{classLoop_a4663a8afe844719573d64895aae03a40}\label{classLoop_a4663a8afe844719573d64895aae03a40}} 
+double {\bfseries last\+Time}
+\item 
+\mbox{\Hypertarget{classLoop_ade05adf7b8f45fdf5abda2c43b5df380}\label{classLoop_ade05adf7b8f45fdf5abda2c43b5df380}} 
+double {\bfseries start\+Time}
+\item 
+\mbox{\Hypertarget{classLoop_ad1f80aea7ef4aadf7f5ae32d7d4e7fbe}\label{classLoop_ad1f80aea7ef4aadf7f5ae32d7d4e7fbe}} 
+double {\bfseries frame\+Time}
+\item 
+\mbox{\Hypertarget{classLoop_aa750ed61f259853f85cb8c82bfece1c8}\label{classLoop_aa750ed61f259853f85cb8c82bfece1c8}} 
+double {\bfseries frame\+Counter}
+\item 
+\mbox{\Hypertarget{classLoop_a6fd5640c91dc06067590dd0dca355a41}\label{classLoop_a6fd5640c91dc06067590dd0dca355a41}} 
+double {\bfseries unprocessed\+Time} = 0
+\item 
+\mbox{\Hypertarget{classLoop_a67cabc29f9db5a4e5e0698e59d902d3f}\label{classLoop_a67cabc29f9db5a4e5e0698e59d902d3f}} 
+int {\bfseries frames} = 0
+\item 
+\mbox{\Hypertarget{classLoop_a135b356720561d6e9d606500de2637d4}\label{classLoop_a135b356720561d6e9d606500de2637d4}} 
+double {\bfseries passed\+Time}
+\item 
+\mbox{\Hypertarget{classLoop_abb59c3ebe118d1322d66134b21138e50}\label{classLoop_abb59c3ebe118d1322d66134b21138e50}} 
+int {\bfseries fps\+Index}
+\item 
+\mbox{\Hypertarget{classLoop_adf93b23bb75d9a163a3c1e2dcd11a891}\label{classLoop_adf93b23bb75d9a163a3c1e2dcd11a891}} 
+float {\bfseries fps\+Sum}
+\item 
+\mbox{\Hypertarget{classLoop_a6285963159ddefef1fa91efcb735d3d0}\label{classLoop_a6285963159ddefef1fa91efcb735d3d0}} 
+std\+::map$<$ int, float $>$ {\bfseries fps\+List}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classLoop_aa90051e8843ede53fbb9b7a5fed34750}\label{classLoop_aa90051e8843ede53fbb9b7a5fed34750}} 
+\index{Loop@{Loop}!LoopCallback@{LoopCallback}}
+\index{LoopCallback@{LoopCallback}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{LoopCallback}{LoopCallback}}
+{\footnotesize\ttfamily typedef void($\ast$ Loop\+::\+Loop\+Callback) (\mbox{\hyperlink{classLoop}{Loop}} $\ast$loop, \mbox{\hyperlink{classEngine}{Engine}} $\ast$engine)}
+
+\mbox{\hyperlink{classLoop}{Loop}} callback function definition 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLoop_ad0a5a704e7ded8df9b60c2ee10558a81}\label{classLoop_ad0a5a704e7ded8df9b60c2ee10558a81}} 
+\index{Loop@{Loop}!Loop@{Loop}}
+\index{Loop@{Loop}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{Loop()}{Loop()}}
+{\footnotesize\ttfamily Loop\+::\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEngine}{Engine}} $\ast$}]{engine }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classLoop}{Loop}} constructor \mbox{\Hypertarget{classLoop_ac25ba52a46e689c85e2720718615d767}\label{classLoop_ac25ba52a46e689c85e2720718615d767}} 
+\index{Loop@{Loop}!````~Loop@{$\sim$Loop}}
+\index{````~Loop@{$\sim$Loop}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{$\sim$Loop()}{~Loop()}}
+{\footnotesize\ttfamily Loop\+::$\sim$\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classLoop}{Loop}} destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLoop_a4229fbed465c0a1d9b82bda401255251}\label{classLoop_a4229fbed465c0a1d9b82bda401255251}} 
+\index{Loop@{Loop}!computeAverageFps@{computeAverageFps}}
+\index{computeAverageFps@{computeAverageFps}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{computeAverageFps()}{computeAverageFps()}}
+{\footnotesize\ttfamily float Loop\+::compute\+Average\+Fps (\begin{DoxyParamCaption}\item[{float}]{fps }\end{DoxyParamCaption})}
+
+Compute an average of F\+PS during the interval fixed by M\+A\+X\+\_\+\+S\+A\+M\+P\+L\+ES. \mbox{\Hypertarget{classLoop_aa7c676752b01d5740ef2b5917610d489}\label{classLoop_aa7c676752b01d5740ef2b5917610d489}} 
+\index{Loop@{Loop}!getClock@{getClock}}
+\index{getClock@{getClock}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{getClock()}{getClock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClock}{Clock}}$\ast$ Loop\+::get\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return the loop clock. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLoop_a44fee8c61d865589f91e5ca7fa3911ff}\label{classLoop_a44fee8c61d865589f91e5ca7fa3911ff}} 
+\index{Loop@{Loop}!getFps@{getFps}}
+\index{getFps@{getFps}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{getFps()}{getFps()}}
+{\footnotesize\ttfamily float Loop\+::get\+Fps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the current image per second. \mbox{\Hypertarget{classLoop_a8dba0bac5d83e3d21e826bde13e9b8f2}\label{classLoop_a8dba0bac5d83e3d21e826bde13e9b8f2}} 
+\index{Loop@{Loop}!getFpsList@{getFpsList}}
+\index{getFpsList@{getFpsList}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{getFpsList()}{getFpsList()}}
+{\footnotesize\ttfamily std\+::map$<$int, float$>$\& Loop\+::get\+Fps\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the fps list of last frames. \mbox{\Hypertarget{classLoop_af7287343734ba62bd7fb6456d9a8ec04}\label{classLoop_af7287343734ba62bd7fb6456d9a8ec04}} 
+\index{Loop@{Loop}!getFrameTime@{getFrameTime}}
+\index{getFrameTime@{getFrameTime}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{getFrameTime()}{getFrameTime()}}
+{\footnotesize\ttfamily double Loop\+::get\+Frame\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the frame time. \mbox{\Hypertarget{classLoop_a6190e1a5a67f3405d476155e681b87b8}\label{classLoop_a6190e1a5a67f3405d476155e681b87b8}} 
+\index{Loop@{Loop}!getProfiler@{getProfiler}}
+\index{getProfiler@{getProfiler}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{getProfiler()}{getProfiler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProfiler}{Profiler}}$\ast$ Loop\+::get\+Profiler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the loop profiler. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLoop_a29f34bd87379543443903055d586889e}\label{classLoop_a29f34bd87379543443903055d586889e}} 
+\index{Loop@{Loop}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily bool Loop\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if the loop is running. \mbox{\Hypertarget{classLoop_ae6192ff414b29758f5fe44873f57dda8}\label{classLoop_ae6192ff414b29758f5fe44873f57dda8}} 
+\index{Loop@{Loop}!setRenderCallback@{setRenderCallback}}
+\index{setRenderCallback@{setRenderCallback}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{setRenderCallback()}{setRenderCallback()}}
+{\footnotesize\ttfamily void Loop\+::set\+Render\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLoop_aa90051e8843ede53fbb9b7a5fed34750}{Loop\+Callback}}}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the render callback function. \mbox{\Hypertarget{classLoop_ab3f69051da80b68749d8e180f9547ac1}\label{classLoop_ab3f69051da80b68749d8e180f9547ac1}} 
+\index{Loop@{Loop}!setUpdateCallback@{setUpdateCallback}}
+\index{setUpdateCallback@{setUpdateCallback}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{setUpdateCallback()}{setUpdateCallback()}}
+{\footnotesize\ttfamily void Loop\+::set\+Update\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLoop_aa90051e8843ede53fbb9b7a5fed34750}{Loop\+Callback}}}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the update callback function. \mbox{\Hypertarget{classLoop_ac898ef45aa95d1f0978526a7a843060f}\label{classLoop_ac898ef45aa95d1f0978526a7a843060f}} 
+\index{Loop@{Loop}!start@{start}}
+\index{start@{start}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Loop\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Start the loop \mbox{\Hypertarget{classLoop_af9adf7a12efce4aecd7eee525543e3de}\label{classLoop_af9adf7a12efce4aecd7eee525543e3de}} 
+\index{Loop@{Loop}!stop@{stop}}
+\index{stop@{stop}!Loop@{Loop}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Loop\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stop the loop 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+Core/Loop.\+h\item 
+Engine/src/\+Core/Loop.\+cpp\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update_135',['update',['../classWindow.html#af63b739806ce9ecee82f57c00a44c176',1,'Window']]]
+  ['profiler_302',['Profiler',['../classProfiler.html#a439198d39c607f976b62620464e39a22',1,'Profiler']]]
 ];

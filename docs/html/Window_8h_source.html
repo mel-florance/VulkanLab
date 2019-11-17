@@ -102,36 +102,64 @@ $(document).ready(function(){initNavTree('Window_8h_source.html','');});
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classWindow.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classWindow.html">Window</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classWindow.html#a06a89c98071838f65590fa906508942f">Window</a>(</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">const</span> glm::ivec2 &amp;size = glm::ivec2(1280, 720),</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">const</span> glm::ivec2 &amp;<a class="code" href="classWindow.html#ace4ef10c8f0e7f74f735b68d6ae35a85">size</a> = glm::ivec2(1280, 720),</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">const</span> std::string &amp;title = <span class="stringliteral">&quot;Vulkan Lab&quot;</span>,</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">const</span> glm::vec2 &amp;position = glm::vec2(0.0f)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    );</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classWindow.html#a245d821e6016fa1f6970ccbbedd635f6">~Window</a>();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWindow.html#af63b739806ce9ecee82f57c00a44c176">update</a>(std::function&lt;<span class="keywordtype">void</span>(glm::ivec2 &amp;size)&gt; callback);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWindow.html#af63b739806ce9ecee82f57c00a44c176">update</a>(std::function&lt;<span class="keywordtype">void</span>(glm::ivec2 &amp;<a class="code" href="classWindow.html#ace4ef10c8f0e7f74f735b68d6ae35a85">size</a>)&gt; callback);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    glm::ivec2 size;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::string title;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    glm::vec2 position;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    GLFWwindow *instance;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classWindow.html#add4eaae85fe21ec57764c496f9e6b62c">onResize</a>(GLFWwindow *window, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classWindow.html#ae868ffceb7f025947abf8b2ca01cc890">onClose</a>(GLFWwindow *window);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classWindow.html#a310fc385b5f97e9f553b6fa2c8fcd5d4">onKey</a>(GLFWwindow *window, <span class="keywordtype">int</span> key, <span class="keywordtype">int</span> scanCode, <span class="keywordtype">int</span> action, <span class="keywordtype">int</span> mods);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classWindow.html#a46face86cf2d93711a80020128294d12">onChar</a>(GLFWwindow *window, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> keyCode);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif //VULKANLAB_WINDOW_H</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classWindow.html#add879d5f84f0adce1eb95a4898051f39">onMouseButton</a>(GLFWwindow *window, <span class="keywordtype">int</span> button, <span class="keywordtype">int</span> action, <span class="keywordtype">int</span> mods);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classWindow.html#a532054b3123bc7bcedf9e6728d473e3e">onScroll</a>(GLFWwindow *window, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classWindow.html#a3e9aea5a8198fcf5654476123268917a">onMouseMove</a>(GLFWwindow *window, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classWindow.html#a72184e859d8387f25014f6c11d22095f">onDrop</a>(GLFWwindow *window, <span class="keywordtype">int</span> count, <span class="keyword">const</span> <span class="keywordtype">char</span> **paths);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">inline</span> GLFWwindow *getInstance() {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> this-&gt;instance;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classWindow.html#ace4ef10c8f0e7f74f735b68d6ae35a85">   42</a></span>&#160;    <span class="keyword">static</span> glm::ivec2 <a class="code" href="classWindow.html#ace4ef10c8f0e7f74f735b68d6ae35a85">size</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> std::string title;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">static</span> glm::vec2 position;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    GLFWwindow *instance;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif //VULKANLAB_WINDOW_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassWindow_html_a245d821e6016fa1f6970ccbbedd635f6"><div class="ttname"><a href="classWindow.html#a245d821e6016fa1f6970ccbbedd635f6">Window::~Window</a></div><div class="ttdeci">~Window()</div><div class="ttdef"><b>Definition:</b> Window.cpp:58</div></div>
+<div class="ttc" id="aclassWindow_html_add879d5f84f0adce1eb95a4898051f39"><div class="ttname"><a href="classWindow.html#add879d5f84f0adce1eb95a4898051f39">Window::onMouseButton</a></div><div class="ttdeci">static void onMouseButton(GLFWwindow *window, int button, int action, int mods)</div><div class="ttdef"><b>Definition:</b> Window.cpp:122</div></div>
+<div class="ttc" id="aclassWindow_html_a245d821e6016fa1f6970ccbbedd635f6"><div class="ttname"><a href="classWindow.html#a245d821e6016fa1f6970ccbbedd635f6">Window::~Window</a></div><div class="ttdeci">~Window()</div><div class="ttdef"><b>Definition:</b> Window.cpp:160</div></div>
 <div class="ttc" id="aclassWindow_html"><div class="ttname"><a href="classWindow.html">Window</a></div><div class="ttdef"><b>Definition:</b> Window.h:10</div></div>
-<div class="ttc" id="aclassWindow_html_a06a89c98071838f65590fa906508942f"><div class="ttname"><a href="classWindow.html#a06a89c98071838f65590fa906508942f">Window::Window</a></div><div class="ttdeci">Window(const glm::ivec2 &amp;size=glm::ivec2(1280, 720), const std::string &amp;title=&quot;Vulkan Lab&quot;, const glm::vec2 &amp;position=glm::vec2(0.0f))</div><div class="ttdef"><b>Definition:</b> Window.cpp:10</div></div>
-<div class="ttc" id="aclassWindow_html_af63b739806ce9ecee82f57c00a44c176"><div class="ttname"><a href="classWindow.html#af63b739806ce9ecee82f57c00a44c176">Window::update</a></div><div class="ttdeci">void update(std::function&lt; void(glm::ivec2 &amp;size)&gt; callback)</div><div class="ttdef"><b>Definition:</b> Window.cpp:44</div></div>
+<div class="ttc" id="aclassWindow_html_ace4ef10c8f0e7f74f735b68d6ae35a85"><div class="ttname"><a href="classWindow.html#ace4ef10c8f0e7f74f735b68d6ae35a85">Window::size</a></div><div class="ttdeci">static glm::ivec2 size</div><div class="ttdef"><b>Definition:</b> Window.h:42</div></div>
+<div class="ttc" id="aclassWindow_html_add4eaae85fe21ec57764c496f9e6b62c"><div class="ttname"><a href="classWindow.html#add4eaae85fe21ec57764c496f9e6b62c">Window::onResize</a></div><div class="ttdeci">static void onResize(GLFWwindow *window, int width, int height)</div><div class="ttdef"><b>Definition:</b> Window.cpp:84</div></div>
+<div class="ttc" id="aclassWindow_html_a3e9aea5a8198fcf5654476123268917a"><div class="ttname"><a href="classWindow.html#a3e9aea5a8198fcf5654476123268917a">Window::onMouseMove</a></div><div class="ttdeci">static void onMouseMove(GLFWwindow *window, double x, double y)</div><div class="ttdef"><b>Definition:</b> Window.cpp:142</div></div>
+<div class="ttc" id="aclassWindow_html_a532054b3123bc7bcedf9e6728d473e3e"><div class="ttname"><a href="classWindow.html#a532054b3123bc7bcedf9e6728d473e3e">Window::onScroll</a></div><div class="ttdeci">static void onScroll(GLFWwindow *window, double x, double y)</div><div class="ttdef"><b>Definition:</b> Window.cpp:132</div></div>
+<div class="ttc" id="aclassWindow_html_a310fc385b5f97e9f553b6fa2c8fcd5d4"><div class="ttname"><a href="classWindow.html#a310fc385b5f97e9f553b6fa2c8fcd5d4">Window::onKey</a></div><div class="ttdeci">static void onKey(GLFWwindow *window, int key, int scanCode, int action, int mods)</div><div class="ttdef"><b>Definition:</b> Window.cpp:102</div></div>
+<div class="ttc" id="aclassWindow_html_a06a89c98071838f65590fa906508942f"><div class="ttname"><a href="classWindow.html#a06a89c98071838f65590fa906508942f">Window::Window</a></div><div class="ttdeci">Window(const glm::ivec2 &amp;size=glm::ivec2(1280, 720), const std::string &amp;title=&quot;Vulkan Lab&quot;, const glm::vec2 &amp;position=glm::vec2(0.0f))</div><div class="ttdef"><b>Definition:</b> Window.cpp:21</div></div>
+<div class="ttc" id="aclassWindow_html_af63b739806ce9ecee82f57c00a44c176"><div class="ttname"><a href="classWindow.html#af63b739806ce9ecee82f57c00a44c176">Window::update</a></div><div class="ttdeci">void update(std::function&lt; void(glm::ivec2 &amp;size)&gt; callback)</div><div class="ttdef"><b>Definition:</b> Window.cpp:67</div></div>
+<div class="ttc" id="aclassWindow_html_a46face86cf2d93711a80020128294d12"><div class="ttname"><a href="classWindow.html#a46face86cf2d93711a80020128294d12">Window::onChar</a></div><div class="ttdeci">static void onChar(GLFWwindow *window, unsigned int keyCode)</div><div class="ttdef"><b>Definition:</b> Window.cpp:111</div></div>
+<div class="ttc" id="aclassWindow_html_ae868ffceb7f025947abf8b2ca01cc890"><div class="ttname"><a href="classWindow.html#ae868ffceb7f025947abf8b2ca01cc890">Window::onClose</a></div><div class="ttdeci">static void onClose(GLFWwindow *window)</div><div class="ttdef"><b>Definition:</b> Window.cpp:92</div></div>
+<div class="ttc" id="aclassWindow_html_a72184e859d8387f25014f6c11d22095f"><div class="ttname"><a href="classWindow.html#a72184e859d8387f25014f6c11d22095f">Window::onDrop</a></div><div class="ttdeci">static void onDrop(GLFWwindow *window, int count, const char **paths)</div><div class="ttdef"><b>Definition:</b> Window.cpp:153</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
     <ul>
         <li class="navelem"><a class="el" href="dir_0b6ee6e7e9547e675db4add2e5de97da.html">Engine</a></li><li class="navelem"><a class="el" href="dir_b6dc9fbf5fd229481ae647194eb362ed.html">src</a></li><li class="navelem"><a class="el" href="dir_1706eabd18caa613e9919a5eaefb7933.html">Display</a></li><li class="navelem"><b>Window.h</b></li>
         <li class="footer">
-            Generated on Sun Nov 17 2019 13:24:59 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            Generated on Sun Nov 17 2019 22:57:45 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
             <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
         </li>

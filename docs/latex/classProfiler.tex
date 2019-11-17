@@ -1,0 +1,112 @@
+\hypertarget{classProfiler}{}\doxysection{Profiler Class Reference}
+\label{classProfiler}\index{Profiler@{Profiler}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProfiler_a439198d39c607f976b62620464e39a22}{Profiler}} (\mbox{\hyperlink{classClock}{Clock}} $\ast$clock)
+\item 
+\mbox{\hyperlink{classProfiler_a1e6dd8f6cfb15cd5237b971d8f49c749}{$\sim$\+Profiler}} ()
+\item 
+\mbox{\hyperlink{classTimer}{Timer}} $\ast$ \mbox{\hyperlink{classProfiler_a6ccb8e286750b6937f6321670bcde9bc}{get\+Timer}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classProfiler_ab47267e25d9ad5c2e106f54bc74ea9bf}{add\+Timer}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classProfiler_af25df9cebf5270801f67a18660ac0c8f}{stop\+Timer}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classProfiler_af2ce087c24960053ca51e442b2c74098}{start\+Timer}} (const std\+::string \&name)
+\item 
+double \mbox{\hyperlink{classProfiler_a5c11e218c896f3cb54886c772124a2bd}{get\+Report}} (const std\+::string \&name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classProfiler_a210d17a73de387ceeed8ac148420793f}\label{classProfiler_a210d17a73de387ceeed8ac148420793f}} 
+\mbox{\hyperlink{classClock}{Clock}} $\ast$ {\bfseries clock}
+\item 
+\mbox{\Hypertarget{classProfiler_af8aab2325dd59908ff596b00e652f793}\label{classProfiler_af8aab2325dd59908ff596b00e652f793}} 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classTimer}{Timer}} $\ast$ $>$ {\bfseries timers}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classProfiler_a439198d39c607f976b62620464e39a22}\label{classProfiler_a439198d39c607f976b62620464e39a22}} 
+\index{Profiler@{Profiler}!Profiler@{Profiler}}
+\index{Profiler@{Profiler}!Profiler@{Profiler}}
+\doxysubsubsection{\texorpdfstring{Profiler()}{Profiler()}}
+{\footnotesize\ttfamily Profiler\+::\+Profiler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClock}{Clock}} $\ast$}]{clock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classProfiler}{Profiler}} constructor 
+\begin{DoxyParams}{Parameters}
+{\em clock} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classProfiler_a1e6dd8f6cfb15cd5237b971d8f49c749}\label{classProfiler_a1e6dd8f6cfb15cd5237b971d8f49c749}} 
+\index{Profiler@{Profiler}!````~Profiler@{$\sim$Profiler}}
+\index{````~Profiler@{$\sim$Profiler}!Profiler@{Profiler}}
+\doxysubsubsection{\texorpdfstring{$\sim$Profiler()}{~Profiler()}}
+{\footnotesize\ttfamily Profiler\+::$\sim$\+Profiler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classProfiler}{Profiler}} destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classProfiler_ab47267e25d9ad5c2e106f54bc74ea9bf}\label{classProfiler_ab47267e25d9ad5c2e106f54bc74ea9bf}} 
+\index{Profiler@{Profiler}!addTimer@{addTimer}}
+\index{addTimer@{addTimer}!Profiler@{Profiler}}
+\doxysubsubsection{\texorpdfstring{addTimer()}{addTimer()}}
+{\footnotesize\ttfamily void Profiler\+::add\+Timer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add new timer for measuring. \mbox{\Hypertarget{classProfiler_a5c11e218c896f3cb54886c772124a2bd}\label{classProfiler_a5c11e218c896f3cb54886c772124a2bd}} 
+\index{Profiler@{Profiler}!getReport@{getReport}}
+\index{getReport@{getReport}!Profiler@{Profiler}}
+\doxysubsubsection{\texorpdfstring{getReport()}{getReport()}}
+{\footnotesize\ttfamily double Profiler\+::get\+Report (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the report of a previously added timer, given its name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProfiler_a6ccb8e286750b6937f6321670bcde9bc}\label{classProfiler_a6ccb8e286750b6937f6321670bcde9bc}} 
+\index{Profiler@{Profiler}!getTimer@{getTimer}}
+\index{getTimer@{getTimer}!Profiler@{Profiler}}
+\doxysubsubsection{\texorpdfstring{getTimer()}{getTimer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTimer}{Timer}}$\ast$ Profiler\+::get\+Timer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the registered timer given its name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProfiler_af2ce087c24960053ca51e442b2c74098}\label{classProfiler_af2ce087c24960053ca51e442b2c74098}} 
+\index{Profiler@{Profiler}!startTimer@{startTimer}}
+\index{startTimer@{startTimer}!Profiler@{Profiler}}
+\doxysubsubsection{\texorpdfstring{startTimer()}{startTimer()}}
+{\footnotesize\ttfamily void Profiler\+::start\+Timer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Start a previously added timer given its name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classProfiler_af25df9cebf5270801f67a18660ac0c8f}\label{classProfiler_af25df9cebf5270801f67a18660ac0c8f}} 
+\index{Profiler@{Profiler}!stopTimer@{stopTimer}}
+\index{stopTimer@{stopTimer}!Profiler@{Profiler}}
+\doxysubsubsection{\texorpdfstring{stopTimer()}{stopTimer()}}
+{\footnotesize\ttfamily void Profiler\+::stop\+Timer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Stop a previously added timer given its name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+Core/Profiler.\+h\end{DoxyCompactItemize}

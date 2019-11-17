@@ -1,0 +1,55 @@
+\hypertarget{classECS_1_1Internal_1_1EntityComponentIterator}{}\doxysection{E\+CS\+::Internal\+::Entity\+Component\+Iterator$<$ Types $>$ Class Template Reference}
+\label{classECS_1_1Internal_1_1EntityComponentIterator}\index{ECS::Internal::EntityComponentIterator$<$ Types $>$@{ECS::Internal::EntityComponentIterator$<$ Types $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_a788f18d0c14b02dec016f3d9c00f930e}\label{classECS_1_1Internal_1_1EntityComponentIterator_a788f18d0c14b02dec016f3d9c00f930e}} 
+{\bfseries Entity\+Component\+Iterator} (\mbox{\hyperlink{classECS_1_1World}{World}} $\ast$world, size\+\_\+t index, bool b\+Is\+End, bool b\+Include\+Pending\+Destroy)
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_a033bdbdc4d7f409c160950fe0fd1983e}\label{classECS_1_1Internal_1_1EntityComponentIterator_a033bdbdc4d7f409c160950fe0fd1983e}} 
+size\+\_\+t {\bfseries get\+Index} () const
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_af80c9b631f23c9004885aaa360b5009b}\label{classECS_1_1Internal_1_1EntityComponentIterator_af80c9b631f23c9004885aaa360b5009b}} 
+bool {\bfseries is\+End} () const
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_af99de527e27479d48e0d2f41e0135c6d}\label{classECS_1_1Internal_1_1EntityComponentIterator_af99de527e27479d48e0d2f41e0135c6d}} 
+bool {\bfseries include\+Pending\+Destroy} () const
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_a9c0aa5c8a943d05259d6ba36c85c5a01}\label{classECS_1_1Internal_1_1EntityComponentIterator_a9c0aa5c8a943d05259d6ba36c85c5a01}} 
+\mbox{\hyperlink{classECS_1_1World}{World}} $\ast$ {\bfseries get\+World} () const
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_afdf1e8406fffd27a2935d9777820cb94}\label{classECS_1_1Internal_1_1EntityComponentIterator_afdf1e8406fffd27a2935d9777820cb94}} 
+\mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$ {\bfseries get} () const
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_a61086d92558d53ed18713565ff1c0a8a}\label{classECS_1_1Internal_1_1EntityComponentIterator_a61086d92558d53ed18713565ff1c0a8a}} 
+\mbox{\hyperlink{classECS_1_1Entity}{Entity}} $\ast$ {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_aaab52abad021aabc390e5d29c85ae7dc}\label{classECS_1_1Internal_1_1EntityComponentIterator_aaab52abad021aabc390e5d29c85ae7dc}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classECS_1_1Internal_1_1EntityComponentIterator}{Entity\+Component\+Iterator}}$<$ Types... $>$ \&other) const
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_a527256fdf8d02ddfff90849d258fe263}\label{classECS_1_1Internal_1_1EntityComponentIterator_a527256fdf8d02ddfff90849d258fe263}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classECS_1_1Internal_1_1EntityComponentIterator}{Entity\+Component\+Iterator}}$<$ Types... $>$ \&other) const
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_aadd08bb241728f6bcb04e7e81e643420}\label{classECS_1_1Internal_1_1EntityComponentIterator_aadd08bb241728f6bcb04e7e81e643420}} 
+\mbox{\hyperlink{classECS_1_1Internal_1_1EntityComponentIterator}{Entity\+Component\+Iterator}}$<$ Types... $>$ \& {\bfseries operator++} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_aeb6eed1cc5a158cb4dccfeed422d2bc3}\label{classECS_1_1Internal_1_1EntityComponentIterator_aeb6eed1cc5a158cb4dccfeed422d2bc3}} 
+bool {\bfseries b\+Is\+End} = false
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_aee9072cc4c48ea30b31671893b8d0352}\label{classECS_1_1Internal_1_1EntityComponentIterator_aee9072cc4c48ea30b31671893b8d0352}} 
+size\+\_\+t {\bfseries index}
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_aff4ac49f06e860ff031fe82b4c4cc166}\label{classECS_1_1Internal_1_1EntityComponentIterator_aff4ac49f06e860ff031fe82b4c4cc166}} 
+class \mbox{\hyperlink{classECS_1_1World}{E\+C\+S\+::\+World}} $\ast$ {\bfseries world}
+\item 
+\mbox{\Hypertarget{classECS_1_1Internal_1_1EntityComponentIterator_aeaa177f5a9935e07b092e6f8cef61c76}\label{classECS_1_1Internal_1_1EntityComponentIterator_aeaa177f5a9935e07b092e6f8cef61c76}} 
+bool {\bfseries b\+Include\+Pending\+Destroy}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+E\+C\+S/E\+C\+S.\+h\end{DoxyCompactItemize}

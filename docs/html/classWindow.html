@@ -88,6 +88,8 @@ $(document).ready(function(){initNavTree('classWindow.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classWindow-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -97,24 +99,48 @@ $(document).ready(function(){initNavTree('classWindow.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a06a89c98071838f65590fa906508942f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a06a89c98071838f65590fa906508942f">Window</a> (const glm::ivec2 &amp;size=glm::ivec2(1280, 720), const std::string &amp;title=&quot;Vulkan Lab&quot;, const glm::vec2 &amp;position=glm::vec2(0.0f))</td></tr>
+<tr class="memitem:a06a89c98071838f65590fa906508942f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a06a89c98071838f65590fa906508942f">Window</a> (const glm::ivec2 &amp;<a class="el" href="classWindow.html#ace4ef10c8f0e7f74f735b68d6ae35a85">size</a>=glm::ivec2(1280, 720), const std::string &amp;title=&quot;Vulkan Lab&quot;, const glm::vec2 &amp;position=glm::vec2(0.0f))</td></tr>
 <tr class="separator:a06a89c98071838f65590fa906508942f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a245d821e6016fa1f6970ccbbedd635f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a245d821e6016fa1f6970ccbbedd635f6">~Window</a> ()</td></tr>
 <tr class="separator:a245d821e6016fa1f6970ccbbedd635f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af63b739806ce9ecee82f57c00a44c176"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#af63b739806ce9ecee82f57c00a44c176">update</a> (std::function&lt; void(glm::ivec2 &amp;size)&gt; callback)</td></tr>
+<tr class="memitem:af63b739806ce9ecee82f57c00a44c176"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#af63b739806ce9ecee82f57c00a44c176">update</a> (std::function&lt; void(glm::ivec2 &amp;<a class="el" href="classWindow.html#ace4ef10c8f0e7f74f735b68d6ae35a85">size</a>)&gt; callback)</td></tr>
 <tr class="separator:af63b739806ce9ecee82f57c00a44c176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7863ac5065b363030810f2c0395d4e2"><td class="memItemLeft" align="right" valign="top"><a id="ad7863ac5065b363030810f2c0395d4e2"></a>
+GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="separator:ad7863ac5065b363030810f2c0395d4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:add4eaae85fe21ec57764c496f9e6b62c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#add4eaae85fe21ec57764c496f9e6b62c">onResize</a> (GLFWwindow *window, int width, int height)</td></tr>
+<tr class="separator:add4eaae85fe21ec57764c496f9e6b62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae868ffceb7f025947abf8b2ca01cc890"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#ae868ffceb7f025947abf8b2ca01cc890">onClose</a> (GLFWwindow *window)</td></tr>
+<tr class="separator:ae868ffceb7f025947abf8b2ca01cc890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310fc385b5f97e9f553b6fa2c8fcd5d4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a310fc385b5f97e9f553b6fa2c8fcd5d4">onKey</a> (GLFWwindow *window, int key, int scanCode, int action, int mods)</td></tr>
+<tr class="separator:a310fc385b5f97e9f553b6fa2c8fcd5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46face86cf2d93711a80020128294d12"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a46face86cf2d93711a80020128294d12">onChar</a> (GLFWwindow *window, unsigned int keyCode)</td></tr>
+<tr class="separator:a46face86cf2d93711a80020128294d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add879d5f84f0adce1eb95a4898051f39"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#add879d5f84f0adce1eb95a4898051f39">onMouseButton</a> (GLFWwindow *window, int button, int action, int mods)</td></tr>
+<tr class="separator:add879d5f84f0adce1eb95a4898051f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532054b3123bc7bcedf9e6728d473e3e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a532054b3123bc7bcedf9e6728d473e3e">onScroll</a> (GLFWwindow *window, double x, double y)</td></tr>
+<tr class="separator:a532054b3123bc7bcedf9e6728d473e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e9aea5a8198fcf5654476123268917a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a3e9aea5a8198fcf5654476123268917a">onMouseMove</a> (GLFWwindow *window, double x, double y)</td></tr>
+<tr class="separator:a3e9aea5a8198fcf5654476123268917a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72184e859d8387f25014f6c11d22095f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a72184e859d8387f25014f6c11d22095f">onDrop</a> (GLFWwindow *window, int count, const char **paths)</td></tr>
+<tr class="separator:a72184e859d8387f25014f6c11d22095f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ace4ef10c8f0e7f74f735b68d6ae35a85"><td class="memItemLeft" align="right" valign="top">static glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#ace4ef10c8f0e7f74f735b68d6ae35a85">size</a> = glm::ivec2(1280, 720)</td></tr>
+<tr class="separator:ace4ef10c8f0e7f74f735b68d6ae35a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc3e5364fced57c273820aa51410e12"><td class="memItemLeft" align="right" valign="top"><a id="accc3e5364fced57c273820aa51410e12"></a>
+static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>title</b> = &quot;Vulkan Lab&quot;</td></tr>
+<tr class="separator:accc3e5364fced57c273820aa51410e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a347465f8303d0aaa6336e333fc22ce"><td class="memItemLeft" align="right" valign="top"><a id="a6a347465f8303d0aaa6336e333fc22ce"></a>
+static glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> = glm::vec2(0.0f)</td></tr>
+<tr class="separator:a6a347465f8303d0aaa6336e333fc22ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ace4ef10c8f0e7f74f735b68d6ae35a85"><td class="memItemLeft" align="right" valign="top"><a id="ace4ef10c8f0e7f74f735b68d6ae35a85"></a>
-glm::ivec2&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
-<tr class="separator:ace4ef10c8f0e7f74f735b68d6ae35a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc3e5364fced57c273820aa51410e12"><td class="memItemLeft" align="right" valign="top"><a id="accc3e5364fced57c273820aa51410e12"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>title</b></td></tr>
-<tr class="separator:accc3e5364fced57c273820aa51410e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a347465f8303d0aaa6336e333fc22ce"><td class="memItemLeft" align="right" valign="top"><a id="a6a347465f8303d0aaa6336e333fc22ce"></a>
-glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><b>position</b></td></tr>
-<tr class="separator:a6a347465f8303d0aaa6336e333fc22ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5beb7bc4ba213c1b0ee10dfd3c5322f3"><td class="memItemLeft" align="right" valign="top"><a id="a5beb7bc4ba213c1b0ee10dfd3c5322f3"></a>
 GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b></td></tr>
 <tr class="separator:a5beb7bc4ba213c1b0ee10dfd3c5322f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,6 +206,400 @@ GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b><
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a46face86cf2d93711a80020128294d12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46face86cf2d93711a80020128294d12">&#9670;&nbsp;</a></span>onChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Window::onChar </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>keyCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OnChar event - Triggered when a new input character happened. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GLFWwindow</td><td>*window </td></tr>
+    <tr><td class="paramname">unsigned</td><td>int keyCode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae868ffceb7f025947abf8b2ca01cc890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae868ffceb7f025947abf8b2ca01cc890">&#9670;&nbsp;</a></span>onClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Window::onClose </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OnClose event - Triggered when the native window closes. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a72184e859d8387f25014f6c11d22095f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72184e859d8387f25014f6c11d22095f">&#9670;&nbsp;</a></span>onDrop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Window::onDrop </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>paths</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OnDrop event - Triggered when a user drop a file on the window. It joins a list of file paths which were dropped. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GLFWwindow</td><td>*window </td></tr>
+    <tr><td class="paramname">int</td><td>count </td></tr>
+    <tr><td class="paramname">const</td><td>char **paths </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a310fc385b5f97e9f553b6fa2c8fcd5d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310fc385b5f97e9f553b6fa2c8fcd5d4">&#9670;&nbsp;</a></span>onKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Window::onKey </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scanCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mods</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OnKey event - Triggered when a key action has ben done. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GLFWwindow*</td><td>window </td></tr>
+    <tr><td class="paramname">int</td><td>width </td></tr>
+    <tr><td class="paramname">int</td><td>height </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="add879d5f84f0adce1eb95a4898051f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add879d5f84f0adce1eb95a4898051f39">&#9670;&nbsp;</a></span>onMouseButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Window::onMouseButton </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mods</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OnMouseButton event - Triggered when a user input an action with the mouse buttons. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GLFWwindow</td><td>*window </td></tr>
+    <tr><td class="paramname">int</td><td>button </td></tr>
+    <tr><td class="paramname">int</td><td>action </td></tr>
+    <tr><td class="paramname">int</td><td>mods </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3e9aea5a8198fcf5654476123268917a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e9aea5a8198fcf5654476123268917a">&#9670;&nbsp;</a></span>onMouseMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Window::onMouseMove </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OnMouseMove event - Triggered when the user moves the cursor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GLFWwindow</td><td>*window </td></tr>
+    <tr><td class="paramname">double</td><td>x </td></tr>
+    <tr><td class="paramname">double</td><td>y </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="add4eaae85fe21ec57764c496f9e6b62c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add4eaae85fe21ec57764c496f9e6b62c">&#9670;&nbsp;</a></span>onResize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Window::onResize </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OnResize event - Triggered when the native window changes size. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td></td></tr>
+    <tr><td class="paramname">width</td><td></td></tr>
+    <tr><td class="paramname">height</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a532054b3123bc7bcedf9e6728d473e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532054b3123bc7bcedf9e6728d473e3e">&#9670;&nbsp;</a></span>onScroll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Window::onScroll </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OnScroll event - Triggered when a user scroll. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GLFWwindow</td><td>*window </td></tr>
+    <tr><td class="paramname">double</td><td>x </td></tr>
+    <tr><td class="paramname">double</td><td>y </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af63b739806ce9ecee82f57c00a44c176"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af63b739806ce9ecee82f57c00a44c176">&#9670;&nbsp;</a></span>update()</h2>
 
@@ -189,13 +609,43 @@ GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b><
         <tr>
           <td class="memname">void Window::update </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(glm::ivec2 &amp;size)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(glm::ivec2 &amp;<a class="el" href="classWindow.html#ace4ef10c8f0e7f74f735b68d6ae35a85">size</a>)&gt;&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classWindow.html">Window</a> update </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p><a class="el" href="classWindow.html">Window</a> update </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">std::function</td><td>callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ace4ef10c8f0e7f74f735b68d6ae35a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace4ef10c8f0e7f74f735b68d6ae35a85">&#9670;&nbsp;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::ivec2 Window::size = glm::ivec2(1280, 720)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classWindow.html">Window</a> static initilizers </p>
 
 </div>
 </div>
@@ -210,7 +660,7 @@ GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b><
     <ul>
         <li class="navelem"><a class="el" href="classWindow.html">Window</a></li>
         <li class="footer">
-            Generated on Sun Nov 17 2019 13:24:59 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            Generated on Sun Nov 17 2019 22:57:45 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
             <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
         </li>

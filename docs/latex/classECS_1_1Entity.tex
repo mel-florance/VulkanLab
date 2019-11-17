@@ -1,0 +1,133 @@
+\hypertarget{classECS_1_1Entity}{}\doxysection{E\+CS\+::Entity Class Reference}
+\label{classECS_1_1Entity}\index{ECS::Entity@{ECS::Entity}}
+
+
+{\ttfamily \#include $<$E\+C\+S.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classECS_1_1Entity_a7de29f4037936e8f90a2c248fa738cb2}\label{classECS_1_1Entity_a7de29f4037936e8f90a2c248fa738cb2}} 
+{\bfseries Entity} (\mbox{\hyperlink{classECS_1_1World}{World}} $\ast$world, size\+\_\+t id)
+\item 
+\mbox{\hyperlink{classECS_1_1World}{World}} $\ast$ \mbox{\hyperlink{classECS_1_1Entity_a71b4f75247b759cba9baf99e6ce6b76c}{get\+World}} () const
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classECS_1_1Entity_ac59ca658abb333047122236593fdf863}{has}} () const
+\item 
+{\footnotesize template$<$typename T , typename V , typename... Types$>$ }\\bool \mbox{\hyperlink{classECS_1_1Entity_ac2b919b03ebdf0c6873ee09f578e6a35}{has}} () const
+\item 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\\mbox{\hyperlink{classECS_1_1ComponentHandle}{Component\+Handle}}$<$ T $>$ \mbox{\hyperlink{classECS_1_1Entity_ad53ec6c48ef319838aa12bf0b4d84976}{assign}} (Args \&\&... args)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classECS_1_1Entity_a22d66f6a041c4c5e313aa7d62e01f54f}{remove}} ()
+\item 
+void \mbox{\hyperlink{classECS_1_1Entity_afcb2bd4a8a02763007baebdbd5153435}{remove\+All}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classECS_1_1ComponentHandle}{Component\+Handle}}$<$ T $>$ \mbox{\hyperlink{classECS_1_1Entity_a4d7af16580d8ff178690cf53a80b65d2}{get}} ()
+\item 
+{\footnotesize template$<$typename... Types$>$ }\\bool \mbox{\hyperlink{classECS_1_1Entity_abd4b788ddcc61b174d7cf3ade464fd60}{with}} (typename std\+::common\+\_\+type$<$ std\+::function$<$ void(\mbox{\hyperlink{classECS_1_1ComponentHandle}{Component\+Handle}}$<$ Types $>$...)$>$$>$\+::type view)
+\item 
+size\+\_\+t \mbox{\hyperlink{classECS_1_1Entity_a6f07948b8c2e8a6da1f26f436afa1413}{get\+Entity\+Id}} () const
+\item 
+\mbox{\Hypertarget{classECS_1_1Entity_a3582ff5fecb2e9b78c05ae03371b8087}\label{classECS_1_1Entity_a3582ff5fecb2e9b78c05ae03371b8087}} 
+bool {\bfseries is\+Pending\+Destroy} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classECS_1_1Entity_a5445a5ea2e2dddc2f627c391da7932e9}\label{classECS_1_1Entity_a5445a5ea2e2dddc2f627c391da7932e9}} 
+const static size\+\_\+t {\bfseries Invalid\+Entity\+Id} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classECS_1_1Entity_a8e4fc6757e2cbccf4fc1e674e7ad0b09}\label{classECS_1_1Entity_a8e4fc6757e2cbccf4fc1e674e7ad0b09}} 
+std\+::unordered\+\_\+map$<$ Type\+Index, \mbox{\hyperlink{structECS_1_1Internal_1_1BaseComponentContainer}{Internal\+::\+Base\+Component\+Container}} $\ast$ $>$ {\bfseries components}
+\item 
+\mbox{\Hypertarget{classECS_1_1Entity_aa6aa5e60603064f50e9d1b295a84dfb0}\label{classECS_1_1Entity_aa6aa5e60603064f50e9d1b295a84dfb0}} 
+\mbox{\hyperlink{classECS_1_1World}{World}} $\ast$ {\bfseries world}
+\item 
+\mbox{\Hypertarget{classECS_1_1Entity_ad0be80f3d74157f06e92965e91d21f61}\label{classECS_1_1Entity_ad0be80f3d74157f06e92965e91d21f61}} 
+size\+\_\+t {\bfseries id}
+\item 
+\mbox{\Hypertarget{classECS_1_1Entity_a92ec5f10727b6ad4db364a2bdbb66631}\label{classECS_1_1Entity_a92ec5f10727b6ad4db364a2bdbb66631}} 
+bool {\bfseries b\+Pending\+Destroy} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classECS_1_1Entity_a7b4bcdf992c21ae83363f25df05b1d25}\label{classECS_1_1Entity_a7b4bcdf992c21ae83363f25df05b1d25}} 
+class {\bfseries World}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A container for components. Entities do not have any logic of their own, except of that which to manage components. Components themselves are generally structs that contain data with which Entity\+Systems can act upon, but technically any data type may be used as a component, though only one of each data type may be on a single \mbox{\hyperlink{classECS_1_1Entity}{Entity}} at a time. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classECS_1_1Entity_ad53ec6c48ef319838aa12bf0b4d84976}\label{classECS_1_1Entity_ad53ec6c48ef319838aa12bf0b4d84976}} 
+\index{ECS::Entity@{ECS::Entity}!assign@{assign}}
+\index{assign@{assign}!ECS::Entity@{ECS::Entity}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}}
+{\footnotesize\ttfamily template$<$typename T , typename... Args$>$ \\
+\mbox{\hyperlink{classECS_1_1ComponentHandle}{Component\+Handle}}$<$ T $>$ E\+C\+S\+::\+Entity\+::assign (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+Assign a new component (or replace an old one). All components must have a default constructor, though they may have additional constructors. You may pass arguments to this function the same way you would to a constructor.
+
+It is recommended that components be simple types (not const, not references, not pointers). If you need to store any of the above, wrap it in a struct. \mbox{\Hypertarget{classECS_1_1Entity_a4d7af16580d8ff178690cf53a80b65d2}\label{classECS_1_1Entity_a4d7af16580d8ff178690cf53a80b65d2}} 
+\index{ECS::Entity@{ECS::Entity}!get@{get}}
+\index{get@{get}!ECS::Entity@{ECS::Entity}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classECS_1_1ComponentHandle}{Component\+Handle}}$<$ T $>$ E\+C\+S\+::\+Entity\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get a component from this entity. \mbox{\Hypertarget{classECS_1_1Entity_a6f07948b8c2e8a6da1f26f436afa1413}\label{classECS_1_1Entity_a6f07948b8c2e8a6da1f26f436afa1413}} 
+\index{ECS::Entity@{ECS::Entity}!getEntityId@{getEntityId}}
+\index{getEntityId@{getEntityId}!ECS::Entity@{ECS::Entity}}
+\doxysubsubsection{\texorpdfstring{getEntityId()}{getEntityId()}}
+{\footnotesize\ttfamily size\+\_\+t E\+C\+S\+::\+Entity\+::get\+Entity\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get this entity\textquotesingle{}s id. \mbox{\hyperlink{classECS_1_1Entity}{Entity}} ids aren\textquotesingle{}t too useful at the moment, but can be used to tell the difference between entities when debugging. \mbox{\Hypertarget{classECS_1_1Entity_a71b4f75247b759cba9baf99e6ce6b76c}\label{classECS_1_1Entity_a71b4f75247b759cba9baf99e6ce6b76c}} 
+\index{ECS::Entity@{ECS::Entity}!getWorld@{getWorld}}
+\index{getWorld@{getWorld}!ECS::Entity@{ECS::Entity}}
+\doxysubsubsection{\texorpdfstring{getWorld()}{getWorld()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classECS_1_1World}{World}}$\ast$ E\+C\+S\+::\+Entity\+::get\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the world associated with this entity. \mbox{\Hypertarget{classECS_1_1Entity_ac59ca658abb333047122236593fdf863}\label{classECS_1_1Entity_ac59ca658abb333047122236593fdf863}} 
+\index{ECS::Entity@{ECS::Entity}!has@{has}}
+\index{has@{has}!ECS::Entity@{ECS::Entity}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool E\+C\+S\+::\+Entity\+::has (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Does this entity have a component? \mbox{\Hypertarget{classECS_1_1Entity_ac2b919b03ebdf0c6873ee09f578e6a35}\label{classECS_1_1Entity_ac2b919b03ebdf0c6873ee09f578e6a35}} 
+\index{ECS::Entity@{ECS::Entity}!has@{has}}
+\index{has@{has}!ECS::Entity@{ECS::Entity}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename V , typename... Types$>$ \\
+bool E\+C\+S\+::\+Entity\+::has (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Does this entity have this list of components? The order of components does not matter. \mbox{\Hypertarget{classECS_1_1Entity_a22d66f6a041c4c5e313aa7d62e01f54f}\label{classECS_1_1Entity_a22d66f6a041c4c5e313aa7d62e01f54f}} 
+\index{ECS::Entity@{ECS::Entity}!remove@{remove}}
+\index{remove@{remove}!ECS::Entity@{ECS::Entity}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool E\+C\+S\+::\+Entity\+::remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a component of a specific type. Returns whether a component was removed. \mbox{\Hypertarget{classECS_1_1Entity_afcb2bd4a8a02763007baebdbd5153435}\label{classECS_1_1Entity_afcb2bd4a8a02763007baebdbd5153435}} 
+\index{ECS::Entity@{ECS::Entity}!removeAll@{removeAll}}
+\index{removeAll@{removeAll}!ECS::Entity@{ECS::Entity}}
+\doxysubsubsection{\texorpdfstring{removeAll()}{removeAll()}}
+{\footnotesize\ttfamily void E\+C\+S\+::\+Entity\+::remove\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove all components from this entity. \mbox{\Hypertarget{classECS_1_1Entity_abd4b788ddcc61b174d7cf3ade464fd60}\label{classECS_1_1Entity_abd4b788ddcc61b174d7cf3ade464fd60}} 
+\index{ECS::Entity@{ECS::Entity}!with@{with}}
+\index{with@{with}!ECS::Entity@{ECS::Entity}}
+\doxysubsubsection{\texorpdfstring{with()}{with()}}
+{\footnotesize\ttfamily template$<$typename... Types$>$ \\
+bool E\+C\+S\+::\+Entity\+::with (\begin{DoxyParamCaption}\item[{typename std\+::common\+\_\+type$<$ std\+::function$<$ void(\mbox{\hyperlink{classECS_1_1ComponentHandle}{Component\+Handle}}$<$ Types $>$}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Call a function with components from this entity as arguments. This will return true if this entity has all specified components attached, and false if otherwise. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+E\+C\+S/E\+C\+S.\+h\end{DoxyCompactItemize}

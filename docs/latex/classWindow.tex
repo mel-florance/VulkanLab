@@ -3,23 +3,47 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classWindow_a06a89c98071838f65590fa906508942f}{Window}} (const glm\+::ivec2 \&size=glm\+::ivec2(1280, 720), const std\+::string \&title=\char`\"{}Vulkan Lab\char`\"{}, const glm\+::vec2 \&position=glm\+::vec2(0.\+0f))
+\mbox{\hyperlink{classWindow_a06a89c98071838f65590fa906508942f}{Window}} (const glm\+::ivec2 \&\mbox{\hyperlink{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}{size}}=glm\+::ivec2(1280, 720), const std\+::string \&title=\char`\"{}Vulkan Lab\char`\"{}, const glm\+::vec2 \&position=glm\+::vec2(0.\+0f))
 \item 
 \mbox{\hyperlink{classWindow_a245d821e6016fa1f6970ccbbedd635f6}{$\sim$\+Window}} ()
 \item 
-void \mbox{\hyperlink{classWindow_af63b739806ce9ecee82f57c00a44c176}{update}} (std\+::function$<$ void(glm\+::ivec2 \&size)$>$ callback)
+void \mbox{\hyperlink{classWindow_af63b739806ce9ecee82f57c00a44c176}{update}} (std\+::function$<$ void(glm\+::ivec2 \&\mbox{\hyperlink{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}{size}})$>$ callback)
+\item 
+\mbox{\Hypertarget{classWindow_ad7863ac5065b363030810f2c0395d4e2}\label{classWindow_ad7863ac5065b363030810f2c0395d4e2}} 
+G\+L\+F\+Wwindow $\ast$ {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classWindow_add4eaae85fe21ec57764c496f9e6b62c}{on\+Resize}} (G\+L\+F\+Wwindow $\ast$window, int width, int height)
+\item 
+static void \mbox{\hyperlink{classWindow_ae868ffceb7f025947abf8b2ca01cc890}{on\+Close}} (G\+L\+F\+Wwindow $\ast$window)
+\item 
+static void \mbox{\hyperlink{classWindow_a310fc385b5f97e9f553b6fa2c8fcd5d4}{on\+Key}} (G\+L\+F\+Wwindow $\ast$window, int key, int scan\+Code, int action, int mods)
+\item 
+static void \mbox{\hyperlink{classWindow_a46face86cf2d93711a80020128294d12}{on\+Char}} (G\+L\+F\+Wwindow $\ast$window, unsigned int key\+Code)
+\item 
+static void \mbox{\hyperlink{classWindow_add879d5f84f0adce1eb95a4898051f39}{on\+Mouse\+Button}} (G\+L\+F\+Wwindow $\ast$window, int button, int action, int mods)
+\item 
+static void \mbox{\hyperlink{classWindow_a532054b3123bc7bcedf9e6728d473e3e}{on\+Scroll}} (G\+L\+F\+Wwindow $\ast$window, double x, double y)
+\item 
+static void \mbox{\hyperlink{classWindow_a3e9aea5a8198fcf5654476123268917a}{on\+Mouse\+Move}} (G\+L\+F\+Wwindow $\ast$window, double x, double y)
+\item 
+static void \mbox{\hyperlink{classWindow_a72184e859d8387f25014f6c11d22095f}{on\+Drop}} (G\+L\+F\+Wwindow $\ast$window, int count, const char $\ast$$\ast$paths)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static glm\+::ivec2 \mbox{\hyperlink{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}{size}} = glm\+::ivec2(1280, 720)
+\item 
+\mbox{\Hypertarget{classWindow_accc3e5364fced57c273820aa51410e12}\label{classWindow_accc3e5364fced57c273820aa51410e12}} 
+static std\+::string {\bfseries title} = \char`\"{}Vulkan Lab\char`\"{}
+\item 
+\mbox{\Hypertarget{classWindow_a6a347465f8303d0aaa6336e333fc22ce}\label{classWindow_a6a347465f8303d0aaa6336e333fc22ce}} 
+static glm\+::vec2 {\bfseries position} = glm\+::vec2(0.\+0f)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}\label{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}} 
-glm\+::ivec2 {\bfseries size}
-\item 
-\mbox{\Hypertarget{classWindow_accc3e5364fced57c273820aa51410e12}\label{classWindow_accc3e5364fced57c273820aa51410e12}} 
-std\+::string {\bfseries title}
-\item 
-\mbox{\Hypertarget{classWindow_a6a347465f8303d0aaa6336e333fc22ce}\label{classWindow_a6a347465f8303d0aaa6336e333fc22ce}} 
-glm\+::vec2 {\bfseries position}
 \item 
 \mbox{\Hypertarget{classWindow_a5beb7bc4ba213c1b0ee10dfd3c5322f3}\label{classWindow_a5beb7bc4ba213c1b0ee10dfd3c5322f3}} 
 G\+L\+F\+Wwindow $\ast$ {\bfseries instance}
@@ -49,16 +73,146 @@ G\+L\+F\+Wwindow $\ast$ {\bfseries instance}
 \mbox{\hyperlink{classWindow}{Window}} destructor 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWindow_a46face86cf2d93711a80020128294d12}\label{classWindow_a46face86cf2d93711a80020128294d12}} 
+\index{Window@{Window}!onChar@{onChar}}
+\index{onChar@{onChar}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{onChar()}{onChar()}}
+{\footnotesize\ttfamily void Window\+::on\+Char (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{unsigned int}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+On\+Char event -\/ Triggered when a new input character happened. 
+\begin{DoxyParams}{Parameters}
+{\em G\+L\+F\+Wwindow} & $\ast$window \\
+\hline
+{\em unsigned} & int key\+Code \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_ae868ffceb7f025947abf8b2ca01cc890}\label{classWindow_ae868ffceb7f025947abf8b2ca01cc890}} 
+\index{Window@{Window}!onClose@{onClose}}
+\index{onClose@{onClose}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{onClose()}{onClose()}}
+{\footnotesize\ttfamily void Window\+::on\+Close (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+On\+Close event -\/ Triggered when the native window closes. 
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_a72184e859d8387f25014f6c11d22095f}\label{classWindow_a72184e859d8387f25014f6c11d22095f}} 
+\index{Window@{Window}!onDrop@{onDrop}}
+\index{onDrop@{onDrop}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{onDrop()}{onDrop()}}
+{\footnotesize\ttfamily void Window\+::on\+Drop (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{count,  }\item[{const char $\ast$$\ast$}]{paths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+On\+Drop event -\/ Triggered when a user drop a file on the window. It joins a list of file paths which were dropped. 
+\begin{DoxyParams}{Parameters}
+{\em G\+L\+F\+Wwindow} & $\ast$window \\
+\hline
+{\em int} & count \\
+\hline
+{\em const} & char $\ast$$\ast$paths \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_a310fc385b5f97e9f553b6fa2c8fcd5d4}\label{classWindow_a310fc385b5f97e9f553b6fa2c8fcd5d4}} 
+\index{Window@{Window}!onKey@{onKey}}
+\index{onKey@{onKey}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{onKey()}{onKey()}}
+{\footnotesize\ttfamily void Window\+::on\+Key (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{key,  }\item[{int}]{scan\+Code,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+On\+Key event -\/ Triggered when a key action has ben done. 
+\begin{DoxyParams}{Parameters}
+{\em G\+L\+F\+Wwindow$\ast$} & window \\
+\hline
+{\em int} & width \\
+\hline
+{\em int} & height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_add879d5f84f0adce1eb95a4898051f39}\label{classWindow_add879d5f84f0adce1eb95a4898051f39}} 
+\index{Window@{Window}!onMouseButton@{onMouseButton}}
+\index{onMouseButton@{onMouseButton}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{onMouseButton()}{onMouseButton()}}
+{\footnotesize\ttfamily void Window\+::on\+Mouse\+Button (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{button,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+On\+Mouse\+Button event -\/ Triggered when a user input an action with the mouse buttons. 
+\begin{DoxyParams}{Parameters}
+{\em G\+L\+F\+Wwindow} & $\ast$window \\
+\hline
+{\em int} & button \\
+\hline
+{\em int} & action \\
+\hline
+{\em int} & mods \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_a3e9aea5a8198fcf5654476123268917a}\label{classWindow_a3e9aea5a8198fcf5654476123268917a}} 
+\index{Window@{Window}!onMouseMove@{onMouseMove}}
+\index{onMouseMove@{onMouseMove}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{onMouseMove()}{onMouseMove()}}
+{\footnotesize\ttfamily void Window\+::on\+Mouse\+Move (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+On\+Mouse\+Move event -\/ Triggered when the user moves the cursor. 
+\begin{DoxyParams}{Parameters}
+{\em G\+L\+F\+Wwindow} & $\ast$window \\
+\hline
+{\em double} & x \\
+\hline
+{\em double} & y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_add4eaae85fe21ec57764c496f9e6b62c}\label{classWindow_add4eaae85fe21ec57764c496f9e6b62c}} 
+\index{Window@{Window}!onResize@{onResize}}
+\index{onResize@{onResize}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{onResize()}{onResize()}}
+{\footnotesize\ttfamily void Window\+::on\+Resize (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+On\+Resize event -\/ Triggered when the native window changes size. 
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_a532054b3123bc7bcedf9e6728d473e3e}\label{classWindow_a532054b3123bc7bcedf9e6728d473e3e}} 
+\index{Window@{Window}!onScroll@{onScroll}}
+\index{onScroll@{onScroll}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{onScroll()}{onScroll()}}
+{\footnotesize\ttfamily void Window\+::on\+Scroll (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+On\+Scroll event -\/ Triggered when a user scroll. 
+\begin{DoxyParams}{Parameters}
+{\em G\+L\+F\+Wwindow} & $\ast$window \\
+\hline
+{\em double} & x \\
+\hline
+{\em double} & y \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classWindow_af63b739806ce9ecee82f57c00a44c176}\label{classWindow_af63b739806ce9ecee82f57c00a44c176}} 
 \index{Window@{Window}!update@{update}}
 \index{update@{update}!Window@{Window}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily void Window\+::update (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(glm\+::ivec2 \&size)$>$}]{callback }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Window\+::update (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(glm\+::ivec2 \&\mbox{\hyperlink{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}{size}})$>$}]{callback }\end{DoxyParamCaption})}
 
-\mbox{\hyperlink{classWindow}{Window}} update \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classWindow}{Window}} update 
+\begin{DoxyParams}{Parameters}
+{\em std\+::function} & callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}\label{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}} 
+\index{Window@{Window}!size@{size}}
+\index{size@{size}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily glm\+::ivec2 Window\+::size = glm\+::ivec2(1280, 720)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\hyperlink{classWindow}{Window}} static initilizers 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
