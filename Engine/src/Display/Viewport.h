@@ -4,12 +4,14 @@
 
 #include <glm/glm.hpp>
 
+class Window;
+
 class Viewport {
 public:
     /**
      * Viewport constructor
      */
-    Viewport() {
+    Viewport(Window* window) : window(window) {
         this->setColor(glm::vec4(0.1f, 0.1f, 0.1f, 1.0f));
     }
 
@@ -57,7 +59,22 @@ public:
      */
     void setColor(const glm::vec4 &color);
 
+    /**
+     * Return the current viewport window.
+     */
+    inline Window *getWindow() const {
+        return window;
+    }
+
+    /**
+     * Set the current viewport window.
+     */
+    inline void setWindow(Window *window) {
+        Viewport::window = window;
+    }
+
 private:
+    Window* window;
     glm::vec2 position;
     glm::vec2 size;
     glm::vec4 color;

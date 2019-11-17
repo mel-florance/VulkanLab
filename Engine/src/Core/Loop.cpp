@@ -1,8 +1,10 @@
 #include <iostream>
 #include <unistd.h>
+#include <GLFW/glfw3.h>
 #include "Loop.h"
 #include "Engine.h"
 #include "Clock.h"
+#include "../Display/Window.h"
 
 Loop::Loop(Engine* engine) :
     running(false),

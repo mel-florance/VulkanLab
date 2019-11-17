@@ -1,12 +1,15 @@
 #include <iostream>
 #include <glad/glad.h>
 #include "Viewport.h"
+#include "Window.h"
 
 void Viewport::clear() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
 void Viewport::apply() {
+    size.x = Window::size.x;
+    size.y = Window::size.y;
     glViewport(position.x, position.y, size.x, size.y);
 }
 

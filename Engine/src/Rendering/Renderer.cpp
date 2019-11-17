@@ -10,5 +10,6 @@ Renderer::~Renderer() {
 }
 
 void Renderer::render() {
+    this->viewport->apply();
     this->viewport->clear();
 }

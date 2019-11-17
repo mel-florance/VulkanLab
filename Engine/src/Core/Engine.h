@@ -5,6 +5,7 @@
 
 class Viewport;
 class Renderer;
+class Window;
 
 class Engine {
 public:
@@ -14,12 +15,12 @@ public:
     /**
      * Start the engine
      */
-    void start();
+    static void start();
 
     /**
      * Stop the engine
      */
-    void stop();
+    static void stop();
 
     /**
      * Update routine of the engine
@@ -40,7 +41,7 @@ public:
      * @return
      */
     inline Loop *getLoop() const {
-        return loop;
+        return this->loop;
     }
 
     /**
@@ -48,7 +49,7 @@ public:
      * @param loop
      */
     inline void setLoop(Loop *loop) {
-        Engine::loop = loop;
+        this->loop = loop;
     }
 
     /**
@@ -56,7 +57,7 @@ public:
      * @return
      */
     inline Viewport *getViewport() const {
-        return viewport;
+        return this->viewport;
     }
 
     /**
@@ -64,7 +65,7 @@ public:
      * @param viewport
      */
     inline void setViewport(Viewport *viewport) {
-        Engine::viewport = viewport;
+        this->viewport = viewport;
     }
 
     /**
@@ -72,7 +73,7 @@ public:
      * @return
      */
     inline Renderer *getRenderer() const {
-        return renderer;
+        return this->renderer;
     }
 
     /**
@@ -80,11 +81,27 @@ public:
      * @param renderer
      */
     inline void setRenderer(Renderer *renderer) {
-        Engine::renderer = renderer;
+        this->renderer = renderer;
     }
 
+    /**
+     * Return the current window
+     * @return
+     */
+    Window *getWindow() const {
+        return this->window;
+    }
+
+    /**
+     * Set the current window
+     */
+    void setWindow(Window *window) {
+        this->window = window;
+    }
+
+    static Loop* loop;
 private:
-    Loop* loop;
+    Window* window;
     Viewport* viewport;
     Renderer* renderer;
 };

@@ -3,6 +3,7 @@
 #include <functional>
 #include <glad/glad.h>
 #include "Window.h"
+#include "../Core/Engine.h"
 #include "../Events/Event.h"
 
 /**
@@ -59,6 +60,22 @@ Window::Window(
 }
 
 /**
+ * Window update
+ * @param std::function callback
+ * @return
+ */
+void Window::update(std::function<void(glm::ivec2 &size)> callback) {
+    while (!glfwWindowShouldClose(this->instance)) {
+        glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
+
+        callback(this->size);
+
+        glfwSwapBuffers(this->instance);
+        glfwPollEvents();
+    }
+}
+
+/**
  * OnResize event - Triggered when the native window changes size.
  * @param window
  * @param width
@@ -73,7 +90,7 @@ void Window::onResize(GLFWwindow *window, int width, int height) {
  * @param window
  */
 void Window::onClose(GLFWwindow *window) {
-
+    Engine::stop();
 }
 
 /**
@@ -138,24 +155,7 @@ void Window::onDrop(GLFWwindow *window, int count, const char **paths) {
 }
 
 /**
- * Window update
- * @param std::function callback
- * @return
- */
-void Window::update(std::function<void(glm::ivec2 &size)> callback) {
-    while (!glfwWindowShouldClose(this->instance)) {
-        glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
-
-        callback(this->size);
-
-        glfwSwapBuffers(this->instance);
-        glfwPollEvents();
-    }
-}
-
-/**
  * Window destructor
  */
 Window::~Window() {
 }
-

@@ -19,20 +19,30 @@ public:
 
     void update(std::function<void(glm::ivec2 &size)> callback);
 
-    static void onResize(GLFWwindow* window, int width, int height);
-    static void onClose(GLFWwindow* window);
-    static void onKey(GLFWwindow* window, int key, int scanCode, int action, int mods);
-    static void onChar(GLFWwindow* window, unsigned int keyCode);
-    static void onMouseButton(GLFWwindow* window, int button, int action, int mods);
-    static void onScroll(GLFWwindow* window, double x, double y);
-    static void onMouseMove(GLFWwindow* window, double x, double y);
-    static void onDrop(GLFWwindow* window, int count, const char** paths);
+    static void onResize(GLFWwindow *window, int width, int height);
+
+    static void onClose(GLFWwindow *window);
+
+    static void onKey(GLFWwindow *window, int key, int scanCode, int action, int mods);
+
+    static void onChar(GLFWwindow *window, unsigned int keyCode);
+
+    static void onMouseButton(GLFWwindow *window, int button, int action, int mods);
+
+    static void onScroll(GLFWwindow *window, double x, double y);
+
+    static void onMouseMove(GLFWwindow *window, double x, double y);
+
+    static void onDrop(GLFWwindow *window, int count, const char **paths);
+
+    inline GLFWwindow *getInstance() {
+        return this->instance;
+    }
 
     static glm::ivec2 size;
     static std::string title;
     static glm::vec2 position;
 private:
-
     GLFWwindow *instance;
 };
 
