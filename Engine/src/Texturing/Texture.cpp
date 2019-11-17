@@ -4,6 +4,7 @@
 #include <glad/glad.h>
 
 #define STB_IMAGE_IMPLEMENTATION
+
 #include "stb_image.h"
 
 Texture::Texture(const char *name, const char *path) : Asset(), name(name) {

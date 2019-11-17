@@ -3,8 +3,7 @@
 #include <glad/glad.h>
 
 Mesh::Mesh() :
-        wireframe(false) {
-
+    wireframe(false) {
 }
 
 Mesh::~Mesh() {

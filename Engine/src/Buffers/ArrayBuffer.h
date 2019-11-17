@@ -27,9 +27,9 @@ public:
     /**
      * Enable a vertex attribute.
      */
-     static inline void enableAttribute(GLuint attr = 0) {
+    static inline void enableAttribute(GLuint attr = 0) {
         glEnableVertexAttribArray(attr);
-     }
+    }
 
     /**
      * Return the OpenGL buffer id.

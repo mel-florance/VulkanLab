@@ -1,9 +1,9 @@
 #include "Shader.h"
 
 Shader::Shader(
-        const std::string &name,
-        const std::string &vs_src,
-        const std::string &fs_src
+    const std::string &name,
+    const std::string &vs_src,
+    const std::string &fs_src
 ) : Asset(), name(name), vs_src(vs_src), fs_src(fs_src) {
     load();
     compile();
@@ -90,8 +90,7 @@ bool Shader::link() {
     if (!status) {
         glGetProgramInfoLog(program, 512, NULL, error);
         std::cout << "Shader program linking failed: " << error << std::endl;
-    }
-    else {
+    } else {
         std::cout << "Linked shader: " << name.c_str() << std::endl;
         status |= ShaderStatus::Linked;
     }

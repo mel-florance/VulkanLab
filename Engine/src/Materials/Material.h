@@ -9,7 +9,7 @@ public:
      * Material constructor.
      * @param name
      */
-    Material(const char* name);
+    Material(const char *name);
 
     /**
      * Material destructor.
@@ -20,7 +20,7 @@ public:
      * Return the name of the material.
      * @return
      */
-    inline const char* getName() {
+    inline const char *getName() {
         return name;
     }
 
@@ -28,12 +28,12 @@ public:
      * Set the name of the material.
      * @param value
      */
-    inline void setName(const char* value) {
+    inline void setName(const char *value) {
         this->name = value;
     }
 
 private:
-    const char* name;
+    const char *name;
 };
 
 #endif //VULKANLAB_MATERIAL_H

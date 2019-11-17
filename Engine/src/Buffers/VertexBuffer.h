@@ -57,12 +57,12 @@ public:
     static inline void setAttribute(AttributeData *data) {
         glEnableVertexAttribArray(data->index);
         glVertexAttribPointer(
-                data->index,
-                data->size,
-                data->type,
-                data->normalized,
-                data->stride,
-                data->pointer
+            data->index,
+            data->size,
+            data->type,
+            data->normalized,
+            data->stride,
+            data->pointer
         );
     }
 

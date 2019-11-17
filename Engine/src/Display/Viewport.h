@@ -41,18 +41,21 @@ public:
     const glm::vec2 &getSize() const {
         return size;
     }
+
     /**
      * Set the dimensions of the viewport.
      */
     void setSize(const glm::vec2 &size) {
         this->size = size;
     }
+
     /**
      * Return the clear color of the viewport.
      */
     const glm::vec4 &getColor() const {
         return color;
     }
+
     /**
      * Set the clear color of the viewport.
      */

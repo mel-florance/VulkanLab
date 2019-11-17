@@ -16,9 +16,9 @@ public:
      * Shader constructor
      */
     Shader(
-            const std::string &name,
-            const std::string &vs_src,
-            const std::string &fs_src
+        const std::string &name,
+        const std::string &vs_src,
+        const std::string &fs_src
     );
 
     /**
