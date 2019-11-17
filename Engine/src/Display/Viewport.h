@@ -1,7 +1,7 @@
 #ifndef VULKANLAB_VIEWPORT_H
 #define VULKANLAB_VIEWPORT_H
 
-#include <glad/glad.h>
+
 #include <glm/glm.hpp>
 
 class Viewport {
@@ -10,7 +10,7 @@ public:
      * Viewport constructor
      */
     Viewport() {
-
+        this->setColor(glm::vec4(0.1f, 0.1f, 0.1f, 1.0f));
     }
 
     /**
@@ -23,16 +23,12 @@ public:
     /**
      * Clear the viewport.
      */
-    static inline void clear() {
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    }
+    static void clear();
 
     /**
      * Apply the viewport dimensions to the gpu.
      */
-    inline void apply() {
-        glViewport(position.x, position.y, size.x, size.y);
-    }
+    void apply();
 
     /**
      * Return the size of the viewport.
@@ -59,10 +55,7 @@ public:
     /**
      * Set the clear color of the viewport.
      */
-    void setColor(const glm::vec4 &color) {
-        this->color = color;
-        glClearColor(color.r, color.g, color.b, color.a);
-    }
+    void setColor(const glm::vec4 &color);
 
 private:
     glm::vec2 position;

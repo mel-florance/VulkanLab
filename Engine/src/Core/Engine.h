@@ -3,36 +3,90 @@
 
 #include "Loop.h"
 
+class Viewport;
+class Renderer;
+
 class Engine {
 public:
-    Engine() {
-        this->loop = new Loop(this);
-        this->loop->setUpdateCallback(&Engine::update);
-        this->loop->setRenderCallback(&Engine::render);
+    Engine();
+    ~Engine();
+
+    /**
+     * Start the engine
+     */
+    void start();
+
+    /**
+     * Stop the engine
+     */
+    void stop();
+
+    /**
+     * Update routine of the engine
+     * @param loop
+     * @param self
+     */
+    static void update(Loop* loop, Engine* self);
+
+    /**
+     * Call the attached renderer.
+     * @param loop
+     * @param self
+     */
+    static void render(Loop* loop, Engine* self);
+
+    /**
+     * Return the engine loop.
+     * @return
+     */
+    inline Loop *getLoop() const {
+        return loop;
     }
 
-    ~Engine() {
-
+    /**
+     * Set the engine loop.
+     * @param loop
+     */
+    inline void setLoop(Loop *loop) {
+        Engine::loop = loop;
     }
 
-    void start() {
-        this->loop->start();
+    /**
+     * Return the currently attached viewport.
+     * @return
+     */
+    inline Viewport *getViewport() const {
+        return viewport;
     }
 
-    void stop() {
-        this->loop->stop();
+    /**
+     * Set the viewport to display to.
+     * @param viewport
+     */
+    inline void setViewport(Viewport *viewport) {
+        Engine::viewport = viewport;
     }
 
-    static void update(Loop* loop, Engine* self) {
-        double delta = loop->getPassedTime();
+    /**
+     * Return the currently attached renderer.
+     * @return
+     */
+    inline Renderer *getRenderer() const {
+        return renderer;
     }
 
-    static void render(Loop* loop, Engine* self) {
-
+    /**
+     * Set the renderer used to draw.
+     * @param renderer
+     */
+    inline void setRenderer(Renderer *renderer) {
+        Engine::renderer = renderer;
     }
 
 private:
     Loop* loop;
+    Viewport* viewport;
+    Renderer* renderer;
 };
 
 #endif //VULKANLAB_ENGINE_H

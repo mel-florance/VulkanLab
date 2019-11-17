@@ -14,28 +14,83 @@ class Engine;
 class Loop
 {
 public:
+    /**
+     * Loop constructor
+     */
     Loop(Engine* engine);
 
+    /**
+     * Loop callback function definition
+     */
     typedef void(*LoopCallback)(Loop* loop, Engine* engine);
 
+    /**
+     * Start the loop
+     */
     void start();
+
+    /**
+     * Stop the loop
+     */
     void stop();
 
+    /**
+     * Check if the loop is running.
+     */
     inline bool isRunning() { return running; }
+
+    /**
+     * Return the loop profiler.
+     * @return
+     */
     inline Profiler* getProfiler() { return profiler; }
+
+    /**
+     * return the loop clock.
+     * @return
+     */
     inline Clock* getClock() { return clock; }
 
+    /**
+     * Set the update callback function.
+     */
     inline void setUpdateCallback(LoopCallback callback) { updateCallback = callback; }
+
+    /**
+     * Set the render callback function.
+     */
     inline void setRenderCallback(LoopCallback callback) { renderCallback = callback; }
 
+    /**
+     * Return the frame time.
+     */
     inline double getFrameTime() { return frameTime; }
+
+    /*
+     * Return the elapsed time.
+     */
     inline double getPassedTime() { return passedTime; }
+
+    /**
+     * Return the current image per second.
+     */
     inline float getFps() { return fps; }
 
+    /**
+     * Compute an average of FPS during the interval fixed by MAX_SAMPLES.
+     */
     float computeAverageFps(float fps);
+
+    /**
+     * Return the fps list of last frames.
+     */
     inline std::map<int, float>& getFpsList() { return fpsList; }
 
+    /**
+     * Loop destructor
+     */
     ~Loop();
+
     Clock* clock;
     Profiler* profiler;
 
