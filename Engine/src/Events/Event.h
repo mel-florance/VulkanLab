@@ -32,7 +32,7 @@ public:
      * @return int - Connect function response
      */
     template<typename T>
-    int attach(T *instance, void (T::*func)(Args...)) {
+    inline int attach(T *instance, void (T::*func)(Args...)) {
         return this->connect([=](Args... args) {
             (instance->*func)(args...);
         });
@@ -43,7 +43,7 @@ public:
      * @param std::function - slot
      * @return int - currentId
      */
-    int connect(std::function<void(Args...)> const &slot) {
+    inline int connect(std::function<void(Args...)> const &slot) {
         this->slots.insert(std::make_pair(++this->currentId, slot));
         return this->currentId;
     }
@@ -52,7 +52,7 @@ public:
      * Disconnect a previously connected function
      * @param id
      */
-    void disconnect(int id) const {
+    inline void disconnect(int id) const {
         this->slots.erase(id);
     }
 
@@ -60,7 +60,7 @@ public:
      * Call all the connected functions
      * @param p
      */
-    void emit(Args... p) {
+    inline void emit(Args... p) {
         for (auto const &it : this->slots) {
             it.second(std::forward<Args>(p)...);
         }
@@ -78,7 +78,7 @@ public:
     /**
      * Disconnect all the previously connected functions.
      */
-    void disconnectAll() const {
+    inline void disconnectAll() const {
         this->slots.clear();
     }
 
@@ -86,7 +86,7 @@ public:
      * Return the current event id.
      * @return
      */
-    int getCurrentId() const {
+    inline int getCurrentId() const {
         return this->currentId;
     }
 
@@ -94,7 +94,7 @@ public:
      * Set the current event id.
      * @param currentId
      */
-    void setCurrentId(int currentId) {
+    inline void setCurrentId(int currentId) {
         this->currentId = currentId;
     }
 

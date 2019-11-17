@@ -24,7 +24,13 @@ Window::Window(
         std::cout << "Can't init GLFW.";
     }
 
-    this->instance = glfwCreateWindow(size.x, size.y, "Vulkan Lab", nullptr, nullptr);
+    this->instance = glfwCreateWindow(
+        this->size.x,
+        this->size.y,
+        this->title.c_str(),
+        nullptr,
+        nullptr
+    );
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
@@ -32,7 +38,7 @@ Window::Window(
     glfwWindowHint(GLFW_SAMPLES, 4);
     glfwWindowHint(GLFW_DEPTH_BITS, 32);
 
-    glfwMakeContextCurrent(instance);
+    glfwMakeContextCurrent(this->instance);
     glfwSwapInterval(0);
 
     if (gladLoadGLLoader((GLADloadproc) glfwGetProcAddress) == 0) {
@@ -53,12 +59,12 @@ Window::Window(
  * @return
  */
 void Window::update(std::function<void(glm::ivec2 &size)> callback) {
-    while (!glfwWindowShouldClose(instance)) {
+    while (!glfwWindowShouldClose(this->instance)) {
         glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 
-        callback(size);
+        callback(this->size);
 
-        glfwSwapBuffers(instance);
+        glfwSwapBuffers(this->instance);
         glfwPollEvents();
     }
 }
