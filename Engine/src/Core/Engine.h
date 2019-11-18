@@ -1,11 +1,13 @@
 #ifndef VULKANLAB_ENGINE_H
 #define VULKANLAB_ENGINE_H
 
+#include <memory>
 #include "Loop.h"
 
 class Viewport;
 class Renderer;
 class Window;
+class SceneManager;
 
 class Engine {
 public:
@@ -88,15 +90,22 @@ public:
      * Return the current window
      * @return
      */
-    Window *getWindow() const {
+    inline Window* getWindow() const {
         return this->window;
     }
 
     /**
      * Set the current window
      */
-    void setWindow(Window *window) {
+    inline void setWindow(Window* window) {
         this->window = window;
+    }
+
+    /**
+     * Return a reference to the scenesManager pointer.
+     */
+    inline SceneManager* getScenesManager() {
+        return this->scenesManager;
     }
 
     static Loop* loop;
@@ -104,6 +113,7 @@ private:
     Window* window;
     Viewport* viewport;
     Renderer* renderer;
+    SceneManager* scenesManager;
 };
 
 #endif //VULKANLAB_ENGINE_H

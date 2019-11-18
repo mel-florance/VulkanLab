@@ -1,7 +1,7 @@
 #ifndef VULKANLAB_VIEWPORT_H
 #define VULKANLAB_VIEWPORT_H
 
-
+#include <memory>
 #include <glm/glm.hpp>
 
 class Window;
@@ -11,16 +11,12 @@ public:
     /**
      * Viewport constructor
      */
-    Viewport(Window* window) : window(window) {
-        this->setColor(glm::vec4(0.1f, 0.1f, 0.1f, 1.0f));
-    }
+    Viewport(Window *window);
 
     /**
      * Viewport destructor
      */
-    ~Viewport() {
-
-    }
+    ~Viewport();
 
     /**
      * Clear the viewport.
@@ -36,22 +32,22 @@ public:
      * Return the size of the viewport.
      * @return
      */
-    const glm::vec2 &getSize() const {
-        return size;
+    inline const glm::vec2 &getSize() const {
+        return this->size;
     }
 
     /**
      * Set the dimensions of the viewport.
      */
-    void setSize(const glm::vec2 &size) {
+    inline void setSize(const glm::vec2 &size) {
         this->size = size;
     }
 
     /**
      * Return the clear color of the viewport.
      */
-    const glm::vec4 &getColor() const {
-        return color;
+    inline const glm::vec4 &getColor() const {
+        return this->color;
     }
 
     /**
@@ -63,18 +59,16 @@ public:
      * Return the current viewport window.
      */
     inline Window *getWindow() const {
-        return window;
+        return this->window;
     }
 
     /**
      * Set the current viewport window.
      */
-    inline void setWindow(Window *window) {
-        Viewport::window = window;
-    }
+    void setWindow(Window *window);
 
 private:
-    Window* window;
+    Window *window;
     glm::vec2 position;
     glm::vec2 size;
     glm::vec4 color;

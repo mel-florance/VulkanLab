@@ -2,6 +2,10 @@
 #define VULKANLAB_MESH_H
 
 #include <vector>
+#include <unordered_map>
+
+class ArrayBuffer;
+class VertexBuffer;
 
 class Mesh {
 public:
@@ -14,6 +18,24 @@ public:
      * Mesh destructor.
      */
     ~Mesh();
+
+    enum VertexBufferType {
+        VERTEX,
+        UV,
+        NORMAL,
+        TANGENT
+    };
+
+    enum DrawMode {
+        POINTS = 0x0000,
+        LINES = 0x0001,
+        LINE_LOOP = 0x0002,
+        LINE_STRIP = 0x0003,
+        TRIANGLES = 0x0004,
+        TRIANGLE_STRIP = 0x0005,
+        TRIANGLE_FAN = 0x0006,
+        QUADS = 0x0007
+    };
 
     /*
      * Set the mesh vertices.
@@ -96,11 +118,42 @@ public:
         this->wireframe = wireframe;
     }
 
+    /**
+     * Return the normals data array.
+     * @return
+     */
+    inline const std::vector<float> &getNormals() const {
+        return this->normals;
+    }
+
+    /**
+     * Set the normals data array.
+     * @param normals
+     */
+    inline void setNormals(const std::vector<float> &normals) {
+        this->normals = normals;
+    }
+
+    /**
+     * If the mesh array buffer is not a nullptr, then add the new buffer
+     * to the list of mesh's buffers.
+     * @param type
+     * @param buffer
+     */
+    void addBuffer(VertexBufferType type, VertexBuffer* buffer);
+
 private:
     std::vector<float> vertices;
     std::vector<float> uvs;
+    std::vector<float> normals;
+
+    ArrayBuffer* vao;
+    std::unordered_map<VertexBufferType, VertexBuffer*> buffers;
+
     unsigned int vertexCount;
     bool wireframe;
+
+    DrawMode drawMode;
 };
 
 #endif //VULKANLAB_MESH_H
