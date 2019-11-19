@@ -1,18 +1,27 @@
 #include "Mesh.h"
 
 #include <glad/glad.h>
+#include "../Buffers/ArrayBuffer.h"
 
 Mesh::Mesh() :
-    wireframe(false) {
+    wireframe(false),
+    drawMode(TRIANGLES) {
 }
 
 Mesh::~Mesh() {
 
 }
 
+void Mesh::addBuffer(VertexBufferType type, VertexBuffer *buffer) {
+    if (this->vao != nullptr) {
+        this->vao->bind();
+        this->buffers[type] = buffer;
+    }
+}
+
 void Mesh::draw() {
-    if (wireframe)
+    if (this->wireframe)
         glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
-    glDrawArrays(GL_TRIANGLES, 0, 6);
+    glDrawArrays(this->drawMode, 0, 6);
 }

@@ -1,5 +1,6 @@
 #include <glad/glad.h>
 #include <glm/glm.hpp>
+#include <glm/gtx/string_cast.hpp>
 
 #include "Core/Engine.h"
 #include "Display/Window.h"
@@ -13,17 +14,34 @@
 #include "Buffers/VertexBuffer.h"
 #include "Buffers/IndexBuffer.h"
 
-#include "ECS/ECS.h"
+//#include "ECS/ECS.h"
+//#include "ECS/Systems/TestSystem.h"
+//ECS_TYPE_IMPLEMENTATION;
+//using namespace ECS;
 #include "ECS/Systems/TestSystem.h"
-ECS_TYPE_IMPLEMENTATION;
-using namespace ECS;
+#include "Scene/Scene.h"
+#include "Scene/SceneManager.h"
 
 int main(int argc, char **argv) {
 
     // Initialize engine classes.
     const char *self_path = argv[0];
+
     Engine *engine = new Engine();
     AssetManager *am = new AssetManager(self_path);
+
+    Scene* scene = new Scene();
+    scene->registerSystem<TestSystem>();
+    auto entity = scene->createEntity();
+
+    std::cout << "ENTITY ID: " << entity->getEntityId() << std::endl;
+    auto transform = entity->assign<Transform>();
+    scene->update();
+    scene->update();
+
+    std::cout << glm::to_string(transform->position) << std::endl;
+
+    engine->getScenesManager()->addScene(scene);
 
     // Load some stuff.
     am->load<Texture>("/home/mel/Projects/VulkanLab/Resources/omg.jpg", "omg");
@@ -96,64 +114,63 @@ int main(int argc, char **argv) {
     defaultShader->setUniform1i("textureMap", 0);
 //        texture->bind();
 
-
-
-    World* world = World::createWorld();
-    EntitySystem* testSystem = world->registerSystem(new TestSystem());
-    Entity* ent = world->create();
-    auto pos = ent->assign<Position>(0.f, 0.f);
-    auto rot = ent->assign<Rotation>(0.f);
-
-    std::cout << "Initial values: position(" << pos->x << ", " << pos->y << "), rotation(" << rot->angle << ")" << std::endl;
-
-    world->tick(10.f);
-
-    std::cout << "After tick(10): position(" << pos->x << ", " << pos->y << "), rotation(" << rot->angle << ")" << std::endl;
-
-    world->disableSystem(testSystem);
-
-    world->tick(10.f);
-
-    std::cout << "After tick(10) and DisableSystem(testSystem): position(" << pos->x << ", " << pos->y << "), rotation(" << rot->angle << ")" << std::endl;
-
-    world->enableSystem(testSystem);
-
-    world->tick(10.f);
-
-    std::cout << "After tick(10) and EnableSystem(testSystem): position(" << pos->x << ", " << pos->y << "), rotation(" << rot->angle << ")" << std::endl;
-
-    ent->remove<Position>();
-    ent->remove<Rotation>();
-
-    std::cout << "Creating more entities..." << std::endl;
-
-    for (int i = 0; i < 10; ++i)
-    {
-        ent = world->create();
-        ent->assign<SomeComponent>();
-    }
-
-    int count = 0;
-    std::cout << "Counting entities with SomeComponent..." << std::endl;
-    // range based for loop
-    for (auto ent : world->each<SomeComponent>())
-    {
-        ++count;
-        std::cout << "Found entity #" << ent->getEntityId() << std::endl;
-    }
-    std::cout << count << " entities have SomeComponent!" << std::endl;
-
-    // Emitting events
-    world->emit<SomeEvent>({ 4 });
-
-    std::cout << "We have " << world->getCount() << " entities right now." << std::endl;
-    world->cleanup();
-    std::cout << "After a cleanup, we have " << world->getCount() << " entities." << std::endl;
-
-    std::cout << "Destroying the world..." << std::endl;
-
-    world->destroyWorld();
-
+//    World* world = World::createWorld();
+//    EntitySystem* testSystem = world->registerSystem(new TestSystem());
+//    Entity* ent = world->create();
+//    auto pos = ent->assign<Position>(0.f, 0.f);
+//    auto rot = ent->assign<Rotation>(0.f);
+//
+//    std::cout << "Initial values: position(" << pos->x << ", " << pos->y << "), rotation(" << rot->angle << ")" << std::endl;
+//
+//    world->tick(10.f);
+//
+//    std::cout << "After tick(10): position(" << pos->x << ", " << pos->y << "), rotation(" << rot->angle << ")" << std::endl;
+//
+//    world->disableSystem(testSystem);
+//
+//    world->tick(10.f);
+//
+//    std::cout << "After tick(10) and DisableSystem(testSystem): position(" << pos->x << ", " << pos->y << "), rotation(" << rot->angle << ")" << std::endl;
+//
+//    world->enableSystem(testSystem);
+//
+//    world->tick(10.f);
+//
+//    std::cout << "After tick(10) and EnableSystem(testSystem): position(" << pos->x << ", " << pos->y << "), rotation(" << rot->angle << ")" << std::endl;
+//
+//    ent->remove<Position>();
+//    ent->remove<Rotation>();
+//
+//    std::cout << "Creating more entities..." << std::endl;
+//
+//    for (int i = 0; i < 10; ++i)
+//    {
+//        ent = world->create();
+//        ent->assign<SomeComponent>();
+//    }
+//
+//    int count = 0;
+//    std::cout << "Counting entities with SomeComponent..." << std::endl;
+//    // range based for loop
+//    for (auto ent : world->each<SomeComponent>())
+//    {
+//        ++count;
+//        std::cout << "Found entity #" << ent->getEntityId() << std::endl;
+//    }
+//
+//    std::cout << count << " entities have SomeComponent!" << std::endl;
+//
+//    // Emitting events
+//    world->emit<SomeEvent>({ 4 });
+//
+//    std::cout << "We have " << world->getCount() << " entities right now." << std::endl;
+//    world->cleanup();
+//    std::cout << "After a cleanup, we have " << world->getCount() << " entities." << std::endl;
+//
+//    std::cout << "Destroying the world..." << std::endl;
+//
+//    world->destroyWorld();
+//
 
     engine->start();
 
