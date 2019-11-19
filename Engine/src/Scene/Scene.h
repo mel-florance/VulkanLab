@@ -4,6 +4,8 @@
 #include "../ECS/ECS.h"
 using namespace ECS;
 
+class Camera;
+
 class Scene {
 public:
     Scene();
@@ -102,8 +104,8 @@ public:
      * Update the scene and the associated world.
      * TODO: At which interval the tick is updated ?
      */
-    inline void update() {
-        this->world->tick(16.0f);
+    inline void update(float delta = 16.0f) {
+        this->world->tick(delta);
     }
 
     /**
@@ -114,8 +116,24 @@ public:
         return this->world->getCount();
     }
 
+    /**
+     * Return the active camera.
+     * @return
+     */
+    inline Camera *getActiveCamera() const {
+        return this->activeCamera;
+    }
+
+    /*
+     * Set the active camera.
+     */
+    inline void setActiveCamera(Camera *activeCamera) {
+        this->activeCamera = activeCamera;
+    }
+
 private:
     World* world;
+    Camera* activeCamera;
 };
 
 #endif //VULKANLAB_SCENE_H

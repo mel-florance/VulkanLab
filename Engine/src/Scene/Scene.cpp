@@ -2,7 +2,9 @@
 
 ECS_TYPE_IMPLEMENTATION;
 
-Scene::Scene() {
+Scene::Scene() :
+    activeCamera(nullptr)
+{
     this->createWorld();
 }
 

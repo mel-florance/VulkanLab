@@ -1,7 +1,7 @@
 #include "SceneManager.h"
 #include "Scene.h"
 
-SceneManager::SceneManager() {
+SceneManager::SceneManager() : activeScene(nullptr) {
 
 }
 
@@ -11,6 +11,7 @@ SceneManager::~SceneManager() {
 
 void SceneManager::addScene(Scene* scene) {
     this->scenes.emplace_back(scene);
+    this->activeScene = scene;
 }
 
 void SceneManager::setScenes(const ScenesList& scenes) {
@@ -26,4 +27,8 @@ bool SceneManager::removeScene(Scene* scene) {
     }
     else
         return false;
+}
+
+Scene *SceneManager::getActiveScene() {
+    return this->activeScene;
 }

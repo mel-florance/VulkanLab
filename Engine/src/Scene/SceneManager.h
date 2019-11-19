@@ -40,7 +40,10 @@ public:
      */
     bool removeScene(Scene* scene);
 
+    Scene *getActiveScene();
+
 private:
+    Scene* activeScene;
     ScenesList scenes;
 };
 
