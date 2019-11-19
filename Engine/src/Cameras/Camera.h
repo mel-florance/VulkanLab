@@ -2,10 +2,14 @@
 #define VULKANLAB_CAMERA_H
 
 #include <glm/glm.hpp>
+#include "../Events/Event.h"
 
 class Viewport;
 
-class Camera {
+class Camera :
+    public MouseEvents,
+    public KeyboardEvents,
+    public WindowEvents {
 public:
     /**
      * Camera constructor
@@ -17,6 +21,11 @@ public:
      * Camera destructor
      */
     virtual ~Camera();
+
+    /**
+     * Update the camera.
+     */
+    virtual void update(float delta) {}
 
     /**
      * Return the camera position;
@@ -52,7 +61,7 @@ public:
      * Return the direction of the camera.
      */
     inline const glm::vec3 &getDirection() const {
-        return direction;
+        return this->direction;
     }
 
     /**
@@ -60,7 +69,7 @@ public:
      * @param direction
      */
     inline void setDirection(const glm::vec3 &direction) {
-        Camera::direction = direction;
+        this->direction = direction;
     }
 
     /**
@@ -68,7 +77,7 @@ public:
      * @return
      */
     inline const glm::vec3 &getUp() const {
-        return up;
+        return this->up;
     }
 
     /**
@@ -76,7 +85,7 @@ public:
      * @param up
      */
     inline void setUp(const glm::vec3 &up) {
-        Camera::up = up;
+        this->up = up;
     }
 
     /**
@@ -84,7 +93,7 @@ public:
      * @return
      */
     inline const glm::vec3 &getRight() const {
-        return right;
+        return this->right;
     }
 
     /**
@@ -92,7 +101,7 @@ public:
      * @param right
      */
     inline void setRight(const glm::vec3 &right) {
-        Camera::right = right;
+        this->right = right;
     }
 
     /**
@@ -100,22 +109,122 @@ public:
      * @return
      */
     inline const glm::mat4 &getProjection() const {
-        return projection;
+        return this->projection;
     }
 
     /**
      * Set the camera projection
      */
     inline void setProjection(const glm::mat4 &projection) {
-        Camera::projection = projection;
+        this->projection = projection;
     }
 
-private:
-    glm::mat4 projection;
-    glm::vec3 position;
+    /**
+     * Return the camera field of view.
+     * @return
+     */
+    inline float getFov() {
+        return this->fov;
+    }
+
+    /**
+     * Set the camera field of view.
+     * @param fov
+     */
+    inline void setFov(float fov) {
+        this->fov = fov;
+    }
+
+    /*
+     * Return the camera aspect ratio.
+     * viewport.width / viewport.height
+     */
+    inline float getAspectRatio() {
+        return this->aspectRatio;
+    }
+
+    /**
+     * Set the camera aspect ratio.
+     * Must the width / height.
+     * @param ratio
+     */
+    inline void setAspectRatio(float ratio) {
+        this->aspectRatio = ratio;
+    }
+
+    /**
+     * Return the camera far clipping plane.
+     * @return
+     */
+    inline float getFar() {
+        return this->clipping.y;
+    }
+
+    /*
+     * Set the camera far clipping plane.
+     */
+    inline void setFar(float far) {
+        this->clipping.y = far;
+    }
+
+    /*
+     * Return the camera near clipping plane.
+     */
+    inline float getNear() {
+        return this->clipping.x;
+    }
+
+    /*
+     * Set the camera near clipping plane.
+     */
+    inline void setNear(float near) {
+        this->clipping.x = near;
+    }
+
+    /**
+     * Return the world up vector.
+     * @return
+     */
+    inline const glm::vec3 &getWorldUp() const {
+        return this->worldUp;
+    }
+
+    /**
+     * Set the world up vector.
+     */
+    inline void setWorldUp(const glm::vec3 &worldUp) {
+        this->worldUp = worldUp;
+    }
+
+    /**
+     * Return the camera view matrix.
+     * @return
+     */
+    inline const glm::mat4 &getView() const {
+        return this->view;
+    }
+
+    /**
+     * Set the camera view matrix.
+     */
+    inline void setView(const glm::mat4 &view) {
+        this->view = view;
+    }
+
+protected:
     glm::vec3 direction;
-    glm::vec3 up;
     glm::vec3 right;
+    glm::vec3 up;
+    glm::vec3 worldUp;
+
+    float fov;
+    float aspectRatio;
+    glm::vec2 clipping;
+
+    glm::mat4 projection;
+    glm::mat4 view;
+    glm::vec3 position;
+private:
     Viewport *viewport;
 };
 
