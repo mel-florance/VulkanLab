@@ -6,10 +6,7 @@
 
 class Viewport;
 
-class Camera :
-    public MouseEvents,
-    public KeyboardEvents,
-    public WindowEvents {
+class Camera {
 public:
     /**
      * Camera constructor
@@ -224,7 +221,6 @@ protected:
     glm::mat4 projection;
     glm::mat4 view;
     glm::vec3 position;
-private:
     Viewport *viewport;
 };
 

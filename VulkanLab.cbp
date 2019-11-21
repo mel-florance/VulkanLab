@@ -5,7 +5,7 @@
 		<Option title="VulkanLab"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\usr\lib64\cmake\glm\;CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\usr\lib64\cmake\glm\;CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\;CMake Files\..\..\..\..\usr\lib64\cmake\assimp-5.0\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/mel/Projects/VulkanLab"/>
@@ -164,10 +164,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/Asset.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/Asset.h">
+			<Option target="VulkanLab"/>
+		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/AssetManager.cpp">
 			<Option target="VulkanLab"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/AssetManager.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Buffers/ArrayBuffer.h">
 			<Option target="VulkanLab"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Buffers/IndexBuffer.h">
@@ -176,13 +185,106 @@
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Buffers/VertexBuffer.h">
 			<Option target="VulkanLab"/>
 		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Cameras/Camera.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Cameras/Camera.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Cameras/FPSCamera.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Cameras/FPSCamera.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Core/Clock.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Core/Engine.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Core/Engine.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Core/Loop.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Core/Loop.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Core/Profiler.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Core/Timer.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Display/Viewport.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Display/Viewport.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Display/Window.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Display/Window.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/Components/MeshComponent.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/Components/TransformComponent.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/ECS.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/Events/SomeEvent.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/Systems/TestSystem.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Events/Event.h">
+			<Option target="VulkanLab"/>
+		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Geometry/Mesh.cpp">
 			<Option target="VulkanLab"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Geometry/Mesh.h">
 			<Option target="VulkanLab"/>
 		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Geometry/Shapes/Quad.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Materials/Material.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Materials/Material.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Rendering/Renderer.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Rendering/Renderer.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Scene/Node.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Scene/Scene.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Scene/Scene.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Scene/SceneManager.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Scene/SceneManager.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Shaders/Shader.cpp">
 			<Option target="VulkanLab"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Shaders/Shader.h">
@@ -192,12 +294,6 @@
 			<Option target="VulkanLab"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Texturing/Texture.h">
-			<Option target="VulkanLab"/>
-		</Unit>
-		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Window.cpp">
-			<Option target="VulkanLab"/>
-		</Unit>
-		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Window.h">
 			<Option target="VulkanLab"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/main.cpp">
@@ -232,6 +328,18 @@
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/glfw3/glfw3Targets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/assimp-5.0/assimp-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/assimp-5.0/assimp-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/assimp-5.0/assimpTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/assimp-5.0/assimpTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\assimp-5.0\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

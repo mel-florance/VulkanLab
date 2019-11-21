@@ -14,11 +14,6 @@ public:
     Viewport(Window *window);
 
     /**
-     * Viewport destructor
-     */
-    ~Viewport();
-
-    /**
      * Clear the viewport.
      */
     static void clear();
@@ -41,6 +36,34 @@ public:
      */
     inline void setSize(const glm::vec2 &size) {
         this->size = size;
+    }
+
+    /**
+     * Return the width dimension of the viewport.
+     */
+    inline float getWidth() {
+        return this->size.x;
+    }
+
+    /**
+     * Return the height dimension of the viewport.
+     */
+    inline float getHeight() {
+        return this->size.y;
+    }
+
+    /**
+     * Set the width dimension of the viewport.
+     */
+    inline void setWidth(float width) {
+        this->size.x = width;
+    }
+
+    /*
+     * Set the height dimension of the viewport.
+     */
+    inline void setHeight(float height) {
+        this->size.y = height;
     }
 
     /**

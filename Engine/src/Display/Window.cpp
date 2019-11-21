@@ -7,7 +7,7 @@
 #include "../Events/Event.h"
 
 /**
- * Window static initilizers
+ * Window static initializers
  */
 glm::ivec2 Window::size = glm::ivec2(1280, 720);
 std::string Window::title = "Vulkan Lab";
@@ -43,7 +43,7 @@ Window::Window(
     glfwWindowHint(GLFW_DEPTH_BITS, 32);
 
     glfwMakeContextCurrent(this->instance);
-    glfwSwapInterval(0);
+    glfwSwapInterval(1);
 
     if (gladLoadGLLoader((GLADloadproc) glfwGetProcAddress) == 0) {
         std::cout << "Can't init glad loader.";
@@ -83,6 +83,10 @@ void Window::update(std::function<void(glm::ivec2 &size)> callback) {
  */
 void Window::onResize(GLFWwindow *window, int width, int height) {
     Window::size = glm::ivec2(width, height);
+    WindowEvents data;
+    data.width = width;
+    data.height = height,
+    Engine::onEvent(EventType::onWindowResize, &data);
 }
 
 /**
@@ -90,6 +94,8 @@ void Window::onResize(GLFWwindow *window, int width, int height) {
  * @param window
  */
 void Window::onClose(GLFWwindow *window) {
+    WindowEvents data;
+    Engine::onEvent(EventType::onWindowClose, &data);
     Engine::stop();
 }
 
@@ -100,7 +106,12 @@ void Window::onClose(GLFWwindow *window) {
  * @param int height
  */
 void Window::onKey(GLFWwindow *window, int key, int scanCode, int action, int mods) {
-
+    KeyboardEvents data;
+    data.key = key;
+    data.scanCode = scanCode;
+    data.keyAction = action;
+    data.mods = mods;
+    Engine::onEvent(EventType::onKeyboardInput, &data);
 }
 
 /**
@@ -109,7 +120,9 @@ void Window::onKey(GLFWwindow *window, int key, int scanCode, int action, int mo
  * @param unsigned int keyCode
  */
 void Window::onChar(GLFWwindow *window, unsigned int keyCode) {
-
+    KeyboardEvents data;
+    data.keyCode = keyCode;
+    Engine::onEvent(EventType::onKeyboardChar, &data);
 }
 
 /**
@@ -120,7 +133,11 @@ void Window::onChar(GLFWwindow *window, unsigned int keyCode) {
  * @param int mods
  */
 void Window::onMouseButton(GLFWwindow *window, int button, int action, int mods) {
-
+    MouseEvents data;
+    data.button = button;
+    data.action = action;
+    data.mods = mods;
+    Engine::onEvent(EventType::onMouseButton, &data);
 }
 
 /**
@@ -130,7 +147,10 @@ void Window::onMouseButton(GLFWwindow *window, int button, int action, int mods)
  * @param double y
  */
 void Window::onScroll(GLFWwindow *window, double x, double y) {
-
+    MouseEvents data;
+    data.scroll.x = x;
+    data.scroll.y = y;
+    Engine::onEvent(EventType::onMouseScroll, &data);
 }
 
 /**
@@ -140,7 +160,10 @@ void Window::onScroll(GLFWwindow *window, double x, double y) {
  * @param double y
  */
 void Window::onMouseMove(GLFWwindow *window, double x, double y) {
-
+    MouseEvents data;
+    data.position.x = x;
+    data.position.y = y;
+    Engine::onEvent(EventType::onMouseMove, &data);
 }
 
 /**
@@ -151,7 +174,10 @@ void Window::onMouseMove(GLFWwindow *window, double x, double y) {
  * @param const char **paths
  */
 void Window::onDrop(GLFWwindow *window, int count, const char **paths) {
-
+    WindowEvents data;
+    data.count = count;
+    data.paths = paths;
+    Engine::onEvent(EventType::onWindowDrop, &data);
 }
 
 /**

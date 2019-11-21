@@ -4,6 +4,8 @@
 #include <iostream>
 #include "../ECS.h"
 #include "../Components/TransformComponent.h"
+#include "../Components/MeshComponent.h"
+#include "../Components/NodeComponent.h"
 #include "../Events/SomeEvent.h"
 
 ECS_TYPE_IMPLEMENTATION;
@@ -13,7 +15,7 @@ class TestSystem :
     public EntitySystem,
     public EventSubscriber<Events::OnEntityCreated>,
     public EventSubscriber<Events::OnEntityDestroyed>,
-    public EventSubscriber<Events::OnComponentRemoved<Transform>>,
+    public EventSubscriber<Events::OnComponentRemoved<TransformComponent>>,
     public EventSubscriber<SomeEvent> {
 public:
     virtual ~TestSystem() {}
@@ -21,7 +23,7 @@ public:
     virtual void configure(class World *world) override {
         world->subscribe<Events::OnEntityCreated>(this);
         world->subscribe<Events::OnEntityDestroyed>(this);
-        world->subscribe<Events::OnComponentRemoved<Transform>>(this);
+        world->subscribe<Events::OnComponentRemoved<TransformComponent>>(this);
         world->subscribe<SomeEvent>(this);
     }
 
@@ -30,8 +32,8 @@ public:
     }
 
     virtual void tick(class World *world, float deltaTime) override {
-        world->each<Transform>([&](Entity *ent, ComponentHandle<Transform> transform) -> void {
-            transform->position.x += deltaTime;
+        world->each<TransformComponent>([&](Entity *ent, ComponentHandle<TransformComponent> transform) -> void {
+//            transform->position.x += deltaTime;
         });
     }
 
@@ -43,7 +45,7 @@ public:
         std::cout << "An entity was destroyed!" << std::endl;
     }
 
-    virtual void receive(class World *world, const Events::OnComponentRemoved<Transform> &event) override {
+    virtual void receive(class World *world, const Events::OnComponentRemoved<TransformComponent> &event) override {
         std::cout << "A position component was removed!" << std::endl;
     }
 

@@ -1,4 +1,5 @@
 #include "Shader.h"
+#include <glad/glad.h>
 
 Shader::Shader(
     const std::string &name,
@@ -99,6 +100,56 @@ bool Shader::link() {
         glDeleteShader(it->second);
 
     return status & ShaderStatus::Linked;
+}
+
+void Shader::bind() {
+    glUseProgram(program);
+}
+
+void Shader::setUniform1i(const std::string &name, int value) {
+    glUniform1i(getUniformLocation(name), value);
+}
+
+void Shader::setUniform1f(const std::string &name, float value) {
+    glUniform1f(getUniformLocation(name), value);
+}
+
+void Shader::setUniform2f(const std::string &name, float x, float y) {
+    glUniform2f(getUniformLocation(name), x, y);
+}
+
+void Shader::setUniform2f(const std::string &name, const glm::vec2 &value) {
+    glUniform2f(getUniformLocation(name), value.x, value.y);
+}
+
+void Shader::setUniform3f(const std::string &name, const glm::vec3 &value) {
+    glUniform3f(getUniformLocation(name), value.x, value.y, value.z);
+}
+
+void Shader::setUniform3f(const std::string &name, float x, float y, float z) {
+    glUniform3f(getUniformLocation(name), x, y, z);
+}
+
+void Shader::setUniform4f(const std::string &name, const glm::vec4 &value) {
+    glUniform4f(getUniformLocation(name), value.x, value.y, value.z, value.w);
+}
+
+void Shader::setUniform4f(const std::string &name, float x, float y, float z, float w) {
+    glUniform4f(getUniformLocation(name), x, y, z, w);
+}
+
+void Shader::setUniformMat4f(const std::string &name, const glm::mat4 &matrix) {
+    glUniformMatrix4fv(getUniformLocation(name), 1, GL_FALSE, glm::value_ptr(matrix));
+}
+
+unsigned int Shader::getUniformLocation(const std::string &uniform_name) {
+
+    int location = glGetUniformLocation(program, uniform_name.c_str());
+
+    if (location == -1)
+        std::cout << "Shader \"" << name << "\" Invalid uniform location: " << uniform_name << std::endl;
+
+    return location;
 }
 
 Shader::~Shader() {

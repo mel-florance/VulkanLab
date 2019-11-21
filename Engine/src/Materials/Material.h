@@ -3,6 +3,8 @@
 
 #include "../Assets/Asset.h"
 
+class Shader;
+
 class Material : public Asset {
 public:
     /**
@@ -32,8 +34,25 @@ public:
         this->name = value;
     }
 
+    /**
+     * Return the material shader.
+     * @return
+     */
+    inline Shader *getShader() const {
+        return this->shader;
+    }
+
+    /**
+     * Set the material shader.
+     * @param shader
+     */
+    inline void setShader(Shader *shader) {
+        this->shader = shader;
+    }
+
 private:
     const char *name;
+    Shader* shader;
 };
 
 #endif //VULKANLAB_MATERIAL_H

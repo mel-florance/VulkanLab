@@ -1,14 +1,9 @@
-#include <iostream>
 #include <glad/glad.h>
 #include "Viewport.h"
 #include "Window.h"
 
 Viewport::Viewport(Window *window) : window(window) {
     this->setColor(glm::vec4(0.1f, 0.1f, 0.1f, 1.0f));
-}
-
-Viewport::~Viewport() {
-
 }
 
 void Viewport::clear() {

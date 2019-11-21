@@ -1,11 +1,12 @@
 #ifndef VULKANLAB_MESH_H
 #define VULKANLAB_MESH_H
 
+#include <map>
 #include <vector>
-#include <unordered_map>
 
 class ArrayBuffer;
 class VertexBuffer;
+class Material;
 
 class Mesh {
 public:
@@ -18,6 +19,8 @@ public:
      * Mesh destructor.
      */
     ~Mesh();
+
+    typedef std::map<ArrayBuffer*, std::vector<VertexBuffer*>> MeshBuffers;
 
     enum VertexBufferType {
         VERTEX,
@@ -140,15 +143,44 @@ public:
      * @param type
      * @param buffer
      */
-    void addBuffer(VertexBufferType type, VertexBuffer* buffer);
+    void addBuffer(ArrayBuffer* vao, VertexBuffer* buffer);
 
-private:
+    /**
+     *
+     * @param buffer
+     */
+    void addArrayBuffer(ArrayBuffer* buffer);
+
+    /**
+     * Return the mesh material.
+     */
+    inline Material *getMaterial() const {
+        return this->material;
+    }
+
+    /**
+     * Set the mesh material.
+     * @param material
+     */
+    inline void setMaterial(Material *material) {
+        this->material = material;
+    }
+
+    /**
+     * Check if a mesh has a material assigned.
+     */
+     inline bool hasMaterial() {
+         return this->material != nullptr;
+     }
+
+protected:
     std::vector<float> vertices;
     std::vector<float> uvs;
     std::vector<float> normals;
 
-    ArrayBuffer* vao;
-    std::unordered_map<VertexBufferType, VertexBuffer*> buffers;
+private:
+    MeshBuffers buffers;
+    Material* material;
 
     unsigned int vertexCount;
     bool wireframe;

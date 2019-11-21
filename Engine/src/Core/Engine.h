@@ -3,15 +3,20 @@
 
 #include <memory>
 #include "Loop.h"
+#include "../Events/Event.h"
 
 class Viewport;
+
 class Renderer;
+
 class Window;
+
 class SceneManager;
 
 class Engine {
 public:
     Engine();
+
     ~Engine();
 
     /**
@@ -29,14 +34,19 @@ public:
      * @param loop
      * @param self
      */
-    static void update(Loop* loop, Engine* self);
+    static void update(Loop *loop, Engine *self);
 
     /**
      * Call the attached renderer.
      * @param loop
      * @param self
      */
-    static void render(Loop* loop, Engine* self);
+    static void render(Loop *loop, Engine *self);
+
+    /**
+     * When an event occurs.
+     */
+    static void onEvent(EventType event, Event* data);
 
     /**
      * Return the engine loop.
@@ -90,30 +100,31 @@ public:
      * Return the current window
      * @return
      */
-    inline Window* getWindow() const {
+    inline Window *getWindow() const {
         return this->window;
     }
 
     /**
      * Set the current window
      */
-    inline void setWindow(Window* window) {
+    inline void setWindow(Window *window) {
         this->window = window;
     }
 
     /**
      * Return a reference to the scenesManager pointer.
      */
-    inline SceneManager* getScenesManager() {
+    inline SceneManager *getScenesManager() {
         return this->scenesManager;
     }
 
-    static Loop* loop;
+    static Loop *loop;
+    static SceneManager *scenesManager;
+
 private:
-    Window* window;
-    Viewport* viewport;
-    Renderer* renderer;
-    SceneManager* scenesManager;
+    Window *window;
+    Viewport *viewport;
+    Renderer *renderer;
 };
 
 #endif //VULKANLAB_ENGINE_H

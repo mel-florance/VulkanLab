@@ -6,28 +6,16 @@
 ECS_TYPE_IMPLEMENTATION;
 using namespace ECS;
 
-struct Transform {
+#include "../../Maths/Transform.h"
+
+struct TransformComponent {
     ECS_DECLARE_TYPE;
 
-    Transform(
-            const glm::vec3& position = glm::vec3(0.0f),
-            const glm::vec3& rotation = glm::vec3(0.0f),
-            const glm::vec3& scale = glm::vec3(1.0f),
-            const glm::mat4& matrix = glm::mat4(1.0f)
-        ) :
-        position(position),
-        rotation(rotation),
-        scale(scale),
-        matrix(matrix)
-    {}
+    TransformComponent() : transform(new Transform()){}
 
-    glm::vec3 position;
-    glm::vec3 rotation;
-    glm::vec3 scale;
-    glm::mat4 matrix;
-    bool isDirty;
+    Transform* transform;
 };
 
-ECS_DEFINE_TYPE(Position);
+ECS_DEFINE_TYPE(TransformComponent);
 
 #endif //VULKANLAB_TRANSFORM_COMPONENT_H

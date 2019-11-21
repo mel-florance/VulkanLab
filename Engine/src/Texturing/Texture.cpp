@@ -28,6 +28,7 @@ Texture::Texture(const char *name, const char *path) : Asset(), name(name) {
     }
 
     stbi_image_free(data);
+//    glBindTexture(GL_TEXTURE_2D, 0);
 }
 
 void Texture::bind(unsigned int slot) {

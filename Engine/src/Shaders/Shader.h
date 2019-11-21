@@ -1,7 +1,6 @@
 #ifndef VULKANLAB_SHADER_H
 #define VULKANLAB_SHADER_H
 
-#include <glad/glad.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <iostream>
@@ -148,64 +147,48 @@ public:
     /*
      * Bind this shader to the gpu.
      */
-    inline void bind() {
-        glUseProgram(program);
-    }
+    void bind();
 
     /**
      * Set uniform integer.
      */
-    inline void setUniform1i(const std::string &name, int value) {
-        glUniform1i(getUniformLocation(name), value);
-    }
+    void setUniform1i(const std::string &name, int value);
 
     /*
      * Set uniform float.
      */
-    inline void setUniform1f(const std::string &name, float value) {
-        glUniform1f(getUniformLocation(name), value);
-    }
+    void setUniform1f(const std::string &name, float value);
 
     /**
      * Set uniform of 2 floats.
      */
-    inline void setUniform2f(const std::string &name, float x, float y) {
-        glUniform2f(getUniformLocation(name), x, y);
-    }
+    void setUniform2f(const std::string &name, float x, float y);
 
     /**
      * Set uniform of a vector 2D.
      * @param name
      * @param value
      */
-    inline void setUniform2f(const std::string &name, const glm::vec2 &value) {
-        glUniform2f(getUniformLocation(name), value.x, value.y);
-    }
+    void setUniform2f(const std::string &name, const glm::vec2 &value);
 
     /**
      * Set uniform of a vector 3D.
      * @param name
      * @param value
      */
-    inline void setUniform3f(const std::string &name, const glm::vec3 &value) {
-        glUniform3f(getUniformLocation(name), value.x, value.y, value.z);
-    }
+    void setUniform3f(const std::string &name, const glm::vec3 &value);
 
     /**
      * Set uniform of 3 floats.
      */
-    inline void setUniform3f(const std::string &name, float x, float y, float z) {
-        glUniform3f(getUniformLocation(name), x, y, z);
-    }
+    void setUniform3f(const std::string &name, float x, float y, float z);
 
     /**
      * Set uniform vector 4D.
      * @param name
      * @param value
      */
-    inline void setUniform4f(const std::string &name, const glm::vec4 &value) {
-        glUniform4f(getUniformLocation(name), value.x, value.y, value.z, value.w);
-    }
+    void setUniform4f(const std::string &name, const glm::vec4 &value);
 
     /**
      * Set uniform 4 floats.
@@ -215,26 +198,17 @@ public:
      * @param z
      * @param w
      */
-    inline void setUniform4f(const std::string &name, float x, float y, float z, float w) {
-        glUniform4f(getUniformLocation(name), x, y, z, w);
-    }
+    void setUniform4f(const std::string &name, float x, float y, float z, float w);
 
     /**
      * Set uniform matrix 4x4.
      */
-    inline void setUniformMat4f(const std::string &name, const glm::mat4 &matrix) {
-        glUniformMatrix4fv(getUniformLocation(name), 1, GL_FALSE, glm::value_ptr(matrix));
-    }
+    void setUniformMat4f(const std::string &name, const glm::mat4 &matrix);
 
-    unsigned int getUniformLocation(const std::string &uniform_name) {
-
-        int location = glGetUniformLocation(program, uniform_name.c_str());
-
-        if (location == -1)
-            std::cout << "Shader \"" << name << "\" Invalid uniform location: " << uniform_name << std::endl;
-
-        return location;
-    }
+    /**
+     * Return the uniform location
+     */
+    unsigned int getUniformLocation(const std::string &uniform_name);
 
 private:
     char status;

@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.15)
+cmake_minimum_required (VERSION 2.8.15)
 cmake_policy(VERSION 3.15)
 project (VulkanLab C CXX)
 
@@ -24,6 +24,9 @@ find_package(glfw3 REQUIRED)
 list(APPEND glfw_INCLUDE_DIRS "${X11_X11_INCLUDE_PATH}")
 list(APPEND glfw_LIBRARIES "${X11_X11_LIB}" "${CMAKE_THREAD_LIBS_INIT}")
 message(STATUS "glfw3 included at ${GLFW3_INCLUDE_DIR}")
+
+# Assimp
+find_package(assimp REQUIRED)
 
 # Threads
 find_package(Threads REQUIRED)
@@ -73,7 +76,7 @@ set(EXECUTABLE_OUTPUT_PATH bin/${CMAKE_BUILD_TYPE})
 find_package(OpenGL REQUIRED)
 add_definitions(${OPENGL_DEFINITIONS})
 
-set(LIBS ${GLFW3_LIBRARY} X11 Xrandr Xinerama Xi Xxf86vm Xcursor GL dl pthread)
+set(LIBS ${GLFW3_LIBRARY} assimp X11 Xrandr Xinerama Xi Xxf86vm Xcursor GL dl pthread )
 set(CMAKE_CXX_LINK_EXECUTABLE "${CMAKE_CXX_LINK_EXECUTABLE} -ldl -fpermissive")
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
@@ -93,4 +96,4 @@ link_directories(${CMAKE_SOURCE_DIR}/lib)
 SET_TARGET_PROPERTIES(VulkanLab PROPERTIES LINKER_LANGUAGE CXX)
 target_include_directories(VulkanLab PUBLIC ${OPENGL_INCLUDE_DIR})
 target_include_directories(VulkanLab PUBLIC ${GLFW3_INCLUDE_DIR})
-target_link_libraries(VulkanLab ${CMAKE_SOURCE_DIR}/lib/libGLAD.a ${CMAKE_SOURCE_DIR}/lib/libglfw3.a glm X11 Xrandr Xinerama Xi Xxf86vm Xcursor GL dl pthread )
+target_link_libraries(VulkanLab ${CMAKE_SOURCE_DIR}/lib/libGLAD.a ${CMAKE_SOURCE_DIR}/lib/libglfw3.a assimp glm X11 Xrandr Xinerama Xi Xxf86vm Xcursor GL dl pthread)
