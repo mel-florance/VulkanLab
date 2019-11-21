@@ -17,10 +17,7 @@ var hierarchy =
     ] ],
     [ "ECS::Internal::BaseEventSubscriber", "classECS_1_1Internal_1_1BaseEventSubscriber.html", [
       [ "ECS::EventSubscriber< T >", "classECS_1_1EventSubscriber.html", null ],
-      [ "ECS::EventSubscriber< Events::OnComponentRemoved< Position > >", "classECS_1_1EventSubscriber.html", [
-        [ "TestSystem", "classTestSystem.html", null ]
-      ] ],
-      [ "ECS::EventSubscriber< Events::OnComponentRemoved< Rotation > >", "classECS_1_1EventSubscriber.html", [
+      [ "ECS::EventSubscriber< Events::OnComponentRemoved< TransformComponent > >", "classECS_1_1EventSubscriber.html", [
         [ "TestSystem", "classTestSystem.html", null ]
       ] ],
       [ "ECS::EventSubscriber< Events::OnEntityCreated >", "classECS_1_1EventSubscriber.html", [
@@ -32,6 +29,9 @@ var hierarchy =
       [ "ECS::EventSubscriber< SomeEvent >", "classECS_1_1EventSubscriber.html", [
         [ "TestSystem", "classTestSystem.html", null ]
       ] ]
+    ] ],
+    [ "Camera", "classCamera.html", [
+      [ "FPSCamera", "classFPSCamera.html", null ]
     ] ],
     [ "Clock", "classClock.html", null ],
     [ "ECS::ComponentHandle< T >", "classECS_1_1ComponentHandle.html", null ],
@@ -45,22 +45,38 @@ var hierarchy =
       [ "TestSystem", "classTestSystem.html", null ]
     ] ],
     [ "ECS::Internal::EntityView", "classECS_1_1Internal_1_1EntityView.html", null ],
-    [ "Event< Args >", "classEvent.html", null ],
+    [ "Event", "structEvent.html", [
+      [ "KeyboardEvents", "classKeyboardEvents.html", [
+        [ "FPSCamera", "classFPSCamera.html", null ]
+      ] ],
+      [ "MouseEvents", "classMouseEvents.html", [
+        [ "FPSCamera", "classFPSCamera.html", null ]
+      ] ],
+      [ "WindowEvents", "classWindowEvents.html", [
+        [ "FPSCamera", "classFPSCamera.html", null ]
+      ] ]
+    ] ],
     [ "IndexBuffer", "classIndexBuffer.html", null ],
     [ "Loop", "classLoop.html", null ],
-    [ "Mesh", "classMesh.html", null ],
+    [ "Mesh", "classMesh.html", [
+      [ "Quad", "classQuad.html", null ]
+    ] ],
+    [ "MeshComponent", "structMeshComponent.html", null ],
+    [ "Node", "structNode.html", null ],
+    [ "NodeComponent", "structNodeComponent.html", null ],
     [ "ECS::Events::OnComponentAssigned< T >", "structECS_1_1Events_1_1OnComponentAssigned.html", null ],
     [ "ECS::Events::OnComponentRemoved< T >", "structECS_1_1Events_1_1OnComponentRemoved.html", null ],
     [ "ECS::Events::OnEntityCreated", "structECS_1_1Events_1_1OnEntityCreated.html", null ],
     [ "ECS::Events::OnEntityDestroyed", "structECS_1_1Events_1_1OnEntityDestroyed.html", null ],
-    [ "Position", "structPosition.html", null ],
     [ "Profiler", "classProfiler.html", null ],
     [ "Renderer", "classRenderer.html", null ],
-    [ "Rotation", "structRotation.html", null ],
+    [ "Scene", "classScene.html", null ],
+    [ "SceneManager", "classSceneManager.html", null ],
     [ "Shader::ShaderData", "structShader_1_1ShaderData.html", null ],
-    [ "SomeComponent", "structSomeComponent.html", null ],
     [ "SomeEvent", "structSomeEvent.html", null ],
     [ "Timer", "classTimer.html", null ],
+    [ "Transform", "classTransform.html", null ],
+    [ "TransformComponent", "structTransformComponent.html", null ],
     [ "VertexBuffer", "classVertexBuffer.html", null ],
     [ "Viewport", "classViewport.html", null ],
     [ "Window", "classWindow.html", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['indexbuffer_206',['IndexBuffer',['../classIndexBuffer.html',1,'']]]
+  ['fpscamera_292',['FPSCamera',['../classFPSCamera.html',1,'']]]
 ];

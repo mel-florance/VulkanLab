@@ -1,0 +1,447 @@
+\hypertarget{classFPSCamera}{}\doxysection{F\+P\+S\+Camera Class Reference}
+\label{classFPSCamera}\index{FPSCamera@{FPSCamera}}
+Inheritance diagram for F\+P\+S\+Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classFPSCamera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFPSCamera_a9f98b6ba660de0f521212cc5a6001a2a}\label{classFPSCamera_a9f98b6ba660de0f521212cc5a6001a2a}} 
+enum {\bfseries Direction} \{ \newline
+{\bfseries F\+O\+R\+W\+A\+RD} = 1 $<$$<$ 0, 
+{\bfseries B\+A\+C\+K\+W\+A\+RD} = 1 $<$$<$ 1, 
+{\bfseries L\+E\+FT} = 1 $<$$<$ 2, 
+{\bfseries R\+I\+G\+HT} = 1 $<$$<$ 3, 
+\newline
+{\bfseries UP} = 1 $<$$<$ 4, 
+{\bfseries D\+O\+WN} = 1 $<$$<$ 5
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFPSCamera_a32bfabda538e90d7cb5f5f147ded33ef}{F\+P\+S\+Camera}} (\mbox{\hyperlink{classViewport}{Viewport}} $\ast$viewport)
+\item 
+\mbox{\hyperlink{classFPSCamera_a2ca29c48ace818ccbd8df3cb0c2aab4b}{$\sim$\+F\+P\+S\+Camera}} ()
+\item 
+void \mbox{\hyperlink{classFPSCamera_a5cc5c2fc2de84184d33f24dac09ab6a8}{compute}} ()
+\item 
+void \mbox{\hyperlink{classFPSCamera_a74aaa28494ca10f7dae147bc5c148980}{update}} (float delta)
+\item 
+void \mbox{\hyperlink{classFPSCamera_ada84e5e78fd3020083819da2e0ffc847}{on\+Mouse\+Move}} (\mbox{\hyperlink{structEvent}{Event}} $\ast$data) override
+\item 
+void \mbox{\hyperlink{classFPSCamera_a1151e1893eee1457f45fcae1fc70e090}{on\+Mouse\+Button}} (\mbox{\hyperlink{structEvent}{Event}} $\ast$data) override
+\item 
+void \mbox{\hyperlink{classFPSCamera_a3ca5f178d081c8d68d017812711ee5de}{on\+Keyboard\+Input}} (\mbox{\hyperlink{structEvent}{Event}} $\ast$data) override
+\item 
+void \mbox{\hyperlink{classFPSCamera_a022eb85350bda4f82864b5e81e2775d3}{on\+Mouse\+Scroll}} (\mbox{\hyperlink{structEvent}{Event}} $\ast$data) override
+\item 
+void \mbox{\hyperlink{classFPSCamera_a0a5f69a5e3dc77a9a39ab0f65fe5a1e4}{on\+Window\+Resize}} (\mbox{\hyperlink{structEvent}{Event}} $\ast$data) override
+\item 
+float \mbox{\hyperlink{classFPSCamera_ac797caf4209d14a39381213f40611ff2}{get\+Yaw}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_a7ed37ece3ee5e928398c6ab21d667adc}{set\+Yaw}} (float yaw)
+\item 
+float \mbox{\hyperlink{classFPSCamera_ad571af8a382807f7ec1fa6973c62a44c}{get\+Pitch}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_afd4b477e93c86dc624e92fa748e88c25}{set\+Pitch}} (float pitch)
+\item 
+float \mbox{\hyperlink{classFPSCamera_a1d50c45b4f1e9dd0aae69aedb5a67b95}{get\+Roll}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_a73b00710b5ed4738d17e0a2b6c6bae12}{set\+Roll}} (float roll)
+\item 
+const glm\+::vec3 \& \mbox{\hyperlink{classFPSCamera_a85a01c5ff1bfe70f10bd7be088845e47}{get\+Velocity}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_ae75d273d5cbde958036583a43e7f3e87}{set\+Velocity}} (const glm\+::vec3 \&velocity)
+\item 
+float \mbox{\hyperlink{classFPSCamera_abbe06d59e6e9f6fa2546fa9fad681a7c}{get\+Speed\+Multiplier}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_a2f231f86724f7313696e041cc2059fe1}{set\+Speed\+Multiplier}} (float speed\+Multiplier)
+\item 
+float \mbox{\hyperlink{classFPSCamera_a8b14f58f2a820322c15b8df584ee4061}{get\+Min\+Speed}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_a9d29cb6ca7558a7dec439e73ccbc4301}{set\+Min\+Speed}} (float min\+Speed)
+\item 
+float \mbox{\hyperlink{classFPSCamera_a8109010ad0db6b3e395835ebf0e4f195}{get\+Max\+Speed}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_ac2881650451ea7d01ce8dd8a6ca233bb}{set\+Max\+Speed}} (float max\+Speed)
+\item 
+float \mbox{\hyperlink{classFPSCamera_a7cfc4c00b5905f845909b414dc912b05}{get\+Speed}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_a74889e2b6e3c825a2c1477082edde47f}{set\+Speed}} (float speed)
+\item 
+float \mbox{\hyperlink{classFPSCamera_a1fd2de39350650caba58aa1325e8a4b4}{get\+Delta}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_a91f20fdfb4980152900882293c3554fc}{set\+Delta}} (float delta)
+\item 
+float \mbox{\hyperlink{classFPSCamera_ae454eaf120cda705c72d5d07afde68a8}{get\+Friction}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_a0d2cb22aa6ee74bc5d74c5c4d61fe17f}{set\+Friction}} (float friction)
+\item 
+float \mbox{\hyperlink{classFPSCamera_a31fe9300bbe7b1721fcf41705ba7cbf8}{get\+Sensitivity}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_ac76b553fc8b40b4b085895fc27668cc3}{set\+Sensitivity}} (float sensitivity)
+\item 
+const glm\+::vec2 \& \mbox{\hyperlink{classFPSCamera_a97f799b1cdc351bd2eef7c52409b2f16}{get\+Mouse\+Offset}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_a29a4d254a2ef6cee06ef97a21db3d761}{set\+Mouse\+Offset}} (const glm\+::vec2 \&mouse\+Offset)
+\item 
+const glm\+::vec2 \& \mbox{\hyperlink{classFPSCamera_ae23bbc97b7445e5520151409cf631333}{get\+Last\+Position}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_a3024bb44a79db88da1db003e9c668679}{set\+Last\+Position}} (const glm\+::vec2 \&last\+Position)
+\item 
+bool \mbox{\hyperlink{classFPSCamera_a6a69438f2da30c879aaee6d55728e537}{is\+First\+Time\+Moving1}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_a7edd99111142070104734d8b7aa92ec6}{set\+Is\+First\+Time\+Moving}} (bool is\+First\+Time\+Moving)
+\item 
+bool \mbox{\hyperlink{classFPSCamera_ad6c0bf131e0095c3357434cb7dc669be}{is\+Constrain\+Axis}} () const
+\item 
+void \mbox{\hyperlink{classFPSCamera_a876b1d509babbb997feb9da5af5b22b7}{set\+Constrain\+Axis}} (bool constrain\+Axis)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFPSCamera_a5a9c34ff74e0bc259d15f5f3bb274963}\label{classFPSCamera_a5a9c34ff74e0bc259d15f5f3bb274963}} 
+float {\bfseries delta}
+\item 
+\mbox{\Hypertarget{classFPSCamera_afedac046144351e7ef94534345593b0a}\label{classFPSCamera_afedac046144351e7ef94534345593b0a}} 
+float {\bfseries yaw}
+\item 
+\mbox{\Hypertarget{classFPSCamera_a4a6dce06c1dfe9ce99d7cf7e29bf5376}\label{classFPSCamera_a4a6dce06c1dfe9ce99d7cf7e29bf5376}} 
+float {\bfseries pitch}
+\item 
+\mbox{\Hypertarget{classFPSCamera_a686e8b12a8dd22a39d6f05f30b91384c}\label{classFPSCamera_a686e8b12a8dd22a39d6f05f30b91384c}} 
+float {\bfseries roll}
+\item 
+\mbox{\Hypertarget{classFPSCamera_a74dab14a43c02ee4fc0e0640ea91c7f0}\label{classFPSCamera_a74dab14a43c02ee4fc0e0640ea91c7f0}} 
+float {\bfseries friction}
+\item 
+\mbox{\Hypertarget{classFPSCamera_ab1691d35eaca41f3d631075f5ec12d02}\label{classFPSCamera_ab1691d35eaca41f3d631075f5ec12d02}} 
+float {\bfseries sensitivity}
+\item 
+\mbox{\Hypertarget{classFPSCamera_a89f133f1d2d519a65791b809ff3f2c14}\label{classFPSCamera_a89f133f1d2d519a65791b809ff3f2c14}} 
+glm\+::vec2 {\bfseries mouse\+Offset}
+\item 
+\mbox{\Hypertarget{classFPSCamera_a51f20bcaec647d859cd38fb61aae22f0}\label{classFPSCamera_a51f20bcaec647d859cd38fb61aae22f0}} 
+glm\+::vec2 {\bfseries last\+Position}
+\item 
+\mbox{\Hypertarget{classFPSCamera_aa15de19237fa4f0956b7ffd1514acb5f}\label{classFPSCamera_aa15de19237fa4f0956b7ffd1514acb5f}} 
+bool {\bfseries is\+First\+Time\+Moving}
+\item 
+\mbox{\Hypertarget{classFPSCamera_ac824e7f31713b552982738b02fc2f3ee}\label{classFPSCamera_ac824e7f31713b552982738b02fc2f3ee}} 
+bool {\bfseries constrain\+Axis}
+\item 
+\mbox{\Hypertarget{classFPSCamera_a8e7eec68407f56b9b68b359668b1a586}\label{classFPSCamera_a8e7eec68407f56b9b68b359668b1a586}} 
+glm\+::vec3 {\bfseries velocity}
+\item 
+\mbox{\Hypertarget{classFPSCamera_a98786beab4b9108f698fe1d65b8db850}\label{classFPSCamera_a98786beab4b9108f698fe1d65b8db850}} 
+float {\bfseries speed}
+\item 
+\mbox{\Hypertarget{classFPSCamera_a02e7d4d8c463f6541f378248e5323e0f}\label{classFPSCamera_a02e7d4d8c463f6541f378248e5323e0f}} 
+float {\bfseries speed\+Multiplier}
+\item 
+\mbox{\Hypertarget{classFPSCamera_ade963013c61c2a6dcc8685f16705425c}\label{classFPSCamera_ade963013c61c2a6dcc8685f16705425c}} 
+float {\bfseries min\+Speed}
+\item 
+\mbox{\Hypertarget{classFPSCamera_af561c2238f642dbaa651576a6274d2e1}\label{classFPSCamera_af561c2238f642dbaa651576a6274d2e1}} 
+float {\bfseries max\+Speed}
+\item 
+\mbox{\Hypertarget{classFPSCamera_a579de0c996443e04c6633ea4eb87701f}\label{classFPSCamera_a579de0c996443e04c6633ea4eb87701f}} 
+char {\bfseries movement\+Direction}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFPSCamera_a32bfabda538e90d7cb5f5f147ded33ef}\label{classFPSCamera_a32bfabda538e90d7cb5f5f147ded33ef}} 
+\index{FPSCamera@{FPSCamera}!FPSCamera@{FPSCamera}}
+\index{FPSCamera@{FPSCamera}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{FPSCamera()}{FPSCamera()}}
+{\footnotesize\ttfamily F\+P\+S\+Camera\+::\+F\+P\+S\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classViewport}{Viewport}} $\ast$}]{viewport }\end{DoxyParamCaption})}
+
+F\+PS \mbox{\hyperlink{classCamera}{Camera}} constructor 
+\begin{DoxyParams}{Parameters}
+{\em viewport} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFPSCamera_a2ca29c48ace818ccbd8df3cb0c2aab4b}\label{classFPSCamera_a2ca29c48ace818ccbd8df3cb0c2aab4b}} 
+\index{FPSCamera@{FPSCamera}!````~FPSCamera@{$\sim$FPSCamera}}
+\index{````~FPSCamera@{$\sim$FPSCamera}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{$\sim$FPSCamera()}{~FPSCamera()}}
+{\footnotesize\ttfamily F\+P\+S\+Camera\+::$\sim$\+F\+P\+S\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+F\+PS \mbox{\hyperlink{classCamera}{Camera}} destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFPSCamera_a5cc5c2fc2de84184d33f24dac09ab6a8}\label{classFPSCamera_a5cc5c2fc2de84184d33f24dac09ab6a8}} 
+\index{FPSCamera@{FPSCamera}!compute@{compute}}
+\index{compute@{compute}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::compute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Compute camera axis vectors. \mbox{\Hypertarget{classFPSCamera_a1fd2de39350650caba58aa1325e8a4b4}\label{classFPSCamera_a1fd2de39350650caba58aa1325e8a4b4}} 
+\index{FPSCamera@{FPSCamera}!getDelta@{getDelta}}
+\index{getDelta@{getDelta}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getDelta()}{getDelta()}}
+{\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Delta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the delta attached to the camera. \mbox{\Hypertarget{classFPSCamera_ae454eaf120cda705c72d5d07afde68a8}\label{classFPSCamera_ae454eaf120cda705c72d5d07afde68a8}} 
+\index{FPSCamera@{FPSCamera}!getFriction@{getFriction}}
+\index{getFriction@{getFriction}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getFriction()}{getFriction()}}
+{\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Friction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera movement friction. \mbox{\Hypertarget{classFPSCamera_ae23bbc97b7445e5520151409cf631333}\label{classFPSCamera_ae23bbc97b7445e5520151409cf631333}} 
+\index{FPSCamera@{FPSCamera}!getLastPosition@{getLastPosition}}
+\index{getLastPosition@{getLastPosition}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getLastPosition()}{getLastPosition()}}
+{\footnotesize\ttfamily const glm\+::vec2\& F\+P\+S\+Camera\+::get\+Last\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the mouse last position. \mbox{\Hypertarget{classFPSCamera_a8109010ad0db6b3e395835ebf0e4f195}\label{classFPSCamera_a8109010ad0db6b3e395835ebf0e4f195}} 
+\index{FPSCamera@{FPSCamera}!getMaxSpeed@{getMaxSpeed}}
+\index{getMaxSpeed@{getMaxSpeed}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getMaxSpeed()}{getMaxSpeed()}}
+{\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Max\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera max speed limit. \mbox{\Hypertarget{classFPSCamera_a8b14f58f2a820322c15b8df584ee4061}\label{classFPSCamera_a8b14f58f2a820322c15b8df584ee4061}} 
+\index{FPSCamera@{FPSCamera}!getMinSpeed@{getMinSpeed}}
+\index{getMinSpeed@{getMinSpeed}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getMinSpeed()}{getMinSpeed()}}
+{\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Min\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera minimum speed limit. \mbox{\Hypertarget{classFPSCamera_a97f799b1cdc351bd2eef7c52409b2f16}\label{classFPSCamera_a97f799b1cdc351bd2eef7c52409b2f16}} 
+\index{FPSCamera@{FPSCamera}!getMouseOffset@{getMouseOffset}}
+\index{getMouseOffset@{getMouseOffset}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getMouseOffset()}{getMouseOffset()}}
+{\footnotesize\ttfamily const glm\+::vec2\& F\+P\+S\+Camera\+::get\+Mouse\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the mouse delta position. \mbox{\Hypertarget{classFPSCamera_ad571af8a382807f7ec1fa6973c62a44c}\label{classFPSCamera_ad571af8a382807f7ec1fa6973c62a44c}} 
+\index{FPSCamera@{FPSCamera}!getPitch@{getPitch}}
+\index{getPitch@{getPitch}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getPitch()}{getPitch()}}
+{\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Pitch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera pitch axis value. \mbox{\Hypertarget{classFPSCamera_a1d50c45b4f1e9dd0aae69aedb5a67b95}\label{classFPSCamera_a1d50c45b4f1e9dd0aae69aedb5a67b95}} 
+\index{FPSCamera@{FPSCamera}!getRoll@{getRoll}}
+\index{getRoll@{getRoll}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getRoll()}{getRoll()}}
+{\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Roll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera roll axis value. \mbox{\Hypertarget{classFPSCamera_a31fe9300bbe7b1721fcf41705ba7cbf8}\label{classFPSCamera_a31fe9300bbe7b1721fcf41705ba7cbf8}} 
+\index{FPSCamera@{FPSCamera}!getSensitivity@{getSensitivity}}
+\index{getSensitivity@{getSensitivity}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getSensitivity()}{getSensitivity()}}
+{\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Sensitivity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera view sensitivity. \mbox{\Hypertarget{classFPSCamera_a7cfc4c00b5905f845909b414dc912b05}\label{classFPSCamera_a7cfc4c00b5905f845909b414dc912b05}} 
+\index{FPSCamera@{FPSCamera}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera speed. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFPSCamera_abbe06d59e6e9f6fa2546fa9fad681a7c}\label{classFPSCamera_abbe06d59e6e9f6fa2546fa9fad681a7c}} 
+\index{FPSCamera@{FPSCamera}!getSpeedMultiplier@{getSpeedMultiplier}}
+\index{getSpeedMultiplier@{getSpeedMultiplier}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getSpeedMultiplier()}{getSpeedMultiplier()}}
+{\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Speed\+Multiplier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the speed multiplier. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFPSCamera_a85a01c5ff1bfe70f10bd7be088845e47}\label{classFPSCamera_a85a01c5ff1bfe70f10bd7be088845e47}} 
+\index{FPSCamera@{FPSCamera}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily const glm\+::vec3\& F\+P\+S\+Camera\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the velocity of the camera. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFPSCamera_ac797caf4209d14a39381213f40611ff2}\label{classFPSCamera_ac797caf4209d14a39381213f40611ff2}} 
+\index{FPSCamera@{FPSCamera}!getYaw@{getYaw}}
+\index{getYaw@{getYaw}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{getYaw()}{getYaw()}}
+{\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Yaw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera yaw axis value. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFPSCamera_ad6c0bf131e0095c3357434cb7dc669be}\label{classFPSCamera_ad6c0bf131e0095c3357434cb7dc669be}} 
+\index{FPSCamera@{FPSCamera}!isConstrainAxis@{isConstrainAxis}}
+\index{isConstrainAxis@{isConstrainAxis}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{isConstrainAxis()}{isConstrainAxis()}}
+{\footnotesize\ttfamily bool F\+P\+S\+Camera\+::is\+Constrain\+Axis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if pitch \& yaw constraints axis are enabled. \mbox{\Hypertarget{classFPSCamera_a6a69438f2da30c879aaee6d55728e537}\label{classFPSCamera_a6a69438f2da30c879aaee6d55728e537}} 
+\index{FPSCamera@{FPSCamera}!isFirstTimeMoving1@{isFirstTimeMoving1}}
+\index{isFirstTimeMoving1@{isFirstTimeMoving1}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{isFirstTimeMoving1()}{isFirstTimeMoving1()}}
+{\footnotesize\ttfamily bool F\+P\+S\+Camera\+::is\+First\+Time\+Moving1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if the mouse moved for the first time. \mbox{\Hypertarget{classFPSCamera_a3ca5f178d081c8d68d017812711ee5de}\label{classFPSCamera_a3ca5f178d081c8d68d017812711ee5de}} 
+\index{FPSCamera@{FPSCamera}!onKeyboardInput@{onKeyboardInput}}
+\index{onKeyboardInput@{onKeyboardInput}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{onKeyboardInput()}{onKeyboardInput()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::on\+Keyboard\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEvent}{Event}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+On\+Keyboard\+Input event 
+
+Reimplemented from \mbox{\hyperlink{classKeyboardEvents}{Keyboard\+Events}}.
+
+\mbox{\Hypertarget{classFPSCamera_a1151e1893eee1457f45fcae1fc70e090}\label{classFPSCamera_a1151e1893eee1457f45fcae1fc70e090}} 
+\index{FPSCamera@{FPSCamera}!onMouseButton@{onMouseButton}}
+\index{onMouseButton@{onMouseButton}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{onMouseButton()}{onMouseButton()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::on\+Mouse\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEvent}{Event}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+On\+Mouse\+Button event 
+
+Reimplemented from \mbox{\hyperlink{classMouseEvents}{Mouse\+Events}}.
+
+\mbox{\Hypertarget{classFPSCamera_ada84e5e78fd3020083819da2e0ffc847}\label{classFPSCamera_ada84e5e78fd3020083819da2e0ffc847}} 
+\index{FPSCamera@{FPSCamera}!onMouseMove@{onMouseMove}}
+\index{onMouseMove@{onMouseMove}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{onMouseMove()}{onMouseMove()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::on\+Mouse\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEvent}{Event}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+On\+Mouse\+Move event 
+
+Reimplemented from \mbox{\hyperlink{classMouseEvents}{Mouse\+Events}}.
+
+\mbox{\Hypertarget{classFPSCamera_a022eb85350bda4f82864b5e81e2775d3}\label{classFPSCamera_a022eb85350bda4f82864b5e81e2775d3}} 
+\index{FPSCamera@{FPSCamera}!onMouseScroll@{onMouseScroll}}
+\index{onMouseScroll@{onMouseScroll}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{onMouseScroll()}{onMouseScroll()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::on\+Mouse\+Scroll (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEvent}{Event}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+On\+Mouse\+Scroll event 
+
+Reimplemented from \mbox{\hyperlink{classMouseEvents}{Mouse\+Events}}.
+
+\mbox{\Hypertarget{classFPSCamera_a0a5f69a5e3dc77a9a39ab0f65fe5a1e4}\label{classFPSCamera_a0a5f69a5e3dc77a9a39ab0f65fe5a1e4}} 
+\index{FPSCamera@{FPSCamera}!onWindowResize@{onWindowResize}}
+\index{onWindowResize@{onWindowResize}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{onWindowResize()}{onWindowResize()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::on\+Window\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEvent}{Event}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+On\+Window\+Resize event 
+
+Reimplemented from \mbox{\hyperlink{classWindowEvents}{Window\+Events}}.
+
+\mbox{\Hypertarget{classFPSCamera_a876b1d509babbb997feb9da5af5b22b7}\label{classFPSCamera_a876b1d509babbb997feb9da5af5b22b7}} 
+\index{FPSCamera@{FPSCamera}!setConstrainAxis@{setConstrainAxis}}
+\index{setConstrainAxis@{setConstrainAxis}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setConstrainAxis()}{setConstrainAxis()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Constrain\+Axis (\begin{DoxyParamCaption}\item[{bool}]{constrain\+Axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Active the yaw \& pitch constraints axis. \mbox{\Hypertarget{classFPSCamera_a91f20fdfb4980152900882293c3554fc}\label{classFPSCamera_a91f20fdfb4980152900882293c3554fc}} 
+\index{FPSCamera@{FPSCamera}!setDelta@{setDelta}}
+\index{setDelta@{setDelta}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setDelta()}{setDelta()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Delta (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera delta. \mbox{\Hypertarget{classFPSCamera_a0d2cb22aa6ee74bc5d74c5c4d61fe17f}\label{classFPSCamera_a0d2cb22aa6ee74bc5d74c5c4d61fe17f}} 
+\index{FPSCamera@{FPSCamera}!setFriction@{setFriction}}
+\index{setFriction@{setFriction}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setFriction()}{setFriction()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Friction (\begin{DoxyParamCaption}\item[{float}]{friction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera movement friction. \mbox{\Hypertarget{classFPSCamera_a7edd99111142070104734d8b7aa92ec6}\label{classFPSCamera_a7edd99111142070104734d8b7aa92ec6}} 
+\index{FPSCamera@{FPSCamera}!setIsFirstTimeMoving@{setIsFirstTimeMoving}}
+\index{setIsFirstTimeMoving@{setIsFirstTimeMoving}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setIsFirstTimeMoving()}{setIsFirstTimeMoving()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Is\+First\+Time\+Moving (\begin{DoxyParamCaption}\item[{bool}]{is\+First\+Time\+Moving }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set a flag for saving the mouse first time movement. \mbox{\Hypertarget{classFPSCamera_a3024bb44a79db88da1db003e9c668679}\label{classFPSCamera_a3024bb44a79db88da1db003e9c668679}} 
+\index{FPSCamera@{FPSCamera}!setLastPosition@{setLastPosition}}
+\index{setLastPosition@{setLastPosition}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setLastPosition()}{setLastPosition()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Last\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{last\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the time mouse position. \mbox{\Hypertarget{classFPSCamera_ac2881650451ea7d01ce8dd8a6ca233bb}\label{classFPSCamera_ac2881650451ea7d01ce8dd8a6ca233bb}} 
+\index{FPSCamera@{FPSCamera}!setMaxSpeed@{setMaxSpeed}}
+\index{setMaxSpeed@{setMaxSpeed}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setMaxSpeed()}{setMaxSpeed()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Max\+Speed (\begin{DoxyParamCaption}\item[{float}]{max\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera max speed limit. \mbox{\Hypertarget{classFPSCamera_a9d29cb6ca7558a7dec439e73ccbc4301}\label{classFPSCamera_a9d29cb6ca7558a7dec439e73ccbc4301}} 
+\index{FPSCamera@{FPSCamera}!setMinSpeed@{setMinSpeed}}
+\index{setMinSpeed@{setMinSpeed}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setMinSpeed()}{setMinSpeed()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Min\+Speed (\begin{DoxyParamCaption}\item[{float}]{min\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera minimum speed limit. \mbox{\Hypertarget{classFPSCamera_a29a4d254a2ef6cee06ef97a21db3d761}\label{classFPSCamera_a29a4d254a2ef6cee06ef97a21db3d761}} 
+\index{FPSCamera@{FPSCamera}!setMouseOffset@{setMouseOffset}}
+\index{setMouseOffset@{setMouseOffset}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setMouseOffset()}{setMouseOffset()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Mouse\+Offset (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{mouse\+Offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the mouse delta position. \mbox{\Hypertarget{classFPSCamera_afd4b477e93c86dc624e92fa748e88c25}\label{classFPSCamera_afd4b477e93c86dc624e92fa748e88c25}} 
+\index{FPSCamera@{FPSCamera}!setPitch@{setPitch}}
+\index{setPitch@{setPitch}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setPitch()}{setPitch()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Pitch (\begin{DoxyParamCaption}\item[{float}]{pitch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera pitch axis value. \mbox{\Hypertarget{classFPSCamera_a73b00710b5ed4738d17e0a2b6c6bae12}\label{classFPSCamera_a73b00710b5ed4738d17e0a2b6c6bae12}} 
+\index{FPSCamera@{FPSCamera}!setRoll@{setRoll}}
+\index{setRoll@{setRoll}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setRoll()}{setRoll()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Roll (\begin{DoxyParamCaption}\item[{float}]{roll }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera roll axis value. \mbox{\Hypertarget{classFPSCamera_ac76b553fc8b40b4b085895fc27668cc3}\label{classFPSCamera_ac76b553fc8b40b4b085895fc27668cc3}} 
+\index{FPSCamera@{FPSCamera}!setSensitivity@{setSensitivity}}
+\index{setSensitivity@{setSensitivity}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setSensitivity()}{setSensitivity()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Sensitivity (\begin{DoxyParamCaption}\item[{float}]{sensitivity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera view sensitivity. \mbox{\Hypertarget{classFPSCamera_a74889e2b6e3c825a2c1477082edde47f}\label{classFPSCamera_a74889e2b6e3c825a2c1477082edde47f}} 
+\index{FPSCamera@{FPSCamera}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Speed (\begin{DoxyParamCaption}\item[{float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera speed. \mbox{\Hypertarget{classFPSCamera_a2f231f86724f7313696e041cc2059fe1}\label{classFPSCamera_a2f231f86724f7313696e041cc2059fe1}} 
+\index{FPSCamera@{FPSCamera}!setSpeedMultiplier@{setSpeedMultiplier}}
+\index{setSpeedMultiplier@{setSpeedMultiplier}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setSpeedMultiplier()}{setSpeedMultiplier()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Speed\+Multiplier (\begin{DoxyParamCaption}\item[{float}]{speed\+Multiplier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the speed multiplier. \mbox{\Hypertarget{classFPSCamera_ae75d273d5cbde958036583a43e7f3e87}\label{classFPSCamera_ae75d273d5cbde958036583a43e7f3e87}} 
+\index{FPSCamera@{FPSCamera}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{velocity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the velocity of the camera. 
+\begin{DoxyParams}{Parameters}
+{\em velocity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFPSCamera_a7ed37ece3ee5e928398c6ab21d667adc}\label{classFPSCamera_a7ed37ece3ee5e928398c6ab21d667adc}} 
+\index{FPSCamera@{FPSCamera}!setYaw@{setYaw}}
+\index{setYaw@{setYaw}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{setYaw()}{setYaw()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Yaw (\begin{DoxyParamCaption}\item[{float}]{yaw }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera yaw axis value. \mbox{\Hypertarget{classFPSCamera_a74aaa28494ca10f7dae147bc5c148980}\label{classFPSCamera_a74aaa28494ca10f7dae147bc5c148980}} 
+\index{FPSCamera@{FPSCamera}!update@{update}}
+\index{update@{update}!FPSCamera@{FPSCamera}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::update (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Update the camera. 
+
+Reimplemented from \mbox{\hyperlink{classCamera_a022b6974113a235ae74668c74571d8f0}{Camera}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+Cameras/F\+P\+S\+Camera.\+h\item 
+Engine/src/\+Cameras/F\+P\+S\+Camera.\+cpp\end{DoxyCompactItemize}

@@ -100,14 +100,21 @@ $(document).ready(function(){initNavTree('classViewport.html','');});
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae19cdc6543fd47183a62644f0a3bfb55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#ae19cdc6543fd47183a62644f0a3bfb55">Viewport</a> (<a class="el" href="classWindow.html">Window</a> *window)</td></tr>
 <tr class="separator:ae19cdc6543fd47183a62644f0a3bfb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e18a1ff4a52be33ef63d25034561850"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#a1e18a1ff4a52be33ef63d25034561850">~Viewport</a> ()</td></tr>
-<tr class="separator:a1e18a1ff4a52be33ef63d25034561850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f9df9148822f45b7de33b784e9fc3ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#a2f9df9148822f45b7de33b784e9fc3ed">apply</a> ()</td></tr>
 <tr class="separator:a2f9df9148822f45b7de33b784e9fc3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad538eb6188cbd91518ab3ae8316d63d4"><td class="memItemLeft" align="right" valign="top">const glm::vec2 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#ad538eb6188cbd91518ab3ae8316d63d4">getSize</a> () const</td></tr>
 <tr class="separator:ad538eb6188cbd91518ab3ae8316d63d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d6a2829fd7dc1b21fb747612001645a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#a2d6a2829fd7dc1b21fb747612001645a">setSize</a> (const glm::vec2 &amp;size)</td></tr>
 <tr class="separator:a2d6a2829fd7dc1b21fb747612001645a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7716b25e997b9adddd1171ea4a7afc93"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#a7716b25e997b9adddd1171ea4a7afc93">getWidth</a> ()</td></tr>
+<tr class="separator:a7716b25e997b9adddd1171ea4a7afc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a594b11a316db6a6a7830700a67a2da82"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#a594b11a316db6a6a7830700a67a2da82">getHeight</a> ()</td></tr>
+<tr class="separator:a594b11a316db6a6a7830700a67a2da82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c0297f8fa471fbd53556d70e7778ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#af4c0297f8fa471fbd53556d70e7778ea">setWidth</a> (float width)</td></tr>
+<tr class="separator:af4c0297f8fa471fbd53556d70e7778ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f29649e1b22fb05e7367407e66ba5eb"><td class="memItemLeft" align="right" valign="top"><a id="a4f29649e1b22fb05e7367407e66ba5eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHeight</b> (float height)</td></tr>
+<tr class="separator:a4f29649e1b22fb05e7367407e66ba5eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77a9a4393149830cb9704305e74a6944"><td class="memItemLeft" align="right" valign="top">const glm::vec4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#a77a9a4393149830cb9704305e74a6944">getColor</a> () const</td></tr>
 <tr class="separator:a77a9a4393149830cb9704305e74a6944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68fbc08f5bf66aa19d282b9a73048602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#a68fbc08f5bf66aa19d282b9a73048602">setColor</a> (const glm::vec4 &amp;color)</td></tr>
@@ -143,9 +150,6 @@ glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Viewport::Viewport </td>
@@ -155,39 +159,8 @@ glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p><a class="el" href="classViewport.html">Viewport</a> constructor </p>
-
-</div>
-</div>
-<a id="a1e18a1ff4a52be33ef63d25034561850"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e18a1ff4a52be33ef63d25034561850">&#9670;&nbsp;</a></span>~Viewport()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Viewport::~Viewport </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p><a class="el" href="classViewport.html">Viewport</a> destructor </p>
 
 </div>
 </div>
@@ -262,6 +235,32 @@ glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></
 
 </div>
 </div>
+<a id="a594b11a316db6a6a7830700a67a2da82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a594b11a316db6a6a7830700a67a2da82">&#9670;&nbsp;</a></span>getHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Viewport::getHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the height dimension of the viewport. </p>
+
+</div>
+</div>
 <a id="ad538eb6188cbd91518ab3ae8316d63d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad538eb6188cbd91518ab3ae8316d63d4">&#9670;&nbsp;</a></span>getSize()</h2>
 
@@ -285,6 +284,32 @@ glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></
 </table>
 </div><div class="memdoc">
 <p>Return the size of the viewport. </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a7716b25e997b9adddd1171ea4a7afc93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7716b25e997b9adddd1171ea4a7afc93">&#9670;&nbsp;</a></span>getWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Viewport::getWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the width dimension of the viewport. </p>
 
 </div>
 </div>
@@ -360,14 +385,38 @@ glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></
 
 </div>
 </div>
-<a id="a3bf49af7a37012e330d293538082f9c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bf49af7a37012e330d293538082f9c1">&#9670;&nbsp;</a></span>setWindow()</h2>
+<a id="af4c0297f8fa471fbd53556d70e7778ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4c0297f8fa471fbd53556d70e7778ea">&#9670;&nbsp;</a></span>setWidth()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Viewport::setWidth </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>width</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the width dimension of the viewport. </p>
+
+</div>
+</div>
+<a id="a3bf49af7a37012e330d293538082f9c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bf49af7a37012e330d293538082f9c1">&#9670;&nbsp;</a></span>setWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Viewport::setWindow </td>
@@ -377,11 +426,6 @@ glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Set the current viewport window. </p>
 
@@ -398,7 +442,7 @@ glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></
     <ul>
         <li class="navelem"><a class="el" href="classViewport.html">Viewport</a></li>
         <li class="footer">
-            Generated on Sun Nov 17 2019 22:57:45 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            Generated on Thu Nov 21 2019 08:02:16 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
             <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
         </li>

@@ -87,8 +87,7 @@ void \mbox{\hyperlink{classShader_aa09f462c0e8f75e9833fe9e934f54d8e}{set\+Unifor
 \item 
 void \mbox{\hyperlink{classShader_a20e4c7647a1d79a18977d45747c4ed8b}{set\+Uniform\+Mat4f}} (const std\+::string \&name, const glm\+::mat4 \&matrix)
 \item 
-\mbox{\Hypertarget{classShader_abe52a17214908086e9cd7fd63dc27e5d}\label{classShader_abe52a17214908086e9cd7fd63dc27e5d}} 
-unsigned int {\bfseries get\+Uniform\+Location} (const std\+::string \&uniform\+\_\+name)
+unsigned int \mbox{\hyperlink{classShader_abe52a17214908086e9cd7fd63dc27e5d}{get\+Uniform\+Location}} (const std\+::string \&uniform\+\_\+name)
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -186,7 +185,13 @@ Return the shader name. \begin{DoxyReturn}{Returns}
 Return the Open\+GL shader id. \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classShader_a161808c663dc259fd5db2be34aa62e83}\label{classShader_a161808c663dc259fd5db2be34aa62e83}} 
+\mbox{\Hypertarget{classShader_abe52a17214908086e9cd7fd63dc27e5d}\label{classShader_abe52a17214908086e9cd7fd63dc27e5d}} 
+\index{Shader@{Shader}!getUniformLocation@{getUniformLocation}}
+\index{getUniformLocation@{getUniformLocation}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{getUniformLocation()}{getUniformLocation()}}
+{\footnotesize\ttfamily unsigned int Shader\+::get\+Uniform\+Location (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+\_\+name }\end{DoxyParamCaption})}
+
+Return the uniform location \mbox{\Hypertarget{classShader_a161808c663dc259fd5db2be34aa62e83}\label{classShader_a161808c663dc259fd5db2be34aa62e83}} 
 \index{Shader@{Shader}!link@{link}}
 \index{link@{link}!Shader@{Shader}}
 \doxysubsubsection{\texorpdfstring{link()}{link()}}
@@ -207,13 +212,13 @@ Load the shader sources. \mbox{\Hypertarget{classShader_a6a3ad7b19c1b78b851a21dc
 \index{Shader@{Shader}!setUniform1i@{setUniform1i}}
 \index{setUniform1i@{setUniform1i}!Shader@{Shader}}
 \doxysubsubsection{\texorpdfstring{setUniform1i()}{setUniform1i()}}
-{\footnotesize\ttfamily void Shader\+::set\+Uniform1i (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform1i (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{value }\end{DoxyParamCaption})}
 
 Set uniform integer. \mbox{\Hypertarget{classShader_a1fc8695974689072af9a6a0b72d730f2}\label{classShader_a1fc8695974689072af9a6a0b72d730f2}} 
 \index{Shader@{Shader}!setUniform2f@{setUniform2f}}
 \index{setUniform2f@{setUniform2f}!Shader@{Shader}}
 \doxysubsubsection{\texorpdfstring{setUniform2f()}{setUniform2f()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Shader\+::set\+Uniform2f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::vec2 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform2f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::vec2 \&}]{value }\end{DoxyParamCaption})}
 
 Set uniform of a vector 2D. 
 \begin{DoxyParams}{Parameters}
@@ -226,13 +231,13 @@ Set uniform of a vector 2D.
 \index{Shader@{Shader}!setUniform2f@{setUniform2f}}
 \index{setUniform2f@{setUniform2f}!Shader@{Shader}}
 \doxysubsubsection{\texorpdfstring{setUniform2f()}{setUniform2f()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Shader\+::set\+Uniform2f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform2f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
 
 Set uniform of 2 floats. \mbox{\Hypertarget{classShader_a0dec027bcce58039d4a82941d12e4b34}\label{classShader_a0dec027bcce58039d4a82941d12e4b34}} 
 \index{Shader@{Shader}!setUniform3f@{setUniform3f}}
 \index{setUniform3f@{setUniform3f}!Shader@{Shader}}
 \doxysubsubsection{\texorpdfstring{setUniform3f()}{setUniform3f()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Shader\+::set\+Uniform3f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::vec3 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform3f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::vec3 \&}]{value }\end{DoxyParamCaption})}
 
 Set uniform of a vector 3D. 
 \begin{DoxyParams}{Parameters}
@@ -245,13 +250,13 @@ Set uniform of a vector 3D.
 \index{Shader@{Shader}!setUniform3f@{setUniform3f}}
 \index{setUniform3f@{setUniform3f}!Shader@{Shader}}
 \doxysubsubsection{\texorpdfstring{setUniform3f()}{setUniform3f()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Shader\+::set\+Uniform3f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform3f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
 
 Set uniform of 3 floats. \mbox{\Hypertarget{classShader_af31ded6413555fc0f03094e503c5d5d6}\label{classShader_af31ded6413555fc0f03094e503c5d5d6}} 
 \index{Shader@{Shader}!setUniform4f@{setUniform4f}}
 \index{setUniform4f@{setUniform4f}!Shader@{Shader}}
 \doxysubsubsection{\texorpdfstring{setUniform4f()}{setUniform4f()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Shader\+::set\+Uniform4f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::vec4 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform4f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::vec4 \&}]{value }\end{DoxyParamCaption})}
 
 Set uniform vector 4D. 
 \begin{DoxyParams}{Parameters}
@@ -264,7 +269,7 @@ Set uniform vector 4D.
 \index{Shader@{Shader}!setUniform4f@{setUniform4f}}
 \index{setUniform4f@{setUniform4f}!Shader@{Shader}}
 \doxysubsubsection{\texorpdfstring{setUniform4f()}{setUniform4f()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Shader\+::set\+Uniform4f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform4f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w }\end{DoxyParamCaption})}
 
 Set uniform 4 floats. 
 \begin{DoxyParams}{Parameters}
@@ -283,7 +288,7 @@ Set uniform 4 floats.
 \index{Shader@{Shader}!setUniformMat4f@{setUniformMat4f}}
 \index{setUniformMat4f@{setUniformMat4f}!Shader@{Shader}}
 \doxysubsubsection{\texorpdfstring{setUniformMat4f()}{setUniformMat4f()}}
-{\footnotesize\ttfamily void Shader\+::set\+Uniform\+Mat4f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat4 \&}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Shader\+::set\+Uniform\+Mat4f (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat4 \&}]{matrix }\end{DoxyParamCaption})}
 
 Set uniform matrix 4x4. \mbox{\Hypertarget{classShader_a232e3eac4e91c3c8203524fbad428e63}\label{classShader_a232e3eac4e91c3c8203524fbad428e63}} 
 \index{Shader@{Shader}!shaderTypeToString@{shaderTypeToString}}

@@ -1,0 +1,82 @@
+\hypertarget{classSceneManager}{}\doxysection{Scene\+Manager Class Reference}
+\label{classSceneManager}\index{SceneManager@{SceneManager}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSceneManager_a8ef2ffa73b2cb217d9b9149585a87086}\label{classSceneManager_a8ef2ffa73b2cb217d9b9149585a87086}} 
+typedef std\+::vector$<$ \mbox{\hyperlink{classScene}{Scene}} $\ast$ $>$ {\bfseries Scenes\+List}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSceneManager_a8b195be621119bb20fd7f39f84d182ba}{add\+Scene}} (\mbox{\hyperlink{classScene}{Scene}} $\ast$scene)
+\item 
+const Scenes\+List \& \mbox{\hyperlink{classSceneManager_a992b63a023e6c1fc07736471acac8654}{get\+Scenes}} ()
+\item 
+void \mbox{\hyperlink{classSceneManager_a6d3256c3eee1baf15347c4e40a751f17}{set\+Scenes}} (const Scenes\+List \&scenes)
+\item 
+bool \mbox{\hyperlink{classSceneManager_a94d9d5c5d2372b76a3b1f8c273a31b13}{remove\+Scene}} (\mbox{\hyperlink{classScene}{Scene}} $\ast$scene)
+\item 
+\mbox{\Hypertarget{classSceneManager_ad2b96e1887886aea6555d2677d50e23c}\label{classSceneManager_ad2b96e1887886aea6555d2677d50e23c}} 
+\mbox{\hyperlink{classScene}{Scene}} $\ast$ {\bfseries get\+Active\+Scene} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSceneManager_ab0c1ce240143d4801467f741f8eae562}\label{classSceneManager_ab0c1ce240143d4801467f741f8eae562}} 
+\mbox{\hyperlink{classScene}{Scene}} $\ast$ {\bfseries active\+Scene}
+\item 
+\mbox{\Hypertarget{classSceneManager_a07907aaaf76e4d4306273a3c3f0e8d3d}\label{classSceneManager_a07907aaaf76e4d4306273a3c3f0e8d3d}} 
+Scenes\+List {\bfseries scenes}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSceneManager_a8b195be621119bb20fd7f39f84d182ba}\label{classSceneManager_a8b195be621119bb20fd7f39f84d182ba}} 
+\index{SceneManager@{SceneManager}!addScene@{addScene}}
+\index{addScene@{addScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{addScene()}{addScene()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::add\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classScene}{Scene}} $\ast$}]{scene }\end{DoxyParamCaption})}
+
+Add a new scene to the list. 
+\begin{DoxyParams}{Parameters}
+{\em scene} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSceneManager_a992b63a023e6c1fc07736471acac8654}\label{classSceneManager_a992b63a023e6c1fc07736471acac8654}} 
+\index{SceneManager@{SceneManager}!getScenes@{getScenes}}
+\index{getScenes@{getScenes}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{getScenes()}{getScenes()}}
+{\footnotesize\ttfamily const Scenes\+List\& Scene\+Manager\+::get\+Scenes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the scenes list. \mbox{\Hypertarget{classSceneManager_a94d9d5c5d2372b76a3b1f8c273a31b13}\label{classSceneManager_a94d9d5c5d2372b76a3b1f8c273a31b13}} 
+\index{SceneManager@{SceneManager}!removeScene@{removeScene}}
+\index{removeScene@{removeScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{removeScene()}{removeScene()}}
+{\footnotesize\ttfamily bool Scene\+Manager\+::remove\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classScene}{Scene}} $\ast$}]{scene }\end{DoxyParamCaption})}
+
+Remove a scene from the list by pointer. 
+\begin{DoxyParams}{Parameters}
+{\em scene} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSceneManager_a6d3256c3eee1baf15347c4e40a751f17}\label{classSceneManager_a6d3256c3eee1baf15347c4e40a751f17}} 
+\index{SceneManager@{SceneManager}!setScenes@{setScenes}}
+\index{setScenes@{setScenes}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{setScenes()}{setScenes()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::set\+Scenes (\begin{DoxyParamCaption}\item[{const Scenes\+List \&}]{scenes }\end{DoxyParamCaption})}
+
+The the scenes list. 
+\begin{DoxyParams}{Parameters}
+{\em scenes} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+Scene/Scene\+Manager.\+h\item 
+Engine/src/\+Scene/Scene\+Manager.\+cpp\end{DoxyCompactItemize}

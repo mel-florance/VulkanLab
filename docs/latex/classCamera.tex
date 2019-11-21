@@ -1,0 +1,316 @@
+\hypertarget{classCamera}{}\doxysection{Camera Class Reference}
+\label{classCamera}\index{Camera@{Camera}}
+Inheritance diagram for Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCamera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCamera_a067ff88e77f1a66f1dc9f1fbbb92b80c}{Camera}} (\mbox{\hyperlink{classViewport}{Viewport}} $\ast$viewport)
+\item 
+virtual \mbox{\hyperlink{classCamera_ad1897942d0ccf91052386388a497349f}{$\sim$\+Camera}} ()
+\item 
+virtual void \mbox{\hyperlink{classCamera_a022b6974113a235ae74668c74571d8f0}{update}} (float delta)
+\item 
+glm\+::vec3 \& \mbox{\hyperlink{classCamera_ae206a19d576b3292b63d47581a7aa955}{get\+Position}} ()
+\item 
+void \mbox{\hyperlink{classCamera_a6c80882e87be75bde67f432ca3b21607}{set\+Position}} (const glm\+::vec3 \&position)
+\item 
+\mbox{\hyperlink{classViewport}{Viewport}} $\ast$ \mbox{\hyperlink{classCamera_a5c4418eacae0b94f64908d2d284601cb}{get\+Viewport}} ()
+\item 
+void \mbox{\hyperlink{classCamera_a704e80a3bcf7812bdad36d26eedc81c9}{set\+Viewport}} (\mbox{\hyperlink{classViewport}{Viewport}} $\ast$viewport)
+\item 
+const glm\+::vec3 \& \mbox{\hyperlink{classCamera_ae3eb0e7352fa7b29a22046e4c35d7a5f}{get\+Direction}} () const
+\item 
+void \mbox{\hyperlink{classCamera_a0f154cbcdf7abe96060d531d9fd8898a}{set\+Direction}} (const glm\+::vec3 \&direction)
+\item 
+const glm\+::vec3 \& \mbox{\hyperlink{classCamera_a0e5a30c63bc181c87db1b897d97911db}{get\+Up}} () const
+\item 
+void \mbox{\hyperlink{classCamera_acd252404a7ef31e327af15710bd433a4}{set\+Up}} (const glm\+::vec3 \&up)
+\item 
+const glm\+::vec3 \& \mbox{\hyperlink{classCamera_acd05abc98ad5707f1bad9a85a5f0285b}{get\+Right}} () const
+\item 
+void \mbox{\hyperlink{classCamera_a02cf8fe9d3413fcb1f95a14ef02da9a3}{set\+Right}} (const glm\+::vec3 \&right)
+\item 
+const glm\+::mat4 \& \mbox{\hyperlink{classCamera_a4567751bc0135ebc9d7bb66095087b25}{get\+Projection}} () const
+\item 
+void \mbox{\hyperlink{classCamera_aac7f67947538a3262841c56d68aa8247}{set\+Projection}} (const glm\+::mat4 \&projection)
+\item 
+float \mbox{\hyperlink{classCamera_a71e957327f96cd913cd1ecd7d42c35e3}{get\+Fov}} ()
+\item 
+void \mbox{\hyperlink{classCamera_ab7d4dba9b253711a47f2e61c0188f4f6}{set\+Fov}} (float fov)
+\item 
+\mbox{\Hypertarget{classCamera_aacbbab8370df9c01164184c696bbd387}\label{classCamera_aacbbab8370df9c01164184c696bbd387}} 
+float {\bfseries get\+Aspect\+Ratio} ()
+\item 
+void \mbox{\hyperlink{classCamera_ad4c5e591077abfa0f7ed95b231da38b9}{set\+Aspect\+Ratio}} (float ratio)
+\item 
+float \mbox{\hyperlink{classCamera_abb6b10d520e938318c5ac384a2782eae}{get\+Far}} ()
+\item 
+\mbox{\Hypertarget{classCamera_ae9080c3b660a69f80f6f19787846cac0}\label{classCamera_ae9080c3b660a69f80f6f19787846cac0}} 
+void {\bfseries set\+Far} (float far)
+\item 
+\mbox{\Hypertarget{classCamera_a0bc11a4bdfcd2100b73d3e24dabd60f2}\label{classCamera_a0bc11a4bdfcd2100b73d3e24dabd60f2}} 
+float {\bfseries get\+Near} ()
+\item 
+\mbox{\Hypertarget{classCamera_a72d9ada917618e3505fa0cd1f82f6272}\label{classCamera_a72d9ada917618e3505fa0cd1f82f6272}} 
+void {\bfseries set\+Near} (float near)
+\item 
+const glm\+::vec3 \& \mbox{\hyperlink{classCamera_ab89b2331c0ec872c0bffcd4f465103ff}{get\+World\+Up}} () const
+\item 
+void \mbox{\hyperlink{classCamera_ad256751e870cc7a9cafbcf5bb76132d5}{set\+World\+Up}} (const glm\+::vec3 \&world\+Up)
+\item 
+const glm\+::mat4 \& \mbox{\hyperlink{classCamera_adbc07f3d92af31766d0ab5b2f6dcced0}{get\+View}} () const
+\item 
+void \mbox{\hyperlink{classCamera_ad5e20d157bf988bb56a2314237f910d6}{set\+View}} (const glm\+::mat4 \&view)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCamera_aa91491698db51f70c62199d8c2213514}\label{classCamera_aa91491698db51f70c62199d8c2213514}} 
+glm\+::vec3 {\bfseries direction}
+\item 
+\mbox{\Hypertarget{classCamera_aebffcc6289dd99df7554b18d00a81161}\label{classCamera_aebffcc6289dd99df7554b18d00a81161}} 
+glm\+::vec3 {\bfseries right}
+\item 
+\mbox{\Hypertarget{classCamera_a3fe5f351380fb118ffc600591769f049}\label{classCamera_a3fe5f351380fb118ffc600591769f049}} 
+glm\+::vec3 {\bfseries up}
+\item 
+\mbox{\Hypertarget{classCamera_a97e7a4ff433ea2bfcbfd40469aaf4d83}\label{classCamera_a97e7a4ff433ea2bfcbfd40469aaf4d83}} 
+glm\+::vec3 {\bfseries world\+Up}
+\item 
+\mbox{\Hypertarget{classCamera_aff7393c9cfbccd7e369091f00008da93}\label{classCamera_aff7393c9cfbccd7e369091f00008da93}} 
+float {\bfseries fov}
+\item 
+\mbox{\Hypertarget{classCamera_aa6f013fdb4560daaa5ca6ace1a846ca7}\label{classCamera_aa6f013fdb4560daaa5ca6ace1a846ca7}} 
+float {\bfseries aspect\+Ratio}
+\item 
+\mbox{\Hypertarget{classCamera_ae268798a4cb3052aaa800c9293f80c68}\label{classCamera_ae268798a4cb3052aaa800c9293f80c68}} 
+glm\+::vec2 {\bfseries clipping}
+\item 
+\mbox{\Hypertarget{classCamera_a43555a0ae83f9ec696ee257e5fd48cf2}\label{classCamera_a43555a0ae83f9ec696ee257e5fd48cf2}} 
+glm\+::mat4 {\bfseries projection}
+\item 
+\mbox{\Hypertarget{classCamera_add93fedd6b9a6a6e2c784aeda624de83}\label{classCamera_add93fedd6b9a6a6e2c784aeda624de83}} 
+glm\+::mat4 {\bfseries view}
+\item 
+\mbox{\Hypertarget{classCamera_a04b5db2c530d8630660e8cfb93a4b3b5}\label{classCamera_a04b5db2c530d8630660e8cfb93a4b3b5}} 
+glm\+::vec3 {\bfseries position}
+\item 
+\mbox{\Hypertarget{classCamera_af54c65076920a7d7904e60f7cd30b16b}\label{classCamera_af54c65076920a7d7904e60f7cd30b16b}} 
+\mbox{\hyperlink{classViewport}{Viewport}} $\ast$ {\bfseries viewport}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCamera_a067ff88e77f1a66f1dc9f1fbbb92b80c}\label{classCamera_a067ff88e77f1a66f1dc9f1fbbb92b80c}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classViewport}{Viewport}} $\ast$}]{viewport }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classCamera}{Camera}} constructor 
+\begin{DoxyParams}{Parameters}
+{\em viewport} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_ad1897942d0ccf91052386388a497349f}\label{classCamera_ad1897942d0ccf91052386388a497349f}} 
+\index{Camera@{Camera}!````~Camera@{$\sim$Camera}}
+\index{````~Camera@{$\sim$Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{$\sim$Camera()}{~Camera()}}
+{\footnotesize\ttfamily Camera\+::$\sim$\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\hyperlink{classCamera}{Camera}} destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCamera_ae3eb0e7352fa7b29a22046e4c35d7a5f}\label{classCamera_ae3eb0e7352fa7b29a22046e4c35d7a5f}} 
+\index{Camera@{Camera}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getDirection()}{getDirection()}}
+{\footnotesize\ttfamily const glm\+::vec3\& Camera\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the direction of the camera. \mbox{\Hypertarget{classCamera_abb6b10d520e938318c5ac384a2782eae}\label{classCamera_abb6b10d520e938318c5ac384a2782eae}} 
+\index{Camera@{Camera}!getFar@{getFar}}
+\index{getFar@{getFar}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getFar()}{getFar()}}
+{\footnotesize\ttfamily float Camera\+::get\+Far (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera far clipping plane. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a71e957327f96cd913cd1ecd7d42c35e3}\label{classCamera_a71e957327f96cd913cd1ecd7d42c35e3}} 
+\index{Camera@{Camera}!getFov@{getFov}}
+\index{getFov@{getFov}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getFov()}{getFov()}}
+{\footnotesize\ttfamily float Camera\+::get\+Fov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera field of view. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_ae206a19d576b3292b63d47581a7aa955}\label{classCamera_ae206a19d576b3292b63d47581a7aa955}} 
+\index{Camera@{Camera}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3\& Camera\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera position; \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a4567751bc0135ebc9d7bb66095087b25}\label{classCamera_a4567751bc0135ebc9d7bb66095087b25}} 
+\index{Camera@{Camera}!getProjection@{getProjection}}
+\index{getProjection@{getProjection}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getProjection()}{getProjection()}}
+{\footnotesize\ttfamily const glm\+::mat4\& Camera\+::get\+Projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera projection. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_acd05abc98ad5707f1bad9a85a5f0285b}\label{classCamera_acd05abc98ad5707f1bad9a85a5f0285b}} 
+\index{Camera@{Camera}!getRight@{getRight}}
+\index{getRight@{getRight}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getRight()}{getRight()}}
+{\footnotesize\ttfamily const glm\+::vec3\& Camera\+::get\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera right vector. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a0e5a30c63bc181c87db1b897d97911db}\label{classCamera_a0e5a30c63bc181c87db1b897d97911db}} 
+\index{Camera@{Camera}!getUp@{getUp}}
+\index{getUp@{getUp}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getUp()}{getUp()}}
+{\footnotesize\ttfamily const glm\+::vec3\& Camera\+::get\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera up vector. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_adbc07f3d92af31766d0ab5b2f6dcced0}\label{classCamera_adbc07f3d92af31766d0ab5b2f6dcced0}} 
+\index{Camera@{Camera}!getView@{getView}}
+\index{getView@{getView}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getView()}{getView()}}
+{\footnotesize\ttfamily const glm\+::mat4\& Camera\+::get\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the camera view matrix. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a5c4418eacae0b94f64908d2d284601cb}\label{classCamera_a5c4418eacae0b94f64908d2d284601cb}} 
+\index{Camera@{Camera}!getViewport@{getViewport}}
+\index{getViewport@{getViewport}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getViewport()}{getViewport()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classViewport}{Viewport}}$\ast$ Camera\+::get\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the viewport associated to the camera. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_ab89b2331c0ec872c0bffcd4f465103ff}\label{classCamera_ab89b2331c0ec872c0bffcd4f465103ff}} 
+\index{Camera@{Camera}!getWorldUp@{getWorldUp}}
+\index{getWorldUp@{getWorldUp}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getWorldUp()}{getWorldUp()}}
+{\footnotesize\ttfamily const glm\+::vec3\& Camera\+::get\+World\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the world up vector. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_ad4c5e591077abfa0f7ed95b231da38b9}\label{classCamera_ad4c5e591077abfa0f7ed95b231da38b9}} 
+\index{Camera@{Camera}!setAspectRatio@{setAspectRatio}}
+\index{setAspectRatio@{setAspectRatio}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setAspectRatio()}{setAspectRatio()}}
+{\footnotesize\ttfamily void Camera\+::set\+Aspect\+Ratio (\begin{DoxyParamCaption}\item[{float}]{ratio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera aspect ratio. Must the width / height. 
+\begin{DoxyParams}{Parameters}
+{\em ratio} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a0f154cbcdf7abe96060d531d9fd8898a}\label{classCamera_a0f154cbcdf7abe96060d531d9fd8898a}} 
+\index{Camera@{Camera}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily void Camera\+::set\+Direction (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the direction of the camera. 
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_ab7d4dba9b253711a47f2e61c0188f4f6}\label{classCamera_ab7d4dba9b253711a47f2e61c0188f4f6}} 
+\index{Camera@{Camera}!setFov@{setFov}}
+\index{setFov@{setFov}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setFov()}{setFov()}}
+{\footnotesize\ttfamily void Camera\+::set\+Fov (\begin{DoxyParamCaption}\item[{float}]{fov }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera field of view. 
+\begin{DoxyParams}{Parameters}
+{\em fov} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a6c80882e87be75bde67f432ca3b21607}\label{classCamera_a6c80882e87be75bde67f432ca3b21607}} 
+\index{Camera@{Camera}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Camera\+::set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera position. \mbox{\Hypertarget{classCamera_aac7f67947538a3262841c56d68aa8247}\label{classCamera_aac7f67947538a3262841c56d68aa8247}} 
+\index{Camera@{Camera}!setProjection@{setProjection}}
+\index{setProjection@{setProjection}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setProjection()}{setProjection()}}
+{\footnotesize\ttfamily void Camera\+::set\+Projection (\begin{DoxyParamCaption}\item[{const glm\+::mat4 \&}]{projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera projection \mbox{\Hypertarget{classCamera_a02cf8fe9d3413fcb1f95a14ef02da9a3}\label{classCamera_a02cf8fe9d3413fcb1f95a14ef02da9a3}} 
+\index{Camera@{Camera}!setRight@{setRight}}
+\index{setRight@{setRight}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setRight()}{setRight()}}
+{\footnotesize\ttfamily void Camera\+::set\+Right (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera right vector. 
+\begin{DoxyParams}{Parameters}
+{\em right} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_acd252404a7ef31e327af15710bd433a4}\label{classCamera_acd252404a7ef31e327af15710bd433a4}} 
+\index{Camera@{Camera}!setUp@{setUp}}
+\index{setUp@{setUp}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily void Camera\+::set\+Up (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{up }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera up vector. 
+\begin{DoxyParams}{Parameters}
+{\em up} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_ad5e20d157bf988bb56a2314237f910d6}\label{classCamera_ad5e20d157bf988bb56a2314237f910d6}} 
+\index{Camera@{Camera}!setView@{setView}}
+\index{setView@{setView}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setView()}{setView()}}
+{\footnotesize\ttfamily void Camera\+::set\+View (\begin{DoxyParamCaption}\item[{const glm\+::mat4 \&}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera view matrix. \mbox{\Hypertarget{classCamera_a704e80a3bcf7812bdad36d26eedc81c9}\label{classCamera_a704e80a3bcf7812bdad36d26eedc81c9}} 
+\index{Camera@{Camera}!setViewport@{setViewport}}
+\index{setViewport@{setViewport}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setViewport()}{setViewport()}}
+{\footnotesize\ttfamily void Camera\+::set\+Viewport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classViewport}{Viewport}} $\ast$}]{viewport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the camera viewport to use. \mbox{\Hypertarget{classCamera_ad256751e870cc7a9cafbcf5bb76132d5}\label{classCamera_ad256751e870cc7a9cafbcf5bb76132d5}} 
+\index{Camera@{Camera}!setWorldUp@{setWorldUp}}
+\index{setWorldUp@{setWorldUp}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setWorldUp()}{setWorldUp()}}
+{\footnotesize\ttfamily void Camera\+::set\+World\+Up (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{world\+Up }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the world up vector. \mbox{\Hypertarget{classCamera_a022b6974113a235ae74668c74571d8f0}\label{classCamera_a022b6974113a235ae74668c74571d8f0}} 
+\index{Camera@{Camera}!update@{update}}
+\index{update@{update}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Camera\+::update (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Update the camera. 
+
+Reimplemented in \mbox{\hyperlink{classFPSCamera_a74aaa28494ca10f7dae147bc5c148980}{F\+P\+S\+Camera}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine/src/\+Cameras/Camera.\+h\item 
+Engine/src/\+Cameras/Camera.\+cpp\end{DoxyCompactItemize}

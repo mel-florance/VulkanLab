@@ -87,14 +87,50 @@ $(document).ready(function(){initNavTree('classMesh.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classMesh-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Mesh Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for Mesh:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classMesh.png" usemap="#Mesh_map" alt=""/>
+  <map id="Mesh_map" name="Mesh_map">
+<area href="classQuad.html" alt="Quad" shape="rect" coords="0,56,43,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aeb3bf4ac51deb70f986f82f655dbf3ab"><td class="memItemLeft" align="right" valign="top"><a id="aeb3bf4ac51deb70f986f82f655dbf3ab"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>VertexBufferType</b> { <b>VERTEX</b>, 
+<b>UV</b>, 
+<b>NORMAL</b>, 
+<b>TANGENT</b>
+ }</td></tr>
+<tr class="separator:aeb3bf4ac51deb70f986f82f655dbf3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba521e2d175551050a3bf2d8da34aa93"><td class="memItemLeft" align="right" valign="top"><a id="aba521e2d175551050a3bf2d8da34aa93"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DrawMode</b> { <br />
+&#160;&#160;<b>POINTS</b> = 0x0000, 
+<b>LINES</b> = 0x0001, 
+<b>LINE_LOOP</b> = 0x0002, 
+<b>LINE_STRIP</b> = 0x0003, 
+<br />
+&#160;&#160;<b>TRIANGLES</b> = 0x0004, 
+<b>TRIANGLE_STRIP</b> = 0x0005, 
+<b>TRIANGLE_FAN</b> = 0x0006, 
+<b>QUADS</b> = 0x0007
+<br />
+ }</td></tr>
+<tr class="separator:aba521e2d175551050a3bf2d8da34aa93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f4b66e4bd7ce9027e4f1ed55123ab6"><td class="memItemLeft" align="right" valign="top"><a id="ad3f4b66e4bd7ce9027e4f1ed55123ab6"></a>
+typedef std::map&lt; <a class="el" href="classArrayBuffer.html">ArrayBuffer</a> *, std::vector&lt; <a class="el" href="classVertexBuffer.html">VertexBuffer</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MeshBuffers</b></td></tr>
+<tr class="separator:ad3f4b66e4bd7ce9027e4f1ed55123ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2af137f1571af89172b9c102302c416b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#a2af137f1571af89172b9c102302c416b">Mesh</a> ()</td></tr>
@@ -124,21 +160,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setVertices</b> (std:
 <tr class="separator:a76ac540c1cbd21634fbe27b4aa85ab50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75a296d00b2be8ebc6315ef875132595"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#a75a296d00b2be8ebc6315ef875132595">setWireframe</a> (bool wireframe)</td></tr>
 <tr class="separator:a75a296d00b2be8ebc6315ef875132595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3295b043a81354fbb7de067fb9bf1678"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; float &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#a3295b043a81354fbb7de067fb9bf1678">getNormals</a> () const</td></tr>
+<tr class="separator:a3295b043a81354fbb7de067fb9bf1678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866f45cfa5de32181c5d60ca4430728c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#a866f45cfa5de32181c5d60ca4430728c">setNormals</a> (const std::vector&lt; float &gt; &amp;normals)</td></tr>
+<tr class="separator:a866f45cfa5de32181c5d60ca4430728c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd8ed32865acee8d6d7bb94c5e36e24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#a2dd8ed32865acee8d6d7bb94c5e36e24">addBuffer</a> (<a class="el" href="classArrayBuffer.html">ArrayBuffer</a> *vao, <a class="el" href="classVertexBuffer.html">VertexBuffer</a> *buffer)</td></tr>
+<tr class="separator:a2dd8ed32865acee8d6d7bb94c5e36e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174d50069daebf65d0ca069ef2296828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#a174d50069daebf65d0ca069ef2296828">addArrayBuffer</a> (<a class="el" href="classArrayBuffer.html">ArrayBuffer</a> *buffer)</td></tr>
+<tr class="separator:a174d50069daebf65d0ca069ef2296828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848b58b9b1c49199da9fbc41b444be1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMaterial.html">Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#a848b58b9b1c49199da9fbc41b444be1d">getMaterial</a> () const</td></tr>
+<tr class="separator:a848b58b9b1c49199da9fbc41b444be1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee71afee77988e9233bee788ac501f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#acee71afee77988e9233bee788ac501f3">setMaterial</a> (<a class="el" href="classMaterial.html">Material</a> *material)</td></tr>
+<tr class="separator:acee71afee77988e9233bee788ac501f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf9a7aebf1ee4a11f06e4069420644e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#aadf9a7aebf1ee4a11f06e4069420644e">hasMaterial</a> ()</td></tr>
+<tr class="separator:aadf9a7aebf1ee4a11f06e4069420644e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:a6ad1226aabf6b2a0ded67b8dee1fb514"><td class="memItemLeft" align="right" valign="top"><a id="a6ad1226aabf6b2a0ded67b8dee1fb514"></a>
 std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertices</b></td></tr>
 <tr class="separator:a6ad1226aabf6b2a0ded67b8dee1fb514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f5e428a8cbddaec56be1979741661f6"><td class="memItemLeft" align="right" valign="top"><a id="a9f5e428a8cbddaec56be1979741661f6"></a>
 std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>uvs</b></td></tr>
 <tr class="separator:a9f5e428a8cbddaec56be1979741661f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e5b298d8e342be15f8d5ab027109b6"><td class="memItemLeft" align="right" valign="top"><a id="a50e5b298d8e342be15f8d5ab027109b6"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>normals</b></td></tr>
+<tr class="separator:a50e5b298d8e342be15f8d5ab027109b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af580f92e63a9ca3f615447e85324b346"><td class="memItemLeft" align="right" valign="top"><a id="af580f92e63a9ca3f615447e85324b346"></a>
+MeshBuffers&#160;</td><td class="memItemRight" valign="bottom"><b>buffers</b></td></tr>
+<tr class="separator:af580f92e63a9ca3f615447e85324b346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2293ce5a7d3e598871a36bc8f81bba7d"><td class="memItemLeft" align="right" valign="top"><a id="a2293ce5a7d3e598871a36bc8f81bba7d"></a>
+<a class="el" href="classMaterial.html">Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>material</b></td></tr>
+<tr class="separator:a2293ce5a7d3e598871a36bc8f81bba7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c56ce7eb4124760b990410c2d0339e3"><td class="memItemLeft" align="right" valign="top"><a id="a2c56ce7eb4124760b990410c2d0339e3"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>vertexCount</b></td></tr>
 <tr class="separator:a2c56ce7eb4124760b990410c2d0339e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01f560d804a533fe7ff145fd53ff12f2"><td class="memItemLeft" align="right" valign="top"><a id="a01f560d804a533fe7ff145fd53ff12f2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>wireframe</b></td></tr>
 <tr class="separator:a01f560d804a533fe7ff145fd53ff12f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac71384ad5267e80771d3bf9f5d31b338"><td class="memItemLeft" align="right" valign="top"><a id="ac71384ad5267e80771d3bf9f5d31b338"></a>
+DrawMode&#160;</td><td class="memItemRight" valign="bottom"><b>drawMode</b></td></tr>
+<tr class="separator:ac71384ad5267e80771d3bf9f5d31b338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2af137f1571af89172b9c102302c416b"></a>
@@ -178,6 +243,65 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>wireframe</b></td></t
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a174d50069daebf65d0ca069ef2296828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a174d50069daebf65d0ca069ef2296828">&#9670;&nbsp;</a></span>addArrayBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesh::addArrayBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classArrayBuffer.html">ArrayBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2dd8ed32865acee8d6d7bb94c5e36e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd8ed32865acee8d6d7bb94c5e36e24">&#9670;&nbsp;</a></span>addBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesh::addBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classArrayBuffer.html">ArrayBuffer</a> *&#160;</td>
+          <td class="paramname"><em>vao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVertexBuffer.html">VertexBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If the mesh array buffer is not a nullptr, then add the new buffer to the list of mesh's buffers. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td></td></tr>
+    <tr><td class="paramname">buffer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a996a8668fa2ca7d95d6d10744c833bc8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a996a8668fa2ca7d95d6d10744c833bc8">&#9670;&nbsp;</a></span>draw()</h2>
 
@@ -193,6 +317,58 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>wireframe</b></td></t
       </table>
 </div><div class="memdoc">
 <p>Draw the mesh. </p>
+
+</div>
+</div>
+<a id="a848b58b9b1c49199da9fbc41b444be1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848b58b9b1c49199da9fbc41b444be1d">&#9670;&nbsp;</a></span>getMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMaterial.html">Material</a>* Mesh::getMaterial </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the mesh material. </p>
+
+</div>
+</div>
+<a id="a3295b043a81354fbb7de067fb9bf1678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3295b043a81354fbb7de067fb9bf1678">&#9670;&nbsp;</a></span>getNormals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;float&gt;&amp; Mesh::getNormals </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the normals data array. </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -326,6 +502,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>wireframe</b></td></t
 
 </div>
 </div>
+<a id="aadf9a7aebf1ee4a11f06e4069420644e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf9a7aebf1ee4a11f06e4069420644e">&#9670;&nbsp;</a></span>hasMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mesh::hasMaterial </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if a mesh has a material assigned. </p>
+
+</div>
+</div>
 <a id="a76ac540c1cbd21634fbe27b4aa85ab50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76ac540c1cbd21634fbe27b4aa85ab50">&#9670;&nbsp;</a></span>isWireframe()</h2>
 
@@ -349,6 +551,70 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>wireframe</b></td></t
 </table>
 </div><div class="memdoc">
 <p>Return wireframe enabled. </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="acee71afee77988e9233bee788ac501f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee71afee77988e9233bee788ac501f3">&#9670;&nbsp;</a></span>setMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesh::setMaterial </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMaterial.html">Material</a> *&#160;</td>
+          <td class="paramname"><em>material</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the mesh material. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">material</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a866f45cfa5de32181c5d60ca4430728c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a866f45cfa5de32181c5d60ca4430728c">&#9670;&nbsp;</a></span>setNormals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesh::setNormals </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>normals</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the normals data array. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normals</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -454,7 +720,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>wireframe</b></td></t
     <ul>
         <li class="navelem"><a class="el" href="classMesh.html">Mesh</a></li>
         <li class="footer">
-            Generated on Sun Nov 17 2019 22:57:45 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            Generated on Thu Nov 21 2019 08:02:16 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
             <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
         </li>

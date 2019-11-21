@@ -16,12 +16,19 @@ Inheritance diagram for Material\+:\begin{figure}[H]
 const char $\ast$ \mbox{\hyperlink{classMaterial_ab6e045998987aafc7b74dcf8482ff0af}{get\+Name}} ()
 \item 
 void \mbox{\hyperlink{classMaterial_a5769295c2b63c6d72a457fc0e260d83a}{set\+Name}} (const char $\ast$value)
+\item 
+\mbox{\hyperlink{classShader}{Shader}} $\ast$ \mbox{\hyperlink{classMaterial_a405ea2b45835c8f2066fb31cb0dde2ff}{get\+Shader}} () const
+\item 
+void \mbox{\hyperlink{classMaterial_a6a731acc226edd48779db6b9810f6c76}{set\+Shader}} (\mbox{\hyperlink{classShader}{Shader}} $\ast$shader)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classMaterial_a0605a1d6f67d57c6840655337cfe3435}\label{classMaterial_a0605a1d6f67d57c6840655337cfe3435}} 
 const char $\ast$ {\bfseries name}
+\item 
+\mbox{\Hypertarget{classMaterial_abaac6082ee6cf042b2d4da4f6e6fe403}\label{classMaterial_abaac6082ee6cf042b2d4da4f6e6fe403}} 
+\mbox{\hyperlink{classShader}{Shader}} $\ast$ {\bfseries shader}
 \end{DoxyCompactItemize}
 
 
@@ -55,6 +62,15 @@ const char $\ast$ {\bfseries name}
 Return the name of the material. \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classMaterial_a405ea2b45835c8f2066fb31cb0dde2ff}\label{classMaterial_a405ea2b45835c8f2066fb31cb0dde2ff}} 
+\index{Material@{Material}!getShader@{getShader}}
+\index{getShader@{getShader}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{getShader()}{getShader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classShader}{Shader}}$\ast$ Material\+::get\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the material shader. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \mbox{\Hypertarget{classMaterial_a5769295c2b63c6d72a457fc0e260d83a}\label{classMaterial_a5769295c2b63c6d72a457fc0e260d83a}} 
 \index{Material@{Material}!setName@{setName}}
 \index{setName@{setName}!Material@{Material}}
@@ -64,6 +80,17 @@ Return the name of the material. \begin{DoxyReturn}{Returns}
 Set the name of the material. 
 \begin{DoxyParams}{Parameters}
 {\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMaterial_a6a731acc226edd48779db6b9810f6c76}\label{classMaterial_a6a731acc226edd48779db6b9810f6c76}} 
+\index{Material@{Material}!setShader@{setShader}}
+\index{setShader@{setShader}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{setShader()}{setShader()}}
+{\footnotesize\ttfamily void Material\+::set\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classShader}{Shader}} $\ast$}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the material shader. 
+\begin{DoxyParams}{Parameters}
+{\em shader} & \\
 \hline
 \end{DoxyParams}
 

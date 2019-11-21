@@ -5,13 +5,20 @@
 \item 
 \mbox{\hyperlink{classViewport_ae19cdc6543fd47183a62644f0a3bfb55}{Viewport}} (\mbox{\hyperlink{classWindow}{Window}} $\ast$window)
 \item 
-\mbox{\hyperlink{classViewport_a1e18a1ff4a52be33ef63d25034561850}{$\sim$\+Viewport}} ()
-\item 
 void \mbox{\hyperlink{classViewport_a2f9df9148822f45b7de33b784e9fc3ed}{apply}} ()
 \item 
 const glm\+::vec2 \& \mbox{\hyperlink{classViewport_ad538eb6188cbd91518ab3ae8316d63d4}{get\+Size}} () const
 \item 
 void \mbox{\hyperlink{classViewport_a2d6a2829fd7dc1b21fb747612001645a}{set\+Size}} (const glm\+::vec2 \&size)
+\item 
+float \mbox{\hyperlink{classViewport_a7716b25e997b9adddd1171ea4a7afc93}{get\+Width}} ()
+\item 
+float \mbox{\hyperlink{classViewport_a594b11a316db6a6a7830700a67a2da82}{get\+Height}} ()
+\item 
+void \mbox{\hyperlink{classViewport_af4c0297f8fa471fbd53556d70e7778ea}{set\+Width}} (float width)
+\item 
+\mbox{\Hypertarget{classViewport_a4f29649e1b22fb05e7367407e66ba5eb}\label{classViewport_a4f29649e1b22fb05e7367407e66ba5eb}} 
+void {\bfseries set\+Height} (float height)
 \item 
 const glm\+::vec4 \& \mbox{\hyperlink{classViewport_a77a9a4393149830cb9704305e74a6944}{get\+Color}} () const
 \item 
@@ -48,15 +55,9 @@ glm\+::vec4 {\bfseries color}
 \index{Viewport@{Viewport}!Viewport@{Viewport}}
 \index{Viewport@{Viewport}!Viewport@{Viewport}}
 \doxysubsubsection{\texorpdfstring{Viewport()}{Viewport()}}
-{\footnotesize\ttfamily Viewport\+::\+Viewport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWindow}{Window}} $\ast$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Viewport\+::\+Viewport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWindow}{Window}} $\ast$}]{window }\end{DoxyParamCaption})}
 
-\mbox{\hyperlink{classViewport}{Viewport}} constructor \mbox{\Hypertarget{classViewport_a1e18a1ff4a52be33ef63d25034561850}\label{classViewport_a1e18a1ff4a52be33ef63d25034561850}} 
-\index{Viewport@{Viewport}!````~Viewport@{$\sim$Viewport}}
-\index{````~Viewport@{$\sim$Viewport}!Viewport@{Viewport}}
-\doxysubsubsection{\texorpdfstring{$\sim$Viewport()}{~Viewport()}}
-{\footnotesize\ttfamily Viewport\+::$\sim$\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\hyperlink{classViewport}{Viewport}} destructor 
+\mbox{\hyperlink{classViewport}{Viewport}} constructor 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classViewport_a2f9df9148822f45b7de33b784e9fc3ed}\label{classViewport_a2f9df9148822f45b7de33b784e9fc3ed}} 
@@ -77,7 +78,13 @@ Clear the viewport. \mbox{\Hypertarget{classViewport_a77a9a4393149830cb9704305e7
 \doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
 {\footnotesize\ttfamily const glm\+::vec4\& Viewport\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the clear color of the viewport. \mbox{\Hypertarget{classViewport_ad538eb6188cbd91518ab3ae8316d63d4}\label{classViewport_ad538eb6188cbd91518ab3ae8316d63d4}} 
+Return the clear color of the viewport. \mbox{\Hypertarget{classViewport_a594b11a316db6a6a7830700a67a2da82}\label{classViewport_a594b11a316db6a6a7830700a67a2da82}} 
+\index{Viewport@{Viewport}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily float Viewport\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the height dimension of the viewport. \mbox{\Hypertarget{classViewport_ad538eb6188cbd91518ab3ae8316d63d4}\label{classViewport_ad538eb6188cbd91518ab3ae8316d63d4}} 
 \index{Viewport@{Viewport}!getSize@{getSize}}
 \index{getSize@{getSize}!Viewport@{Viewport}}
 \doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
@@ -86,7 +93,13 @@ Return the clear color of the viewport. \mbox{\Hypertarget{classViewport_ad538eb
 Return the size of the viewport. \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classViewport_a5b02538fed36780e9cdee2512d6a2706}\label{classViewport_a5b02538fed36780e9cdee2512d6a2706}} 
+\mbox{\Hypertarget{classViewport_a7716b25e997b9adddd1171ea4a7afc93}\label{classViewport_a7716b25e997b9adddd1171ea4a7afc93}} 
+\index{Viewport@{Viewport}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily float Viewport\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the width dimension of the viewport. \mbox{\Hypertarget{classViewport_a5b02538fed36780e9cdee2512d6a2706}\label{classViewport_a5b02538fed36780e9cdee2512d6a2706}} 
 \index{Viewport@{Viewport}!getWindow@{getWindow}}
 \index{getWindow@{getWindow}!Viewport@{Viewport}}
 \doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
@@ -104,11 +117,17 @@ Set the clear color of the viewport. \mbox{\Hypertarget{classViewport_a2d6a2829f
 \doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
 {\footnotesize\ttfamily void Viewport\+::set\+Size (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Set the dimensions of the viewport. \mbox{\Hypertarget{classViewport_a3bf49af7a37012e330d293538082f9c1}\label{classViewport_a3bf49af7a37012e330d293538082f9c1}} 
+Set the dimensions of the viewport. \mbox{\Hypertarget{classViewport_af4c0297f8fa471fbd53556d70e7778ea}\label{classViewport_af4c0297f8fa471fbd53556d70e7778ea}} 
+\index{Viewport@{Viewport}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{setWidth()}{setWidth()}}
+{\footnotesize\ttfamily void Viewport\+::set\+Width (\begin{DoxyParamCaption}\item[{float}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the width dimension of the viewport. \mbox{\Hypertarget{classViewport_a3bf49af7a37012e330d293538082f9c1}\label{classViewport_a3bf49af7a37012e330d293538082f9c1}} 
 \index{Viewport@{Viewport}!setWindow@{setWindow}}
 \index{setWindow@{setWindow}!Viewport@{Viewport}}
 \doxysubsubsection{\texorpdfstring{setWindow()}{setWindow()}}
-{\footnotesize\ttfamily void Viewport\+::set\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWindow}{Window}} $\ast$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Viewport\+::set\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWindow}{Window}} $\ast$}]{window }\end{DoxyParamCaption})}
 
 Set the current viewport window. 
 

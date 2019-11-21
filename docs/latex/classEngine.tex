@@ -18,6 +18,8 @@ void \mbox{\hyperlink{classEngine_ab4536d56a03a884a7d0973d6687fbeaa}{set\+Render
 \mbox{\hyperlink{classWindow}{Window}} $\ast$ \mbox{\hyperlink{classEngine_a489f7416219428daaf485df049051bd9}{get\+Window}} () const
 \item 
 void \mbox{\hyperlink{classEngine_a91cbb1c8a67e9353735f004d2d3fdd86}{set\+Window}} (\mbox{\hyperlink{classWindow}{Window}} $\ast$window)
+\item 
+\mbox{\hyperlink{classSceneManager}{Scene\+Manager}} $\ast$ \mbox{\hyperlink{classEngine_a6e0056511f89987ade28f7486e51da08}{get\+Scenes\+Manager}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -29,12 +31,17 @@ static void \mbox{\hyperlink{classEngine_ac88ada17b33bc5ddaf6bb73e0cdc67f3}{stop
 static void \mbox{\hyperlink{classEngine_af4e46c0122281e3892f6ba1241225208}{update}} (\mbox{\hyperlink{classLoop}{Loop}} $\ast$loop, \mbox{\hyperlink{classEngine}{Engine}} $\ast$self)
 \item 
 static void \mbox{\hyperlink{classEngine_ab4be5b320148b83636c74e3103d747a6}{render}} (\mbox{\hyperlink{classLoop}{Loop}} $\ast$loop, \mbox{\hyperlink{classEngine}{Engine}} $\ast$self)
+\item 
+static void \mbox{\hyperlink{classEngine_ac1f464fae5491e590c5442a61738bd38}{on\+Event}} (Event\+Type event, \mbox{\hyperlink{structEvent}{Event}} $\ast$data)
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classEngine_ab44caa70713c4df4bbf157687cda6048}\label{classEngine_ab44caa70713c4df4bbf157687cda6048}} 
 static \mbox{\hyperlink{classLoop}{Loop}} $\ast$ {\bfseries loop} = nullptr
+\item 
+\mbox{\Hypertarget{classEngine_ac06e32d8c07245592fd134aba790db32}\label{classEngine_ac06e32d8c07245592fd134aba790db32}} 
+static \mbox{\hyperlink{classSceneManager}{Scene\+Manager}} $\ast$ {\bfseries scenes\+Manager} = nullptr
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -69,7 +76,13 @@ Return the engine loop. \begin{DoxyReturn}{Returns}
 Return the currently attached renderer. \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classEngine_a69a377a2abd2a0dc432531bf7f19e63c}\label{classEngine_a69a377a2abd2a0dc432531bf7f19e63c}} 
+\mbox{\Hypertarget{classEngine_a6e0056511f89987ade28f7486e51da08}\label{classEngine_a6e0056511f89987ade28f7486e51da08}} 
+\index{Engine@{Engine}!getScenesManager@{getScenesManager}}
+\index{getScenesManager@{getScenesManager}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{getScenesManager()}{getScenesManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSceneManager}{Scene\+Manager}}$\ast$ Engine\+::get\+Scenes\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return a reference to the scenes\+Manager pointer. \mbox{\Hypertarget{classEngine_a69a377a2abd2a0dc432531bf7f19e63c}\label{classEngine_a69a377a2abd2a0dc432531bf7f19e63c}} 
 \index{Engine@{Engine}!getViewport@{getViewport}}
 \index{getViewport@{getViewport}!Engine@{Engine}}
 \doxysubsubsection{\texorpdfstring{getViewport()}{getViewport()}}
@@ -87,7 +100,13 @@ Return the currently attached viewport. \begin{DoxyReturn}{Returns}
 Return the current window \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classEngine_ab4be5b320148b83636c74e3103d747a6}\label{classEngine_ab4be5b320148b83636c74e3103d747a6}} 
+\mbox{\Hypertarget{classEngine_ac1f464fae5491e590c5442a61738bd38}\label{classEngine_ac1f464fae5491e590c5442a61738bd38}} 
+\index{Engine@{Engine}!onEvent@{onEvent}}
+\index{onEvent@{onEvent}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{onEvent()}{onEvent()}}
+{\footnotesize\ttfamily void Engine\+::on\+Event (\begin{DoxyParamCaption}\item[{Event\+Type}]{event,  }\item[{\mbox{\hyperlink{structEvent}{Event}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+When an event occurs. \mbox{\Hypertarget{classEngine_ab4be5b320148b83636c74e3103d747a6}\label{classEngine_ab4be5b320148b83636c74e3103d747a6}} 
 \index{Engine@{Engine}!render@{render}}
 \index{render@{render}!Engine@{Engine}}
 \doxysubsubsection{\texorpdfstring{render()}{render()}}

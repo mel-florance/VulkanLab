@@ -115,6 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a489f7416219428daaf485df049051bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91cbb1c8a67e9353735f004d2d3fdd86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#a91cbb1c8a67e9353735f004d2d3fdd86">setWindow</a> (<a class="el" href="classWindow.html">Window</a> *window)</td></tr>
 <tr class="separator:a91cbb1c8a67e9353735f004d2d3fdd86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e0056511f89987ade28f7486e51da08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSceneManager.html">SceneManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#a6e0056511f89987ade28f7486e51da08">getScenesManager</a> ()</td></tr>
+<tr class="separator:a6e0056511f89987ade28f7486e51da08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -126,12 +128,17 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:af4e46c0122281e3892f6ba1241225208"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4be5b320148b83636c74e3103d747a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#ab4be5b320148b83636c74e3103d747a6">render</a> (<a class="el" href="classLoop.html">Loop</a> *loop, <a class="el" href="classEngine.html">Engine</a> *self)</td></tr>
 <tr class="separator:ab4be5b320148b83636c74e3103d747a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f464fae5491e590c5442a61738bd38"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#ac1f464fae5491e590c5442a61738bd38">onEvent</a> (EventType event, <a class="el" href="structEvent.html">Event</a> *data)</td></tr>
+<tr class="separator:ac1f464fae5491e590c5442a61738bd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ab44caa70713c4df4bbf157687cda6048"><td class="memItemLeft" align="right" valign="top"><a id="ab44caa70713c4df4bbf157687cda6048"></a>
 static <a class="el" href="classLoop.html">Loop</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>loop</b> = nullptr</td></tr>
 <tr class="separator:ab44caa70713c4df4bbf157687cda6048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06e32d8c07245592fd134aba790db32"><td class="memItemLeft" align="right" valign="top"><a id="ac06e32d8c07245592fd134aba790db32"></a>
+static <a class="el" href="classSceneManager.html">SceneManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>scenesManager</b> = nullptr</td></tr>
+<tr class="separator:ac06e32d8c07245592fd134aba790db32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -198,6 +205,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6e0056511f89987ade28f7486e51da08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e0056511f89987ade28f7486e51da08">&#9670;&nbsp;</a></span>getScenesManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSceneManager.html">SceneManager</a>* Engine::getScenesManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return a reference to the scenesManager pointer. </p>
+
+</div>
+</div>
 <a id="a69a377a2abd2a0dc432531bf7f19e63c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69a377a2abd2a0dc432531bf7f19e63c">&#9670;&nbsp;</a></span>getViewport()</h2>
 
@@ -247,6 +280,43 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Return the current window </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ac1f464fae5491e590c5442a61738bd38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1f464fae5491e590c5442a61738bd38">&#9670;&nbsp;</a></span>onEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine::onEvent </td>
+          <td>(</td>
+          <td class="paramtype">EventType&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structEvent.html">Event</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>When an event occurs. </p>
 
 </div>
 </div>
@@ -522,7 +592,7 @@ Private Attributes</h2></td></tr>
     <ul>
         <li class="navelem"><a class="el" href="classEngine.html">Engine</a></li>
         <li class="footer">
-            Generated on Sun Nov 17 2019 22:57:45 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            Generated on Thu Nov 21 2019 08:02:16 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
             <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
         </li>

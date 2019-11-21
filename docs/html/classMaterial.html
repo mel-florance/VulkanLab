@@ -114,12 +114,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab6e045998987aafc7b74dcf8482ff0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5769295c2b63c6d72a457fc0e260d83a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMaterial.html#a5769295c2b63c6d72a457fc0e260d83a">setName</a> (const char *value)</td></tr>
 <tr class="separator:a5769295c2b63c6d72a457fc0e260d83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405ea2b45835c8f2066fb31cb0dde2ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classShader.html">Shader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMaterial.html#a405ea2b45835c8f2066fb31cb0dde2ff">getShader</a> () const</td></tr>
+<tr class="separator:a405ea2b45835c8f2066fb31cb0dde2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a731acc226edd48779db6b9810f6c76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMaterial.html#a6a731acc226edd48779db6b9810f6c76">setShader</a> (<a class="el" href="classShader.html">Shader</a> *shader)</td></tr>
+<tr class="separator:a6a731acc226edd48779db6b9810f6c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a0605a1d6f67d57c6840655337cfe3435"><td class="memItemLeft" align="right" valign="top"><a id="a0605a1d6f67d57c6840655337cfe3435"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
 <tr class="separator:a0605a1d6f67d57c6840655337cfe3435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaac6082ee6cf042b2d4da4f6e6fe403"><td class="memItemLeft" align="right" valign="top"><a id="abaac6082ee6cf042b2d4da4f6e6fe403"></a>
+<a class="el" href="classShader.html">Shader</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>shader</b></td></tr>
+<tr class="separator:abaac6082ee6cf042b2d4da4f6e6fe403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a493fc6a5d3050e23dfcfc17e5c5a9937"></a>
@@ -191,6 +198,32 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td>
 
 </div>
 </div>
+<a id="a405ea2b45835c8f2066fb31cb0dde2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a405ea2b45835c8f2066fb31cb0dde2ff">&#9670;&nbsp;</a></span>getShader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classShader.html">Shader</a>* Material::getShader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the material shader. </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a5769295c2b63c6d72a457fc0e260d83a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5769295c2b63c6d72a457fc0e260d83a">&#9670;&nbsp;</a></span>setName()</h2>
 
@@ -223,6 +256,38 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td>
 
 </div>
 </div>
+<a id="a6a731acc226edd48779db6b9810f6c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a731acc226edd48779db6b9810f6c76">&#9670;&nbsp;</a></span>setShader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Material::setShader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classShader.html">Shader</a> *&#160;</td>
+          <td class="paramname"><em>shader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the material shader. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shader</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Engine/src/Materials/<a class="el" href="Material_8h_source.html">Material.h</a></li>
 <li>Engine/src/Materials/Material.cpp</li>
@@ -234,7 +299,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td>
     <ul>
         <li class="navelem"><a class="el" href="classMaterial.html">Material</a></li>
         <li class="footer">
-            Generated on Sun Nov 17 2019 22:57:45 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            Generated on Thu Nov 21 2019 08:02:16 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
             <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
         </li>

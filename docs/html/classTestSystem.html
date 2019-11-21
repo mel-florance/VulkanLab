@@ -99,17 +99,15 @@ Inheritance diagram for TestSystem:</div>
  <div class="center">
   <img src="classTestSystem.png" usemap="#TestSystem_map" alt=""/>
   <map id="TestSystem_map" name="TestSystem_map">
-<area href="classECS_1_1EntitySystem.html" alt="ECS::EntitySystem" shape="rect" coords="0,56,406,80"/>
-<area href="classECS_1_1EventSubscriber.html" alt="ECS::EventSubscriber&lt; Events::OnEntityCreated &gt;" shape="rect" coords="416,56,822,80"/>
-<area href="classECS_1_1EventSubscriber.html" alt="ECS::EventSubscriber&lt; Events::OnEntityDestroyed &gt;" shape="rect" coords="832,56,1238,80"/>
-<area href="classECS_1_1EventSubscriber.html" alt="ECS::EventSubscriber&lt; Events::OnComponentRemoved&lt; Position &gt; &gt;" shape="rect" coords="1248,56,1654,80"/>
-<area href="classECS_1_1EventSubscriber.html" alt="ECS::EventSubscriber&lt; Events::OnComponentRemoved&lt; Rotation &gt; &gt;" shape="rect" coords="1664,56,2070,80"/>
-<area href="classECS_1_1EventSubscriber.html" alt="ECS::EventSubscriber&lt; SomeEvent &gt;" shape="rect" coords="2080,56,2486,80"/>
-<area href="classECS_1_1Internal_1_1BaseEventSubscriber.html" alt="ECS::Internal::BaseEventSubscriber" shape="rect" coords="416,0,822,24"/>
-<area href="classECS_1_1Internal_1_1BaseEventSubscriber.html" alt="ECS::Internal::BaseEventSubscriber" shape="rect" coords="832,0,1238,24"/>
-<area href="classECS_1_1Internal_1_1BaseEventSubscriber.html" alt="ECS::Internal::BaseEventSubscriber" shape="rect" coords="1248,0,1654,24"/>
-<area href="classECS_1_1Internal_1_1BaseEventSubscriber.html" alt="ECS::Internal::BaseEventSubscriber" shape="rect" coords="1664,0,2070,24"/>
-<area href="classECS_1_1Internal_1_1BaseEventSubscriber.html" alt="ECS::Internal::BaseEventSubscriber" shape="rect" coords="2080,0,2486,24"/>
+<area href="classECS_1_1EntitySystem.html" alt="ECS::EntitySystem" shape="rect" coords="0,56,481,80"/>
+<area href="classECS_1_1EventSubscriber.html" alt="ECS::EventSubscriber&lt; Events::OnEntityCreated &gt;" shape="rect" coords="491,56,972,80"/>
+<area href="classECS_1_1EventSubscriber.html" alt="ECS::EventSubscriber&lt; Events::OnEntityDestroyed &gt;" shape="rect" coords="982,56,1463,80"/>
+<area href="classECS_1_1EventSubscriber.html" alt="ECS::EventSubscriber&lt; Events::OnComponentRemoved&lt; TransformComponent &gt; &gt;" shape="rect" coords="1473,56,1954,80"/>
+<area href="classECS_1_1EventSubscriber.html" alt="ECS::EventSubscriber&lt; SomeEvent &gt;" shape="rect" coords="1964,56,2445,80"/>
+<area href="classECS_1_1Internal_1_1BaseEventSubscriber.html" alt="ECS::Internal::BaseEventSubscriber" shape="rect" coords="491,0,972,24"/>
+<area href="classECS_1_1Internal_1_1BaseEventSubscriber.html" alt="ECS::Internal::BaseEventSubscriber" shape="rect" coords="982,0,1463,24"/>
+<area href="classECS_1_1Internal_1_1BaseEventSubscriber.html" alt="ECS::Internal::BaseEventSubscriber" shape="rect" coords="1473,0,1954,24"/>
+<area href="classECS_1_1Internal_1_1BaseEventSubscriber.html" alt="ECS::Internal::BaseEventSubscriber" shape="rect" coords="1964,0,2445,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -126,10 +124,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> (cla
 <tr class="separator:aa4389bba918269c018b25c3c6e916eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fc850f879ce2cdfdb69a93aa17b6588"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestSystem.html#a7fc850f879ce2cdfdb69a93aa17b6588">receive</a> (class <a class="el" href="classECS_1_1World.html">World</a> *world, const <a class="el" href="structECS_1_1Events_1_1OnEntityDestroyed.html">Events::OnEntityDestroyed</a> &amp;event) override</td></tr>
 <tr class="separator:a7fc850f879ce2cdfdb69a93aa17b6588"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f7c26823131445c210ea39a49a8e389"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestSystem.html#a5f7c26823131445c210ea39a49a8e389">receive</a> (class <a class="el" href="classECS_1_1World.html">World</a> *world, const <a class="el" href="structECS_1_1Events_1_1OnComponentRemoved.html">Events::OnComponentRemoved</a>&lt; <a class="el" href="structPosition.html">Position</a> &gt; &amp;event) override</td></tr>
-<tr class="separator:a5f7c26823131445c210ea39a49a8e389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a935cfe63a870cae9eaf1e546cad51241"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestSystem.html#a935cfe63a870cae9eaf1e546cad51241">receive</a> (class <a class="el" href="classECS_1_1World.html">World</a> *world, const <a class="el" href="structECS_1_1Events_1_1OnComponentRemoved.html">Events::OnComponentRemoved</a>&lt; <a class="el" href="structRotation.html">Rotation</a> &gt; &amp;event) override</td></tr>
-<tr class="separator:a935cfe63a870cae9eaf1e546cad51241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90426a000847d27c190948148feeaf9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestSystem.html#ad90426a000847d27c190948148feeaf9">receive</a> (class <a class="el" href="classECS_1_1World.html">World</a> *world, const <a class="el" href="structECS_1_1Events_1_1OnComponentRemoved.html">Events::OnComponentRemoved</a>&lt; <a class="el" href="structTransformComponent.html">TransformComponent</a> &gt; &amp;event) override</td></tr>
+<tr class="separator:ad90426a000847d27c190948148feeaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a446cdd024d781b2f626dafad39e24368"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestSystem.html#a446cdd024d781b2f626dafad39e24368">receive</a> (class <a class="el" href="classECS_1_1World.html">World</a> *world, const <a class="el" href="structSomeEvent.html">SomeEvent</a> &amp;event) override</td></tr>
 <tr class="separator:a446cdd024d781b2f626dafad39e24368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classECS_1_1EntitySystem"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classECS_1_1EntitySystem')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classECS_1_1EntitySystem.html">ECS::EntitySystem</a></td></tr>
@@ -166,8 +162,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> (cla
 
 </div>
 </div>
-<a id="a5f7c26823131445c210ea39a49a8e389"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f7c26823131445c210ea39a49a8e389">&#9670;&nbsp;</a></span>receive() <span class="overload">[1/5]</span></h2>
+<a id="ad90426a000847d27c190948148feeaf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad90426a000847d27c190948148feeaf9">&#9670;&nbsp;</a></span>receive() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +180,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> (cla
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structECS_1_1Events_1_1OnComponentRemoved.html">Events::OnComponentRemoved</a>&lt; <a class="el" href="structPosition.html">Position</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structECS_1_1Events_1_1OnComponentRemoved.html">Events::OnComponentRemoved</a>&lt; <a class="el" href="structTransformComponent.html">TransformComponent</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>event</em>&#160;</td>
         </tr>
         <tr>
@@ -201,51 +197,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> (cla
 </div><div class="memdoc">
 <p>Called when an event is emitted by the world. </p>
 
-<p>Implements <a class="el" href="classECS_1_1EventSubscriber.html#a4de8a075a0e50b4096ffaf7f7f5cd93e">ECS::EventSubscriber&lt; Events::OnComponentRemoved&lt; Position &gt; &gt;</a>.</p>
-
-</div>
-</div>
-<a id="a935cfe63a870cae9eaf1e546cad51241"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a935cfe63a870cae9eaf1e546cad51241">&#9670;&nbsp;</a></span>receive() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void TestSystem::receive </td>
-          <td>(</td>
-          <td class="paramtype">class <a class="el" href="classECS_1_1World.html">World</a> *&#160;</td>
-          <td class="paramname"><em>world</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structECS_1_1Events_1_1OnComponentRemoved.html">Events::OnComponentRemoved</a>&lt; <a class="el" href="structRotation.html">Rotation</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>event</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Called when an event is emitted by the world. </p>
-
-<p>Implements <a class="el" href="classECS_1_1EventSubscriber.html#a4de8a075a0e50b4096ffaf7f7f5cd93e">ECS::EventSubscriber&lt; Events::OnComponentRemoved&lt; Rotation &gt; &gt;</a>.</p>
+<p>Implements <a class="el" href="classECS_1_1EventSubscriber.html#a4de8a075a0e50b4096ffaf7f7f5cd93e">ECS::EventSubscriber&lt; Events::OnComponentRemoved&lt; TransformComponent &gt; &gt;</a>.</p>
 
 </div>
 </div>
 <a id="aa4389bba918269c018b25c3c6e916eba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4389bba918269c018b25c3c6e916eba">&#9670;&nbsp;</a></span>receive() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4389bba918269c018b25c3c6e916eba">&#9670;&nbsp;</a></span>receive() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +241,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> (cla
 </div>
 </div>
 <a id="a7fc850f879ce2cdfdb69a93aa17b6588"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fc850f879ce2cdfdb69a93aa17b6588">&#9670;&nbsp;</a></span>receive() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc850f879ce2cdfdb69a93aa17b6588">&#9670;&nbsp;</a></span>receive() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,7 +280,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> (cla
 </div>
 </div>
 <a id="a446cdd024d781b2f626dafad39e24368"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a446cdd024d781b2f626dafad39e24368">&#9670;&nbsp;</a></span>receive() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a446cdd024d781b2f626dafad39e24368">&#9670;&nbsp;</a></span>receive() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -391,7 +348,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> (cla
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Engine/src/main.cpp</li>
+<li>Engine/src/ECS/Systems/<a class="el" href="TestSystem_8h_source.html">TestSystem.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -400,7 +357,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> (cla
     <ul>
         <li class="navelem"><a class="el" href="classTestSystem.html">TestSystem</a></li>
         <li class="footer">
-            Generated on Sun Nov 17 2019 22:57:45 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            Generated on Thu Nov 21 2019 08:02:16 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
             <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
         </li>
