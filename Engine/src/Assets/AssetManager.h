@@ -10,8 +10,7 @@
 #include "../Shaders/Shader.h"
 #include "../Texturing/Texture.h"
 #include "../Materials/Material.h"
-
-
+#include "../Scene/Node.h"
 
 namespace fs = std::filesystem;
 
@@ -91,6 +90,8 @@ public:
 
             this->materials[name] = std::make_pair(AssetType::MATERIAL, material);
             return material;
+        } else if constexpr (std::is_same<T, Node>::value) {
+
         }
     }
 

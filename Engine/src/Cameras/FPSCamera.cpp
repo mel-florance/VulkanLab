@@ -48,7 +48,7 @@ void FPSCamera::compute() {
 }
 
 void FPSCamera::update(float delta) {
-//    glfwSetInputMode(this->viewport->getWindow()->getInstance(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    glfwSetInputMode(this->viewport->getWindow()->getInstance(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     this->delta = delta;
     float dts = this->delta * this->speed;
 
@@ -61,13 +61,13 @@ void FPSCamera::update(float delta) {
     if (movementDirection & Direction::BACKWARD)
         this->velocity -= z;
     if (movementDirection & Direction::LEFT)
-        this->velocity += x;
-    if (movementDirection & Direction::RIGHT)
         this->velocity -= x;
+    if (movementDirection & Direction::RIGHT)
+        this->velocity += x;
     if (movementDirection & Direction::UP)
-        this->velocity += y;
-    if (movementDirection & Direction::DOWN)
         this->velocity -= y;
+    if (movementDirection & Direction::DOWN)
+        this->velocity += y;
 
     this->compute();
 

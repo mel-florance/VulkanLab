@@ -5,7 +5,9 @@
 #include <vector>
 
 class ArrayBuffer;
+
 class VertexBuffer;
+
 class Material;
 
 class Mesh {
@@ -20,7 +22,7 @@ public:
      */
     ~Mesh();
 
-    typedef std::map<ArrayBuffer*, std::vector<VertexBuffer*>> MeshBuffers;
+    typedef std::map<ArrayBuffer *, std::vector<VertexBuffer *>> MeshBuffers;
 
     enum VertexBufferType {
         VERTEX,
@@ -40,6 +42,8 @@ public:
         QUADS = 0x0007
     };
 
+    void setupBuffers();
+
     /*
      * Set the mesh vertices.
      */
@@ -52,7 +56,7 @@ public:
      * Return the mesh vertices.
      * @return
      */
-    inline const std::vector<float> &getVertices() const {
+    inline std::vector<float> &getVertices() {
         return this->vertices;
     }
 
@@ -66,7 +70,7 @@ public:
     /**
      * Return the mesh vertex count.
      */
-    unsigned int getVertexCount() const {
+    inline unsigned int getVertexCount() const {
         return this->vertexCount;
     }
 
@@ -86,7 +90,7 @@ public:
      * Return the mesh uvs array.
      * @return
      */
-    const std::vector<float> &getUvs() const {
+    inline std::vector<float> &getUvs() {
         return this->uvs;
     }
 
@@ -94,7 +98,7 @@ public:
      * Set the mesh uvs array.
      * @param uvs
      */
-    void setUvs(std::vector<float> uvs) {
+    inline void setUvs(std::vector<float> uvs) {
         this->uvs = uvs;
     }
 
@@ -125,7 +129,7 @@ public:
      * Return the normals data array.
      * @return
      */
-    inline const std::vector<float> &getNormals() const {
+    inline std::vector<float> &getNormals() {
         return this->normals;
     }
 
@@ -143,18 +147,18 @@ public:
      * @param type
      * @param buffer
      */
-    void addBuffer(ArrayBuffer* vao, VertexBuffer* buffer);
+    void addBuffer(ArrayBuffer *vao, VertexBuffer *buffer);
 
     /**
      *
      * @param buffer
      */
-    void addArrayBuffer(ArrayBuffer* buffer);
+    void addArrayBuffer(ArrayBuffer *buffer);
 
     /**
      * Return the mesh material.
      */
-    inline Material *getMaterial() const {
+    inline Material *getMaterial() {
         return this->material;
     }
 
@@ -169,18 +173,63 @@ public:
     /**
      * Check if a mesh has a material assigned.
      */
-     inline bool hasMaterial() {
-         return this->material != nullptr;
-     }
+    inline bool hasMaterial() {
+        return this->material != nullptr;
+    }
+
+    /**
+     * Return the name of the mesh.
+     */
+    inline const char *getName() {
+        return this->name;
+    }
+
+    /**
+     * Set the name of the mesh.
+     */
+    inline void setName(const char *name) {
+        this->name = name;
+    }
+
+    /**
+     * Return the indices of the mesh.
+     */
+    inline std::vector<unsigned int> &getIndices() {
+        return this->indices;
+    }
+
+    /**
+     * Set the mesh indices.
+     */
+    inline void setMeshIndices(const std::vector<unsigned int> &indices) {
+        this->indices = indices;
+    }
+
+    /**
+     * Return the mesh tangents.
+     */
+    inline std::vector<float> &getTangents() {
+        return this->tangents;
+    }
+
+    /*
+     * Set the mesh tangents.
+     */
+    inline void setTangents(const std::vector<float> &tangents) {
+        this->tangents = tangents;
+    }
 
 protected:
+    std::vector<unsigned int> indices;
     std::vector<float> vertices;
     std::vector<float> uvs;
     std::vector<float> normals;
+    std::vector<float> tangents;
 
 private:
+    const char *name;
     MeshBuffers buffers;
-    Material* material;
+    Material *material;
 
     unsigned int vertexCount;
     bool wireframe;
