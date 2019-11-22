@@ -13,10 +13,10 @@
 #include "../ECS/Components/NodeComponent.h"
 
 Renderer::Renderer(Engine *engine) : engine(engine) {
+    glEnable(GL_DEPTH_TEST);
 }
 
 Renderer::~Renderer() {
-
 }
 
 void Renderer::render() {
@@ -30,14 +30,16 @@ void Renderer::render() {
         Entity *entity,
         ComponentHandle<MeshComponent> meshComponent,
         ComponentHandle<TransformComponent> transformComponent) {
-        auto material = meshComponent->mesh->getMaterial();
+        if (meshComponent->mesh != nullptr) {
+            auto material = meshComponent->mesh->getMaterial();
 
-        if (material != nullptr) {
-            material->getShader()->bind();
-            material->getShader()->setUniformMat4f("projection", scene->getActiveCamera()->getProjection());
-            material->getShader()->setUniformMat4f("view", scene->getActiveCamera()->getView());
-            material->getShader()->setUniformMat4f("transform", transformComponent->transform->getMatrix());
-            meshComponent->mesh->draw();
+            if (material != nullptr) {
+                material->getShader()->bind();
+                material->getShader()->setUniformMat4f("projection", scene->getActiveCamera()->getProjection());
+                material->getShader()->setUniformMat4f("view", scene->getActiveCamera()->getView());
+                material->getShader()->setUniformMat4f("transform", transformComponent->transform->getMatrix());
+                meshComponent->mesh->draw();
+            }
         }
     });
 }

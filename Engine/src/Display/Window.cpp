@@ -57,6 +57,8 @@ Window::Window(
     glfwSetScrollCallback(this->instance, &Window::onScroll);
     glfwSetCursorPosCallback(this->instance, &Window::onMouseMove);
     glfwSetDropCallback(this->instance, &Window::onDrop);
+
+
 }
 
 /**

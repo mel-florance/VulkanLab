@@ -38,7 +38,7 @@ public:
     /**
      * Update the camera.
      */
-    void update(float delta);
+    void update(float delta) override;
 
     /**
      * OnMouseMove event
