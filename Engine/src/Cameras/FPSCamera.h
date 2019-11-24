@@ -70,7 +70,7 @@ public:
      * Return the camera yaw axis value.
      * @return
      */
-    float getYaw() const {
+    inline float getYaw() {
         return this->yaw;
     }
 
@@ -84,7 +84,7 @@ public:
     /**
      * Return the camera pitch axis value.
      */
-    inline float getPitch() const {
+    inline float getPitch() {
         return this->pitch;
     }
 
@@ -98,7 +98,7 @@ public:
     /**
      * Return the camera roll axis value.
      */
-    inline float getRoll() const {
+    inline float getRoll() {
         return this->roll;
     }
 
@@ -281,7 +281,7 @@ public:
         this->constrainAxis = constrainAxis;
     }
 
-private:
+protected:
     float delta;
     float yaw, pitch, roll;
 

@@ -3,17 +3,25 @@
 
 #include <glm/glm.hpp>
 #include "../ECS.h"
+
 ECS_TYPE_IMPLEMENTATION;
 using namespace ECS;
 
+#include <memory>
 #include "../../Maths/Transform.h"
 
 struct TransformComponent {
     ECS_DECLARE_TYPE;
 
-    TransformComponent() : transform(new Transform()){}
+    TransformComponent() {
+        transform = std::make_shared<Transform>();
+    }
 
-    Transform* transform;
+    ~TransformComponent() {
+
+    }
+
+    std::shared_ptr<Transform> transform;
 };
 
 ECS_DEFINE_TYPE(TransformComponent);

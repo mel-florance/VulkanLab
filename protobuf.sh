@@ -1,0 +1,1 @@
+protoc -I=Engine/src/Network/protos --cpp_out=Engine/src/Network/definitions Engine/src/Network/protos/addressbook.proto

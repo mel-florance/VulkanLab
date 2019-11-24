@@ -11,21 +11,20 @@
 FPSCamera::FPSCamera(Viewport *viewport) :
     Camera(viewport),
     delta(0.0f),
-    yaw(90.0f),
+    yaw(0.0f),
     pitch(0.0f),
     roll(0.0f),
     friction(10.0f),
-    sensitivity(0.3f),
+    sensitivity(0.1f),
     mouseOffset(glm::vec2(0.0f)),
     lastPosition(glm::vec2(0.0f)),
     isFirstTimeMoving(false),
     constrainAxis(true),
     velocity(glm::vec3(0.0f)),
-    speed(125.0f),
+    speed(10.0f),
     speedMultiplier(10.0f),
     minSpeed(0.1f),
-    maxSpeed(1000.0f){
-//    glfwSetCursorPos(this->viewport->getWindow()->getInstance(), 0.5, 0.5);
+    maxSpeed(1000.0f) {
 }
 
 FPSCamera::~FPSCamera() {
@@ -38,9 +37,9 @@ void FPSCamera::compute() {
     float theta = glm::radians(this->yaw);
 
     this->direction = glm::normalize(glm::vec3(
-        cos(theta) * beta,
-        sin(alpha) * 1.0f,
-        sin(theta) * beta
+        cosf(theta) * beta,
+        sinf(alpha) * 1.0f,
+        sinf(theta) * beta
     ));
 
     this->right = glm::normalize(glm::cross(this->direction, this->worldUp));
@@ -48,7 +47,10 @@ void FPSCamera::compute() {
 }
 
 void FPSCamera::update(float delta) {
+
     glfwSetInputMode(this->viewport->getWindow()->getInstance(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    this->compute();
+
     this->delta = delta;
     float dts = this->delta * this->speed;
 
@@ -69,10 +71,10 @@ void FPSCamera::update(float delta) {
     if (movementDirection & Direction::DOWN)
         this->velocity += y;
 
-    this->compute();
+    this->aspectRatio = this->viewport->getWidth() / this->viewport->getHeight();
 
     this->projection = glm::perspective(
-        this->fov,
+        glm::radians(this->fov),
         this->aspectRatio,
         this->getNear(),
         this->getFar()
@@ -86,8 +88,6 @@ void FPSCamera::update(float delta) {
         Camera::position + direction,
         Camera::up
     );
-
-//    std::cout << glm::to_string(this->view) << std::endl;
 }
 
 void FPSCamera::onMouseMove(Event *data) {
@@ -172,5 +172,4 @@ void FPSCamera::onMouseScroll(Event *data) {
 void FPSCamera::onWindowResize(Event *data) {
     WindowEvents *event = (WindowEvents *) data;
     this->aspectRatio = event->width / event->height;
-    std::cout << this->aspectRatio << std::endl;
 }

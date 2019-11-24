@@ -7,10 +7,14 @@
 #include <fstream>
 #include <type_traits>
 #include <filesystem>
+#include "Font.h"
 #include "../Shaders/Shader.h"
 #include "../Texturing/Texture.h"
 #include "../Materials/Material.h"
 #include "../Scene/Node.h"
+
+#include "AssimpImporter.h"
+#include "FontImporter.h"
 
 namespace fs = std::filesystem;
 
@@ -27,7 +31,8 @@ public:
         TEXTURE,
         MATERIAL,
         AUDIO,
-        MODEL
+        MESH,
+        FONT
     };
 
     /**
@@ -49,14 +54,15 @@ public:
      * @return T
      */
     template<class T>
-    inline T *load(const char *filepath, const char *name) {
+    inline T *load(const char *filepath, const char *name, Scene *scene = nullptr) {
         // Shaders loading
         if constexpr (std::is_same<T, Shader>::value) {
             std::fstream vertex, fragment;
             std::string vs_data, fs_data, line_v, line_f;
+            auto path = fs::path(this->root_dir) / fs::path(std::string(filepath));
 
-            vertex.open(fs::path(fs::path(this->root_dir) / fs::path(std::string(filepath) + ".vert")).string());
-            fragment.open(fs::path(fs::path(this->root_dir) / fs::path(std::string(filepath) + ".frag")).string());
+            vertex.open((fs::path(path).string() + ".vert"));
+            fragment.open((fs::path(path).string() + ".frag"));
 
             if (vertex.is_open())
                 while (getline(vertex, line_v))
@@ -90,8 +96,24 @@ public:
 
             this->materials[name] = std::make_pair(AssetType::MATERIAL, material);
             return material;
-        } else if constexpr (std::is_same<T, Node>::value) {
-
+        }
+            // Mesh loading
+        else if constexpr (std::is_same<T, Mesh>::value) {
+            if (scene == nullptr)
+                std::cout << "Can't import the mesh: \"" << filepath << "\","
+                          << "the scene to import to was missing."
+                          << "Please provide a ptr to the desired scene." << std::endl;
+            else {
+                AssimpImporter *importer = new AssimpImporter();
+                importer->import(filepath, scene);
+                Mesh* m = new Mesh();
+                return m;
+            }
+        }
+            // Font loading
+        else if constexpr (std::is_same<T, Font>::value) {
+            FontImporter *fontImporter = new FontImporter();
+            fontImporter->import(filepath);
         }
     }
 

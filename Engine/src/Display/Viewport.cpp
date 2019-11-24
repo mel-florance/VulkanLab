@@ -3,7 +3,7 @@
 #include "Window.h"
 
 Viewport::Viewport(Window *window) : window(window) {
-    this->setColor(glm::vec4(0.1f, 0.1f, 0.1f, 1.0f));
+    this->setColor(glm::vec4(0.05f, 0.05f, 0.05f, 1.0f));
 }
 
 void Viewport::clear() {

@@ -14,7 +14,7 @@ public:
     {
 
     }
-    ~Transform();
+    ~Transform() {}
 
     /**
      * Return the position component of the transformation.
@@ -74,7 +74,6 @@ private:
     glm::vec3 position;
     glm::vec3 rotation;
     glm::vec3 scale;
-
     glm::mat4 matrix;
 };
 

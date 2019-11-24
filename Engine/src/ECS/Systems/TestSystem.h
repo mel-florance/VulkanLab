@@ -6,6 +6,7 @@
 #include "../Components/TransformComponent.h"
 #include "../Components/MeshComponent.h"
 #include "../Components/NodeComponent.h"
+#include "../Components/PointLightComponent.h"
 #include "../Events/SomeEvent.h"
 
 ECS_TYPE_IMPLEMENTATION;
