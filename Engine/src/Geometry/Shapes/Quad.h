@@ -34,32 +34,7 @@ public:
              1.0f, 1.0f
         });
 
-        ArrayBuffer *vao = new ArrayBuffer();
-        vao->bind();
-        this->addArrayBuffer(vao);
-
-        VertexBuffer *vbo_position = new VertexBuffer();
-        vbo_position->bind();
-        vbo_position->setData(this->vertices.data(), this->vertices.size() * sizeof(float));
-
-        // Create a position attribute for the vertices.
-        VertexBuffer::AttributeData *position_attribute = new VertexBuffer::AttributeData();
-        position_attribute->index = 0;
-        position_attribute->size = 3;
-        vbo_position->setAttribute(position_attribute);
-        this->addBuffer(vao, vbo_position);
-
-        // Create a vertex buffer for the uvs to be store.
-        VertexBuffer *vbo_uvs = new VertexBuffer();
-        vbo_uvs->bind();
-        vbo_uvs->setData(uvs.data(), uvs.size() * sizeof(float));
-
-        // Create a uv coordinate attribute for the uvs.
-        VertexBuffer::AttributeData *texture_attribute = new VertexBuffer::AttributeData();
-        texture_attribute->index = 1;
-        texture_attribute->size = 2;
-        vbo_uvs->setAttribute(texture_attribute);
-        this->addBuffer(vao, vbo_uvs);
+        setupBuffers();
     }
 
     /**

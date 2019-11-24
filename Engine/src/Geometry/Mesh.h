@@ -49,7 +49,7 @@ public:
      */
     inline void setVertices(std::vector<float> verts) {
         this->vertices = verts;
-        this->setVertexCount(6);
+        this->setVertexCount(this->vertices.size() / 3);
     }
 
     /**
@@ -225,6 +225,7 @@ protected:
     std::vector<float> uvs;
     std::vector<float> normals;
     std::vector<float> tangents;
+    DrawMode drawMode;
 
 private:
     const char *name;
@@ -233,8 +234,6 @@ private:
 
     unsigned int vertexCount;
     bool wireframe;
-
-    DrawMode drawMode;
 };
 
 #endif //VULKANLAB_MESH_H

@@ -31,6 +31,12 @@ public:
         DYNAMIC_COPY = 0x88EA
     };
 
+    enum AttributeType {
+        FLOAT,
+        INT,
+        UNSIGNED_INT
+    };
+
     struct AttributeData {
         GLuint index = 0;
         GLint size = 0;
@@ -71,6 +77,14 @@ public:
      */
     inline void bind() {
         glBindBuffer(GL_ARRAY_BUFFER, this->id);
+    }
+
+    inline static size_t getAttributeTypeSize(AttributeType type) {
+        switch (type) {
+            case FLOAT: return sizeof(float);
+            case INT: return sizeof(int);
+            case UNSIGNED_INT: return sizeof(unsigned int);
+        }
     }
 
 private:

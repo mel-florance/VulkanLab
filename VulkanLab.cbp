@@ -5,7 +5,7 @@
 		<Option title="VulkanLab"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\usr\lib64\cmake\glm\;CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\;CMake Files\..\..\..\..\usr\lib64\cmake\assimp-5.0\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\ext\;CMake Files\ext\nanogui\;CMake Files\ext\nanogui\ext\;CMake Files\ext\nanogui\ext\glfw\;CMake Files\ext\nanogui\ext\glfw\src\;CMake Files\ext\nanogui\ext\enoki\;CMake Files\ext\nanogui\ext\enoki\resources\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\usr\lib64\cmake\glm\;CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\;CMake Files\..\..\..\..\usr\lib64\cmake\assimp-5.0\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/mel/Projects/VulkanLab"/>
@@ -38,8 +38,17 @@
 					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
 					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
 					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
 					<Add directory="/home/mel/Projects/VulkanLab/glfw"/>
 					<Add directory="/home/mel/Projects/VulkanLab/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/protobuf"/>
+					<Add directory="/home/mel/Projects/VulkanLab/Engine/src/Network/definitions"/>
+					<Add directory="/home/mel/Projects/VulkanLab"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 VulkanLab"/>
@@ -59,8 +68,17 @@
 					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
 					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
 					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
 					<Add directory="/home/mel/Projects/VulkanLab/glfw"/>
 					<Add directory="/home/mel/Projects/VulkanLab/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/protobuf"/>
+					<Add directory="/home/mel/Projects/VulkanLab/Engine/src/Network/definitions"/>
+					<Add directory="/home/mel/Projects/VulkanLab"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 VulkanLab/fast"/>
@@ -90,8 +108,17 @@
 					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
 					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
 					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
 					<Add directory="/home/mel/Projects/VulkanLab/glfw"/>
 					<Add directory="/home/mel/Projects/VulkanLab/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/protobuf"/>
+					<Add directory="/home/mel/Projects/VulkanLab/Engine/src/Network/definitions"/>
+					<Add directory="/home/mel/Projects/VulkanLab"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 STB_IMAGE"/>
@@ -111,8 +138,17 @@
 					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
 					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
 					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
 					<Add directory="/home/mel/Projects/VulkanLab/glfw"/>
 					<Add directory="/home/mel/Projects/VulkanLab/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/protobuf"/>
+					<Add directory="/home/mel/Projects/VulkanLab/Engine/src/Network/definitions"/>
+					<Add directory="/home/mel/Projects/VulkanLab"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 STB_IMAGE/fast"/>
@@ -132,8 +168,17 @@
 					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
 					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
 					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
 					<Add directory="/home/mel/Projects/VulkanLab/glfw"/>
 					<Add directory="/home/mel/Projects/VulkanLab/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/protobuf"/>
+					<Add directory="/home/mel/Projects/VulkanLab/Engine/src/Network/definitions"/>
+					<Add directory="/home/mel/Projects/VulkanLab"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 GLAD"/>
@@ -153,14 +198,465 @@
 					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
 					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
 					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
 					<Add directory="/home/mel/Projects/VulkanLab/glfw"/>
 					<Add directory="/home/mel/Projects/VulkanLab/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/protobuf"/>
+					<Add directory="/home/mel/Projects/VulkanLab/Engine/src/Network/definitions"/>
+					<Add directory="/home/mel/Projects/VulkanLab"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 GLAD/fast"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example4">
+				<Option output="/home/mel/Projects/VulkanLab/bin/example4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 example4"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example4/fast">
+				<Option output="/home/mel/Projects/VulkanLab/bin/example4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 example4/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nanogui">
+				<Option output="/home/mel/Projects/VulkanLab/bin/libnanogui.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 nanogui"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nanogui/fast">
+				<Option output="/home/mel/Projects/VulkanLab/bin/libnanogui.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 nanogui/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nanogui-obj">
+				<Option output="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/nanogui-obj.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DNANOGUI_BUILD"/>
+					<Add option="-DNVG_BUILD"/>
+					<Add option="-DNVG_STB_IMAGE_IMPLEMENTATION"/>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 nanogui-obj"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nanogui-obj/fast">
+				<Option output="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/nanogui-obj.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DNANOGUI_BUILD"/>
+					<Add option="-DNVG_BUILD"/>
+					<Add option="-DNVG_STB_IMAGE_IMPLEMENTATION"/>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 nanogui-obj/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example1">
+				<Option output="/home/mel/Projects/VulkanLab/bin/example1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 example1"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example1/fast">
+				<Option output="/home/mel/Projects/VulkanLab/bin/example1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 example1/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example2">
+				<Option output="/home/mel/Projects/VulkanLab/bin/example2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 example2"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example2/fast">
+				<Option output="/home/mel/Projects/VulkanLab/bin/example2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 example2/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_icons">
+				<Option output="/home/mel/Projects/VulkanLab/bin/example_icons" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 example_icons"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_icons/fast">
+				<Option output="/home/mel/Projects/VulkanLab/bin/example_icons" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 example_icons/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example3">
+				<Option output="/home/mel/Projects/VulkanLab/bin/example3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 example3"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example3/fast">
+				<Option output="/home/mel/Projects/VulkanLab/bin/example3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add option="-DNANOGUI_USE_OPENGL"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 example3/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw_objects">
+				<Option output="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glfw_objects.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 glfw_objects"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw_objects/fast">
+				<Option output="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glfw_objects.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 glfw_objects/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="/home/mel/Projects/VulkanLab/bin/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="/home/mel/Projects/VulkanLab/bin/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_ENABLE_EXPERIMENTAL"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_X11"/>
+					<Add option="-DGLFW_EXPOSE_NATIVE_GLX"/>
+					<Add option="-DOPENGL_GL_PREFERENCE=LEGACY"/>
+					<Add directory="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
@@ -174,6 +670,24 @@
 			<Option target="VulkanLab"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/AssetManager.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/AssimpImporter.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/AssimpImporter.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/Font.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/Font.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/FontImporter.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Assets/FontImporter.h">
 			<Option target="VulkanLab"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Buffers/ArrayBuffer.h">
@@ -230,7 +744,25 @@
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Display/Window.h">
 			<Option target="VulkanLab"/>
 		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/Components/DirectionalLightComponent.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/Components/FPSCameraComponent.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/Components/MaterialComponent.h">
+			<Option target="VulkanLab"/>
+		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/Components/MeshComponent.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/Components/NodeComponent.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/Components/PointLightComponent.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/Components/SpotLightComponent.h">
 			<Option target="VulkanLab"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/ECS/Components/TransformComponent.h">
@@ -257,10 +789,43 @@
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Geometry/Shapes/Quad.h">
 			<Option target="VulkanLab"/>
 		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Interface/NanoGui.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Interface/NanoGui.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Lighting/Light.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Lighting/Light.h">
+			<Option target="VulkanLab"/>
+		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Materials/Material.cpp">
 			<Option target="VulkanLab"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Materials/Material.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Maths/Transform.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Maths/Transform.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Network/Network.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Network/Network.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Network/Packet.cpp">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Network/Packet.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Network/definitions/addressbook.pb.h">
 			<Option target="VulkanLab"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/src/Rendering/Renderer.cpp">
@@ -305,8 +870,522 @@
 		<Unit filename="/home/mel/Projects/VulkanLab/Engine/vendor/stb_image.cpp">
 			<Option target="STB_IMAGE"/>
 		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/addressbook.pb.cc">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/addressbook.pb.h">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/addressbook.pb.h.rule">
+			<Option target="VulkanLab"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/canvas.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/opengl.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/renderpass_gl.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/shader.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/shader_gl.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/textarea.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/texture.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/texture_gl.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o">
+			<Option target="nanogui"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include/GLFW/glfw3.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/include/GLFW/glfw3native.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/context.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/egl_context.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/egl_context.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/glx_context.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/glx_context.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/init.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/input.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/internal.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/linux_joystick.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/linux_joystick.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/mappings.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/monitor.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/osmesa_context.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/osmesa_context.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/posix_thread.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/posix_thread.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/posix_time.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/posix_time.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/vulkan.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/window.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/x11_init.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/x11_monitor.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/x11_platform.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/x11_window.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/xkb_unicode.c">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/xkb_unicode.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src/nanovg.c">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src/nanovg.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/nanovg/src/stb_image.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/osmesa_context.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_thread.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o">
+			<Option target="nanogui"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext_build/glfw/src/glfw_config.h">
+			<Option target="glfw_objects"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/arcball.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/button.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/canvas.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/checkbox.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/colorpicker.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/colorwheel.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/combobox.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/common.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/formhelper.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/graph.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/icons.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/imagepanel.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/imageview.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/label.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/layout.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/messagedialog.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/nanogui.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/opengl.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/popup.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/popupbutton.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/progressbar.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/renderpass.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/screen.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/shader.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/slider.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/tabwidget.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/textarea.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/textbox.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/texture.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/theme.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/toolbutton.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/vscrollpanel.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/widget.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/include/nanogui/window.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/nanogui_resources.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/nanogui_resources.cpp.rule">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/nanogui_resources.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/button.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/canvas.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/checkbox.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/colorpicker.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/colorwheel.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/combobox.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/common.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/example1.cpp">
+			<Option target="example1"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/example2.cpp">
+			<Option target="example2"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/example3.cpp">
+			<Option target="example3"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/example4.cpp">
+			<Option target="example4"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/example_icons.cpp">
+			<Option target="example_icons"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/graph.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/imagepanel.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/imageview.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/label.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/layout.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/messagedialog.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/opengl.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/opengl_check.h">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/popup.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/popupbutton.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/progressbar.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/renderpass_gl.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/screen.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/shader.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/shader_gl.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/slider.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/tabwidget.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/textarea.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/textbox.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/texture.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/texture_gl.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/theme.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/vscrollpanel.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/widget.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/src/window.cpp">
+			<Option target="nanogui-obj"/>
+		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ext\nanogui\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ext\nanogui\ext\glfw\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ext\nanogui\ext\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\ext\nanogui\ext\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\ext\nanogui\ext\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\ext\nanogui\ext\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ext\nanogui\ext\enoki\"/>
+		</Unit>
+		<Unit filename="/home/mel/Projects/VulkanLab/ext/nanogui/ext/enoki/resources/archflags_unix.cpp">
+			<Option virtualFolder="CMake Files\ext\nanogui\ext\enoki\resources\"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/glm/glmConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\glm\"/>
@@ -321,9 +1400,6 @@
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\"/>
-		</Unit>
-		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\glfw3\"/>
 		</Unit>
 		<Unit filename="/home/mel/Projects/VulkanLab/../../../../usr/lib64/cmake/glfw3/glfw3Targets.cmake">

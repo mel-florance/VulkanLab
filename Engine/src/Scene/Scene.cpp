@@ -3,7 +3,8 @@
 ECS_TYPE_IMPLEMENTATION;
 
 Scene::Scene() :
-    activeCamera(nullptr)
+    activeCamera(nullptr),
+    defaultShader(nullptr)
 {
     this->createWorld();
 }

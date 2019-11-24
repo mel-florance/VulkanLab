@@ -5,6 +5,7 @@
 using namespace ECS;
 
 class Camera;
+class Shader;
 
 class Scene {
 public:
@@ -131,9 +132,20 @@ public:
         this->activeCamera = activeCamera;
     }
 
+
+    inline Shader *getDefaultShader() {
+        return this->defaultShader;
+    }
+
+    inline void setDefaultShader(Shader *defaultShader) {
+        this->defaultShader = defaultShader;
+    }
+
 private:
     World* world;
     Camera* activeCamera;
+    Shader* defaultShader;
+
 };
 
 #endif //VULKANLAB_SCENE_H

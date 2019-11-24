@@ -14,6 +14,7 @@ public:
      * The index buffer destructor.
      */
     ~IndexBuffer() {
+        glDeleteBuffers(1, &id);
     }
 
     inline void bind() {
@@ -27,7 +28,7 @@ public:
     inline void setData(void *data, GLsizei size) {
         this->data = data;
         this->bind();
-        glBufferData(GL_ELEMENT_ARRAY_BUFFER, size, data, GL_STATIC_DRAW);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, size * sizeof(unsigned int), data, GL_STATIC_DRAW);
     }
 
     /**

@@ -4,14 +4,14 @@
 #include <memory>
 #include "Loop.h"
 #include "../Events/Event.h"
+#include "../Scene/SceneManager.h"
+#include "../Network/Network.h"
 
 class Viewport;
 
 class Renderer;
 
 class Window;
-
-class SceneManager;
 
 class Engine {
 public:
@@ -120,11 +120,12 @@ public:
 
     static Loop *loop;
     static SceneManager *scenesManager;
+    static Viewport *viewport;
 
 private:
     Window *window;
-    Viewport *viewport;
     Renderer *renderer;
+    Network* network;
 };
 
 #endif //VULKANLAB_ENGINE_H

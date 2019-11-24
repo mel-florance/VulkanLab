@@ -1,10 +1,11 @@
 #include <iostream>
 #include <type_traits>
+#include <glm/gtx/string_cast.hpp>
 #include "Engine.h"
 #include "../Display/Viewport.h"
 #include "../Display/Window.h"
 #include "../Rendering/Renderer.h"
-#include "../Scene/SceneManager.h"
+
 #include "../Cameras/Camera.h"
 #include "../Cameras/FPSCamera.h"
 #include "../Scene/Scene.h"
@@ -13,7 +14,8 @@
 #include "../ECS/Components/MeshComponent.h"
 
 Loop *Engine::loop = nullptr;
-SceneManager *Engine::scenesManager = nullptr;
+SceneManager *Engine::scenesManager = new SceneManager();
+Viewport *Engine::viewport = nullptr;
 
 Engine::Engine() {
 
@@ -24,8 +26,8 @@ Engine::Engine() {
 
     this->viewport = new Viewport(this->window);
     this->renderer = new Renderer(this);
-    this->scenesManager = new SceneManager();
 
+    this->network = new Network();
 }
 
 Engine::~Engine() {
@@ -49,19 +51,19 @@ void Engine::update(Loop *loop, Engine *self) {
     camera->update(delta);
     scene->update(delta);
 
-    scene->getWorld()->each<TransformComponent, NodeComponent, MeshComponent>(
+//    FPSCamera* cam = (FPSCamera*)camera;
+
+//    std::cout << "Position: " << glm::to_string(cam->getPosition()) << std::endl;
+//    std::cout << "Yaw: " << cam->getYaw() << std::endl;
+//    std::cout << "Pitch: " << cam->getPitch() << std::endl;
+
+    scene->getWorld()->each<TransformComponent, MeshComponent>(
         [&](
             Entity *entity,
             ComponentHandle<TransformComponent> transformComponent,
-            ComponentHandle<NodeComponent> nodeComponent,
             ComponentHandle<MeshComponent> meshComponent
         ) {
-//            transform = glm::translate(transform, glm::vec3(0.0f, 0.0f, 10.0f));
-//            transform = glm::scale(transform, glm::vec3(0.5f, -0.5f, 0.0f));
-//            transform = glm::rotate(transform, (float) glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
-//            transform = glm::rotate(transform, (float) glfwGetTime(), glm::vec3(0.0f, 1.0f, 0.0f));
-//            transform = glm::rotate(transform, (float) cosf(glfwGetTime()), glm::vec3(1.0f, 0.0f, 0.0f));
-//            transformComponent->transform->setRotation(glm::vec3(glfwGetTime()));
+            transformComponent->transform->setRotation(glm::vec3(glm::radians(90.0f), /*glfwGetTime() / 2.0f,*/0.0f, 0.0f));
         });
 }
 
@@ -90,14 +92,17 @@ void Engine::onEvent(EventType eventType, Event *data) {
                 break;
             case onKeyboardChar:
                 break;
-            case onWindowResize:
-                camera->onWindowResize(data);
-                break;
             case onWindowDrop:
                 break;
             case onWindowClose:
                 break;
             case onWindowCursorEnter:
+                break;
+            case onWindowResize:
+                camera->onWindowResize(data);
+                WindowEvents* e = (WindowEvents*)data;
+                Engine::viewport->setSize(glm::vec2(e->width, e->height));
+                Engine::viewport->apply();
                 break;
         }
     }

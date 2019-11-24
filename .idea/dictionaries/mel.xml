@@ -4,6 +4,7 @@
       <w>applicationevent</w>
       <w>arraybuffer</w>
       <w>assetmanager</w>
+      <w>assimp</w>
       <w>childs</w>
       <w>entrypoint</w>
       <w>glfw</w>
@@ -11,10 +12,12 @@
       <w>linuxwindow</w>
       <w>mouseevent</w>
       <w>premake</w>
+      <w>roboto</w>
       <w>unconfigure</w>
       <w>verts</w>
       <w>vulkan</w>
       <w>vulkanlab</w>
+      <w>webatrio</w>
       <w>wireframe</w>
     </words>
   </dictionary>
