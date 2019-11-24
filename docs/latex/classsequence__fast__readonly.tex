@@ -1,0 +1,64 @@
+\hypertarget{classsequence__fast__readonly}{}\doxysection{Référence de la classe sequence\+\_\+fast\+\_\+readonly}
+\label{classsequence__fast__readonly}\index{sequence\_fast\_readonly@{sequence\_fast\_readonly}}
+
+
+Lightweight iterator policy using just a simple pointer\+: see {\ttfamily Py\+Sequence\+\_\+\+Fast\+\_\+\+I\+T\+E\+MS}  
+
+
+
+
+{\ttfamily \#include $<$pytypes.\+h$>$}
+
+\doxysubsection*{Types protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsequence__fast__readonly_ae4b169ed0c818d34dfe03e94880c822a}\label{classsequence__fast__readonly_ae4b169ed0c818d34dfe03e94880c822a}} 
+using {\bfseries iterator\+\_\+category} = std\+::random\+\_\+access\+\_\+iterator\+\_\+tag
+\item 
+\mbox{\Hypertarget{classsequence__fast__readonly_ac5ad251551c7938c6a6a7e565b8788d0}\label{classsequence__fast__readonly_ac5ad251551c7938c6a6a7e565b8788d0}} 
+using {\bfseries value\+\_\+type} = \mbox{\hyperlink{classhandle}{handle}}
+\item 
+\mbox{\Hypertarget{classsequence__fast__readonly_a7b285c12cc5332e8fc7998bcab092fa7}\label{classsequence__fast__readonly_a7b285c12cc5332e8fc7998bcab092fa7}} 
+using {\bfseries reference} = const \mbox{\hyperlink{classhandle}{handle}}
+\item 
+\mbox{\Hypertarget{classsequence__fast__readonly_acdbb8736f003cfff757d62e6733ebc20}\label{classsequence__fast__readonly_acdbb8736f003cfff757d62e6733ebc20}} 
+using {\bfseries pointer} = \mbox{\hyperlink{structarrow__proxy}{arrow\+\_\+proxy}}$<$ const \mbox{\hyperlink{classhandle}{handle}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsequence__fast__readonly_aadd473034fbf872253a773156515da81}\label{classsequence__fast__readonly_aadd473034fbf872253a773156515da81}} 
+{\bfseries sequence\+\_\+fast\+\_\+readonly} (\mbox{\hyperlink{classhandle}{handle}} obj, ssize\+\_\+t n)
+\item 
+\mbox{\Hypertarget{classsequence__fast__readonly_a66ee58d3a059273dffe9dc0cf76a9550}\label{classsequence__fast__readonly_a66ee58d3a059273dffe9dc0cf76a9550}} 
+\mbox{\hyperlink{classhandle}{reference}} {\bfseries dereference} () const
+\item 
+\mbox{\Hypertarget{classsequence__fast__readonly_a36b3faf2c60a135e8245d7bf8d922000}\label{classsequence__fast__readonly_a36b3faf2c60a135e8245d7bf8d922000}} 
+void {\bfseries increment} ()
+\item 
+\mbox{\Hypertarget{classsequence__fast__readonly_a7f31daab2a88f9120f06c0bc140ad4af}\label{classsequence__fast__readonly_a7f31daab2a88f9120f06c0bc140ad4af}} 
+void {\bfseries decrement} ()
+\item 
+\mbox{\Hypertarget{classsequence__fast__readonly_a7ffa2a811265609444262806136b7204}\label{classsequence__fast__readonly_a7ffa2a811265609444262806136b7204}} 
+void {\bfseries advance} (ssize\+\_\+t n)
+\item 
+\mbox{\Hypertarget{classsequence__fast__readonly_afcbe394740b9209db9a28034e5483794}\label{classsequence__fast__readonly_afcbe394740b9209db9a28034e5483794}} 
+bool {\bfseries equal} (const \mbox{\hyperlink{classsequence__fast__readonly}{sequence\+\_\+fast\+\_\+readonly}} \&b) const
+\item 
+\mbox{\Hypertarget{classsequence__fast__readonly_a943d3956a923d5e3bbe3e1e944a20699}\label{classsequence__fast__readonly_a943d3956a923d5e3bbe3e1e944a20699}} 
+ssize\+\_\+t {\bfseries distance\+\_\+to} (const \mbox{\hyperlink{classsequence__fast__readonly}{sequence\+\_\+fast\+\_\+readonly}} \&b) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsequence__fast__readonly_a3abaae05b86767b75a50db2314e84463}\label{classsequence__fast__readonly_a3abaae05b86767b75a50db2314e84463}} 
+Py\+Object $\ast$$\ast$ {\bfseries ptr}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Lightweight iterator policy using just a simple pointer\+: see {\ttfamily Py\+Sequence\+\_\+\+Fast\+\_\+\+I\+T\+E\+MS} 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/pytypes.\+h\end{DoxyCompactItemize}

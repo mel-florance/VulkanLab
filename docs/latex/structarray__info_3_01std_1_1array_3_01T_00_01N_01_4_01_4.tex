@@ -1,0 +1,56 @@
+\hypertarget{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4}{}\doxysection{Référence du modèle de la structure array\+\_\+info$<$ std\+::array$<$ T, N $>$ $>$}
+\label{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4}\index{array\_info$<$ std::array$<$ T, N $>$ $>$@{array\_info$<$ std::array$<$ T, N $>$ $>$}}
+Graphe d\textquotesingle{}héritage de array\+\_\+info$<$ std\+::array$<$ T, N $>$ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4_a0023c48fec7c0b11090f45b7ceb9a307}\label{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4_a0023c48fec7c0b11090f45b7ceb9a307}} 
+using {\bfseries type} = typename \mbox{\hyperlink{structarray__info}{array\+\_\+info}}$<$ T $>$\+::type
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4_ac08c22b2e5c8f93e9f4c971a9f71db16}\label{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4_ac08c22b2e5c8f93e9f4c971a9f71db16}} 
+static void {\bfseries append\+\_\+extents} (\mbox{\hyperlink{classlist}{list}} \&shape)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4_a5ee93c78021c504dc16e091dda56ec02}\label{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4_a5ee93c78021c504dc16e091dda56ec02}} 
+static constexpr bool {\bfseries is\+\_\+array} = true
+\item 
+\mbox{\Hypertarget{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4_a95b6d29fee19cde4837d3a2f62d51e00}\label{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4_a95b6d29fee19cde4837d3a2f62d51e00}} 
+static constexpr bool {\bfseries is\+\_\+empty} = (N == 0) $\vert$$\vert$ \mbox{\hyperlink{structarray__info}{array\+\_\+info}}$<$T$>$\+::is\+\_\+empty
+\item 
+\mbox{\Hypertarget{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4_ab89fea43d0533912fd3495c3fbe0a303}\label{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4_ab89fea43d0533912fd3495c3fbe0a303}} 
+static constexpr size\+\_\+t {\bfseries extent} = N
+\item 
+static constexpr auto {\bfseries extents}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4_a1d696d962743dc70469b7458bbb60dcf}\label{structarray__info_3_01std_1_1array_3_01T_00_01N_01_4_01_4_a1d696d962743dc70469b7458bbb60dcf}} 
+\index{array\_info$<$ std::array$<$ T, N $>$ $>$@{array\_info$<$ std::array$<$ T, N $>$ $>$}!extents@{extents}}
+\index{extents@{extents}!array\_info$<$ std::array$<$ T, N $>$ $>$@{array\_info$<$ std::array$<$ T, N $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{extents}{extents}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t N$>$ \\
+constexpr auto \mbox{\hyperlink{structarray__info}{array\+\_\+info}}$<$ std\+::array$<$ T, N $>$ $>$\+::extents\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \_<array\_info<T>::is\_array>(}
+\DoxyCodeLine{        concat(\_<N>(), \mbox{\hyperlink{structarray__info}{array\_info<T>::extents}}), \_<N>()}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/numpy.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var structeigen__extract__stride_3_01Eigen_1_1Ref_3_01PlainObjectType_00_01Options_00_01StrideType_01_4_01_4 =
+[
+    [ "type", "structeigen__extract__stride_3_01Eigen_1_1Ref_3_01PlainObjectType_00_01Options_00_01StrideType_01_4_01_4.html#a057cc3e02bf77ac7ff9afebaa760cdeb", null ]
+];

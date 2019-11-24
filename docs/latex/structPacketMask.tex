@@ -1,0 +1,64 @@
+\hypertarget{structPacketMask}{}\doxysection{Référence du modèle de la structure Packet\+Mask$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$}
+\label{structPacketMask}\index{PacketMask$<$ Value\_, Size\_, Approx\_, Mode\_ $>$@{PacketMask$<$ Value\_, Size\_, Approx\_, Mode\_ $>$}}
+
+
+Generic mask class, which broadcasts from the inner to outer dimensions.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Packet\+Mask$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.772152cm]{structPacketMask}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structPacketMask_a716a5c4275d5066030ef96c9827f8027}\label{structPacketMask_a716a5c4275d5066030ef96c9827f8027}} 
+using {\bfseries Base} = \mbox{\hyperlink{structStaticArrayImpl}{Static\+Array\+Impl}}$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+, true, \mbox{\hyperlink{structPacketMask}{Packet\+Mask}}$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{structPacketMask_ac3cb556e0b9a93f2275602431f88117d}\label{structPacketMask_ac3cb556e0b9a93f2275602431f88117d}} 
+using {\bfseries Array\+Type} = \mbox{\hyperlink{structPacket}{Packet}}$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$
+\item 
+\mbox{\Hypertarget{structPacketMask_af516e22695218b04ae3d6b8acbac4a52}\label{structPacketMask_af516e22695218b04ae3d6b8acbac4a52}} 
+using {\bfseries Mask\+Type} = \mbox{\hyperlink{structPacketMask}{Packet\+Mask}}
+\item 
+\mbox{\Hypertarget{structPacketMask_ad289de95c94e160aaab3e7e031ce82cf}\label{structPacketMask_ad289de95c94e160aaab3e7e031ce82cf}} 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{structPacketMask_ad289de95c94e160aaab3e7e031ce82cf}{Replace\+Value}} = \mbox{\hyperlink{structPacketMask}{Packet\+Mask}}$<$ T, Size\+\_\+ $>$
+\begin{DoxyCompactList}\small\item\em Type alias for creating a similar-\/shaped array over a different type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structPacketMask_af19ef4345b844e734f35e32d0a6c448e}\label{structPacketMask_af19ef4345b844e734f35e32d0a6c448e}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries Packet\+Mask} (T \&\&value)
+\item 
+\mbox{\Hypertarget{structPacketMask_a960d13fc6e0b566fe6788f9f540bdf71}\label{structPacketMask_a960d13fc6e0b566fe6788f9f540bdf71}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries Packet\+Mask} (T \&\&value, \mbox{\hyperlink{structdetail_1_1reinterpret__flag}{detail\+::reinterpret\+\_\+flag}})
+\item 
+\mbox{\Hypertarget{structPacketMask_a9cdaad3ca365a1545a4a421c3f5d6623}\label{structPacketMask_a9cdaad3ca365a1545a4a421c3f5d6623}} 
+{\footnotesize template$<$typename T1 , typename T2 , typename T  = Packet\+Mask, enable\+\_\+if\+\_\+t$<$ array\+\_\+depth\+\_\+v$<$ T1 $>$==array\+\_\+depth\+\_\+v$<$ T $>$ \&\&array\+\_\+size\+\_\+v$<$ T1 $>$==\+Base\+::\+Size1 \&\&array\+\_\+depth\+\_\+v$<$ T2 $>$==array\+\_\+depth\+\_\+v$<$ T $>$ \&\&array\+\_\+size\+\_\+v$<$ T2 $>$==\+Base\+::\+Size2 \&\&\+Base\+::\+Size2 !=0 $>$  = 0$>$ }\\\mbox{\hyperlink{structPacketMask_a9cdaad3ca365a1545a4a421c3f5d6623}{Packet\+Mask}} (const T1 \&a1, const T2 \&a2)
+\begin{DoxyCompactList}\small\item\em Construct from sub-\/arrays. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPacketMask_a11b39b81b90365bfbc32b916790cbc97}\label{structPacketMask_a11b39b81b90365bfbc32b916790cbc97}} 
+{\footnotesize template$<$typename... Ts, enable\+\_\+if\+\_\+t$<$(sizeof...(\+Ts)==\+Base\+::\+Size$\vert$$\vert$sizeof...(\+Ts)==\+Base\+::\+Actual\+Size) \&\&\+Size\+\_\+ !=1 \&\&std\+::conjunction\+\_\+v$<$ detail\+::is\+\_\+not\+\_\+reinterpret\+\_\+flag$<$ Ts $>$... $>$$>$  = 0$>$ }\\{\bfseries Packet\+Mask} (Ts \&\&... ts)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structPacketMask_a00f32211715c0d50cf5fea87a1c5c1c1}\label{structPacketMask_a00f32211715c0d50cf5fea87a1c5c1c1}} 
+static constexpr bool {\bfseries Broadcast\+Prefer\+Outer} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename Value\+\_\+, size\+\_\+t Size\+\_\+, bool Approx\+\_\+, Rounding\+Mode Mode\+\_\+$>$\newline
+struct Packet\+Mask$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$}
+
+Generic mask class, which broadcasts from the inner to outer dimensions. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array.\+h\end{DoxyCompactItemize}

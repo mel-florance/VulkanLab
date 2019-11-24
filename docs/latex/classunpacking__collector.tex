@@ -1,0 +1,88 @@
+\hypertarget{classunpacking__collector}{}\doxysection{Référence du modèle de la classe unpacking\+\_\+collector$<$ policy $>$}
+\label{classunpacking__collector}\index{unpacking\_collector$<$ policy $>$@{unpacking\_collector$<$ policy $>$}}
+
+
+Helper class which collects positional, keyword, $\ast$ and $\ast$$\ast$ arguments for a Python function call.  
+
+
+
+
+{\ttfamily \#include $<$cast.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunpacking__collector_a8cc5fdce9ceb3faf99180e480efa0367}\label{classunpacking__collector_a8cc5fdce9ceb3faf99180e480efa0367}} 
+{\footnotesize template$<$typename... Ts$>$ }\\{\bfseries unpacking\+\_\+collector} (Ts \&\&...values)
+\item 
+\mbox{\Hypertarget{classunpacking__collector_a8c2a4543599919b9d8b4c13a5cf6cf02}\label{classunpacking__collector_a8c2a4543599919b9d8b4c13a5cf6cf02}} 
+const \mbox{\hyperlink{classtuple}{tuple}} \& {\bfseries args} () const \&
+\item 
+\mbox{\Hypertarget{classunpacking__collector_a14ceb5d3912c58d37b244dd5b7824aad}\label{classunpacking__collector_a14ceb5d3912c58d37b244dd5b7824aad}} 
+const \mbox{\hyperlink{classdict}{dict}} \& {\bfseries kwargs} () const \&
+\item 
+\mbox{\Hypertarget{classunpacking__collector_a9905f0fd4b68ab18f9df1fc495f369a9}\label{classunpacking__collector_a9905f0fd4b68ab18f9df1fc495f369a9}} 
+\mbox{\hyperlink{classtuple}{tuple}} {\bfseries args} () \&\&
+\item 
+\mbox{\Hypertarget{classunpacking__collector_ad623100e5a5b6ce8adb01dc8d86e5655}\label{classunpacking__collector_ad623100e5a5b6ce8adb01dc8d86e5655}} 
+\mbox{\hyperlink{classdict}{dict}} {\bfseries kwargs} () \&\&
+\item 
+\mbox{\Hypertarget{classunpacking__collector_a3df5e4ecbc1a9fd31788c59053444de3}\label{classunpacking__collector_a3df5e4ecbc1a9fd31788c59053444de3}} 
+\mbox{\hyperlink{classobject}{object}} \mbox{\hyperlink{classunpacking__collector_a3df5e4ecbc1a9fd31788c59053444de3}{call}} (Py\+Object $\ast$ptr) const
+\begin{DoxyCompactList}\small\item\em Call a Python function and pass the collected arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunpacking__collector_ad43ae2afdbb18f43994badabb10058f6}\label{classunpacking__collector_ad43ae2afdbb18f43994badabb10058f6}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries process} (\mbox{\hyperlink{classlist}{list}} \&args\+\_\+list, T \&\&x)
+\item 
+\mbox{\Hypertarget{classunpacking__collector_aab263f53d3d33d6d40e45dabfae5b782}\label{classunpacking__collector_aab263f53d3d33d6d40e45dabfae5b782}} 
+void {\bfseries process} (\mbox{\hyperlink{classlist}{list}} \&args\+\_\+list, detail\+::args\+\_\+proxy ap)
+\item 
+\mbox{\Hypertarget{classunpacking__collector_ad80f8e2483b651ce1217c56fe4d116d8}\label{classunpacking__collector_ad80f8e2483b651ce1217c56fe4d116d8}} 
+void {\bfseries process} (\mbox{\hyperlink{classlist}{list}} \&, \mbox{\hyperlink{structarg__v}{arg\+\_\+v}} a)
+\item 
+\mbox{\Hypertarget{classunpacking__collector_a1e98ae5b96d483deb5d677a88aa6f0c3}\label{classunpacking__collector_a1e98ae5b96d483deb5d677a88aa6f0c3}} 
+void {\bfseries process} (\mbox{\hyperlink{classlist}{list}} \&, detail\+::kwargs\+\_\+proxy kp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunpacking__collector_a02dda9700198d21c365da8738bf4ce53}\label{classunpacking__collector_a02dda9700198d21c365da8738bf4ce53}} 
+static void {\bfseries nameless\+\_\+argument\+\_\+error} ()
+\item 
+\mbox{\Hypertarget{classunpacking__collector_af4bc1b048b6a992405fbb425210c6b4d}\label{classunpacking__collector_af4bc1b048b6a992405fbb425210c6b4d}} 
+static void {\bfseries nameless\+\_\+argument\+\_\+error} (std\+::string type)
+\item 
+\mbox{\Hypertarget{classunpacking__collector_a007fe3bc4e220c76301169fc90270079}\label{classunpacking__collector_a007fe3bc4e220c76301169fc90270079}} 
+static void {\bfseries multiple\+\_\+values\+\_\+error} ()
+\item 
+\mbox{\Hypertarget{classunpacking__collector_a57e980ae601a27fe4400c51511055547}\label{classunpacking__collector_a57e980ae601a27fe4400c51511055547}} 
+static void {\bfseries multiple\+\_\+values\+\_\+error} (std\+::string \mbox{\hyperlink{structname}{name}})
+\item 
+\mbox{\Hypertarget{classunpacking__collector_abd0e796194c601ec8ef10b20caaba8e5}\label{classunpacking__collector_abd0e796194c601ec8ef10b20caaba8e5}} 
+static void {\bfseries argument\+\_\+cast\+\_\+error} ()
+\item 
+\mbox{\Hypertarget{classunpacking__collector_ab955651dbfc958c38bf312bc87d9aed7}\label{classunpacking__collector_ab955651dbfc958c38bf312bc87d9aed7}} 
+static void {\bfseries argument\+\_\+cast\+\_\+error} (std\+::string \mbox{\hyperlink{structname}{name}}, std\+::string type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunpacking__collector_a0d07aa1a65451952b20df583ac7081d6}\label{classunpacking__collector_a0d07aa1a65451952b20df583ac7081d6}} 
+\mbox{\hyperlink{classtuple}{tuple}} {\bfseries m\+\_\+args}
+\item 
+\mbox{\Hypertarget{classunpacking__collector_a1c830e9b44c72d9569eeb3d434664c64}\label{classunpacking__collector_a1c830e9b44c72d9569eeb3d434664c64}} 
+\mbox{\hyperlink{classdict}{dict}} {\bfseries m\+\_\+kwargs}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$return\+\_\+value\+\_\+policy policy$>$\newline
+class unpacking\+\_\+collector$<$ policy $>$}
+
+Helper class which collects positional, keyword, $\ast$ and $\ast$$\ast$ arguments for a Python function call. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/cast.\+h\end{DoxyCompactItemize}

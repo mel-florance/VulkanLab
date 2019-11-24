@@ -1,0 +1,59 @@
+\hypertarget{structQuaternion}{}\doxysection{Référence du modèle de la structure Quaternion$<$ Value\+\_\+, Approx\+\_\+ $>$}
+\label{structQuaternion}\index{Quaternion$<$ Value\_, Approx\_ $>$@{Quaternion$<$ Value\_, Approx\_ $>$}}
+Graphe d\textquotesingle{}héritage de Quaternion$<$ Value\+\_\+, Approx\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.830065cm]{structQuaternion}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structQuaternion_a596166dc098a7d2276f2eb6e7caf597b}\label{structQuaternion_a596166dc098a7d2276f2eb6e7caf597b}} 
+using {\bfseries Base} = \mbox{\hyperlink{structStaticArrayImpl}{Static\+Array\+Impl}}$<$ Value\+\_\+, 4, Approx\+\_\+, Rounding\+Mode\+::\+Default, false, \mbox{\hyperlink{structQuaternion}{Quaternion}}$<$ Value\+\_\+, Approx\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{structQuaternion_a28508e87b187e66126b300998d91e9d8}\label{structQuaternion_a28508e87b187e66126b300998d91e9d8}} 
+using {\bfseries Array\+Type} = \mbox{\hyperlink{structQuaternion}{Quaternion}}
+\item 
+\mbox{\Hypertarget{structQuaternion_af88bb978117bf71faca28bb2b7b4ac32}\label{structQuaternion_af88bb978117bf71faca28bb2b7b4ac32}} 
+using {\bfseries Mask\+Type} = \mbox{\hyperlink{structMask}{Mask}}$<$ Value\+\_\+, 4, Approx\+\_\+, Rounding\+Mode\+::\+Default $>$
+\item 
+\mbox{\Hypertarget{structQuaternion_ad94eeae132212db94b5d8601af39af18}\label{structQuaternion_ad94eeae132212db94b5d8601af39af18}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries Replace\+Value} = \mbox{\hyperlink{structQuaternion}{Quaternion}}$<$ T, is\+\_\+std\+\_\+float\+\_\+v$<$ scalar\+\_\+t$<$ T $>$ $>$ \&\&is\+\_\+std\+\_\+float\+\_\+v$<$ scalar\+\_\+t$<$ Value\+\_\+ $>$ $>$ ? Approx\+\_\+ \+:array\+\_\+approx\+\_\+v$<$ T $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structQuaternion_a73b1b70b6b00f78dbbdb6136dc6da320}\label{structQuaternion_a73b1b70b6b00f78dbbdb6136dc6da320}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+B\+A\+S\+IC} (\mbox{\hyperlink{structStaticArrayImpl}{Base}}, \mbox{\hyperlink{structQuaternion}{Quaternion}})
+\item 
+\mbox{\Hypertarget{structQuaternion_a40b18c8270c236f4f367f9315c3ad4de}\label{structQuaternion_a40b18c8270c236f4f367f9315c3ad4de}} 
+{\footnotesize template$<$typename Value2 , bool Approx2$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries Quaternion} (const \mbox{\hyperlink{structQuaternion}{Quaternion}}$<$ Value2, Approx2 $>$ \&z)
+\item 
+\mbox{\Hypertarget{structQuaternion_a18af8a1e74c7d02feca48017e6233e7a}\label{structQuaternion_a18af8a1e74c7d02feca48017e6233e7a}} 
+{\footnotesize template$<$typename T , enable\+\_\+if\+\_\+t$<$(array\+\_\+depth\+\_\+v$<$ T $>$$<$ Base\+::\+Depth \&\&(is\+\_\+scalar\+\_\+v$<$ T $>$$\vert$$\vert$is\+\_\+array\+\_\+v$<$ T $>$ $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries Quaternion} (T \&\&v)
+\item 
+\mbox{\Hypertarget{structQuaternion_a18af8a1e74c7d02feca48017e6233e7a}\label{structQuaternion_a18af8a1e74c7d02feca48017e6233e7a}} 
+{\footnotesize template$<$typename T , enable\+\_\+if\+\_\+t$<$(array\+\_\+depth\+\_\+v$<$ T $>$  = = Base\+::\+Depth $\vert$$\vert$ !(is\+\_\+scalar\+\_\+v$<$\+T$>$ $\vert$$\vert$ is\+\_\+array\+\_\+v$<$\+T$>$)$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries Quaternion} (T \&\&v)
+\item 
+\mbox{\Hypertarget{structQuaternion_a0bf812bce92f11255c6759e7b6ac85c7}\label{structQuaternion_a0bf812bce92f11255c6759e7b6ac85c7}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries Quaternion} (const Value\+\_\+ \&vi, const Value\+\_\+ \&vj, const Value\+\_\+ \&vk, const Value\+\_\+ \&vr)
+\item 
+\mbox{\Hypertarget{structQuaternion_a2470756d638e4c10cae0118b8cae3bd2}\label{structQuaternion_a2470756d638e4c10cae0118b8cae3bd2}} 
+{\footnotesize template$<$typename Im , typename Re , enable\+\_\+if\+\_\+t$<$ array\+\_\+size\+\_\+v$<$ Im $>$==3 $>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries Quaternion} (const Im \&im, const Re \&re)
+\item 
+\mbox{\Hypertarget{structQuaternion_a70dc1788cb7db9abd17e7623f9bb031e}\label{structQuaternion_a70dc1788cb7db9abd17e7623f9bb031e}} 
+{\footnotesize template$<$typename T1 , typename T2 , typename T  = Quaternion, enable\+\_\+if\+\_\+t$<$ array\+\_\+depth\+\_\+v$<$ T1 $>$==array\+\_\+depth\+\_\+v$<$ T $>$ \&\&array\+\_\+size\+\_\+v$<$ T1 $>$==2 \&\&array\+\_\+depth\+\_\+v$<$ T2 $>$==array\+\_\+depth\+\_\+v$<$ T $>$ \&\&array\+\_\+size\+\_\+v$<$ T2 $>$==2 $>$  = 0$>$ }\\\mbox{\hyperlink{structQuaternion_a70dc1788cb7db9abd17e7623f9bb031e}{Quaternion}} (const T1 \&a1, const T2 \&a2)
+\begin{DoxyCompactList}\small\item\em Construct from sub-\/arrays. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structQuaternion_a3586a18632806225a1527f44bc84bdae}\label{structQuaternion_a3586a18632806225a1527f44bc84bdae}} 
+static constexpr bool {\bfseries Is\+Quaternion} = true
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/fwd.\+h\item 
+ext/nanogui/ext/enoki/include/enoki/quaternion.\+h\end{DoxyCompactItemize}

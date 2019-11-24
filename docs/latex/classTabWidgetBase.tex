@@ -1,0 +1,206 @@
+\hypertarget{classTabWidgetBase}{}\doxysection{Référence de la classe Tab\+Widget\+Base}
+\label{classTabWidgetBase}\index{TabWidgetBase@{TabWidgetBase}}
+
+
+Basic implementation of a tab widget with (optionally) draggable and closeable tabs and popup menus. No rendering of the content is done---for an example implementation, refer to \mbox{\hyperlink{classTabWidget}{Tab\+Widget}}.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/tabwidget.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Tab\+Widget\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classTabWidgetBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_af9680ad0669f6baa6f860335ac0ac993}\label{classTabWidgetBase_af9680ad0669f6baa6f860335ac0ac993}} 
+\mbox{\hyperlink{classTabWidgetBase_af9680ad0669f6baa6f860335ac0ac993}{Tab\+Widget\+Base}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, const std\+::string \&font=\char`\"{}sans-\/bold\char`\"{})
+\begin{DoxyCompactList}\small\item\em Construct a new tab widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a6b9839d5adaccdcf3e96509e1a267c2b}\label{classTabWidgetBase_a6b9839d5adaccdcf3e96509e1a267c2b}} 
+int \mbox{\hyperlink{classTabWidgetBase_a6b9839d5adaccdcf3e96509e1a267c2b}{tab\+\_\+count}} () const
+\begin{DoxyCompactList}\small\item\em Return the total number of tabs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a83184aa5a29e88c7da9097829dd503c3}\label{classTabWidgetBase_a83184aa5a29e88c7da9097829dd503c3}} 
+int \mbox{\hyperlink{classTabWidgetBase_a83184aa5a29e88c7da9097829dd503c3}{tab\+\_\+id}} (int index) const
+\begin{DoxyCompactList}\small\item\em Return the ID of the tab at a given index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_aab9cb5edfe37c7a2d0ba9fb33f0525b3}\label{classTabWidgetBase_aab9cb5edfe37c7a2d0ba9fb33f0525b3}} 
+int \mbox{\hyperlink{classTabWidgetBase_aab9cb5edfe37c7a2d0ba9fb33f0525b3}{tab\+\_\+index}} (int id) const
+\begin{DoxyCompactList}\small\item\em Return the index of the tab with a given ID (or throw an exception) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a232911bd9e94798c576ec9a2727bc21e}\label{classTabWidgetBase_a232911bd9e94798c576ec9a2727bc21e}} 
+int \mbox{\hyperlink{classTabWidgetBase_a232911bd9e94798c576ec9a2727bc21e}{insert\+\_\+tab}} (int index, const std\+::string \&caption)
+\begin{DoxyCompactList}\small\item\em Inserts a new tab at the specified position and returns its ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a84f5e864d555de5bc2b62033027c72ee}\label{classTabWidgetBase_a84f5e864d555de5bc2b62033027c72ee}} 
+int \mbox{\hyperlink{classTabWidgetBase_a84f5e864d555de5bc2b62033027c72ee}{append\+\_\+tab}} (const std\+::string \&caption)
+\begin{DoxyCompactList}\small\item\em Appends a new tab and returns its ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a67f856f01af9af63cfb787ef6a75452f}\label{classTabWidgetBase_a67f856f01af9af63cfb787ef6a75452f}} 
+virtual void \mbox{\hyperlink{classTabWidgetBase_a67f856f01af9af63cfb787ef6a75452f}{remove\+\_\+tab}} (int id)
+\begin{DoxyCompactList}\small\item\em Removes a tab with the specified ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_ab95d0e985ee0fdd2a3dfa0b6a5cd895d}\label{classTabWidgetBase_ab95d0e985ee0fdd2a3dfa0b6a5cd895d}} 
+int \mbox{\hyperlink{classTabWidgetBase_ab95d0e985ee0fdd2a3dfa0b6a5cd895d}{selected\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em Return the ID of the currently active tab. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a62d2805df4e79a055712d3b546c48fae}\label{classTabWidgetBase_a62d2805df4e79a055712d3b546c48fae}} 
+void \mbox{\hyperlink{classTabWidgetBase_a62d2805df4e79a055712d3b546c48fae}{set\+\_\+selected\+\_\+id}} (int id)
+\begin{DoxyCompactList}\small\item\em Set the ID of the currently active tab. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_aedad615d852f823d724d3b51b010f12f}\label{classTabWidgetBase_aedad615d852f823d724d3b51b010f12f}} 
+int \mbox{\hyperlink{classTabWidgetBase_aedad615d852f823d724d3b51b010f12f}{selected\+\_\+index}} () const
+\begin{DoxyCompactList}\small\item\em Return the index of the currently active tab. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_ad3f096a972553f7c497799e315e68fd4}\label{classTabWidgetBase_ad3f096a972553f7c497799e315e68fd4}} 
+void \mbox{\hyperlink{classTabWidgetBase_ad3f096a972553f7c497799e315e68fd4}{set\+\_\+selected\+\_\+index}} (int index)
+\begin{DoxyCompactList}\small\item\em Set the index of the currently active tab. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a59f80d86dc305cbadd36a6b966a66b22}\label{classTabWidgetBase_a59f80d86dc305cbadd36a6b966a66b22}} 
+const std\+::string \& \mbox{\hyperlink{classTabWidgetBase_a59f80d86dc305cbadd36a6b966a66b22}{tab\+\_\+caption}} (int id) const
+\begin{DoxyCompactList}\small\item\em Return the caption of the tab with the given ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_ae89f57764dd3c53156c84facae5a1d54}\label{classTabWidgetBase_ae89f57764dd3c53156c84facae5a1d54}} 
+void \mbox{\hyperlink{classTabWidgetBase_ae89f57764dd3c53156c84facae5a1d54}{set\+\_\+tab\+\_\+caption}} (int id, const std\+::string \&caption)
+\begin{DoxyCompactList}\small\item\em Change the caption of the tab with the given ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a93eb25b24f40f810b5126e60be7e02cc}\label{classTabWidgetBase_a93eb25b24f40f810b5126e60be7e02cc}} 
+bool \mbox{\hyperlink{classTabWidgetBase_a93eb25b24f40f810b5126e60be7e02cc}{tabs\+\_\+closeable}} () const
+\begin{DoxyCompactList}\small\item\em Return whether tabs provide a close button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a201de44952e256e703bbc269975b6ee4}\label{classTabWidgetBase_a201de44952e256e703bbc269975b6ee4}} 
+void {\bfseries set\+\_\+tabs\+\_\+closeable} (bool value)
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a55ea086d099118d8f8aca3f801f64e55}\label{classTabWidgetBase_a55ea086d099118d8f8aca3f801f64e55}} 
+bool \mbox{\hyperlink{classTabWidgetBase_a55ea086d099118d8f8aca3f801f64e55}{tabs\+\_\+draggable}} () const
+\begin{DoxyCompactList}\small\item\em Return whether tabs can be dragged to different positions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_ade0454e490f4d53bdc908f52f11ef599}\label{classTabWidgetBase_ade0454e490f4d53bdc908f52f11ef599}} 
+void {\bfseries set\+\_\+tabs\+\_\+draggable} (bool value)
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a3e2aae67c2546366f7b464e0dd337b58}\label{classTabWidgetBase_a3e2aae67c2546366f7b464e0dd337b58}} 
+int \mbox{\hyperlink{classTabWidgetBase_a3e2aae67c2546366f7b464e0dd337b58}{padding}} () const
+\begin{DoxyCompactList}\small\item\em Return the padding between the tab widget boundary and child widgets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_abceab1f7de31afd132f63b2813b87df5}\label{classTabWidgetBase_abceab1f7de31afd132f63b2813b87df5}} 
+void {\bfseries set\+\_\+padding} (int value)
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a66787ad04e76a4d03de2da40bfecbd91}\label{classTabWidgetBase_a66787ad04e76a4d03de2da40bfecbd91}} 
+void \mbox{\hyperlink{classTabWidgetBase_a66787ad04e76a4d03de2da40bfecbd91}{set\+\_\+background\+\_\+color}} (const \mbox{\hyperlink{classColor}{Color}} \&\mbox{\hyperlink{classTabWidgetBase_ad236a44d93f8c7d1e16f56477154c368}{background\+\_\+color}})
+\begin{DoxyCompactList}\small\item\em Set the widget\textquotesingle{}s background color (a global property) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_ad236a44d93f8c7d1e16f56477154c368}\label{classTabWidgetBase_ad236a44d93f8c7d1e16f56477154c368}} 
+const \mbox{\hyperlink{classColor}{Color}} \& \mbox{\hyperlink{classTabWidgetBase_ad236a44d93f8c7d1e16f56477154c368}{background\+\_\+color}} () const
+\begin{DoxyCompactList}\small\item\em Return the widget\textquotesingle{}s background color (a global property) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a2968d03e725e8680e3fa534dd3c8ea21}\label{classTabWidgetBase_a2968d03e725e8680e3fa534dd3c8ea21}} 
+std\+::function$<$ void(int)$>$ \mbox{\hyperlink{classTabWidgetBase_a2968d03e725e8680e3fa534dd3c8ea21}{callback}} () const
+\begin{DoxyCompactList}\small\item\em Callback that is used to notify a listener about tab changes (will be called with the tab ID) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a0754505494739e4f5cd42d19b9e184a4}\label{classTabWidgetBase_a0754505494739e4f5cd42d19b9e184a4}} 
+void \mbox{\hyperlink{classTabWidgetBase_a0754505494739e4f5cd42d19b9e184a4}{set\+\_\+callback}} (const std\+::function$<$ void(int)$>$ \&\mbox{\hyperlink{classTabWidgetBase_a2968d03e725e8680e3fa534dd3c8ea21}{callback}})
+\begin{DoxyCompactList}\small\item\em Set a callback that is used to notify a listener about tab changes (will be called with the tab ID) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a19a0c0dff7e806c076f2e918ba2c7065}\label{classTabWidgetBase_a19a0c0dff7e806c076f2e918ba2c7065}} 
+std\+::function$<$ void(int)$>$ \mbox{\hyperlink{classTabWidgetBase_a19a0c0dff7e806c076f2e918ba2c7065}{close\+\_\+callback}} () const
+\begin{DoxyCompactList}\small\item\em Callback that is used to notify a listener about tab close events (will be called with the tab ID) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a65ce3a5454c016f67f2933ea5520a96c}\label{classTabWidgetBase_a65ce3a5454c016f67f2933ea5520a96c}} 
+void \mbox{\hyperlink{classTabWidgetBase_a65ce3a5454c016f67f2933ea5520a96c}{set\+\_\+close\+\_\+callback}} (const std\+::function$<$ void(int)$>$ \&\mbox{\hyperlink{classTabWidgetBase_a19a0c0dff7e806c076f2e918ba2c7065}{close\+\_\+callback}})
+\begin{DoxyCompactList}\small\item\em Set a callback that is used to notify a listener about tab close events (will be called with the tab ID) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a36ca5bcc3ab34923d2a7810167baa4dd}\label{classTabWidgetBase_a36ca5bcc3ab34923d2a7810167baa4dd}} 
+std\+::function$<$ \mbox{\hyperlink{classPopup}{Popup}} $\ast$(int, \mbox{\hyperlink{classScreen}{Screen}} $\ast$)$>$ \mbox{\hyperlink{classTabWidgetBase_a36ca5bcc3ab34923d2a7810167baa4dd}{popup\+\_\+callback}} () const
+\begin{DoxyCompactList}\small\item\em Callback that is used to notify a listener about popup events (will be called with the tab ID) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a0c3f665fc28b1ed3ce1971b7ff330e79}\label{classTabWidgetBase_a0c3f665fc28b1ed3ce1971b7ff330e79}} 
+void \mbox{\hyperlink{classTabWidgetBase_a0c3f665fc28b1ed3ce1971b7ff330e79}{set\+\_\+popup\+\_\+callback}} (const std\+::function$<$ \mbox{\hyperlink{classPopup}{Popup}} $\ast$(int, \mbox{\hyperlink{classScreen}{Screen}} $\ast$)$>$ \&\mbox{\hyperlink{classTabWidgetBase_a36ca5bcc3ab34923d2a7810167baa4dd}{popup\+\_\+callback}})
+\begin{DoxyCompactList}\small\item\em Set a callback that is used to notify a listener about popup events (will be called with the tab ID) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a0e9f3fdfdaf4f8bd1fc34407addc55ae}\label{classTabWidgetBase_a0e9f3fdfdaf4f8bd1fc34407addc55ae}} 
+virtual void \mbox{\hyperlink{classTabWidgetBase_a0e9f3fdfdaf4f8bd1fc34407addc55ae}{perform\+\_\+layout}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Invoke the associated layout generator to properly place child widgets, if any. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_abb12b708a2f23a125300713407c87926}\label{classTabWidgetBase_abb12b708a2f23a125300713407c87926}} 
+virtual Vector2i \mbox{\hyperlink{classTabWidgetBase_abb12b708a2f23a125300713407c87926}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const override
+\begin{DoxyCompactList}\small\item\em Compute the preferred size of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_aae99bc491a7d700a3a4ac70381d47d5e}\label{classTabWidgetBase_aae99bc491a7d700a3a4ac70381d47d5e}} 
+virtual void \mbox{\hyperlink{classTabWidgetBase_aae99bc491a7d700a3a4ac70381d47d5e}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draw the widget (and all child widgets) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_ab073c882088a8605a7e27ce3b74b57a4}\label{classTabWidgetBase_ab073c882088a8605a7e27ce3b74b57a4}} 
+virtual bool \mbox{\hyperlink{classTabWidgetBase_ab073c882088a8605a7e27ce3b74b57a4}{mouse\+\_\+button\+\_\+event}} (const Vector2i \&p, int button, bool down, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse button event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_ab6f76c2a8cec8c99fed7c72d61da44c0}\label{classTabWidgetBase_ab6f76c2a8cec8c99fed7c72d61da44c0}} 
+virtual bool \mbox{\hyperlink{classTabWidgetBase_ab6f76c2a8cec8c99fed7c72d61da44c0}{mouse\+\_\+enter\+\_\+event}} (const Vector2i \&p, bool enter) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse enter/leave event (default implementation\+: record this fact, but do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidgetBase_a1db16b0863447aa40b81ad342bfe16f4}\label{classTabWidgetBase_a1db16b0863447aa40b81ad342bfe16f4}} 
+virtual bool \mbox{\hyperlink{classTabWidgetBase_a1db16b0863447aa40b81ad342bfe16f4}{mouse\+\_\+motion\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse motion event (default implementation\+: propagate to children) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_adda5437abf57bcba099eaf694cafb350}\label{classTabWidgetBase_adda5437abf57bcba099eaf694cafb350}} 
+std\+::pair$<$ int, bool $>$ {\bfseries tab\+\_\+at\+\_\+position} (const Vector2i \&p, bool test\+\_\+vertical=true) const
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a5176f7bd6d9e56dc44d15545133c0a27}\label{classTabWidgetBase_a5176f7bd6d9e56dc44d15545133c0a27}} 
+virtual void {\bfseries update\+\_\+visibility} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a25ef1a4efcbd3d395c53b95d83c7428a}\label{classTabWidgetBase_a25ef1a4efcbd3d395c53b95d83c7428a}} 
+std\+::string {\bfseries m\+\_\+font}
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a662e7613990b6434d2a18c03aca8093a}\label{classTabWidgetBase_a662e7613990b6434d2a18c03aca8093a}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries m\+\_\+tab\+\_\+captions}
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a5408aa719a4a5d83ee800cb6e877b8b3}\label{classTabWidgetBase_a5408aa719a4a5d83ee800cb6e877b8b3}} 
+std\+::vector$<$ int $>$ {\bfseries m\+\_\+tab\+\_\+ids}
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a114b6d4eef572fa80e67fc10473a0165}\label{classTabWidgetBase_a114b6d4eef572fa80e67fc10473a0165}} 
+std\+::vector$<$ int $>$ {\bfseries m\+\_\+tab\+\_\+offsets}
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a7a127938426186a1fca45ae5e61b4fa9}\label{classTabWidgetBase_a7a127938426186a1fca45ae5e61b4fa9}} 
+int {\bfseries m\+\_\+close\+\_\+width} = 0
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a40bd1a538c60446e54667f368bf8c4d9}\label{classTabWidgetBase_a40bd1a538c60446e54667f368bf8c4d9}} 
+int {\bfseries m\+\_\+active\+\_\+tab} = 0
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a1a317c751c0af2c5123ad32897e683b5}\label{classTabWidgetBase_a1a317c751c0af2c5123ad32897e683b5}} 
+int {\bfseries m\+\_\+tab\+\_\+drag\+\_\+index} = -\/1
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_aac8a92dee126e1cc1bb8bc64693ff6de}\label{classTabWidgetBase_aac8a92dee126e1cc1bb8bc64693ff6de}} 
+int {\bfseries m\+\_\+tab\+\_\+drag\+\_\+min} = -\/1
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a6c71b1dd14ae67eb02a7b1cd7d5ee24f}\label{classTabWidgetBase_a6c71b1dd14ae67eb02a7b1cd7d5ee24f}} 
+int {\bfseries m\+\_\+tab\+\_\+drag\+\_\+max} = -\/1
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a1f9b9db9febb3064c44fba5136cdae57}\label{classTabWidgetBase_a1f9b9db9febb3064c44fba5136cdae57}} 
+int {\bfseries m\+\_\+tab\+\_\+drag\+\_\+start} = -\/1
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_ac630c90ef8f2c19f490e9dd079e06fa9}\label{classTabWidgetBase_ac630c90ef8f2c19f490e9dd079e06fa9}} 
+int {\bfseries m\+\_\+tab\+\_\+drag\+\_\+end} = -\/1
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a4c11d6fb3e43385369a9fea82960a8f1}\label{classTabWidgetBase_a4c11d6fb3e43385369a9fea82960a8f1}} 
+int {\bfseries m\+\_\+close\+\_\+index} = -\/1
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a6a5750a70004e755c4017bb11acad432}\label{classTabWidgetBase_a6a5750a70004e755c4017bb11acad432}} 
+int {\bfseries m\+\_\+close\+\_\+index\+\_\+pushed} = -\/1
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_ac26dfee471554794041345dff5863cad}\label{classTabWidgetBase_ac26dfee471554794041345dff5863cad}} 
+bool {\bfseries m\+\_\+tabs\+\_\+draggable} = false
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a23a8a6840e53317e5c5ef8a04d06f44e}\label{classTabWidgetBase_a23a8a6840e53317e5c5ef8a04d06f44e}} 
+bool {\bfseries m\+\_\+tabs\+\_\+closeable} = false
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_ad2d5535d623740167329c2d958f89261}\label{classTabWidgetBase_ad2d5535d623740167329c2d958f89261}} 
+\mbox{\hyperlink{classPopup}{Popup}} $\ast$ {\bfseries m\+\_\+popup} = nullptr
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a6cd1cf1ed7da41cc78d94df1f94079b8}\label{classTabWidgetBase_a6cd1cf1ed7da41cc78d94df1f94079b8}} 
+int {\bfseries m\+\_\+tab\+\_\+counter} = 0
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_ab1679b7ee7ab607822430546219f79a7}\label{classTabWidgetBase_ab1679b7ee7ab607822430546219f79a7}} 
+int {\bfseries m\+\_\+padding} = 3
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a548e2f7dea16b7d050a74a608d290ebb}\label{classTabWidgetBase_a548e2f7dea16b7d050a74a608d290ebb}} 
+std\+::function$<$ void(int)$>$ {\bfseries m\+\_\+callback}
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_ab08b59a7f37afff4a0cd973d3c743e53}\label{classTabWidgetBase_ab08b59a7f37afff4a0cd973d3c743e53}} 
+std\+::function$<$ void(int)$>$ {\bfseries m\+\_\+close\+\_\+callback}
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_ac4de8822941dd2756eb0cf6319e92b3a}\label{classTabWidgetBase_ac4de8822941dd2756eb0cf6319e92b3a}} 
+std\+::function$<$ \mbox{\hyperlink{classPopup}{Popup}} $\ast$(int, \mbox{\hyperlink{classScreen}{Screen}} $\ast$)$>$ {\bfseries m\+\_\+popup\+\_\+callback}
+\item 
+\mbox{\Hypertarget{classTabWidgetBase_a6dda81af35318d214a8a71a69ab499f5}\label{classTabWidgetBase_a6dda81af35318d214a8a71a69ab499f5}} 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries m\+\_\+background\+\_\+color}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Basic implementation of a tab widget with (optionally) draggable and closeable tabs and popup menus. No rendering of the content is done---for an example implementation, refer to \mbox{\hyperlink{classTabWidget}{Tab\+Widget}}. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{tabwidget_8h}{tabwidget.\+h}}\item 
+ext/nanogui/src/tabwidget.\+cpp\end{DoxyCompactItemize}

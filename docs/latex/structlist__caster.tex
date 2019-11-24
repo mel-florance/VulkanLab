@@ -1,0 +1,37 @@
+\hypertarget{structlist__caster}{}\doxysection{Référence du modèle de la structure list\+\_\+caster$<$ Type, Value $>$}
+\label{structlist__caster}\index{list\_caster$<$ Type, Value $>$@{list\_caster$<$ Type, Value $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlist__caster_ac967cd6db186bb9053a3309967afd769}\label{structlist__caster_ac967cd6db186bb9053a3309967afd769}} 
+using {\bfseries value\+\_\+conv} = \mbox{\hyperlink{classtype__caster}{make\+\_\+caster}}$<$ Value $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlist__caster_a6f4b4e4679fc465e40ef9f45480c3467}\label{structlist__caster_a6f4b4e4679fc465e40ef9f45480c3467}} 
+bool {\bfseries load} (\mbox{\hyperlink{classhandle}{handle}} src, bool convert)
+\item 
+\mbox{\Hypertarget{structlist__caster_a88389469e8b23995d7834cc6715ce790}\label{structlist__caster_a88389469e8b23995d7834cc6715ce790}} 
+{\bfseries P\+Y\+B\+I\+N\+D11\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+A\+S\+T\+ER} (Type, \+\_\+(\char`\"{}List\mbox{[}\char`\"{})+value\+\_\+conv\+::name+\+\_\+(\char`\"{}\mbox{]}\char`\"{}))
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlist__caster_add7c216960ed11015507b9c4356d088d}\label{structlist__caster_add7c216960ed11015507b9c4356d088d}} 
+{\footnotesize template$<$typename T $>$ }\\static \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast} (T \&\&src, return\+\_\+value\+\_\+policy policy, \mbox{\hyperlink{classhandle}{handle}} parent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlist__caster_a78bab78a7a5be0e0cc83007421207d27}\label{structlist__caster_a78bab78a7a5be0e0cc83007421207d27}} 
+{\footnotesize template$<$typename T  = Type, enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same$<$  decltype$>$ }\\void {\bfseries reserve\+\_\+maybe} (\mbox{\hyperlink{classsequence}{sequence}} s, Type $\ast$)
+\item 
+\mbox{\Hypertarget{structlist__caster_abf10f0b58c041eaf95ff3ae11219c17f}\label{structlist__caster_abf10f0b58c041eaf95ff3ae11219c17f}} 
+void {\bfseries reserve\+\_\+maybe} (\mbox{\hyperlink{classsequence}{sequence}}, void $\ast$)
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/stl.\+h\end{DoxyCompactItemize}

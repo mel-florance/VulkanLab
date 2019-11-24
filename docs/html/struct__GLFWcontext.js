@@ -1,0 +1,26 @@
+var struct__GLFWcontext =
+[
+    [ "_GLFW_EGL_CONTEXT_STATE", "struct__GLFWcontext.html#a9c8975a5c598ba3e6914f0b50ed1d71c", null ],
+    [ "_GLFW_OSMESA_CONTEXT_STATE", "struct__GLFWcontext.html#a25cef6685ae2f2a70005d6aa845b7451", null ],
+    [ "_GLFW_PLATFORM_CONTEXT_STATE", "struct__GLFWcontext.html#add5d11606984df8b43b4e105910146a0", null ],
+    [ "client", "struct__GLFWcontext.html#a28be0d0d7d19abf30afc51d58d297403", null ],
+    [ "debug", "struct__GLFWcontext.html#a4644cc146abe50cffba0b2a2cded0842", null ],
+    [ "destroy", "struct__GLFWcontext.html#aaece52646c2833dde715076997d342ef", null ],
+    [ "extensionSupported", "struct__GLFWcontext.html#aebe7b3bb6a36ea61b3ee42b842cf3c0c", null ],
+    [ "forward", "struct__GLFWcontext.html#a21807f4416e952cbceada7cad76b2de0", null ],
+    [ "GetIntegerv", "struct__GLFWcontext.html#abcccc1e675c2a12ac2e8fbe4d4744764", null ],
+    [ "getProcAddress", "struct__GLFWcontext.html#afa005d828fe19afcffec1dea535eba94", null ],
+    [ "GetString", "struct__GLFWcontext.html#a0c8046b9b7cd666e9d2a20155f000d1b", null ],
+    [ "GetStringi", "struct__GLFWcontext.html#a8707ecb3f8d22238f6bd9f32d038488f", null ],
+    [ "major", "struct__GLFWcontext.html#aa6e6e742b2b24be8236637cf9f9daf03", null ],
+    [ "makeCurrent", "struct__GLFWcontext.html#ae952472c57ac95731836926569bbc627", null ],
+    [ "minor", "struct__GLFWcontext.html#ac9e4d76df7a07629329df12d8dceb87c", null ],
+    [ "noerror", "struct__GLFWcontext.html#a7e4073ba5f77a5be9f1e415cfc57225b", null ],
+    [ "profile", "struct__GLFWcontext.html#a99aa07a2c46fc33cb20c1a894a0d4d48", null ],
+    [ "release", "struct__GLFWcontext.html#a75bc2ba25c7dc5e984b99c3978f3a1a2", null ],
+    [ "revision", "struct__GLFWcontext.html#a456ca7559ca7e0173304e1d52a2f9701", null ],
+    [ "robustness", "struct__GLFWcontext.html#a8cbae42868bc802f882aae05267ba0fd", null ],
+    [ "source", "struct__GLFWcontext.html#ac02dc10d0c9be8b1212cf58efb7229fe", null ],
+    [ "swapBuffers", "struct__GLFWcontext.html#a5e18011d14b17a9fb91f470cd694f3c2", null ],
+    [ "swapInterval", "struct__GLFWcontext.html#a22eb993e164955b975025d4931551f11", null ]
+];

@@ -1,12 +1,12 @@
-\hypertarget{classFPSCamera}{}\doxysection{F\+P\+S\+Camera Class Reference}
+\hypertarget{classFPSCamera}{}\doxysection{Référence de la classe F\+P\+S\+Camera}
 \label{classFPSCamera}\index{FPSCamera@{FPSCamera}}
-Inheritance diagram for F\+P\+S\+Camera\+:\begin{figure}[H]
+Graphe d\textquotesingle{}héritage de F\+P\+S\+Camera\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=3.000000cm]{classFPSCamera}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Types}
+\doxysubsection*{Types publics}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classFPSCamera_a9f98b6ba660de0f521212cc5a6001a2a}\label{classFPSCamera_a9f98b6ba660de0f521212cc5a6001a2a}} 
@@ -20,7 +20,7 @@ enum {\bfseries Direction} \{ \newline
 {\bfseries D\+O\+WN} = 1 $<$$<$ 5
  \}
 \end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classFPSCamera_a32bfabda538e90d7cb5f5f147ded33ef}{F\+P\+S\+Camera}} (\mbox{\hyperlink{classViewport}{Viewport}} $\ast$viewport)
@@ -29,7 +29,7 @@ enum {\bfseries Direction} \{ \newline
 \item 
 void \mbox{\hyperlink{classFPSCamera_a5cc5c2fc2de84184d33f24dac09ab6a8}{compute}} ()
 \item 
-void \mbox{\hyperlink{classFPSCamera_a74aaa28494ca10f7dae147bc5c148980}{update}} (float delta)
+void \mbox{\hyperlink{classFPSCamera_a8161aec9831a44679d699919f81b03d9}{update}} (float delta) override
 \item 
 void \mbox{\hyperlink{classFPSCamera_ada84e5e78fd3020083819da2e0ffc847}{on\+Mouse\+Move}} (\mbox{\hyperlink{structEvent}{Event}} $\ast$data) override
 \item 
@@ -101,7 +101,7 @@ bool \mbox{\hyperlink{classFPSCamera_ad6c0bf131e0095c3357434cb7dc669be}{is\+Cons
 \item 
 void \mbox{\hyperlink{classFPSCamera_a876b1d509babbb997feb9da5af5b22b7}{set\+Constrain\+Axis}} (bool constrain\+Axis)
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classFPSCamera_a5a9c34ff74e0bc259d15f5f3bb274963}\label{classFPSCamera_a5a9c34ff74e0bc259d15f5f3bb274963}} 
@@ -152,10 +152,10 @@ float {\bfseries max\+Speed}
 \mbox{\Hypertarget{classFPSCamera_a579de0c996443e04c6633ea4eb87701f}\label{classFPSCamera_a579de0c996443e04c6633ea4eb87701f}} 
 char {\bfseries movement\+Direction}
 \end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
+\doxysubsection*{Membres hérités additionnels}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\doxysubsection{Documentation des constructeurs et destructeur}
 \mbox{\Hypertarget{classFPSCamera_a32bfabda538e90d7cb5f5f147ded33ef}\label{classFPSCamera_a32bfabda538e90d7cb5f5f147ded33ef}} 
 \index{FPSCamera@{FPSCamera}!FPSCamera@{FPSCamera}}
 \index{FPSCamera@{FPSCamera}!FPSCamera@{FPSCamera}}
@@ -163,7 +163,7 @@ char {\bfseries movement\+Direction}
 {\footnotesize\ttfamily F\+P\+S\+Camera\+::\+F\+P\+S\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classViewport}{Viewport}} $\ast$}]{viewport }\end{DoxyParamCaption})}
 
 F\+PS \mbox{\hyperlink{classCamera}{Camera}} constructor 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em viewport} & \\
 \hline
 \end{DoxyParams}
@@ -175,7 +175,7 @@ F\+PS \mbox{\hyperlink{classCamera}{Camera}} constructor
 
 F\+PS \mbox{\hyperlink{classCamera}{Camera}} destructor 
 
-\doxysubsection{Member Function Documentation}
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classFPSCamera_a5cc5c2fc2de84184d33f24dac09ab6a8}\label{classFPSCamera_a5cc5c2fc2de84184d33f24dac09ab6a8}} 
 \index{FPSCamera@{FPSCamera}!compute@{compute}}
 \index{compute@{compute}!FPSCamera@{FPSCamera}}
@@ -242,7 +242,7 @@ Return the camera view sensitivity. \mbox{\Hypertarget{classFPSCamera_a7cfc4c00b
 \doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
 {\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the camera speed. \begin{DoxyReturn}{Returns}
+Return the camera speed. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classFPSCamera_abbe06d59e6e9f6fa2546fa9fad681a7c}\label{classFPSCamera_abbe06d59e6e9f6fa2546fa9fad681a7c}} 
@@ -251,7 +251,7 @@ Return the camera speed. \begin{DoxyReturn}{Returns}
 \doxysubsubsection{\texorpdfstring{getSpeedMultiplier()}{getSpeedMultiplier()}}
 {\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Speed\+Multiplier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the speed multiplier. \begin{DoxyReturn}{Returns}
+Return the speed multiplier. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classFPSCamera_a85a01c5ff1bfe70f10bd7be088845e47}\label{classFPSCamera_a85a01c5ff1bfe70f10bd7be088845e47}} 
@@ -260,7 +260,7 @@ Return the speed multiplier. \begin{DoxyReturn}{Returns}
 \doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
 {\footnotesize\ttfamily const glm\+::vec3\& F\+P\+S\+Camera\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the velocity of the camera. \begin{DoxyReturn}{Returns}
+Return the velocity of the camera. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classFPSCamera_ac797caf4209d14a39381213f40611ff2}\label{classFPSCamera_ac797caf4209d14a39381213f40611ff2}} 
@@ -269,7 +269,7 @@ Return the velocity of the camera. \begin{DoxyReturn}{Returns}
 \doxysubsubsection{\texorpdfstring{getYaw()}{getYaw()}}
 {\footnotesize\ttfamily float F\+P\+S\+Camera\+::get\+Yaw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the camera yaw axis value. \begin{DoxyReturn}{Returns}
+Return the camera yaw axis value. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classFPSCamera_ad6c0bf131e0095c3357434cb7dc669be}\label{classFPSCamera_ad6c0bf131e0095c3357434cb7dc669be}} 
@@ -292,7 +292,7 @@ Check if the mouse moved for the first time. \mbox{\Hypertarget{classFPSCamera_a
 
 On\+Keyboard\+Input event 
 
-Reimplemented from \mbox{\hyperlink{classKeyboardEvents}{Keyboard\+Events}}.
+Réimplémentée à partir de \mbox{\hyperlink{classKeyboardEvents}{Keyboard\+Events}}.
 
 \mbox{\Hypertarget{classFPSCamera_a1151e1893eee1457f45fcae1fc70e090}\label{classFPSCamera_a1151e1893eee1457f45fcae1fc70e090}} 
 \index{FPSCamera@{FPSCamera}!onMouseButton@{onMouseButton}}
@@ -302,7 +302,7 @@ Reimplemented from \mbox{\hyperlink{classKeyboardEvents}{Keyboard\+Events}}.
 
 On\+Mouse\+Button event 
 
-Reimplemented from \mbox{\hyperlink{classMouseEvents}{Mouse\+Events}}.
+Réimplémentée à partir de \mbox{\hyperlink{classMouseEvents}{Mouse\+Events}}.
 
 \mbox{\Hypertarget{classFPSCamera_ada84e5e78fd3020083819da2e0ffc847}\label{classFPSCamera_ada84e5e78fd3020083819da2e0ffc847}} 
 \index{FPSCamera@{FPSCamera}!onMouseMove@{onMouseMove}}
@@ -312,7 +312,7 @@ Reimplemented from \mbox{\hyperlink{classMouseEvents}{Mouse\+Events}}.
 
 On\+Mouse\+Move event 
 
-Reimplemented from \mbox{\hyperlink{classMouseEvents}{Mouse\+Events}}.
+Réimplémentée à partir de \mbox{\hyperlink{classMouseEvents}{Mouse\+Events}}.
 
 \mbox{\Hypertarget{classFPSCamera_a022eb85350bda4f82864b5e81e2775d3}\label{classFPSCamera_a022eb85350bda4f82864b5e81e2775d3}} 
 \index{FPSCamera@{FPSCamera}!onMouseScroll@{onMouseScroll}}
@@ -322,7 +322,7 @@ Reimplemented from \mbox{\hyperlink{classMouseEvents}{Mouse\+Events}}.
 
 On\+Mouse\+Scroll event 
 
-Reimplemented from \mbox{\hyperlink{classMouseEvents}{Mouse\+Events}}.
+Réimplémentée à partir de \mbox{\hyperlink{classMouseEvents}{Mouse\+Events}}.
 
 \mbox{\Hypertarget{classFPSCamera_a0a5f69a5e3dc77a9a39ab0f65fe5a1e4}\label{classFPSCamera_a0a5f69a5e3dc77a9a39ab0f65fe5a1e4}} 
 \index{FPSCamera@{FPSCamera}!onWindowResize@{onWindowResize}}
@@ -332,7 +332,7 @@ Reimplemented from \mbox{\hyperlink{classMouseEvents}{Mouse\+Events}}.
 
 On\+Window\+Resize event 
 
-Reimplemented from \mbox{\hyperlink{classWindowEvents}{Window\+Events}}.
+Réimplémentée à partir de \mbox{\hyperlink{classWindowEvents}{Window\+Events}}.
 
 \mbox{\Hypertarget{classFPSCamera_a876b1d509babbb997feb9da5af5b22b7}\label{classFPSCamera_a876b1d509babbb997feb9da5af5b22b7}} 
 \index{FPSCamera@{FPSCamera}!setConstrainAxis@{setConstrainAxis}}
@@ -419,7 +419,7 @@ Set the speed multiplier. \mbox{\Hypertarget{classFPSCamera_ae75d273d5cbde958036
 {\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{velocity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the velocity of the camera. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em velocity} & \\
 \hline
 \end{DoxyParams}
@@ -429,19 +429,19 @@ Set the velocity of the camera.
 \doxysubsubsection{\texorpdfstring{setYaw()}{setYaw()}}
 {\footnotesize\ttfamily void F\+P\+S\+Camera\+::set\+Yaw (\begin{DoxyParamCaption}\item[{float}]{yaw }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Set the camera yaw axis value. \mbox{\Hypertarget{classFPSCamera_a74aaa28494ca10f7dae147bc5c148980}\label{classFPSCamera_a74aaa28494ca10f7dae147bc5c148980}} 
+Set the camera yaw axis value. \mbox{\Hypertarget{classFPSCamera_a8161aec9831a44679d699919f81b03d9}\label{classFPSCamera_a8161aec9831a44679d699919f81b03d9}} 
 \index{FPSCamera@{FPSCamera}!update@{update}}
 \index{update@{update}!FPSCamera@{FPSCamera}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily void F\+P\+S\+Camera\+::update (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void F\+P\+S\+Camera\+::update (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Update the camera. 
 
-Reimplemented from \mbox{\hyperlink{classCamera_a022b6974113a235ae74668c74571d8f0}{Camera}}.
+Réimplémentée à partir de \mbox{\hyperlink{classCamera_a022b6974113a235ae74668c74571d8f0}{Camera}}.
 
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
 Engine/src/\+Cameras/F\+P\+S\+Camera.\+h\item 
 Engine/src/\+Cameras/F\+P\+S\+Camera.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,213 @@
+\hypertarget{classarray}{}\doxysection{Référence de la classe array}
+\label{classarray}\index{array@{array}}
+Graphe d\textquotesingle{}héritage de array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.452031cm]{classarray}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarray_a1f83fca3e2c14a4ba34983e5c05c947e}\label{classarray_a1f83fca3e2c14a4ba34983e5c05c947e}} 
+enum \{ {\bfseries c\+\_\+style} = detail\+::npy\+\_\+api\+::N\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+C\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+U\+S\+\_\+, 
+{\bfseries f\+\_\+style} = detail\+::npy\+\_\+api\+::N\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+F\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+U\+S\+\_\+, 
+{\bfseries forcecast} = detail\+::npy\+\_\+api\+::N\+P\+Y\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+F\+O\+R\+C\+E\+C\+A\+S\+T\+\_\+
+ \}
+\item 
+\mbox{\Hypertarget{classarray_a3378d7821106645fa3a88c5222e127e0}\label{classarray_a3378d7821106645fa3a88c5222e127e0}} 
+using {\bfseries Shape\+Container} = detail\+::any\+\_\+container$<$ ssize\+\_\+t $>$
+\item 
+\mbox{\Hypertarget{classarray_a8ba4f30946f0bc69ec937160c9fb10e1}\label{classarray_a8ba4f30946f0bc69ec937160c9fb10e1}} 
+using {\bfseries Strides\+Container} = detail\+::any\+\_\+container$<$ ssize\+\_\+t $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarray_a64167a4ca5cfd192b9957b6c2bf0b0d4}\label{classarray_a64167a4ca5cfd192b9957b6c2bf0b0d4}} 
+{\bfseries array} (const pybind11\+::dtype \&dt, Shape\+Container \mbox{\hyperlink{classarray_a084781a3d2cb3ea60ab7bcf16c30ee31}{shape}}, Strides\+Container \mbox{\hyperlink{classarray_a3dd7d4e8f6d93e5714a642a3250df6e3}{strides}}, const void $\ast$\mbox{\hyperlink{classhandle_afcd412ba4cbffd7d1e3c9338746b2682}{ptr}}=nullptr, \mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structbase}{base}}=\mbox{\hyperlink{classhandle}{handle}}())
+\item 
+\mbox{\Hypertarget{classarray_a07473e56f6f33ccb72eb184752dd3d5e}\label{classarray_a07473e56f6f33ccb72eb184752dd3d5e}} 
+{\bfseries array} (const pybind11\+::dtype \&dt, Shape\+Container \mbox{\hyperlink{classarray_a084781a3d2cb3ea60ab7bcf16c30ee31}{shape}}, const void $\ast$\mbox{\hyperlink{classhandle_afcd412ba4cbffd7d1e3c9338746b2682}{ptr}}=nullptr, \mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structbase}{base}}=\mbox{\hyperlink{classhandle}{handle}}())
+\item 
+\mbox{\Hypertarget{classarray_ab1734d05a763ee406ea70f0fbebb3cf4}\label{classarray_ab1734d05a763ee406ea70f0fbebb3cf4}} 
+{\footnotesize template$<$typename T , typename  = detail\+::enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+integral$<$\+T$>$\+::value \&\& !std\+::is\+\_\+same$<$bool, T$>$\+::value$>$$>$ }\\{\bfseries array} (const pybind11\+::dtype \&dt, T count, const void $\ast$\mbox{\hyperlink{classhandle_afcd412ba4cbffd7d1e3c9338746b2682}{ptr}}=nullptr, \mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structbase}{base}}=\mbox{\hyperlink{classhandle}{handle}}())
+\item 
+\mbox{\Hypertarget{classarray_af12d5d4757512f405a734ab2fe235f26}\label{classarray_af12d5d4757512f405a734ab2fe235f26}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries array} (Shape\+Container \mbox{\hyperlink{classarray_a084781a3d2cb3ea60ab7bcf16c30ee31}{shape}}, Strides\+Container \mbox{\hyperlink{classarray_a3dd7d4e8f6d93e5714a642a3250df6e3}{strides}}, const T $\ast$\mbox{\hyperlink{classhandle_afcd412ba4cbffd7d1e3c9338746b2682}{ptr}}, \mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structbase}{base}}=\mbox{\hyperlink{classhandle}{handle}}())
+\item 
+\mbox{\Hypertarget{classarray_a29a0ed58b37adec393508a4eeed4236f}\label{classarray_a29a0ed58b37adec393508a4eeed4236f}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries array} (Shape\+Container \mbox{\hyperlink{classarray_a084781a3d2cb3ea60ab7bcf16c30ee31}{shape}}, const T $\ast$\mbox{\hyperlink{classhandle_afcd412ba4cbffd7d1e3c9338746b2682}{ptr}}, \mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structbase}{base}}=\mbox{\hyperlink{classhandle}{handle}}())
+\item 
+\mbox{\Hypertarget{classarray_a3fab95f1c066b62deaf8717fb3e99519}\label{classarray_a3fab95f1c066b62deaf8717fb3e99519}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries array} (ssize\+\_\+t count, const T $\ast$\mbox{\hyperlink{classhandle_afcd412ba4cbffd7d1e3c9338746b2682}{ptr}}, \mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structbase}{base}}=\mbox{\hyperlink{classhandle}{handle}}())
+\item 
+\mbox{\Hypertarget{classarray_afadb342ccfd398c0498ae62277d2a1a9}\label{classarray_afadb342ccfd398c0498ae62277d2a1a9}} 
+{\bfseries array} (const \mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}} \&info)
+\item 
+\mbox{\Hypertarget{classarray_a49535f32396582e415a61f3aac9c78b3}\label{classarray_a49535f32396582e415a61f3aac9c78b3}} 
+pybind11\+::dtype \mbox{\hyperlink{classarray_a49535f32396582e415a61f3aac9c78b3}{dtype}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structArray}{Array}} descriptor (dtype) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarray_a34ae467d17d30b99913e27c755403fef}\label{classarray_a34ae467d17d30b99913e27c755403fef}} 
+ssize\+\_\+t \mbox{\hyperlink{classarray_a34ae467d17d30b99913e27c755403fef}{size}} () const
+\begin{DoxyCompactList}\small\item\em Total number of elements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarray_acd6aa4dba1e1db26fcfd21a323b4d4fa}\label{classarray_acd6aa4dba1e1db26fcfd21a323b4d4fa}} 
+ssize\+\_\+t \mbox{\hyperlink{classarray_acd6aa4dba1e1db26fcfd21a323b4d4fa}{itemsize}} () const
+\begin{DoxyCompactList}\small\item\em Byte size of a single element. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarray_a0a2a16579bf2918347a8762c03f10137}\label{classarray_a0a2a16579bf2918347a8762c03f10137}} 
+ssize\+\_\+t \mbox{\hyperlink{classarray_a0a2a16579bf2918347a8762c03f10137}{nbytes}} () const
+\begin{DoxyCompactList}\small\item\em Total number of bytes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarray_a184360492eac7224753f132d1a0a973e}\label{classarray_a184360492eac7224753f132d1a0a973e}} 
+ssize\+\_\+t \mbox{\hyperlink{classarray_a184360492eac7224753f132d1a0a973e}{ndim}} () const
+\begin{DoxyCompactList}\small\item\em Number of dimensions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarray_a33a2f2933da6ca35a8ac82709df90038}\label{classarray_a33a2f2933da6ca35a8ac82709df90038}} 
+\mbox{\hyperlink{classobject}{object}} \mbox{\hyperlink{classarray_a33a2f2933da6ca35a8ac82709df90038}{base}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structBase}{Base}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarray_a084781a3d2cb3ea60ab7bcf16c30ee31}\label{classarray_a084781a3d2cb3ea60ab7bcf16c30ee31}} 
+const ssize\+\_\+t $\ast$ \mbox{\hyperlink{classarray_a084781a3d2cb3ea60ab7bcf16c30ee31}{shape}} () const
+\begin{DoxyCompactList}\small\item\em Dimensions of the array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarray_aceb118afe3a4eed2b3c9ec958505e414}\label{classarray_aceb118afe3a4eed2b3c9ec958505e414}} 
+ssize\+\_\+t \mbox{\hyperlink{classarray_aceb118afe3a4eed2b3c9ec958505e414}{shape}} (ssize\+\_\+t dim) const
+\begin{DoxyCompactList}\small\item\em Dimension along a given axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarray_a3dd7d4e8f6d93e5714a642a3250df6e3}\label{classarray_a3dd7d4e8f6d93e5714a642a3250df6e3}} 
+const ssize\+\_\+t $\ast$ \mbox{\hyperlink{classarray_a3dd7d4e8f6d93e5714a642a3250df6e3}{strides}} () const
+\begin{DoxyCompactList}\small\item\em Strides of the array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarray_afb8e09341f7884d6b34d454b2992c7ce}\label{classarray_afb8e09341f7884d6b34d454b2992c7ce}} 
+ssize\+\_\+t \mbox{\hyperlink{classarray_afb8e09341f7884d6b34d454b2992c7ce}{strides}} (ssize\+\_\+t dim) const
+\begin{DoxyCompactList}\small\item\em Stride along a given axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarray_a38eb48c793621c12119ab7b64714955b}\label{classarray_a38eb48c793621c12119ab7b64714955b}} 
+int \mbox{\hyperlink{classarray_a38eb48c793621c12119ab7b64714955b}{flags}} () const
+\begin{DoxyCompactList}\small\item\em Return the Num\+Py array flags. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarray_a9c19f81ca43feebd34b2c9dd5b38f1d9}\label{classarray_a9c19f81ca43feebd34b2c9dd5b38f1d9}} 
+bool \mbox{\hyperlink{classarray_a9c19f81ca43feebd34b2c9dd5b38f1d9}{writeable}} () const
+\begin{DoxyCompactList}\small\item\em If set, the array is writeable (otherwise the buffer is read-\/only) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarray_aa1ad8575ad6a6b900027c360a44e7ef0}\label{classarray_aa1ad8575ad6a6b900027c360a44e7ef0}} 
+bool \mbox{\hyperlink{classarray_aa1ad8575ad6a6b900027c360a44e7ef0}{owndata}} () const
+\begin{DoxyCompactList}\small\item\em If set, the array owns the data (will be freed when the array is deleted) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Ix$>$ }\\const void $\ast$ \mbox{\hyperlink{classarray_a7a8adf48e9a263af91aa975548e0e14d}{data}} (Ix... index) const
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\void $\ast$ \mbox{\hyperlink{classarray_ad06996f0b02fa6dc86e79744cbef5d80}{mutable\+\_\+data}} (Ix... index)
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\ssize\+\_\+t \mbox{\hyperlink{classarray_a0063e6a1d118abb371f769377b5fee21}{offset\+\_\+at}} (Ix... index) const
+\item 
+\mbox{\Hypertarget{classarray_ada98138e241b891a543478dbe6494f17}\label{classarray_ada98138e241b891a543478dbe6494f17}} 
+ssize\+\_\+t {\bfseries offset\+\_\+at} () const
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\ssize\+\_\+t \mbox{\hyperlink{classarray_a48d7b1bd08e0a5cf1ef27a6996421e73}{index\+\_\+at}} (Ix... index) const
+\item 
+{\footnotesize template$<$typename T , ssize\+\_\+t Dims = -\/1$>$ }\\detail\+::unchecked\+\_\+mutable\+\_\+reference$<$ T, Dims $>$ \mbox{\hyperlink{classarray_a93018344b9a8d27eacbdd7837f6efcab}{mutable\+\_\+unchecked}} () \&
+\item 
+{\footnotesize template$<$typename T , ssize\+\_\+t Dims = -\/1$>$ }\\detail\+::unchecked\+\_\+reference$<$ T, Dims $>$ \mbox{\hyperlink{classarray_a453dfcd16f86df11e0a6ede98b04b7a0}{unchecked}} () const \&
+\item 
+\mbox{\Hypertarget{classarray_af0e9b034604a5306671cdb114855a972}\label{classarray_af0e9b034604a5306671cdb114855a972}} 
+\mbox{\hyperlink{structdetail_1_1array}{array}} \mbox{\hyperlink{classarray_af0e9b034604a5306671cdb114855a972}{squeeze}} ()
+\begin{DoxyCompactList}\small\item\em Return a new view with all of the dimensions of length 1 removed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarray_a3e03dfffbf6c992364c052cf615db45b}{resize}} (Shape\+Container new\+\_\+shape, bool refcheck=true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{structdetail_1_1array}{array}} \mbox{\hyperlink{classarray_a4b19125eed75474c00a93c829dba3a8b}{ensure}} (\mbox{\hyperlink{classhandle}{handle}} h, int Extra\+Flags=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarray_a00dcb86f0bf1f925b23bd9ab028ffa13}\label{classarray_a00dcb86f0bf1f925b23bd9ab028ffa13}} 
+void {\bfseries fail\+\_\+dim\+\_\+check} (ssize\+\_\+t dim, const std\+::string \&msg) const
+\item 
+\mbox{\Hypertarget{classarray_a336f1f7f56775fa328587645f2ab6e6f}\label{classarray_a336f1f7f56775fa328587645f2ab6e6f}} 
+{\footnotesize template$<$typename... Ix$>$ }\\ssize\+\_\+t {\bfseries byte\+\_\+offset} (Ix... index) const
+\item 
+\mbox{\Hypertarget{classarray_a967db5bead19594b8f4a95c29b8aa13a}\label{classarray_a967db5bead19594b8f4a95c29b8aa13a}} 
+void {\bfseries check\+\_\+writeable} () const
+\item 
+\mbox{\Hypertarget{classarray_a1105041b04c18e91082ec096c0e53701}\label{classarray_a1105041b04c18e91082ec096c0e53701}} 
+{\footnotesize template$<$typename... Ix$>$ }\\void {\bfseries check\+\_\+dimensions} (Ix... index) const
+\item 
+\mbox{\Hypertarget{classarray_a7eb067f2de82290601537066e4cdfc70}\label{classarray_a7eb067f2de82290601537066e4cdfc70}} 
+void {\bfseries check\+\_\+dimensions\+\_\+impl} (ssize\+\_\+t, const ssize\+\_\+t $\ast$) const
+\item 
+\mbox{\Hypertarget{classarray_a368cacc4c65057b1a97fb53ec158f98f}\label{classarray_a368cacc4c65057b1a97fb53ec158f98f}} 
+{\footnotesize template$<$typename... Ix$>$ }\\void {\bfseries check\+\_\+dimensions\+\_\+impl} (ssize\+\_\+t axis, const ssize\+\_\+t $\ast$\mbox{\hyperlink{classarray_a084781a3d2cb3ea60ab7bcf16c30ee31}{shape}}, ssize\+\_\+t i, Ix... index) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarray_acbcef933c85e97ffafa7f9b2114ffef4}\label{classarray_acbcef933c85e97ffafa7f9b2114ffef4}} 
+static std\+::vector$<$ ssize\+\_\+t $>$ {\bfseries c\+\_\+strides} (const std\+::vector$<$ ssize\+\_\+t $>$ \&\mbox{\hyperlink{classarray_a084781a3d2cb3ea60ab7bcf16c30ee31}{shape}}, ssize\+\_\+t \mbox{\hyperlink{classarray_acd6aa4dba1e1db26fcfd21a323b4d4fa}{itemsize}})
+\item 
+\mbox{\Hypertarget{classarray_a4668d1a96b1acab41acf6f38fa89c122}\label{classarray_a4668d1a96b1acab41acf6f38fa89c122}} 
+static std\+::vector$<$ ssize\+\_\+t $>$ {\bfseries f\+\_\+strides} (const std\+::vector$<$ ssize\+\_\+t $>$ \&\mbox{\hyperlink{classarray_a084781a3d2cb3ea60ab7bcf16c30ee31}{shape}}, ssize\+\_\+t \mbox{\hyperlink{classarray_acd6aa4dba1e1db26fcfd21a323b4d4fa}{itemsize}})
+\item 
+\mbox{\Hypertarget{classarray_a1b059af39c8d296d72f31dcb4952cd4a}\label{classarray_a1b059af39c8d296d72f31dcb4952cd4a}} 
+static Py\+Object $\ast$ \mbox{\hyperlink{classarray_a1b059af39c8d296d72f31dcb4952cd4a}{raw\+\_\+array}} (Py\+Object $\ast$\mbox{\hyperlink{classhandle_afcd412ba4cbffd7d1e3c9338746b2682}{ptr}}, int Extra\+Flags=0)
+\begin{DoxyCompactList}\small\item\em Create array from any object -- always returns a new reference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarray_a2d7124af4924ef006d3b7bfd42b05085}\label{classarray_a2d7124af4924ef006d3b7bfd42b05085}} 
+{\footnotesize template$<$typename , typename $>$ }\\struct {\bfseries detail\+::npy\+\_\+format\+\_\+descriptor}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classarray_a7a8adf48e9a263af91aa975548e0e14d}\label{classarray_a7a8adf48e9a263af91aa975548e0e14d}} 
+\index{array@{array}!data@{data}}
+\index{data@{data}!array@{array}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+const void$\ast$ array\+::data (\begin{DoxyParamCaption}\item[{Ix...}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Pointer to the contained data. If index is not provided, points to the beginning of the buffer. May throw if the index would lead to out of bounds access. \mbox{\Hypertarget{classarray_a4b19125eed75474c00a93c829dba3a8b}\label{classarray_a4b19125eed75474c00a93c829dba3a8b}} 
+\index{array@{array}!ensure@{ensure}}
+\index{ensure@{ensure}!array@{array}}
+\doxysubsubsection{\texorpdfstring{ensure()}{ensure()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structdetail_1_1array}{array}} array\+::ensure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhandle}{handle}}}]{h,  }\item[{int}]{Extra\+Flags = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Ensure that the argument is a Num\+Py array In case of an error, nullptr is returned and the Python error is cleared. \mbox{\Hypertarget{classarray_a48d7b1bd08e0a5cf1ef27a6996421e73}\label{classarray_a48d7b1bd08e0a5cf1ef27a6996421e73}} 
+\index{array@{array}!index\_at@{index\_at}}
+\index{index\_at@{index\_at}!array@{array}}
+\doxysubsubsection{\texorpdfstring{index\_at()}{index\_at()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+ssize\+\_\+t array\+::index\+\_\+at (\begin{DoxyParamCaption}\item[{Ix...}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Item count from beginning of the array to a given index (full or partial). May throw if the index would lead to out of bounds access. \mbox{\Hypertarget{classarray_ad06996f0b02fa6dc86e79744cbef5d80}\label{classarray_ad06996f0b02fa6dc86e79744cbef5d80}} 
+\index{array@{array}!mutable\_data@{mutable\_data}}
+\index{mutable\_data@{mutable\_data}!array@{array}}
+\doxysubsubsection{\texorpdfstring{mutable\_data()}{mutable\_data()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+void$\ast$ array\+::mutable\+\_\+data (\begin{DoxyParamCaption}\item[{Ix...}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Mutable pointer to the contained data. If index is not provided, points to the beginning of the buffer. May throw if the index would lead to out of bounds access. May throw if the array is not writeable. \mbox{\Hypertarget{classarray_a93018344b9a8d27eacbdd7837f6efcab}\label{classarray_a93018344b9a8d27eacbdd7837f6efcab}} 
+\index{array@{array}!mutable\_unchecked@{mutable\_unchecked}}
+\index{mutable\_unchecked@{mutable\_unchecked}!array@{array}}
+\doxysubsubsection{\texorpdfstring{mutable\_unchecked()}{mutable\_unchecked()}}
+{\footnotesize\ttfamily template$<$typename T , ssize\+\_\+t Dims = -\/1$>$ \\
+detail\+::unchecked\+\_\+mutable\+\_\+reference$<$T, Dims$>$ array\+::mutable\+\_\+unchecked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) \&\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a proxy object that provides access to the array\textquotesingle{}s data without bounds or dimensionality checking. Will throw if the array is missing the {\ttfamily writeable} flag. Use with care\+: the array must not be destroyed or reshaped for the duration of the returned object, and the caller must take care not to access invalid dimensions or dimension indices. \mbox{\Hypertarget{classarray_a0063e6a1d118abb371f769377b5fee21}\label{classarray_a0063e6a1d118abb371f769377b5fee21}} 
+\index{array@{array}!offset\_at@{offset\_at}}
+\index{offset\_at@{offset\_at}!array@{array}}
+\doxysubsubsection{\texorpdfstring{offset\_at()}{offset\_at()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+ssize\+\_\+t array\+::offset\+\_\+at (\begin{DoxyParamCaption}\item[{Ix...}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Byte offset from beginning of the array to a given index (full or partial). May throw if the index would lead to out of bounds access. \mbox{\Hypertarget{classarray_a3e03dfffbf6c992364c052cf615db45b}\label{classarray_a3e03dfffbf6c992364c052cf615db45b}} 
+\index{array@{array}!resize@{resize}}
+\index{resize@{resize}!array@{array}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void array\+::resize (\begin{DoxyParamCaption}\item[{Shape\+Container}]{new\+\_\+shape,  }\item[{bool}]{refcheck = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resize array to given shape If refcheck is true and more that one reference exist to this array then resize will succeed only if it makes a reshape, i.\+e. original size doesn\textquotesingle{}t change \mbox{\Hypertarget{classarray_a453dfcd16f86df11e0a6ede98b04b7a0}\label{classarray_a453dfcd16f86df11e0a6ede98b04b7a0}} 
+\index{array@{array}!unchecked@{unchecked}}
+\index{unchecked@{unchecked}!array@{array}}
+\doxysubsubsection{\texorpdfstring{unchecked()}{unchecked()}}
+{\footnotesize\ttfamily template$<$typename T , ssize\+\_\+t Dims = -\/1$>$ \\
+detail\+::unchecked\+\_\+reference$<$T, Dims$>$ array\+::unchecked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const \&\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a proxy object that provides const access to the array\textquotesingle{}s data without bounds or dimensionality checking. Unlike {\ttfamily \mbox{\hyperlink{classarray_a93018344b9a8d27eacbdd7837f6efcab}{mutable\+\_\+unchecked()}}}, this does not require that the underlying array have the {\ttfamily writable} flag. Use with care\+: the array must not be destroyed or reshaped for the duration of the returned object, and the caller must take care not to access invalid dimensions or dimension indices. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/numpy.\+h\end{DoxyCompactItemize}

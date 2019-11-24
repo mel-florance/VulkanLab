@@ -1,0 +1,27 @@
+var classclang_1_1cindex_1_1TranslationUnit =
+[
+    [ "__init__", "classclang_1_1cindex_1_1TranslationUnit.html#ad031b6a50f881c5c01632e74ba52b97c", null ],
+    [ "__del__", "classclang_1_1cindex_1_1TranslationUnit.html#ac25fcdef12d9c14ee79f4c8943cf399e", null ],
+    [ "codeComplete", "classclang_1_1cindex_1_1TranslationUnit.html#ada33d5b8ce9742cf670d5b601ff20aaf", null ],
+    [ "cursor", "classclang_1_1cindex_1_1TranslationUnit.html#aa1204c47b440007e6d2bd110dea9ab8a", null ],
+    [ "diagnostics", "classclang_1_1cindex_1_1TranslationUnit.html#af6f91ded03cf54918608d6e6aa6eb134", null ],
+    [ "from_ast_file", "classclang_1_1cindex_1_1TranslationUnit.html#a7aec6c618fae0035c560ec201a7af551", null ],
+    [ "from_source", "classclang_1_1cindex_1_1TranslationUnit.html#a88e3bc3a569b913e1a0c76bfdfe14a81", null ],
+    [ "get_extent", "classclang_1_1cindex_1_1TranslationUnit.html#aa555eaba64ab763e6f8dc1f663e78d87", null ],
+    [ "get_file", "classclang_1_1cindex_1_1TranslationUnit.html#a5405eba6c7aacc313e664db03b50ea20", null ],
+    [ "get_includes", "classclang_1_1cindex_1_1TranslationUnit.html#a62819e5a7d830d4a72e9373f1a26a16c", null ],
+    [ "get_location", "classclang_1_1cindex_1_1TranslationUnit.html#a825254b597150b97bd88e9a2ca1dd982", null ],
+    [ "get_tokens", "classclang_1_1cindex_1_1TranslationUnit.html#a54babe300e261b4c39d721cdc2be5a7b", null ],
+    [ "reparse", "classclang_1_1cindex_1_1TranslationUnit.html#a67cb20cf382779ffd5209e1803a242e9", null ],
+    [ "save", "classclang_1_1cindex_1_1TranslationUnit.html#a96002226ecdc46d7d3390e2484e41021", null ],
+    [ "spelling", "classclang_1_1cindex_1_1TranslationUnit.html#ae05b27b89cd4c2ec5dbf70d222637c7c", null ],
+    [ "index", "classclang_1_1cindex_1_1TranslationUnit.html#a09f2050f922444000a74e4b55ca3cddb", null ],
+    [ "PARSE_CACHE_COMPLETION_RESULTS", "classclang_1_1cindex_1_1TranslationUnit.html#a207cf126f165b1138cf3be4a58be07e7", null ],
+    [ "PARSE_DETAILED_PROCESSING_RECORD", "classclang_1_1cindex_1_1TranslationUnit.html#ab7c86f402ce418134d54471c02334a68", null ],
+    [ "PARSE_INCLUDE_BRIEF_COMMENTS_IN_CODE_COMPLETION", "classclang_1_1cindex_1_1TranslationUnit.html#aad828cb1fc7b7aa5158d68908e22c330", null ],
+    [ "PARSE_INCOMPLETE", "classclang_1_1cindex_1_1TranslationUnit.html#a1d1d1610214b80d5cee019b22c370f46", null ],
+    [ "PARSE_NONE", "classclang_1_1cindex_1_1TranslationUnit.html#a2b0d53602eb2d6466ad1cc6b681084a5", null ],
+    [ "PARSE_PRECOMPILED_PREAMBLE", "classclang_1_1cindex_1_1TranslationUnit.html#a9d04dc36ada41341ef35d589cf88d7d6", null ],
+    [ "PARSE_SKIP_FUNCTION_BODIES", "classclang_1_1cindex_1_1TranslationUnit.html#a1b932f637062cf3c5ba51a451edb64bc", null ],
+    [ "tu", "classclang_1_1cindex_1_1TranslationUnit.html#ad6e4b4a4bbe914eae5abd40e5ca13766", null ]
+];

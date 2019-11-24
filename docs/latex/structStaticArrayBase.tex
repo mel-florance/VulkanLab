@@ -1,0 +1,437 @@
+\hypertarget{structStaticArrayBase}{}\doxysection{Référence du modèle de la structure Static\+Array\+Base$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+, Is\+Mask\+\_\+, Derived\+\_\+ $>$}
+\label{structStaticArrayBase}\index{StaticArrayBase$<$ Value\_, Size\_, Approx\_, Mode\_, IsMask\_, Derived\_ $>$@{StaticArrayBase$<$ Value\_, Size\_, Approx\_, Mode\_, IsMask\_, Derived\_ $>$}}
+
+
+\mbox{\hyperlink{structBase}{Base}} class of all statically sized arrays.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Static\+Array\+Base$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+, Is\+Mask\+\_\+, Derived\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.860465cm]{structStaticArrayBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a01e67f8a0247df5fd988f69b615df4dd}\label{structStaticArrayBase_a01e67f8a0247df5fd988f69b615df4dd}} 
+using {\bfseries Base} = \mbox{\hyperlink{structArrayBase}{Array\+Base}}$<$ Value\+\_\+, Derived\+\_\+ $>$
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a64b8ebeeff4a1417263b8d108b76da13}\label{structStaticArrayBase_a64b8ebeeff4a1417263b8d108b76da13}} 
+using \mbox{\hyperlink{structStaticArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} = Derived\+\_\+
+\begin{DoxyCompactList}\small\item\em Alias to the derived type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a21f8a4c388eb1af584128cf730f58881}\label{structStaticArrayBase_a21f8a4c388eb1af584128cf730f58881}} 
+using \mbox{\hyperlink{structStaticArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} = Value\+\_\+
+\begin{DoxyCompactList}\small\item\em Actual type underlying the derived array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a0c38fc04bc679575254a9733c0c08d11}\label{structStaticArrayBase_a0c38fc04bc679575254a9733c0c08d11}} 
+using \mbox{\hyperlink{structStaticArrayBase_a0c38fc04bc679575254a9733c0c08d11}{Scalar}} = scalar\+\_\+t$<$ Value\+\_\+ $>$
+\begin{DoxyCompactList}\small\item\em Scalar data type all the way at the lowest level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_ae3e34c586d4d94ac673f6cff72672379}\label{structStaticArrayBase_ae3e34c586d4d94ac673f6cff72672379}} 
+constexpr size\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_ad13849cdb310a2fe3a891f0814e1ee1a}\label{structStaticArrayBase_ad13849cdb310a2fe3a891f0814e1ee1a}} 
+void {\bfseries resize} (size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_aadbe35ca6afec4f6b32fbf66bf39e78b}\label{structStaticArrayBase_aadbe35ca6afec4f6b32fbf66bf39e78b}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \& \mbox{\hyperlink{structStaticArrayBase_aadbe35ca6afec4f6b32fbf66bf39e78b}{derived}} ()
+\begin{DoxyCompactList}\small\item\em Cast to derived type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a32b4e90bfadf4509220b5d9e42c92e62}\label{structStaticArrayBase_a32b4e90bfadf4509220b5d9e42c92e62}} 
+const E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \& \mbox{\hyperlink{structStaticArrayBase_a32b4e90bfadf4509220b5d9e42c92e62}{derived}} () const
+\begin{DoxyCompactList}\small\item\em Cast to derived type (const version) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Constructors}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a2de1646c1ec53d8e12eab2488a5399bf}\label{structStaticArrayBase_a2de1646c1ec53d8e12eab2488a5399bf}} 
+{\bfseries Static\+Array\+Base} ()=default
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a09dfe887fdf818254e53694be70dcc22}\label{structStaticArrayBase_a09dfe887fdf818254e53694be70dcc22}} 
+{\bfseries Static\+Array\+Base} (const \mbox{\hyperlink{structStaticArrayBase}{Static\+Array\+Base}} \&)=default
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a0f434117ed30742eca3cd86b7aa5c095}\label{structStaticArrayBase_a0f434117ed30742eca3cd86b7aa5c095}} 
+{\bfseries Static\+Array\+Base} (\mbox{\hyperlink{structStaticArrayBase}{Static\+Array\+Base}} \&\&)=default
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_ab8b546749cbc2e4e4880b142f95f4cb8}\label{structStaticArrayBase_ab8b546749cbc2e4e4880b142f95f4cb8}} 
+\mbox{\hyperlink{structStaticArrayBase}{Static\+Array\+Base}} \& {\bfseries operator=} (const \mbox{\hyperlink{structStaticArrayBase}{Static\+Array\+Base}} \&)=default
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_aa4ed478e36bf2441b4072c53e60e017f}\label{structStaticArrayBase_aa4ed478e36bf2441b4072c53e60e017f}} 
+\mbox{\hyperlink{structStaticArrayBase}{Static\+Array\+Base}} \& {\bfseries operator=} (\mbox{\hyperlink{structStaticArrayBase}{Static\+Array\+Base}} \&\&)=default
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a43dad1377c09313fcd42a9e539be9029}\label{structStaticArrayBase_a43dad1377c09313fcd42a9e539be9029}} 
+{\footnotesize template$<$typename Value2 , size\+\_\+t Size2, bool Approx2, Rounding\+Mode Mode2, typename Derived2 , typename T  = Derived, enable\+\_\+if\+\_\+t$<$ Derived2\+::\+Size==\+T\+::\+Size $>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structStaticArrayBase_a43dad1377c09313fcd42a9e539be9029}{Static\+Array\+Base}} (const \mbox{\hyperlink{structStaticArrayBase}{Static\+Array\+Base}}$<$ Value2, \mbox{\hyperlink{structStaticArrayBase_ac3869d72d6b3bb97ae568f0da63948eb}{Size2}}, Approx2, Mode2, Is\+Mask\+\_\+, Derived2 $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Type cast fallback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Bit counting fallback implementations}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a9f297f1a6c6ea9e7675bd0a9554315c3}\label{structStaticArrayBase_a9f297f1a6c6ea9e7675bd0a9554315c3}} 
+\mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries popcnt\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a94d0737f2bb6dc4709b240a626cb10dc}\label{structStaticArrayBase_a94d0737f2bb6dc4709b240a626cb10dc}} 
+\mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries lzcnt\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a8f974ed457fb3680d967367324e51490}\label{structStaticArrayBase_a8f974ed457fb3680d967367324e51490}} 
+\mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries tzcnt\+\_\+} () const
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Component access}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a89ddb9ccccfef43d65b94fe088f8e794}\label{structStaticArrayBase_a89ddb9ccccfef43d65b94fe088f8e794}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries x} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a17ff7ef60c789f3e0a917157653f639b}\label{structStaticArrayBase_a17ff7ef60c789f3e0a917157653f639b}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries x} ()
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_ab9373f6e4e8c8fed9fa389d0d3854f82}\label{structStaticArrayBase_ab9373f6e4e8c8fed9fa389d0d3854f82}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries y} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a335fe6a5b54a85265add499e26bbff19}\label{structStaticArrayBase_a335fe6a5b54a85265add499e26bbff19}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries y} ()
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a5a7d0c623a784722e457450c8a8c462e}\label{structStaticArrayBase_a5a7d0c623a784722e457450c8a8c462e}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries z} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a6efb6d606dd069cf779590c54afbe086}\label{structStaticArrayBase_a6efb6d606dd069cf779590c54afbe086}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries z} ()
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a88bc783326edb1e0707d798af04a29e0}\label{structStaticArrayBase_a88bc783326edb1e0707d798af04a29e0}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries w} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_afb9c333dd45d510e4a435827f1be47c7}\label{structStaticArrayBase_afb9c333dd45d510e4a435827f1be47c7}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries w} ()
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a7f17fcc58f5e3f4aacff45babd42d25e}\label{structStaticArrayBase_a7f17fcc58f5e3f4aacff45babd42d25e}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries data} ()
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_af2aa794bbe09520e3c9105b1f6db10d1}\label{structStaticArrayBase_af2aa794bbe09520e3c9105b1f6db10d1}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries data} () const
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Basic declarations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a3cbc68fea743d9ca14eb5b35c3a1fac6}\label{structStaticArrayBase_a3cbc68fea743d9ca14eb5b35c3a1fac6}} 
+using \mbox{\hyperlink{structStaticArrayBase_a3cbc68fea743d9ca14eb5b35c3a1fac6}{Array1}} = std\+::conditional\+\_\+t$<$!Is\+Mask\+\_\+, \mbox{\hyperlink{structArray}{Array}}$<$ Value\+\_\+, \mbox{\hyperlink{structStaticArrayBase_a5befcbc4c54b0e31a8fab8fcad691e49}{Size1}}, Approx\+\_\+, Mode\+\_\+ $>$, \mbox{\hyperlink{structMask}{Mask}}$<$ Value\+\_\+, \mbox{\hyperlink{structStaticArrayBase_a5befcbc4c54b0e31a8fab8fcad691e49}{Size1}}, Approx\+\_\+, Mode\+\_\+ $>$ $>$
+\begin{DoxyCompactList}\small\item\em Type of the low array part returned by low() \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ad3343d4c190a99c7d329fd85c8ec24ec}\label{structStaticArrayBase_ad3343d4c190a99c7d329fd85c8ec24ec}} 
+using \mbox{\hyperlink{structStaticArrayBase_ad3343d4c190a99c7d329fd85c8ec24ec}{Array2}} = std\+::conditional\+\_\+t$<$!Is\+Mask\+\_\+, \mbox{\hyperlink{structArray}{Array}}$<$ Value\+\_\+, \mbox{\hyperlink{structStaticArrayBase_ac3869d72d6b3bb97ae568f0da63948eb}{Size2}}, Approx\+\_\+, Mode\+\_\+ $>$, \mbox{\hyperlink{structMask}{Mask}}$<$ Value\+\_\+, \mbox{\hyperlink{structStaticArrayBase_ac3869d72d6b3bb97ae568f0da63948eb}{Size2}}, Approx\+\_\+, Mode\+\_\+ $>$ $>$
+\begin{DoxyCompactList}\small\item\em Type of the high array part returned by high() \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ab188e5419db1f778ef58ee5504efc87a}\label{structStaticArrayBase_ab188e5419db1f778ef58ee5504efc87a}} 
+static constexpr size\+\_\+t \mbox{\hyperlink{structStaticArrayBase_ab188e5419db1f778ef58ee5504efc87a}{Size}} = Size\+\_\+
+\begin{DoxyCompactList}\small\item\em Number of array entries. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a5befcbc4c54b0e31a8fab8fcad691e49}\label{structStaticArrayBase_a5befcbc4c54b0e31a8fab8fcad691e49}} 
+static constexpr size\+\_\+t \mbox{\hyperlink{structStaticArrayBase_a5befcbc4c54b0e31a8fab8fcad691e49}{Size1}} = detail\+::lpow2(Size\+\_\+)
+\begin{DoxyCompactList}\small\item\em Size of the low array part returned by low() \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ac3869d72d6b3bb97ae568f0da63948eb}\label{structStaticArrayBase_ac3869d72d6b3bb97ae568f0da63948eb}} 
+static constexpr size\+\_\+t \mbox{\hyperlink{structStaticArrayBase_ac3869d72d6b3bb97ae568f0da63948eb}{Size2}} = Size\+\_\+ -\/ \mbox{\hyperlink{structStaticArrayBase_a5befcbc4c54b0e31a8fab8fcad691e49}{Size1}}
+\begin{DoxyCompactList}\small\item\em Size of the high array part returned by high() \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a0e7e05da0e49ab5d891f59f046ad2b88}\label{structStaticArrayBase_a0e7e05da0e49ab5d891f59f046ad2b88}} 
+static constexpr size\+\_\+t \mbox{\hyperlink{structStaticArrayBase_a0e7e05da0e49ab5d891f59f046ad2b88}{Actual\+Size}} = \mbox{\hyperlink{structStaticArrayBase_ab188e5419db1f778ef58ee5504efc87a}{Size}}
+\begin{DoxyCompactList}\small\item\em Size and Actual\+Size can be different, e.\+g. when representing 3D vectors using 4-\/wide registers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a91cb80c2784ac1a9062678f76be520fb}\label{structStaticArrayBase_a91cb80c2784ac1a9062678f76be520fb}} 
+static constexpr bool \mbox{\hyperlink{structStaticArrayBase_a91cb80c2784ac1a9062678f76be520fb}{Approx}} = Approx\+\_\+
+\begin{DoxyCompactList}\small\item\em Are arithmetic operations approximate? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a67dbbee30d11cf4bc0016e0536cddfe1}\label{structStaticArrayBase_a67dbbee30d11cf4bc0016e0536cddfe1}} 
+static constexpr Rounding\+Mode \mbox{\hyperlink{structStaticArrayBase_a67dbbee30d11cf4bc0016e0536cddfe1}{Mode}} = Mode\+\_\+
+\begin{DoxyCompactList}\small\item\em Rounding mode of arithmetic operations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ae3f04b7e5e426fd05a1a4dbc06a35262}\label{structStaticArrayBase_ae3f04b7e5e426fd05a1a4dbc06a35262}} 
+static constexpr bool \mbox{\hyperlink{structStaticArrayBase_ae3f04b7e5e426fd05a1a4dbc06a35262}{Is\+Mask}} = Base\+::\+Is\+Mask $\vert$$\vert$ Is\+Mask\+\_\+
+\begin{DoxyCompactList}\small\item\em Is this a mask type? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fallback implementations of vertical operations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a55f4364f3a84e5581da06ee71b8f729c}\label{structStaticArrayBase_a55f4364f3a84e5581da06ee71b8f729c}} 
+\mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a55f4364f3a84e5581da06ee71b8f729c}{add\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&a) const
+\begin{DoxyCompactList}\small\item\em Addition. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_aaad9897acf3015fcae0a19a9f5d21409}\label{structStaticArrayBase_aaad9897acf3015fcae0a19a9f5d21409}} 
+\mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_aaad9897acf3015fcae0a19a9f5d21409}{sub\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&a) const
+\begin{DoxyCompactList}\small\item\em Subtraction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_aebaace184380b0b3648f01a26b02279a}\label{structStaticArrayBase_aebaace184380b0b3648f01a26b02279a}} 
+\mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_aebaace184380b0b3648f01a26b02279a}{mul\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&a) const
+\begin{DoxyCompactList}\small\item\em Multiplication (low part) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a75586704b22468a25a2536e5d0b70cec}\label{structStaticArrayBase_a75586704b22468a25a2536e5d0b70cec}} 
+\mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a75586704b22468a25a2536e5d0b70cec}{mulhi\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&a) const
+\begin{DoxyCompactList}\small\item\em Multiplication (high part) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a4e7da8c7cc93c4966e64f36e9155d470}\label{structStaticArrayBase_a4e7da8c7cc93c4966e64f36e9155d470}} 
+\mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a4e7da8c7cc93c4966e64f36e9155d470}{div\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&a) const
+\begin{DoxyCompactList}\small\item\em Division. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ae74ad33ea6af41d431a277c4ad04f00c}\label{structStaticArrayBase_ae74ad33ea6af41d431a277c4ad04f00c}} 
+\mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_ae74ad33ea6af41d431a277c4ad04f00c}{mod\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&a) const
+\begin{DoxyCompactList}\small\item\em Modulo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a397ba7477fe85b1969083b3d754c923c}\label{structStaticArrayBase_a397ba7477fe85b1969083b3d754c923c}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a397ba7477fe85b1969083b3d754c923c}{not\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Arithmetic N\+OT operation fallback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a28e8288c1c9a7ff454202bdd0e2de031}\label{structStaticArrayBase_a28e8288c1c9a7ff454202bdd0e2de031}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a28e8288c1c9a7ff454202bdd0e2de031}{neg\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Arithmetic unary negation operation fallback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ad2b1d2de2605e25b33a983570d813882}\label{structStaticArrayBase_ad2b1d2de2605e25b33a983570d813882}} 
+{\footnotesize template$<$typename Array $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_ad2b1d2de2605e25b33a983570d813882}{or\+\_\+}} (const \mbox{\hyperlink{structArray}{Array}} \&d) const
+\begin{DoxyCompactList}\small\item\em Arithmetic OR operation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a31354e961a12fa0b19e43c071d558820}\label{structStaticArrayBase_a31354e961a12fa0b19e43c071d558820}} 
+{\footnotesize template$<$typename Array $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a31354e961a12fa0b19e43c071d558820}{and\+\_\+}} (const \mbox{\hyperlink{structArray}{Array}} \&d) const
+\begin{DoxyCompactList}\small\item\em Arithmetic A\+ND operation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_aad2cf41ed1c0bbfb41ef7da19ccaebee}\label{structStaticArrayBase_aad2cf41ed1c0bbfb41ef7da19ccaebee}} 
+{\footnotesize template$<$typename Array $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_aad2cf41ed1c0bbfb41ef7da19ccaebee}{andnot\+\_\+}} (const \mbox{\hyperlink{structArray}{Array}} \&d) const
+\begin{DoxyCompactList}\small\item\em Arithmetic A\+N\+D\+N\+OT operation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ae03c4959e616a65ee3024f76b8c60b8c}\label{structStaticArrayBase_ae03c4959e616a65ee3024f76b8c60b8c}} 
+{\footnotesize template$<$typename Array $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_ae03c4959e616a65ee3024f76b8c60b8c}{xor\+\_\+}} (const \mbox{\hyperlink{structArray}{Array}} \&d) const
+\begin{DoxyCompactList}\small\item\em Arithmetic X\+OR operation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a2de75858702533ec6aec0a1694fa3643}\label{structStaticArrayBase_a2de75858702533ec6aec0a1694fa3643}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a2de75858702533ec6aec0a1694fa3643}{sl\+\_\+}} (size\+\_\+t value) const
+\begin{DoxyCompactList}\small\item\em Left shift operator (uniform) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_af20f933dabe0a067c6728a1a7a2eef7c}\label{structStaticArrayBase_af20f933dabe0a067c6728a1a7a2eef7c}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_af20f933dabe0a067c6728a1a7a2eef7c}{sl\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d) const
+\begin{DoxyCompactList}\small\item\em Left shift operator (array) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a20ac9538638aca59e41ae0c41c6c08af}\label{structStaticArrayBase_a20ac9538638aca59e41ae0c41c6c08af}} 
+{\footnotesize template$<$size\+\_\+t Imm$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a20ac9538638aca59e41ae0c41c6c08af}{sl\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Left shift operator (immediate) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a9ab7fd51f80e226440beb4c6c9334786}\label{structStaticArrayBase_a9ab7fd51f80e226440beb4c6c9334786}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a9ab7fd51f80e226440beb4c6c9334786}{sr\+\_\+}} (size\+\_\+t value) const
+\begin{DoxyCompactList}\small\item\em Right shift operator (Uniform) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a43351544619dcd2a2bc2d16bf9fb6ae5}\label{structStaticArrayBase_a43351544619dcd2a2bc2d16bf9fb6ae5}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a43351544619dcd2a2bc2d16bf9fb6ae5}{sr\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d) const
+\begin{DoxyCompactList}\small\item\em Right shift operator (\mbox{\hyperlink{structArray}{Array}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ac12b751eb98cdd6328c24e52e858c3f8}\label{structStaticArrayBase_ac12b751eb98cdd6328c24e52e858c3f8}} 
+{\footnotesize template$<$size\+\_\+t Imm$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_ac12b751eb98cdd6328c24e52e858c3f8}{sr\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Right shift operator (immediate) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_af2c96b1d2c7985311aa4e7af5f6fa28a}\label{structStaticArrayBase_af2c96b1d2c7985311aa4e7af5f6fa28a}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_af2c96b1d2c7985311aa4e7af5f6fa28a}{eq\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d) const
+\begin{DoxyCompactList}\small\item\em Equality comparison operation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a7e137507f2b9d3a1e23ee3ebbdc2880d}\label{structStaticArrayBase_a7e137507f2b9d3a1e23ee3ebbdc2880d}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a7e137507f2b9d3a1e23ee3ebbdc2880d}{neq\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d) const
+\begin{DoxyCompactList}\small\item\em Inequality comparison operation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ad4736bd84decf6c72891c58c6eabf3e3}\label{structStaticArrayBase_ad4736bd84decf6c72891c58c6eabf3e3}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_ad4736bd84decf6c72891c58c6eabf3e3}{lt\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d) const
+\begin{DoxyCompactList}\small\item\em Less than comparison operation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a64d4a46ec4fe751c8faa2371441b215a}\label{structStaticArrayBase_a64d4a46ec4fe751c8faa2371441b215a}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a64d4a46ec4fe751c8faa2371441b215a}{le\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d) const
+\begin{DoxyCompactList}\small\item\em Less than or equal comparison operation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a6ab44e317444ba25135a1dba779ce79d}\label{structStaticArrayBase_a6ab44e317444ba25135a1dba779ce79d}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a6ab44e317444ba25135a1dba779ce79d}{gt\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d) const
+\begin{DoxyCompactList}\small\item\em Greater than comparison operation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ae5101057f9f044e91797d5f00a6f762d}\label{structStaticArrayBase_ae5101057f9f044e91797d5f00a6f762d}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_ae5101057f9f044e91797d5f00a6f762d}{ge\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d) const
+\begin{DoxyCompactList}\small\item\em Greater than or equal comparison operation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_aee9fb057af81cd59b081cffaea062c2a}\label{structStaticArrayBase_aee9fb057af81cd59b081cffaea062c2a}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_aee9fb057af81cd59b081cffaea062c2a}{abs\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Absolute value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_aaab9190a2307bd69e8f828b52b3055c5}\label{structStaticArrayBase_aaab9190a2307bd69e8f828b52b3055c5}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_aaab9190a2307bd69e8f828b52b3055c5}{sqrt\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structSquare}{Square}} root. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a10dc293aff17ae7c3ccd8b26e805da48}\label{structStaticArrayBase_a10dc293aff17ae7c3ccd8b26e805da48}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a10dc293aff17ae7c3ccd8b26e805da48}{rcp\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structReciprocal}{Reciprocal}} fallback implementation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_adedb9cae0ed23b6f31cac67e0b284b9d}\label{structStaticArrayBase_adedb9cae0ed23b6f31cac67e0b284b9d}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_adedb9cae0ed23b6f31cac67e0b284b9d}{rsqrt\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structReciprocal}{Reciprocal}} square root fallback implementation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a034039f91cfdc76d84868e63da3bf5a6}\label{structStaticArrayBase_a034039f91cfdc76d84868e63da3bf5a6}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a034039f91cfdc76d84868e63da3bf5a6}{ceil\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Round to smallest integral value not less than argument. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a95fc25e8f731b2d35b4e7f97b30e5e1b}\label{structStaticArrayBase_a95fc25e8f731b2d35b4e7f97b30e5e1b}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a95fc25e8f731b2d35b4e7f97b30e5e1b}{floor\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Round to largest integral value not greater than argument. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a78995bd4505f7140c6a7091d509d1317}\label{structStaticArrayBase_a78995bd4505f7140c6a7091d509d1317}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a78995bd4505f7140c6a7091d509d1317}{round\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Round to integral value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ab945d626d1d8f61fe268c266865f0de5}\label{structStaticArrayBase_ab945d626d1d8f61fe268c266865f0de5}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_ab945d626d1d8f61fe268c266865f0de5}{trunc\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Round to zero. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a3605432f18b1464db9c0144218921818}\label{structStaticArrayBase_a3605432f18b1464db9c0144218921818}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a3605432f18b1464db9c0144218921818}{max\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d) const
+\begin{DoxyCompactList}\small\item\em Element-\/wise maximum. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a05a679747a1d7335e60f5e2e96f6ffed}\label{structStaticArrayBase_a05a679747a1d7335e60f5e2e96f6ffed}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a05a679747a1d7335e60f5e2e96f6ffed}{min\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d) const
+\begin{DoxyCompactList}\small\item\em Element-\/wise minimum. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a421567ffd4011b7e293a32bc6f125074}\label{structStaticArrayBase_a421567ffd4011b7e293a32bc6f125074}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a421567ffd4011b7e293a32bc6f125074}{fmadd\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d1, const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d2) const
+\begin{DoxyCompactList}\small\item\em Fused multiply-\/add. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ac304affa7a01cca767140779fc32c971}\label{structStaticArrayBase_ac304affa7a01cca767140779fc32c971}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_ac304affa7a01cca767140779fc32c971}{fnmadd\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d1, const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d2) const
+\begin{DoxyCompactList}\small\item\em Fused negative multiply-\/add. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a95c1efae8676327de1a872155958d696}\label{structStaticArrayBase_a95c1efae8676327de1a872155958d696}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a95c1efae8676327de1a872155958d696}{fmsub\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d1, const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d2) const
+\begin{DoxyCompactList}\small\item\em Fused multiply-\/subtract. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a1cf29951c3b4c3554b0894db5551f41e}\label{structStaticArrayBase_a1cf29951c3b4c3554b0894db5551f41e}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a1cf29951c3b4c3554b0894db5551f41e}{fnmsub\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d1, const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&d2) const
+\begin{DoxyCompactList}\small\item\em Fused negative multiply-\/subtract. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ab6830eb687c25b0a00545b521e784cc2}\label{structStaticArrayBase_ab6830eb687c25b0a00545b521e784cc2}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_ab6830eb687c25b0a00545b521e784cc2}{fmaddsub\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&b, const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&c) const
+\begin{DoxyCompactList}\small\item\em Fused multiply-\/add/subtract fallback implementation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a9cbac0475557b10aae219acc53419bbb}\label{structStaticArrayBase_a9cbac0475557b10aae219acc53419bbb}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a9cbac0475557b10aae219acc53419bbb}{fmsubadd\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&b, const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&c) const
+\begin{DoxyCompactList}\small\item\em Fused multiply-\/subtract/add fallback implementation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ab38dd6b5bc6664654cc44e7c264a9b16}\label{structStaticArrayBase_ab38dd6b5bc6664654cc44e7c264a9b16}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Index , typename Mask $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void \mbox{\hyperlink{structStaticArrayBase_ab38dd6b5bc6664654cc44e7c264a9b16}{scatter\+\_\+}} (void $\ast$mem, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\begin{DoxyCompactList}\small\item\em Masked scatter fallback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a7e8e0ecde48d289a1de1d01f34c3c9c2}\label{structStaticArrayBase_a7e8e0ecde48d289a1de1d01f34c3c9c2}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Index , typename Mask $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void \mbox{\hyperlink{structStaticArrayBase_a7e8e0ecde48d289a1de1d01f34c3c9c2}{scatter\+\_\+add\+\_\+}} (void $\ast$mem, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\begin{DoxyCompactList}\small\item\em Masked scatter\+\_\+add-\/add fallback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_aee8235a5deeb04316f2d3d58194056f5}\label{structStaticArrayBase_aee8235a5deeb04316f2d3d58194056f5}} 
+{\footnotesize template$<$size\+\_\+t... Indices$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_aee8235a5deeb04316f2d3d58194056f5}{shuffle\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Shuffle operation fallback implementation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a75907a6a4d916ca269ccf0e64ecefe11}\label{structStaticArrayBase_a75907a6a4d916ca269ccf0e64ecefe11}} 
+{\footnotesize template$<$typename Index $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries shuffle\+\_\+} (const Index \&index) const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_abdb7f142549c608feb6b313a34a57cf3}\label{structStaticArrayBase_abdb7f142549c608feb6b313a34a57cf3}} 
+{\footnotesize template$<$size\+\_\+t Imm$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_abdb7f142549c608feb6b313a34a57cf3}{ror\+\_\+array\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Rotate the entries of the array right. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ad46c007a49e181c304cc4af784ae4f16}\label{structStaticArrayBase_ad46c007a49e181c304cc4af784ae4f16}} 
+{\footnotesize template$<$size\+\_\+t Imm$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_ad46c007a49e181c304cc4af784ae4f16}{rol\+\_\+array\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Rotate the entries of the array left. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a4cb95c382566c7582a854cd20b4c0a09}\label{structStaticArrayBase_a4cb95c382566c7582a854cd20b4c0a09}} 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries floor2int\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a644f62494c32f7fd6201d0a486394f0b}\label{structStaticArrayBase_a644f62494c32f7fd6201d0a486394f0b}} 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries ceil2int\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a0c91179531e4985508c1f853569a7e27}\label{structStaticArrayBase_a0c91179531e4985508c1f853569a7e27}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a0c91179531e4985508c1f853569a7e27}{low\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Return the low array part (always a power of two) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a8eafb1de6c54e46c4fe547d0f737a373}\label{structStaticArrayBase_a8eafb1de6c54e46c4fe547d0f737a373}} 
+{\footnotesize template$<$typename T  = Derived, enable\+\_\+if\+\_\+t$<$ T\+::\+Size2 !=0 $>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a8eafb1de6c54e46c4fe547d0f737a373}{high\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Return the high array part. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a07ced585fe29c07b1b1e58777f886fc7}\label{structStaticArrayBase_a07ced585fe29c07b1b1e58777f886fc7}} 
+{\footnotesize template$<$bool Write, size\+\_\+t Level, size\+\_\+t Stride, typename Index , typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void \mbox{\hyperlink{structStaticArrayBase_a07ced585fe29c07b1b1e58777f886fc7}{prefetch\+\_\+}} (const void $\ast$mem, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\begin{DoxyCompactList}\small\item\em Masked prefetch fallback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a7e4df01c9913d4219c5af3f19e2e0be3}\label{structStaticArrayBase_a7e4df01c9913d4219c5af3f19e2e0be3}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Index , typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a7e4df01c9913d4219c5af3f19e2e0be3}{gather\+\_\+}} (const void $\ast$mem, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\begin{DoxyCompactList}\small\item\em Masked gather fallback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a5544a8998ab80274b8b18baa8bbf77cb}\label{structStaticArrayBase_a5544a8998ab80274b8b18baa8bbf77cb}} 
+{\footnotesize template$<$typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a5544a8998ab80274b8b18baa8bbf77cb}{select\+\_\+}} (const \mbox{\hyperlink{structMask}{Mask}} \&m, const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&t, const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&f)
+\begin{DoxyCompactList}\small\item\em Ternary operator -- select between to values based on mask. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a1baea8bb06622ed2a3b11c28fa361cf8}\label{structStaticArrayBase_a1baea8bb06622ed2a3b11c28fa361cf8}} 
+{\footnotesize template$<$size\+\_\+t Imm, size\+\_\+t... Is$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries ror\+\_\+array\+\_\+} (std\+::index\+\_\+sequence$<$ Is... $>$) const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a7e468f3e5cbbff2d3842c70eee4e6fe6}\label{structStaticArrayBase_a7e468f3e5cbbff2d3842c70eee4e6fe6}} 
+{\footnotesize template$<$size\+\_\+t Imm, size\+\_\+t... Is$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries rol\+\_\+array\+\_\+} (std\+::index\+\_\+sequence$<$ Is... $>$) const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_af19835f3d4ddba64d55934814d19ea60}\label{structStaticArrayBase_af19835f3d4ddba64d55934814d19ea60}} 
+{\footnotesize template$<$typename T , size\+\_\+t Offset, size\+\_\+t... Is$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE T {\bfseries sub\+\_\+array\+\_\+} (std\+::index\+\_\+sequence$<$ Is... $>$) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Fallback implementations of horizontal operations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_ad71adce6e73a1906fa2f623938a4af7d}\label{structStaticArrayBase_ad71adce6e73a1906fa2f623938a4af7d}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} \mbox{\hyperlink{structStaticArrayBase_ad71adce6e73a1906fa2f623938a4af7d}{hsum\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Horizontal sum fallback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ab9a87b7854d81ef9ff0b5659462d517d}\label{structStaticArrayBase_ab9a87b7854d81ef9ff0b5659462d517d}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_ab9a87b7854d81ef9ff0b5659462d517d}{hsum\+\_\+inner\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Horizontal sum over innermost dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a4fb9d0c5fb1ef1c535b5a6835a6e2cfc}\label{structStaticArrayBase_a4fb9d0c5fb1ef1c535b5a6835a6e2cfc}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} \mbox{\hyperlink{structStaticArrayBase_a4fb9d0c5fb1ef1c535b5a6835a6e2cfc}{hprod\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Horizontal product fallback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a1e3e57306f2cc8d13c5081c58e246493}\label{structStaticArrayBase_a1e3e57306f2cc8d13c5081c58e246493}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a1e3e57306f2cc8d13c5081c58e246493}{hprod\+\_\+inner\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Horizontal product over innermost dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a337651e11ff969cab8250bf5dff41d9f}\label{structStaticArrayBase_a337651e11ff969cab8250bf5dff41d9f}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} \mbox{\hyperlink{structStaticArrayBase_a337651e11ff969cab8250bf5dff41d9f}{hmax\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Horizontal maximum fallback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a554da4a322dde2afd4a1979b9f25271d}\label{structStaticArrayBase_a554da4a322dde2afd4a1979b9f25271d}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a554da4a322dde2afd4a1979b9f25271d}{hmax\+\_\+inner\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Horizontal maximum over innermost dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a4328e472dcbe8ed664aa56dfea964bef}\label{structStaticArrayBase_a4328e472dcbe8ed664aa56dfea964bef}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} \mbox{\hyperlink{structStaticArrayBase_a4328e472dcbe8ed664aa56dfea964bef}{hmin\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Horizontal minimum fallback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a4d4bdd32cddf6c64253d466e61e4f798}\label{structStaticArrayBase_a4d4bdd32cddf6c64253d466e61e4f798}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a4d4bdd32cddf6c64253d466e61e4f798}{hmin\+\_\+inner\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Horizontal minimum over innermost dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a73104837da8480de8941c164070801f6}\label{structStaticArrayBase_a73104837da8480de8941c164070801f6}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a73104837da8480de8941c164070801f6}{hmean\+\_\+inner\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Horizontal mean over innermost dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ad45b1b0355e28f1fb7d999f9d2d9d814}\label{structStaticArrayBase_ad45b1b0355e28f1fb7d999f9d2d9d814}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_ad45b1b0355e28f1fb7d999f9d2d9d814}{all\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em all() fallback implementation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a9a1198b5ce49d6edf3c12e1f949adada}\label{structStaticArrayBase_a9a1198b5ce49d6edf3c12e1f949adada}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a9a1198b5ce49d6edf3c12e1f949adada}{all\+\_\+inner\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em all() over innermost dimension \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a5870024bad81eb8d07b564c8a88474df}\label{structStaticArrayBase_a5870024bad81eb8d07b564c8a88474df}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a5870024bad81eb8d07b564c8a88474df}{any\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em any() fallback implementation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a81ec6f85a838a4f8fbd52d6869df38a8}\label{structStaticArrayBase_a81ec6f85a838a4f8fbd52d6869df38a8}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a81ec6f85a838a4f8fbd52d6869df38a8}{any\+\_\+inner\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em any() over innermost dimension \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a4fbee4fa7553238604344fd83a319568}\label{structStaticArrayBase_a4fbee4fa7553238604344fd83a319568}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_a4fbee4fa7553238604344fd83a319568}{count\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em count() fallback implementation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_aff92763b677af149e53593ffa67869e1}\label{structStaticArrayBase_aff92763b677af149e53593ffa67869e1}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structStaticArrayBase_aff92763b677af149e53593ffa67869e1}{count\+\_\+inner\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em count() over innermost dimension \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_aeeebaefaa4f1740095bf36ff001be84e}\label{structStaticArrayBase_aeeebaefaa4f1740095bf36ff001be84e}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} \mbox{\hyperlink{structStaticArrayBase_aeeebaefaa4f1740095bf36ff001be84e}{dot\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&a) const
+\begin{DoxyCompactList}\small\item\em Dot product fallback implementation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a6bb14054665cdcb3a357914a37f96de2}\label{structStaticArrayBase_a6bb14054665cdcb3a357914a37f96de2}} 
+{\footnotesize template$<$typename Mask $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} \mbox{\hyperlink{structStaticArrayBase_a6bb14054665cdcb3a357914a37f96de2}{extract\+\_\+}} (const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\begin{DoxyCompactList}\small\item\em Extract fallback implementation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a4deef0cefdf1666c762346226ccc3d36}\label{structStaticArrayBase_a4deef0cefdf1666c762346226ccc3d36}} 
+{\footnotesize template$<$typename Mask $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries compress\+\_\+} (\mbox{\hyperlink{structArrayBase_a0c38fc04bc679575254a9733c0c08d11}{Scalar}} $\ast$\&mem, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a27258fdb5657c572e692bb86e375100e}\label{structStaticArrayBase_a27258fdb5657c572e692bb86e375100e}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Index , typename Func , typename Mask , typename... Args$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void \mbox{\hyperlink{structStaticArrayBase_a27258fdb5657c572e692bb86e375100e}{transform\+\_\+}} (void $\ast$mem, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&, const Func \&func, const Args \&... \mbox{\hyperlink{classargs}{args}})
+\begin{DoxyCompactList}\small\item\em Combined gather-\/modify-\/scatter operation without conflicts (fallback implementation) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Miscellaneous}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a410f4124c0aabf09391321c2b74da760}\label{structStaticArrayBase_a410f4124c0aabf09391321c2b74da760}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t \mbox{\hyperlink{structStaticArrayBase_a410f4124c0aabf09391321c2b74da760}{nbytes}} () const
+\begin{DoxyCompactList}\small\item\em Return the size in bytes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a051da90987fbf92a2c2a2d8e7a57c802}\label{structStaticArrayBase_a051da90987fbf92a2c2a2d8e7a57c802}} 
+void {\bfseries store\+\_\+} (void $\ast$mem) const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a4eb637dc196d22091f8ccf4191f048f8}\label{structStaticArrayBase_a4eb637dc196d22091f8ccf4191f048f8}} 
+{\footnotesize template$<$typename Mask $>$ }\\void {\bfseries store\+\_\+} (void $\ast$mem, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_aa0d365f6627319f3fb3c63dd5032731b}\label{structStaticArrayBase_aa0d365f6627319f3fb3c63dd5032731b}} 
+void {\bfseries store\+\_\+unaligned\+\_\+} (void $\ast$mem) const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_abc5090939fb044da253ba00630735b40}\label{structStaticArrayBase_abc5090939fb044da253ba00630735b40}} 
+{\footnotesize template$<$typename Mask $>$ }\\void {\bfseries store\+\_\+unaligned\+\_\+} (void $\ast$mem, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a51600ab48096af876f9c13ccbc4c2ed4}\label{structStaticArrayBase_a51600ab48096af876f9c13ccbc4c2ed4}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries load\+\_\+} (const void $\ast$mem)
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a6b6bc8f9c1f7048375237bfe2cfb794f}\label{structStaticArrayBase_a6b6bc8f9c1f7048375237bfe2cfb794f}} 
+{\footnotesize template$<$typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries load\+\_\+} (const void $\ast$mem, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a0467eb5cff7c204977d5a6f2da22162e}\label{structStaticArrayBase_a0467eb5cff7c204977d5a6f2da22162e}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries load\+\_\+unaligned\+\_\+} (const void $\ast$mem)
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_aeee762bb33f1c48621f196aa74c9278e}\label{structStaticArrayBase_aeee762bb33f1c48621f196aa74c9278e}} 
+{\footnotesize template$<$typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries load\+\_\+unaligned\+\_\+} (const void $\ast$mem, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a7164eb2eead06a5164c0c4592de7f1d2}\label{structStaticArrayBase_a7164eb2eead06a5164c0c4592de7f1d2}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries zero\+\_\+} ()
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a6af7f4c78056b57d431cce66c89f5a50}\label{structStaticArrayBase_a6af7f4c78056b57d431cce66c89f5a50}} 
+{\footnotesize template$<$typename T $>$ }\\static \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries full\+\_\+} (const T \&value, size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structStaticArrayBase_a1cf3aaa19fca5dfd071adc5c6fb73e3d}\label{structStaticArrayBase_a1cf3aaa19fca5dfd071adc5c6fb73e3d}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a1cf3aaa19fca5dfd071adc5c6fb73e3d}{arange\+\_\+}} (ssize\+\_\+t start, ssize\+\_\+t stop, ssize\+\_\+t step)
+\begin{DoxyCompactList}\small\item\em Construct an evenly spaced integer sequence. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_aaed3f97e03d1ef6cffe8e9bc70af0778}\label{structStaticArrayBase_aaed3f97e03d1ef6cffe8e9bc70af0778}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_aaed3f97e03d1ef6cffe8e9bc70af0778}{linspace\+\_\+}} (\mbox{\hyperlink{structArrayBase_a0c38fc04bc679575254a9733c0c08d11}{Scalar}} min, \mbox{\hyperlink{structArrayBase_a0c38fc04bc679575254a9733c0c08d11}{Scalar}} max)
+\begin{DoxyCompactList}\small\item\em Construct an array that linearly interpolates from min..max. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_a5417f2d37c53fb1c5ccec28b59ca17c2}\label{structStaticArrayBase_a5417f2d37c53fb1c5ccec28b59ca17c2}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structStaticArrayBase_a5417f2d37c53fb1c5ccec28b59ca17c2}{empty\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Return an unitialized array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStaticArrayBase_ae7c0e2eb466809718431d96d61146ba6}\label{structStaticArrayBase_ae7c0e2eb466809718431d96d61146ba6}} 
+{\footnotesize template$<$typename T , size\+\_\+t... Is$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries linspace\+\_\+} (std\+::index\+\_\+sequence$<$ Is... $>$, T offset, T step)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename Value\+\_\+, size\+\_\+t Size\+\_\+, bool Approx\+\_\+, Rounding\+Mode Mode\+\_\+, bool Is\+Mask\+\_\+, typename Derived\+\_\+$>$\newline
+struct Static\+Array\+Base$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+, Is\+Mask\+\_\+, Derived\+\_\+ $>$}
+
+\mbox{\hyperlink{structBase}{Base}} class of all statically sized arrays. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array\+\_\+static.\+h\end{DoxyCompactItemize}

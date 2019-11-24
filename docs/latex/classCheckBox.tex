@@ -1,0 +1,113 @@
+\hypertarget{classCheckBox}{}\doxysection{Référence de la classe Check\+Box}
+\label{classCheckBox}\index{CheckBox@{CheckBox}}
+
+
+Two-\/state check box widget.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/checkbox.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Check\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classCheckBox}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCheckBox_a0e0e1e9d60b63f9bb1097cc0b545d4c3}{Check\+Box}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, const std\+::string \&\mbox{\hyperlink{classCheckBox_a3287e3b8b451ef67f86887b54ba70669}{caption}}=\char`\"{}Untitled\char`\"{}, const std\+::function$<$ void(bool)$>$ \&\mbox{\hyperlink{classCheckBox_a84b79745ee4307892a6c96637a86caf7}{callback}}=std\+::function$<$ void(bool)$>$())
+\item 
+\mbox{\Hypertarget{classCheckBox_a3287e3b8b451ef67f86887b54ba70669}\label{classCheckBox_a3287e3b8b451ef67f86887b54ba70669}} 
+const std\+::string \& \mbox{\hyperlink{classCheckBox_a3287e3b8b451ef67f86887b54ba70669}{caption}} () const
+\begin{DoxyCompactList}\small\item\em The caption of this \mbox{\hyperlink{classCheckBox}{Check\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCheckBox_a91128a3553f003a8de8c8e6789d05b30}\label{classCheckBox_a91128a3553f003a8de8c8e6789d05b30}} 
+void \mbox{\hyperlink{classCheckBox_a91128a3553f003a8de8c8e6789d05b30}{set\+\_\+caption}} (const std\+::string \&\mbox{\hyperlink{classCheckBox_a3287e3b8b451ef67f86887b54ba70669}{caption}})
+\begin{DoxyCompactList}\small\item\em Sets the caption of this \mbox{\hyperlink{classCheckBox}{Check\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCheckBox_af950ba975fd0efccca7c6157852cb587}\label{classCheckBox_af950ba975fd0efccca7c6157852cb587}} 
+const bool \& \mbox{\hyperlink{classCheckBox_af950ba975fd0efccca7c6157852cb587}{checked}} () const
+\begin{DoxyCompactList}\small\item\em Whether or not this \mbox{\hyperlink{classCheckBox}{Check\+Box}} is currently checked. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCheckBox_ac51c25c151b82f39896ab796abcc36e4}\label{classCheckBox_ac51c25c151b82f39896ab796abcc36e4}} 
+void \mbox{\hyperlink{classCheckBox_ac51c25c151b82f39896ab796abcc36e4}{set\+\_\+checked}} (const bool \&\mbox{\hyperlink{classCheckBox_af950ba975fd0efccca7c6157852cb587}{checked}})
+\begin{DoxyCompactList}\small\item\em Sets whether or not this \mbox{\hyperlink{classCheckBox}{Check\+Box}} is currently checked. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCheckBox_abef5d240c222aef583410c14725b3aec}\label{classCheckBox_abef5d240c222aef583410c14725b3aec}} 
+const bool \& \mbox{\hyperlink{classCheckBox_abef5d240c222aef583410c14725b3aec}{pushed}} () const
+\begin{DoxyCompactList}\small\item\em Whether or not this \mbox{\hyperlink{classCheckBox}{Check\+Box}} is currently pushed. See nanogui\+::\+Check\+Box\+::m\+\_\+pushed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCheckBox_ac850f875c996def19ee83ef359096c7a}\label{classCheckBox_ac850f875c996def19ee83ef359096c7a}} 
+void {\bfseries set\+\_\+pushed} (const bool \&\mbox{\hyperlink{classCheckBox_abef5d240c222aef583410c14725b3aec}{pushed}})
+\item 
+\mbox{\Hypertarget{classCheckBox_a84b79745ee4307892a6c96637a86caf7}\label{classCheckBox_a84b79745ee4307892a6c96637a86caf7}} 
+std\+::function$<$ void(bool)$>$ \mbox{\hyperlink{classCheckBox_a84b79745ee4307892a6c96637a86caf7}{callback}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current callback of this \mbox{\hyperlink{classCheckBox}{Check\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCheckBox_a045ad59976c6630f09e97a1b85c85efa}\label{classCheckBox_a045ad59976c6630f09e97a1b85c85efa}} 
+void \mbox{\hyperlink{classCheckBox_a045ad59976c6630f09e97a1b85c85efa}{set\+\_\+callback}} (const std\+::function$<$ void(bool)$>$ \&\mbox{\hyperlink{classCheckBox_a84b79745ee4307892a6c96637a86caf7}{callback}})
+\begin{DoxyCompactList}\small\item\em Sets the callback to be executed when this \mbox{\hyperlink{classCheckBox}{Check\+Box}} is checked / unchecked. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCheckBox_ae1ce6d8f5ac50943cd5c533d285972ed}\label{classCheckBox_ae1ce6d8f5ac50943cd5c533d285972ed}} 
+virtual bool \mbox{\hyperlink{classCheckBox_ae1ce6d8f5ac50943cd5c533d285972ed}{mouse\+\_\+button\+\_\+event}} (const Vector2i \&p, int button, bool down, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Mouse button event processing for this check box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCheckBox_a6371302610786f05cfbfcba9c0dabb74}\label{classCheckBox_a6371302610786f05cfbfcba9c0dabb74}} 
+virtual Vector2i \mbox{\hyperlink{classCheckBox_a6371302610786f05cfbfcba9c0dabb74}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const override
+\begin{DoxyCompactList}\small\item\em The preferred size of this \mbox{\hyperlink{classCheckBox}{Check\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCheckBox_abb6b649b50986cad086970a333ee4eeb}\label{classCheckBox_abb6b649b50986cad086970a333ee4eeb}} 
+virtual void \mbox{\hyperlink{classCheckBox_abb6b649b50986cad086970a333ee4eeb}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draws this \mbox{\hyperlink{classCheckBox}{Check\+Box}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCheckBox_ad7206c11550bc3c75e4a36def5b6db38}\label{classCheckBox_ad7206c11550bc3c75e4a36def5b6db38}} 
+std\+::string \mbox{\hyperlink{classCheckBox_ad7206c11550bc3c75e4a36def5b6db38}{m\+\_\+caption}}
+\begin{DoxyCompactList}\small\item\em The caption text of this \mbox{\hyperlink{classCheckBox}{Check\+Box}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCheckBox_a567ee3f13c9c3684a312d8ddc3d8b33d}{m\+\_\+pushed}}
+\item 
+\mbox{\Hypertarget{classCheckBox_a72c9cac9034eae89d7c5de74bda115fc}\label{classCheckBox_a72c9cac9034eae89d7c5de74bda115fc}} 
+bool \mbox{\hyperlink{classCheckBox_a72c9cac9034eae89d7c5de74bda115fc}{m\+\_\+checked}}
+\begin{DoxyCompactList}\small\item\em Whether or not this \mbox{\hyperlink{classCheckBox}{Check\+Box}} is currently checked or unchecked. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCheckBox_aa37659dd94658acdd6ffc3d9ea72c589}\label{classCheckBox_aa37659dd94658acdd6ffc3d9ea72c589}} 
+std\+::function$<$ void(bool)$>$ \mbox{\hyperlink{classCheckBox_aa37659dd94658acdd6ffc3d9ea72c589}{m\+\_\+callback}}
+\begin{DoxyCompactList}\small\item\em The function to execute when nanogui\+::\+Check\+Box\+::m\+\_\+checked is changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+Two-\/state check box widget. 
+
+\begin{DoxyRemark}{Remarques}
+This class overrides nanogui\+::\+Widget\+::m\+Icon\+Extra\+Scale to be {\ttfamily 1.\+2f}, which affects all subclasses of this \mbox{\hyperlink{classWidget}{Widget}}. Subclasses must explicitly set a different value if needed (e.\+g., in their constructor). 
+\end{DoxyRemark}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classCheckBox_a0e0e1e9d60b63f9bb1097cc0b545d4c3}\label{classCheckBox_a0e0e1e9d60b63f9bb1097cc0b545d4c3}} 
+\index{CheckBox@{CheckBox}!CheckBox@{CheckBox}}
+\index{CheckBox@{CheckBox}!CheckBox@{CheckBox}}
+\doxysubsubsection{\texorpdfstring{CheckBox()}{CheckBox()}}
+{\footnotesize\ttfamily Check\+Box\+::\+Check\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWidget}{Widget}} $\ast$}]{parent,  }\item[{const std\+::string \&}]{caption = {\ttfamily \char`\"{}Untitled\char`\"{}},  }\item[{const std\+::function$<$ void(bool)$>$ \&}]{callback = {\ttfamily std\+:\+:function$<$void(bool)$>$()} }\end{DoxyParamCaption})}
+
+Adds a \mbox{\hyperlink{classCheckBox}{Check\+Box}} to the specified {\ttfamily parent}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & The \mbox{\hyperlink{classWidget}{Widget}} to add this \mbox{\hyperlink{classCheckBox}{Check\+Box}} to.\\
+\hline
+{\em caption} & The caption text of the \mbox{\hyperlink{classCheckBox}{Check\+Box}} (default {\ttfamily \char`\"{}\+Untitled\char`\"{}}).\\
+\hline
+{\em callback} & If provided, the callback to execute when the \mbox{\hyperlink{classCheckBox}{Check\+Box}} is checked or unchecked. Default parameter function does nothing. See nanogui\+::\+Check\+Box\+::m\+Pushed for the difference between \char`\"{}pushed\char`\"{} and \char`\"{}checked\char`\"{}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classCheckBox_a567ee3f13c9c3684a312d8ddc3d8b33d}\label{classCheckBox_a567ee3f13c9c3684a312d8ddc3d8b33d}} 
+\index{CheckBox@{CheckBox}!m\_pushed@{m\_pushed}}
+\index{m\_pushed@{m\_pushed}!CheckBox@{CheckBox}}
+\doxysubsubsection{\texorpdfstring{m\_pushed}{m\_pushed}}
+{\footnotesize\ttfamily bool Check\+Box\+::m\+\_\+pushed\hspace{0.3cm}{\ttfamily [protected]}}
+
+Internal tracking variable to distinguish between mouse click and release. nanogui\+::\+Check\+Box\+::m\+\_\+callback is only called upon release. See nanogui\+::\+Check\+Box\+::mouse\+\_\+button\+\_\+event for specific conditions. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{checkbox_8h}{checkbox.\+h}}\item 
+ext/nanogui/src/checkbox.\+cpp\end{DoxyCompactItemize}

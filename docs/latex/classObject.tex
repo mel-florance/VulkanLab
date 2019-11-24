@@ -1,0 +1,101 @@
+\hypertarget{classObject}{}\doxysection{Référence de la classe Object}
+\label{classObject}\index{Object@{Object}}
+
+
+Reference counted object base class.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/object.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.714286cm]{classObject}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classObject_a40860402e64d8008fb42329df7097cdb}\label{classObject_a40860402e64d8008fb42329df7097cdb}} 
+\mbox{\hyperlink{classObject_a40860402e64d8008fb42329df7097cdb}{Object}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classObject_af3b5cd7a9a24ddde484344200cf83281}\label{classObject_af3b5cd7a9a24ddde484344200cf83281}} 
+\mbox{\hyperlink{classObject_af3b5cd7a9a24ddde484344200cf83281}{Object}} (const \mbox{\hyperlink{classObject}{Object}} \&)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classObject_a4f97f143f9fb46ac52e2f11cfa034005}\label{classObject_a4f97f143f9fb46ac52e2f11cfa034005}} 
+int \mbox{\hyperlink{classObject_a4f97f143f9fb46ac52e2f11cfa034005}{get\+Ref\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Return the current reference count. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classObject_a769b55a36d5a2d42af6ef37be0789f43}\label{classObject_a769b55a36d5a2d42af6ef37be0789f43}} 
+void \mbox{\hyperlink{classObject_a769b55a36d5a2d42af6ef37be0789f43}{inc\+Ref}} () const
+\begin{DoxyCompactList}\small\item\em Increase the object\textquotesingle{}s reference count by one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classObject_aee1171037ab2f9137ff9864ceb8f3086}{dec\+Ref}} (bool dealloc=true) const
+\begin{DoxyCompactList}\small\item\em Decrease the reference count of the object and possibly deallocate it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classObject_a89fee2453b0e7b4737afac15cf8ed039}\label{classObject_a89fee2453b0e7b4737afac15cf8ed039}} 
+virtual std\+::string {\bfseries to\+String} () const =0
+\item 
+\mbox{\Hypertarget{classObject_a40860402e64d8008fb42329df7097cdb}\label{classObject_a40860402e64d8008fb42329df7097cdb}} 
+\mbox{\hyperlink{classObject_a40860402e64d8008fb42329df7097cdb}{Object}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classObject_af3b5cd7a9a24ddde484344200cf83281}\label{classObject_af3b5cd7a9a24ddde484344200cf83281}} 
+\mbox{\hyperlink{classObject_af3b5cd7a9a24ddde484344200cf83281}{Object}} (const \mbox{\hyperlink{classObject}{Object}} \&)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classObject_a38150f0e9c91699cad350eac8fea192b}\label{classObject_a38150f0e9c91699cad350eac8fea192b}} 
+int \mbox{\hyperlink{classObject_a38150f0e9c91699cad350eac8fea192b}{ref\+\_\+count}} () const
+\begin{DoxyCompactList}\small\item\em Return the current reference count. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classObject_a59711b923f55319e6a69df4be88861a7}\label{classObject_a59711b923f55319e6a69df4be88861a7}} 
+void \mbox{\hyperlink{classObject_a59711b923f55319e6a69df4be88861a7}{inc\+\_\+ref}} () const
+\begin{DoxyCompactList}\small\item\em Increase the object\textquotesingle{}s reference count by one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classObject_ae0bd53b4010ddeb2b5de4a3fd80d7fdf}{dec\+\_\+ref}} (bool dealloc=true) const noexcept
+\begin{DoxyCompactList}\small\item\em Decrease the reference count of the object and possibly deallocate it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classObject_ae8f5483f459e46687bd01e6f9977afd3}\label{classObject_ae8f5483f459e46687bd01e6f9977afd3}} 
+virtual \mbox{\hyperlink{classObject_ae8f5483f459e46687bd01e6f9977afd3}{$\sim$\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Virtual protected deconstructor. (Will only be called by \mbox{\hyperlink{classref}{ref}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classObject_aa3e791419d84c4c346ef9499513b8e00}\label{classObject_aa3e791419d84c4c346ef9499513b8e00}} 
+virtual \mbox{\hyperlink{classObject_aa3e791419d84c4c346ef9499513b8e00}{$\sim$\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Virtual protected deconstructor. (Will only be called by \mbox{\hyperlink{classref}{ref}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classObject_ab98e66d4de42a3992fcd8598f963e503}\label{classObject_ab98e66d4de42a3992fcd8598f963e503}} 
+std\+::atomic$<$ int $>$ {\bfseries m\+\_\+ref\+Count} \{ 0 \}
+\item 
+\mbox{\Hypertarget{classObject_aae62ec26fc22d8c5b421171037fe2abf}\label{classObject_aae62ec26fc22d8c5b421171037fe2abf}} 
+std\+::atomic$<$ int $>$ {\bfseries m\+\_\+ref\+\_\+count} \{ 0 \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Reference counted object base class. 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classObject_ae0bd53b4010ddeb2b5de4a3fd80d7fdf}\label{classObject_ae0bd53b4010ddeb2b5de4a3fd80d7fdf}} 
+\index{Object@{Object}!dec\_ref@{dec\_ref}}
+\index{dec\_ref@{dec\_ref}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{dec\_ref()}{dec\_ref()}}
+{\footnotesize\ttfamily void Object\+::dec\+\_\+ref (\begin{DoxyParamCaption}\item[{bool}]{dealloc = {\ttfamily true} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Decrease the reference count of the object and possibly deallocate it. 
+
+The object will automatically be deallocated once the reference count reaches zero. \mbox{\Hypertarget{classObject_aee1171037ab2f9137ff9864ceb8f3086}\label{classObject_aee1171037ab2f9137ff9864ceb8f3086}} 
+\index{Object@{Object}!decRef@{decRef}}
+\index{decRef@{decRef}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{decRef()}{decRef()}}
+{\footnotesize\ttfamily void Object\+::dec\+Ref (\begin{DoxyParamCaption}\item[{bool}]{dealloc = {\ttfamily true} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Decrease the reference count of the object and possibly deallocate it. 
+
+The object will automatically be deallocated once the reference count reaches zero. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/tests/object.\+h\item 
+ext/nanogui/src/common.\+cpp\end{DoxyCompactItemize}

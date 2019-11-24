@@ -1,6 +1,21 @@
-\hypertarget{classWindow}{}\doxysection{Window Class Reference}
+\hypertarget{classWindow}{}\doxysection{Référence de la classe Window}
 \label{classWindow}\index{Window@{Window}}
-\doxysubsection*{Public Member Functions}
+
+
+Top-\/level window widget.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/window.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classWindow}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classWindow_a06a89c98071838f65590fa906508942f}{Window}} (const glm\+::ivec2 \&\mbox{\hyperlink{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}{size}}=glm\+::ivec2(1280, 720), const std\+::string \&title=\char`\"{}Vulkan Lab\char`\"{}, const glm\+::vec2 \&position=glm\+::vec2(0.\+0f))
@@ -10,28 +25,73 @@
 void \mbox{\hyperlink{classWindow_af63b739806ce9ecee82f57c00a44c176}{update}} (std\+::function$<$ void(glm\+::ivec2 \&\mbox{\hyperlink{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}{size}})$>$ callback)
 \item 
 \mbox{\Hypertarget{classWindow_ad7863ac5065b363030810f2c0395d4e2}\label{classWindow_ad7863ac5065b363030810f2c0395d4e2}} 
-G\+L\+F\+Wwindow $\ast$ {\bfseries get\+Instance} ()
-\end{DoxyCompactItemize}
-\doxysubsection*{Static Public Member Functions}
+\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$ {\bfseries get\+Instance} ()
+\item 
+\mbox{\Hypertarget{classWindow_a40a7511208f3ba0343b203bdbc7c5d58}\label{classWindow_a40a7511208f3ba0343b203bdbc7c5d58}} 
+{\bfseries Window} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, const std\+::string \&title=\char`\"{}Untitled\char`\"{})
+\item 
+\mbox{\Hypertarget{classWindow_a4568b1613294a1a353ff94ec3198ca08}\label{classWindow_a4568b1613294a1a353ff94ec3198ca08}} 
+const std\+::string \& \mbox{\hyperlink{classWindow_a4568b1613294a1a353ff94ec3198ca08}{title}} () const
+\begin{DoxyCompactList}\small\item\em Return the window title. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_a3c9436e57b4d4a648048e3c6a0004edc}\label{classWindow_a3c9436e57b4d4a648048e3c6a0004edc}} 
+void \mbox{\hyperlink{classWindow_a3c9436e57b4d4a648048e3c6a0004edc}{set\+\_\+title}} (const std\+::string \&title)
+\begin{DoxyCompactList}\small\item\em Set the window title. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_a8979d495b0682b16db943b47cb78faf6}\label{classWindow_a8979d495b0682b16db943b47cb78faf6}} 
+bool \mbox{\hyperlink{classWindow_a8979d495b0682b16db943b47cb78faf6}{modal}} () const
+\begin{DoxyCompactList}\small\item\em Is this a model dialog? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_a86ab4f90b1e11f65b7fde95979740e21}\label{classWindow_a86ab4f90b1e11f65b7fde95979740e21}} 
+void \mbox{\hyperlink{classWindow_a86ab4f90b1e11f65b7fde95979740e21}{set\+\_\+modal}} (bool \mbox{\hyperlink{classWindow_a8979d495b0682b16db943b47cb78faf6}{modal}})
+\begin{DoxyCompactList}\small\item\em Set whether or not this is a modal dialog. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_a15168d60ed83d59f5fbd9c1035abaeac}\label{classWindow_a15168d60ed83d59f5fbd9c1035abaeac}} 
+\mbox{\hyperlink{classWidget}{Widget}} $\ast$ \mbox{\hyperlink{classWindow_a15168d60ed83d59f5fbd9c1035abaeac}{button\+\_\+panel}} ()
+\begin{DoxyCompactList}\small\item\em Return the panel used to house window buttons. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_ab14a25499fa347a6429fa722151e9c21}\label{classWindow_ab14a25499fa347a6429fa722151e9c21}} 
+void \mbox{\hyperlink{classWindow_ab14a25499fa347a6429fa722151e9c21}{dispose}} ()
+\begin{DoxyCompactList}\small\item\em Dispose the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_a0aecd12bdc0a8d9a81c9f54696842494}\label{classWindow_a0aecd12bdc0a8d9a81c9f54696842494}} 
+void \mbox{\hyperlink{classWindow_a0aecd12bdc0a8d9a81c9f54696842494}{center}} ()
+\begin{DoxyCompactList}\small\item\em Center the window in the current \mbox{\hyperlink{classScreen}{Screen}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_a44da759c9e2641708227bc5345dcf534}\label{classWindow_a44da759c9e2641708227bc5345dcf534}} 
+virtual void \mbox{\hyperlink{classWindow_a44da759c9e2641708227bc5345dcf534}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draw the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_ae87ea3b92bba212efc809caa138c0035}\label{classWindow_ae87ea3b92bba212efc809caa138c0035}} 
+virtual bool \mbox{\hyperlink{classWindow_ae87ea3b92bba212efc809caa138c0035}{mouse\+\_\+enter\+\_\+event}} (const Vector2i \&p, bool enter) override
+\begin{DoxyCompactList}\small\item\em Handle mouse enter/leave events. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_a351ab7f4ce3a2a0fe840b637994f1e95}\label{classWindow_a351ab7f4ce3a2a0fe840b637994f1e95}} 
+virtual bool \mbox{\hyperlink{classWindow_a351ab7f4ce3a2a0fe840b637994f1e95}{mouse\+\_\+drag\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle window drag events. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_aaec1fb036af27d1f2d5279d9854b1122}\label{classWindow_aaec1fb036af27d1f2d5279d9854b1122}} 
+virtual bool \mbox{\hyperlink{classWindow_aaec1fb036af27d1f2d5279d9854b1122}{mouse\+\_\+button\+\_\+event}} (const Vector2i \&p, int button, bool down, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle mouse events recursively and bring the current window to the top. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_a8496bc8f7949bf16d0658c5dab33bae8}\label{classWindow_a8496bc8f7949bf16d0658c5dab33bae8}} 
+virtual bool \mbox{\hyperlink{classWindow_a8496bc8f7949bf16d0658c5dab33bae8}{scroll\+\_\+event}} (const Vector2i \&p, const \mbox{\hyperlink{structArray}{Vector2f}} \&rel) override
+\begin{DoxyCompactList}\small\item\em Accept scroll events and propagate them to the widget under the mouse cursor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_afeb982db9cbe9c1d30f88f9c4f7c2afe}\label{classWindow_afeb982db9cbe9c1d30f88f9c4f7c2afe}} 
+virtual Vector2i \mbox{\hyperlink{classWindow_afeb982db9cbe9c1d30f88f9c4f7c2afe}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const override
+\begin{DoxyCompactList}\small\item\em Compute the preferred size of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWindow_a5f40e803db797276e371497592c11065}\label{classWindow_a5f40e803db797276e371497592c11065}} 
+virtual void \mbox{\hyperlink{classWindow_a5f40e803db797276e371497592c11065}{perform\+\_\+layout}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Invoke the associated layout generator to properly place child widgets, if any. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
 \begin{DoxyCompactItemize}
 \item 
-static void \mbox{\hyperlink{classWindow_add4eaae85fe21ec57764c496f9e6b62c}{on\+Resize}} (G\+L\+F\+Wwindow $\ast$window, int width, int height)
+static void \mbox{\hyperlink{classWindow_add4eaae85fe21ec57764c496f9e6b62c}{on\+Resize}} (\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}}, int \mbox{\hyperlink{classWidget_a03c9a3f3ff19d7f39b8e6be03357d87a}{width}}, int \mbox{\hyperlink{classWidget_ad83cc00012e97a403dd65b289f4ceffe}{height}})
 \item 
-static void \mbox{\hyperlink{classWindow_ae868ffceb7f025947abf8b2ca01cc890}{on\+Close}} (G\+L\+F\+Wwindow $\ast$window)
+static void \mbox{\hyperlink{classWindow_ae868ffceb7f025947abf8b2ca01cc890}{on\+Close}} (\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}})
 \item 
-static void \mbox{\hyperlink{classWindow_a310fc385b5f97e9f553b6fa2c8fcd5d4}{on\+Key}} (G\+L\+F\+Wwindow $\ast$window, int key, int scan\+Code, int action, int mods)
+static void \mbox{\hyperlink{classWindow_a310fc385b5f97e9f553b6fa2c8fcd5d4}{on\+Key}} (\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}}, int key, int scan\+Code, int action, int mods)
 \item 
-static void \mbox{\hyperlink{classWindow_a46face86cf2d93711a80020128294d12}{on\+Char}} (G\+L\+F\+Wwindow $\ast$window, unsigned int key\+Code)
+static void \mbox{\hyperlink{classWindow_a46face86cf2d93711a80020128294d12}{on\+Char}} (\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}}, unsigned int key\+Code)
 \item 
-static void \mbox{\hyperlink{classWindow_add879d5f84f0adce1eb95a4898051f39}{on\+Mouse\+Button}} (G\+L\+F\+Wwindow $\ast$window, int button, int action, int mods)
+static void \mbox{\hyperlink{classWindow_add879d5f84f0adce1eb95a4898051f39}{on\+Mouse\+Button}} (\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}}, int button, int action, int mods)
 \item 
-static void \mbox{\hyperlink{classWindow_a532054b3123bc7bcedf9e6728d473e3e}{on\+Scroll}} (G\+L\+F\+Wwindow $\ast$window, double x, double y)
+static void \mbox{\hyperlink{classWindow_a532054b3123bc7bcedf9e6728d473e3e}{on\+Scroll}} (\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}}, double x, double y)
 \item 
-static void \mbox{\hyperlink{classWindow_a3e9aea5a8198fcf5654476123268917a}{on\+Mouse\+Move}} (G\+L\+F\+Wwindow $\ast$window, double x, double y)
+static void \mbox{\hyperlink{classWindow_a3e9aea5a8198fcf5654476123268917a}{on\+Mouse\+Move}} (\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}}, double x, double y)
 \item 
-static void \mbox{\hyperlink{classWindow_a72184e859d8387f25014f6c11d22095f}{on\+Drop}} (G\+L\+F\+Wwindow $\ast$window, int count, const char $\ast$$\ast$paths)
+static void \mbox{\hyperlink{classWindow_a72184e859d8387f25014f6c11d22095f}{on\+Drop}} (\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}}, int count, const char $\ast$$\ast$paths)
 \end{DoxyCompactItemize}
-\doxysubsection*{Static Public Attributes}
+\doxysubsection*{Attributs publics statiques}
 \begin{DoxyCompactItemize}
 \item 
 static glm\+::ivec2 \mbox{\hyperlink{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}{size}} = glm\+::ivec2(1280, 720)
@@ -42,15 +102,45 @@ static std\+::string {\bfseries title} = \char`\"{}Vulkan Lab\char`\"{}
 \mbox{\Hypertarget{classWindow_a6a347465f8303d0aaa6336e333fc22ce}\label{classWindow_a6a347465f8303d0aaa6336e333fc22ce}} 
 static glm\+::vec2 {\bfseries position} = glm\+::vec2(0.\+0f)
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWindow_aedbab40f371383cc3673c8a85ce8be79}\label{classWindow_aedbab40f371383cc3673c8a85ce8be79}} 
+virtual void \mbox{\hyperlink{classWindow_aedbab40f371383cc3673c8a85ce8be79}{refresh\+\_\+relative\+\_\+placement}} ()
+\begin{DoxyCompactList}\small\item\em Internal helper function to maintain nested window position values; overridden in \mbox{\hyperlink{classPopup}{Popup}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWindow_ae9ced8207aab8f5717efd6610340e62d}\label{classWindow_ae9ced8207aab8f5717efd6610340e62d}} 
+std\+::string {\bfseries m\+\_\+title}
+\item 
+\mbox{\Hypertarget{classWindow_aaed9e5b5061a11efb1622639eff990c4}\label{classWindow_aaed9e5b5061a11efb1622639eff990c4}} 
+\mbox{\hyperlink{classWidget}{Widget}} $\ast$ {\bfseries m\+\_\+button\+\_\+panel}
+\item 
+\mbox{\Hypertarget{classWindow_a39b456d6ff778798f878330202e6c524}\label{classWindow_a39b456d6ff778798f878330202e6c524}} 
+bool {\bfseries m\+\_\+modal}
+\item 
+\mbox{\Hypertarget{classWindow_a4252f706d79c7c475451596c08ab6e8b}\label{classWindow_a4252f706d79c7c475451596c08ab6e8b}} 
+bool {\bfseries m\+\_\+drag}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classWindow_a5beb7bc4ba213c1b0ee10dfd3c5322f3}\label{classWindow_a5beb7bc4ba213c1b0ee10dfd3c5322f3}} 
-G\+L\+F\+Wwindow $\ast$ {\bfseries instance}
+\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$ {\bfseries instance}
+\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWindow_ab2cff0c6e6705178359810fac8c4947f}\label{classWindow_ab2cff0c6e6705178359810fac8c4947f}} 
+class {\bfseries Popup}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\doxysubsection{Description détaillée}
+Top-\/level window widget. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
 \mbox{\Hypertarget{classWindow_a06a89c98071838f65590fa906508942f}\label{classWindow_a06a89c98071838f65590fa906508942f}} 
 \index{Window@{Window}!Window@{Window}}
 \index{Window@{Window}!Window@{Window}}
@@ -58,7 +148,7 @@ G\+L\+F\+Wwindow $\ast$ {\bfseries instance}
 {\footnotesize\ttfamily Window\+::\+Window (\begin{DoxyParamCaption}\item[{const glm\+::ivec2 \&}]{size = {\ttfamily glm\+:\+:ivec2(1280,~720)},  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}Vulkan~Lab\char`\"{}},  }\item[{const glm\+::vec2 \&}]{position = {\ttfamily glm\+:\+:vec2(0.0f)} }\end{DoxyParamCaption})}
 
 \mbox{\hyperlink{classWindow}{Window}} constructor 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em size} & \\
 \hline
 {\em title} & \\
@@ -72,16 +162,16 @@ G\+L\+F\+Wwindow $\ast$ {\bfseries instance}
 
 \mbox{\hyperlink{classWindow}{Window}} destructor 
 
-\doxysubsection{Member Function Documentation}
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classWindow_a46face86cf2d93711a80020128294d12}\label{classWindow_a46face86cf2d93711a80020128294d12}} 
 \index{Window@{Window}!onChar@{onChar}}
 \index{onChar@{onChar}!Window@{Window}}
 \doxysubsubsection{\texorpdfstring{onChar()}{onChar()}}
-{\footnotesize\ttfamily void Window\+::on\+Char (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{unsigned int}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Window\+::on\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$}]{window,  }\item[{unsigned int}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 On\+Char event -\/ Triggered when a new input character happened. 
-\begin{DoxyParams}{Parameters}
-{\em G\+L\+F\+Wwindow} & $\ast$window \\
+\begin{DoxyParams}{Paramètres}
+{\em \mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}}} & $\ast$window \\
 \hline
 {\em unsigned} & int key\+Code \\
 \hline
@@ -90,10 +180,10 @@ On\+Char event -\/ Triggered when a new input character happened.
 \index{Window@{Window}!onClose@{onClose}}
 \index{onClose@{onClose}!Window@{Window}}
 \doxysubsubsection{\texorpdfstring{onClose()}{onClose()}}
-{\footnotesize\ttfamily void Window\+::on\+Close (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Window\+::on\+Close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 On\+Close event -\/ Triggered when the native window closes. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em window} & \\
 \hline
 \end{DoxyParams}
@@ -101,11 +191,11 @@ On\+Close event -\/ Triggered when the native window closes.
 \index{Window@{Window}!onDrop@{onDrop}}
 \index{onDrop@{onDrop}!Window@{Window}}
 \doxysubsubsection{\texorpdfstring{onDrop()}{onDrop()}}
-{\footnotesize\ttfamily void Window\+::on\+Drop (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{count,  }\item[{const char $\ast$$\ast$}]{paths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Window\+::on\+Drop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$}]{window,  }\item[{int}]{count,  }\item[{const char $\ast$$\ast$}]{paths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 On\+Drop event -\/ Triggered when a user drop a file on the window. It joins a list of file paths which were dropped. 
-\begin{DoxyParams}{Parameters}
-{\em G\+L\+F\+Wwindow} & $\ast$window \\
+\begin{DoxyParams}{Paramètres}
+{\em \mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}}} & $\ast$window \\
 \hline
 {\em int} & count \\
 \hline
@@ -116,10 +206,10 @@ On\+Drop event -\/ Triggered when a user drop a file on the window. It joins a l
 \index{Window@{Window}!onKey@{onKey}}
 \index{onKey@{onKey}!Window@{Window}}
 \doxysubsubsection{\texorpdfstring{onKey()}{onKey()}}
-{\footnotesize\ttfamily void Window\+::on\+Key (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{key,  }\item[{int}]{scan\+Code,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Window\+::on\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$}]{window,  }\item[{int}]{key,  }\item[{int}]{scan\+Code,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 On\+Key event -\/ Triggered when a key action has ben done. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em G\+L\+F\+Wwindow$\ast$} & window \\
 \hline
 {\em int} & width \\
@@ -131,11 +221,11 @@ On\+Key event -\/ Triggered when a key action has ben done.
 \index{Window@{Window}!onMouseButton@{onMouseButton}}
 \index{onMouseButton@{onMouseButton}!Window@{Window}}
 \doxysubsubsection{\texorpdfstring{onMouseButton()}{onMouseButton()}}
-{\footnotesize\ttfamily void Window\+::on\+Mouse\+Button (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{button,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Window\+::on\+Mouse\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$}]{window,  }\item[{int}]{button,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 On\+Mouse\+Button event -\/ Triggered when a user input an action with the mouse buttons. 
-\begin{DoxyParams}{Parameters}
-{\em G\+L\+F\+Wwindow} & $\ast$window \\
+\begin{DoxyParams}{Paramètres}
+{\em \mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}}} & $\ast$window \\
 \hline
 {\em int} & button \\
 \hline
@@ -148,11 +238,11 @@ On\+Mouse\+Button event -\/ Triggered when a user input an action with the mouse
 \index{Window@{Window}!onMouseMove@{onMouseMove}}
 \index{onMouseMove@{onMouseMove}!Window@{Window}}
 \doxysubsubsection{\texorpdfstring{onMouseMove()}{onMouseMove()}}
-{\footnotesize\ttfamily void Window\+::on\+Mouse\+Move (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Window\+::on\+Mouse\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$}]{window,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 On\+Mouse\+Move event -\/ Triggered when the user moves the cursor. 
-\begin{DoxyParams}{Parameters}
-{\em G\+L\+F\+Wwindow} & $\ast$window \\
+\begin{DoxyParams}{Paramètres}
+{\em \mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}}} & $\ast$window \\
 \hline
 {\em double} & x \\
 \hline
@@ -163,10 +253,10 @@ On\+Mouse\+Move event -\/ Triggered when the user moves the cursor.
 \index{Window@{Window}!onResize@{onResize}}
 \index{onResize@{onResize}!Window@{Window}}
 \doxysubsubsection{\texorpdfstring{onResize()}{onResize()}}
-{\footnotesize\ttfamily void Window\+::on\+Resize (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Window\+::on\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$}]{window,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 On\+Resize event -\/ Triggered when the native window changes size. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em window} & \\
 \hline
 {\em width} & \\
@@ -178,11 +268,11 @@ On\+Resize event -\/ Triggered when the native window changes size.
 \index{Window@{Window}!onScroll@{onScroll}}
 \index{onScroll@{onScroll}!Window@{Window}}
 \doxysubsubsection{\texorpdfstring{onScroll()}{onScroll()}}
-{\footnotesize\ttfamily void Window\+::on\+Scroll (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void Window\+::on\+Scroll (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$}]{window,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 On\+Scroll event -\/ Triggered when a user scroll. 
-\begin{DoxyParams}{Parameters}
-{\em G\+L\+F\+Wwindow} & $\ast$window \\
+\begin{DoxyParams}{Paramètres}
+{\em \mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}}} & $\ast$window \\
 \hline
 {\em double} & x \\
 \hline
@@ -196,16 +286,16 @@ On\+Scroll event -\/ Triggered when a user scroll.
 {\footnotesize\ttfamily void Window\+::update (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(glm\+::ivec2 \&\mbox{\hyperlink{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}{size}})$>$}]{callback }\end{DoxyParamCaption})}
 
 \mbox{\hyperlink{classWindow}{Window}} update 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em std\+::function} & callback \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 
 
-\doxysubsection{Member Data Documentation}
+\doxysubsection{Documentation des données membres}
 \mbox{\Hypertarget{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}\label{classWindow_ace4ef10c8f0e7f74f735b68d6ae35a85}} 
 \index{Window@{Window}!size@{size}}
 \index{size@{size}!Window@{Window}}
@@ -214,7 +304,7 @@ On\+Scroll event -\/ Triggered when a user scroll.
 
 \mbox{\hyperlink{classWindow}{Window}} static initializers 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
 Engine/src/\+Display/Window.\+h\item 
 Engine/src/\+Display/Window.\+cpp\end{DoxyCompactItemize}

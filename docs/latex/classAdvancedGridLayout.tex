@@ -1,0 +1,120 @@
+\hypertarget{classAdvancedGridLayout}{}\doxysection{Référence de la classe Advanced\+Grid\+Layout}
+\label{classAdvancedGridLayout}\index{AdvancedGridLayout@{AdvancedGridLayout}}
+
+
+Advanced Grid layout.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/layout.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Advanced\+Grid\+Layout\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classAdvancedGridLayout}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structAdvancedGridLayout_1_1Anchor}{Anchor}}
+\begin{DoxyCompactList}\small\item\em Helper struct to coordinate anchor points for the layout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a0b97337932239bc3489ed91e62ecd522}\label{classAdvancedGridLayout_a0b97337932239bc3489ed91e62ecd522}} 
+\mbox{\hyperlink{classAdvancedGridLayout_a0b97337932239bc3489ed91e62ecd522}{Advanced\+Grid\+Layout}} (const std\+::vector$<$ int $>$ \&cols=\{\}, const std\+::vector$<$ int $>$ \&rows=\{\}, int \mbox{\hyperlink{classAdvancedGridLayout_a8327d560503a7c2c6c4994dd4584449c}{margin}}=0)
+\begin{DoxyCompactList}\small\item\em Creates an \mbox{\hyperlink{classAdvancedGridLayout}{Advanced\+Grid\+Layout}} with specified columns, rows, and margin. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a8327d560503a7c2c6c4994dd4584449c}\label{classAdvancedGridLayout_a8327d560503a7c2c6c4994dd4584449c}} 
+int \mbox{\hyperlink{classAdvancedGridLayout_a8327d560503a7c2c6c4994dd4584449c}{margin}} () const
+\begin{DoxyCompactList}\small\item\em The margin of this \mbox{\hyperlink{classAdvancedGridLayout}{Advanced\+Grid\+Layout}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_ad23f087a9bdcbe560b94077d60615851}\label{classAdvancedGridLayout_ad23f087a9bdcbe560b94077d60615851}} 
+void \mbox{\hyperlink{classAdvancedGridLayout_ad23f087a9bdcbe560b94077d60615851}{set\+\_\+margin}} (int \mbox{\hyperlink{classAdvancedGridLayout_a8327d560503a7c2c6c4994dd4584449c}{margin}})
+\begin{DoxyCompactList}\small\item\em Sets the margin of this \mbox{\hyperlink{classAdvancedGridLayout}{Advanced\+Grid\+Layout}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_ac020b49a6861024e177572023eb9ee13}\label{classAdvancedGridLayout_ac020b49a6861024e177572023eb9ee13}} 
+int \mbox{\hyperlink{classAdvancedGridLayout_ac020b49a6861024e177572023eb9ee13}{col\+\_\+count}} () const
+\begin{DoxyCompactList}\small\item\em Return the number of cols. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a63217139721bf03c8a692930f89340bb}\label{classAdvancedGridLayout_a63217139721bf03c8a692930f89340bb}} 
+int \mbox{\hyperlink{classAdvancedGridLayout_a63217139721bf03c8a692930f89340bb}{row\+\_\+count}} () const
+\begin{DoxyCompactList}\small\item\em Return the number of rows. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a7515964d426f42e70946b4638b2d8c85}\label{classAdvancedGridLayout_a7515964d426f42e70946b4638b2d8c85}} 
+void \mbox{\hyperlink{classAdvancedGridLayout_a7515964d426f42e70946b4638b2d8c85}{append\+\_\+row}} (int size, float stretch=0.f)
+\begin{DoxyCompactList}\small\item\em Append a row of the given size (and stretch factor) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a0af92f6886758de5583231f0960b6102}\label{classAdvancedGridLayout_a0af92f6886758de5583231f0960b6102}} 
+void \mbox{\hyperlink{classAdvancedGridLayout_a0af92f6886758de5583231f0960b6102}{append\+\_\+col}} (int size, float stretch=0.f)
+\begin{DoxyCompactList}\small\item\em Append a column of the given size (and stretch factor) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a27adcc00e59a6ee76ccdcd962b41f0c5}\label{classAdvancedGridLayout_a27adcc00e59a6ee76ccdcd962b41f0c5}} 
+void \mbox{\hyperlink{classAdvancedGridLayout_a27adcc00e59a6ee76ccdcd962b41f0c5}{set\+\_\+row\+\_\+stretch}} (int index, float stretch)
+\begin{DoxyCompactList}\small\item\em Set the stretch factor of a given row. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_af177e7935c992ab3a88373a5dd4a4756}\label{classAdvancedGridLayout_af177e7935c992ab3a88373a5dd4a4756}} 
+void \mbox{\hyperlink{classAdvancedGridLayout_af177e7935c992ab3a88373a5dd4a4756}{set\+\_\+col\+\_\+stretch}} (int index, float stretch)
+\begin{DoxyCompactList}\small\item\em Set the stretch factor of a given column. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a39de4bd1c7e096712cdc0959ff7b6be3}\label{classAdvancedGridLayout_a39de4bd1c7e096712cdc0959ff7b6be3}} 
+void \mbox{\hyperlink{classAdvancedGridLayout_a39de4bd1c7e096712cdc0959ff7b6be3}{set\+\_\+anchor}} (const \mbox{\hyperlink{classWidget}{Widget}} $\ast$widget, const \mbox{\hyperlink{structAdvancedGridLayout_1_1Anchor}{Anchor}} \&\mbox{\hyperlink{classAdvancedGridLayout_a74a0cb8e1fa800a7b2618e13d74ac359}{anchor}})
+\begin{DoxyCompactList}\small\item\em Specify the anchor data structure for a given widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a74a0cb8e1fa800a7b2618e13d74ac359}\label{classAdvancedGridLayout_a74a0cb8e1fa800a7b2618e13d74ac359}} 
+\mbox{\hyperlink{structAdvancedGridLayout_1_1Anchor}{Anchor}} \mbox{\hyperlink{classAdvancedGridLayout_a74a0cb8e1fa800a7b2618e13d74ac359}{anchor}} (const \mbox{\hyperlink{classWidget}{Widget}} $\ast$widget) const
+\begin{DoxyCompactList}\small\item\em Retrieve the anchor data structure for a given widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a5f2635cbe0bf5ff822faca08fd6df3b3}\label{classAdvancedGridLayout_a5f2635cbe0bf5ff822faca08fd6df3b3}} 
+virtual Vector2i \mbox{\hyperlink{classAdvancedGridLayout_a5f2635cbe0bf5ff822faca08fd6df3b3}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx, const \mbox{\hyperlink{classWidget}{Widget}} $\ast$widget) const override
+\begin{DoxyCompactList}\small\item\em See \mbox{\hyperlink{classLayout_afd3781dffeb7764163c2cc31c41bff63}{Layout\+::preferred\+\_\+size}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a887ea2ed2aeca8287a4e2f7097e9bad6}\label{classAdvancedGridLayout_a887ea2ed2aeca8287a4e2f7097e9bad6}} 
+virtual void \mbox{\hyperlink{classAdvancedGridLayout_a887ea2ed2aeca8287a4e2f7097e9bad6}{perform\+\_\+layout}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx, \mbox{\hyperlink{classWidget}{Widget}} $\ast$widget) const override
+\begin{DoxyCompactList}\small\item\em See \mbox{\hyperlink{classLayout_a351763c0daa5452e7aed501bf194e264}{Layout\+::perform\+\_\+layout}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_ae6d05ebfaac0d94f43a2783c5d98b992}\label{classAdvancedGridLayout_ae6d05ebfaac0d94f43a2783c5d98b992}} 
+void {\bfseries compute\+\_\+layout} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx, const \mbox{\hyperlink{classWidget}{Widget}} $\ast$widget, std\+::vector$<$ int $>$ $\ast$grid) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a6862120662c8a3131ae1c56d4fc3cbcc}\label{classAdvancedGridLayout_a6862120662c8a3131ae1c56d4fc3cbcc}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classAdvancedGridLayout_a6862120662c8a3131ae1c56d4fc3cbcc}{m\+\_\+cols}}
+\begin{DoxyCompactList}\small\item\em The columns of this \mbox{\hyperlink{classAdvancedGridLayout}{Advanced\+Grid\+Layout}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_ae7bf577874ef8e7d6f6afaf0df5f2fb3}\label{classAdvancedGridLayout_ae7bf577874ef8e7d6f6afaf0df5f2fb3}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classAdvancedGridLayout_ae7bf577874ef8e7d6f6afaf0df5f2fb3}{m\+\_\+rows}}
+\begin{DoxyCompactList}\small\item\em The rows of this \mbox{\hyperlink{classAdvancedGridLayout}{Advanced\+Grid\+Layout}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_af05f89481881494a9ed13a6f54b6c998}\label{classAdvancedGridLayout_af05f89481881494a9ed13a6f54b6c998}} 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classAdvancedGridLayout_af05f89481881494a9ed13a6f54b6c998}{m\+\_\+col\+\_\+stretch}}
+\begin{DoxyCompactList}\small\item\em The stretch for each column of this \mbox{\hyperlink{classAdvancedGridLayout}{Advanced\+Grid\+Layout}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a676bea474ed8b7b4b2707cda1b6d71e1}\label{classAdvancedGridLayout_a676bea474ed8b7b4b2707cda1b6d71e1}} 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classAdvancedGridLayout_a676bea474ed8b7b4b2707cda1b6d71e1}{m\+\_\+row\+\_\+stretch}}
+\begin{DoxyCompactList}\small\item\em The stretch for each row of this \mbox{\hyperlink{classAdvancedGridLayout}{Advanced\+Grid\+Layout}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_a73cb81eb8fab04e0a536182efdcce806}\label{classAdvancedGridLayout_a73cb81eb8fab04e0a536182efdcce806}} 
+std\+::unordered\+\_\+map$<$ const \mbox{\hyperlink{classWidget}{Widget}} $\ast$, \mbox{\hyperlink{structAdvancedGridLayout_1_1Anchor}{Anchor}} $>$ \mbox{\hyperlink{classAdvancedGridLayout_a73cb81eb8fab04e0a536182efdcce806}{m\+\_\+anchor}}
+\begin{DoxyCompactList}\small\item\em The mapping of widgets to their specified anchor points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvancedGridLayout_ade90d7ad87a1c4822260b29e95169a15}\label{classAdvancedGridLayout_ade90d7ad87a1c4822260b29e95169a15}} 
+int \mbox{\hyperlink{classAdvancedGridLayout_ade90d7ad87a1c4822260b29e95169a15}{m\+\_\+margin}}
+\begin{DoxyCompactList}\small\item\em The margin around this \mbox{\hyperlink{classAdvancedGridLayout}{Advanced\+Grid\+Layout}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Advanced Grid layout. 
+
+The is a fancier grid layout with support for items that span multiple rows or columns, and per-\/widget alignment flags. Each row and column additionally stores a stretch factor that controls how additional space is redistributed. The downside of this flexibility is that a layout anchor data structure must be provided for each widget.
+
+An example\+:
+
+\textbackslash{}rst .. code-\/block\+:: cpp
+
+using \mbox{\hyperlink{structAdvancedGridLayout_1_1Anchor}{Anchor}} = \mbox{\hyperlink{structAdvancedGridLayout_1_1Anchor}{Advanced\+Grid\+Layout\+::\+Anchor}}; \mbox{\hyperlink{classLabel}{Label}} $\ast$label = new \mbox{\hyperlink{classLabel}{Label}}(window, \char`\"{}\+A label\char`\"{}); // Add a centered label at grid position (1, 5), which spans two horizontal cells layout-\/$>$set\+\_\+anchor(label, Anchor(1, 5, 2, 1, Alignment\+::\+Middle, Alignment\+::\+Middle));
+
+\textbackslash{}endrst
+
+The grid is initialized with user-\/specified column and row size vectors (which can be expanded later on if desired). If a size value of zero is specified for a column or row, the size is set to the maximum preferred size of any widgets contained in the same row or column. Any remaining space is redistributed according to the row and column stretch factors.
+
+The high level usage somewhat resembles the classic H\+IG layout\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://web.archive.org/web/20070813221705/http://www.autel.cz/dmi/tutorial.html}{\texttt{ https\+://web.\+archive.\+org/web/20070813221705/http\+://www.\+autel.\+cz/dmi/tutorial.\+html}}
+\item \href{https://github.com/jaapgeurts/higlayout}{\texttt{ https\+://github.\+com/jaapgeurts/higlayout}} 
+\end{DoxyItemize}
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{layout_8h}{layout.\+h}}\item 
+ext/nanogui/src/layout.\+cpp\end{DoxyCompactItemize}

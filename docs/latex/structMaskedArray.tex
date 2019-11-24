@@ -1,0 +1,85 @@
+\hypertarget{structMaskedArray}{}\doxysection{Référence du modèle de la structure Masked\+Array$<$ T $>$}
+\label{structMaskedArray}\index{MaskedArray$<$ T $>$@{MaskedArray$<$ T $>$}}
+Graphe d\textquotesingle{}héritage de Masked\+Array$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structMaskedArray}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMaskedArray_a51916a2e28aa8fc63e33f319103fd13a}\label{structMaskedArray_a51916a2e28aa8fc63e33f319103fd13a}} 
+using {\bfseries Mask} = mask\+\_\+t$<$ T $>$
+\item 
+\mbox{\Hypertarget{structMaskedArray_aa3c37353520a2b1e9cae853862fcb6df}\label{structMaskedArray_aa3c37353520a2b1e9cae853862fcb6df}} 
+using {\bfseries Scalar} = \mbox{\hyperlink{structMaskedValue}{Masked\+Value}}$<$ scalar\+\_\+t$<$ T $>$ $>$
+\item 
+\mbox{\Hypertarget{structMaskedArray_ae2ddc398ee469c9f2a8365301b7844a1}\label{structMaskedArray_ae2ddc398ee469c9f2a8365301b7844a1}} 
+using {\bfseries Mask\+Type} = \mbox{\hyperlink{structMaskedArray}{Masked\+Array}}$<$ \mbox{\hyperlink{structMask}{Mask}} $>$
+\item 
+\mbox{\Hypertarget{structMaskedArray_a648ad10f2c9b07c327c64139fc129461}\label{structMaskedArray_a648ad10f2c9b07c327c64139fc129461}} 
+using {\bfseries Value} = std\+::conditional\+\_\+t$<$ is\+\_\+scalar\+\_\+v$<$ value\+\_\+t$<$ T $>$ $>$, \mbox{\hyperlink{structMaskedValue}{Masked\+Value}}$<$ value\+\_\+t$<$ T $>$ $>$, \mbox{\hyperlink{structMaskedArray}{Masked\+Array}}$<$ value\+\_\+t$<$ T $>$ $>$$>$
+\item 
+\mbox{\Hypertarget{structMaskedArray_a573a5f70f31cacf0534d3768b21fbc96}\label{structMaskedArray_a573a5f70f31cacf0534d3768b21fbc96}} 
+using {\bfseries Underlying\+Value} = value\+\_\+t$<$ T $>$
+\item 
+\mbox{\Hypertarget{structMaskedArray_ac8164070bdfd890601d2184177fa6eef}\label{structMaskedArray_ac8164070bdfd890601d2184177fa6eef}} 
+{\footnotesize template$<$typename T2 $>$ }\\using \mbox{\hyperlink{structMaskedArray_ac8164070bdfd890601d2184177fa6eef}{Replace\+Value}} = \mbox{\hyperlink{structMaskedArray}{Masked\+Array}}$<$ typename T\+::template \mbox{\hyperlink{structMaskedArray_ac8164070bdfd890601d2184177fa6eef}{Replace\+Value}}$<$ T2 $>$ $>$
+\begin{DoxyCompactList}\small\item\em Type alias for a similar-\/shaped array over a different type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMaskedArray_a1bb9e56a85f6d408d050dd4de56c0910}\label{structMaskedArray_a1bb9e56a85f6d408d050dd4de56c0910}} 
+{\bfseries Masked\+Array} (T \&d, const \mbox{\hyperlink{structMask}{Mask}} \&m)
+\item 
+\mbox{\Hypertarget{structMaskedArray_a8f200d5902494e0172a551cfe5047652}\label{structMaskedArray_a8f200d5902494e0172a551cfe5047652}} 
+{\footnotesize template$<$typename T2 $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries operator=} (const T2 \&value)
+\item 
+\mbox{\Hypertarget{structMaskedArray_a554c47e732ccd06a2ff3ccc178662530}\label{structMaskedArray_a554c47e732ccd06a2ff3ccc178662530}} 
+{\footnotesize template$<$typename T2 $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries operator+=} (const T2 \&value)
+\item 
+\mbox{\Hypertarget{structMaskedArray_a7303491e06cb8cfb229c27c213776386}\label{structMaskedArray_a7303491e06cb8cfb229c27c213776386}} 
+{\footnotesize template$<$typename T2 $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries operator-\/=} (const T2 \&value)
+\item 
+\mbox{\Hypertarget{structMaskedArray_a663534c2926c77ad51fe15733360c714}\label{structMaskedArray_a663534c2926c77ad51fe15733360c714}} 
+{\footnotesize template$<$typename T2 $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries operator$\ast$=} (const T2 \&value)
+\item 
+\mbox{\Hypertarget{structMaskedArray_a4dc2f9f493ac613a9a5163dd45af9229}\label{structMaskedArray_a4dc2f9f493ac613a9a5163dd45af9229}} 
+{\footnotesize template$<$typename T2 $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries operator/=} (const T2 \&value)
+\item 
+\mbox{\Hypertarget{structMaskedArray_a393c196219db752cf75ea1ffd258e502}\label{structMaskedArray_a393c196219db752cf75ea1ffd258e502}} 
+{\footnotesize template$<$typename T2 $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries operator$\vert$=} (const T2 \&value)
+\item 
+\mbox{\Hypertarget{structMaskedArray_a17530c630477af45f4794aac55b3adbf}\label{structMaskedArray_a17530c630477af45f4794aac55b3adbf}} 
+{\footnotesize template$<$typename T2 $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries operator\&=} (const T2 \&value)
+\item 
+\mbox{\Hypertarget{structMaskedArray_acb055158502498b0937033058c236216}\label{structMaskedArray_acb055158502498b0937033058c236216}} 
+{\footnotesize template$<$typename T2 $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries operator$^\wedge$=} (const T2 \&value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMaskedArray_a1c814670841df0c679565b0533b9a7e8}\label{structMaskedArray_a1c814670841df0c679565b0533b9a7e8}} 
+T \& {\bfseries d}
+\item 
+\mbox{\Hypertarget{structMaskedArray_a4d98f2735dbe0bf2f5162cb391aa5c2f}\label{structMaskedArray_a4d98f2735dbe0bf2f5162cb391aa5c2f}} 
+\mbox{\hyperlink{structMask}{Mask}} {\bfseries m}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMaskedArray_a039938ef86572e74cfcd7f423076e73a}\label{structMaskedArray_a039938ef86572e74cfcd7f423076e73a}} 
+static constexpr bool {\bfseries Approx} = T\+::\+Approx
+\item 
+\mbox{\Hypertarget{structMaskedArray_af90c80219620c403b5ad3442285d7c90}\label{structMaskedArray_af90c80219620c403b5ad3442285d7c90}} 
+static constexpr size\+\_\+t {\bfseries Size} = array\+\_\+size\+\_\+v$<$T$>$
+\item 
+\mbox{\Hypertarget{structMaskedArray_a5667086e1d3c62b6fd3f593cfd3d9a4b}\label{structMaskedArray_a5667086e1d3c62b6fd3f593cfd3d9a4b}} 
+static constexpr bool {\bfseries Is\+Masked\+Array} = true
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array\+\_\+masked.\+h\end{DoxyCompactItemize}

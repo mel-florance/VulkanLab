@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.8.16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vulkan Lab: Référence de la classe RenderPass</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">Vulkan Lab
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part --><!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classRenderPass.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Types publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="classRenderPass-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe RenderPass</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Graphe d'héritage de RenderPass:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classRenderPass.png" usemap="#RenderPass_map" alt=""/>
+  <map id="RenderPass_map" name="RenderPass_map">
+<area href="classObject.html" title="Reference counted object base class." alt="Object" shape="rect" coords="0,0,80,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr class="memitem:a38e2ed2dc427efd8ac5605c6b766c4a2"><td class="memItemLeft" align="right" valign="top"><a id="a38e2ed2dc427efd8ac5605c6b766c4a2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a38e2ed2dc427efd8ac5605c6b766c4a2">DepthTest</a> { <br />
+&#160;&#160;<b>Never</b>, 
+<b>Less</b>, 
+<b>Equal</b>, 
+<b>LessEqual</b>, 
+<br />
+&#160;&#160;<b>Greater</b>, 
+<b>NotEqual</b>, 
+<b>GreaterEqual</b>, 
+<b>Always</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a38e2ed2dc427efd8ac5605c6b766c4a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth test. <br /></td></tr>
+<tr class="separator:a38e2ed2dc427efd8ac5605c6b766c4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f52d9b59a769aec3e0bc2386a8411c"><td class="memItemLeft" align="right" valign="top"><a id="a80f52d9b59a769aec3e0bc2386a8411c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a80f52d9b59a769aec3e0bc2386a8411c">CullMode</a> { <b>Disabled</b>, 
+<b>Front</b>, 
+<b>Back</b>
+ }</td></tr>
+<tr class="memdesc:a80f52d9b59a769aec3e0bc2386a8411c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Culling mode. <br /></td></tr>
+<tr class="separator:a80f52d9b59a769aec3e0bc2386a8411c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:abfe225287aa03045e4befde14d6a62ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#abfe225287aa03045e4befde14d6a62ef">RenderPass</a> (std::vector&lt; <a class="el" href="classObject.html">Object</a> * &gt; color_targets, <a class="el" href="classObject.html">Object</a> *depth_target=nullptr, <a class="el" href="classObject.html">Object</a> *stencil_target=nullptr, <a class="el" href="classObject.html">Object</a> *blit_target=nullptr, bool clear=true)</td></tr>
+<tr class="memdesc:abfe225287aa03045e4befde14d6a62ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new render pass for rendering to a specific set of targets.  <a href="classRenderPass.html#abfe225287aa03045e4befde14d6a62ef">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abfe225287aa03045e4befde14d6a62ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9196b567fe71202d06c29259e2cf0dd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a9196b567fe71202d06c29259e2cf0dd9">begin</a> ()</td></tr>
+<tr class="memdesc:a9196b567fe71202d06c29259e2cf0dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin the render pass.  <a href="classRenderPass.html#a9196b567fe71202d06c29259e2cf0dd9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9196b567fe71202d06c29259e2cf0dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c2cf5fd1519461f4ec1c86b9859e3e"><td class="memItemLeft" align="right" valign="top"><a id="ad4c2cf5fd1519461f4ec1c86b9859e3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#ad4c2cf5fd1519461f4ec1c86b9859e3e">end</a> ()</td></tr>
+<tr class="memdesc:ad4c2cf5fd1519461f4ec1c86b9859e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish the render pass. <br /></td></tr>
+<tr class="separator:ad4c2cf5fd1519461f4ec1c86b9859e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b5ac819063765239221942caf74a0d"><td class="memItemLeft" align="right" valign="top"><a id="a83b5ac819063765239221942caf74a0d"></a>
+const <a class="el" href="classColor.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a83b5ac819063765239221942caf74a0d">clear_color</a> (size_t index) const</td></tr>
+<tr class="memdesc:a83b5ac819063765239221942caf74a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the clear color for a given color attachment. <br /></td></tr>
+<tr class="separator:a83b5ac819063765239221942caf74a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6676dd1546f16b50622032c55313d8fb"><td class="memItemLeft" align="right" valign="top"><a id="a6676dd1546f16b50622032c55313d8fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a6676dd1546f16b50622032c55313d8fb">set_clear_color</a> (size_t index, const <a class="el" href="classColor.html">Color</a> &amp;color)</td></tr>
+<tr class="memdesc:a6676dd1546f16b50622032c55313d8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the clear color for a given color attachment. <br /></td></tr>
+<tr class="separator:a6676dd1546f16b50622032c55313d8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73fa04ef815438b7e9590ba902d4bbfb"><td class="memItemLeft" align="right" valign="top"><a id="a73fa04ef815438b7e9590ba902d4bbfb"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a73fa04ef815438b7e9590ba902d4bbfb">clear_depth</a> () const</td></tr>
+<tr class="memdesc:a73fa04ef815438b7e9590ba902d4bbfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the clear depth for the depth attachment. <br /></td></tr>
+<tr class="separator:a73fa04ef815438b7e9590ba902d4bbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adabb1c44abcd29744dfbb1b18eb3d229"><td class="memItemLeft" align="right" valign="top"><a id="adabb1c44abcd29744dfbb1b18eb3d229"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#adabb1c44abcd29744dfbb1b18eb3d229">set_clear_depth</a> (float depth)</td></tr>
+<tr class="memdesc:adabb1c44abcd29744dfbb1b18eb3d229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the clear depth for the depth attachment. <br /></td></tr>
+<tr class="separator:adabb1c44abcd29744dfbb1b18eb3d229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809f067c9f03ffcfbaf7eea3b8245577"><td class="memItemLeft" align="right" valign="top"><a id="a809f067c9f03ffcfbaf7eea3b8245577"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a809f067c9f03ffcfbaf7eea3b8245577">clear_stencil</a> () const</td></tr>
+<tr class="memdesc:a809f067c9f03ffcfbaf7eea3b8245577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the clear stencil for the stencil attachment. <br /></td></tr>
+<tr class="separator:a809f067c9f03ffcfbaf7eea3b8245577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab9c24ca1d6424265a75f2cc3fdbcb3"><td class="memItemLeft" align="right" valign="top"><a id="aeab9c24ca1d6424265a75f2cc3fdbcb3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#aeab9c24ca1d6424265a75f2cc3fdbcb3">set_clear_stencil</a> (uint8_t stencil)</td></tr>
+<tr class="memdesc:aeab9c24ca1d6424265a75f2cc3fdbcb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the clear stencil for the stencil attachment. <br /></td></tr>
+<tr class="separator:aeab9c24ca1d6424265a75f2cc3fdbcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19234db2c78b113e9c0da528e6e9879a"><td class="memItemLeft" align="right" valign="top"><a id="a19234db2c78b113e9c0da528e6e9879a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a19234db2c78b113e9c0da528e6e9879a">set_depth_test</a> (<a class="el" href="classRenderPass.html#a38e2ed2dc427efd8ac5605c6b766c4a2">DepthTest</a> <a class="el" href="classRenderPass.html#a1b1390062bb28740cd6c1b81fecd9886">depth_test</a>, bool depth_write)</td></tr>
+<tr class="memdesc:a19234db2c78b113e9c0da528e6e9879a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the depth test and depth write mask of this render pass. <br /></td></tr>
+<tr class="separator:a19234db2c78b113e9c0da528e6e9879a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b1390062bb28740cd6c1b81fecd9886"><td class="memItemLeft" align="right" valign="top"><a id="a1b1390062bb28740cd6c1b81fecd9886"></a>
+std::pair&lt; <a class="el" href="classRenderPass.html#a38e2ed2dc427efd8ac5605c6b766c4a2">DepthTest</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a1b1390062bb28740cd6c1b81fecd9886">depth_test</a> () const</td></tr>
+<tr class="memdesc:a1b1390062bb28740cd6c1b81fecd9886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the depth test and depth write mask of this render pass. <br /></td></tr>
+<tr class="separator:a1b1390062bb28740cd6c1b81fecd9886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4740f35a214bd8dc62c3127bee069122"><td class="memItemLeft" align="right" valign="top"><a id="a4740f35a214bd8dc62c3127bee069122"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a4740f35a214bd8dc62c3127bee069122">set_viewport</a> (const Vector2i &amp;offset, const Vector2i &amp;size)</td></tr>
+<tr class="memdesc:a4740f35a214bd8dc62c3127bee069122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pixel offset and size of the viewport region. <br /></td></tr>
+<tr class="separator:a4740f35a214bd8dc62c3127bee069122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5e0ef0dc9ed621fdc153004b06ca95"><td class="memItemLeft" align="right" valign="top"><a id="a0b5e0ef0dc9ed621fdc153004b06ca95"></a>
+std::pair&lt; Vector2i, Vector2i &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a0b5e0ef0dc9ed621fdc153004b06ca95">viewport</a> ()</td></tr>
+<tr class="memdesc:a0b5e0ef0dc9ed621fdc153004b06ca95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the pixel offset and size of the viewport region. <br /></td></tr>
+<tr class="separator:a0b5e0ef0dc9ed621fdc153004b06ca95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1609b7bb89e15a33153c1427316e270"><td class="memItemLeft" align="right" valign="top"><a id="ad1609b7bb89e15a33153c1427316e270"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#ad1609b7bb89e15a33153c1427316e270">set_cull_mode</a> (<a class="el" href="classRenderPass.html#a80f52d9b59a769aec3e0bc2386a8411c">CullMode</a> mode)</td></tr>
+<tr class="memdesc:ad1609b7bb89e15a33153c1427316e270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the culling mode associated with the render pass. <br /></td></tr>
+<tr class="separator:ad1609b7bb89e15a33153c1427316e270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4dddea43234a65f3dbed20e3b093c18"><td class="memItemLeft" align="right" valign="top"><a id="af4dddea43234a65f3dbed20e3b093c18"></a>
+<a class="el" href="classRenderPass.html#a80f52d9b59a769aec3e0bc2386a8411c">CullMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#af4dddea43234a65f3dbed20e3b093c18">cull_mode</a> () const</td></tr>
+<tr class="memdesc:af4dddea43234a65f3dbed20e3b093c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the culling mode associated with the render pass. <br /></td></tr>
+<tr class="separator:af4dddea43234a65f3dbed20e3b093c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a3815c202e762b00bb1d82eb89e3e9"><td class="memItemLeft" align="right" valign="top"><a id="a55a3815c202e762b00bb1d82eb89e3e9"></a>
+std::vector&lt; <a class="el" href="classref.html">ref</a>&lt; <a class="el" href="classObject.html">Object</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a55a3815c202e762b00bb1d82eb89e3e9">targets</a> ()</td></tr>
+<tr class="memdesc:a55a3815c202e762b00bb1d82eb89e3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the set of all render targets (including depth + stencil) associated with this render pass. <br /></td></tr>
+<tr class="separator:a55a3815c202e762b00bb1d82eb89e3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe97586054131807812c8dec00c705e2"><td class="memItemLeft" align="right" valign="top"><a id="afe97586054131807812c8dec00c705e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#afe97586054131807812c8dec00c705e2">resize</a> (const Vector2i &amp;size)</td></tr>
+<tr class="memdesc:afe97586054131807812c8dec00c705e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize all texture targets attached to the render pass. <br /></td></tr>
+<tr class="separator:afe97586054131807812c8dec00c705e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a0da4c817d00a7559cbfb93e2f47f5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderPass.html#a5a0da4c817d00a7559cbfb93e2f47f5e">blit_to</a> (const Vector2i &amp;src_offset, const Vector2i &amp;src_size, <a class="el" href="classObject.html">Object</a> *dst, const Vector2i &amp;dst_offset)</td></tr>
+<tr class="separator:a5a0da4c817d00a7559cbfb93e2f47f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classObject')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="classObject.html">Object</a></td></tr>
+<tr class="memitem:a40860402e64d8008fb42329df7097cdb inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top"><a id="a40860402e64d8008fb42329df7097cdb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#a40860402e64d8008fb42329df7097cdb">Object</a> ()</td></tr>
+<tr class="memdesc:a40860402e64d8008fb42329df7097cdb inherit pub_methods_classObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a40860402e64d8008fb42329df7097cdb inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b5cd7a9a24ddde484344200cf83281 inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top"><a id="af3b5cd7a9a24ddde484344200cf83281"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#af3b5cd7a9a24ddde484344200cf83281">Object</a> (const <a class="el" href="classObject.html">Object</a> &amp;)</td></tr>
+<tr class="memdesc:af3b5cd7a9a24ddde484344200cf83281 inherit pub_methods_classObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor. <br /></td></tr>
+<tr class="separator:af3b5cd7a9a24ddde484344200cf83281 inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f97f143f9fb46ac52e2f11cfa034005 inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top"><a id="a4f97f143f9fb46ac52e2f11cfa034005"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#a4f97f143f9fb46ac52e2f11cfa034005">getRefCount</a> () const</td></tr>
+<tr class="memdesc:a4f97f143f9fb46ac52e2f11cfa034005 inherit pub_methods_classObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current reference count. <br /></td></tr>
+<tr class="separator:a4f97f143f9fb46ac52e2f11cfa034005 inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769b55a36d5a2d42af6ef37be0789f43 inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top"><a id="a769b55a36d5a2d42af6ef37be0789f43"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#a769b55a36d5a2d42af6ef37be0789f43">incRef</a> () const</td></tr>
+<tr class="memdesc:a769b55a36d5a2d42af6ef37be0789f43 inherit pub_methods_classObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the object's reference count by one. <br /></td></tr>
+<tr class="separator:a769b55a36d5a2d42af6ef37be0789f43 inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee1171037ab2f9137ff9864ceb8f3086 inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#aee1171037ab2f9137ff9864ceb8f3086">decRef</a> (bool dealloc=true) const</td></tr>
+<tr class="memdesc:aee1171037ab2f9137ff9864ceb8f3086 inherit pub_methods_classObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrease the reference count of the object and possibly deallocate it.  <a href="classObject.html#aee1171037ab2f9137ff9864ceb8f3086">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aee1171037ab2f9137ff9864ceb8f3086 inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89fee2453b0e7b4737afac15cf8ed039 inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top"><a id="a89fee2453b0e7b4737afac15cf8ed039"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>toString</b> () const =0</td></tr>
+<tr class="separator:a89fee2453b0e7b4737afac15cf8ed039 inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40860402e64d8008fb42329df7097cdb inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top"><a id="a40860402e64d8008fb42329df7097cdb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#a40860402e64d8008fb42329df7097cdb">Object</a> ()</td></tr>
+<tr class="memdesc:a40860402e64d8008fb42329df7097cdb inherit pub_methods_classObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a40860402e64d8008fb42329df7097cdb inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b5cd7a9a24ddde484344200cf83281 inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top"><a id="af3b5cd7a9a24ddde484344200cf83281"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#af3b5cd7a9a24ddde484344200cf83281">Object</a> (const <a class="el" href="classObject.html">Object</a> &amp;)</td></tr>
+<tr class="memdesc:af3b5cd7a9a24ddde484344200cf83281 inherit pub_methods_classObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor. <br /></td></tr>
+<tr class="separator:af3b5cd7a9a24ddde484344200cf83281 inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38150f0e9c91699cad350eac8fea192b inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top"><a id="a38150f0e9c91699cad350eac8fea192b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#a38150f0e9c91699cad350eac8fea192b">ref_count</a> () const</td></tr>
+<tr class="memdesc:a38150f0e9c91699cad350eac8fea192b inherit pub_methods_classObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current reference count. <br /></td></tr>
+<tr class="separator:a38150f0e9c91699cad350eac8fea192b inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59711b923f55319e6a69df4be88861a7 inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top"><a id="a59711b923f55319e6a69df4be88861a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#a59711b923f55319e6a69df4be88861a7">inc_ref</a> () const</td></tr>
+<tr class="memdesc:a59711b923f55319e6a69df4be88861a7 inherit pub_methods_classObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the object's reference count by one. <br /></td></tr>
+<tr class="separator:a59711b923f55319e6a69df4be88861a7 inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0bd53b4010ddeb2b5de4a3fd80d7fdf inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#ae0bd53b4010ddeb2b5de4a3fd80d7fdf">dec_ref</a> (bool dealloc=true) const noexcept</td></tr>
+<tr class="memdesc:ae0bd53b4010ddeb2b5de4a3fd80d7fdf inherit pub_methods_classObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrease the reference count of the object and possibly deallocate it.  <a href="classObject.html#ae0bd53b4010ddeb2b5de4a3fd80d7fdf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae0bd53b4010ddeb2b5de4a3fd80d7fdf inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:a43fbbbf452bcfb14b7a05a75406adabf"><td class="memItemLeft" align="right" valign="top"><a id="a43fbbbf452bcfb14b7a05a75406adabf"></a>
+std::vector&lt; <a class="el" href="classref.html">ref</a>&lt; <a class="el" href="classObject.html">Object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_targets</b></td></tr>
+<tr class="separator:a43fbbbf452bcfb14b7a05a75406adabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46580f0a32670ea836be324a5c9dcdc4"><td class="memItemLeft" align="right" valign="top"><a id="a46580f0a32670ea836be324a5c9dcdc4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_clear</b></td></tr>
+<tr class="separator:a46580f0a32670ea836be324a5c9dcdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70302128f1ea3f9fcd4457b5cd91861f"><td class="memItemLeft" align="right" valign="top"><a id="a70302128f1ea3f9fcd4457b5cd91861f"></a>
+std::vector&lt; <a class="el" href="classColor.html">Color</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_clear_color</b></td></tr>
+<tr class="separator:a70302128f1ea3f9fcd4457b5cd91861f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ce631bfa6fbbd609aef5ffcfeff577"><td class="memItemLeft" align="right" valign="top"><a id="a89ce631bfa6fbbd609aef5ffcfeff577"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_clear_depth</b></td></tr>
+<tr class="separator:a89ce631bfa6fbbd609aef5ffcfeff577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b7c37d9d4bf7731a2dd8e03c2e90214"><td class="memItemLeft" align="right" valign="top"><a id="a3b7c37d9d4bf7731a2dd8e03c2e90214"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_clear_stencil</b></td></tr>
+<tr class="separator:a3b7c37d9d4bf7731a2dd8e03c2e90214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b0e2958458a4bffa0b34ef5e9a53f3"><td class="memItemLeft" align="right" valign="top"><a id="aa7b0e2958458a4bffa0b34ef5e9a53f3"></a>
+Vector2i&#160;</td><td class="memItemRight" valign="bottom"><b>m_viewport_offset</b></td></tr>
+<tr class="separator:aa7b0e2958458a4bffa0b34ef5e9a53f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07cfb8b8ce9a4e797bdd2b02a82e12c4"><td class="memItemLeft" align="right" valign="top"><a id="a07cfb8b8ce9a4e797bdd2b02a82e12c4"></a>
+Vector2i&#160;</td><td class="memItemRight" valign="bottom"><b>m_viewport_size</b></td></tr>
+<tr class="separator:a07cfb8b8ce9a4e797bdd2b02a82e12c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af166a63b03a67034db7c51041ce30935"><td class="memItemLeft" align="right" valign="top"><a id="af166a63b03a67034db7c51041ce30935"></a>
+Vector2i&#160;</td><td class="memItemRight" valign="bottom"><b>m_framebuffer_size</b></td></tr>
+<tr class="separator:af166a63b03a67034db7c51041ce30935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b5bd10ede37af0bc1ef78a12157182"><td class="memItemLeft" align="right" valign="top"><a id="a32b5bd10ede37af0bc1ef78a12157182"></a>
+<a class="el" href="classRenderPass.html#a38e2ed2dc427efd8ac5605c6b766c4a2">DepthTest</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_depth_test</b></td></tr>
+<tr class="separator:a32b5bd10ede37af0bc1ef78a12157182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af431076c835114dfe7737c7782c3b00d"><td class="memItemLeft" align="right" valign="top"><a id="af431076c835114dfe7737c7782c3b00d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_depth_write</b></td></tr>
+<tr class="separator:af431076c835114dfe7737c7782c3b00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405006f8b42f478dedc31081bc0c62f9"><td class="memItemLeft" align="right" valign="top"><a id="a405006f8b42f478dedc31081bc0c62f9"></a>
+<a class="el" href="classRenderPass.html#a80f52d9b59a769aec3e0bc2386a8411c">CullMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_cull_mode</b></td></tr>
+<tr class="separator:a405006f8b42f478dedc31081bc0c62f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70c1cfa305597805d596cfce64118af"><td class="memItemLeft" align="right" valign="top"><a id="ab70c1cfa305597805d596cfce64118af"></a>
+<a class="el" href="classref.html">ref</a>&lt; <a class="el" href="classObject.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_blit_target</b></td></tr>
+<tr class="separator:ab70c1cfa305597805d596cfce64118af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c14c871237de161d6394eb233309165"><td class="memItemLeft" align="right" valign="top"><a id="a6c14c871237de161d6394eb233309165"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_active</b></td></tr>
+<tr class="separator:a6c14c871237de161d6394eb233309165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Membres hérités additionnels</h2></td></tr>
+<tr class="inherit_header pro_methods_classObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classObject')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="classObject.html">Object</a></td></tr>
+<tr class="memitem:ae8f5483f459e46687bd01e6f9977afd3 inherit pro_methods_classObject"><td class="memItemLeft" align="right" valign="top"><a id="ae8f5483f459e46687bd01e6f9977afd3"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#ae8f5483f459e46687bd01e6f9977afd3">~Object</a> ()</td></tr>
+<tr class="memdesc:ae8f5483f459e46687bd01e6f9977afd3 inherit pro_methods_classObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual protected deconstructor. (Will only be called by <a class="el" href="classref.html">ref</a>) <br /></td></tr>
+<tr class="separator:ae8f5483f459e46687bd01e6f9977afd3 inherit pro_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e791419d84c4c346ef9499513b8e00 inherit pro_methods_classObject"><td class="memItemLeft" align="right" valign="top"><a id="aa3e791419d84c4c346ef9499513b8e00"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#aa3e791419d84c4c346ef9499513b8e00">~Object</a> ()</td></tr>
+<tr class="memdesc:aa3e791419d84c4c346ef9499513b8e00 inherit pro_methods_classObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual protected deconstructor. (Will only be called by <a class="el" href="classref.html">ref</a>) <br /></td></tr>
+<tr class="separator:aa3e791419d84c4c346ef9499513b8e00 inherit pro_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="abfe225287aa03045e4befde14d6a62ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfe225287aa03045e4befde14d6a62ef">&#9670;&nbsp;</a></span>RenderPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RenderPass::RenderPass </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classObject.html">Object</a> * &gt;&#160;</td>
+          <td class="paramname"><em>color_targets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classObject.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>depth_target</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classObject.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>stencil_target</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classObject.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>blit_target</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>clear</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new render pass for rendering to a specific set of targets. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color_targets</td><td>One or more target objects to which color information will be rendered. Must either be a <a class="el" href="classScreen.html">Screen</a> or a <a class="el" href="classTexture.html">Texture</a> instance.</td></tr>
+    <tr><td class="paramname">depth_target</td><td>Target object to which depth information will be rendered. Must either be <code>NULL</code> or a <a class="el" href="classTexture.html">Texture</a> instance.</td></tr>
+    <tr><td class="paramname">stencil_target</td><td>Target object to which stencil information will be rendered. Must either be <code>NULL</code> or a <a class="el" href="classTexture.html">Texture</a> instance. Can be identical to 'depth_target' in case the texture has the pixel format <a class="el" href="classTexture.html#a89f17140f54d88caedd976cf48fc33f6a2fa8076285272883c91e14402975a441">Texture::PixelFormat::DepthStencil</a>.</td></tr>
+    <tr><td class="paramname">blit_target</td><td>When rendering finishes, the render pass can (optionally) blit the framebuffer to another target (which can either be another <a class="el" href="classRenderPass.html">RenderPass</a> instance or a <a class="el" href="classScreen.html">Screen</a> instance). This is mainly useful for multisample antialiasing (MSAA) rendering where set of multi-sample framebuffers must be converted into ordinary framebuffers for display.</td></tr>
+    <tr><td class="paramname">clear</td><td>Should enter() begin by clearing all buffers? </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a9196b567fe71202d06c29259e2cf0dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9196b567fe71202d06c29259e2cf0dd9">&#9670;&nbsp;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RenderPass::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Begin the render pass. </p>
+<p>The specified drawing state (e.g. depth tests, culling mode, blending mode) are automatically set up at this point. Later changes between <a class="el" href="classRenderPass.html#a9196b567fe71202d06c29259e2cf0dd9">begin()</a> and <a class="el" href="classRenderPass.html#ad4c2cf5fd1519461f4ec1c86b9859e3e">end()</a> are possible but cause additional OpenGL/GLES/Metal API calls.</p>
+<p>The Python bindings also include extra <code><b>enter</b></code> and <code><b>exit</b></code> aliases so that the render pass can be activated via Pythons 'with' statement. </p>
+
+</div>
+</div>
+<a id="a5a0da4c817d00a7559cbfb93e2f47f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a0da4c817d00a7559cbfb93e2f47f5e">&#9670;&nbsp;</a></span>blit_to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RenderPass::blit_to </td>
+          <td>(</td>
+          <td class="paramtype">const Vector2i &amp;&#160;</td>
+          <td class="paramname"><em>src_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vector2i &amp;&#160;</td>
+          <td class="paramname"><em>src_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classObject.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vector2i &amp;&#160;</td>
+          <td class="paramname"><em>dst_offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Blit the framebuffer to another target (which can either be another <a class="el" href="classRenderPass.html">RenderPass</a> instance or a <a class="el" href="classScreen.html">Screen</a> instance). </p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>ext/nanogui/include/nanogui/<a class="el" href="renderpass_8h_source.html">renderpass.h</a></li>
+<li>ext/nanogui/src/renderpass_gl.cpp</li>
+<li>ext/nanogui/src/renderpass_metal.mm</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+    <ul>
+        <li class="navelem"><a class="el" href="classRenderPass.html">RenderPass</a></li>
+        <li class="footer">
+            Generated on Dimanche 24 Novembre 2019 18:11:51 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
+            Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
+        </li>
+    </ul>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>

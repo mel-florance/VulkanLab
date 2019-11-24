@@ -1,0 +1,40 @@
+\hypertarget{structvectorize__arg}{}\doxysection{Référence du modèle de la structure vectorize\+\_\+arg$<$ T $>$}
+\label{structvectorize__arg}\index{vectorize\_arg$<$ T $>$@{vectorize\_arg$<$ T $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structvectorize__arg_a465d48643eac1a5fb514819ceaf8eb1c}\label{structvectorize__arg_a465d48643eac1a5fb514819ceaf8eb1c}} 
+using {\bfseries call\+\_\+type} = remove\+\_\+reference\+\_\+t$<$ T $>$
+\item 
+\mbox{\Hypertarget{structvectorize__arg_a1eac44d967c2119c39a13843b8546c9d}\label{structvectorize__arg_a1eac44d967c2119c39a13843b8546c9d}} 
+using {\bfseries type} = conditional\+\_\+t$<$ vectorize, \mbox{\hyperlink{classarray__t}{array\+\_\+t}}$<$ remove\+\_\+cv\+\_\+t$<$ call\+\_\+type $>$, array\+::forcecast $>$, T $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr bool {\bfseries vectorize}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structvectorize__arg_a2713dcb369c1ff6d3ec66f9b91419735}\label{structvectorize__arg_a2713dcb369c1ff6d3ec66f9b91419735}} 
+\index{vectorize\_arg$<$ T $>$@{vectorize\_arg$<$ T $>$}!vectorize@{vectorize}}
+\index{vectorize@{vectorize}!vectorize\_arg$<$ T $>$@{vectorize\_arg$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{vectorize}{vectorize}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+constexpr bool \mbox{\hyperlink{structvectorize__arg}{vectorize\+\_\+arg}}$<$ T $>$\+::vectorize\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{        \mbox{\hyperlink{structnegation}{satisfies\_any\_of<call\_type, std::is\_arithmetic, is\_complex, std::is\_pod>::value}} \&\&}
+\DoxyCodeLine{        \mbox{\hyperlink{structnegation}{satisfies\_none\_of<call\_type, std::is\_pointer, std::is\_array, is\_std\_array, std::is\_enum>::value}} \&\&}
+\DoxyCodeLine{        (!std::is\_reference<T>::value ||}
+\DoxyCodeLine{         (std::is\_lvalue\_reference<T>::value \&\& std::is\_const<call\_type>::value))}
+
+\end{DoxyCode}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/numpy.\+h\end{DoxyCompactItemize}

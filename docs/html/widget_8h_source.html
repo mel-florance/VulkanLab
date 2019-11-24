@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.8.16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vulkan Lab:  Fichier source de ext/nanogui/include/nanogui/widget.h</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">Vulkan Lab
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part --><!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('widget_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">widget.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="widget_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    nanogui/widget.h -- Base class of all widgets</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    NanoGUI was developed by Wenzel Jakob &lt;wenzel.jakob@epfl.ch&gt;.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">    The widget drawing code is based on the NanoVG demo application</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    by Mikko Mononen.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">    All rights reserved. Use of this source code is governed by a</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">    BSD-style license that can be found in the LICENSE.txt file.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="include_2nanogui_2object_8h.html">nanogui/object.h</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="theme_8h.html">nanogui/theme.h</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a>(nanogui)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">enum class</span> <a class="code" href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43">Cursor</a>; <span class="comment">// do not put a docstring, this is already documented</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span><a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> <a class="code" href="classWidget.html">Widget</a> : <span class="keyword">public</span> <a class="code" href="classObject.html">Object</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classWidget.html">Widget</a>(<a class="code" href="classWidget.html">Widget</a> *parent);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classWidget.html#a8e185a157dbf22756147dbae8705316d">   39</a></span>&#160;    <a class="code" href="classWidget.html">Widget</a> *<a class="code" href="classWidget.html#a8e185a157dbf22756147dbae8705316d">parent</a>() { <span class="keywordflow">return</span> m_parent; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classWidget.html#a301411ef260e9247040396357b44184e">   41</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classWidget.html">Widget</a> *<a class="code" href="classWidget.html#a301411ef260e9247040396357b44184e">parent</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_parent; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classWidget.html#a4472c9ccc7ecff05c1752b9227ee385a">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#a4472c9ccc7ecff05c1752b9227ee385a">set_parent</a>(<a class="code" href="classWidget.html">Widget</a> *parent) { m_parent = parent; }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classWidget.html#a1f2095d91f5c0784f7bb5435b4f82146">   46</a></span>&#160;    <a class="code" href="classLayout.html">Layout</a> *<a class="code" href="classWidget.html#a1f2095d91f5c0784f7bb5435b4f82146">layout</a>() { <span class="keywordflow">return</span> m_layout; }</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classWidget.html#a9896777f36bfc15958923689689ef283">   48</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classLayout.html">Layout</a> *<a class="code" href="classWidget.html#a9896777f36bfc15958923689689ef283">layout</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_layout.get(); }</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classWidget.html#a69d625e0ad8e514d4c83af411e96f759">   50</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#a69d625e0ad8e514d4c83af411e96f759">set_layout</a>(<a class="code" href="classLayout.html">Layout</a> *layout) { m_layout = layout; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classWidget.html#a0e49299e4a207bc3f61585216dead5c2">   53</a></span>&#160;    <a class="code" href="classTheme.html">Theme</a> *<a class="code" href="classWidget.html#a0e49299e4a207bc3f61585216dead5c2">theme</a>() { <span class="keywordflow">return</span> m_theme; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classWidget.html#ac1bc4b0803dc81bda25ad23957682467">   55</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classTheme.html">Theme</a> *<a class="code" href="classWidget.html#ac1bc4b0803dc81bda25ad23957682467">theme</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_theme.get(); }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> set_theme(<a class="code" href="classTheme.html">Theme</a> *theme);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classWidget.html#ad1b570576e97644587adb92c05444b7c">   60</a></span>&#160;    <span class="keyword">const</span> Vector2i &amp;<a class="code" href="classWidget.html#ad1b570576e97644587adb92c05444b7c">position</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pos; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classWidget.html#aa5feebd3ed8540096e75981151754643">   62</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#aa5feebd3ed8540096e75981151754643">set_position</a>(<span class="keyword">const</span> Vector2i &amp;pos) { m_pos = pos; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classWidget.html#aae971cdee628cc7563bd2c041adb29ee">   65</a></span>&#160;    Vector2i <a class="code" href="classWidget.html#aae971cdee628cc7563bd2c041adb29ee">absolute_position</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> m_parent ?</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            (parent()-&gt;absolute_position() + m_pos) : m_pos;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classWidget.html#aa793702fbc88538c62fb6e01e7dea071">   71</a></span>&#160;    <span class="keyword">const</span> Vector2i &amp;<a class="code" href="classWidget.html#aa793702fbc88538c62fb6e01e7dea071">size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_size; }</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classWidget.html#a38440936d7c655a6611d669dcf2cb12b">   73</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#a38440936d7c655a6611d669dcf2cb12b">set_size</a>(<span class="keyword">const</span> Vector2i &amp;size) { m_size = size; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classWidget.html#a03c9a3f3ff19d7f39b8e6be03357d87a">   76</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classWidget.html#a03c9a3f3ff19d7f39b8e6be03357d87a">width</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_size.x(); }</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classWidget.html#ad9ae45c9a4d262fc183291de83fac95e">   78</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#ad9ae45c9a4d262fc183291de83fac95e">set_width</a>(<span class="keywordtype">int</span> width) { m_size.x() = width; }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classWidget.html#ad83cc00012e97a403dd65b289f4ceffe">   81</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classWidget.html#ad83cc00012e97a403dd65b289f4ceffe">height</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_size.y(); }</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classWidget.html#a9bef1b725c25592fb7dd730bb03d3088">   83</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#a9bef1b725c25592fb7dd730bb03d3088">set_height</a>(<span class="keywordtype">int</span> height) { m_size.y() = height; }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classWidget.html#a92ae7760fe923399a3525ea81533256e">   94</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#a92ae7760fe923399a3525ea81533256e">set_fixed_size</a>(<span class="keyword">const</span> Vector2i &amp;fixed_size) { m_fixed_size = fixed_size; }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classWidget.html#a648d2992b60fd3da967d783ab8097f2b">   97</a></span>&#160;    <span class="keyword">const</span> Vector2i &amp;<a class="code" href="classWidget.html#a648d2992b60fd3da967d783ab8097f2b">fixed_size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_fixed_size; }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// Return the fixed width (see \ref set_fixed_size())</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">int</span> fixed_width()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_fixed_size.x(); }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// Return the fixed height (see \ref set_fixed_size())</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">int</span> fixed_height()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_fixed_size.y(); }</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classWidget.html#a881b782dd52655673f05cab9c3f1725c">  104</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#a881b782dd52655673f05cab9c3f1725c">set_fixed_width</a>(<span class="keywordtype">int</span> width) { m_fixed_size.x() = width; }</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classWidget.html#a4599e3bee0feb318886d5701f6d8b312">  106</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#a4599e3bee0feb318886d5701f6d8b312">set_fixed_height</a>(<span class="keywordtype">int</span> height) { m_fixed_size.y() = height; }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classWidget.html#a5aadbf5207a17eb0f12e8bab5ada9c02">  109</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classWidget.html#a5aadbf5207a17eb0f12e8bab5ada9c02">visible</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_visible; }</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classWidget.html#aecd305e24752e046fd68639aefd4e0fa">  111</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#aecd305e24752e046fd68639aefd4e0fa">set_visible</a>(<span class="keywordtype">bool</span> visible) { m_visible = visible; }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classWidget.html#affd3ab07365d049b41179075474db2a5">  114</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classWidget.html#affd3ab07365d049b41179075474db2a5">visible_recursive</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">bool</span> visible = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">const</span> <a class="code" href="classWidget.html">Widget</a> *widget = <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">while</span> (widget) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            visible &amp;= widget-&gt;<a class="code" href="classWidget.html#a5aadbf5207a17eb0f12e8bab5ada9c02">visible</a>();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            widget = widget-&gt;<a class="code" href="classWidget.html#a8e185a157dbf22756147dbae8705316d">parent</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> visible;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classWidget.html#a2cf46c3bf956d8e209c7567c65d4b198">  125</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classWidget.html#a2cf46c3bf956d8e209c7567c65d4b198">child_count</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<span class="keywordtype">int</span>) m_children.size(); }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classWidget.html#ae3cfd5b738b7bd57ec4a6127801385df">  128</a></span>&#160;    <span class="keyword">const</span> std::vector&lt;Widget *&gt; &amp;<a class="code" href="classWidget.html#ae3cfd5b738b7bd57ec4a6127801385df">children</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_children; }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> add_child(<span class="keywordtype">int</span> index, <a class="code" href="classWidget.html">Widget</a> *widget);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">void</span> add_child(<a class="code" href="classWidget.html">Widget</a> *widget);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">void</span> remove_child_at(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">void</span> remove_child(<span class="keyword">const</span> <a class="code" href="classWidget.html">Widget</a> *widget);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classWidget.html#ad5b1a75a0e3e8b015b9351086ad5b56e">  150</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classWidget.html">Widget</a>* <a class="code" href="classWidget.html#ad5b1a75a0e3e8b015b9351086ad5b56e">child_at</a>(<span class="keywordtype">int</span> index)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_children[index]; }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classWidget.html#ad0aa499d4a015ed4227e95962cd4387a">  153</a></span>&#160;    <a class="code" href="classWidget.html">Widget</a>* <a class="code" href="classWidget.html#ad0aa499d4a015ed4227e95962cd4387a">child_at</a>(<span class="keywordtype">int</span> index) { <span class="keywordflow">return</span> m_children[index]; }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">int</span> child_index(<a class="code" href="classWidget.html">Widget</a>* widget) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> WidgetClass, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classWidget.html#ad97d7e05141ee3fe6dab842d214f236c">  160</a></span>&#160;    WidgetClass* <a class="code" href="classWidget.html#ad97d7e05141ee3fe6dab842d214f236c">add</a>(<span class="keyword">const</span> Args&amp;... <a class="code" href="classargs.html">args</a>) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> WidgetClass(<span class="keyword">this</span>, <a class="code" href="classargs.html">args</a>...);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="classWindow.html">Window</a> *window();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">const</span> <a class="code" href="classWindow.html">Window</a> *window() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="classScreen.html">Screen</a> *screen();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keyword">const</span> <a class="code" href="classScreen.html">Screen</a> *screen() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classWidget.html#a658f09acfd64c47086d01eb1b66e768f">  175</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classWidget.html#a658f09acfd64c47086d01eb1b66e768f">enabled</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_enabled; }</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="classWidget.html#aff3b5886a0a7c3fdf9db00c246858371">  177</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#aff3b5886a0a7c3fdf9db00c246858371">set_enabled</a>(<span class="keywordtype">bool</span> enabled) { m_enabled = enabled; }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classWidget.html#a32721effaa85d80d0a470cf2320ff49d">  180</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classWidget.html#a32721effaa85d80d0a470cf2320ff49d">focused</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_focused; }</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classWidget.html#a81fbc6ce75ec232de44e577900c9370d">  182</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#a81fbc6ce75ec232de44e577900c9370d">set_focused</a>(<span class="keywordtype">bool</span> focused) { m_focused = focused; }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">void</span> request_focus();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keyword">const</span> std::string &amp;tooltip()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_tooltip; }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">void</span> set_tooltip(<span class="keyword">const</span> std::string &amp;tooltip) { m_tooltip = tooltip; }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">int</span> font_size() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classWidget.html#a6b0a51e0b850c6643cddbd2ce29e7ab3">  192</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#a6b0a51e0b850c6643cddbd2ce29e7ab3">set_font_size</a>(<span class="keywordtype">int</span> font_size) { m_font_size = font_size; }</div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="classWidget.html#a4a38648ea3c65b423cfedfd45255f349">  194</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classWidget.html#a4a38648ea3c65b423cfedfd45255f349">has_font_size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_font_size &gt; 0; }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="classWidget.html#a63595f509d85057f9cb686478b5881f0">  200</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classWidget.html#a63595f509d85057f9cb686478b5881f0">icon_extra_scale</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_icon_extra_scale; }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="classWidget.html#a8cca12523083474303364394610e0b44">  206</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#a8cca12523083474303364394610e0b44">set_icon_extra_scale</a>(<span class="keywordtype">float</span> scale) { m_icon_extra_scale = scale; }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classWidget.html#a625ca0233c9a7609b733d723578c4764">  209</a></span>&#160;    <a class="code" href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43">Cursor</a> <a class="code" href="classWidget.html#a625ca0233c9a7609b733d723578c4764">cursor</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_cursor; }</div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="classWidget.html#ada115a14538f4c8326ce735ffd576a39">  211</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWidget.html#ada115a14538f4c8326ce735ffd576a39">set_cursor</a>(<a class="code" href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43">Cursor</a> cursor) { m_cursor = cursor; }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="classWidget.html#ad48ce5b40932c0a87af446baceaabf50">  214</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classWidget.html#ad48ce5b40932c0a87af446baceaabf50">contains</a>(<span class="keyword">const</span> Vector2i &amp;p)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keyword">auto</span> d = p-m_pos;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordflow">return</span> enoki::all(d &gt;= 0) &amp;&amp; enoki::all(d &lt; m_size);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <a class="code" href="classWidget.html">Widget</a> *find_widget(<span class="keyword">const</span> Vector2i &amp;p);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keyword">const</span> <a class="code" href="classWidget.html">Widget</a> *find_widget(<span class="keyword">const</span> Vector2i &amp;p) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> mouse_button_event(<span class="keyword">const</span> Vector2i &amp;p, <span class="keywordtype">int</span> button, <span class="keywordtype">bool</span> down, <span class="keywordtype">int</span> modifiers);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> mouse_motion_event(<span class="keyword">const</span> Vector2i &amp;p, <span class="keyword">const</span> Vector2i &amp;rel, <span class="keywordtype">int</span> button, <span class="keywordtype">int</span> modifiers);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> mouse_drag_event(<span class="keyword">const</span> Vector2i &amp;p, <span class="keyword">const</span> Vector2i &amp;rel, <span class="keywordtype">int</span> button, <span class="keywordtype">int</span> modifiers);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> mouse_enter_event(<span class="keyword">const</span> Vector2i &amp;p, <span class="keywordtype">bool</span> enter);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> scroll_event(<span class="keyword">const</span> Vector2i &amp;p, <span class="keyword">const</span> <a class="code" href="structArray.html">Vector2f</a> &amp;rel);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> focus_event(<span class="keywordtype">bool</span> focused);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> keyboard_event(<span class="keywordtype">int</span> key, <span class="keywordtype">int</span> scancode, <span class="keywordtype">int</span> action, <span class="keywordtype">int</span> modifiers);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> keyboard_character_event(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> codepoint);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">virtual</span> Vector2i preferred_size(<a class="code" href="structNVGcontext.html">NVGcontext</a> *ctx) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> perform_layout(<a class="code" href="structNVGcontext.html">NVGcontext</a> *ctx);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> draw(<a class="code" href="structNVGcontext.html">NVGcontext</a> *ctx);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classWidget.html">Widget</a>();</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="classWidget.html#abeeee3340a17693c986c16f96e992faa">  270</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classWidget.html#abeeee3340a17693c986c16f96e992faa">icon_scale</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_theme-&gt;m_icon_scale * m_icon_extra_scale; }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <a class="code" href="classWidget.html">Widget</a> *m_parent;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <a class="code" href="classref.html">ref&lt;Theme&gt;</a> m_theme;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <a class="code" href="classref.html">ref&lt;Layout&gt;</a> m_layout;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    Vector2i m_pos, m_size, m_fixed_size;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    std::vector&lt;Widget *&gt; m_children;</div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="classWidget.html#aca48c67b69d0a11cc9f93490d36303ee">  282</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classWidget.html#aca48c67b69d0a11cc9f93490d36303ee">m_visible</a>;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="classWidget.html#a517d634a94b1d983ef3524bbc234dbc2">  290</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classWidget.html#a517d634a94b1d983ef3524bbc234dbc2">m_enabled</a>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">bool</span> m_focused, m_mouse_focus;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    std::string m_tooltip;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">int</span> m_font_size;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno"><a class="line" href="classWidget.html#a58308021f0112e3dd9f1b36256a23c4c">  329</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classWidget.html#a58308021f0112e3dd9f1b36256a23c4c">m_icon_extra_scale</a>;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <a class="code" href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43">Cursor</a> m_cursor;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;};</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a>(nanogui)</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassWidget_html_a2cf46c3bf956d8e209c7567c65d4b198"><div class="ttname"><a href="classWidget.html#a2cf46c3bf956d8e209c7567c65d4b198">Widget::child_count</a></div><div class="ttdeci">int child_count() const</div><div class="ttdoc">Return the number of child widgets.</div><div class="ttdef"><b>Definition:</b> widget.h:125</div></div>
+<div class="ttc" id="aclassWidget_html_a8cca12523083474303364394610e0b44"><div class="ttname"><a href="classWidget.html#a8cca12523083474303364394610e0b44">Widget::set_icon_extra_scale</a></div><div class="ttdeci">void set_icon_extra_scale(float scale)</div><div class="ttdef"><b>Definition:</b> widget.h:206</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a577cd817cb71b655998cad4387cdaeba"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a></div><div class="ttdeci">#define NAMESPACE_BEGIN(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:38</div></div>
+<div class="ttc" id="aclassWidget_html_a517d634a94b1d983ef3524bbc234dbc2"><div class="ttname"><a href="classWidget.html#a517d634a94b1d983ef3524bbc234dbc2">Widget::m_enabled</a></div><div class="ttdeci">bool m_enabled</div><div class="ttdef"><b>Definition:</b> widget.h:290</div></div>
+<div class="ttc" id="aclassTheme_html"><div class="ttname"><a href="classTheme.html">Theme</a></div><div class="ttdoc">Storage class for basic theme-related properties.</div><div class="ttdef"><b>Definition:</b> theme.h:29</div></div>
+<div class="ttc" id="aclassWidget_html_a5aadbf5207a17eb0f12e8bab5ada9c02"><div class="ttname"><a href="classWidget.html#a5aadbf5207a17eb0f12e8bab5ada9c02">Widget::visible</a></div><div class="ttdeci">bool visible() const</div><div class="ttdoc">Return whether or not the widget is currently visible (assuming all parents are visible)</div><div class="ttdef"><b>Definition:</b> widget.h:109</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_ac9c915d433bdce7b6b47c0956c850f43"><div class="ttname"><a href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43">Cursor</a></div><div class="ttdeci">Cursor</div><div class="ttdoc">Cursor shapes available to use in GLFW. Shape of actual cursor determined by Operating System.</div><div class="ttdef"><b>Definition:</b> common.h:126</div></div>
+<div class="ttc" id="aclassWidget_html_affd3ab07365d049b41179075474db2a5"><div class="ttname"><a href="classWidget.html#affd3ab07365d049b41179075474db2a5">Widget::visible_recursive</a></div><div class="ttdeci">bool visible_recursive() const</div><div class="ttdoc">Check if this widget is currently visible, taking parent widgets into account.</div><div class="ttdef"><b>Definition:</b> widget.h:114</div></div>
+<div class="ttc" id="aclassWidget_html_a8e185a157dbf22756147dbae8705316d"><div class="ttname"><a href="classWidget.html#a8e185a157dbf22756147dbae8705316d">Widget::parent</a></div><div class="ttdeci">Widget * parent()</div><div class="ttdoc">Return the parent widget.</div><div class="ttdef"><b>Definition:</b> widget.h:39</div></div>
+<div class="ttc" id="aclassWidget_html_a625ca0233c9a7609b733d723578c4764"><div class="ttname"><a href="classWidget.html#a625ca0233c9a7609b733d723578c4764">Widget::cursor</a></div><div class="ttdeci">Cursor cursor() const</div><div class="ttdoc">Return a pointer to the cursor of the widget.</div><div class="ttdef"><b>Definition:</b> widget.h:209</div></div>
+<div class="ttc" id="aclassWidget_html_a6b0a51e0b850c6643cddbd2ce29e7ab3"><div class="ttname"><a href="classWidget.html#a6b0a51e0b850c6643cddbd2ce29e7ab3">Widget::set_font_size</a></div><div class="ttdeci">void set_font_size(int font_size)</div><div class="ttdoc">Set the font size of this widget.</div><div class="ttdef"><b>Definition:</b> widget.h:192</div></div>
+<div class="ttc" id="aclassWidget_html_a0e49299e4a207bc3f61585216dead5c2"><div class="ttname"><a href="classWidget.html#a0e49299e4a207bc3f61585216dead5c2">Widget::theme</a></div><div class="ttdeci">Theme * theme()</div><div class="ttdoc">Return the Theme used to draw this widget.</div><div class="ttdef"><b>Definition:</b> widget.h:53</div></div>
+<div class="ttc" id="aclassWidget_html_aca48c67b69d0a11cc9f93490d36303ee"><div class="ttname"><a href="classWidget.html#aca48c67b69d0a11cc9f93490d36303ee">Widget::m_visible</a></div><div class="ttdeci">bool m_visible</div><div class="ttdef"><b>Definition:</b> widget.h:282</div></div>
+<div class="ttc" id="aclassWidget_html_a81fbc6ce75ec232de44e577900c9370d"><div class="ttname"><a href="classWidget.html#a81fbc6ce75ec232de44e577900c9370d">Widget::set_focused</a></div><div class="ttdeci">void set_focused(bool focused)</div><div class="ttdoc">Set whether or not this widget is currently focused.</div><div class="ttdef"><b>Definition:</b> widget.h:182</div></div>
+<div class="ttc" id="aclassLayout_html"><div class="ttname"><a href="classLayout.html">Layout</a></div><div class="ttdoc">Basic interface of a layout engine.</div><div class="ttdef"><b>Definition:</b> layout.h:43</div></div>
+<div class="ttc" id="aclassWidget_html_a58308021f0112e3dd9f1b36256a23c4c"><div class="ttname"><a href="classWidget.html#a58308021f0112e3dd9f1b36256a23c4c">Widget::m_icon_extra_scale</a></div><div class="ttdeci">float m_icon_extra_scale</div><div class="ttdoc">The amount of extra icon scaling used in addition the the theme's default icon font scale....</div><div class="ttdef"><b>Definition:</b> widget.h:329</div></div>
+<div class="ttc" id="aclassWindow_html"><div class="ttname"><a href="classWindow.html">Window</a></div><div class="ttdoc">Top-level window widget.</div><div class="ttdef"><b>Definition:</b> Window.h:10</div></div>
+<div class="ttc" id="aclassWidget_html_a658f09acfd64c47086d01eb1b66e768f"><div class="ttname"><a href="classWidget.html#a658f09acfd64c47086d01eb1b66e768f">Widget::enabled</a></div><div class="ttdeci">bool enabled() const</div><div class="ttdoc">Return whether or not this widget is currently enabled.</div><div class="ttdef"><b>Definition:</b> widget.h:175</div></div>
+<div class="ttc" id="aclassWidget_html_a648d2992b60fd3da967d783ab8097f2b"><div class="ttname"><a href="classWidget.html#a648d2992b60fd3da967d783ab8097f2b">Widget::fixed_size</a></div><div class="ttdeci">const Vector2i &amp; fixed_size() const</div><div class="ttdoc">Return the fixed size (see set_fixed_size())</div><div class="ttdef"><b>Definition:</b> widget.h:97</div></div>
+<div class="ttc" id="aclassWidget_html_ae3cfd5b738b7bd57ec4a6127801385df"><div class="ttname"><a href="classWidget.html#ae3cfd5b738b7bd57ec4a6127801385df">Widget::children</a></div><div class="ttdeci">const std::vector&lt; Widget * &gt; &amp; children() const</div><div class="ttdoc">Return the list of child widgets of the current widget.</div><div class="ttdef"><b>Definition:</b> widget.h:128</div></div>
+<div class="ttc" id="aclassScreen_html"><div class="ttname"><a href="classScreen.html">Screen</a></div><div class="ttdoc">Represents a display surface (i.e. a full-screen or windowed GLFW window) and forms the root element ...</div><div class="ttdef"><b>Definition:</b> screen.h:30</div></div>
+<div class="ttc" id="aclassWidget_html_a9bef1b725c25592fb7dd730bb03d3088"><div class="ttname"><a href="classWidget.html#a9bef1b725c25592fb7dd730bb03d3088">Widget::set_height</a></div><div class="ttdeci">void set_height(int height)</div><div class="ttdoc">Set the height of the widget.</div><div class="ttdef"><b>Definition:</b> widget.h:83</div></div>
+<div class="ttc" id="aclassWidget_html_aae971cdee628cc7563bd2c041adb29ee"><div class="ttname"><a href="classWidget.html#aae971cdee628cc7563bd2c041adb29ee">Widget::absolute_position</a></div><div class="ttdeci">Vector2i absolute_position() const</div><div class="ttdoc">Return the absolute position on screen.</div><div class="ttdef"><b>Definition:</b> widget.h:65</div></div>
+<div class="ttc" id="astructArray_html"><div class="ttname"><a href="structArray.html">Array&lt; Float, 2 &gt;</a></div></div>
+<div class="ttc" id="ainclude_2nanogui_2object_8h_html"><div class="ttname"><a href="include_2nanogui_2object_8h.html">object.h</a></div></div>
+<div class="ttc" id="aclassWidget_html_a4472c9ccc7ecff05c1752b9227ee385a"><div class="ttname"><a href="classWidget.html#a4472c9ccc7ecff05c1752b9227ee385a">Widget::set_parent</a></div><div class="ttdeci">void set_parent(Widget *parent)</div><div class="ttdoc">Set the parent widget.</div><div class="ttdef"><b>Definition:</b> widget.h:43</div></div>
+<div class="ttc" id="aclassWidget_html_a32721effaa85d80d0a470cf2320ff49d"><div class="ttname"><a href="classWidget.html#a32721effaa85d80d0a470cf2320ff49d">Widget::focused</a></div><div class="ttdeci">bool focused() const</div><div class="ttdoc">Return whether or not this widget is currently focused.</div><div class="ttdef"><b>Definition:</b> widget.h:180</div></div>
+<div class="ttc" id="aclassObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdoc">Reference counted object base class.</div><div class="ttdef"><b>Definition:</b> object.h:8</div></div>
+<div class="ttc" id="atheme_8h_html"><div class="ttname"><a href="theme_8h.html">theme.h</a></div><div class="ttdoc">Storage class for basic theme-related properties.</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a12bb24ea980ca8fb1f46b1992bc9c83a"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a></div><div class="ttdeci">#define NAMESPACE_END(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:50</div></div>
+<div class="ttc" id="aclassWidget_html_a03c9a3f3ff19d7f39b8e6be03357d87a"><div class="ttname"><a href="classWidget.html#a03c9a3f3ff19d7f39b8e6be03357d87a">Widget::width</a></div><div class="ttdeci">int width() const</div><div class="ttdoc">Return the width of the widget.</div><div class="ttdef"><b>Definition:</b> widget.h:76</div></div>
+<div class="ttc" id="aclassWidget_html_ac1bc4b0803dc81bda25ad23957682467"><div class="ttname"><a href="classWidget.html#ac1bc4b0803dc81bda25ad23957682467">Widget::theme</a></div><div class="ttdeci">const Theme * theme() const</div><div class="ttdoc">Return the Theme used to draw this widget.</div><div class="ttdef"><b>Definition:</b> widget.h:55</div></div>
+<div class="ttc" id="aclassWidget_html_a9896777f36bfc15958923689689ef283"><div class="ttname"><a href="classWidget.html#a9896777f36bfc15958923689689ef283">Widget::layout</a></div><div class="ttdeci">const Layout * layout() const</div><div class="ttdoc">Return the used Layout generator.</div><div class="ttdef"><b>Definition:</b> widget.h:48</div></div>
+<div class="ttc" id="aclassWidget_html_a63595f509d85057f9cb686478b5881f0"><div class="ttname"><a href="classWidget.html#a63595f509d85057f9cb686478b5881f0">Widget::icon_extra_scale</a></div><div class="ttdeci">float icon_extra_scale() const</div><div class="ttdef"><b>Definition:</b> widget.h:200</div></div>
+<div class="ttc" id="aclassWidget_html_abeeee3340a17693c986c16f96e992faa"><div class="ttname"><a href="classWidget.html#abeeee3340a17693c986c16f96e992faa">Widget::icon_scale</a></div><div class="ttdeci">float icon_scale() const</div><div class="ttdef"><b>Definition:</b> widget.h:270</div></div>
+<div class="ttc" id="aclassWidget_html_a4a38648ea3c65b423cfedfd45255f349"><div class="ttname"><a href="classWidget.html#a4a38648ea3c65b423cfedfd45255f349">Widget::has_font_size</a></div><div class="ttdeci">bool has_font_size() const</div><div class="ttdoc">Return whether the font size is explicitly specified for this widget.</div><div class="ttdef"><b>Definition:</b> widget.h:194</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a7258172a953ba844ab2900b6bc521b1e"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a></div><div class="ttdeci">#define NANOGUI_EXPORT</div><div class="ttdef"><b>Definition:</b> common.h:72</div></div>
+<div class="ttc" id="aclassWidget_html_ada115a14538f4c8326ce735ffd576a39"><div class="ttname"><a href="classWidget.html#ada115a14538f4c8326ce735ffd576a39">Widget::set_cursor</a></div><div class="ttdeci">void set_cursor(Cursor cursor)</div><div class="ttdoc">Set the cursor of the widget.</div><div class="ttdef"><b>Definition:</b> widget.h:211</div></div>
+<div class="ttc" id="astructNVGcontext_html"><div class="ttname"><a href="structNVGcontext.html">NVGcontext</a></div><div class="ttdef"><b>Definition:</b> nanovg.c:115</div></div>
+<div class="ttc" id="aclassWidget_html_a1f2095d91f5c0784f7bb5435b4f82146"><div class="ttname"><a href="classWidget.html#a1f2095d91f5c0784f7bb5435b4f82146">Widget::layout</a></div><div class="ttdeci">Layout * layout()</div><div class="ttdoc">Return the used Layout generator.</div><div class="ttdef"><b>Definition:</b> widget.h:46</div></div>
+<div class="ttc" id="aclassWidget_html_ad0aa499d4a015ed4227e95962cd4387a"><div class="ttname"><a href="classWidget.html#ad0aa499d4a015ed4227e95962cd4387a">Widget::child_at</a></div><div class="ttdeci">Widget * child_at(int index)</div><div class="ttdoc">Retrieves the child at the specific position.</div><div class="ttdef"><b>Definition:</b> widget.h:153</div></div>
+<div class="ttc" id="aclassWidget_html_ad97d7e05141ee3fe6dab842d214f236c"><div class="ttname"><a href="classWidget.html#ad97d7e05141ee3fe6dab842d214f236c">Widget::add</a></div><div class="ttdeci">WidgetClass * add(const Args &amp;... args)</div><div class="ttdoc">Variadic shorthand notation to construct and add a child widget.</div><div class="ttdef"><b>Definition:</b> widget.h:160</div></div>
+<div class="ttc" id="aclassWidget_html_a92ae7760fe923399a3525ea81533256e"><div class="ttname"><a href="classWidget.html#a92ae7760fe923399a3525ea81533256e">Widget::set_fixed_size</a></div><div class="ttdeci">void set_fixed_size(const Vector2i &amp;fixed_size)</div><div class="ttdoc">Set the fixed size of this widget.</div><div class="ttdef"><b>Definition:</b> widget.h:94</div></div>
+<div class="ttc" id="aclassargs_html"><div class="ttname"><a href="classargs.html">args</a></div><div class="ttdef"><b>Definition:</b> pytypes.h:1274</div></div>
+<div class="ttc" id="aclassWidget_html_a38440936d7c655a6611d669dcf2cb12b"><div class="ttname"><a href="classWidget.html#a38440936d7c655a6611d669dcf2cb12b">Widget::set_size</a></div><div class="ttdeci">void set_size(const Vector2i &amp;size)</div><div class="ttdoc">set the size of the widget</div><div class="ttdef"><b>Definition:</b> widget.h:73</div></div>
+<div class="ttc" id="aclassref_html"><div class="ttname"><a href="classref.html">ref&lt; Theme &gt;</a></div></div>
+<div class="ttc" id="aclassWidget_html_a4599e3bee0feb318886d5701f6d8b312"><div class="ttname"><a href="classWidget.html#a4599e3bee0feb318886d5701f6d8b312">Widget::set_fixed_height</a></div><div class="ttdeci">void set_fixed_height(int height)</div><div class="ttdoc">Set the fixed height (see set_fixed_size())</div><div class="ttdef"><b>Definition:</b> widget.h:106</div></div>
+<div class="ttc" id="aclassWidget_html_aa5feebd3ed8540096e75981151754643"><div class="ttname"><a href="classWidget.html#aa5feebd3ed8540096e75981151754643">Widget::set_position</a></div><div class="ttdeci">void set_position(const Vector2i &amp;pos)</div><div class="ttdoc">Set the position relative to the parent widget.</div><div class="ttdef"><b>Definition:</b> widget.h:62</div></div>
+<div class="ttc" id="aclassWidget_html_ad83cc00012e97a403dd65b289f4ceffe"><div class="ttname"><a href="classWidget.html#ad83cc00012e97a403dd65b289f4ceffe">Widget::height</a></div><div class="ttdeci">int height() const</div><div class="ttdoc">Return the height of the widget.</div><div class="ttdef"><b>Definition:</b> widget.h:81</div></div>
+<div class="ttc" id="aclassWidget_html_ad48ce5b40932c0a87af446baceaabf50"><div class="ttname"><a href="classWidget.html#ad48ce5b40932c0a87af446baceaabf50">Widget::contains</a></div><div class="ttdeci">bool contains(const Vector2i &amp;p) const</div><div class="ttdoc">Check if the widget contains a certain position.</div><div class="ttdef"><b>Definition:</b> widget.h:214</div></div>
+<div class="ttc" id="aclassWidget_html_a881b782dd52655673f05cab9c3f1725c"><div class="ttname"><a href="classWidget.html#a881b782dd52655673f05cab9c3f1725c">Widget::set_fixed_width</a></div><div class="ttdeci">void set_fixed_width(int width)</div><div class="ttdoc">Set the fixed width (see set_fixed_size())</div><div class="ttdef"><b>Definition:</b> widget.h:104</div></div>
+<div class="ttc" id="aclassWidget_html_ad5b1a75a0e3e8b015b9351086ad5b56e"><div class="ttname"><a href="classWidget.html#ad5b1a75a0e3e8b015b9351086ad5b56e">Widget::child_at</a></div><div class="ttdeci">const Widget * child_at(int index) const</div><div class="ttdoc">Retrieves the child at the specific position.</div><div class="ttdef"><b>Definition:</b> widget.h:150</div></div>
+<div class="ttc" id="aclassWidget_html_aecd305e24752e046fd68639aefd4e0fa"><div class="ttname"><a href="classWidget.html#aecd305e24752e046fd68639aefd4e0fa">Widget::set_visible</a></div><div class="ttdeci">void set_visible(bool visible)</div><div class="ttdoc">Set whether or not the widget is currently visible (assuming all parents are visible)</div><div class="ttdef"><b>Definition:</b> widget.h:111</div></div>
+<div class="ttc" id="aclassWidget_html_ad1b570576e97644587adb92c05444b7c"><div class="ttname"><a href="classWidget.html#ad1b570576e97644587adb92c05444b7c">Widget::position</a></div><div class="ttdeci">const Vector2i &amp; position() const</div><div class="ttdoc">Return the position relative to the parent widget.</div><div class="ttdef"><b>Definition:</b> widget.h:60</div></div>
+<div class="ttc" id="aclassWidget_html_a301411ef260e9247040396357b44184e"><div class="ttname"><a href="classWidget.html#a301411ef260e9247040396357b44184e">Widget::parent</a></div><div class="ttdeci">const Widget * parent() const</div><div class="ttdoc">Return the parent widget.</div><div class="ttdef"><b>Definition:</b> widget.h:41</div></div>
+<div class="ttc" id="aclassWidget_html_aa793702fbc88538c62fb6e01e7dea071"><div class="ttname"><a href="classWidget.html#aa793702fbc88538c62fb6e01e7dea071">Widget::size</a></div><div class="ttdeci">const Vector2i &amp; size() const</div><div class="ttdoc">Return the size of the widget.</div><div class="ttdef"><b>Definition:</b> widget.h:71</div></div>
+<div class="ttc" id="aclassWidget_html_a69d625e0ad8e514d4c83af411e96f759"><div class="ttname"><a href="classWidget.html#a69d625e0ad8e514d4c83af411e96f759">Widget::set_layout</a></div><div class="ttdeci">void set_layout(Layout *layout)</div><div class="ttdoc">Set the used Layout generator.</div><div class="ttdef"><b>Definition:</b> widget.h:50</div></div>
+<div class="ttc" id="aclassWidget_html_aff3b5886a0a7c3fdf9db00c246858371"><div class="ttname"><a href="classWidget.html#aff3b5886a0a7c3fdf9db00c246858371">Widget::set_enabled</a></div><div class="ttdeci">void set_enabled(bool enabled)</div><div class="ttdoc">Set whether or not this widget is currently enabled.</div><div class="ttdef"><b>Definition:</b> widget.h:177</div></div>
+<div class="ttc" id="aclassWidget_html"><div class="ttname"><a href="classWidget.html">Widget</a></div><div class="ttdoc">Base class of all widgets.</div><div class="ttdef"><b>Definition:</b> test_interpreter.cpp:18</div></div>
+<div class="ttc" id="aclassWidget_html_ad9ae45c9a4d262fc183291de83fac95e"><div class="ttname"><a href="classWidget.html#ad9ae45c9a4d262fc183291de83fac95e">Widget::set_width</a></div><div class="ttdeci">void set_width(int width)</div><div class="ttdoc">Set the width of the widget.</div><div class="ttdef"><b>Definition:</b> widget.h:78</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+    <ul>
+        <li class="navelem"><a class="el" href="dir_31cedd4509e06940f559c1ca2f722e02.html">ext</a></li><li class="navelem"><a class="el" href="dir_3b52d0ee0647600b951b1b620984dcd1.html">nanogui</a></li><li class="navelem"><a class="el" href="dir_5721e7ee5207c0c2918a589ae1107b9a.html">include</a></li><li class="navelem"><a class="el" href="dir_7c8bd28dcb08b6a153cc19ab5789aba5.html">nanogui</a></li><li class="navelem"><a class="el" href="widget_8h.html">widget.h</a></li>
+        <li class="footer">
+            Generated on Dimanche 24 Novembre 2019 18:11:48 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
+            Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
+        </li>
+    </ul>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>

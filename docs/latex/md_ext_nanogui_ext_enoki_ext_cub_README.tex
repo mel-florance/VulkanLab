@@ -1,0 +1,133 @@
+\DoxyHorRuler
+ \doxysubsubsection*{About C\+UB}
+
+Current release\+: v1.\+8.\+0 (02/16/2018)
+
+We recommend the \href{http://nvlabs.github.com/cub}{\texttt{ C\+UB Project Website}} for further information and examples.
+
+C\+UB provides state-\/of-\/the-\/art, reusable software components for every layer of the C\+U\+DA programming model\+:
+\begin{DoxyItemize}
+\item \href{https://nvlabs.github.com/cub/group___device_module.html}{\texttt{ {\bfseries{{\itshape Device-\/wide primitives}}}}}
+\begin{DoxyItemize}
+\item Sort, prefix scan, reduction, histogram, etc. ~\newline
+
+\item Compatible with C\+U\+DA dynamic parallelism
+\end{DoxyItemize}
+\item \href{https://nvlabs.github.com/cub/group___block_module.html}{\texttt{ {\bfseries{{\itshape Block-\/wide \char`\"{}collective\char`\"{} primitives}}}}}
+\begin{DoxyItemize}
+\item I/O, sort, prefix scan, reduction, histogram, etc. ~\newline
+
+\item Compatible with arbitrary thread block sizes and types
+\end{DoxyItemize}
+\item \href{https://nvlabs.github.com/cub/group___warp_module.html}{\texttt{ {\bfseries{{\itshape Warp-\/wide \char`\"{}collective\char`\"{} primitives}}}}}
+\begin{DoxyItemize}
+\item Warp-\/wide prefix scan, reduction, etc.
+\item Safe and architecture-\/specific
+\end{DoxyItemize}
+\item \href{https://nvlabs.github.com/cub/group___thread_module.html}{\texttt{ {\bfseries{{\itshape Thread and resource utilities}}}}}
+\begin{DoxyItemize}
+\item P\+TX intrinsics, device reflection, texture-\/caching iterators, caching memory allocators, etc.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+
+~\newline
+\DoxyHorRuler
+ \doxysubsubsection*{\mbox{\hyperlink{structA}{A}} Simple Example}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C++\}}
+\DoxyCodeLine{\#include <cub/cub.cuh>}
+\DoxyCodeLine{ }
+\DoxyCodeLine{// Block-\/sorting CUDA kernel}
+\DoxyCodeLine{\_\_global\_\_ void BlockSortKernel(int *d\_in, int *d\_out)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{     using namespace cub;}
+\DoxyCodeLine{}
+\DoxyCodeLine{     // Specialize BlockRadixSort, BlockLoad, and BlockStore for 128 threads }
+\DoxyCodeLine{     // owning 16 integer items each}
+\DoxyCodeLine{     typedef BlockRadixSort<int, 128, 16>                     BlockRadixSort;}
+\DoxyCodeLine{     typedef BlockLoad<int, 128, 16, BLOCK\_LOAD\_TRANSPOSE>   BlockLoad;}
+\DoxyCodeLine{     typedef BlockStore<int, 128, 16, BLOCK\_STORE\_TRANSPOSE> BlockStore;}
+\DoxyCodeLine{ }
+\DoxyCodeLine{     // Allocate shared memory}
+\DoxyCodeLine{     \_\_shared\_\_ union \{}
+\DoxyCodeLine{         typename BlockRadixSort::TempStorage  sort;}
+\DoxyCodeLine{         typename BlockLoad::TempStorage       load; }
+\DoxyCodeLine{         typename BlockStore::TempStorage      store; }
+\DoxyCodeLine{     \} temp\_storage; }
+\DoxyCodeLine{}
+\DoxyCodeLine{     int block\_offset = blockIdx.x * (128 * 16);      // OffsetT for this block's ment}
+\DoxyCodeLine{}
+\DoxyCodeLine{     // Obtain a segment of 2048 consecutive keys that are blocked across threads}
+\DoxyCodeLine{     int thread\_keys[16];}
+\DoxyCodeLine{     BlockLoad(temp\_storage.load).Load(d\_in + block\_offset, thread\_keys);}
+\DoxyCodeLine{     \_\_syncthreads();}
+\DoxyCodeLine{}
+\DoxyCodeLine{     // Collectively sort the keys}
+\DoxyCodeLine{     BlockRadixSort(temp\_storage.sort).Sort(thread\_keys);}
+\DoxyCodeLine{     \_\_syncthreads();}
+\DoxyCodeLine{}
+\DoxyCodeLine{     // Store the sorted segment }
+\DoxyCodeLine{     BlockStore(temp\_storage.store).Store(d\_out + block\_offset, thread\_keys);}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+Each thread block uses cub\+::\+Block\+Radix\+Sort to collectively sort its own input segment. The class is specialized by the data type being sorted, by the number of threads per block, by the number of keys per thread, and implicitly by the targeted compilation architecture. ~\newline
+
+
+The cub\+::\+Block\+Load and cub\+::\+Block\+Store classes are similarly specialized. ~\newline
+ Furthermore, to provide coalesced accesses to device memory, these primitives are configured to access memory using a striped access pattern (where consecutive threads simultaneously access consecutive items) and then {\itshape transpose} the keys into a \href{index.html\#sec4sec3}{\texttt{ {\itshape blocked arrangement}}} of elements across threads.
+
+Once specialized, these classes expose opaque {\ttfamily Temp\+Storage} member types. ~\newline
+ The thread block uses these storage types to statically allocate the union of shared memory needed by the thread block. (Alternatively these storage types could be aliased to global memory allocations).
+
+~\newline
+\DoxyHorRuler
+ \doxysubsubsection*{Stable Releases}
+
+C\+UB releases are labeled using version identifiers having three fields\+: {\itshape epoch.\+feature.\+update}. The {\itshape epoch} field corresponds to support for a major change in the C\+U\+DA programming model. The {\itshape feature} field corresponds to a stable set of features, functionality, and interface. The {\itshape update} field corresponds to a bug-\/fix or performance update for that feature set. At the moment, we do not publicly provide non-\/stable releases such as development snapshots, beta releases or rolling releases. (Feel free to contact us if you would like such things.) See the \href{http://nvlabs.github.com/cub}{\texttt{ C\+UB Project Website}} for more information.
+
+~\newline
+\DoxyHorRuler
+ \doxysubsubsection*{Contributors}
+
+C\+UB is developed as an open-\/source project by \href{http://research.nvidia.com}{\texttt{ N\+V\+I\+D\+IA Research}}. The primary contributor is \href{http://github.com/dumerrill}{\texttt{ Duane Merrill}}.
+
+~\newline
+\DoxyHorRuler
+ \doxysubsubsection*{Open Source License}
+
+C\+UB is available under the \char`\"{}\+New B\+S\+D\char`\"{} open-\/source license\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Copyright (c) 2010-\/2011, Duane Merrill.  All rights reserved.}
+\DoxyCodeLine{Copyright (c) 2011-\/2018, NVIDIA CORPORATION.  All rights reserved.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Redistribution and use in source and binary forms, with or without}
+\DoxyCodeLine{modification, are permitted provided that the following conditions are met:}
+\DoxyCodeLine{   *  Redistributions of source code must retain the above copyright}
+\DoxyCodeLine{      notice, this list of conditions and the following disclaimer.}
+\DoxyCodeLine{   *  Redistributions in binary form must reproduce the above copyright}
+\DoxyCodeLine{      notice, this list of conditions and the following disclaimer in the}
+\DoxyCodeLine{      documentation and/or other materials provided with the distribution.}
+\DoxyCodeLine{   *  Neither the name of the NVIDIA CORPORATION nor the}
+\DoxyCodeLine{      names of its contributors may be used to endorse or promote products}
+\DoxyCodeLine{      derived from this software without specific prior written permission.}
+\DoxyCodeLine{}
+\DoxyCodeLine{THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND}
+\DoxyCodeLine{ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED}
+\DoxyCodeLine{WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE}
+\DoxyCodeLine{DISCLAIMED. IN NO EVENT SHALL NVIDIA CORPORATION BE LIABLE FOR ANY}
+\DoxyCodeLine{DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES}
+\DoxyCodeLine{(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;}
+\DoxyCodeLine{LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND}
+\DoxyCodeLine{ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT}
+\DoxyCodeLine{(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS}
+\DoxyCodeLine{SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.}
+\end{DoxyCode}
+ 

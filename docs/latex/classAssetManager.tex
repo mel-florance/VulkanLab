@@ -1,11 +1,11 @@
-\hypertarget{classAssetManager}{}\doxysection{Asset\+Manager Class Reference}
+\hypertarget{classAssetManager}{}\doxysection{Référence de la classe Asset\+Manager}
 \label{classAssetManager}\index{AssetManager@{AssetManager}}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structAssetManager_1_1AssetContainer}{Asset\+Container}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Public Types}
+\doxysubsection*{Types publics}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classAssetManager_ab4e7588608f25b6b0bc502fc62ace728}\label{classAssetManager_ab4e7588608f25b6b0bc502fc62ace728}} 
@@ -18,15 +18,15 @@ enum {\bfseries Asset\+Type} \{ \newline
 {\bfseries M\+O\+D\+EL}
  \}
 \end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classAssetManager_af5aeff8944c5f783cee80e2b423158f2}\label{classAssetManager_af5aeff8944c5f783cee80e2b423158f2}} 
 {\bfseries Asset\+Manager} (const char $\ast$bin\+\_\+path)
 \item 
-{\footnotesize template$<$class T $>$ }\\T $\ast$ \mbox{\hyperlink{classAssetManager_ae7975396999d9ec3b2e04288ce2cb00a}{load}} (const char $\ast$filepath, const char $\ast$name)
+{\footnotesize template$<$class T $>$ }\\T $\ast$ \mbox{\hyperlink{classAssetManager_ae7975396999d9ec3b2e04288ce2cb00a}{load}} (const char $\ast$filepath, const char $\ast$\mbox{\hyperlink{structname}{name}})
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classAssetManager_a3a277448c5afbcbb3eba5c6d37fc85da}\label{classAssetManager_a3a277448c5afbcbb3eba5c6d37fc85da}} 
@@ -43,7 +43,7 @@ std\+::string {\bfseries root\+\_\+dir}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Member Function Documentation}
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classAssetManager_ae7975396999d9ec3b2e04288ce2cb00a}\label{classAssetManager_ae7975396999d9ec3b2e04288ce2cb00a}} 
 \index{AssetManager@{AssetManager}!load@{load}}
 \index{load@{load}!AssetManager@{AssetManager}}
@@ -54,23 +54,23 @@ T$\ast$ Asset\+Manager\+::load (\begin{DoxyParamCaption}\item[{const char $\ast$
 Load a an asset given its path.
 
 This method can load Shaders, Textures, Audio files, Models \& Materials. 
-\begin{DoxyTemplParams}{Template Parameters}
+\begin{DoxyTemplParams}{Paramètres du template}
 {\em T} & -\/ The type of asset to load \\
 \hline
 \end{DoxyTemplParams}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em filepath} & -\/ The path of the asset \\
 \hline
 {\em name} & -\/ The string used to rename the asset. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Renvoie}
 T 
 \end{DoxyReturn}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
 Engine/src/\+Assets/Asset\+Manager.\+h\item 
 Engine/src/\+Assets/Asset\+Manager.\+cpp\end{DoxyCompactItemize}

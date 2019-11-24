@@ -1,0 +1,74 @@
+\hypertarget{classLabel}{}\doxysection{Référence de la classe Label}
+\label{classLabel}\index{Label@{Label}}
+
+
+Text label widget.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/label.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Label\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classLabel}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLabel_aebb3c4065e132513580a1139c6c4df05}\label{classLabel_aebb3c4065e132513580a1139c6c4df05}} 
+{\bfseries Label} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, const std\+::string \&\mbox{\hyperlink{classLabel_ac369d7356d2383945a946a30be9e9d3a}{caption}}, const std\+::string \&\mbox{\hyperlink{classLabel_ac229788cee41a246c99316d1e07d3a04}{font}}=\char`\"{}sans\char`\"{}, int \mbox{\hyperlink{classWidget_a2d318554d271e0bdb2d9ff64963aa2cc}{font\+\_\+size}}=-\/1)
+\item 
+\mbox{\Hypertarget{classLabel_ac369d7356d2383945a946a30be9e9d3a}\label{classLabel_ac369d7356d2383945a946a30be9e9d3a}} 
+const std\+::string \& \mbox{\hyperlink{classLabel_ac369d7356d2383945a946a30be9e9d3a}{caption}} () const
+\begin{DoxyCompactList}\small\item\em Get the label\textquotesingle{}s text caption. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLabel_af9662a8666218adcb82bed5e1c402d3e}\label{classLabel_af9662a8666218adcb82bed5e1c402d3e}} 
+void \mbox{\hyperlink{classLabel_af9662a8666218adcb82bed5e1c402d3e}{set\+\_\+caption}} (const std\+::string \&\mbox{\hyperlink{classLabel_ac369d7356d2383945a946a30be9e9d3a}{caption}})
+\begin{DoxyCompactList}\small\item\em Set the label\textquotesingle{}s text caption. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLabel_a1125eba7c92680b561a5038730414dd3}\label{classLabel_a1125eba7c92680b561a5038730414dd3}} 
+void \mbox{\hyperlink{classLabel_a1125eba7c92680b561a5038730414dd3}{set\+\_\+font}} (const std\+::string \&\mbox{\hyperlink{classLabel_ac229788cee41a246c99316d1e07d3a04}{font}})
+\begin{DoxyCompactList}\small\item\em Set the currently active font (2 are available by default\+: \textquotesingle{}sans\textquotesingle{} and \textquotesingle{}sans-\/bold\textquotesingle{}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLabel_ac229788cee41a246c99316d1e07d3a04}\label{classLabel_ac229788cee41a246c99316d1e07d3a04}} 
+const std\+::string \& \mbox{\hyperlink{classLabel_ac229788cee41a246c99316d1e07d3a04}{font}} () const
+\begin{DoxyCompactList}\small\item\em Get the currently active font. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLabel_ad581a5c2bb8cb01e504a2144b33a324e}\label{classLabel_ad581a5c2bb8cb01e504a2144b33a324e}} 
+\mbox{\hyperlink{classColor}{Color}} \mbox{\hyperlink{classLabel_ad581a5c2bb8cb01e504a2144b33a324e}{color}} () const
+\begin{DoxyCompactList}\small\item\em Get the label color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLabel_a4113f6d0292466622e98580bb27dbe15}\label{classLabel_a4113f6d0292466622e98580bb27dbe15}} 
+void \mbox{\hyperlink{classLabel_a4113f6d0292466622e98580bb27dbe15}{set\+\_\+color}} (const \mbox{\hyperlink{classColor}{Color}} \&\mbox{\hyperlink{classLabel_ad581a5c2bb8cb01e504a2144b33a324e}{color}})
+\begin{DoxyCompactList}\small\item\em Set the label color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLabel_a0a45a662a91d3e2805c05a402aabe58a}\label{classLabel_a0a45a662a91d3e2805c05a402aabe58a}} 
+virtual void \mbox{\hyperlink{classLabel_a0a45a662a91d3e2805c05a402aabe58a}{set\+\_\+theme}} (\mbox{\hyperlink{classTheme}{Theme}} $\ast$\mbox{\hyperlink{classWidget_a0e49299e4a207bc3f61585216dead5c2}{theme}}) override
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classTheme}{Theme}} used to draw this widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLabel_a99fe7144e2c5c6297bd3f0f4b8c6105d}\label{classLabel_a99fe7144e2c5c6297bd3f0f4b8c6105d}} 
+virtual Vector2i \mbox{\hyperlink{classLabel_a99fe7144e2c5c6297bd3f0f4b8c6105d}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const override
+\begin{DoxyCompactList}\small\item\em Compute the size needed to fully display the label. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLabel_a9451601ed41f80658543b60aff8b37ec}\label{classLabel_a9451601ed41f80658543b60aff8b37ec}} 
+virtual void \mbox{\hyperlink{classLabel_a9451601ed41f80658543b60aff8b37ec}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draw the label. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLabel_a3dcebb09e22ccd332319340340ec6964}\label{classLabel_a3dcebb09e22ccd332319340340ec6964}} 
+std\+::string {\bfseries m\+\_\+caption}
+\item 
+\mbox{\Hypertarget{classLabel_ab47f42527753bac3251e04e6735ebbb2}\label{classLabel_ab47f42527753bac3251e04e6735ebbb2}} 
+std\+::string {\bfseries m\+\_\+font}
+\item 
+\mbox{\Hypertarget{classLabel_ad61b348090ce73487ea2b827d0575c46}\label{classLabel_ad61b348090ce73487ea2b827d0575c46}} 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries m\+\_\+color}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+Text label widget. 
+
+The font and color can be customized. When \mbox{\hyperlink{classWidget_a881b782dd52655673f05cab9c3f1725c}{Widget\+::set\+\_\+fixed\+\_\+width()}} is used, the text is wrapped when it surpasses the specified width. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{label_8h}{label.\+h}}\item 
+ext/nanogui/src/label.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var structformat__descriptor_3_01T_00_01detail_1_1enable__if__t_3_01detail_1_1array__info_3_01T_01_4_1_1is__array_01_4_01_4 =
+[
+    [ "format", "structformat__descriptor_3_01T_00_01detail_1_1enable__if__t_3_01detail_1_1array__info_3_01T_01_4_1_1is__array_01_4_01_4.html#a262663ba66d4062b839cd56671a92928", null ]
+];

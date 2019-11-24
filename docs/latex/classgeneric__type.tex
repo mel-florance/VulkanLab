@@ -1,0 +1,47 @@
+\hypertarget{classgeneric__type}{}\doxysection{Référence de la classe generic\+\_\+type}
+\label{classgeneric__type}\index{generic\_type@{generic\_type}}
+
+
+Generic support for creating new Python heap types.  
+
+
+
+
+{\ttfamily \#include $<$pybind11.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de generic\+\_\+type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classgeneric__type}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgeneric__type_a0eaa0586a2e56b3e69d296572ca7091e}\label{classgeneric__type_a0eaa0586a2e56b3e69d296572ca7091e}} 
+void {\bfseries initialize} (const \mbox{\hyperlink{structtype__record}{type\+\_\+record}} \&rec)
+\item 
+\mbox{\Hypertarget{classgeneric__type_aa102cbe989b604345c02dcd821f6c5b2}\label{classgeneric__type_aa102cbe989b604345c02dcd821f6c5b2}} 
+void \mbox{\hyperlink{classgeneric__type_aa102cbe989b604345c02dcd821f6c5b2}{mark\+\_\+parents\+\_\+nonsimple}} (Py\+Type\+Object $\ast$\mbox{\hyperlink{structdetail_1_1value}{value}})
+\begin{DoxyCompactList}\small\item\em Helper function which tags all parents of a type using mult. inheritance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgeneric__type_abc4faaa9d97d488abb99634dc3f0b88f}\label{classgeneric__type_abc4faaa9d97d488abb99634dc3f0b88f}} 
+void {\bfseries install\+\_\+buffer\+\_\+funcs} (\mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}} $\ast$($\ast$get\+\_\+buffer)(Py\+Object $\ast$, void $\ast$), void $\ast$get\+\_\+buffer\+\_\+data)
+\item 
+\mbox{\Hypertarget{classgeneric__type_af4b8e335e3a6f25b38c522c2c4f4c692}\label{classgeneric__type_af4b8e335e3a6f25b38c522c2c4f4c692}} 
+void {\bfseries def\+\_\+property\+\_\+static\+\_\+impl} (const char $\ast$\mbox{\hyperlink{structname}{name}}, \mbox{\hyperlink{classhandle}{handle}} fget, \mbox{\hyperlink{classhandle}{handle}} fset, detail\+::function\+\_\+record $\ast$rec\+\_\+func)
+\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgeneric__type_a978adea7a2c683287b544ebc130469fb}\label{classgeneric__type_a978adea7a2c683287b544ebc130469fb}} 
+{\footnotesize template$<$typename... $>$ }\\class {\bfseries class\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+Generic support for creating new Python heap types. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/pybind11.\+h\end{DoxyCompactItemize}

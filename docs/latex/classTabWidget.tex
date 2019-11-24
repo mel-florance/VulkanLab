@@ -1,0 +1,88 @@
+\hypertarget{classTabWidget}{}\doxysection{Référence de la classe Tab\+Widget}
+\label{classTabWidget}\index{TabWidget@{TabWidget}}
+
+
+\mbox{\hyperlink{structA}{A}} wrapper around the widgets Tab\+Header and Stacked\+Widget which hooks the two classes together.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/tabwidget.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Tab\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classTabWidget}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTabWidget_affec46fc4c3bf19f971e53478641e32d}\label{classTabWidget_affec46fc4c3bf19f971e53478641e32d}} 
+\mbox{\hyperlink{classTabWidget_affec46fc4c3bf19f971e53478641e32d}{Tab\+Widget}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, const std\+::string \&font=\char`\"{}sans-\/bold\char`\"{})
+\begin{DoxyCompactList}\small\item\em Construct a new tab widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidget_a6a2f680d14824492950ad83e442bd489}\label{classTabWidget_a6a2f680d14824492950ad83e442bd489}} 
+int \mbox{\hyperlink{classTabWidget_a6a2f680d14824492950ad83e442bd489}{insert\+\_\+tab}} (int index, const std\+::string \&caption, \mbox{\hyperlink{classWidget}{Widget}} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Inserts a new tab at the specified position and returns its ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidget_a89dc80ae5f0bc6b3b2ab6e381c96a706}\label{classTabWidget_a89dc80ae5f0bc6b3b2ab6e381c96a706}} 
+int \mbox{\hyperlink{classTabWidget_a89dc80ae5f0bc6b3b2ab6e381c96a706}{append\+\_\+tab}} (const std\+::string \&caption, \mbox{\hyperlink{classWidget}{Widget}} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Appends a new tab and returns its ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidget_a3dd9a575c18c5af13f486738cf1ae62c}\label{classTabWidget_a3dd9a575c18c5af13f486738cf1ae62c}} 
+virtual void \mbox{\hyperlink{classTabWidget_a3dd9a575c18c5af13f486738cf1ae62c}{remove\+\_\+tab}} (int id) override
+\begin{DoxyCompactList}\small\item\em Removes a tab with the specified ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidget_ab46f23f59fb729e5287e2012dcd156fa}\label{classTabWidget_ab46f23f59fb729e5287e2012dcd156fa}} 
+bool \mbox{\hyperlink{classTabWidget_ab46f23f59fb729e5287e2012dcd156fa}{remove\+\_\+children}} () const
+\begin{DoxyCompactList}\small\item\em Remove child widgets when the associated tab is closed/removed? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidget_a6f4d26164405b2c6f262c47c9c29a1fe}\label{classTabWidget_a6f4d26164405b2c6f262c47c9c29a1fe}} 
+void \mbox{\hyperlink{classTabWidget_a6f4d26164405b2c6f262c47c9c29a1fe}{set\+\_\+remove\+\_\+children}} (bool value)
+\begin{DoxyCompactList}\small\item\em Remove child widgets when the associated tab is closed/removed? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidget_a3c2f075341c381180f0cf49c76dbd062}\label{classTabWidget_a3c2f075341c381180f0cf49c76dbd062}} 
+virtual void \mbox{\hyperlink{classTabWidget_a3c2f075341c381180f0cf49c76dbd062}{perform\+\_\+layout}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Invoke the associated layout generator to properly place child widgets, if any. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTabWidget_a2d39e8a160650dc64e4691887f0c08f2}\label{classTabWidget_a2d39e8a160650dc64e4691887f0c08f2}} 
+virtual Vector2i \mbox{\hyperlink{classTabWidget_a2d39e8a160650dc64e4691887f0c08f2}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const override
+\begin{DoxyCompactList}\small\item\em Compute the preferred size of the widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTabWidget_a604fafb426852fb5abb39e8156916756}\label{classTabWidget_a604fafb426852fb5abb39e8156916756}} 
+virtual void {\bfseries update\+\_\+visibility} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTabWidget_ab8e5a7505685d338c2fc34d556e63c09}\label{classTabWidget_ab8e5a7505685d338c2fc34d556e63c09}} 
+std\+::unordered\+\_\+map$<$ int, \mbox{\hyperlink{classWidget}{Widget}} $\ast$ $>$ {\bfseries m\+\_\+widgets}
+\item 
+\mbox{\Hypertarget{classTabWidget_a9a28e719d380794dd25a1cd64d104370}\label{classTabWidget_a9a28e719d380794dd25a1cd64d104370}} 
+bool {\bfseries m\+\_\+remove\+\_\+children} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{structA}{A}} wrapper around the widgets Tab\+Header and Stacked\+Widget which hooks the two classes together. 
+
+\textbackslash{}rst
+
+.. warning\+:\+:
+
+Unlike other widgets, children may {\bfseries{not}} be added {\itshape directly} to a \mbox{\hyperlink{classTabWidget}{Tab\+Widget}}. For example, the following code will raise an exception\+:
+
+.. code-\/block\+:: cpp
+
+// {\ttfamily this} might be say a nanogui\+::\+Screen instance \mbox{\hyperlink{classWindow}{Window}} $\ast$window = new \mbox{\hyperlink{classWindow}{Window}}(this, \char`\"{}\+Window Title\char`\"{}); \mbox{\hyperlink{classTabWidget}{Tab\+Widget}} $\ast$tab\+\_\+widget = window-\/$>$\mbox{\hyperlink{classWidget_ad97d7e05141ee3fe6dab842d214f236c}{add$<$\+Tab\+Widget$>$()}}; // this label would be a direct child of tab\+Widget, // which is forbidden, so an exception will be raised new \mbox{\hyperlink{classLabel}{Label}}(tab\+\_\+widget, \char`\"{}\+Some Label\char`\"{});
+
+Instead, you are expected to be creating tabs and adding widgets to those.
+
+.. code-\/block\+:: cpp
+
+// {\ttfamily this} might e.\+g. be a nanogui\+::\+Screen instance \mbox{\hyperlink{classWindow}{Window}} $\ast$window = new \mbox{\hyperlink{classWindow}{Window}}(this, \char`\"{}\+Window Title\char`\"{}); \mbox{\hyperlink{classTabWidget}{Tab\+Widget}} $\ast$tab\+\_\+widget = window-\/$>$\mbox{\hyperlink{classWidget_ad97d7e05141ee3fe6dab842d214f236c}{add$<$\+Tab\+Widget$>$()}}; // Create a tab first \mbox{\hyperlink{classWidget}{Widget}} $\ast$tab = new \mbox{\hyperlink{classWidget}{Widget(tab\+\_\+widget)}}; int tab\+\_\+id = tab\+\_\+widget-\/$>$append\+\_\+tab(\char`\"{}\+Tab Name\char`\"{}, tab); // Add children to the created tabs tab-\/$>$set\+\_\+layout(new Group\+Layout()); new \mbox{\hyperlink{classLabel}{Label}}(tab, \char`\"{}\+Some Label\char`\"{});
+
+\mbox{\hyperlink{structA}{A}} slightly more involved example of creating a \mbox{\hyperlink{classTabWidget}{Tab\+Widget}} can also be found in \+:ref\+:{\ttfamily nanogui\+\_\+example\+\_\+1} (search for {\ttfamily tab\+\_\+widget} in the file).
+
+\textbackslash{}endrst 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{tabwidget_8h}{tabwidget.\+h}}\item 
+ext/nanogui/src/tabwidget.\+cpp\end{DoxyCompactItemize}

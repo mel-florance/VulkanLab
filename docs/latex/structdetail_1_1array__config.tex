@@ -1,0 +1,154 @@
+\hypertarget{structdetail_1_1array__config}{}\doxysection{Référence du modèle de la structure detail\+::array\+\_\+config$<$ Value, Size, Mode $>$}
+\label{structdetail_1_1array__config}\index{detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}}
+
+
+The class \mbox{\hyperlink{structStaticArrayImpl}{Static\+Array\+Impl}} has several different implementations. This class specifies which one to use.  
+
+
+
+
+{\ttfamily \#include $<$array\+\_\+generic.\+h$>$}
+
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr bool \mbox{\hyperlink{structdetail_1_1array__config_a7599db94f0e0de0d1dbdf5fd4345a6c2}{use\+\_\+native\+\_\+impl}}
+\begin{DoxyCompactList}\small\item\em Use S\+S\+E/\+A\+V\+X/\+N\+E\+ON implementation. \end{DoxyCompactList}\item 
+static constexpr bool \mbox{\hyperlink{structdetail_1_1array__config_a43dc8e53b4d602bccddd6554a233aef7}{use\+\_\+rounding\+\_\+fallback\+\_\+impl}}
+\begin{DoxyCompactList}\small\item\em Workaround for architectures that can\textquotesingle{}t change the rounding mode. \end{DoxyCompactList}\item 
+static constexpr bool \mbox{\hyperlink{structdetail_1_1array__config_a8bf1f7bea392f61ff24e8fb85adb48c9}{use\+\_\+recursive\+\_\+impl}}
+\begin{DoxyCompactList}\small\item\em Reduce to several recursive operations. \end{DoxyCompactList}\item 
+static constexpr bool \mbox{\hyperlink{structdetail_1_1array__config_ace0247628abf00b282e292f0f610c5b2}{use\+\_\+enum\+\_\+impl}}
+\begin{DoxyCompactList}\small\item\em Special case for arrays of enumerations. \end{DoxyCompactList}\item 
+static constexpr bool \mbox{\hyperlink{structdetail_1_1array__config_ac14dd3c5a626512fdeb20844f95b9c86}{use\+\_\+pointer\+\_\+impl}}
+\begin{DoxyCompactList}\small\item\em Special case for arrays of pointers. \end{DoxyCompactList}\item 
+static constexpr bool \mbox{\hyperlink{structdetail_1_1array__config_aa328a2a0e61cfc7452cb4b172cd7c9b4}{use\+\_\+generic\+\_\+impl}}
+\begin{DoxyCompactList}\small\item\em Catch-\/all for anything that wasn\textquotesingle{}t matched so far. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename Value, size\+\_\+t Size, Rounding\+Mode Mode = Rounding\+Mode\+::\+Default$>$\newline
+struct detail\+::array\+\_\+config$<$ Value, Size, Mode $>$}
+
+The class \mbox{\hyperlink{structStaticArrayImpl}{Static\+Array\+Impl}} has several different implementations. This class specifies which one to use. 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structdetail_1_1array__config_ace0247628abf00b282e292f0f610c5b2}\label{structdetail_1_1array__config_ace0247628abf00b282e292f0f610c5b2}} 
+\index{detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}!use\_enum\_impl@{use\_enum\_impl}}
+\index{use\_enum\_impl@{use\_enum\_impl}!detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}}
+\doxysubsubsection{\texorpdfstring{use\_enum\_impl}{use\_enum\_impl}}
+{\footnotesize\ttfamily template$<$typename Value , size\+\_\+t Size, Rounding\+Mode Mode = Rounding\+Mode\+::\+Default$>$ \\
+constexpr bool \mbox{\hyperlink{structdetail_1_1array__config}{detail\+::array\+\_\+config}}$<$ Value, Size, Mode $>$\+::use\+\_\+enum\+\_\+impl\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            std::is\_enum\_v<Value>}
+
+\end{DoxyCode}
+
+
+Special case for arrays of enumerations. 
+
+\mbox{\Hypertarget{structdetail_1_1array__config_aa328a2a0e61cfc7452cb4b172cd7c9b4}\label{structdetail_1_1array__config_aa328a2a0e61cfc7452cb4b172cd7c9b4}} 
+\index{detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}!use\_generic\_impl@{use\_generic\_impl}}
+\index{use\_generic\_impl@{use\_generic\_impl}!detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}}
+\doxysubsubsection{\texorpdfstring{use\_generic\_impl}{use\_generic\_impl}}
+{\footnotesize\ttfamily template$<$typename Value , size\+\_\+t Size, Rounding\+Mode Mode = Rounding\+Mode\+::\+Default$>$ \\
+constexpr bool \mbox{\hyperlink{structdetail_1_1array__config}{detail\+::array\+\_\+config}}$<$ Value, Size, Mode $>$\+::use\+\_\+generic\+\_\+impl\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            !\mbox{\hyperlink{structdetail_1_1array__config_a7599db94f0e0de0d1dbdf5fd4345a6c2}{use\_native\_impl}} \&\&}
+\DoxyCodeLine{            !\mbox{\hyperlink{structdetail_1_1array__config_a43dc8e53b4d602bccddd6554a233aef7}{use\_rounding\_fallback\_impl}} \&\&}
+\DoxyCodeLine{            !\mbox{\hyperlink{structdetail_1_1array__config_a8bf1f7bea392f61ff24e8fb85adb48c9}{use\_recursive\_impl}} \&\&}
+\DoxyCodeLine{            !\mbox{\hyperlink{structdetail_1_1array__config_ace0247628abf00b282e292f0f610c5b2}{use\_enum\_impl}} \&\&}
+\DoxyCodeLine{            !\mbox{\hyperlink{structdetail_1_1array__config_ac14dd3c5a626512fdeb20844f95b9c86}{use\_pointer\_impl}}}
+
+\end{DoxyCode}
+
+
+Catch-\/all for anything that wasn\textquotesingle{}t matched so far. 
+
+\mbox{\Hypertarget{structdetail_1_1array__config_a7599db94f0e0de0d1dbdf5fd4345a6c2}\label{structdetail_1_1array__config_a7599db94f0e0de0d1dbdf5fd4345a6c2}} 
+\index{detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}!use\_native\_impl@{use\_native\_impl}}
+\index{use\_native\_impl@{use\_native\_impl}!detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}}
+\doxysubsubsection{\texorpdfstring{use\_native\_impl}{use\_native\_impl}}
+{\footnotesize\ttfamily template$<$typename Value , size\+\_\+t Size, Rounding\+Mode Mode = Rounding\+Mode\+::\+Default$>$ \\
+constexpr bool \mbox{\hyperlink{structdetail_1_1array__config}{detail\+::array\+\_\+config}}$<$ Value, Size, Mode $>$\+::use\+\_\+native\+\_\+impl\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            is\_native\_v<Value, Size, Mode>}
+
+\end{DoxyCode}
+
+
+Use S\+S\+E/\+A\+V\+X/\+N\+E\+ON implementation. 
+
+\mbox{\Hypertarget{structdetail_1_1array__config_ac14dd3c5a626512fdeb20844f95b9c86}\label{structdetail_1_1array__config_ac14dd3c5a626512fdeb20844f95b9c86}} 
+\index{detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}!use\_pointer\_impl@{use\_pointer\_impl}}
+\index{use\_pointer\_impl@{use\_pointer\_impl}!detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}}
+\doxysubsubsection{\texorpdfstring{use\_pointer\_impl}{use\_pointer\_impl}}
+{\footnotesize\ttfamily template$<$typename Value , size\+\_\+t Size, Rounding\+Mode Mode = Rounding\+Mode\+::\+Default$>$ \\
+constexpr bool \mbox{\hyperlink{structdetail_1_1array__config}{detail\+::array\+\_\+config}}$<$ Value, Size, Mode $>$\+::use\+\_\+pointer\+\_\+impl\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{             std::is\_pointer\_v<Value> \&\&}
+\DoxyCodeLine{            !std::is\_arithmetic\_v<std::remove\_pointer\_t<Value>>}
+
+\end{DoxyCode}
+
+
+Special case for arrays of pointers. 
+
+\mbox{\Hypertarget{structdetail_1_1array__config_a8bf1f7bea392f61ff24e8fb85adb48c9}\label{structdetail_1_1array__config_a8bf1f7bea392f61ff24e8fb85adb48c9}} 
+\index{detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}!use\_recursive\_impl@{use\_recursive\_impl}}
+\index{use\_recursive\_impl@{use\_recursive\_impl}!detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}}
+\doxysubsubsection{\texorpdfstring{use\_recursive\_impl}{use\_recursive\_impl}}
+{\footnotesize\ttfamily template$<$typename Value , size\+\_\+t Size, Rounding\+Mode Mode = Rounding\+Mode\+::\+Default$>$ \\
+constexpr bool \mbox{\hyperlink{structdetail_1_1array__config}{detail\+::array\+\_\+config}}$<$ Value, Size, Mode $>$\+::use\+\_\+recursive\+\_\+impl\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            !\mbox{\hyperlink{structdetail_1_1array__config_a7599db94f0e0de0d1dbdf5fd4345a6c2}{use\_native\_impl}} \&\&}
+\DoxyCodeLine{            !\mbox{\hyperlink{structdetail_1_1array__config_a43dc8e53b4d602bccddd6554a233aef7}{use\_rounding\_fallback\_impl}} \&\&}
+\DoxyCodeLine{            is\_std\_type\_v<Value> \&\&}
+\DoxyCodeLine{            has\_vectorization \&\&}
+\DoxyCodeLine{            Size > 3}
+
+\end{DoxyCode}
+
+
+Reduce to several recursive operations. 
+
+\mbox{\Hypertarget{structdetail_1_1array__config_a43dc8e53b4d602bccddd6554a233aef7}\label{structdetail_1_1array__config_a43dc8e53b4d602bccddd6554a233aef7}} 
+\index{detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}!use\_rounding\_fallback\_impl@{use\_rounding\_fallback\_impl}}
+\index{use\_rounding\_fallback\_impl@{use\_rounding\_fallback\_impl}!detail::array\_config$<$ Value, Size, Mode $>$@{detail::array\_config$<$ Value, Size, Mode $>$}}
+\doxysubsubsection{\texorpdfstring{use\_rounding\_fallback\_impl}{use\_rounding\_fallback\_impl}}
+{\footnotesize\ttfamily template$<$typename Value , size\+\_\+t Size, Rounding\+Mode Mode = Rounding\+Mode\+::\+Default$>$ \\
+constexpr bool \mbox{\hyperlink{structdetail_1_1array__config}{detail\+::array\+\_\+config}}$<$ Value, Size, Mode $>$\+::use\+\_\+rounding\+\_\+fallback\+\_\+impl\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            !\mbox{\hyperlink{structdetail_1_1array__config_a7599db94f0e0de0d1dbdf5fd4345a6c2}{use\_native\_impl}} \&\&}
+\DoxyCodeLine{            Mode != RoundingMode::Default \&\&}
+\DoxyCodeLine{            !((has\_avx512f \&\& is\_float\_v <Value> \&\& Size / 16 * 16 == Size) ||}
+\DoxyCodeLine{              (has\_avx512f \&\& is\_double\_v<Value> \&\& Size /  8 *  8 == Size))}
+
+\end{DoxyCode}
+
+
+Workaround for architectures that can\textquotesingle{}t change the rounding mode. 
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array\+\_\+generic.\+h\end{DoxyCompactItemize}

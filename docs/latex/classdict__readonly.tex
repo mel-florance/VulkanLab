@@ -1,0 +1,64 @@
+\hypertarget{classdict__readonly}{}\doxysection{Référence de la classe dict\+\_\+readonly}
+\label{classdict__readonly}\index{dict\_readonly@{dict\_readonly}}
+
+
+Python\textquotesingle{}s dictionary protocol permits this to be a forward iterator.  
+
+
+
+
+{\ttfamily \#include $<$pytypes.\+h$>$}
+
+\doxysubsection*{Types protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdict__readonly_a03ca5952047f74c722d9a9a7b7170518}\label{classdict__readonly_a03ca5952047f74c722d9a9a7b7170518}} 
+using {\bfseries iterator\+\_\+category} = std\+::forward\+\_\+iterator\+\_\+tag
+\item 
+\mbox{\Hypertarget{classdict__readonly_a127806c5f2c38bfb96bb8dcbc5045734}\label{classdict__readonly_a127806c5f2c38bfb96bb8dcbc5045734}} 
+using {\bfseries value\+\_\+type} = std\+::pair$<$ \mbox{\hyperlink{classhandle}{handle}}, \mbox{\hyperlink{classhandle}{handle}} $>$
+\item 
+\mbox{\Hypertarget{classdict__readonly_a84d59082eaadc1ea6eb819992cc74f0e}\label{classdict__readonly_a84d59082eaadc1ea6eb819992cc74f0e}} 
+using {\bfseries reference} = const value\+\_\+type
+\item 
+\mbox{\Hypertarget{classdict__readonly_a5d2c6399a70096d2e7b3004939b7c685}\label{classdict__readonly_a5d2c6399a70096d2e7b3004939b7c685}} 
+using {\bfseries pointer} = \mbox{\hyperlink{structarrow__proxy}{arrow\+\_\+proxy}}$<$ const value\+\_\+type $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdict__readonly_a53cb6c65507a2455c3eff4e3e43cc048}\label{classdict__readonly_a53cb6c65507a2455c3eff4e3e43cc048}} 
+{\bfseries dict\+\_\+readonly} (\mbox{\hyperlink{classhandle}{handle}} obj, ssize\+\_\+t pos)
+\item 
+\mbox{\Hypertarget{classdict__readonly_a28eef7ab54bace49d245676429d91830}\label{classdict__readonly_a28eef7ab54bace49d245676429d91830}} 
+reference {\bfseries dereference} () const
+\item 
+\mbox{\Hypertarget{classdict__readonly_aed97e06f8d73b62e2af0d9034d0459cb}\label{classdict__readonly_aed97e06f8d73b62e2af0d9034d0459cb}} 
+void {\bfseries increment} ()
+\item 
+\mbox{\Hypertarget{classdict__readonly_a5190cd6607fe555c164fcc104903d11c}\label{classdict__readonly_a5190cd6607fe555c164fcc104903d11c}} 
+bool {\bfseries equal} (const \mbox{\hyperlink{classdict__readonly}{dict\+\_\+readonly}} \&b) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdict__readonly_ab53de351bd7826c067f07dcab9914b94}\label{classdict__readonly_ab53de351bd7826c067f07dcab9914b94}} 
+\mbox{\hyperlink{classhandle}{handle}} {\bfseries obj}
+\item 
+\mbox{\Hypertarget{classdict__readonly_af2b0e7ae20a72d55068f9907e6503690}\label{classdict__readonly_af2b0e7ae20a72d55068f9907e6503690}} 
+Py\+Object $\ast$ {\bfseries key} = nullptr
+\item 
+\mbox{\Hypertarget{classdict__readonly_ab02971b731caecf256127b98e804a12a}\label{classdict__readonly_ab02971b731caecf256127b98e804a12a}} 
+Py\+Object $\ast$ {\bfseries value} = nullptr
+\item 
+\mbox{\Hypertarget{classdict__readonly_ab8cfe454c80834592fa1635233972220}\label{classdict__readonly_ab8cfe454c80834592fa1635233972220}} 
+ssize\+\_\+t {\bfseries pos} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Python\textquotesingle{}s dictionary protocol permits this to be a forward iterator. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/pytypes.\+h\end{DoxyCompactItemize}

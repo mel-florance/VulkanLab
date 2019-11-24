@@ -1,0 +1,136 @@
+\hypertarget{classColorPicker}{}\doxysection{Référence de la classe Color\+Picker}
+\label{classColorPicker}\index{ColorPicker@{ColorPicker}}
+
+
+Push button with a popup to tweak a color value.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/colorpicker.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Color\+Picker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classColorPicker}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classColorPicker_ab0dc8d4d9536aef0549748befc1db288}{Color\+Picker}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, const \mbox{\hyperlink{classColor}{Color}} \&\mbox{\hyperlink{classColorPicker_a89511a4f1bb8a15254a7f4cb243f30f7}{color}}=\mbox{\hyperlink{classColor}{Color}}(1.f, 0.f, 0.f, 1.f))
+\item 
+\mbox{\Hypertarget{classColorPicker_af75cfd190546a40b666b4ff99d7cd2cb}\label{classColorPicker_af75cfd190546a40b666b4ff99d7cd2cb}} 
+std\+::function$<$ void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ \mbox{\hyperlink{classColorPicker_af75cfd190546a40b666b4ff99d7cd2cb}{callback}} () const
+\begin{DoxyCompactList}\small\item\em The callback executed when the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} changes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classColorPicker_aecb61df66da141612f77e1f7e6865f4e}{set\+\_\+callback}} (const std\+::function$<$ void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ \&\mbox{\hyperlink{classColorPicker_af75cfd190546a40b666b4ff99d7cd2cb}{callback}})
+\item 
+std\+::function$<$ void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ \mbox{\hyperlink{classColorPicker_aa988511b50ea7b2bcc4f956fc24ab697}{final\+\_\+callback}} () const
+\item 
+void \mbox{\hyperlink{classColorPicker_ac3235b7fa58d2c723f11b892e8ba0ee9}{set\+\_\+final\+\_\+callback}} (const std\+::function$<$ void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ \&\mbox{\hyperlink{classColorPicker_af75cfd190546a40b666b4ff99d7cd2cb}{callback}})
+\item 
+\mbox{\Hypertarget{classColorPicker_a89511a4f1bb8a15254a7f4cb243f30f7}\label{classColorPicker_a89511a4f1bb8a15254a7f4cb243f30f7}} 
+\mbox{\hyperlink{classColor}{Color}} \mbox{\hyperlink{classColorPicker_a89511a4f1bb8a15254a7f4cb243f30f7}{color}} () const
+\begin{DoxyCompactList}\small\item\em Get the current color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorPicker_a1a3b43f99ede2977462ac4db3873406a}\label{classColorPicker_a1a3b43f99ede2977462ac4db3873406a}} 
+void \mbox{\hyperlink{classColorPicker_a1a3b43f99ede2977462ac4db3873406a}{set\+\_\+color}} (const \mbox{\hyperlink{classColor}{Color}} \&\mbox{\hyperlink{classColorPicker_a89511a4f1bb8a15254a7f4cb243f30f7}{color}})
+\begin{DoxyCompactList}\small\item\em Set the current color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorPicker_a786e2fbd713445ccdee263b81f1f6269}\label{classColorPicker_a786e2fbd713445ccdee263b81f1f6269}} 
+const std\+::string \& \mbox{\hyperlink{classColorPicker_a786e2fbd713445ccdee263b81f1f6269}{pick\+\_\+button\+\_\+caption}} ()
+\begin{DoxyCompactList}\small\item\em The current caption of the nanogui\+::\+Color\+Picker\+::m\+\_\+pick\+\_\+button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorPicker_ad1c77b2bab1a7254de9594960a1e1d07}\label{classColorPicker_ad1c77b2bab1a7254de9594960a1e1d07}} 
+void \mbox{\hyperlink{classColorPicker_ad1c77b2bab1a7254de9594960a1e1d07}{set\+\_\+pick\+\_\+button\+\_\+caption}} (const std\+::string \&\mbox{\hyperlink{classButton_aaea8319d4263882e724432cac08bf77e}{caption}})
+\begin{DoxyCompactList}\small\item\em Sets the current caption of the nanogui\+::\+Color\+Picker\+::m\+\_\+pick\+\_\+button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorPicker_a8f6d3cd055f5a4e498dbdf252ec7df0a}\label{classColorPicker_a8f6d3cd055f5a4e498dbdf252ec7df0a}} 
+const std\+::string \& \mbox{\hyperlink{classColorPicker_a8f6d3cd055f5a4e498dbdf252ec7df0a}{reset\+\_\+button\+\_\+caption}} ()
+\begin{DoxyCompactList}\small\item\em The current caption of the nanogui\+::\+Color\+Picker\+::m\+\_\+reset\+\_\+button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorPicker_ab60daa277e7654b49b2da40ee6f10ccb}\label{classColorPicker_ab60daa277e7654b49b2da40ee6f10ccb}} 
+void \mbox{\hyperlink{classColorPicker_ab60daa277e7654b49b2da40ee6f10ccb}{set\+\_\+reset\+\_\+button\+\_\+caption}} (const std\+::string \&\mbox{\hyperlink{classButton_aaea8319d4263882e724432cac08bf77e}{caption}})
+\begin{DoxyCompactList}\small\item\em Sets the current caption of the nanogui\+::\+Color\+Picker\+::m\+\_\+reset\+\_\+button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classColorPicker_a2f478493d6ed1178affa2e5f650571b4}\label{classColorPicker_a2f478493d6ed1178affa2e5f650571b4}} 
+std\+::function$<$ void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ \mbox{\hyperlink{classColorPicker_a2f478493d6ed1178affa2e5f650571b4}{m\+\_\+callback}}
+\begin{DoxyCompactList}\small\item\em The \char`\"{}fast\char`\"{} callback executed when the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} has changed. \end{DoxyCompactList}\item 
+std\+::function$<$ void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ \mbox{\hyperlink{classColorPicker_a2935dc216e19568d267460be3f443f6a}{m\+\_\+final\+\_\+callback}}
+\item 
+\mbox{\Hypertarget{classColorPicker_ad6a92cef7992b533227543948f005d0f}\label{classColorPicker_ad6a92cef7992b533227543948f005d0f}} 
+\mbox{\hyperlink{classColorWheel}{Color\+Wheel}} $\ast$ \mbox{\hyperlink{classColorPicker_ad6a92cef7992b533227543948f005d0f}{m\+\_\+color\+\_\+wheel}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} for this \mbox{\hyperlink{classColorPicker}{Color\+Picker}} (the actual widget allowing selection). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classButton}{Button}} $\ast$ \mbox{\hyperlink{classColorPicker_a81844e0832d1a1769d7e2f5517189c94}{m\+\_\+pick\+\_\+button}}
+\item 
+\mbox{\hyperlink{classButton}{Button}} $\ast$ \mbox{\hyperlink{classColorPicker_a3ee6ec1d27067ecb85d3cb2f9917af02}{m\+\_\+reset\+\_\+button}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+Push button with a popup to tweak a color value. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classColorPicker_ab0dc8d4d9536aef0549748befc1db288}\label{classColorPicker_ab0dc8d4d9536aef0549748befc1db288}} 
+\index{ColorPicker@{ColorPicker}!ColorPicker@{ColorPicker}}
+\index{ColorPicker@{ColorPicker}!ColorPicker@{ColorPicker}}
+\doxysubsubsection{\texorpdfstring{ColorPicker()}{ColorPicker()}}
+{\footnotesize\ttfamily Color\+Picker\+::\+Color\+Picker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWidget}{Widget}} $\ast$}]{parent,  }\item[{const \mbox{\hyperlink{classColor}{Color}} \&}]{color = {\ttfamily \mbox{\hyperlink{classColor}{Color}}(1.f,~0.f,~0.f,~1.f)} }\end{DoxyParamCaption})}
+
+Attaches a \mbox{\hyperlink{classColorPicker}{Color\+Picker}} to the specified parent.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & The \mbox{\hyperlink{classWidget}{Widget}} to add this \mbox{\hyperlink{classColorPicker}{Color\+Picker}} to.\\
+\hline
+{\em color} & The color initially selected by this \mbox{\hyperlink{classColorPicker}{Color\+Picker}} (default\+: Red). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classColorPicker_aa988511b50ea7b2bcc4f956fc24ab697}\label{classColorPicker_aa988511b50ea7b2bcc4f956fc24ab697}} 
+\index{ColorPicker@{ColorPicker}!final\_callback@{final\_callback}}
+\index{final\_callback@{final\_callback}!ColorPicker@{ColorPicker}}
+\doxysubsubsection{\texorpdfstring{final\_callback()}{final\_callback()}}
+{\footnotesize\ttfamily std\+::function$<$void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ Color\+Picker\+::final\+\_\+callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+The callback to execute when a new \mbox{\hyperlink{classColor}{Color}} is selected on the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} {\bfseries{and}} the user clicks the nanogui\+::\+Color\+Picker\+::m\+\_\+pick\+\_\+button or nanogui\+::\+Color\+Picker\+::m\+\_\+reset\+\_\+button. \mbox{\Hypertarget{classColorPicker_aecb61df66da141612f77e1f7e6865f4e}\label{classColorPicker_aecb61df66da141612f77e1f7e6865f4e}} 
+\index{ColorPicker@{ColorPicker}!set\_callback@{set\_callback}}
+\index{set\_callback@{set\_callback}!ColorPicker@{ColorPicker}}
+\doxysubsubsection{\texorpdfstring{set\_callback()}{set\_callback()}}
+{\footnotesize\ttfamily void Color\+Picker\+::set\+\_\+callback (\begin{DoxyParamCaption}\item[{const std\+::function$<$ void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ \&}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the callback is executed as the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} itself is changed. Set this callback if you need to receive updates for the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} changing before the user clicks nanogui\+::\+Color\+Picker\+::m\+Pick\+Button or nanogui\+::\+Color\+Picker\+::m\+Pick\+Button. \mbox{\Hypertarget{classColorPicker_ac3235b7fa58d2c723f11b892e8ba0ee9}\label{classColorPicker_ac3235b7fa58d2c723f11b892e8ba0ee9}} 
+\index{ColorPicker@{ColorPicker}!set\_final\_callback@{set\_final\_callback}}
+\index{set\_final\_callback@{set\_final\_callback}!ColorPicker@{ColorPicker}}
+\doxysubsubsection{\texorpdfstring{set\_final\_callback()}{set\_final\_callback()}}
+{\footnotesize\ttfamily void Color\+Picker\+::set\+\_\+final\+\_\+callback (\begin{DoxyParamCaption}\item[{const std\+::function$<$ void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ \&}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The callback to execute when a new \mbox{\hyperlink{classColor}{Color}} is selected on the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} {\bfseries{and}} the user clicks the nanogui\+::\+Color\+Picker\+::m\+\_\+pick\+\_\+button or nanogui\+::\+Color\+Picker\+::m\+\_\+reset\+\_\+button. 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classColorPicker_a2935dc216e19568d267460be3f443f6a}\label{classColorPicker_a2935dc216e19568d267460be3f443f6a}} 
+\index{ColorPicker@{ColorPicker}!m\_final\_callback@{m\_final\_callback}}
+\index{m\_final\_callback@{m\_final\_callback}!ColorPicker@{ColorPicker}}
+\doxysubsubsection{\texorpdfstring{m\_final\_callback}{m\_final\_callback}}
+{\footnotesize\ttfamily std\+::function$<$void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ Color\+Picker\+::m\+\_\+final\+\_\+callback\hspace{0.3cm}{\ttfamily [protected]}}
+
+The callback to execute when a new \mbox{\hyperlink{classColor}{Color}} is selected on the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} {\bfseries{and}} the user clicks the nanogui\+::\+Color\+Picker\+::m\+\_\+pick\+\_\+button or nanogui\+::\+Color\+Picker\+::m\+\_\+reset\+\_\+button. \mbox{\Hypertarget{classColorPicker_a81844e0832d1a1769d7e2f5517189c94}\label{classColorPicker_a81844e0832d1a1769d7e2f5517189c94}} 
+\index{ColorPicker@{ColorPicker}!m\_pick\_button@{m\_pick\_button}}
+\index{m\_pick\_button@{m\_pick\_button}!ColorPicker@{ColorPicker}}
+\doxysubsubsection{\texorpdfstring{m\_pick\_button}{m\_pick\_button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classButton}{Button}}$\ast$ Color\+Picker\+::m\+\_\+pick\+\_\+button\hspace{0.3cm}{\ttfamily [protected]}}
+
+The \mbox{\hyperlink{classButton}{Button}} used to signal that the current value on the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} is the desired color to be chosen. The default value for the caption of this \mbox{\hyperlink{classButton}{Button}} is {\ttfamily \char`\"{}\+Pick\char`\"{}}. You can change it using nanogui\+::\+Color\+Picker\+::set\+\_\+pick\+\_\+button\+\_\+caption if you need.
+
+The color of this \mbox{\hyperlink{classButton}{Button}} will not affect nanogui\+::\+Color\+Picker\+::color until the user has actively selected by clicking this pick button. Similarly, the nanogui\+::\+Color\+Picker\+::m\+\_\+callback function is only called when a user selects a new \mbox{\hyperlink{classColor}{Color}} using by clicking this \mbox{\hyperlink{classButton}{Button}}. \mbox{\Hypertarget{classColorPicker_a3ee6ec1d27067ecb85d3cb2f9917af02}\label{classColorPicker_a3ee6ec1d27067ecb85d3cb2f9917af02}} 
+\index{ColorPicker@{ColorPicker}!m\_reset\_button@{m\_reset\_button}}
+\index{m\_reset\_button@{m\_reset\_button}!ColorPicker@{ColorPicker}}
+\doxysubsubsection{\texorpdfstring{m\_reset\_button}{m\_reset\_button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classButton}{Button}}$\ast$ Color\+Picker\+::m\+\_\+reset\+\_\+button\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remains the \mbox{\hyperlink{classColor}{Color}} of the active color selection, until the user picks a new \mbox{\hyperlink{classColor}{Color}} on the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} {\bfseries{and}} selects the nanogui\+::\+Color\+Picker\+::m\+\_\+pick\+\_\+button. The default value for the caption of this \mbox{\hyperlink{classButton}{Button}} is {\ttfamily \char`\"{}\+Reset\char`\"{}}. You can change it using nanogui\+::\+Color\+Picker\+::set\+\_\+reset\+\_\+button\+\_\+caption if you need. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{colorpicker_8h}{colorpicker.\+h}}\item 
+ext/nanogui/src/colorpicker.\+cpp\end{DoxyCompactItemize}

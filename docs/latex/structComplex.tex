@@ -1,0 +1,52 @@
+\hypertarget{structComplex}{}\doxysection{Référence du modèle de la structure Complex$<$ Value\+\_\+, Approx\+\_\+ $>$}
+\label{structComplex}\index{Complex$<$ Value\_, Approx\_ $>$@{Complex$<$ Value\_, Approx\_ $>$}}
+Graphe d\textquotesingle{}héritage de Complex$<$ Value\+\_\+, Approx\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.876047cm]{structComplex}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structComplex_a4add21320ed362c876210c6ca94c8ed3}\label{structComplex_a4add21320ed362c876210c6ca94c8ed3}} 
+using {\bfseries Base} = \mbox{\hyperlink{structStaticArrayImpl}{Static\+Array\+Impl}}$<$ Value\+\_\+, 2, Approx\+\_\+, Rounding\+Mode\+::\+Default, false, \mbox{\hyperlink{structComplex}{Complex}}$<$ Value\+\_\+, Approx\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{structComplex_a1e4e25fb8bc122885d0f9199163360e0}\label{structComplex_a1e4e25fb8bc122885d0f9199163360e0}} 
+using {\bfseries Array\+Type} = \mbox{\hyperlink{structComplex}{Complex}}
+\item 
+\mbox{\Hypertarget{structComplex_a24db74fc2cae3a73b5930ba19d33cb96}\label{structComplex_a24db74fc2cae3a73b5930ba19d33cb96}} 
+using {\bfseries Mask\+Type} = \mbox{\hyperlink{structMask}{Mask}}$<$ Value\+\_\+, 2, Approx\+\_\+, Rounding\+Mode\+::\+Default $>$
+\item 
+\mbox{\Hypertarget{structComplex_ac30f25e44e305281b8669ba61d7574ab}\label{structComplex_ac30f25e44e305281b8669ba61d7574ab}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries Replace\+Value} = \mbox{\hyperlink{structComplex}{Complex}}$<$ T, is\+\_\+std\+\_\+float\+\_\+v$<$ scalar\+\_\+t$<$ T $>$ $>$ \&\&is\+\_\+std\+\_\+float\+\_\+v$<$ scalar\+\_\+t$<$ Value\+\_\+ $>$ $>$ ? Approx\+\_\+ \+:array\+\_\+approx\+\_\+v$<$ T $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structComplex_a20a73076e8318212535e41640307ebf4}\label{structComplex_a20a73076e8318212535e41640307ebf4}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+B\+A\+S\+IC} (\mbox{\hyperlink{structStaticArrayImpl}{Base}}, \mbox{\hyperlink{structComplex}{Complex}})
+\item 
+\mbox{\Hypertarget{structComplex_a10b49ec46d88c8af98c494939f81184b}\label{structComplex_a10b49ec46d88c8af98c494939f81184b}} 
+{\footnotesize template$<$typename T , enable\+\_\+if\+\_\+complex\+\_\+t$<$ T $>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries Complex} (T \&\&z)
+\item 
+\mbox{\Hypertarget{structComplex_a0183b32cd008122484c6598110ddcc6b}\label{structComplex_a0183b32cd008122484c6598110ddcc6b}} 
+{\footnotesize template$<$typename T , enable\+\_\+if\+\_\+t$<$(array\+\_\+depth\+\_\+v$<$ T $>$$<$ Base\+::\+Depth \&\&(is\+\_\+scalar\+\_\+v$<$ T $>$$\vert$$\vert$is\+\_\+array\+\_\+v$<$ T $>$ $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries Complex} (T \&\&v)
+\item 
+\mbox{\Hypertarget{structComplex_a0183b32cd008122484c6598110ddcc6b}\label{structComplex_a0183b32cd008122484c6598110ddcc6b}} 
+{\footnotesize template$<$typename T , enable\+\_\+if\+\_\+t$<$(array\+\_\+depth\+\_\+v$<$ T $>$  = = Base\+::\+Depth $\vert$$\vert$ !(is\+\_\+scalar\+\_\+v$<$\+T$>$ $\vert$$\vert$ is\+\_\+array\+\_\+v$<$\+T$>$)$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries Complex} (T \&\&v)
+\item 
+\mbox{\Hypertarget{structComplex_aa1ea116b1238a58a590da6fac89c3791}\label{structComplex_aa1ea116b1238a58a590da6fac89c3791}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries Complex} (const Value\+\_\+ \&v1, const Value\+\_\+ \&v2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structComplex_a42089aebb84af8eb68a5b686735e4c5c}\label{structComplex_a42089aebb84af8eb68a5b686735e4c5c}} 
+static constexpr bool {\bfseries Is\+Complex} = true
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/complex.\+h\end{DoxyCompactItemize}

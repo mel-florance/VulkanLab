@@ -1,0 +1,169 @@
+\hypertarget{structPCG32}{}\doxysection{Référence du modèle de la structure P\+C\+G32$<$ T, Size $>$}
+\label{structPCG32}\index{PCG32$<$ T, Size $>$@{PCG32$<$ T, Size $>$}}
+
+
+\mbox{\hyperlink{structPCG32}{P\+C\+G32}} pseudorandom number generator proposed by Melissa O\textquotesingle{}Neill.  
+
+
+
+
+{\ttfamily \#include $<$random.\+h$>$}
+
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structPCG32_a0fa2ab3e82fd140a27758100969b2655}\label{structPCG32_a0fa2ab3e82fd140a27758100969b2655}} 
+using {\bfseries Int64} = int64\+\_\+array\+\_\+t$<$ T $>$
+\item 
+\mbox{\Hypertarget{structPCG32_a15a8bafb6cb02c9462ebaba1920e0ac0}\label{structPCG32_a15a8bafb6cb02c9462ebaba1920e0ac0}} 
+using {\bfseries U\+Int64} = uint64\+\_\+array\+\_\+t$<$ T $>$
+\item 
+\mbox{\Hypertarget{structPCG32_a0fa41065f34aa5ff7bd437518549f3ce}\label{structPCG32_a0fa41065f34aa5ff7bd437518549f3ce}} 
+using {\bfseries U\+Int32} = uint32\+\_\+array\+\_\+t$<$ T $>$
+\item 
+\mbox{\Hypertarget{structPCG32_a163170edcb4d4d70426f3ab0b4ed0bb9}\label{structPCG32_a163170edcb4d4d70426f3ab0b4ed0bb9}} 
+using {\bfseries Float64} = float64\+\_\+array\+\_\+t$<$ T $>$
+\item 
+\mbox{\Hypertarget{structPCG32_aa351cb8e6c429c8a8aec69463ed13818}\label{structPCG32_aa351cb8e6c429c8a8aec69463ed13818}} 
+using {\bfseries Float32} = float32\+\_\+array\+\_\+t$<$ T $>$
+\item 
+\mbox{\Hypertarget{structPCG32_a6ec43813bbd16b983820b588d3d0d674}\label{structPCG32_a6ec43813bbd16b983820b588d3d0d674}} 
+using {\bfseries U\+Int32\+Mask} = mask\+\_\+t$<$ U\+Int32 $>$
+\item 
+\mbox{\Hypertarget{structPCG32_a09eb255ade6ba277361a176eae1cb74e}\label{structPCG32_a09eb255ade6ba277361a176eae1cb74e}} 
+using {\bfseries U\+Int64\+Mask} = mask\+\_\+t$<$ U\+Int64 $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structPCG32_a9054cc0a8d15efc825116eb0d083a90f}\label{structPCG32_a9054cc0a8d15efc825116eb0d083a90f}} 
+\mbox{\hyperlink{structPCG32_a9054cc0a8d15efc825116eb0d083a90f}{P\+C\+G32}} (const U\+Int64 \&initstate=P\+C\+G32\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+TE, const U\+Int64 \&initseq=arange$<$ U\+Int64 $>$(Size)+P\+C\+G32\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+R\+E\+AM)
+\begin{DoxyCompactList}\small\item\em Initialize the pseudorandom number generator with the \mbox{\hyperlink{structPCG32_a337f9f005246da21eec88743c4b1e76e}{seed()}} function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structPCG32_a337f9f005246da21eec88743c4b1e76e}{seed}} (const U\+Int64 \&initstate, const U\+Int64 \&initseq)
+\begin{DoxyCompactList}\small\item\em Seed the pseudorandom number generator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_a184198e45c853ce1e5e19fc41e06c349}\label{structPCG32_a184198e45c853ce1e5e19fc41e06c349}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE U\+Int32 \mbox{\hyperlink{structPCG32_a184198e45c853ce1e5e19fc41e06c349}{next\+\_\+uint32}} ()
+\begin{DoxyCompactList}\small\item\em Generate a uniformly distributed unsigned 32-\/bit random number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_aac0dd0819322d6abb96ae8938af4fca7}\label{structPCG32_aac0dd0819322d6abb96ae8938af4fca7}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE U\+Int32 \mbox{\hyperlink{structPCG32_aac0dd0819322d6abb96ae8938af4fca7}{next\+\_\+uint32}} (const U\+Int64\+Mask \&mask)
+\begin{DoxyCompactList}\small\item\em Masked version of \mbox{\hyperlink{structPCG32_a184198e45c853ce1e5e19fc41e06c349}{next\+\_\+uint32}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_a3eee74a7e049de082fc76bec005be497}\label{structPCG32_a3eee74a7e049de082fc76bec005be497}} 
+{\footnotesize template$<$typename Indices , enable\+\_\+if\+\_\+dynamic\+\_\+t$<$ Indices $>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE U\+Int32 \mbox{\hyperlink{structPCG32_a3eee74a7e049de082fc76bec005be497}{next\+\_\+uint32}} (const Indices \&indices, const U\+Int64\+Mask \&mask)
+\begin{DoxyCompactList}\small\item\em Sparse version of \mbox{\hyperlink{structPCG32_a184198e45c853ce1e5e19fc41e06c349}{next\+\_\+uint32}} (only advances a subset of an array of R\+N\+Gs) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_a008919f339fac3451ee3556ec5ee3924}\label{structPCG32_a008919f339fac3451ee3556ec5ee3924}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE U\+Int64 \mbox{\hyperlink{structPCG32_a008919f339fac3451ee3556ec5ee3924}{next\+\_\+uint64}} ()
+\begin{DoxyCompactList}\small\item\em Generate a uniformly distributed unsigned 64-\/bit random number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_a0ab02fc1e3c5cdb121b95f6b784c2351}\label{structPCG32_a0ab02fc1e3c5cdb121b95f6b784c2351}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE U\+Int64 \mbox{\hyperlink{structPCG32_a0ab02fc1e3c5cdb121b95f6b784c2351}{next\+\_\+uint64}} (const U\+Int64\+Mask \&mask)
+\begin{DoxyCompactList}\small\item\em Masked version of \mbox{\hyperlink{structPCG32_a008919f339fac3451ee3556ec5ee3924}{next\+\_\+uint64}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_a1fbb78546065ccbd224dcbe988efb5e5}\label{structPCG32_a1fbb78546065ccbd224dcbe988efb5e5}} 
+{\footnotesize template$<$typename Indices , enable\+\_\+if\+\_\+dynamic\+\_\+t$<$ Indices $>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE U\+Int64 \mbox{\hyperlink{structPCG32_a1fbb78546065ccbd224dcbe988efb5e5}{next\+\_\+uint64}} (const Indices \&indices, const U\+Int64\+Mask \&mask)
+\begin{DoxyCompactList}\small\item\em Sparse version of \mbox{\hyperlink{structPCG32_a008919f339fac3451ee3556ec5ee3924}{next\+\_\+uint64}} (only advances a subset of an array of R\+N\+Gs) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_a0c5a71995fdb250f963866aba8c14f47}\label{structPCG32_a0c5a71995fdb250f963866aba8c14f47}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Float32 \mbox{\hyperlink{structPCG32_a0c5a71995fdb250f963866aba8c14f47}{next\+\_\+float32}} ()
+\begin{DoxyCompactList}\small\item\em Generate a single precision floating point value on the interval \mbox{[}0, 1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_ad068d5eeabeeb84855faaeba51cc9c06}\label{structPCG32_ad068d5eeabeeb84855faaeba51cc9c06}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Float32 \mbox{\hyperlink{structPCG32_ad068d5eeabeeb84855faaeba51cc9c06}{next\+\_\+float32}} (const U\+Int64\+Mask \&mask)
+\begin{DoxyCompactList}\small\item\em Masked version of \mbox{\hyperlink{structPCG32_a0c5a71995fdb250f963866aba8c14f47}{next\+\_\+float32}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_a163bedf7b60196a00cb0912132f92d9c}\label{structPCG32_a163bedf7b60196a00cb0912132f92d9c}} 
+{\footnotesize template$<$typename Indices , enable\+\_\+if\+\_\+dynamic\+\_\+t$<$ Indices $>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Float32 \mbox{\hyperlink{structPCG32_a163bedf7b60196a00cb0912132f92d9c}{next\+\_\+float32}} (const Indices \&indices, const U\+Int64\+Mask \&mask)
+\begin{DoxyCompactList}\small\item\em Sparse version of \mbox{\hyperlink{structPCG32_a0c5a71995fdb250f963866aba8c14f47}{next\+\_\+float32}} (only advances a subset of an array of R\+N\+Gs) \end{DoxyCompactList}\item 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Float64 \mbox{\hyperlink{structPCG32_afa601508161031be823d6986b5e2df7f}{next\+\_\+float64}} ()
+\begin{DoxyCompactList}\small\item\em Generate a double precision floating point value on the interval \mbox{[}0, 1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_a6c37a90636afb7343dd7ca0b9eaa8027}\label{structPCG32_a6c37a90636afb7343dd7ca0b9eaa8027}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Float64 \mbox{\hyperlink{structPCG32_a6c37a90636afb7343dd7ca0b9eaa8027}{next\+\_\+float64}} (const U\+Int64\+Mask \&mask)
+\begin{DoxyCompactList}\small\item\em Masked version of next\+\_\+float64. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_ad93d86201f9ace375de76e60ba280642}\label{structPCG32_ad93d86201f9ace375de76e60ba280642}} 
+{\footnotesize template$<$typename Indices , enable\+\_\+if\+\_\+dynamic\+\_\+t$<$ Indices $>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Float64 \mbox{\hyperlink{structPCG32_ad93d86201f9ace375de76e60ba280642}{next\+\_\+float64}} (const Indices \&indices, const U\+Int64\+Mask \&mask)
+\begin{DoxyCompactList}\small\item\em Sparse version of \mbox{\hyperlink{structPCG32_afa601508161031be823d6986b5e2df7f}{next\+\_\+float64}} (only advances a subset of an array of R\+N\+Gs) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_aa927fc53f6e2db8058546a4c4d448ef3}\label{structPCG32_aa927fc53f6e2db8058546a4c4d448ef3}} 
+U\+Int32 \mbox{\hyperlink{structPCG32_aa927fc53f6e2db8058546a4c4d448ef3}{next\+\_\+uint32\+\_\+bounded}} (uint32\+\_\+t bound, U\+Int64\+Mask mask=true)
+\begin{DoxyCompactList}\small\item\em Generate a uniformly distributed integer r, where 0 $<$= r $<$ bound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_a3f6cbd673a289db17128970ec01fc736}\label{structPCG32_a3f6cbd673a289db17128970ec01fc736}} 
+U\+Int64 \mbox{\hyperlink{structPCG32_a3f6cbd673a289db17128970ec01fc736}{next\+\_\+uint64\+\_\+bounded}} (uint64\+\_\+t bound, U\+Int64\+Mask mask=true)
+\begin{DoxyCompactList}\small\item\em Generate a uniformly distributed integer r, where 0 $<$= r $<$ bound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structPCG32_a787a6577164bf3a7ba745db554d1186b}{advance}} (const Int64 \&delta\+\_\+)
+\begin{DoxyCompactList}\small\item\em Multi-\/step advance function (jump-\/ahead, jump-\/back) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_ae36d4c453baafa5ed70254d6e77f8806}\label{structPCG32_ae36d4c453baafa5ed70254d6e77f8806}} 
+Int64 \mbox{\hyperlink{structPCG32_ae36d4c453baafa5ed70254d6e77f8806}{operator-\/}} (const \mbox{\hyperlink{structPCG32}{P\+C\+G32}} \&other) const
+\begin{DoxyCompactList}\small\item\em Compute the distance between two \mbox{\hyperlink{structPCG32}{P\+C\+G32}} pseudorandom number generators. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator , typename T2  = T, enable\+\_\+if\+\_\+t$<$ is\+\_\+scalar\+\_\+v$<$ T2 $>$$>$  = 0$>$ }\\void \mbox{\hyperlink{structPCG32_a77087d0dd463c3817dff61a1bc006662}{shuffle}} (Iterator begin, Iterator end)
+\begin{DoxyCompactList}\small\item\em Draw uniformly distributed permutation and permute the given container. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_a404aa7bf7ccf9aa9a799bd7473d94a88}\label{structPCG32_a404aa7bf7ccf9aa9a799bd7473d94a88}} 
+bool \mbox{\hyperlink{structPCG32_a404aa7bf7ccf9aa9a799bd7473d94a88}{operator==}} (const \mbox{\hyperlink{structPCG32}{P\+C\+G32}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structPCG32_a87c8a7bfdc45f0f2b06ec34f5a85b00d}\label{structPCG32_a87c8a7bfdc45f0f2b06ec34f5a85b00d}} 
+bool \mbox{\hyperlink{structPCG32_a87c8a7bfdc45f0f2b06ec34f5a85b00d}{operator!=}} (const \mbox{\hyperlink{structPCG32}{P\+C\+G32}} \&other) const
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structPCG32_af7fb04ef213ae8550c7e1043b5b0d655}\label{structPCG32_af7fb04ef213ae8550c7e1043b5b0d655}} 
+U\+Int64 {\bfseries state}
+\item 
+\mbox{\Hypertarget{structPCG32_ac7c098c8d714b70e43877d414f9c63ce}\label{structPCG32_ac7c098c8d714b70e43877d414f9c63ce}} 
+U\+Int64 {\bfseries inc}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename T, size\+\_\+t Size = array\+\_\+size\+\_\+v$<$\+T$>$$>$\newline
+struct P\+C\+G32$<$ T, Size $>$}
+
+\mbox{\hyperlink{structPCG32}{P\+C\+G32}} pseudorandom number generator proposed by Melissa O\textquotesingle{}Neill. 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{structPCG32_a787a6577164bf3a7ba745db554d1186b}\label{structPCG32_a787a6577164bf3a7ba745db554d1186b}} 
+\index{PCG32$<$ T, Size $>$@{PCG32$<$ T, Size $>$}!advance@{advance}}
+\index{advance@{advance}!PCG32$<$ T, Size $>$@{PCG32$<$ T, Size $>$}}
+\doxysubsubsection{\texorpdfstring{advance()}{advance()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Size = array\+\_\+size\+\_\+v$<$\+T$>$$>$ \\
+void \mbox{\hyperlink{structPCG32}{P\+C\+G32}}$<$ T, Size $>$\+::advance (\begin{DoxyParamCaption}\item[{const Int64 \&}]{delta\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Multi-\/step advance function (jump-\/ahead, jump-\/back) 
+
+The method used here is based on Brown, \char`\"{}\+Random Number Generation with
+\+Arbitrary Stride\char`\"{}, Transactions of the American Nuclear Society (Nov. 1994). The algorithm is very similar to fast exponentiation. \mbox{\Hypertarget{structPCG32_afa601508161031be823d6986b5e2df7f}\label{structPCG32_afa601508161031be823d6986b5e2df7f}} 
+\index{PCG32$<$ T, Size $>$@{PCG32$<$ T, Size $>$}!next\_float64@{next\_float64}}
+\index{next\_float64@{next\_float64}!PCG32$<$ T, Size $>$@{PCG32$<$ T, Size $>$}}
+\doxysubsubsection{\texorpdfstring{next\_float64()}{next\_float64()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Size = array\+\_\+size\+\_\+v$<$\+T$>$$>$ \\
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Float64 \mbox{\hyperlink{structPCG32}{P\+C\+G32}}$<$ T, Size $>$\+::next\+\_\+float64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate a double precision floating point value on the interval \mbox{[}0, 1) 
+
+\begin{DoxyRemark}{Remarques}
+Since the underlying random number generator produces 32 bit output, only the first 32 mantissa bits will be filled (however, the resolution is still finer than in next\+\_\+float(), which only uses 23 mantissa bits) 
+\end{DoxyRemark}
+\mbox{\Hypertarget{structPCG32_a337f9f005246da21eec88743c4b1e76e}\label{structPCG32_a337f9f005246da21eec88743c4b1e76e}} 
+\index{PCG32$<$ T, Size $>$@{PCG32$<$ T, Size $>$}!seed@{seed}}
+\index{seed@{seed}!PCG32$<$ T, Size $>$@{PCG32$<$ T, Size $>$}}
+\doxysubsubsection{\texorpdfstring{seed()}{seed()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Size = array\+\_\+size\+\_\+v$<$\+T$>$$>$ \\
+void \mbox{\hyperlink{structPCG32}{P\+C\+G32}}$<$ T, Size $>$\+::seed (\begin{DoxyParamCaption}\item[{const U\+Int64 \&}]{initstate,  }\item[{const U\+Int64 \&}]{initseq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seed the pseudorandom number generator. 
+
+Specified in two parts\+: a state initializer and a sequence selection constant (a.\+k.\+a. stream id) \mbox{\Hypertarget{structPCG32_a77087d0dd463c3817dff61a1bc006662}\label{structPCG32_a77087d0dd463c3817dff61a1bc006662}} 
+\index{PCG32$<$ T, Size $>$@{PCG32$<$ T, Size $>$}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!PCG32$<$ T, Size $>$@{PCG32$<$ T, Size $>$}}
+\doxysubsubsection{\texorpdfstring{shuffle()}{shuffle()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Size = array\+\_\+size\+\_\+v$<$\+T$>$$>$ \\
+template$<$typename Iterator , typename T2  = T, enable\+\_\+if\+\_\+t$<$ is\+\_\+scalar\+\_\+v$<$ T2 $>$$>$  = 0$>$ \\
+void \mbox{\hyperlink{structPCG32}{P\+C\+G32}}$<$ T, Size $>$\+::shuffle (\begin{DoxyParamCaption}\item[{Iterator}]{begin,  }\item[{Iterator}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw uniformly distributed permutation and permute the given container. 
+
+From\+: Knuth, T\+Ao\+CP Vol. 2 (3rd 3d), Section 3.\+4.\+2 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/random.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.8.16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vulkan Lab:  Fichier source de ext/nanogui/include/nanogui/formhelper.h</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">Vulkan Lab
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part --><!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('formhelper_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">formhelper.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="formhelper_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    NanoGUI was developed by Wenzel Jakob &lt;wenzel.jakob@epfl.ch&gt;.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">    The widget drawing code is based on the NanoVG demo application</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    by Mikko Mononen.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    All rights reserved. Use of this source code is governed by a</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    BSD-style license that can be found in the LICENSE.txt file.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="screen_8h.html">nanogui/screen.h</a>&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="label_8h.html">nanogui/label.h</a>&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="checkbox_8h.html">nanogui/checkbox.h</a>&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="textbox_8h.html">nanogui/textbox.h</a>&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="combobox_8h.html">nanogui/combobox.h</a>&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="colorpicker_8h.html">nanogui/colorpicker.h</a>&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="layout_8h.html">nanogui/layout.h</a>&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a>(nanogui)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a>(detail)</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classFormWidget.html">   86</a></span>&#160;template &lt;typename T, typename sfinae = std::true_type&gt; class <a class="code" href="classFormWidget.html">FormWidget</a> { };</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a>(detail)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classFormHelper.html">  124</a></span>&#160;class <a class="code" href="classFormHelper.html">FormHelper</a> {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classFormHelper.html#ae6f5da0462663fe7efaa5f41cfcd70e9">  127</a></span>&#160;    <a class="code" href="classFormHelper.html#ae6f5da0462663fe7efaa5f41cfcd70e9">FormHelper</a>(<a class="code" href="classScreen.html">Screen</a> *screen) : m_screen(screen) { }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classFormHelper.html#a17b94b6ceb31f994275f95fb95644aa7">  130</a></span>&#160;    <a class="code" href="classWindow.html">Window</a> *<a class="code" href="classFormHelper.html#a17b94b6ceb31f994275f95fb95644aa7">add_window</a>(<span class="keyword">const</span> Vector2i &amp;pos,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                         <span class="keyword">const</span> std::string &amp;title = <span class="stringliteral">&quot;Untitled&quot;</span>) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        assert(m_screen);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        m_window = <span class="keyword">new</span> <a class="code" href="classWindow.html">Window</a>(m_screen, title);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        m_layout = <span class="keyword">new</span> <a class="code" href="classAdvancedGridLayout.html">AdvancedGridLayout</a>({10, 0, 10, 0}, {});</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        m_layout-&gt;<a class="code" href="classAdvancedGridLayout.html#ad23f087a9bdcbe560b94077d60615851">set_margin</a>(10);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        m_layout-&gt;set_col_stretch(2, 1);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        m_window-&gt;set_position(pos);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        m_window-&gt;set_layout(m_layout);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        m_window-&gt;set_visible(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span> m_window;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classFormHelper.html#a5456d4e96abae99800154b6b28dee739">  144</a></span>&#160;    <a class="code" href="classLabel.html">Label</a> *<a class="code" href="classFormHelper.html#a5456d4e96abae99800154b6b28dee739">add_group</a>(<span class="keyword">const</span> std::string &amp;caption) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <a class="code" href="classLabel.html">Label</a>* label = <span class="keyword">new</span> <a class="code" href="classLabel.html">Label</a>(m_window, caption, m_group_font_name, m_group_font_size);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">if</span> (m_layout-&gt;row_count() &gt; 0)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            m_layout-&gt;append_row(m_pre_group_spacing); <span class="comment">/* Spacing */</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        m_layout-&gt;append_row(0);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        m_layout-&gt;set_anchor(label, <a class="code" href="structAdvancedGridLayout_1_1Anchor.html">AdvancedGridLayout::Anchor</a>(0, m_layout-&gt;row_count()-1, 4, 1));</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        m_layout-&gt;append_row(m_post_group_spacing);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">return</span> label;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt; detail::FormWidget&lt;Type&gt; *</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classFormHelper.html#a9691b9f0e2bdd98bd0dfe34213b693d7">  156</a></span>&#160;    <a class="code" href="classFormHelper.html#a9691b9f0e2bdd98bd0dfe34213b693d7">add_variable</a>(<span class="keyword">const</span> std::string &amp;label, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> Type &amp;)&gt; &amp;setter,</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                <span class="keyword">const</span> std::function&lt;Type()&gt; &amp;getter, <span class="keywordtype">bool</span> editable = <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="classLabel.html">Label</a> *label_w = <span class="keyword">new</span> <a class="code" href="classLabel.html">Label</a>(m_window, label, m_label_font_name, m_label_font_size);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keyword">auto</span> widget = <span class="keyword">new</span> detail::FormWidget&lt;Type&gt;(m_window);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keyword">auto</span> refresh = [widget, getter] {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            Type value = getter(), current = widget-&gt;value();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">if</span> (value != current)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                widget-&gt;set_value(value);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        };</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        refresh();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        widget-&gt;set_callback(setter);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        widget-&gt;set_editable(editable);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        widget-&gt;set_font_size(m_widget_font_size);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        Vector2i fs = widget-&gt;fixed_size();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        widget-&gt;set_fixed_size(Vector2i(fs.x() != 0 ? fs.x() : m_fixed_size.x(),</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                      fs.y() != 0 ? fs.y() : m_fixed_size.y()));</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        m_refresh_callbacks.push_back(refresh);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">if</span> (m_layout-&gt;row_count() &gt; 0)</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            m_layout-&gt;append_row(m_variable_spacing);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        m_layout-&gt;append_row(0);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        m_layout-&gt;set_anchor(label_w, <a class="code" href="structAdvancedGridLayout_1_1Anchor.html">AdvancedGridLayout::Anchor</a>(1, m_layout-&gt;row_count()-1));</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        m_layout-&gt;set_anchor(widget, <a class="code" href="structAdvancedGridLayout_1_1Anchor.html">AdvancedGridLayout::Anchor</a>(3, m_layout-&gt;row_count()-1));</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">return</span> widget;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt; detail::FormWidget&lt;Type&gt; *</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classFormHelper.html#a6398b24799910fd36d1faecd4a9fc19c">  183</a></span>&#160;    <a class="code" href="classFormHelper.html#a6398b24799910fd36d1faecd4a9fc19c">add_variable</a>(<span class="keyword">const</span> std::string &amp;label, Type &amp;value, <span class="keywordtype">bool</span> editable = <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> add_variable&lt;Type&gt;(label,</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            [&amp;](<span class="keyword">const</span> Type &amp; v) { value = v; },</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            [&amp;]() -&gt; Type { <span class="keywordflow">return</span> value; },</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            editable</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        );</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classFormHelper.html#af234a287cd09d0a8406856b87774d6e8">  192</a></span>&#160;    <a class="code" href="classButton.html">Button</a> *<a class="code" href="classFormHelper.html#af234a287cd09d0a8406856b87774d6e8">add_button</a>(<span class="keyword">const</span> std::string &amp;label, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>()&gt; &amp;cb) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <a class="code" href="classButton.html">Button</a> *button = <span class="keyword">new</span> <a class="code" href="classButton.html">Button</a>(m_window, label);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        button-&gt;<a class="code" href="classButton.html#ac6f2678bdb8e08e65a784a8a1028afd8">set_callback</a>(cb);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        button-&gt;<a class="code" href="classWidget.html#a4599e3bee0feb318886d5701f6d8b312">set_fixed_height</a>(25);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">if</span> (m_layout-&gt;row_count() &gt; 0)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            m_layout-&gt;append_row(m_variable_spacing);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        m_layout-&gt;append_row(0);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        m_layout-&gt;set_anchor(button, <a class="code" href="structAdvancedGridLayout_1_1Anchor.html">AdvancedGridLayout::Anchor</a>(1, m_layout-&gt;row_count()-1, 3, 1));</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">return</span> button;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="classFormHelper.html#ae64fb7cf29b7c76e7565b2b8635132ab">  204</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormHelper.html#ae64fb7cf29b7c76e7565b2b8635132ab">add_widget</a>(<span class="keyword">const</span> std::string &amp;label, <a class="code" href="classWidget.html">Widget</a> *widget) {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        m_layout-&gt;append_row(0);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">if</span> (label == <span class="stringliteral">&quot;&quot;</span>) {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            m_layout-&gt;set_anchor(widget, <a class="code" href="structAdvancedGridLayout_1_1Anchor.html">AdvancedGridLayout::Anchor</a>(1, m_layout-&gt;row_count()-1, 3, 1));</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <a class="code" href="classLabel.html">Label</a> *label_w = <span class="keyword">new</span> <a class="code" href="classLabel.html">Label</a>(m_window, label, m_label_font_name, m_label_font_size);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            m_layout-&gt;set_anchor(label_w, <a class="code" href="structAdvancedGridLayout_1_1Anchor.html">AdvancedGridLayout::Anchor</a>(1, m_layout-&gt;row_count()-1));</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            m_layout-&gt;set_anchor(widget, <a class="code" href="structAdvancedGridLayout_1_1Anchor.html">AdvancedGridLayout::Anchor</a>(3, m_layout-&gt;row_count()-1));</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="classFormHelper.html#acb569e79b8e31cf6fc4b40e67e4ea8ac">  216</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormHelper.html#acb569e79b8e31cf6fc4b40e67e4ea8ac">refresh</a>() {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp;callback : m_refresh_callbacks)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            callback();</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="classFormHelper.html#a7ca612ba92f7cc38affa28baf0684595">  222</a></span>&#160;    <a class="code" href="classWindow.html">Window</a> *<a class="code" href="classFormHelper.html#a7ca612ba92f7cc38affa28baf0684595">window</a>() { <span class="keywordflow">return</span> m_window; }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="classFormHelper.html#a05a243312d572da28aa24c4b0ffc967b">  225</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormHelper.html#a05a243312d572da28aa24c4b0ffc967b">set_window</a>(<a class="code" href="classWindow.html">Window</a> *window) {</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        m_window = window;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        m_layout = dynamic_cast&lt;AdvancedGridLayout *&gt;(window-&gt;layout());</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">if</span> (m_layout == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">throw</span> std::runtime_error(</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                <span class="stringliteral">&quot;Internal error: window has an incompatible layout!&quot;</span>);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="classFormHelper.html#ac6b72b051ad0804863ce43e9d1f0cf35">  234</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormHelper.html#ac6b72b051ad0804863ce43e9d1f0cf35">set_fixed_size</a>(<span class="keyword">const</span> Vector2i &amp;fw) { m_fixed_size = fw; }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classFormHelper.html#ab268b12550246715d8f9bea478f1e3d8">  237</a></span>&#160;    Vector2i <a class="code" href="classFormHelper.html#ab268b12550246715d8f9bea478f1e3d8">fixed_size</a>() { <span class="keywordflow">return</span> m_fixed_size; }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="classFormHelper.html#a7f4f9b685e8a657356a9ed797d18859b">  240</a></span>&#160;    <span class="keyword">const</span> std::string &amp;<a class="code" href="classFormHelper.html#a7f4f9b685e8a657356a9ed797d18859b">group_font_name</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_group_font_name; }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="classFormHelper.html#a3ccdcf9393f5e3489ff361dafc069bad">  243</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormHelper.html#a3ccdcf9393f5e3489ff361dafc069bad">set_group_font_name</a>(<span class="keyword">const</span> std::string &amp;<a class="code" href="structname.html">name</a>) { m_group_font_name = <a class="code" href="structname.html">name</a>; }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="classFormHelper.html#a2ad71ac8abcbd3e52fc42434896fda03">  246</a></span>&#160;    <span class="keyword">const</span> std::string &amp;<a class="code" href="classFormHelper.html#a2ad71ac8abcbd3e52fc42434896fda03">label_font_name</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_label_font_name; }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="classFormHelper.html#ab25e24126e596df71c411e6bd677f615">  249</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormHelper.html#ab25e24126e596df71c411e6bd677f615">set_label_font_name</a>(<span class="keyword">const</span> std::string &amp;<a class="code" href="structname.html">name</a>) { m_label_font_name = <a class="code" href="structname.html">name</a>; }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="classFormHelper.html#aae582953481ff613f59ff2bfe6ca891d">  252</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classFormHelper.html#aae582953481ff613f59ff2bfe6ca891d">group_font_size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_group_font_size; }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="classFormHelper.html#aa8e214e8eac13109f9722dab62287d44">  255</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormHelper.html#aa8e214e8eac13109f9722dab62287d44">set_group_font_size</a>(<span class="keywordtype">int</span> value) { m_group_font_size = value; }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="classFormHelper.html#a0627ce2bb3f5f2959911f574d73b993f">  258</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classFormHelper.html#a0627ce2bb3f5f2959911f574d73b993f">label_font_size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_label_font_size; }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="classFormHelper.html#aba3b14b0012d1cde916ec9ab64e8ac94">  261</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormHelper.html#aba3b14b0012d1cde916ec9ab64e8ac94">set_label_font_size</a>(<span class="keywordtype">int</span> value) { m_label_font_size = value; }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classFormHelper.html#ae8c7a8a0ec943faa9b7d66cdd7bc45fb">  264</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classFormHelper.html#ae8c7a8a0ec943faa9b7d66cdd7bc45fb">widget_font_size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_widget_font_size; }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="classFormHelper.html#a53a4ad3992c747f28497c22b428212ec">  267</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormHelper.html#a53a4ad3992c747f28497c22b428212ec">set_widget_font_size</a>(<span class="keywordtype">int</span> value) { m_widget_font_size = value; }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="classFormHelper.html#a7547698e2f86fd5292e9fde3c5a40216">  271</a></span>&#160;    <a class="code" href="classref.html">ref&lt;Screen&gt;</a> <a class="code" href="classFormHelper.html#a7547698e2f86fd5292e9fde3c5a40216">m_screen</a>;</div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="classFormHelper.html#a675be9fdf97a04292ee8bd7c4ebf74b2">  273</a></span>&#160;    <a class="code" href="classref.html">ref&lt;Window&gt;</a> <a class="code" href="classFormHelper.html#a675be9fdf97a04292ee8bd7c4ebf74b2">m_window</a>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="classFormHelper.html#a9e4d61d9eab2c4d6d91911aa28ac66fe">  275</a></span>&#160;    <a class="code" href="classref.html">ref&lt;AdvancedGridLayout&gt;</a> <a class="code" href="classFormHelper.html#a9e4d61d9eab2c4d6d91911aa28ac66fe">m_layout</a>;</div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="classFormHelper.html#a933fa5625bbb562388e928fb4f80d62e">  277</a></span>&#160;    std::vector&lt;std::function&lt;void()&gt;&gt; <a class="code" href="classFormHelper.html#a933fa5625bbb562388e928fb4f80d62e">m_refresh_callbacks</a>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="classFormHelper.html#a207ed407e47ce0b46be2413cc1ca2ec4">  279</a></span>&#160;    std::string m_group_font_name = <span class="stringliteral">&quot;sans-bold&quot;</span>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="classFormHelper.html#a203c82f452256d4bdba36da6f99c90eb">  281</a></span>&#160;    std::string m_label_font_name = <span class="stringliteral">&quot;sans&quot;</span>;</div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="classFormHelper.html#a3819eb586d18d2326f7f990a5c334a7e">  283</a></span>&#160;    Vector2i m_fixed_size = Vector2i(0, 20);</div>
+<div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="classFormHelper.html#aa32bea23be7b4ccc3d3b77c44f882a77">  285</a></span>&#160;    <span class="keywordtype">int</span> m_group_font_size = 20;</div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="classFormHelper.html#af28ed5070a5a99558ad4b92bf82143f7">  287</a></span>&#160;    <span class="keywordtype">int</span> m_label_font_size = 16;</div>
+<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="classFormHelper.html#a24ba55d5a996a9534e51b1f0ed4f7a21">  289</a></span>&#160;    <span class="keywordtype">int</span> m_widget_font_size = 16;</div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="classFormHelper.html#a1aa32dca77eee4974ee57679d5353203">  291</a></span>&#160;    <span class="keywordtype">int</span> m_pre_group_spacing = 15;</div>
+<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="classFormHelper.html#a0c628343f3c073638b90de0e48404ad4">  293</a></span>&#160;    <span class="keywordtype">int</span> m_post_group_spacing = 5;</div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="classFormHelper.html#adf38cae9f0450b222c8ef8a160c9ed59">  295</a></span>&#160;    <span class="keywordtype">int</span> m_variable_spacing = 5;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;};</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a>(detail)</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html">  303</a></span>&#160;template &lt;&gt; class <a class="code" href="classFormWidget.html">FormWidget</a>&lt;<span class="keywordtype">bool</span>, std::true_type&gt; : public <a class="code" href="classCheckBox.html">CheckBox</a> {</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html#a77fc918eb56df84aa58cc1b01873b687">  306</a></span>&#160;    <a class="code" href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html#a77fc918eb56df84aa58cc1b01873b687">FormWidget</a>(<a class="code" href="classWidget.html">Widget</a> *p) : <a class="code" href="classCheckBox.html">CheckBox</a>(p, <span class="stringliteral">&quot;&quot;</span>) { set_fixed_width(20); }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno"><a class="line" href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html#a93b55a8f3cb55c5fe390ebea4b8532c2">  309</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html#a93b55a8f3cb55c5fe390ebea4b8532c2">set_value</a>(<span class="keywordtype">bool</span> v) { set_checked(v); }</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html#a55e0f82d7797e26c018e6b153394509a">  312</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html#a55e0f82d7797e26c018e6b153394509a">set_editable</a>(<span class="keywordtype">bool</span> e) { set_enabled(e); }</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html#a5f0700c6282aa0f34a45f3f8c616fae6">  315</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html#a5f0700c6282aa0f34a45f3f8c616fae6">value</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> checked(); }</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;};</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html">  324</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classFormWidget.html">FormWidget</a>&lt;T, typename std::is_enum&lt;T&gt;::type&gt; : <span class="keyword">public</span> <a class="code" href="classComboBox.html">ComboBox</a> {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#ac832cc8543d44a944363da03678ab3a8">  327</a></span>&#160;    <a class="code" href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#ac832cc8543d44a944363da03678ab3a8">FormWidget</a>(<a class="code" href="classWidget.html">Widget</a> *p) : <a class="code" href="classComboBox.html">ComboBox</a>(p) { }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#a99f8765e38c5dde9572cfb029ab7e932">  330</a></span>&#160;    T <a class="code" href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#a99f8765e38c5dde9572cfb029ab7e932">value</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (T) selected_index(); }</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#ab2d5619146f93ac9f305ef613c170888">  333</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#ab2d5619146f93ac9f305ef613c170888">set_value</a>(T value) { set_selected_index((<span class="keywordtype">int</span>) value); m_selected_index = (int) value; }</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#a6ac07148e44eac359fd98f6636795732">  336</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#a6ac07148e44eac359fd98f6636795732">set_callback</a>(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> T &amp;)&gt; &amp;cb) {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <a class="code" href="classComboBox.html#ae6816f1cf3acdebc03609305fb118d9d">ComboBox::set_callback</a>([cb](<span class="keywordtype">int</span> v) { cb((T) v); });</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno"><a class="line" href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#a1b0fa57ab454295b810ecff640e87d10">  341</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#a1b0fa57ab454295b810ecff640e87d10">set_editable</a>(<span class="keywordtype">bool</span> e) { set_enabled(e); }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;};</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00350"></a><span class="lineno"><a class="line" href="classFormWidget_3_01T_00_01typename_01std_1_1is__integral_3_01T_01_4_1_1type_01_4.html">  350</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classFormWidget.html">FormWidget</a>&lt;T, typename std::is_integral&lt;T&gt;::type&gt; : <span class="keyword">public</span> <a class="code" href="classIntBox.html">IntBox</a>&lt;T&gt; {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="classFormWidget_3_01T_00_01typename_01std_1_1is__integral_3_01T_01_4_1_1type_01_4.html#a86ce8feed102f9c3f82ad1adb11adca6">  353</a></span>&#160;    <a class="code" href="classFormWidget_3_01T_00_01typename_01std_1_1is__integral_3_01T_01_4_1_1type_01_4.html#a86ce8feed102f9c3f82ad1adb11adca6">FormWidget</a>(<a class="code" href="classWidget.html">Widget</a> *p) : <a class="code" href="classIntBox.html">IntBox</a>&lt;T&gt;(p) { this-&gt;set_alignment(TextBox::Alignment::Right); }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;};</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="classFormWidget_3_01T_00_01typename_01std_1_1is__floating__point_3_01T_01_4_1_1type_01_4.html">  362</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classFormWidget.html">FormWidget</a>&lt;T, typename std::is_floating_point&lt;T&gt;::type&gt; : <span class="keyword">public</span> <a class="code" href="classFloatBox.html">FloatBox</a>&lt;T&gt; {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="classFormWidget_3_01T_00_01typename_01std_1_1is__floating__point_3_01T_01_4_1_1type_01_4.html#a3a5f61c8189313765682524b798f0a64">  365</a></span>&#160;    <a class="code" href="classFormWidget_3_01T_00_01typename_01std_1_1is__floating__point_3_01T_01_4_1_1type_01_4.html#a3a5f61c8189313765682524b798f0a64">FormWidget</a>(<a class="code" href="classWidget.html">Widget</a> *p) : <a class="code" href="classFloatBox.html">FloatBox</a>&lt;T&gt;(p) { this-&gt;set_alignment(TextBox::Alignment::Right); }</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;};</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="classFormWidget_3_01std_1_1string_00_01std_1_1true__type_01_4.html">  371</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keyword">class </span><a class="code" href="classFormWidget.html">FormWidget</a>&lt;std::string, std::true_type&gt; : <span class="keyword">public</span> <a class="code" href="classTextBox.html">TextBox</a> {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="classFormWidget_3_01std_1_1string_00_01std_1_1true__type_01_4.html#a8125e42fa9754818fc15c454a7088ae3">  374</a></span>&#160;    <a class="code" href="classFormWidget_3_01std_1_1string_00_01std_1_1true__type_01_4.html#a8125e42fa9754818fc15c454a7088ae3">FormWidget</a>(<a class="code" href="classWidget.html">Widget</a> *p) : <a class="code" href="classTextBox.html">TextBox</a>(p) { set_alignment(TextBox::Alignment::Left); }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="classFormWidget_3_01std_1_1string_00_01std_1_1true__type_01_4.html#a0b2e4cc57696fbfd4fb1730ea2d08752">  377</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormWidget_3_01std_1_1string_00_01std_1_1true__type_01_4.html#a0b2e4cc57696fbfd4fb1730ea2d08752">set_callback</a>(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> std::string&amp;)&gt; &amp;cb) {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <a class="code" href="classTextBox.html#af29e0a17fd76e109c128647dfd3525f4">TextBox::set_callback</a>([cb](<span class="keyword">const</span> std::string &amp;<a class="code" href="classstr.html">str</a>) { cb(<a class="code" href="classstr.html">str</a>); <span class="keywordflow">return</span> <span class="keyword">true</span>; });</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    }</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;};</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html">  385</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keyword">class </span><a class="code" href="classFormWidget.html">FormWidget</a>&lt;<a class="code" href="classColor.html">Color</a>, std::true_type&gt; : <span class="keyword">public</span> <a class="code" href="classColorPicker.html">ColorPicker</a> {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html#a5deb8cf15d12de03d4506d0c8d4acb60">  388</a></span>&#160;    <a class="code" href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html#a5deb8cf15d12de03d4506d0c8d4acb60">FormWidget</a>(<a class="code" href="classWidget.html">Widget</a> *p) : <a class="code" href="classColorPicker.html">ColorPicker</a>(p) { }</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html#aaa8552831e14e44b9dc524518b950976">  391</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html#aaa8552831e14e44b9dc524518b950976">set_value</a>(<span class="keyword">const</span> <a class="code" href="classColor.html">Color</a> &amp;c) { set_color(c); }</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00394"></a><span class="lineno"><a class="line" href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html#a66e1f72155f4e37bb3b92eb3f8081180">  394</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html#a66e1f72155f4e37bb3b92eb3f8081180">set_editable</a>(<span class="keywordtype">bool</span> e) { set_enabled(e); }</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
+<div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html#afcd3421150c1df180789f5cc050ea9a7">  397</a></span>&#160;    <a class="code" href="classColor.html">Color</a> <a class="code" href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html#afcd3421150c1df180789f5cc050ea9a7">value</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> color(); }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;};</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a>(detail)</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a>(nanogui)</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a577cd817cb71b655998cad4387cdaeba"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a></div><div class="ttdeci">#define NAMESPACE_BEGIN(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:38</div></div>
+<div class="ttc" id="acheckbox_8h_html"><div class="ttname"><a href="checkbox_8h.html">checkbox.h</a></div><div class="ttdoc">Two-state check box Widget.</div></div>
+<div class="ttc" id="astructname_html"><div class="ttname"><a href="structname.html">name</a></div><div class="ttdoc">Annotation for function names.</div><div class="ttdef"><b>Definition:</b> attr.h:33</div></div>
+<div class="ttc" id="aclassComboBox_html_ae6816f1cf3acdebc03609305fb118d9d"><div class="ttname"><a href="classComboBox.html#ae6816f1cf3acdebc03609305fb118d9d">ComboBox::set_callback</a></div><div class="ttdeci">void set_callback(const std::function&lt; void(int)&gt; &amp;callback)</div><div class="ttdoc">Sets the callback to execute for this ComboBox.</div><div class="ttdef"><b>Definition:</b> combobox.h:51</div></div>
+<div class="ttc" id="aclassFormHelper_html_a7ca612ba92f7cc38affa28baf0684595"><div class="ttname"><a href="classFormHelper.html#a7ca612ba92f7cc38affa28baf0684595">FormHelper::window</a></div><div class="ttdeci">Window * window()</div><div class="ttdoc">Access the currently active Window instance.</div><div class="ttdef"><b>Definition:</b> formhelper.h:222</div></div>
+<div class="ttc" id="aclassFormHelper_html_a933fa5625bbb562388e928fb4f80d62e"><div class="ttname"><a href="classFormHelper.html#a933fa5625bbb562388e928fb4f80d62e">FormHelper::m_refresh_callbacks</a></div><div class="ttdeci">std::vector&lt; std::function&lt; void()&gt; &gt; m_refresh_callbacks</div><div class="ttdoc">The callbacks associated with all widgets this FormHelper is managing.</div><div class="ttdef"><b>Definition:</b> formhelper.h:277</div></div>
+<div class="ttc" id="aclassFormHelper_html_a675be9fdf97a04292ee8bd7c4ebf74b2"><div class="ttname"><a href="classFormHelper.html#a675be9fdf97a04292ee8bd7c4ebf74b2">FormHelper::m_window</a></div><div class="ttdeci">ref&lt; Window &gt; m_window</div><div class="ttdoc">A reference to the nanogui::Window this FormHelper is controlling.</div><div class="ttdef"><b>Definition:</b> formhelper.h:273</div></div>
+<div class="ttc" id="aclassFormHelper_html_a2ad71ac8abcbd3e52fc42434896fda03"><div class="ttname"><a href="classFormHelper.html#a2ad71ac8abcbd3e52fc42434896fda03">FormHelper::label_font_name</a></div><div class="ttdeci">const std::string &amp; label_font_name() const</div><div class="ttdoc">The font name being used for labels.</div><div class="ttdef"><b>Definition:</b> formhelper.h:246</div></div>
+<div class="ttc" id="aclassWindow_html"><div class="ttname"><a href="classWindow.html">Window</a></div><div class="ttdoc">Top-level window widget.</div><div class="ttdef"><b>Definition:</b> Window.h:10</div></div>
+<div class="ttc" id="ascreen_8h_html"><div class="ttname"><a href="screen_8h.html">screen.h</a></div></div>
+<div class="ttc" id="aclassButton_html"><div class="ttname"><a href="classButton.html">Button</a></div><div class="ttdoc">[Normal/Toggle/Radio/Popup] Button widget.</div><div class="ttdef"><b>Definition:</b> button.h:25</div></div>
+<div class="ttc" id="aclassFormWidget_3_01bool_00_01std_1_1true__type_01_4_html_a93b55a8f3cb55c5fe390ebea4b8532c2"><div class="ttname"><a href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html#a93b55a8f3cb55c5fe390ebea4b8532c2">FormWidget&lt; bool, std::true_type &gt;::set_value</a></div><div class="ttdeci">void set_value(bool v)</div><div class="ttdoc">Pass-through function for nanogui::CheckBox::set_checked.</div><div class="ttdef"><b>Definition:</b> formhelper.h:309</div></div>
+<div class="ttc" id="aclassFormHelper_html_a9691b9f0e2bdd98bd0dfe34213b693d7"><div class="ttname"><a href="classFormHelper.html#a9691b9f0e2bdd98bd0dfe34213b693d7">FormHelper::add_variable</a></div><div class="ttdeci">detail::FormWidget&lt; Type &gt; * add_variable(const std::string &amp;label, const std::function&lt; void(const Type &amp;)&gt; &amp;setter, const std::function&lt; Type()&gt; &amp;getter, bool editable=true)</div><div class="ttdoc">Add a new data widget controlled using custom getter/setter functions.</div><div class="ttdef"><b>Definition:</b> formhelper.h:156</div></div>
+<div class="ttc" id="aclassFormHelper_html_ae64fb7cf29b7c76e7565b2b8635132ab"><div class="ttname"><a href="classFormHelper.html#ae64fb7cf29b7c76e7565b2b8635132ab">FormHelper::add_widget</a></div><div class="ttdeci">void add_widget(const std::string &amp;label, Widget *widget)</div><div class="ttdoc">Add an arbitrary (optionally labeled) widget to the layout.</div><div class="ttdef"><b>Definition:</b> formhelper.h:204</div></div>
+<div class="ttc" id="aclassFormWidget_3_01Color_00_01std_1_1true__type_01_4_html_a66e1f72155f4e37bb3b92eb3f8081180"><div class="ttname"><a href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html#a66e1f72155f4e37bb3b92eb3f8081180">FormWidget&lt; Color, std::true_type &gt;::set_editable</a></div><div class="ttdeci">void set_editable(bool e)</div><div class="ttdoc">Pass-through function for nanogui::Widget::set_enabled.</div><div class="ttdef"><b>Definition:</b> formhelper.h:394</div></div>
+<div class="ttc" id="aclassScreen_html"><div class="ttname"><a href="classScreen.html">Screen</a></div><div class="ttdoc">Represents a display surface (i.e. a full-screen or windowed GLFW window) and forms the root element ...</div><div class="ttdef"><b>Definition:</b> screen.h:30</div></div>
+<div class="ttc" id="aclassFormHelper_html_a5456d4e96abae99800154b6b28dee739"><div class="ttname"><a href="classFormHelper.html#a5456d4e96abae99800154b6b28dee739">FormHelper::add_group</a></div><div class="ttdeci">Label * add_group(const std::string &amp;caption)</div><div class="ttdoc">Add a new group that may contain several sub-widgets.</div><div class="ttdef"><b>Definition:</b> formhelper.h:144</div></div>
+<div class="ttc" id="aclassFormHelper_html_aa8e214e8eac13109f9722dab62287d44"><div class="ttname"><a href="classFormHelper.html#aa8e214e8eac13109f9722dab62287d44">FormHelper::set_group_font_size</a></div><div class="ttdeci">void set_group_font_size(int value)</div><div class="ttdoc">Sets the size of the font being used for group headers.</div><div class="ttdef"><b>Definition:</b> formhelper.h:255</div></div>
+<div class="ttc" id="aclassColorPicker_html"><div class="ttname"><a href="classColorPicker.html">ColorPicker</a></div><div class="ttdoc">Push button with a popup to tweak a color value.</div><div class="ttdef"><b>Definition:</b> colorpicker.h:22</div></div>
+<div class="ttc" id="aclassComboBox_html"><div class="ttname"><a href="classComboBox.html">ComboBox</a></div><div class="ttdoc">Simple combo box widget based on a popup button.</div><div class="ttdef"><b>Definition:</b> combobox.h:26</div></div>
+<div class="ttc" id="aclassFormHelper_html_ab25e24126e596df71c411e6bd677f615"><div class="ttname"><a href="classFormHelper.html#ab25e24126e596df71c411e6bd677f615">FormHelper::set_label_font_name</a></div><div class="ttdeci">void set_label_font_name(const std::string &amp;name)</div><div class="ttdoc">Sets the font name being used for labels.</div><div class="ttdef"><b>Definition:</b> formhelper.h:249</div></div>
+<div class="ttc" id="aclassFormWidget_3_01T_00_01typename_01std_1_1is__integral_3_01T_01_4_1_1type_01_4_html_a86ce8feed102f9c3f82ad1adb11adca6"><div class="ttname"><a href="classFormWidget_3_01T_00_01typename_01std_1_1is__integral_3_01T_01_4_1_1type_01_4.html#a86ce8feed102f9c3f82ad1adb11adca6">FormWidget&lt; T, typename std::is_integral&lt; T &gt;::type &gt;::FormWidget</a></div><div class="ttdeci">FormWidget(Widget *p)</div><div class="ttdoc">Creates a new FormWidget with underlying type IntBox.</div><div class="ttdef"><b>Definition:</b> formhelper.h:353</div></div>
+<div class="ttc" id="acolorpicker_8h_html"><div class="ttname"><a href="colorpicker_8h.html">colorpicker.h</a></div></div>
+<div class="ttc" id="aclassAdvancedGridLayout_html_ad23f087a9bdcbe560b94077d60615851"><div class="ttname"><a href="classAdvancedGridLayout.html#ad23f087a9bdcbe560b94077d60615851">AdvancedGridLayout::set_margin</a></div><div class="ttdeci">void set_margin(int margin)</div><div class="ttdoc">Sets the margin of this AdvancedGridLayout.</div><div class="ttdef"><b>Definition:</b> layout.h:425</div></div>
+<div class="ttc" id="aclassIntBox_html"><div class="ttname"><a href="classIntBox.html">IntBox</a></div><div class="ttdoc">A specialization of TextBox for representing integral values.</div><div class="ttdef"><b>Definition:</b> textbox.h:144</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a12bb24ea980ca8fb1f46b1992bc9c83a"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a></div><div class="ttdeci">#define NAMESPACE_END(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:50</div></div>
+<div class="ttc" id="aclassFormWidget_3_01std_1_1string_00_01std_1_1true__type_01_4_html_a0b2e4cc57696fbfd4fb1730ea2d08752"><div class="ttname"><a href="classFormWidget_3_01std_1_1string_00_01std_1_1true__type_01_4.html#a0b2e4cc57696fbfd4fb1730ea2d08752">FormWidget&lt; std::string, std::true_type &gt;::set_callback</a></div><div class="ttdeci">void set_callback(const std::function&lt; void(const std::string &amp;)&gt; &amp;cb)</div><div class="ttdoc">Pass-through function for nanogui::TextBox::set_callback.</div><div class="ttdef"><b>Definition:</b> formhelper.h:377</div></div>
+<div class="ttc" id="aclassFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4_html_a99f8765e38c5dde9572cfb029ab7e932"><div class="ttname"><a href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#a99f8765e38c5dde9572cfb029ab7e932">FormWidget&lt; T, typename std::is_enum&lt; T &gt;::type &gt;::value</a></div><div class="ttdeci">T value() const</div><div class="ttdoc">Pass-through function for nanogui::ComboBox::selected_index.</div><div class="ttdef"><b>Definition:</b> formhelper.h:330</div></div>
+<div class="ttc" id="aclassFormHelper_html_a7547698e2f86fd5292e9fde3c5a40216"><div class="ttname"><a href="classFormHelper.html#a7547698e2f86fd5292e9fde3c5a40216">FormHelper::m_screen</a></div><div class="ttdeci">ref&lt; Screen &gt; m_screen</div><div class="ttdoc">A reference to the nanogui::Screen this FormHelper is assisting.</div><div class="ttdef"><b>Definition:</b> formhelper.h:271</div></div>
+<div class="ttc" id="aclassFormWidget_3_01bool_00_01std_1_1true__type_01_4_html_a5f0700c6282aa0f34a45f3f8c616fae6"><div class="ttname"><a href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html#a5f0700c6282aa0f34a45f3f8c616fae6">FormWidget&lt; bool, std::true_type &gt;::value</a></div><div class="ttdeci">bool value() const</div><div class="ttdoc">Returns the value of nanogui::CheckBox::checked.</div><div class="ttdef"><b>Definition:</b> formhelper.h:315</div></div>
+<div class="ttc" id="aclassFormWidget_3_01T_00_01typename_01std_1_1is__floating__point_3_01T_01_4_1_1type_01_4_html_a3a5f61c8189313765682524b798f0a64"><div class="ttname"><a href="classFormWidget_3_01T_00_01typename_01std_1_1is__floating__point_3_01T_01_4_1_1type_01_4.html#a3a5f61c8189313765682524b798f0a64">FormWidget&lt; T, typename std::is_floating_point&lt; T &gt;::type &gt;::FormWidget</a></div><div class="ttdeci">FormWidget(Widget *p)</div><div class="ttdoc">Creates a new FormWidget with underlying type FloatBox.</div><div class="ttdef"><b>Definition:</b> formhelper.h:365</div></div>
+<div class="ttc" id="aclassTextBox_html_af29e0a17fd76e109c128647dfd3525f4"><div class="ttname"><a href="classTextBox.html#af29e0a17fd76e109c128647dfd3525f4">TextBox::set_callback</a></div><div class="ttdeci">void set_callback(const std::function&lt; bool(const std::string &amp;str)&gt; &amp;callback)</div><div class="ttdoc">Sets the callback to execute when the value of this TextBox has changed.</div><div class="ttdef"><b>Definition:</b> textbox.h:83</div></div>
+<div class="ttc" id="aclassFormHelper_html_a3ccdcf9393f5e3489ff361dafc069bad"><div class="ttname"><a href="classFormHelper.html#a3ccdcf9393f5e3489ff361dafc069bad">FormHelper::set_group_font_name</a></div><div class="ttdeci">void set_group_font_name(const std::string &amp;name)</div><div class="ttdoc">Sets the font name to be used for group headers.</div><div class="ttdef"><b>Definition:</b> formhelper.h:243</div></div>
+<div class="ttc" id="aclassFormWidget_3_01Color_00_01std_1_1true__type_01_4_html_a5deb8cf15d12de03d4506d0c8d4acb60"><div class="ttname"><a href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html#a5deb8cf15d12de03d4506d0c8d4acb60">FormWidget&lt; Color, std::true_type &gt;::FormWidget</a></div><div class="ttdeci">FormWidget(Widget *p)</div><div class="ttdoc">Creates a new FormWidget with underlying type ColorPicker.</div><div class="ttdef"><b>Definition:</b> formhelper.h:388</div></div>
+<div class="ttc" id="aclassFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4_html_ab2d5619146f93ac9f305ef613c170888"><div class="ttname"><a href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#ab2d5619146f93ac9f305ef613c170888">FormWidget&lt; T, typename std::is_enum&lt; T &gt;::type &gt;::set_value</a></div><div class="ttdeci">void set_value(T value)</div><div class="ttdoc">Pass-through function for nanogui::ComboBox::set_selected_index.</div><div class="ttdef"><b>Definition:</b> formhelper.h:333</div></div>
+<div class="ttc" id="astructAdvancedGridLayout_1_1Anchor_html"><div class="ttname"><a href="structAdvancedGridLayout_1_1Anchor.html">AdvancedGridLayout::Anchor</a></div><div class="ttdoc">Helper struct to coordinate anchor points for the layout.</div><div class="ttdef"><b>Definition:</b> layout.h:385</div></div>
+<div class="ttc" id="aclassButton_html_ac6f2678bdb8e08e65a784a8a1028afd8"><div class="ttname"><a href="classButton.html#ac6f2678bdb8e08e65a784a8a1028afd8">Button::set_callback</a></div><div class="ttdeci">void set_callback(const std::function&lt; void()&gt; &amp;callback)</div><div class="ttdoc">Set the push callback (for any type of button).</div><div class="ttdef"><b>Definition:</b> button.h:97</div></div>
+<div class="ttc" id="aclassFormHelper_html_a0627ce2bb3f5f2959911f574d73b993f"><div class="ttname"><a href="classFormHelper.html#a0627ce2bb3f5f2959911f574d73b993f">FormHelper::label_font_size</a></div><div class="ttdeci">int label_font_size() const</div><div class="ttdoc">The size of the font being used for labels.</div><div class="ttdef"><b>Definition:</b> formhelper.h:258</div></div>
+<div class="ttc" id="aclassFormWidget_3_01std_1_1string_00_01std_1_1true__type_01_4_html_a8125e42fa9754818fc15c454a7088ae3"><div class="ttname"><a href="classFormWidget_3_01std_1_1string_00_01std_1_1true__type_01_4.html#a8125e42fa9754818fc15c454a7088ae3">FormWidget&lt; std::string, std::true_type &gt;::FormWidget</a></div><div class="ttdeci">FormWidget(Widget *p)</div><div class="ttdoc">Creates a new FormWidget with underlying type TextBox.</div><div class="ttdef"><b>Definition:</b> formhelper.h:374</div></div>
+<div class="ttc" id="aclassFormHelper_html_a17b94b6ceb31f994275f95fb95644aa7"><div class="ttname"><a href="classFormHelper.html#a17b94b6ceb31f994275f95fb95644aa7">FormHelper::add_window</a></div><div class="ttdeci">Window * add_window(const Vector2i &amp;pos, const std::string &amp;title=&quot;Untitled&quot;)</div><div class="ttdoc">Add a new top-level window.</div><div class="ttdef"><b>Definition:</b> formhelper.h:130</div></div>
+<div class="ttc" id="aclassFormHelper_html_aae582953481ff613f59ff2bfe6ca891d"><div class="ttname"><a href="classFormHelper.html#aae582953481ff613f59ff2bfe6ca891d">FormHelper::group_font_size</a></div><div class="ttdeci">int group_font_size() const</div><div class="ttdoc">The size of the font being used for group headers.</div><div class="ttdef"><b>Definition:</b> formhelper.h:252</div></div>
+<div class="ttc" id="aclassFormHelper_html_af234a287cd09d0a8406856b87774d6e8"><div class="ttname"><a href="classFormHelper.html#af234a287cd09d0a8406856b87774d6e8">FormHelper::add_button</a></div><div class="ttdeci">Button * add_button(const std::string &amp;label, const std::function&lt; void()&gt; &amp;cb)</div><div class="ttdoc">Add a button with a custom callback.</div><div class="ttdef"><b>Definition:</b> formhelper.h:192</div></div>
+<div class="ttc" id="aclassstr_html"><div class="ttname"><a href="classstr.html">str</a></div><div class="ttdef"><b>Definition:</b> pytypes.h:888</div></div>
+<div class="ttc" id="alabel_8h_html"><div class="ttname"><a href="label_8h.html">label.h</a></div></div>
+<div class="ttc" id="aclassFormHelper_html_ab268b12550246715d8f9bea478f1e3d8"><div class="ttname"><a href="classFormHelper.html#ab268b12550246715d8f9bea478f1e3d8">FormHelper::fixed_size</a></div><div class="ttdeci">Vector2i fixed_size()</div><div class="ttdoc">The current fixed size being used for newly added widgets.</div><div class="ttdef"><b>Definition:</b> formhelper.h:237</div></div>
+<div class="ttc" id="aclassFormWidget_3_01bool_00_01std_1_1true__type_01_4_html_a77fc918eb56df84aa58cc1b01873b687"><div class="ttname"><a href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html#a77fc918eb56df84aa58cc1b01873b687">FormWidget&lt; bool, std::true_type &gt;::FormWidget</a></div><div class="ttdeci">FormWidget(Widget *p)</div><div class="ttdoc">Creates a new FormWidget with underlying type CheckBox.</div><div class="ttdef"><b>Definition:</b> formhelper.h:306</div></div>
+<div class="ttc" id="aclassAdvancedGridLayout_html"><div class="ttname"><a href="classAdvancedGridLayout.html">AdvancedGridLayout</a></div><div class="ttdoc">Advanced Grid layout.</div><div class="ttdef"><b>Definition:</b> layout.h:378</div></div>
+<div class="ttc" id="aclassFormHelper_html_a9e4d61d9eab2c4d6d91911aa28ac66fe"><div class="ttname"><a href="classFormHelper.html#a9e4d61d9eab2c4d6d91911aa28ac66fe">FormHelper::m_layout</a></div><div class="ttdeci">ref&lt; AdvancedGridLayout &gt; m_layout</div><div class="ttdoc">A reference to the nanogui::AdvancedGridLayout this FormHelper is using.</div><div class="ttdef"><b>Definition:</b> formhelper.h:275</div></div>
+<div class="ttc" id="aclassFormHelper_html_aba3b14b0012d1cde916ec9ab64e8ac94"><div class="ttname"><a href="classFormHelper.html#aba3b14b0012d1cde916ec9ab64e8ac94">FormHelper::set_label_font_size</a></div><div class="ttdeci">void set_label_font_size(int value)</div><div class="ttdoc">Sets the size of the font being used for labels.</div><div class="ttdef"><b>Definition:</b> formhelper.h:261</div></div>
+<div class="ttc" id="aclassFormHelper_html_ae6f5da0462663fe7efaa5f41cfcd70e9"><div class="ttname"><a href="classFormHelper.html#ae6f5da0462663fe7efaa5f41cfcd70e9">FormHelper::FormHelper</a></div><div class="ttdeci">FormHelper(Screen *screen)</div><div class="ttdoc">Create a helper class to construct NanoGUI widgets on the given screen.</div><div class="ttdef"><b>Definition:</b> formhelper.h:127</div></div>
+<div class="ttc" id="alayout_8h_html"><div class="ttname"><a href="layout_8h.html">layout.h</a></div><div class="ttdoc">A collection of useful layout managers. The nanogui::GridLayout was contributed by Christian Schuelle...</div></div>
+<div class="ttc" id="aclassFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4_html_a6ac07148e44eac359fd98f6636795732"><div class="ttname"><a href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#a6ac07148e44eac359fd98f6636795732">FormWidget&lt; T, typename std::is_enum&lt; T &gt;::type &gt;::set_callback</a></div><div class="ttdeci">void set_callback(const std::function&lt; void(const T &amp;)&gt; &amp;cb)</div><div class="ttdoc">Pass-through function for nanogui::ComboBox::set_callback.</div><div class="ttdef"><b>Definition:</b> formhelper.h:336</div></div>
+<div class="ttc" id="aclassLabel_html"><div class="ttname"><a href="classLabel.html">Label</a></div><div class="ttdoc">Text label widget.</div><div class="ttdef"><b>Definition:</b> label.h:27</div></div>
+<div class="ttc" id="aclassFormWidget_3_01Color_00_01std_1_1true__type_01_4_html_afcd3421150c1df180789f5cc050ea9a7"><div class="ttname"><a href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html#afcd3421150c1df180789f5cc050ea9a7">FormWidget&lt; Color, std::true_type &gt;::value</a></div><div class="ttdeci">Color value() const</div><div class="ttdoc">Returns the value of nanogui::ColorPicker::color.</div><div class="ttdef"><b>Definition:</b> formhelper.h:397</div></div>
+<div class="ttc" id="aclassref_html"><div class="ttname"><a href="classref.html">ref&lt; Screen &gt;</a></div></div>
+<div class="ttc" id="aclassFormHelper_html_ae8c7a8a0ec943faa9b7d66cdd7bc45fb"><div class="ttname"><a href="classFormHelper.html#ae8c7a8a0ec943faa9b7d66cdd7bc45fb">FormHelper::widget_font_size</a></div><div class="ttdeci">int widget_font_size() const</div><div class="ttdoc">The size of the font being used for non-group / non-label widgets.</div><div class="ttdef"><b>Definition:</b> formhelper.h:264</div></div>
+<div class="ttc" id="aclassFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4_html_a1b0fa57ab454295b810ecff640e87d10"><div class="ttname"><a href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#a1b0fa57ab454295b810ecff640e87d10">FormWidget&lt; T, typename std::is_enum&lt; T &gt;::type &gt;::set_editable</a></div><div class="ttdeci">void set_editable(bool e)</div><div class="ttdoc">Pass-through function for nanogui::Widget::set_enabled.</div><div class="ttdef"><b>Definition:</b> formhelper.h:341</div></div>
+<div class="ttc" id="aclassWidget_html_a4599e3bee0feb318886d5701f6d8b312"><div class="ttname"><a href="classWidget.html#a4599e3bee0feb318886d5701f6d8b312">Widget::set_fixed_height</a></div><div class="ttdeci">void set_fixed_height(int height)</div><div class="ttdoc">Set the fixed height (see set_fixed_size())</div><div class="ttdef"><b>Definition:</b> widget.h:106</div></div>
+<div class="ttc" id="aclassFormHelper_html_a6398b24799910fd36d1faecd4a9fc19c"><div class="ttname"><a href="classFormHelper.html#a6398b24799910fd36d1faecd4a9fc19c">FormHelper::add_variable</a></div><div class="ttdeci">detail::FormWidget&lt; Type &gt; * add_variable(const std::string &amp;label, Type &amp;value, bool editable=true)</div><div class="ttdoc">Add a new data widget that exposes a raw variable in memory.</div><div class="ttdef"><b>Definition:</b> formhelper.h:183</div></div>
+<div class="ttc" id="aclassFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4_html_ac832cc8543d44a944363da03678ab3a8"><div class="ttname"><a href="classFormWidget_3_01T_00_01typename_01std_1_1is__enum_3_01T_01_4_1_1type_01_4.html#ac832cc8543d44a944363da03678ab3a8">FormWidget&lt; T, typename std::is_enum&lt; T &gt;::type &gt;::FormWidget</a></div><div class="ttdeci">FormWidget(Widget *p)</div><div class="ttdoc">Creates a new FormWidget with underlying type ComboBox.</div><div class="ttdef"><b>Definition:</b> formhelper.h:327</div></div>
+<div class="ttc" id="aclassFormWidget_3_01Color_00_01std_1_1true__type_01_4_html_aaa8552831e14e44b9dc524518b950976"><div class="ttname"><a href="classFormWidget_3_01Color_00_01std_1_1true__type_01_4.html#aaa8552831e14e44b9dc524518b950976">FormWidget&lt; Color, std::true_type &gt;::set_value</a></div><div class="ttdeci">void set_value(const Color &amp;c)</div><div class="ttdoc">Pass-through function for nanogui::ColorPicker::set_color.</div><div class="ttdef"><b>Definition:</b> formhelper.h:391</div></div>
+<div class="ttc" id="aclassFormWidget_html"><div class="ttname"><a href="classFormWidget.html">FormWidget</a></div><div class="ttdoc">A template wrapper class for assisting in the creation of various form widgets.</div><div class="ttdef"><b>Definition:</b> formhelper.h:86</div></div>
+<div class="ttc" id="atextbox_8h_html"><div class="ttname"><a href="textbox_8h.html">textbox.h</a></div></div>
+<div class="ttc" id="acombobox_8h_html"><div class="ttname"><a href="combobox_8h.html">combobox.h</a></div><div class="ttdoc">Simple combo box widget based on a popup button.</div></div>
+<div class="ttc" id="aclassFormHelper_html_acb569e79b8e31cf6fc4b40e67e4ea8ac"><div class="ttname"><a href="classFormHelper.html#acb569e79b8e31cf6fc4b40e67e4ea8ac">FormHelper::refresh</a></div><div class="ttdeci">void refresh()</div><div class="ttdoc">Cause all widgets to re-synchronize with the underlying variable state.</div><div class="ttdef"><b>Definition:</b> formhelper.h:216</div></div>
+<div class="ttc" id="aclassFormHelper_html_ac6b72b051ad0804863ce43e9d1f0cf35"><div class="ttname"><a href="classFormHelper.html#ac6b72b051ad0804863ce43e9d1f0cf35">FormHelper::set_fixed_size</a></div><div class="ttdeci">void set_fixed_size(const Vector2i &amp;fw)</div><div class="ttdoc">Specify a fixed size for newly added widgets.</div><div class="ttdef"><b>Definition:</b> formhelper.h:234</div></div>
+<div class="ttc" id="aclassFloatBox_html"><div class="ttname"><a href="classFloatBox.html">FloatBox</a></div><div class="ttdoc">A specialization of TextBox representing floating point values.</div><div class="ttdef"><b>Definition:</b> textbox.h:262</div></div>
+<div class="ttc" id="aclassFormHelper_html_a7f4f9b685e8a657356a9ed797d18859b"><div class="ttname"><a href="classFormHelper.html#a7f4f9b685e8a657356a9ed797d18859b">FormHelper::group_font_name</a></div><div class="ttdeci">const std::string &amp; group_font_name() const</div><div class="ttdoc">The font name being used for group headers.</div><div class="ttdef"><b>Definition:</b> formhelper.h:240</div></div>
+<div class="ttc" id="aclassTextBox_html"><div class="ttname"><a href="classTextBox.html">TextBox</a></div><div class="ttdoc">Multi-line read-only text widget, ideal for displaying log messages etc.</div><div class="ttdef"><b>Definition:</b> textbox.h:34</div></div>
+<div class="ttc" id="aclassColor_html"><div class="ttname"><a href="classColor.html">Color</a></div><div class="ttdoc">Stores an RGBA floating point color value.</div><div class="ttdef"><b>Definition:</b> common.h:175</div></div>
+<div class="ttc" id="aclassFormWidget_3_01bool_00_01std_1_1true__type_01_4_html_a55e0f82d7797e26c018e6b153394509a"><div class="ttname"><a href="classFormWidget_3_01bool_00_01std_1_1true__type_01_4.html#a55e0f82d7797e26c018e6b153394509a">FormWidget&lt; bool, std::true_type &gt;::set_editable</a></div><div class="ttdeci">void set_editable(bool e)</div><div class="ttdoc">Pass-through function for nanogui::Widget::set-enabled.</div><div class="ttdef"><b>Definition:</b> formhelper.h:312</div></div>
+<div class="ttc" id="aclassFormHelper_html"><div class="ttname"><a href="classFormHelper.html">FormHelper</a></div><div class="ttdoc">Convenience class to create simple AntTweakBar-style layouts that expose variables of various types u...</div><div class="ttdef"><b>Definition:</b> formhelper.h:124</div></div>
+<div class="ttc" id="aclassCheckBox_html"><div class="ttname"><a href="classCheckBox.html">CheckBox</a></div><div class="ttdoc">Two-state check box widget.</div><div class="ttdef"><b>Definition:</b> checkbox.h:31</div></div>
+<div class="ttc" id="aclassFormHelper_html_a53a4ad3992c747f28497c22b428212ec"><div class="ttname"><a href="classFormHelper.html#a53a4ad3992c747f28497c22b428212ec">FormHelper::set_widget_font_size</a></div><div class="ttdeci">void set_widget_font_size(int value)</div><div class="ttdoc">Sets the size of the font being used for non-group / non-label widgets.</div><div class="ttdef"><b>Definition:</b> formhelper.h:267</div></div>
+<div class="ttc" id="aclassWidget_html"><div class="ttname"><a href="classWidget.html">Widget</a></div><div class="ttdoc">Base class of all widgets.</div><div class="ttdef"><b>Definition:</b> test_interpreter.cpp:18</div></div>
+<div class="ttc" id="aclassFormHelper_html_a05a243312d572da28aa24c4b0ffc967b"><div class="ttname"><a href="classFormHelper.html#a05a243312d572da28aa24c4b0ffc967b">FormHelper::set_window</a></div><div class="ttdeci">void set_window(Window *window)</div><div class="ttdoc">Set the active Window instance.</div><div class="ttdef"><b>Definition:</b> formhelper.h:225</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+    <ul>
+        <li class="navelem"><a class="el" href="dir_31cedd4509e06940f559c1ca2f722e02.html">ext</a></li><li class="navelem"><a class="el" href="dir_3b52d0ee0647600b951b1b620984dcd1.html">nanogui</a></li><li class="navelem"><a class="el" href="dir_5721e7ee5207c0c2918a589ae1107b9a.html">include</a></li><li class="navelem"><a class="el" href="dir_7c8bd28dcb08b6a153cc19ab5789aba5.html">nanogui</a></li><li class="navelem"><a class="el" href="formhelper_8h.html">formhelper.h</a></li>
+        <li class="footer">
+            Generated on Dimanche 24 Novembre 2019 18:11:48 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
+            Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
+        </li>
+    </ul>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>

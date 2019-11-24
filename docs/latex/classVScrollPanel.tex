@@ -1,0 +1,82 @@
+\hypertarget{classVScrollPanel}{}\doxysection{Référence de la classe V\+Scroll\+Panel}
+\label{classVScrollPanel}\index{VScrollPanel@{VScrollPanel}}
+
+
+Adds a vertical scrollbar around a widget that is too big to fit into a certain area.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/vscrollpanel.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de V\+Scroll\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classVScrollPanel}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVScrollPanel_adef891163a1d2a6da30260f5548e1b4a}\label{classVScrollPanel_adef891163a1d2a6da30260f5548e1b4a}} 
+{\bfseries V\+Scroll\+Panel} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}})
+\item 
+float \mbox{\hyperlink{classVScrollPanel_affaff0a256d9f98dd79241605eb7b9dd}{scroll}} () const
+\item 
+void \mbox{\hyperlink{classVScrollPanel_a6c1b0b7cd81a952357c2e6092012d912}{set\+\_\+scroll}} (float \mbox{\hyperlink{classVScrollPanel_affaff0a256d9f98dd79241605eb7b9dd}{scroll}})
+\item 
+\mbox{\Hypertarget{classVScrollPanel_aae38dee978335ae7e9f4ccef83a21788}\label{classVScrollPanel_aae38dee978335ae7e9f4ccef83a21788}} 
+virtual void \mbox{\hyperlink{classVScrollPanel_aae38dee978335ae7e9f4ccef83a21788}{perform\+\_\+layout}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Invoke the associated layout generator to properly place child widgets, if any. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVScrollPanel_aa0740947530440a003e6aa2954a1910f}\label{classVScrollPanel_aa0740947530440a003e6aa2954a1910f}} 
+virtual Vector2i \mbox{\hyperlink{classVScrollPanel_aa0740947530440a003e6aa2954a1910f}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const override
+\begin{DoxyCompactList}\small\item\em Compute the preferred size of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVScrollPanel_a640c70fa8a412abd16b3c285b47e62c5}\label{classVScrollPanel_a640c70fa8a412abd16b3c285b47e62c5}} 
+virtual bool \mbox{\hyperlink{classVScrollPanel_a640c70fa8a412abd16b3c285b47e62c5}{mouse\+\_\+button\+\_\+event}} (const Vector2i \&p, int button, bool down, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse button event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVScrollPanel_a2618b24ba2e550fc5b684b791ac6f9df}\label{classVScrollPanel_a2618b24ba2e550fc5b684b791ac6f9df}} 
+virtual bool \mbox{\hyperlink{classVScrollPanel_a2618b24ba2e550fc5b684b791ac6f9df}{mouse\+\_\+drag\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse drag event (default implementation\+: do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVScrollPanel_ab8d6c831bb62dad9bebdc244c5b7204c}\label{classVScrollPanel_ab8d6c831bb62dad9bebdc244c5b7204c}} 
+virtual bool \mbox{\hyperlink{classVScrollPanel_ab8d6c831bb62dad9bebdc244c5b7204c}{scroll\+\_\+event}} (const Vector2i \&p, const \mbox{\hyperlink{structArray}{Vector2f}} \&rel) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse scroll event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVScrollPanel_adcbd92209833cd4fed8b30363d86a50b}\label{classVScrollPanel_adcbd92209833cd4fed8b30363d86a50b}} 
+virtual void \mbox{\hyperlink{classVScrollPanel_adcbd92209833cd4fed8b30363d86a50b}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draw the widget (and all child widgets) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVScrollPanel_aa703e83ad83a8044141ef774610a4e7f}\label{classVScrollPanel_aa703e83ad83a8044141ef774610a4e7f}} 
+int {\bfseries m\+\_\+child\+\_\+preferred\+\_\+height}
+\item 
+\mbox{\Hypertarget{classVScrollPanel_a470508af061dee957c96664b9d8fc1de}\label{classVScrollPanel_a470508af061dee957c96664b9d8fc1de}} 
+float {\bfseries m\+\_\+scroll}
+\item 
+\mbox{\Hypertarget{classVScrollPanel_a50139dadf3ba1ce97c0dc224517b046b}\label{classVScrollPanel_a50139dadf3ba1ce97c0dc224517b046b}} 
+bool {\bfseries m\+\_\+update\+\_\+layout}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+Adds a vertical scrollbar around a widget that is too big to fit into a certain area. 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classVScrollPanel_affaff0a256d9f98dd79241605eb7b9dd}\label{classVScrollPanel_affaff0a256d9f98dd79241605eb7b9dd}} 
+\index{VScrollPanel@{VScrollPanel}!scroll@{scroll}}
+\index{scroll@{scroll}!VScrollPanel@{VScrollPanel}}
+\doxysubsubsection{\texorpdfstring{scroll()}{scroll()}}
+{\footnotesize\ttfamily float V\+Scroll\+Panel\+::scroll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the current scroll amount as a value between 0 and 1. 0 means scrolled to the top and 1 to the bottom. \mbox{\Hypertarget{classVScrollPanel_a6c1b0b7cd81a952357c2e6092012d912}\label{classVScrollPanel_a6c1b0b7cd81a952357c2e6092012d912}} 
+\index{VScrollPanel@{VScrollPanel}!set\_scroll@{set\_scroll}}
+\index{set\_scroll@{set\_scroll}!VScrollPanel@{VScrollPanel}}
+\doxysubsubsection{\texorpdfstring{set\_scroll()}{set\_scroll()}}
+{\footnotesize\ttfamily void V\+Scroll\+Panel\+::set\+\_\+scroll (\begin{DoxyParamCaption}\item[{float}]{scroll }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the scroll amount to a value between 0 and 1. 0 means scrolled to the top and 1 to the bottom. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{vscrollpanel_8h}{vscrollpanel.\+h}}\item 
+ext/nanogui/src/vscrollpanel.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,70 @@
+\hypertarget{classmodule}{}\doxysection{Référence de la classe module}
+\label{classmodule}\index{module@{module}}
+
+
+Wrapper for Python extension modules.  
+
+
+
+
+{\ttfamily \#include $<$pybind11.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classmodule}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodule_abd798017921903073343c4479efb93c0}\label{classmodule_abd798017921903073343c4479efb93c0}} 
+\mbox{\hyperlink{classmodule_abd798017921903073343c4479efb93c0}{module}} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const char $\ast$\mbox{\hyperlink{structdoc}{doc}}=nullptr)
+\begin{DoxyCompactList}\small\item\em Create a new top-\/level Python module with the given name and docstring. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Func , typename... Extra$>$ }\\\mbox{\hyperlink{classmodule}{module}} \& \mbox{\hyperlink{classmodule_ab17b2e694f8a83305c1b707363a1ccdf}{def}} (const char $\ast$name\+\_\+, Func \&\&f, const Extra \&... extra)
+\item 
+\mbox{\hyperlink{classmodule}{module}} \mbox{\hyperlink{classmodule_a0e559dd7ef70d0edd90d0327ddbd0c12}{def\+\_\+submodule}} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const char $\ast$\mbox{\hyperlink{structdoc}{doc}}=nullptr)
+\item 
+\mbox{\Hypertarget{classmodule_a6ca13662c15143718888ae5cb13094b0}\label{classmodule_a6ca13662c15143718888ae5cb13094b0}} 
+void \mbox{\hyperlink{classmodule_a6ca13662c15143718888ae5cb13094b0}{reload}} ()
+\begin{DoxyCompactList}\small\item\em Reload the module or throws {\ttfamily \mbox{\hyperlink{classerror__already__set}{error\+\_\+already\+\_\+set}}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodule_a96d24a509c6c0fc2beb7afa62dc9eb18}\label{classmodule_a96d24a509c6c0fc2beb7afa62dc9eb18}} 
+P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE void {\bfseries add\+\_\+object} (const char $\ast$\mbox{\hyperlink{structname}{name}}, \mbox{\hyperlink{classhandle}{handle}} obj, bool overwrite=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodule_a40817edef0ded5727701534bcded9982}\label{classmodule_a40817edef0ded5727701534bcded9982}} 
+static \mbox{\hyperlink{classmodule}{module}} \mbox{\hyperlink{classmodule_a40817edef0ded5727701534bcded9982}{import}} (const char $\ast$\mbox{\hyperlink{structname}{name}})
+\begin{DoxyCompactList}\small\item\em Import and return a module or throws {\ttfamily \mbox{\hyperlink{classerror__already__set}{error\+\_\+already\+\_\+set}}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+Wrapper for Python extension modules. 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classmodule_ab17b2e694f8a83305c1b707363a1ccdf}\label{classmodule_ab17b2e694f8a83305c1b707363a1ccdf}} 
+\index{module@{module}!def@{def}}
+\index{def@{def}!module@{module}}
+\doxysubsubsection{\texorpdfstring{def()}{def()}}
+{\footnotesize\ttfamily template$<$typename Func , typename... Extra$>$ \\
+\mbox{\hyperlink{classmodule}{module}}\& module\+::def (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name\+\_\+,  }\item[{Func \&\&}]{f,  }\item[{const Extra \&...}]{extra }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{}rst Create Python binding for a new function within the module scope. {\ttfamily Func} can be a plain C++ function, a function pointer, or a lambda function. For details on the {\ttfamily Extra\&\& ... extra} argument, see section \+:ref\+:{\ttfamily extras}. \textbackslash{}endrst \mbox{\Hypertarget{classmodule_a0e559dd7ef70d0edd90d0327ddbd0c12}\label{classmodule_a0e559dd7ef70d0edd90d0327ddbd0c12}} 
+\index{module@{module}!def\_submodule@{def\_submodule}}
+\index{def\_submodule@{def\_submodule}!module@{module}}
+\doxysubsubsection{\texorpdfstring{def\_submodule()}{def\_submodule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmodule}{module}} module\+::def\+\_\+submodule (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{doc = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{}rst Create and return a new Python submodule with the given name and docstring. This also works recursively, i.\+e.
+
+.. code-\/block\+:: cpp \begin{DoxyVerb}py::module m("example", "pybind11 example plugin");
+py::module m2 = m.def_submodule("sub", "A submodule of 'example'");
+py::module m3 = m2.def_submodule("subsub", "A submodule of 'example.sub'");
+\end{DoxyVerb}
+ \textbackslash{}endrst 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/pybind11.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,181 @@
+\hypertarget{classRenderPass}{}\doxysection{Référence de la classe Render\+Pass}
+\label{classRenderPass}\index{RenderPass@{RenderPass}}
+Graphe d\textquotesingle{}héritage de Render\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRenderPass}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRenderPass_a38e2ed2dc427efd8ac5605c6b766c4a2}\label{classRenderPass_a38e2ed2dc427efd8ac5605c6b766c4a2}} 
+enum \mbox{\hyperlink{classRenderPass_a38e2ed2dc427efd8ac5605c6b766c4a2}{Depth\+Test}} \{ \newline
+{\bfseries Never}, 
+{\bfseries Less}, 
+{\bfseries Equal}, 
+{\bfseries Less\+Equal}, 
+\newline
+{\bfseries Greater}, 
+{\bfseries Not\+Equal}, 
+{\bfseries Greater\+Equal}, 
+{\bfseries Always}
+ \}
+\begin{DoxyCompactList}\small\item\em Depth test. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_a80f52d9b59a769aec3e0bc2386a8411c}\label{classRenderPass_a80f52d9b59a769aec3e0bc2386a8411c}} 
+enum \mbox{\hyperlink{classRenderPass_a80f52d9b59a769aec3e0bc2386a8411c}{Cull\+Mode}} \{ {\bfseries Disabled}, 
+{\bfseries Front}, 
+{\bfseries Back}
+ \}
+\begin{DoxyCompactList}\small\item\em Culling mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRenderPass_abfe225287aa03045e4befde14d6a62ef}{Render\+Pass}} (std\+::vector$<$ \mbox{\hyperlink{classObject}{Object}} $\ast$ $>$ color\+\_\+targets, \mbox{\hyperlink{classObject}{Object}} $\ast$depth\+\_\+target=nullptr, \mbox{\hyperlink{classObject}{Object}} $\ast$stencil\+\_\+target=nullptr, \mbox{\hyperlink{classObject}{Object}} $\ast$blit\+\_\+target=nullptr, bool clear=true)
+\begin{DoxyCompactList}\small\item\em Create a new render pass for rendering to a specific set of targets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRenderPass_a9196b567fe71202d06c29259e2cf0dd9}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Begin the render pass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_ad4c2cf5fd1519461f4ec1c86b9859e3e}\label{classRenderPass_ad4c2cf5fd1519461f4ec1c86b9859e3e}} 
+void \mbox{\hyperlink{classRenderPass_ad4c2cf5fd1519461f4ec1c86b9859e3e}{end}} ()
+\begin{DoxyCompactList}\small\item\em Finish the render pass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_a83b5ac819063765239221942caf74a0d}\label{classRenderPass_a83b5ac819063765239221942caf74a0d}} 
+const \mbox{\hyperlink{classColor}{Color}} \& \mbox{\hyperlink{classRenderPass_a83b5ac819063765239221942caf74a0d}{clear\+\_\+color}} (size\+\_\+t index) const
+\begin{DoxyCompactList}\small\item\em Return the clear color for a given color attachment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_a6676dd1546f16b50622032c55313d8fb}\label{classRenderPass_a6676dd1546f16b50622032c55313d8fb}} 
+void \mbox{\hyperlink{classRenderPass_a6676dd1546f16b50622032c55313d8fb}{set\+\_\+clear\+\_\+color}} (size\+\_\+t index, const \mbox{\hyperlink{classColor}{Color}} \&color)
+\begin{DoxyCompactList}\small\item\em Set the clear color for a given color attachment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_a73fa04ef815438b7e9590ba902d4bbfb}\label{classRenderPass_a73fa04ef815438b7e9590ba902d4bbfb}} 
+float \mbox{\hyperlink{classRenderPass_a73fa04ef815438b7e9590ba902d4bbfb}{clear\+\_\+depth}} () const
+\begin{DoxyCompactList}\small\item\em Return the clear depth for the depth attachment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_adabb1c44abcd29744dfbb1b18eb3d229}\label{classRenderPass_adabb1c44abcd29744dfbb1b18eb3d229}} 
+void \mbox{\hyperlink{classRenderPass_adabb1c44abcd29744dfbb1b18eb3d229}{set\+\_\+clear\+\_\+depth}} (float depth)
+\begin{DoxyCompactList}\small\item\em Set the clear depth for the depth attachment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_a809f067c9f03ffcfbaf7eea3b8245577}\label{classRenderPass_a809f067c9f03ffcfbaf7eea3b8245577}} 
+uint8\+\_\+t \mbox{\hyperlink{classRenderPass_a809f067c9f03ffcfbaf7eea3b8245577}{clear\+\_\+stencil}} () const
+\begin{DoxyCompactList}\small\item\em Return the clear stencil for the stencil attachment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_aeab9c24ca1d6424265a75f2cc3fdbcb3}\label{classRenderPass_aeab9c24ca1d6424265a75f2cc3fdbcb3}} 
+void \mbox{\hyperlink{classRenderPass_aeab9c24ca1d6424265a75f2cc3fdbcb3}{set\+\_\+clear\+\_\+stencil}} (uint8\+\_\+t stencil)
+\begin{DoxyCompactList}\small\item\em Set the clear stencil for the stencil attachment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_a19234db2c78b113e9c0da528e6e9879a}\label{classRenderPass_a19234db2c78b113e9c0da528e6e9879a}} 
+void \mbox{\hyperlink{classRenderPass_a19234db2c78b113e9c0da528e6e9879a}{set\+\_\+depth\+\_\+test}} (\mbox{\hyperlink{classRenderPass_a38e2ed2dc427efd8ac5605c6b766c4a2}{Depth\+Test}} \mbox{\hyperlink{classRenderPass_a1b1390062bb28740cd6c1b81fecd9886}{depth\+\_\+test}}, bool depth\+\_\+write)
+\begin{DoxyCompactList}\small\item\em Specify the depth test and depth write mask of this render pass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_a1b1390062bb28740cd6c1b81fecd9886}\label{classRenderPass_a1b1390062bb28740cd6c1b81fecd9886}} 
+std\+::pair$<$ \mbox{\hyperlink{classRenderPass_a38e2ed2dc427efd8ac5605c6b766c4a2}{Depth\+Test}}, bool $>$ \mbox{\hyperlink{classRenderPass_a1b1390062bb28740cd6c1b81fecd9886}{depth\+\_\+test}} () const
+\begin{DoxyCompactList}\small\item\em Return the depth test and depth write mask of this render pass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_a4740f35a214bd8dc62c3127bee069122}\label{classRenderPass_a4740f35a214bd8dc62c3127bee069122}} 
+void \mbox{\hyperlink{classRenderPass_a4740f35a214bd8dc62c3127bee069122}{set\+\_\+viewport}} (const Vector2i \&offset, const Vector2i \&size)
+\begin{DoxyCompactList}\small\item\em Set the pixel offset and size of the viewport region. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_a0b5e0ef0dc9ed621fdc153004b06ca95}\label{classRenderPass_a0b5e0ef0dc9ed621fdc153004b06ca95}} 
+std\+::pair$<$ Vector2i, Vector2i $>$ \mbox{\hyperlink{classRenderPass_a0b5e0ef0dc9ed621fdc153004b06ca95}{viewport}} ()
+\begin{DoxyCompactList}\small\item\em Return the pixel offset and size of the viewport region. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_ad1609b7bb89e15a33153c1427316e270}\label{classRenderPass_ad1609b7bb89e15a33153c1427316e270}} 
+void \mbox{\hyperlink{classRenderPass_ad1609b7bb89e15a33153c1427316e270}{set\+\_\+cull\+\_\+mode}} (\mbox{\hyperlink{classRenderPass_a80f52d9b59a769aec3e0bc2386a8411c}{Cull\+Mode}} mode)
+\begin{DoxyCompactList}\small\item\em Specify the culling mode associated with the render pass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_af4dddea43234a65f3dbed20e3b093c18}\label{classRenderPass_af4dddea43234a65f3dbed20e3b093c18}} 
+\mbox{\hyperlink{classRenderPass_a80f52d9b59a769aec3e0bc2386a8411c}{Cull\+Mode}} \mbox{\hyperlink{classRenderPass_af4dddea43234a65f3dbed20e3b093c18}{cull\+\_\+mode}} () const
+\begin{DoxyCompactList}\small\item\em Return the culling mode associated with the render pass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_a55a3815c202e762b00bb1d82eb89e3e9}\label{classRenderPass_a55a3815c202e762b00bb1d82eb89e3e9}} 
+std\+::vector$<$ \mbox{\hyperlink{classref}{ref}}$<$ \mbox{\hyperlink{classObject}{Object}} $>$ $>$ \& \mbox{\hyperlink{classRenderPass_a55a3815c202e762b00bb1d82eb89e3e9}{targets}} ()
+\begin{DoxyCompactList}\small\item\em Return the set of all render targets (including depth + stencil) associated with this render pass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderPass_afe97586054131807812c8dec00c705e2}\label{classRenderPass_afe97586054131807812c8dec00c705e2}} 
+void \mbox{\hyperlink{classRenderPass_afe97586054131807812c8dec00c705e2}{resize}} (const Vector2i \&size)
+\begin{DoxyCompactList}\small\item\em Resize all texture targets attached to the render pass. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRenderPass_a5a0da4c817d00a7559cbfb93e2f47f5e}{blit\+\_\+to}} (const Vector2i \&src\+\_\+offset, const Vector2i \&src\+\_\+size, \mbox{\hyperlink{classObject}{Object}} $\ast$dst, const Vector2i \&dst\+\_\+offset)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRenderPass_a43fbbbf452bcfb14b7a05a75406adabf}\label{classRenderPass_a43fbbbf452bcfb14b7a05a75406adabf}} 
+std\+::vector$<$ \mbox{\hyperlink{classref}{ref}}$<$ \mbox{\hyperlink{classObject}{Object}} $>$ $>$ {\bfseries m\+\_\+targets}
+\item 
+\mbox{\Hypertarget{classRenderPass_a46580f0a32670ea836be324a5c9dcdc4}\label{classRenderPass_a46580f0a32670ea836be324a5c9dcdc4}} 
+bool {\bfseries m\+\_\+clear}
+\item 
+\mbox{\Hypertarget{classRenderPass_a70302128f1ea3f9fcd4457b5cd91861f}\label{classRenderPass_a70302128f1ea3f9fcd4457b5cd91861f}} 
+std\+::vector$<$ \mbox{\hyperlink{classColor}{Color}} $>$ {\bfseries m\+\_\+clear\+\_\+color}
+\item 
+\mbox{\Hypertarget{classRenderPass_a89ce631bfa6fbbd609aef5ffcfeff577}\label{classRenderPass_a89ce631bfa6fbbd609aef5ffcfeff577}} 
+float {\bfseries m\+\_\+clear\+\_\+depth}
+\item 
+\mbox{\Hypertarget{classRenderPass_a3b7c37d9d4bf7731a2dd8e03c2e90214}\label{classRenderPass_a3b7c37d9d4bf7731a2dd8e03c2e90214}} 
+uint8\+\_\+t {\bfseries m\+\_\+clear\+\_\+stencil}
+\item 
+\mbox{\Hypertarget{classRenderPass_aa7b0e2958458a4bffa0b34ef5e9a53f3}\label{classRenderPass_aa7b0e2958458a4bffa0b34ef5e9a53f3}} 
+Vector2i {\bfseries m\+\_\+viewport\+\_\+offset}
+\item 
+\mbox{\Hypertarget{classRenderPass_a07cfb8b8ce9a4e797bdd2b02a82e12c4}\label{classRenderPass_a07cfb8b8ce9a4e797bdd2b02a82e12c4}} 
+Vector2i {\bfseries m\+\_\+viewport\+\_\+size}
+\item 
+\mbox{\Hypertarget{classRenderPass_af166a63b03a67034db7c51041ce30935}\label{classRenderPass_af166a63b03a67034db7c51041ce30935}} 
+Vector2i {\bfseries m\+\_\+framebuffer\+\_\+size}
+\item 
+\mbox{\Hypertarget{classRenderPass_a32b5bd10ede37af0bc1ef78a12157182}\label{classRenderPass_a32b5bd10ede37af0bc1ef78a12157182}} 
+\mbox{\hyperlink{classRenderPass_a38e2ed2dc427efd8ac5605c6b766c4a2}{Depth\+Test}} {\bfseries m\+\_\+depth\+\_\+test}
+\item 
+\mbox{\Hypertarget{classRenderPass_af431076c835114dfe7737c7782c3b00d}\label{classRenderPass_af431076c835114dfe7737c7782c3b00d}} 
+bool {\bfseries m\+\_\+depth\+\_\+write}
+\item 
+\mbox{\Hypertarget{classRenderPass_a405006f8b42f478dedc31081bc0c62f9}\label{classRenderPass_a405006f8b42f478dedc31081bc0c62f9}} 
+\mbox{\hyperlink{classRenderPass_a80f52d9b59a769aec3e0bc2386a8411c}{Cull\+Mode}} {\bfseries m\+\_\+cull\+\_\+mode}
+\item 
+\mbox{\Hypertarget{classRenderPass_ab70c1cfa305597805d596cfce64118af}\label{classRenderPass_ab70c1cfa305597805d596cfce64118af}} 
+\mbox{\hyperlink{classref}{ref}}$<$ \mbox{\hyperlink{classObject}{Object}} $>$ {\bfseries m\+\_\+blit\+\_\+target}
+\item 
+\mbox{\Hypertarget{classRenderPass_a6c14c871237de161d6394eb233309165}\label{classRenderPass_a6c14c871237de161d6394eb233309165}} 
+bool {\bfseries m\+\_\+active}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classRenderPass_abfe225287aa03045e4befde14d6a62ef}\label{classRenderPass_abfe225287aa03045e4befde14d6a62ef}} 
+\index{RenderPass@{RenderPass}!RenderPass@{RenderPass}}
+\index{RenderPass@{RenderPass}!RenderPass@{RenderPass}}
+\doxysubsubsection{\texorpdfstring{RenderPass()}{RenderPass()}}
+{\footnotesize\ttfamily Render\+Pass\+::\+Render\+Pass (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classObject}{Object}} $\ast$ $>$}]{color\+\_\+targets,  }\item[{\mbox{\hyperlink{classObject}{Object}} $\ast$}]{depth\+\_\+target = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classObject}{Object}} $\ast$}]{stencil\+\_\+target = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classObject}{Object}} $\ast$}]{blit\+\_\+target = {\ttfamily nullptr},  }\item[{bool}]{clear = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Create a new render pass for rendering to a specific set of targets. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em color\+\_\+targets} & One or more target objects to which color information will be rendered. Must either be a \mbox{\hyperlink{classScreen}{Screen}} or a \mbox{\hyperlink{classTexture}{Texture}} instance.\\
+\hline
+{\em depth\+\_\+target} & Target object to which depth information will be rendered. Must either be {\ttfamily N\+U\+LL} or a \mbox{\hyperlink{classTexture}{Texture}} instance.\\
+\hline
+{\em stencil\+\_\+target} & Target object to which stencil information will be rendered. Must either be {\ttfamily N\+U\+LL} or a \mbox{\hyperlink{classTexture}{Texture}} instance. Can be identical to \textquotesingle{}depth\+\_\+target\textquotesingle{} in case the texture has the pixel format \mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6a2fa8076285272883c91e14402975a441}{Texture\+::\+Pixel\+Format\+::\+Depth\+Stencil}}.\\
+\hline
+{\em blit\+\_\+target} & When rendering finishes, the render pass can (optionally) blit the framebuffer to another target (which can either be another \mbox{\hyperlink{classRenderPass}{Render\+Pass}} instance or a \mbox{\hyperlink{classScreen}{Screen}} instance). This is mainly useful for multisample antialiasing (M\+S\+AA) rendering where set of multi-\/sample framebuffers must be converted into ordinary framebuffers for display.\\
+\hline
+{\em clear} & Should enter() begin by clearing all buffers? \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classRenderPass_a9196b567fe71202d06c29259e2cf0dd9}\label{classRenderPass_a9196b567fe71202d06c29259e2cf0dd9}} 
+\index{RenderPass@{RenderPass}!begin@{begin}}
+\index{begin@{begin}!RenderPass@{RenderPass}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Render\+Pass\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Begin the render pass. 
+
+The specified drawing state (e.\+g. depth tests, culling mode, blending mode) are automatically set up at this point. Later changes between \mbox{\hyperlink{classRenderPass_a9196b567fe71202d06c29259e2cf0dd9}{begin()}} and \mbox{\hyperlink{classRenderPass_ad4c2cf5fd1519461f4ec1c86b9859e3e}{end()}} are possible but cause additional Open\+G\+L/\+G\+L\+E\+S/\+Metal A\+PI calls.
+
+The Python bindings also include extra {\ttfamily {\bfseries{enter}}} and {\ttfamily {\bfseries{exit}}} aliases so that the render pass can be activated via Pythons \textquotesingle{}with\textquotesingle{} statement. \mbox{\Hypertarget{classRenderPass_a5a0da4c817d00a7559cbfb93e2f47f5e}\label{classRenderPass_a5a0da4c817d00a7559cbfb93e2f47f5e}} 
+\index{RenderPass@{RenderPass}!blit\_to@{blit\_to}}
+\index{blit\_to@{blit\_to}!RenderPass@{RenderPass}}
+\doxysubsubsection{\texorpdfstring{blit\_to()}{blit\_to()}}
+{\footnotesize\ttfamily void Render\+Pass\+::blit\+\_\+to (\begin{DoxyParamCaption}\item[{const Vector2i \&}]{src\+\_\+offset,  }\item[{const Vector2i \&}]{src\+\_\+size,  }\item[{\mbox{\hyperlink{classObject}{Object}} $\ast$}]{dst,  }\item[{const Vector2i \&}]{dst\+\_\+offset }\end{DoxyParamCaption})}
+
+Blit the framebuffer to another target (which can either be another \mbox{\hyperlink{classRenderPass}{Render\+Pass}} instance or a \mbox{\hyperlink{classScreen}{Screen}} instance). 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{renderpass_8h}{renderpass.\+h}}\item 
+ext/nanogui/src/renderpass\+\_\+gl.\+cpp\item 
+ext/nanogui/src/renderpass\+\_\+metal.\+mm\end{DoxyCompactItemize}

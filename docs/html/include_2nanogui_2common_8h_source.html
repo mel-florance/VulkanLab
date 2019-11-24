@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.8.16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vulkan Lab:  Fichier source de ext/nanogui/include/nanogui/common.h</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">Vulkan Lab
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part --><!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('include_2nanogui_2common_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">common.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="include_2nanogui_2common_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    NanoGUI was developed by Wenzel Jakob &lt;wenzel.jakob@epfl.ch&gt;.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">    The widget drawing code is based on the NanoVG demo application</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    by Mikko Mononen.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    All rights reserved. Use of this source code is governed by a</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    BSD-style license that can be found in the LICENSE.txt file.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;enoki/array.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/* Set to 1 to draw boxes around widgets */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//#define NANOGUI_SHOW_WIDGET_BOUNDS 1</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if !defined(NAMESPACE_BEGIN) || defined(DOXYGEN_DOCUMENTATION_BUILD)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">   38</a></span>&#160;<span class="preprocessor">    #define NAMESPACE_BEGIN(name) namespace name {</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if !defined(NAMESPACE_END) || defined(DOXYGEN_DOCUMENTATION_BUILD)</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">   50</a></span>&#160;<span class="preprocessor">    #define NAMESPACE_END(name) }</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#if defined(NANOGUI_SHARED)</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#  if defined(_WIN32)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#    if defined(NANOGUI_BUILD)</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#      define NANOGUI_EXPORT __declspec(dllexport)</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#    else</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#      define NANOGUI_EXPORT __declspec(dllimport)</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#    endif</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#  elif defined(NANOGUI_BUILD)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#    define NANOGUI_EXPORT __attribute__ ((visibility(&quot;default&quot;)))</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#  else</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#    define NANOGUI_EXPORT</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#  endif</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">   72</a></span>&#160;<span class="preprocessor">#    define NANOGUI_EXPORT</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">/* Force usage of discrete GPU on laptops (macro must be invoked in main application) */</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#if defined(_WIN32) &amp;&amp; !defined(DOXYGEN_DOCUMENTATION_BUILD)</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#define NANOGUI_FORCE_DISCRETE_GPU() \</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">    extern &quot;C&quot; { \</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">        __declspec(dllexport) int AmdPowerXpressRequestHighPerformance = 1; \</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">        __declspec(dllexport) int NvOptimusEnablement = 1; \</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">    }</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="include_2nanogui_2common_8h.html#abbd49255b4474354da1df23b32fdc81c">   87</a></span>&#160;<span class="preprocessor">#define NANOGUI_FORCE_DISCRETE_GPU()</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#if defined(_WIN32)</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#  if defined(NANOGUI_BUILD)</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">/* Quench a few warnings on when compiling NanoGUI on Windows */</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#    pragma warning(disable : 4127) // warning C4127: conditional expression is constant</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#    pragma warning(disable : 4244) // warning C4244: conversion from X to Y, possible loss of data</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#  endif</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#  pragma warning(disable : 4251) // warning C4251: class X needs to have dll-interface to be used by clients of class Y</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#  pragma warning(disable : 4714) // warning C4714: function X marked as __forceinline not inlined</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">// These will produce broken links in the docs build</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#if !defined(DOXYGEN_SHOULD_SKIP_THIS)</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">/* Opaque handle types */</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structNVGcontext.html">NVGcontext</a> <a class="code" href="structNVGcontext.html">NVGcontext</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structGLFWwindow.html">GLFWwindow</a> <a class="code" href="structGLFWwindow.html">GLFWwindow</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">struct </span><a class="code" href="structNVGcolor.html">NVGcolor</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">struct </span><a class="code" href="structNVGglyphPosition.html">NVGglyphPosition</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">struct </span><a class="code" href="group__input.html#ga89261ae18c75e863aaf2656ecdd238f4">GLFWcursor</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif // DOXYGEN_SHOULD_SKIP_THIS</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">// Define command key for windows/mac/linux</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#if defined(__APPLE__) || defined(DOXYGEN_DOCUMENTATION_BUILD)</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">    #define SYSTEM_COMMAND_MOD GLFW_MOD_SUPER</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">    #define SYSTEM_COMMAND_MOD GLFW_MOD_CONTROL</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a>(nanogui)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">enum class</span> <a class="code" href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43">Cursor</a> {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43a0f4e1aaabd074689b7d3ead824d1ee8e">Arrow</a> = 0,  </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43a4ca8b47601e7a843e23d0139a8a4ff61">IBeam</a>,      </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43a0a7ad1fc7e1bda1d661fc937c4e6eedd">Crosshair</a>,  </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43aa78b1ac16c0cd02168097fc9a9bd7604">Hand</a>,       </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43ac622a9f0794743593901abb0812dd6fc">HResize</a>,    </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43a93a638f3f74a90ce3d236ea57e36e6b9">VResize</a>,    </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43aa89e3c29e1f8c3210f0ced9916f441e2">CursorCount</a> </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">/* Import some common Enoki types */</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">using</span> <a class="code" href="structArray.html">Vector2f</a>     = enoki::Array&lt;float, 2&gt;;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">using</span> <a class="code" href="structArray.html">Vector3f</a>     = enoki::Array&lt;float, 3&gt;;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">using</span> <a class="code" href="structArray.html">Vector4f</a>     = enoki::Array&lt;float, 4&gt;;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">using</span> Vector2i     = enoki::Array&lt;int32_t, 2&gt;;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">using</span> Vector3i     = enoki::Array&lt;int32_t, 3&gt;;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">using</span> Vector4i     = enoki::Array&lt;int32_t, 4&gt;;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">using</span> Matrix2f     = enoki::Matrix&lt;float, 2&gt;;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">using</span> Matrix3f     = enoki::Matrix&lt;float, 3&gt;;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">using</span> <a class="code" href="structMatrix.html">Matrix4f</a>     = enoki::Matrix&lt;float, 4&gt;;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">using</span> <a class="code" href="structQuaternion.html">Quaternion4f</a> = enoki::Quaternion&lt;float&gt;;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classColor.html">  175</a></span>&#160;<span class="keyword">class </span><a class="code" href="classColor.html">Color</a> : <span class="keyword">public</span> <a class="code" href="structArray.html">Vector4f</a> {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keyword">using</span> Vector4f::Vector4f;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classColor.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">  180</a></span>&#160;    <a class="code" href="classColor.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color</a>() : <a class="code" href="classColor.html">Color</a>(0, 0, 0, 0) { }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classColor.html#a5f39d349d3482d0a29519a376bd7374f">  183</a></span>&#160;    <a class="code" href="classColor.html#a5f39d349d3482d0a29519a376bd7374f">Color</a>(<span class="keyword">const</span> <a class="code" href="structArray.html">Vector4f</a> &amp;color) : <a class="code" href="structArray.html">Vector4f</a>(color) { }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="classColor.html#ae00cdaf9a6ee10bf2298dea8fac47740">  195</a></span>&#160;    <a class="code" href="classColor.html#ae00cdaf9a6ee10bf2298dea8fac47740">Color</a>(<span class="keyword">const</span> <a class="code" href="structArray.html">Vector3f</a> &amp;color, <span class="keywordtype">float</span> alpha)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        : <a class="code" href="classColor.html">Color</a>(color[0], color[1], color[2], alpha) { }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="classColor.html#a564bd9f5fc41c7ca10f4851b2025a69b">  210</a></span>&#160;    <a class="code" href="classColor.html#a564bd9f5fc41c7ca10f4851b2025a69b">Color</a>(<span class="keyword">const</span> Vector3i &amp;color, <span class="keywordtype">int</span> alpha)</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        : <a class="code" href="classColor.html">Color</a>(<a class="code" href="structArray.html">Vector3f</a>(color) / 255.f, alpha / 255.f) { }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="classColor.html#a119b81730eae09d4116498beb4e24ef1">  220</a></span>&#160;    <a class="code" href="classColor.html#a119b81730eae09d4116498beb4e24ef1">Color</a>(<span class="keyword">const</span> <a class="code" href="structArray.html">Vector3f</a> &amp;color) : <a class="code" href="classColor.html">Color</a>(color, 1.0f) {}</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classColor.html#af55c14b1897f29f163539fc5b0637bc7">  229</a></span>&#160;    <a class="code" href="classColor.html#af55c14b1897f29f163539fc5b0637bc7">Color</a>(<span class="keyword">const</span> Vector3i &amp;color)</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        : <a class="code" href="classColor.html">Color</a>(<a class="code" href="structArray.html">Vector3f</a>(color) / 255.f, 1.f) { }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="classColor.html#a6de5250eca51ec0fd8b94176154657fc">  239</a></span>&#160;    <a class="code" href="classColor.html#a6de5250eca51ec0fd8b94176154657fc">Color</a>(<span class="keyword">const</span> Vector4i &amp;color)</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        : <a class="code" href="classColor.html">Color</a>(<a class="code" href="structArray.html">Vector4f</a>(color) / 255.f) { }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="classColor.html#ac9a075136d4c73e4219a254dc95f0b69">  251</a></span>&#160;    <a class="code" href="classColor.html#ac9a075136d4c73e4219a254dc95f0b69">Color</a>(<span class="keywordtype">float</span> intensity, <span class="keywordtype">float</span> alpha)</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        : <a class="code" href="classColor.html">Color</a>(<a class="code" href="structArray.html">Vector3f</a>(intensity), alpha) { }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classColor.html#a35b1b516fba158f8ea9d41945d91f576">  264</a></span>&#160;    <a class="code" href="classColor.html#a35b1b516fba158f8ea9d41945d91f576">Color</a>(<span class="keywordtype">int</span> intensity, <span class="keywordtype">int</span> alpha)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        : <a class="code" href="classColor.html">Color</a>(Vector3i(intensity), alpha) { }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="classColor.html#a6e4627389673c8b5cce81bf3eec79938">  282</a></span>&#160;    <a class="code" href="classColor.html#a6e4627389673c8b5cce81bf3eec79938">Color</a>(<span class="keywordtype">float</span> r, <span class="keywordtype">float</span> g, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> a) : <a class="code" href="classColor.html">Color</a>(<a class="code" href="structArray.html">Vector4f</a>(r, g, b, a)) { }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="classColor.html#a63ed7a9b9001c892f901e32c2cae03aa">  300</a></span>&#160;    <a class="code" href="classColor.html#a63ed7a9b9001c892f901e32c2cae03aa">Color</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> a) : <a class="code" href="classColor.html">Color</a>(<a class="code" href="structArray.html">Vector4f</a>((float) r, (float) g, (float) b, (float) a) / 255.f) { }</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="classColor.html#a9023bb1107a89197950986157c4ef9de">  303</a></span>&#160;    <span class="keywordtype">float</span> &amp;<a class="code" href="classColor.html#a9023bb1107a89197950986157c4ef9de">r</a>() { <span class="keywordflow">return</span> x(); }</div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="classColor.html#a2c60a122534d39f421b442647f3d549a">  305</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;<a class="code" href="classColor.html#a2c60a122534d39f421b442647f3d549a">r</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> x(); }</div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="classColor.html#a4b63eac9efcfc3f626f10f43f4f13391">  307</a></span>&#160;    <span class="keywordtype">float</span> &amp;<a class="code" href="classColor.html#a4b63eac9efcfc3f626f10f43f4f13391">g</a>() { <span class="keywordflow">return</span> y(); }</div>
+<div class="line"><a name="l00309"></a><span class="lineno"><a class="line" href="classColor.html#ae53cd0da7e3f5bdca0347897e26f4bc4">  309</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;<a class="code" href="classColor.html#ae53cd0da7e3f5bdca0347897e26f4bc4">g</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> y(); }</div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="classColor.html#a48ea644ea0e8f943f5049a1fae966c55">  311</a></span>&#160;    <span class="keywordtype">float</span> &amp;<a class="code" href="classColor.html#a48ea644ea0e8f943f5049a1fae966c55">b</a>() { <span class="keywordflow">return</span> z(); }</div>
+<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="classColor.html#a5d54884e75ba4ce5b6cad5a35ed5da15">  313</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;<a class="code" href="classColor.html#a5d54884e75ba4ce5b6cad5a35ed5da15">b</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> z(); }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="classColor.html#aa057bed0dab7309c0e65901024b09021">  321</a></span>&#160;    <a class="code" href="classColor.html">Color</a> <a class="code" href="classColor.html#aa057bed0dab7309c0e65901024b09021">contrasting_color</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordtype">float</span> luminance = enoki::dot(*<span class="keyword">this</span>, <a class="code" href="classColor.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color</a>(0.299f, 0.587f, 0.144f, 0.f));</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classColor.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color</a>(luminance &lt; 0.5f ? 1.f : 0.f, 1.f);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keyword">inline</span> <span class="keyword">operator</span> <span class="keyword">const</span> <a class="code" href="structNVGcolor.html">NVGcolor</a> &amp;() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;};</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">// skip the forward declarations for the docs</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment">/* Forward declarations */</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classref.html">ref</a>;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="keyword">class </span><a class="code" href="classAdvancedGridLayout.html">AdvancedGridLayout</a>;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keyword">class </span><a class="code" href="classBoxLayout.html">BoxLayout</a>;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keyword">class </span><a class="code" href="classButton.html">Button</a>;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="keyword">class </span><a class="code" href="classCheckBox.html">CheckBox</a>;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="keyword">class </span><a class="code" href="classCanvas.html">Canvas</a>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keyword">class </span><a class="code" href="classColorWheel.html">ColorWheel</a>;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keyword">class </span><a class="code" href="classColorPicker.html">ColorPicker</a>;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="keyword">class </span><a class="code" href="classComboBox.html">ComboBox</a>;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="keyword">class </span>GLFramebuffer;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="keyword">class </span>GLShader;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="keyword">class </span><a class="code" href="classGridLayout.html">GridLayout</a>;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="keyword">class </span><a class="code" href="classGroupLayout.html">GroupLayout</a>;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="keyword">class </span><a class="code" href="classImagePanel.html">ImagePanel</a>;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="keyword">class </span><a class="code" href="classImageView.html">ImageView</a>;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="keyword">class </span><a class="code" href="classLabel.html">Label</a>;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="keyword">class </span><a class="code" href="classLayout.html">Layout</a>;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keyword">class </span><a class="code" href="classMessageDialog.html">MessageDialog</a>;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keyword">class </span><a class="code" href="classObject.html">Object</a>;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keyword">class </span><a class="code" href="classPopup.html">Popup</a>;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">class </span><a class="code" href="classPopupButton.html">PopupButton</a>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keyword">class </span><a class="code" href="classProgressBar.html">ProgressBar</a>;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">class </span><a class="code" href="classRenderPass.html">RenderPass</a>;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="keyword">class </span><a class="code" href="classShader.html">Shader</a>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="keyword">class </span><a class="code" href="classScreen.html">Screen</a>;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="keyword">class </span>Serializer;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keyword">class </span><a class="code" href="classSlider.html">Slider</a>;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keyword">class </span><a class="code" href="classTabWidgetBase.html">TabWidgetBase</a>;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keyword">class </span><a class="code" href="classTabWidget.html">TabWidget</a>;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="keyword">class </span><a class="code" href="classTextBox.html">TextBox</a>;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keyword">class </span><a class="code" href="classTextArea.html">TextArea</a>;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="keyword">class </span><a class="code" href="classTexture.html">Texture</a>;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="keyword">class </span><a class="code" href="classTheme.html">Theme</a>;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="keyword">class </span><a class="code" href="classToolButton.html">ToolButton</a>;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="keyword">class </span><a class="code" href="classVScrollPanel.html">VScrollPanel</a>;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="keyword">class </span><a class="code" href="classWidget.html">Widget</a>;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="keyword">class </span><a class="code" href="classWindow.html">Window</a>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor">#endif // DOXYGEN_SHOULD_SKIP_THIS</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="keyword">extern</span> <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> <span class="keywordtype">void</span> <a class="code" href="include_2nanogui_2common_8h.html#a0ebf62ccbfe834d82325affd0e1794a4">init</a>();</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="keyword">extern</span> <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> <span class="keywordtype">void</span> <a class="code" href="include_2nanogui_2common_8h.html#a97d8f7dfb9a7abab6eaa57800a8ff653">shutdown</a>();</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="keyword">extern</span> <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> <span class="keywordtype">void</span> <a class="code" href="include_2nanogui_2common_8h.html#ab2414c280a44990f41a947959db3997f">mainloop</a>(<span class="keywordtype">float</span> refresh = -1.f);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="keyword">extern</span> <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> <span class="keywordtype">void</span> <a class="code" href="include_2nanogui_2common_8h.html#a212fe9ca99b1f99eee8dc2a545c42fbb">leave</a>();</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="keyword">extern</span> <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> <span class="keywordtype">bool</span> <a class="code" href="include_2nanogui_2common_8h.html#a49b953fd6d077a0b71f7da42ce38cc88">active</a>();</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="keyword">extern</span> <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> <span class="keywordtype">void</span> <a class="code" href="include_2nanogui_2common_8h.html#a502f5bba0998e6b7353dc7b1b6149693">async</a>(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>()&gt; &amp;func);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="keyword">extern</span> <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> std::string</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a4e7fc4b4d68a6a9476e3291e941010bb">file_dialog</a>(<span class="keyword">const</span> std::vector&lt;std::pair&lt;std::string, std::string&gt;&gt; &amp;filetypes,</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            <span class="keywordtype">bool</span> save);</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="keyword">extern</span> <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> std::vector&lt;std::string&gt;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a4e7fc4b4d68a6a9476e3291e941010bb">file_dialog</a>(<span class="keyword">const</span> std::vector&lt;std::pair&lt;std::string, std::string&gt;&gt; &amp;filetypes,</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            <span class="keywordtype">bool</span> save, <span class="keywordtype">bool</span> multiple);</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160; </div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="preprocessor">#if defined(__APPLE__) || defined(DOXYGEN_DOCUMENTATION_BUILD)</span></div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="keyword">extern</span> <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> <span class="keywordtype">void</span> chdir_to_bundle_parent();</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160; </div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;<span class="keyword">extern</span> <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> std::array&lt;char, 8&gt; <a class="code" href="include_2nanogui_2common_8h.html#a5931088fe4f6cbbf74dc255823c09ecd">utf8</a>(<span class="keywordtype">int</span> c);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160; </div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="keyword">extern</span> <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> std::vector&lt;std::pair&lt;int, std::string&gt;&gt;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <a class="code" href="include_2nanogui_2common_8h.html#afaf5532cd61e91aa2939f7e7a0f5db2c">load_image_directory</a>(<a class="code" href="structNVGcontext.html">NVGcontext</a> *ctx, <span class="keyword">const</span> std::string &amp;path);</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160; </div>
+<div class="line"><a name="l00505"></a><span class="lineno"><a class="line" href="include_2nanogui_2common_8h.html#aef245df7bf680235b82043e500bcb82b">  505</a></span>&#160;<span class="preprocessor">#define nvgImageIcon(ctx, name) nanogui::__nanogui_get_image(ctx, #name, name##_png, name##_png_size)</span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="keyword">extern</span> <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> <span class="keywordtype">int</span> <a class="code" href="include_2nanogui_2common_8h.html#ad619879385759b6f98bdeaa6431ba96d">__nanogui_get_image</a>(<a class="code" href="structNVGcontext.html">NVGcontext</a> *ctx, <span class="keyword">const</span> std::string &amp;<a class="code" href="structname.html">name</a>,</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                                              uint8_t *data, uint32_t size);</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160; </div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a>(nanogui)</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_ac9c915d433bdce7b6b47c0956c850f43a93a638f3f74a90ce3d236ea57e36e6b9"><div class="ttname"><a href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43a93a638f3f74a90ce3d236ea57e36e6b9">Cursor::VResize</a></div><div class="ttdoc">The vertical resize cursor.</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a577cd817cb71b655998cad4387cdaeba"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a></div><div class="ttdeci">#define NAMESPACE_BEGIN(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:38</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_ac9c915d433bdce7b6b47c0956c850f43a0a7ad1fc7e1bda1d661fc937c4e6eedd"><div class="ttname"><a href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43a0a7ad1fc7e1bda1d661fc937c4e6eedd">Cursor::Crosshair</a></div><div class="ttdoc">The crosshair cursor.</div></div>
+<div class="ttc" id="astructname_html"><div class="ttname"><a href="structname.html">name</a></div><div class="ttdoc">Annotation for function names.</div><div class="ttdef"><b>Definition:</b> attr.h:33</div></div>
+<div class="ttc" id="aclassTheme_html"><div class="ttname"><a href="classTheme.html">Theme</a></div><div class="ttdoc">Storage class for basic theme-related properties.</div><div class="ttdef"><b>Definition:</b> theme.h:29</div></div>
+<div class="ttc" id="aclassShader_html"><div class="ttname"><a href="classShader.html">Shader</a></div><div class="ttdef"><b>Definition:</b> Shader.h:12</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_ac9c915d433bdce7b6b47c0956c850f43"><div class="ttname"><a href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43">Cursor</a></div><div class="ttdeci">Cursor</div><div class="ttdoc">Cursor shapes available to use in GLFW. Shape of actual cursor determined by Operating System.</div><div class="ttdef"><b>Definition:</b> common.h:126</div></div>
+<div class="ttc" id="aclassToolButton_html"><div class="ttname"><a href="classToolButton.html">ToolButton</a></div><div class="ttdoc">Simple radio+toggle button with an icon.</div><div class="ttdef"><b>Definition:</b> toolbutton.h:24</div></div>
+<div class="ttc" id="aclassGroupLayout_html"><div class="ttname"><a href="classGroupLayout.html">GroupLayout</a></div><div class="ttdoc">Special layout for widgets grouped by labels.</div><div class="ttdef"><b>Definition:</b> layout.h:162</div></div>
+<div class="ttc" id="aclassColorWheel_html"><div class="ttname"><a href="classColorWheel.html">ColorWheel</a></div><div class="ttdoc">Fancy analog widget to select a color value. This widget was contributed by Dmitriy Morozov.</div><div class="ttdef"><b>Definition:</b> colorwheel.h:28</div></div>
+<div class="ttc" id="aclassColor_html_af55c14b1897f29f163539fc5b0637bc7"><div class="ttname"><a href="classColor.html#af55c14b1897f29f163539fc5b0637bc7">Color::Color</a></div><div class="ttdeci">Color(const Vector3i &amp;color)</div><div class="ttdef"><b>Definition:</b> common.h:229</div></div>
+<div class="ttc" id="aclassVScrollPanel_html"><div class="ttname"><a href="classVScrollPanel.html">VScrollPanel</a></div><div class="ttdoc">Adds a vertical scrollbar around a widget that is too big to fit into a certain area.</div><div class="ttdef"><b>Definition:</b> vscrollpanel.h:26</div></div>
+<div class="ttc" id="aclassColor_html_a63ed7a9b9001c892f901e32c2cae03aa"><div class="ttname"><a href="classColor.html#a63ed7a9b9001c892f901e32c2cae03aa">Color::Color</a></div><div class="ttdeci">Color(int r, int g, int b, int a)</div><div class="ttdef"><b>Definition:</b> common.h:300</div></div>
+<div class="ttc" id="aclassColor_html_ae53cd0da7e3f5bdca0347897e26f4bc4"><div class="ttname"><a href="classColor.html#ae53cd0da7e3f5bdca0347897e26f4bc4">Color::g</a></div><div class="ttdeci">const float &amp; g() const</div><div class="ttdoc">Return a reference to the green channel (const version)</div><div class="ttdef"><b>Definition:</b> common.h:309</div></div>
+<div class="ttc" id="aclassLayout_html"><div class="ttname"><a href="classLayout.html">Layout</a></div><div class="ttdoc">Basic interface of a layout engine.</div><div class="ttdef"><b>Definition:</b> layout.h:43</div></div>
+<div class="ttc" id="aclassWindow_html"><div class="ttname"><a href="classWindow.html">Window</a></div><div class="ttdoc">Top-level window widget.</div><div class="ttdef"><b>Definition:</b> Window.h:10</div></div>
+<div class="ttc" id="aclassBoxLayout_html"><div class="ttname"><a href="classBoxLayout.html">BoxLayout</a></div><div class="ttdoc">Simple horizontal/vertical box layout.</div><div class="ttdef"><b>Definition:</b> layout.h:84</div></div>
+<div class="ttc" id="aclassButton_html"><div class="ttname"><a href="classButton.html">Button</a></div><div class="ttdoc">[Normal/Toggle/Radio/Popup] Button widget.</div><div class="ttdef"><b>Definition:</b> button.h:25</div></div>
+<div class="ttc" id="astructNVGglyphPosition_html"><div class="ttname"><a href="structNVGglyphPosition.html">NVGglyphPosition</a></div><div class="ttdef"><b>Definition:</b> nanovg.h:138</div></div>
+<div class="ttc" id="astructNVGcolor_html"><div class="ttname"><a href="structNVGcolor.html">NVGcolor</a></div><div class="ttdef"><b>Definition:</b> nanovg.h:51</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_ac9c915d433bdce7b6b47c0956c850f43ac622a9f0794743593901abb0812dd6fc"><div class="ttname"><a href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43ac622a9f0794743593901abb0812dd6fc">Cursor::HResize</a></div><div class="ttdoc">The horizontal resize cursor.</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a49b953fd6d077a0b71f7da42ce38cc88"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a49b953fd6d077a0b71f7da42ce38cc88">active</a></div><div class="ttdeci">NANOGUI_EXPORT bool active()</div><div class="ttdoc">Return whether or not a main loop is currently active.</div><div class="ttdef"><b>Definition:</b> common.cpp:203</div></div>
+<div class="ttc" id="aclassTabWidget_html"><div class="ttname"><a href="classTabWidget.html">TabWidget</a></div><div class="ttdoc">A wrapper around the widgets TabHeader and StackedWidget which hooks the two classes together.</div><div class="ttdef"><b>Definition:</b> tabwidget.h:182</div></div>
+<div class="ttc" id="astructQuaternion_html"><div class="ttname"><a href="structQuaternion.html">Quaternion&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclassColor_html_a6de5250eca51ec0fd8b94176154657fc"><div class="ttname"><a href="classColor.html#a6de5250eca51ec0fd8b94176154657fc">Color::Color</a></div><div class="ttdeci">Color(const Vector4i &amp;color)</div><div class="ttdef"><b>Definition:</b> common.h:239</div></div>
+<div class="ttc" id="aclassScreen_html"><div class="ttname"><a href="classScreen.html">Screen</a></div><div class="ttdoc">Represents a display surface (i.e. a full-screen or windowed GLFW window) and forms the root element ...</div><div class="ttdef"><b>Definition:</b> screen.h:30</div></div>
+<div class="ttc" id="aclassPopup_html"><div class="ttname"><a href="classPopup.html">Popup</a></div><div class="ttdoc">Popup window for combo boxes, popup buttons, nested dialogs etc.</div><div class="ttdef"><b>Definition:</b> popup.h:28</div></div>
+<div class="ttc" id="aclassTexture_html"><div class="ttname"><a href="classTexture.html">Texture</a></div><div class="ttdef"><b>Definition:</b> Texture.h:7</div></div>
+<div class="ttc" id="astructArray_html"><div class="ttname"><a href="structArray.html">Array&lt; Float, 2 &gt;</a></div></div>
+<div class="ttc" id="aclassColorPicker_html"><div class="ttname"><a href="classColorPicker.html">ColorPicker</a></div><div class="ttdoc">Push button with a popup to tweak a color value.</div><div class="ttdef"><b>Definition:</b> colorpicker.h:22</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a4e7fc4b4d68a6a9476e3291e941010bb"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a4e7fc4b4d68a6a9476e3291e941010bb">file_dialog</a></div><div class="ttdeci">NANOGUI_EXPORT std::string file_dialog(const std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; &amp;filetypes, bool save)</div><div class="ttdoc">Open a native file open/save dialog.</div><div class="ttdef"><b>Definition:</b> common.cpp:293</div></div>
+<div class="ttc" id="aclassComboBox_html"><div class="ttname"><a href="classComboBox.html">ComboBox</a></div><div class="ttdoc">Simple combo box widget based on a popup button.</div><div class="ttdef"><b>Definition:</b> combobox.h:26</div></div>
+<div class="ttc" id="aclassColor_html_aa057bed0dab7309c0e65901024b09021"><div class="ttname"><a href="classColor.html#aa057bed0dab7309c0e65901024b09021">Color::contrasting_color</a></div><div class="ttdeci">Color contrasting_color() const</div><div class="ttdef"><b>Definition:</b> common.h:321</div></div>
+<div class="ttc" id="aclassImagePanel_html"><div class="ttname"><a href="classImagePanel.html">ImagePanel</a></div><div class="ttdoc">Image panel widget which shows a number of square-shaped icons.</div><div class="ttdef"><b>Definition:</b> imagepanel.h:25</div></div>
+<div class="ttc" id="aclassMessageDialog_html"><div class="ttname"><a href="classMessageDialog.html">MessageDialog</a></div><div class="ttdoc">Simple &quot;OK&quot; or &quot;Yes/No&quot;-style modal dialogs.</div><div class="ttdef"><b>Definition:</b> messagedialog.h:24</div></div>
+<div class="ttc" id="aclassColor_html_a5f39d349d3482d0a29519a376bd7374f"><div class="ttname"><a href="classColor.html#a5f39d349d3482d0a29519a376bd7374f">Color::Color</a></div><div class="ttdeci">Color(const Vector4f &amp;color)</div><div class="ttdoc">Initialize from a 4D vector.</div><div class="ttdef"><b>Definition:</b> common.h:183</div></div>
+<div class="ttc" id="astructGLFWwindow_html"><div class="ttname"><a href="structGLFWwindow.html">GLFWwindow</a></div><div class="ttdef"><b>Definition:</b> python.h:86</div></div>
+<div class="ttc" id="aclassObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdoc">Reference counted object base class.</div><div class="ttdef"><b>Definition:</b> object.h:8</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a12bb24ea980ca8fb1f46b1992bc9c83a"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a></div><div class="ttdeci">#define NAMESPACE_END(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:50</div></div>
+<div class="ttc" id="aclassRenderPass_html"><div class="ttname"><a href="classRenderPass.html">RenderPass</a></div><div class="ttdef"><b>Definition:</b> renderpass.h:24</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a0ebf62ccbfe834d82325affd0e1794a4"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a0ebf62ccbfe834d82325affd0e1794a4">init</a></div><div class="ttdeci">NANOGUI_EXPORT void init()</div><div class="ttdoc">Binds an existing constructor taking arguments Args...</div><div class="ttdef"><b>Definition:</b> pybind11.h:1378</div></div>
+<div class="ttc" id="aclassColor_html_a6e4627389673c8b5cce81bf3eec79938"><div class="ttname"><a href="classColor.html#a6e4627389673c8b5cce81bf3eec79938">Color::Color</a></div><div class="ttdeci">Color(float r, float g, float b, float a)</div><div class="ttdef"><b>Definition:</b> common.h:282</div></div>
+<div class="ttc" id="aclassColor_html_a4b63eac9efcfc3f626f10f43f4f13391"><div class="ttname"><a href="classColor.html#a4b63eac9efcfc3f626f10f43f4f13391">Color::g</a></div><div class="ttdeci">float &amp; g()</div><div class="ttdoc">Return a reference to the green channel.</div><div class="ttdef"><b>Definition:</b> common.h:307</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_afaf5532cd61e91aa2939f7e7a0f5db2c"><div class="ttname"><a href="include_2nanogui_2common_8h.html#afaf5532cd61e91aa2939f7e7a0f5db2c">load_image_directory</a></div><div class="ttdeci">NANOGUI_EXPORT std::vector&lt; std::pair&lt; int, std::string &gt; &gt; load_image_directory(NVGcontext *ctx, const std::string &amp;path)</div><div class="ttdoc">Load a directory of PNG images and upload them to the GPU (suitable for use with ImagePanel)</div><div class="ttdef"><b>Definition:</b> common.cpp:257</div></div>
+<div class="ttc" id="astructMatrix_html"><div class="ttname"><a href="structMatrix.html">Matrix</a></div><div class="ttdef"><b>Definition:</b> fwd.h:331</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a97d8f7dfb9a7abab6eaa57800a8ff653"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a97d8f7dfb9a7abab6eaa57800a8ff653">shutdown</a></div><div class="ttdeci">NANOGUI_EXPORT void shutdown()</div><div class="ttdoc">Static shutdown; should be called before the application terminates.</div><div class="ttdef"><b>Definition:</b> common.cpp:207</div></div>
+<div class="ttc" id="aclassColor_html_ac9a075136d4c73e4219a254dc95f0b69"><div class="ttname"><a href="classColor.html#ac9a075136d4c73e4219a254dc95f0b69">Color::Color</a></div><div class="ttdeci">Color(float intensity, float alpha)</div><div class="ttdef"><b>Definition:</b> common.h:251</div></div>
+<div class="ttc" id="aclassGridLayout_html"><div class="ttname"><a href="classGridLayout.html">GridLayout</a></div><div class="ttdoc">Grid layout.</div><div class="ttdef"><b>Definition:</b> layout.h:241</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a7258172a953ba844ab2900b6bc521b1e"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a></div><div class="ttdeci">#define NANOGUI_EXPORT</div><div class="ttdef"><b>Definition:</b> common.h:72</div></div>
+<div class="ttc" id="aclassColor_html_a5d54884e75ba4ce5b6cad5a35ed5da15"><div class="ttname"><a href="classColor.html#a5d54884e75ba4ce5b6cad5a35ed5da15">Color::b</a></div><div class="ttdeci">const float &amp; b() const</div><div class="ttdoc">Return a reference to the blue channel (const version)</div><div class="ttdef"><b>Definition:</b> common.h:313</div></div>
+<div class="ttc" id="aclassPopupButton_html"><div class="ttname"><a href="classPopupButton.html">PopupButton</a></div><div class="ttdoc">Button which launches a popup widget.</div><div class="ttdef"><b>Definition:</b> popupbutton.h:30</div></div>
+<div class="ttc" id="aclassProgressBar_html"><div class="ttname"><a href="classProgressBar.html">ProgressBar</a></div><div class="ttdoc">Standard widget for visualizing progress.</div><div class="ttdef"><b>Definition:</b> progressbar.h:24</div></div>
+<div class="ttc" id="astructNVGcontext_html"><div class="ttname"><a href="structNVGcontext.html">NVGcontext</a></div><div class="ttdef"><b>Definition:</b> nanovg.c:115</div></div>
+<div class="ttc" id="aclassColor_html_a48ea644ea0e8f943f5049a1fae966c55"><div class="ttname"><a href="classColor.html#a48ea644ea0e8f943f5049a1fae966c55">Color::b</a></div><div class="ttdeci">float &amp; b()</div><div class="ttdoc">Return a reference to the blue channel.</div><div class="ttdef"><b>Definition:</b> common.h:311</div></div>
+<div class="ttc" id="aclassAdvancedGridLayout_html"><div class="ttname"><a href="classAdvancedGridLayout.html">AdvancedGridLayout</a></div><div class="ttdoc">Advanced Grid layout.</div><div class="ttdef"><b>Definition:</b> layout.h:378</div></div>
+<div class="ttc" id="aclassSlider_html"><div class="ttname"><a href="classSlider.html">Slider</a></div><div class="ttdoc">Fractional slider widget with mouse control.</div><div class="ttdef"><b>Definition:</b> slider.h:24</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_ac9c915d433bdce7b6b47c0956c850f43a4ca8b47601e7a843e23d0139a8a4ff61"><div class="ttname"><a href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43a4ca8b47601e7a843e23d0139a8a4ff61">Cursor::IBeam</a></div><div class="ttdoc">The I-beam cursor.</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_ac9c915d433bdce7b6b47c0956c850f43a0f4e1aaabd074689b7d3ead824d1ee8e"><div class="ttname"><a href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43a0f4e1aaabd074689b7d3ead824d1ee8e">Cursor::Arrow</a></div><div class="ttdoc">The arrow cursor.</div></div>
+<div class="ttc" id="aclassColor_html_a35b1b516fba158f8ea9d41945d91f576"><div class="ttname"><a href="classColor.html#a35b1b516fba158f8ea9d41945d91f576">Color::Color</a></div><div class="ttdeci">Color(int intensity, int alpha)</div><div class="ttdef"><b>Definition:</b> common.h:264</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_ad619879385759b6f98bdeaa6431ba96d"><div class="ttname"><a href="include_2nanogui_2common_8h.html#ad619879385759b6f98bdeaa6431ba96d">__nanogui_get_image</a></div><div class="ttdeci">NANOGUI_EXPORT int __nanogui_get_image(NVGcontext *ctx, const std::string &amp;name, uint8_t *data, uint32_t size)</div><div class="ttdoc">Helper function used by nvg_image_icon.</div><div class="ttdef"><b>Definition:</b> common.cpp:244</div></div>
+<div class="ttc" id="agroup__input_html_ga89261ae18c75e863aaf2656ecdd238f4"><div class="ttname"><a href="group__input.html#ga89261ae18c75e863aaf2656ecdd238f4">GLFWcursor</a></div><div class="ttdeci">struct GLFWcursor GLFWcursor</div><div class="ttdoc">Opaque cursor object.</div><div class="ttdef"><b>Definition:</b> glfw3.h:1160</div></div>
+<div class="ttc" id="aclassColor_html_ae00cdaf9a6ee10bf2298dea8fac47740"><div class="ttname"><a href="classColor.html#ae00cdaf9a6ee10bf2298dea8fac47740">Color::Color</a></div><div class="ttdeci">Color(const Vector3f &amp;color, float alpha)</div><div class="ttdef"><b>Definition:</b> common.h:195</div></div>
+<div class="ttc" id="aclassCanvas_html"><div class="ttname"><a href="classCanvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> canvas.h:39</div></div>
+<div class="ttc" id="aclassLabel_html"><div class="ttname"><a href="classLabel.html">Label</a></div><div class="ttdoc">Text label widget.</div><div class="ttdef"><b>Definition:</b> label.h:27</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_ab2414c280a44990f41a947959db3997f"><div class="ttname"><a href="include_2nanogui_2common_8h.html#ab2414c280a44990f41a947959db3997f">mainloop</a></div><div class="ttdeci">NANOGUI_EXPORT void mainloop(float refresh=-1.f)</div><div class="ttdoc">Enter the application main loop.</div><div class="ttdef"><b>Definition:</b> common.cpp:83</div></div>
+<div class="ttc" id="aclassref_html"><div class="ttname"><a href="classref.html">ref</a></div><div class="ttdoc">Reference counting helper.</div><div class="ttdef"><b>Definition:</b> object.h:62</div></div>
+<div class="ttc" id="aclassColor_html_a119b81730eae09d4116498beb4e24ef1"><div class="ttname"><a href="classColor.html#a119b81730eae09d4116498beb4e24ef1">Color::Color</a></div><div class="ttdeci">Color(const Vector3f &amp;color)</div><div class="ttdef"><b>Definition:</b> common.h:220</div></div>
+<div class="ttc" id="aclassColor_html_a564bd9f5fc41c7ca10f4851b2025a69b"><div class="ttname"><a href="classColor.html#a564bd9f5fc41c7ca10f4851b2025a69b">Color::Color</a></div><div class="ttdeci">Color(const Vector3i &amp;color, int alpha)</div><div class="ttdef"><b>Definition:</b> common.h:210</div></div>
+<div class="ttc" id="aclassColor_html_a2c60a122534d39f421b442647f3d549a"><div class="ttname"><a href="classColor.html#a2c60a122534d39f421b442647f3d549a">Color::r</a></div><div class="ttdeci">const float &amp; r() const</div><div class="ttdoc">Return a reference to the red channel (const version)</div><div class="ttdef"><b>Definition:</b> common.h:305</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a5931088fe4f6cbbf74dc255823c09ecd"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a5931088fe4f6cbbf74dc255823c09ecd">utf8</a></div><div class="ttdeci">NANOGUI_EXPORT std::array&lt; char, 8 &gt; utf8(int c)</div><div class="ttdoc">Convert a single UTF32 character code to UTF8.</div><div class="ttdef"><b>Definition:</b> common.cpp:223</div></div>
+<div class="ttc" id="aclassTextArea_html"><div class="ttname"><a href="classTextArea.html">TextArea</a></div><div class="ttdef"><b>Definition:</b> textarea.h:30</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_ac9c915d433bdce7b6b47c0956c850f43aa89e3c29e1f8c3210f0ced9916f441e2"><div class="ttname"><a href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43aa89e3c29e1f8c3210f0ced9916f441e2">Cursor::CursorCount</a></div><div class="ttdoc">Not a cursor — should always be last: enables a loop over the cursor types.</div></div>
+<div class="ttc" id="aclassTextBox_html"><div class="ttname"><a href="classTextBox.html">TextBox</a></div><div class="ttdoc">Multi-line read-only text widget, ideal for displaying log messages etc.</div><div class="ttdef"><b>Definition:</b> textbox.h:34</div></div>
+<div class="ttc" id="aclassColor_html"><div class="ttname"><a href="classColor.html">Color</a></div><div class="ttdoc">Stores an RGBA floating point color value.</div><div class="ttdef"><b>Definition:</b> common.h:175</div></div>
+<div class="ttc" id="aclassImageView_html"><div class="ttname"><a href="classImageView.html">ImageView</a></div><div class="ttdoc">A widget for displaying, panning, and zooming images. Numerical RGBA pixel information is shown at la...</div><div class="ttdef"><b>Definition:</b> imageview.h:25</div></div>
+<div class="ttc" id="aclassCheckBox_html"><div class="ttname"><a href="classCheckBox.html">CheckBox</a></div><div class="ttdoc">Two-state check box widget.</div><div class="ttdef"><b>Definition:</b> checkbox.h:31</div></div>
+<div class="ttc" id="aclassWidget_html"><div class="ttname"><a href="classWidget.html">Widget</a></div><div class="ttdoc">Base class of all widgets.</div><div class="ttdef"><b>Definition:</b> test_interpreter.cpp:18</div></div>
+<div class="ttc" id="aclassColor_html_a9023bb1107a89197950986157c4ef9de"><div class="ttname"><a href="classColor.html#a9023bb1107a89197950986157c4ef9de">Color::r</a></div><div class="ttdeci">float &amp; r()</div><div class="ttdoc">Return a reference to the red channel.</div><div class="ttdef"><b>Definition:</b> common.h:303</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a212fe9ca99b1f99eee8dc2a545c42fbb"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a212fe9ca99b1f99eee8dc2a545c42fbb">leave</a></div><div class="ttdeci">NANOGUI_EXPORT void leave()</div><div class="ttdoc">Request the application main loop to terminate (e.g. if you detached mainloop).</div><div class="ttdef"><b>Definition:</b> common.cpp:199</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a502f5bba0998e6b7353dc7b1b6149693"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a502f5bba0998e6b7353dc7b1b6149693">async</a></div><div class="ttdeci">NANOGUI_EXPORT void async(const std::function&lt; void()&gt; &amp;func)</div><div class="ttdoc">Enqueue a function to be executed executed before the application is redrawn the next time.</div><div class="ttdef"><b>Definition:</b> common.cpp:194</div></div>
+<div class="ttc" id="aclassColor_html_a9a742cbe9f9f4037f5d9f4e81a9b2428"><div class="ttname"><a href="classColor.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color::Color</a></div><div class="ttdeci">Color()</div><div class="ttdoc">Default constructor: represents black (r, g, b, a = 0)</div><div class="ttdef"><b>Definition:</b> common.h:180</div></div>
+<div class="ttc" id="aclassTabWidgetBase_html"><div class="ttname"><a href="classTabWidgetBase.html">TabWidgetBase</a></div><div class="ttdoc">Basic implementation of a tab widget with (optionally) draggable and closeable tabs and popup menus....</div><div class="ttdef"><b>Definition:</b> tabwidget.h:29</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_ac9c915d433bdce7b6b47c0956c850f43aa78b1ac16c0cd02168097fc9a9bd7604"><div class="ttname"><a href="include_2nanogui_2common_8h.html#ac9c915d433bdce7b6b47c0956c850f43aa78b1ac16c0cd02168097fc9a9bd7604">Cursor::Hand</a></div><div class="ttdoc">The hand cursor.</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+    <ul>
+        <li class="navelem"><a class="el" href="dir_31cedd4509e06940f559c1ca2f722e02.html">ext</a></li><li class="navelem"><a class="el" href="dir_3b52d0ee0647600b951b1b620984dcd1.html">nanogui</a></li><li class="navelem"><a class="el" href="dir_5721e7ee5207c0c2918a589ae1107b9a.html">include</a></li><li class="navelem"><a class="el" href="dir_7c8bd28dcb08b6a153cc19ab5789aba5.html">nanogui</a></li><li class="navelem"><a class="el" href="include_2nanogui_2common_8h.html">common.h</a></li>
+        <li class="footer">
+            Generated on Dimanche 24 Novembre 2019 18:11:46 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
+            Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
+        </li>
+    </ul>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>

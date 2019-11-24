@@ -1,0 +1,19 @@
+\hypertarget{structoverload__cast__impl}{}\doxysection{Référence du modèle de la structure overload\+\_\+cast\+\_\+impl$<$ Args $>$}
+\label{structoverload__cast__impl}\index{overload\_cast\_impl$<$ Args $>$@{overload\_cast\_impl$<$ Args $>$}}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structoverload__cast__impl_a02c79d9e6158835bec33065d5ca06789}\label{structoverload__cast__impl_a02c79d9e6158835bec33065d5ca06789}} 
+{\footnotesize template$<$typename Return $>$ }\\constexpr auto {\bfseries operator()} (Return($\ast$pf)(Args...)) const noexcept -\/$>$ decltype(pf)
+\item 
+\mbox{\Hypertarget{structoverload__cast__impl_a228090216f1f7c0ae472f8b0247d65e4}\label{structoverload__cast__impl_a228090216f1f7c0ae472f8b0247d65e4}} 
+{\footnotesize template$<$typename Return , typename Class $>$ }\\constexpr auto {\bfseries operator()} (Return(Class\+::$\ast$pmf)(Args...), std\+::false\+\_\+type=\{\}) const noexcept -\/$>$ decltype(pmf)
+\item 
+\mbox{\Hypertarget{structoverload__cast__impl_a81b4bca7f6837ceac50dde91d3e7e3de}\label{structoverload__cast__impl_a81b4bca7f6837ceac50dde91d3e7e3de}} 
+{\footnotesize template$<$typename Return , typename Class $>$ }\\constexpr auto {\bfseries operator()} (Return(Class\+::$\ast$pmf)(Args...) const, std\+::true\+\_\+type) const noexcept -\/$>$ decltype(pmf)
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/detail/common.\+h\end{DoxyCompactItemize}

@@ -1,6 +1,29 @@
 var classShader =
 [
+    [ "Buffer", "structShader_1_1Buffer.html", "structShader_1_1Buffer" ],
     [ "ShaderData", "structShader_1_1ShaderData.html", "structShader_1_1ShaderData" ],
+    [ "BlendMode", "classShader.html#a9de4211f905bbe73ded9ec73d2af425f", [
+      [ "None", "classShader.html#a9de4211f905bbe73ded9ec73d2af425fa6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "AlphaBlend", "classShader.html#a9de4211f905bbe73ded9ec73d2af425faaacd89df7585eb749bfd3b129758148f", null ]
+    ] ],
+    [ "BufferType", "classShader.html#abb2cb5e0b1e60f00365e8e8fd27d3d47", [
+      [ "Unknown", "classShader.html#abb2cb5e0b1e60f00365e8e8fd27d3d47a2ed6860c0ccf20e4ef078810097c4a77", null ],
+      [ "VertexBuffer", "classShader.html#abb2cb5e0b1e60f00365e8e8fd27d3d47a8f3e9987530d813cde4ca64c9f16c3a7", null ],
+      [ "VertexTexture", "classShader.html#abb2cb5e0b1e60f00365e8e8fd27d3d47a7728a246d5bc962ed68a9dbb06360bb8", null ],
+      [ "VertexSampler", "classShader.html#abb2cb5e0b1e60f00365e8e8fd27d3d47a64ac7d02a528667f6551bfa756ffd118", null ],
+      [ "FragmentBuffer", "classShader.html#abb2cb5e0b1e60f00365e8e8fd27d3d47ab2fe4b4c4e5f06cc7179f1f76ce3404e", null ],
+      [ "FragmentTexture", "classShader.html#abb2cb5e0b1e60f00365e8e8fd27d3d47a888c855a12e893ee8bc1c9ea1e0d8763", null ],
+      [ "FragmentSampler", "classShader.html#abb2cb5e0b1e60f00365e8e8fd27d3d47aa2a495cd2a3129a7d29cd5b6adf86093", null ],
+      [ "UniformBuffer", "classShader.html#abb2cb5e0b1e60f00365e8e8fd27d3d47a2601563c0f8a76b870cc82f053c3308f", null ],
+      [ "IndexBuffer", "classShader.html#abb2cb5e0b1e60f00365e8e8fd27d3d47a1010525fe5354df2955e81cfe5e2ca83", null ]
+    ] ],
+    [ "PrimitiveType", "classShader.html#aef422c9f341518f501fb9cbb46255038", [
+      [ "Point", "classShader.html#aef422c9f341518f501fb9cbb46255038a2a3cd5946cfd317eb99c3d32e35e2d4c", null ],
+      [ "Line", "classShader.html#aef422c9f341518f501fb9cbb46255038a4803e6b9e63dabf04de980788d6a13c4", null ],
+      [ "LineStrip", "classShader.html#aef422c9f341518f501fb9cbb46255038ae7f9e73b8edd21f420a63b3ace5768a2", null ],
+      [ "Triangle", "classShader.html#aef422c9f341518f501fb9cbb46255038a5e5500cb2b82eb72d550de644bd1b64b", null ],
+      [ "TriangleStrip", "classShader.html#aef422c9f341518f501fb9cbb46255038a1da0b9ead8b051940a89214bae22831c", null ]
+    ] ],
     [ "ShaderError", "classShader.html#ae64a650a76a4ca1e711ba774d3cd859b", [
       [ "INVALID_ENUM", "classShader.html#ae64a650a76a4ca1e711ba774d3cd859bae899742e80f9cbf6c22c61b65231ca95", null ],
       [ "INVALID_VALUE", "classShader.html#ae64a650a76a4ca1e711ba774d3cd859bac24e3403dba3ef6a6437a76e6c3880d1", null ],
@@ -27,8 +50,14 @@ var classShader =
     ] ],
     [ "Shader", "classShader.html#a41c317492f3e715bd2debfd3d875cda1", null ],
     [ "~Shader", "classShader.html#aff01df87e8a102f270b5b135a295e59d", null ],
+    [ "Shader", "classShader.html#acc1ddf602d1fce988e9422ca01e3ce82", null ],
+    [ "~Shader", "classShader.html#a08345855be88781faf704487119af9a8", null ],
+    [ "begin", "classShader.html#acf2af4edd5d98c008b9fd2de3a55c5cf", null ],
     [ "bind", "classShader.html#a6f6e280a343d6c7662909f7dfbc89ad9", null ],
+    [ "blend_mode", "classShader.html#a963665a430b2d15ae128b0d29198b475", null ],
     [ "compile", "classShader.html#a75512fd8255dc4442d65f1fde2d5feb2", null ],
+    [ "draw_array", "classShader.html#acfe289d96e66b9c5969f2bbab224502e", null ],
+    [ "end", "classShader.html#abfff82b6778a0b6d1f1a599b1b306b1d", null ],
     [ "errorToString", "classShader.html#a518f83cb9fd1eeaf38ddf28558672b9b", null ],
     [ "getData", "classShader.html#a3e143724cc385e34b7b48138a1207f34", null ],
     [ "getName", "classShader.html#a7982747baa5d27f1f533b995e584c939", null ],
@@ -36,6 +65,11 @@ var classShader =
     [ "getUniformLocation", "classShader.html#abe52a17214908086e9cd7fd63dc27e5d", null ],
     [ "link", "classShader.html#a161808c663dc259fd5db2be34aa62e83", null ],
     [ "load", "classShader.html#aa9413a27c7e5247d67c624a561e31d3e", null ],
+    [ "name", "classShader.html#a5492b300194d6fd240bfb647277c2554", null ],
+    [ "render_pass", "classShader.html#a9904d06162f5721acfd7ba0fd7ebdbe4", null ],
+    [ "set_buffer", "classShader.html#a90193f4684f1fa3a1ab4cedea21d0b10", null ],
+    [ "set_texture", "classShader.html#a9638fc77503d1838d79d0011242686ab", null ],
+    [ "set_uniform", "classShader.html#aeabb5864efa6802812c867bacfd08608", null ],
     [ "setUniform1f", "classShader.html#a514a718cd4afdbe525cc977963d46c54", null ],
     [ "setUniform1i", "classShader.html#a6a3ad7b19c1b78b851a21dcfb69ed6c2", null ],
     [ "setUniform2f", "classShader.html#a1fc8695974689072af9a6a0b72d730f2", null ],
@@ -48,6 +82,10 @@ var classShader =
     [ "shaderTypeToString", "classShader.html#a232e3eac4e91c3c8203524fbad428e63", null ],
     [ "data", "classShader.html#abce93c99451a2efee2222cc487295744", null ],
     [ "fs_src", "classShader.html#a53a689df05ee22636d54ee0f3f3ca5f4", null ],
+    [ "m_blend_mode", "classShader.html#a3c4e08e1968e69c694ea23a4422c536e", null ],
+    [ "m_buffers", "classShader.html#af3d8586ceac8021e418c9a6b48be74a2", null ],
+    [ "m_name", "classShader.html#ae5f0886d22f369bbc219ec486f8bb248", null ],
+    [ "m_render_pass", "classShader.html#a985bc6cdde3af84acd454268858b588e", null ],
     [ "name", "classShader.html#a8c8fba8311ca3a7cfeac5afeb346e51b", null ],
     [ "program", "classShader.html#aef2c8e52af39986935a5e5296e6d05e6", null ],
     [ "shaders", "classShader.html#a0dfd60451dfed8b9622f95edfcb5dc4d", null ],

@@ -1,0 +1,94 @@
+\hypertarget{layout_8h}{}\doxysection{Référence du fichier ext/nanogui/include/nanogui/layout.h}
+\label{layout_8h}\index{ext/nanogui/include/nanogui/layout.h@{ext/nanogui/include/nanogui/layout.h}}
+
+
+\mbox{\hyperlink{structA}{A}} collection of useful layout managers. The nanogui\+::\+Grid\+Layout was contributed by Christian Schueller.  
+
+
+{\ttfamily \#include $<$nanogui/object.\+h$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classLayout}{Layout}}
+\begin{DoxyCompactList}\small\item\em Basic interface of a layout engine. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classBoxLayout}{Box\+Layout}}
+\begin{DoxyCompactList}\small\item\em Simple horizontal/vertical box layout. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classGroupLayout}{Group\+Layout}}
+\begin{DoxyCompactList}\small\item\em Special layout for widgets grouped by labels. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classGridLayout}{Grid\+Layout}}
+\begin{DoxyCompactList}\small\item\em Grid layout. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classAdvancedGridLayout}{Advanced\+Grid\+Layout}}
+\begin{DoxyCompactList}\small\item\em Advanced Grid layout. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structAdvancedGridLayout_1_1Anchor}{Advanced\+Grid\+Layout\+::\+Anchor}}
+\begin{DoxyCompactList}\small\item\em Helper struct to coordinate anchor points for the layout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{layout_8h_a7aed1e91261bf4cd3942c6f87ae468eb}{Alignment}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{layout_8h_a7aed1e91261bf4cd3942c6f87ae468ebaa1d0ec6d56f8833a078b5a7ac4caf2d4}{Alignment\+::\+Minimum}} = 0, 
+\mbox{\hyperlink{layout_8h_a7aed1e91261bf4cd3942c6f87ae468ebab1ca34f82e83c52b010f86955f264e05}{Alignment\+::\+Middle}}, 
+\mbox{\hyperlink{layout_8h_a7aed1e91261bf4cd3942c6f87ae468eba8321e79c278ec510f63675c040594892}{Alignment\+::\+Maximum}}, 
+\mbox{\hyperlink{layout_8h_a7aed1e91261bf4cd3942c6f87ae468ebadb3e3f51c9107e26c9bccf9a188ce2ed}{Alignment\+::\+Fill}}
+ \}
+\begin{DoxyCompactList}\small\item\em The different kinds of alignments a layout can perform. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{layout_8h_a871118a09520247c78a71ecd7b0abd58}{Orientation}} \{ \mbox{\hyperlink{layout_8h_a871118a09520247c78a71ecd7b0abd58ac1b5fa03ecdb95d4a45dd1c40b02527f}{Orientation\+::\+Horizontal}} = 0, 
+\mbox{\hyperlink{layout_8h_a871118a09520247c78a71ecd7b0abd58a06ce2a25e5d12c166a36f654dbea6012}{Orientation\+::\+Vertical}}
+ \}
+\begin{DoxyCompactList}\small\item\em The direction of data flow for a layout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{structA}{A}} collection of useful layout managers. The nanogui\+::\+Grid\+Layout was contributed by Christian Schueller. 
+
+
+
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\mbox{\Hypertarget{layout_8h_a7aed1e91261bf4cd3942c6f87ae468eb}\label{layout_8h_a7aed1e91261bf4cd3942c6f87ae468eb}} 
+\index{layout.h@{layout.h}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!layout.h@{layout.h}}
+\doxysubsubsection{\texorpdfstring{Alignment}{Alignment}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{layout_8h_a7aed1e91261bf4cd3942c6f87ae468eb}{Alignment}} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The different kinds of alignments a layout can perform. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Minimum@{Minimum}!layout.h@{layout.h}}\index{layout.h@{layout.h}!Minimum@{Minimum}}}\mbox{\Hypertarget{layout_8h_a7aed1e91261bf4cd3942c6f87ae468ebaa1d0ec6d56f8833a078b5a7ac4caf2d4}\label{layout_8h_a7aed1e91261bf4cd3942c6f87ae468ebaa1d0ec6d56f8833a078b5a7ac4caf2d4}} 
+Minimum&Take only as much space as is required. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Middle@{Middle}!layout.h@{layout.h}}\index{layout.h@{layout.h}!Middle@{Middle}}}\mbox{\Hypertarget{layout_8h_a7aed1e91261bf4cd3942c6f87ae468ebab1ca34f82e83c52b010f86955f264e05}\label{layout_8h_a7aed1e91261bf4cd3942c6f87ae468ebab1ca34f82e83c52b010f86955f264e05}} 
+Middle&Center align. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Maximum@{Maximum}!layout.h@{layout.h}}\index{layout.h@{layout.h}!Maximum@{Maximum}}}\mbox{\Hypertarget{layout_8h_a7aed1e91261bf4cd3942c6f87ae468eba8321e79c278ec510f63675c040594892}\label{layout_8h_a7aed1e91261bf4cd3942c6f87ae468eba8321e79c278ec510f63675c040594892}} 
+Maximum&Take as much space as is allowed. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fill@{Fill}!layout.h@{layout.h}}\index{layout.h@{layout.h}!Fill@{Fill}}}\mbox{\Hypertarget{layout_8h_a7aed1e91261bf4cd3942c6f87ae468ebadb3e3f51c9107e26c9bccf9a188ce2ed}\label{layout_8h_a7aed1e91261bf4cd3942c6f87ae468ebadb3e3f51c9107e26c9bccf9a188ce2ed}} 
+Fill&Fill according to preferred sizes. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{layout_8h_a871118a09520247c78a71ecd7b0abd58}\label{layout_8h_a871118a09520247c78a71ecd7b0abd58}} 
+\index{layout.h@{layout.h}!Orientation@{Orientation}}
+\index{Orientation@{Orientation}!layout.h@{layout.h}}
+\doxysubsubsection{\texorpdfstring{Orientation}{Orientation}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{layout_8h_a871118a09520247c78a71ecd7b0abd58}{Orientation}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The direction of data flow for a layout. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Horizontal@{Horizontal}!layout.h@{layout.h}}\index{layout.h@{layout.h}!Horizontal@{Horizontal}}}\mbox{\Hypertarget{layout_8h_a871118a09520247c78a71ecd7b0abd58ac1b5fa03ecdb95d4a45dd1c40b02527f}\label{layout_8h_a871118a09520247c78a71ecd7b0abd58ac1b5fa03ecdb95d4a45dd1c40b02527f}} 
+Horizontal&\mbox{\hyperlink{classLayout}{Layout}} expands on horizontal axis. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Vertical@{Vertical}!layout.h@{layout.h}}\index{layout.h@{layout.h}!Vertical@{Vertical}}}\mbox{\Hypertarget{layout_8h_a871118a09520247c78a71ecd7b0abd58a06ce2a25e5d12c166a36f654dbea6012}\label{layout_8h_a871118a09520247c78a71ecd7b0abd58a06ce2a25e5d12c166a36f654dbea6012}} 
+Vertical&\mbox{\hyperlink{classLayout}{Layout}} expands on vertical axis. \\
+\hline
+
+\end{DoxyEnumFields}

@@ -1,0 +1,23 @@
+\hypertarget{structvisit__helper}{}\doxysection{Référence du modèle de la structure visit\+\_\+helper$<$ Variant $>$}
+\label{structvisit__helper}\index{visit\_helper$<$ Variant $>$@{visit\_helper$<$ Variant $>$}}
+
+
+{\ttfamily \#include $<$stl.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structvisit__helper_a473267b48de4dd59210914d9d70ea577}\label{structvisit__helper_a473267b48de4dd59210914d9d70ea577}} 
+{\footnotesize template$<$typename... Args$>$ }\\static auto {\bfseries call} (Args \&\&...\mbox{\hyperlink{classargs}{args}}) -\/$>$ decltype(visit(std\+::forward$<$ Args $>$(\mbox{\hyperlink{classargs}{args}})...))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$template$<$ typename... $>$ class Variant$>$\newline
+struct visit\+\_\+helper$<$ Variant $>$}
+
+Helper class which abstracts away variant\textquotesingle{}s {\ttfamily visit} function. {\ttfamily std\+::variant} and similar {\ttfamily namespace\+::variant} types which provide a {\ttfamily namespace\+::visit()} function are handled here automatically using argument-\/dependent lookup. Users can provide specializations for other variant-\/like classes, e.\+g. {\ttfamily boost\+::variant} and {\ttfamily boost\+::apply\+\_\+visitor}. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/stl.\+h\end{DoxyCompactItemize}

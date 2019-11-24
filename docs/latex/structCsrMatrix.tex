@@ -1,0 +1,107 @@
+\hypertarget{structCsrMatrix}{}\doxysection{Référence du modèle de la structure Csr\+Matrix$<$ ValueT, OffsetT $>$}
+\label{structCsrMatrix}\index{CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}}
+
+
+{\ttfamily \#include $<$sparse\+\_\+matrix.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCsrMatrix_a026cdb7dd021f9ae36a2ca5c1e5b7440}{Csr\+Matrix}} ()
+\item 
+void \mbox{\hyperlink{structCsrMatrix_af6f12ce74d0fdeb3e8f2fa180cefdaba}{Clear}} ()
+\item 
+\mbox{\hyperlink{structCsrMatrix_a437cd3d8f69530f4bccc1a70de58d40e}{$\sim$\+Csr\+Matrix}} ()
+\item 
+\mbox{\Hypertarget{structCsrMatrix_a0735f383dfdaa5fb67cc31ab5e24814b}\label{structCsrMatrix_a0735f383dfdaa5fb67cc31ab5e24814b}} 
+\mbox{\hyperlink{structGraphStats}{Graph\+Stats}} {\bfseries Stats} ()
+\item 
+void \mbox{\hyperlink{structCsrMatrix_aa863ea8870588d978f1f3db067578db6}{From\+Coo}} (const \mbox{\hyperlink{structCooMatrix}{Coo\+Matrix}}$<$ ValueT, OffsetT $>$ \&coo\+\_\+matrix)
+\item 
+void \mbox{\hyperlink{structCsrMatrix_aa5b6be197f4b35b415e5008536489120}{Display\+Histogram}} ()
+\item 
+void \mbox{\hyperlink{structCsrMatrix_ac752199ca46abb3aadb26114d8a94926}{Display}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structCsrMatrix_aaf9ada9c77b71a3f840efb3805a0e77e}\label{structCsrMatrix_aaf9ada9c77b71a3f840efb3805a0e77e}} 
+int {\bfseries num\+\_\+rows}
+\item 
+\mbox{\Hypertarget{structCsrMatrix_a5d8dac47f05407e0960801417047da19}\label{structCsrMatrix_a5d8dac47f05407e0960801417047da19}} 
+int {\bfseries num\+\_\+cols}
+\item 
+\mbox{\Hypertarget{structCsrMatrix_aa6b2b696ac99a1a24689c9d139042524}\label{structCsrMatrix_aa6b2b696ac99a1a24689c9d139042524}} 
+int {\bfseries num\+\_\+nonzeros}
+\item 
+\mbox{\Hypertarget{structCsrMatrix_ab4dad8700dd63728fda287325fde8f39}\label{structCsrMatrix_ab4dad8700dd63728fda287325fde8f39}} 
+OffsetT $\ast$ {\bfseries row\+\_\+offsets}
+\item 
+\mbox{\Hypertarget{structCsrMatrix_a1acbc6db94f7bf2d670c0314271c3d98}\label{structCsrMatrix_a1acbc6db94f7bf2d670c0314271c3d98}} 
+OffsetT $\ast$ {\bfseries column\+\_\+indices}
+\item 
+\mbox{\Hypertarget{structCsrMatrix_a604038f95a7ed1a498834dc6e1ca36c2}\label{structCsrMatrix_a604038f95a7ed1a498834dc6e1ca36c2}} 
+ValueT $\ast$ {\bfseries values}
+\item 
+\mbox{\Hypertarget{structCsrMatrix_a016df174985babe9f805f7ed261f41bc}\label{structCsrMatrix_a016df174985babe9f805f7ed261f41bc}} 
+bool {\bfseries numa\+\_\+malloc}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename ValueT, typename OffsetT$>$\newline
+struct Csr\+Matrix$<$ Value\+T, Offset\+T $>$}
+
+C\+SR sparse format matrix 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{structCsrMatrix_a026cdb7dd021f9ae36a2ca5c1e5b7440}\label{structCsrMatrix_a026cdb7dd021f9ae36a2ca5c1e5b7440}} 
+\index{CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}!CsrMatrix@{CsrMatrix}}
+\index{CsrMatrix@{CsrMatrix}!CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{CsrMatrix()}{CsrMatrix()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+\mbox{\hyperlink{structCsrMatrix}{Csr\+Matrix}}$<$ ValueT, OffsetT $>$\+::\mbox{\hyperlink{structCsrMatrix}{Csr\+Matrix}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor \mbox{\Hypertarget{structCsrMatrix_a437cd3d8f69530f4bccc1a70de58d40e}\label{structCsrMatrix_a437cd3d8f69530f4bccc1a70de58d40e}} 
+\index{CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}!````~CsrMatrix@{$\sim$CsrMatrix}}
+\index{````~CsrMatrix@{$\sim$CsrMatrix}!CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$CsrMatrix()}{~CsrMatrix()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+\mbox{\hyperlink{structCsrMatrix}{Csr\+Matrix}}$<$ ValueT, OffsetT $>$\+::$\sim$\mbox{\hyperlink{structCsrMatrix}{Csr\+Matrix}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destructor 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{structCsrMatrix_af6f12ce74d0fdeb3e8f2fa180cefdaba}\label{structCsrMatrix_af6f12ce74d0fdeb3e8f2fa180cefdaba}} 
+\index{CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+void \mbox{\hyperlink{structCsrMatrix}{Csr\+Matrix}}$<$ ValueT, OffsetT $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clear \mbox{\Hypertarget{structCsrMatrix_ac752199ca46abb3aadb26114d8a94926}\label{structCsrMatrix_ac752199ca46abb3aadb26114d8a94926}} 
+\index{CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}!Display@{Display}}
+\index{Display@{Display}!CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+void \mbox{\hyperlink{structCsrMatrix}{Csr\+Matrix}}$<$ ValueT, OffsetT $>$\+::Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Display matrix to stdout \mbox{\Hypertarget{structCsrMatrix_aa5b6be197f4b35b415e5008536489120}\label{structCsrMatrix_aa5b6be197f4b35b415e5008536489120}} 
+\index{CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}!DisplayHistogram@{DisplayHistogram}}
+\index{DisplayHistogram@{DisplayHistogram}!CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{DisplayHistogram()}{DisplayHistogram()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+void \mbox{\hyperlink{structCsrMatrix}{Csr\+Matrix}}$<$ ValueT, OffsetT $>$\+::Display\+Histogram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Display log-\/histogram to stdout \mbox{\Hypertarget{structCsrMatrix_aa863ea8870588d978f1f3db067578db6}\label{structCsrMatrix_aa863ea8870588d978f1f3db067578db6}} 
+\index{CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}!FromCoo@{FromCoo}}
+\index{FromCoo@{FromCoo}!CsrMatrix$<$ ValueT, OffsetT $>$@{CsrMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{FromCoo()}{FromCoo()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+void \mbox{\hyperlink{structCsrMatrix}{Csr\+Matrix}}$<$ ValueT, OffsetT $>$\+::From\+Coo (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structCooMatrix}{Coo\+Matrix}}$<$ ValueT, OffsetT $>$ \&}]{coo\+\_\+matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Build C\+SR matrix from sorted C\+OO matrix 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/cub/experimental/sparse\+\_\+matrix.\+h\end{DoxyCompactItemize}

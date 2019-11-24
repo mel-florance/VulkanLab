@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.8.16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vulkan Lab:  Fichier source de ext/nanogui/include/nanogui/checkbox.h</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">Vulkan Lab
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part --><!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('checkbox_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">checkbox.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="checkbox_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    NanoGUI was developed by Wenzel Jakob &lt;wenzel.jakob@epfl.ch&gt;.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">    The widget drawing code is based on the NanoVG demo application</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    by Mikko Mononen.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    All rights reserved. Use of this source code is governed by a</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    BSD-style license that can be found in the LICENSE.txt file.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="widget_8h.html">nanogui/widget.h</a>&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a>(nanogui)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classCheckBox.html">   31</a></span>&#160;class <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> <a class="code" href="classCheckBox.html">CheckBox</a> : public <a class="code" href="classWidget.html">Widget</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classCheckBox.html">CheckBox</a>(<a class="code" href="classWidget.html">Widget</a> *parent, <span class="keyword">const</span> std::string &amp;caption = <span class="stringliteral">&quot;Untitled&quot;</span>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;             <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">bool</span>)&gt; &amp;callback = std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">bool</span>)&gt;());</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classCheckBox.html#a3287e3b8b451ef67f86887b54ba70669">   52</a></span>&#160;   <span class="keyword">const</span> std::string &amp;<a class="code" href="classCheckBox.html#a3287e3b8b451ef67f86887b54ba70669">caption</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_caption; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classCheckBox.html#a91128a3553f003a8de8c8e6789d05b30">   55</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCheckBox.html#a91128a3553f003a8de8c8e6789d05b30">set_caption</a>(<span class="keyword">const</span> std::string &amp;caption) { m_caption = caption; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classCheckBox.html#af950ba975fd0efccca7c6157852cb587">   58</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;<a class="code" href="classCheckBox.html#af950ba975fd0efccca7c6157852cb587">checked</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_checked; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classCheckBox.html#ac51c25c151b82f39896ab796abcc36e4">   61</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCheckBox.html#ac51c25c151b82f39896ab796abcc36e4">set_checked</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;checked) { m_checked = checked; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classCheckBox.html#abef5d240c222aef583410c14725b3aec">   64</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;<a class="code" href="classCheckBox.html#abef5d240c222aef583410c14725b3aec">pushed</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pushed; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> set_pushed(<span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;pushed) { m_pushed = pushed; }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classCheckBox.html#a84b79745ee4307892a6c96637a86caf7">   68</a></span>&#160;    std::function&lt;void(<span class="keywordtype">bool</span>)&gt; <a class="code" href="classCheckBox.html#a84b79745ee4307892a6c96637a86caf7">callback</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_callback; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classCheckBox.html#a045ad59976c6630f09e97a1b85c85efa">   71</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCheckBox.html#a045ad59976c6630f09e97a1b85c85efa">set_callback</a>(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">bool</span>)&gt; &amp;callback) { m_callback = callback; }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> mouse_button_event(<span class="keyword">const</span> Vector2i &amp;p, <span class="keywordtype">int</span> button, <span class="keywordtype">bool</span> down, <span class="keywordtype">int</span> modifiers) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> Vector2i preferred_size(<a class="code" href="structNVGcontext.html">NVGcontext</a> *ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> draw(<a class="code" href="structNVGcontext.html">NVGcontext</a> *ctx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classCheckBox.html#ad7206c11550bc3c75e4a36def5b6db38">   83</a></span>&#160;    std::string <a class="code" href="classCheckBox.html#ad7206c11550bc3c75e4a36def5b6db38">m_caption</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classCheckBox.html#a567ee3f13c9c3684a312d8ddc3d8b33d">   89</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCheckBox.html#a567ee3f13c9c3684a312d8ddc3d8b33d">m_pushed</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classCheckBox.html#a72c9cac9034eae89d7c5de74bda115fc">   92</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCheckBox.html#a72c9cac9034eae89d7c5de74bda115fc">m_checked</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classCheckBox.html#aa37659dd94658acdd6ffc3d9ea72c589">   95</a></span>&#160;    std::function&lt;void(<span class="keywordtype">bool</span>)&gt; <a class="code" href="classCheckBox.html#aa37659dd94658acdd6ffc3d9ea72c589">m_callback</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a>(nanogui)</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a577cd817cb71b655998cad4387cdaeba"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a></div><div class="ttdeci">#define NAMESPACE_BEGIN(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:38</div></div>
+<div class="ttc" id="aclassCheckBox_html_a91128a3553f003a8de8c8e6789d05b30"><div class="ttname"><a href="classCheckBox.html#a91128a3553f003a8de8c8e6789d05b30">CheckBox::set_caption</a></div><div class="ttdeci">void set_caption(const std::string &amp;caption)</div><div class="ttdoc">Sets the caption of this CheckBox.</div><div class="ttdef"><b>Definition:</b> checkbox.h:55</div></div>
+<div class="ttc" id="aclassCheckBox_html_ac51c25c151b82f39896ab796abcc36e4"><div class="ttname"><a href="classCheckBox.html#ac51c25c151b82f39896ab796abcc36e4">CheckBox::set_checked</a></div><div class="ttdeci">void set_checked(const bool &amp;checked)</div><div class="ttdoc">Sets whether or not this CheckBox is currently checked.</div><div class="ttdef"><b>Definition:</b> checkbox.h:61</div></div>
+<div class="ttc" id="aclassCheckBox_html_af950ba975fd0efccca7c6157852cb587"><div class="ttname"><a href="classCheckBox.html#af950ba975fd0efccca7c6157852cb587">CheckBox::checked</a></div><div class="ttdeci">const bool &amp; checked() const</div><div class="ttdoc">Whether or not this CheckBox is currently checked.</div><div class="ttdef"><b>Definition:</b> checkbox.h:58</div></div>
+<div class="ttc" id="aclassCheckBox_html_a72c9cac9034eae89d7c5de74bda115fc"><div class="ttname"><a href="classCheckBox.html#a72c9cac9034eae89d7c5de74bda115fc">CheckBox::m_checked</a></div><div class="ttdeci">bool m_checked</div><div class="ttdoc">Whether or not this CheckBox is currently checked or unchecked.</div><div class="ttdef"><b>Definition:</b> checkbox.h:92</div></div>
+<div class="ttc" id="aclassCheckBox_html_abef5d240c222aef583410c14725b3aec"><div class="ttname"><a href="classCheckBox.html#abef5d240c222aef583410c14725b3aec">CheckBox::pushed</a></div><div class="ttdeci">const bool &amp; pushed() const</div><div class="ttdoc">Whether or not this CheckBox is currently pushed. See nanogui::CheckBox::m_pushed.</div><div class="ttdef"><b>Definition:</b> checkbox.h:64</div></div>
+<div class="ttc" id="aclassCheckBox_html_a567ee3f13c9c3684a312d8ddc3d8b33d"><div class="ttname"><a href="classCheckBox.html#a567ee3f13c9c3684a312d8ddc3d8b33d">CheckBox::m_pushed</a></div><div class="ttdeci">bool m_pushed</div><div class="ttdef"><b>Definition:</b> checkbox.h:89</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a12bb24ea980ca8fb1f46b1992bc9c83a"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a></div><div class="ttdeci">#define NAMESPACE_END(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:50</div></div>
+<div class="ttc" id="aclassCheckBox_html_aa37659dd94658acdd6ffc3d9ea72c589"><div class="ttname"><a href="classCheckBox.html#aa37659dd94658acdd6ffc3d9ea72c589">CheckBox::m_callback</a></div><div class="ttdeci">std::function&lt; void(bool)&gt; m_callback</div><div class="ttdoc">The function to execute when nanogui::CheckBox::m_checked is changed.</div><div class="ttdef"><b>Definition:</b> checkbox.h:95</div></div>
+<div class="ttc" id="awidget_8h_html"><div class="ttname"><a href="widget_8h.html">widget.h</a></div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a7258172a953ba844ab2900b6bc521b1e"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a></div><div class="ttdeci">#define NANOGUI_EXPORT</div><div class="ttdef"><b>Definition:</b> common.h:72</div></div>
+<div class="ttc" id="aclassCheckBox_html_a045ad59976c6630f09e97a1b85c85efa"><div class="ttname"><a href="classCheckBox.html#a045ad59976c6630f09e97a1b85c85efa">CheckBox::set_callback</a></div><div class="ttdeci">void set_callback(const std::function&lt; void(bool)&gt; &amp;callback)</div><div class="ttdoc">Sets the callback to be executed when this CheckBox is checked / unchecked.</div><div class="ttdef"><b>Definition:</b> checkbox.h:71</div></div>
+<div class="ttc" id="astructNVGcontext_html"><div class="ttname"><a href="structNVGcontext.html">NVGcontext</a></div><div class="ttdef"><b>Definition:</b> nanovg.c:115</div></div>
+<div class="ttc" id="aclassCheckBox_html_a84b79745ee4307892a6c96637a86caf7"><div class="ttname"><a href="classCheckBox.html#a84b79745ee4307892a6c96637a86caf7">CheckBox::callback</a></div><div class="ttdeci">std::function&lt; void(bool)&gt; callback() const</div><div class="ttdoc">Returns the current callback of this CheckBox.</div><div class="ttdef"><b>Definition:</b> checkbox.h:68</div></div>
+<div class="ttc" id="aclassCheckBox_html_ad7206c11550bc3c75e4a36def5b6db38"><div class="ttname"><a href="classCheckBox.html#ad7206c11550bc3c75e4a36def5b6db38">CheckBox::m_caption</a></div><div class="ttdeci">std::string m_caption</div><div class="ttdoc">The caption text of this CheckBox.</div><div class="ttdef"><b>Definition:</b> checkbox.h:83</div></div>
+<div class="ttc" id="aclassCheckBox_html_a3287e3b8b451ef67f86887b54ba70669"><div class="ttname"><a href="classCheckBox.html#a3287e3b8b451ef67f86887b54ba70669">CheckBox::caption</a></div><div class="ttdeci">const std::string &amp; caption() const</div><div class="ttdoc">The caption of this CheckBox.</div><div class="ttdef"><b>Definition:</b> checkbox.h:52</div></div>
+<div class="ttc" id="aclassCheckBox_html"><div class="ttname"><a href="classCheckBox.html">CheckBox</a></div><div class="ttdoc">Two-state check box widget.</div><div class="ttdef"><b>Definition:</b> checkbox.h:31</div></div>
+<div class="ttc" id="aclassWidget_html"><div class="ttname"><a href="classWidget.html">Widget</a></div><div class="ttdoc">Base class of all widgets.</div><div class="ttdef"><b>Definition:</b> test_interpreter.cpp:18</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+    <ul>
+        <li class="navelem"><a class="el" href="dir_31cedd4509e06940f559c1ca2f722e02.html">ext</a></li><li class="navelem"><a class="el" href="dir_3b52d0ee0647600b951b1b620984dcd1.html">nanogui</a></li><li class="navelem"><a class="el" href="dir_5721e7ee5207c0c2918a589ae1107b9a.html">include</a></li><li class="navelem"><a class="el" href="dir_7c8bd28dcb08b6a153cc19ab5789aba5.html">nanogui</a></li><li class="navelem"><a class="el" href="checkbox_8h.html">checkbox.h</a></li>
+        <li class="footer">
+            Generated on Dimanche 24 Novembre 2019 18:11:48 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
+            Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
+        </li>
+    </ul>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>

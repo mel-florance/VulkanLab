@@ -1,0 +1,19 @@
+\hypertarget{structconstructor}{}\doxysection{Référence du modèle de la structure constructor$<$ Args $>$}
+\label{structconstructor}\index{constructor$<$ Args $>$@{constructor$<$ Args $>$}}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structconstructor_a18005e4a1a32b55cbccf36071f3f62e8}\label{structconstructor_a18005e4a1a32b55cbccf36071f3f62e8}} 
+{\footnotesize template$<$typename Class , typename... Extra, enable\+\_\+if\+\_\+t$<$!\+Class\+::has\+\_\+alias, int $>$  = 0$>$ }\\static void {\bfseries execute} (Class \&cl, const Extra \&... extra)
+\item 
+\mbox{\Hypertarget{structconstructor_a18005e4a1a32b55cbccf36071f3f62e8}\label{structconstructor_a18005e4a1a32b55cbccf36071f3f62e8}} 
+{\footnotesize template$<$typename Class , typename... Extra, enable\+\_\+if\+\_\+t$<$ Class\+::has\+\_\+alias \&\&std\+::is\+\_\+constructible$<$ Cpp$<$ Class $>$, Args... $>$\+::value, int $>$  = 0$>$ }\\static void {\bfseries execute} (Class \&cl, const Extra \&... extra)
+\item 
+\mbox{\Hypertarget{structconstructor_a18005e4a1a32b55cbccf36071f3f62e8}\label{structconstructor_a18005e4a1a32b55cbccf36071f3f62e8}} 
+{\footnotesize template$<$typename Class , typename... Extra, enable\+\_\+if\+\_\+t$<$ Class\+::has\+\_\+alias \&\&!std\+::is\+\_\+constructible$<$ Cpp$<$ Class $>$, Args... $>$\+::value, int $>$  = 0$>$ }\\static void {\bfseries execute} (Class \&cl, const Extra \&... extra)
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/detail/init.\+h\end{DoxyCompactItemize}

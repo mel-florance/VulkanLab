@@ -1,0 +1,47 @@
+\hypertarget{classscoped__interpreter}{}\doxysection{Référence de la classe scoped\+\_\+interpreter}
+\label{classscoped__interpreter}\index{scoped\_interpreter@{scoped\_interpreter}}
+
+
+{\ttfamily \#include $<$embed.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classscoped__interpreter_a6ba04e4795ec864e8e23289819225bef}\label{classscoped__interpreter_a6ba04e4795ec864e8e23289819225bef}} 
+{\bfseries scoped\+\_\+interpreter} (bool init\+\_\+signal\+\_\+handlers=true)
+\item 
+\mbox{\Hypertarget{classscoped__interpreter_a794109d4db2ba5daf345b9262b85ec3e}\label{classscoped__interpreter_a794109d4db2ba5daf345b9262b85ec3e}} 
+{\bfseries scoped\+\_\+interpreter} (const \mbox{\hyperlink{classscoped__interpreter}{scoped\+\_\+interpreter}} \&)=delete
+\item 
+\mbox{\Hypertarget{classscoped__interpreter_ac3d62f9f0065b0a627367d88d3ee38e9}\label{classscoped__interpreter_ac3d62f9f0065b0a627367d88d3ee38e9}} 
+{\bfseries scoped\+\_\+interpreter} (\mbox{\hyperlink{classscoped__interpreter}{scoped\+\_\+interpreter}} \&\&other) noexcept
+\item 
+\mbox{\Hypertarget{classscoped__interpreter_a7843ed2ad5cf5c54537373c1febec3c7}\label{classscoped__interpreter_a7843ed2ad5cf5c54537373c1febec3c7}} 
+\mbox{\hyperlink{classscoped__interpreter}{scoped\+\_\+interpreter}} \& {\bfseries operator=} (const \mbox{\hyperlink{classscoped__interpreter}{scoped\+\_\+interpreter}} \&)=delete
+\item 
+\mbox{\Hypertarget{classscoped__interpreter_acdda686792144d2fb682491d19a803b5}\label{classscoped__interpreter_acdda686792144d2fb682491d19a803b5}} 
+\mbox{\hyperlink{classscoped__interpreter}{scoped\+\_\+interpreter}} \& {\bfseries operator=} (\mbox{\hyperlink{classscoped__interpreter}{scoped\+\_\+interpreter}} \&\&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classscoped__interpreter_ac72f34be0c7f2fbd18f9b7db8754f402}\label{classscoped__interpreter_ac72f34be0c7f2fbd18f9b7db8754f402}} 
+bool {\bfseries is\+\_\+valid} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\textbackslash{}rst Scope guard version of {\ttfamily initialize\+\_\+interpreter} and {\ttfamily finalize\+\_\+interpreter}. This a move-\/only guard and only a single instance can exist.
+
+.. code-\/block\+:: cpp \begin{DoxyVerb}#include <pybind11/embed.h>
+
+int main() {
+    py::scoped_interpreter guard{};
+    py::print(Hello, World!);
+} // <-- interpreter shutdown
+\end{DoxyVerb}
+ \textbackslash{}endrst 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/embed.\+h\end{DoxyCompactItemize}

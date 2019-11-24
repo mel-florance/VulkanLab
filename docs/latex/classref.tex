@@ -1,0 +1,154 @@
+\hypertarget{classref}{}\doxysection{Référence du modèle de la classe ref$<$ T $>$}
+\label{classref}\index{ref$<$ T $>$@{ref$<$ T $>$}}
+
+
+Reference counting helper.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/object.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classref_a32c2f3c2bde5b57e6ef0a80254773854}\label{classref_a32c2f3c2bde5b57e6ef0a80254773854}} 
+\mbox{\hyperlink{classref_a32c2f3c2bde5b57e6ef0a80254773854}{ref}} ()
+\begin{DoxyCompactList}\small\item\em Create a nullptr reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_ac593e903c13a8dfe520978053ac4b319}\label{classref_ac593e903c13a8dfe520978053ac4b319}} 
+\mbox{\hyperlink{classref_ac593e903c13a8dfe520978053ac4b319}{ref}} (T $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em Construct a reference from a pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_ab6041fce6b4a78faac0613b3b05e74e0}\label{classref_ab6041fce6b4a78faac0613b3b05e74e0}} 
+\mbox{\hyperlink{classref_ab6041fce6b4a78faac0613b3b05e74e0}{ref}} (const \mbox{\hyperlink{classref}{ref}} \&r)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_aad576503d5b820e6d1bbf33d881dc7a7}\label{classref_aad576503d5b820e6d1bbf33d881dc7a7}} 
+\mbox{\hyperlink{classref_aad576503d5b820e6d1bbf33d881dc7a7}{ref}} (\mbox{\hyperlink{classref}{ref}} \&\&r)
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a0f91cf031c803c7a34471dabce694454}\label{classref_a0f91cf031c803c7a34471dabce694454}} 
+\mbox{\hyperlink{classref_a0f91cf031c803c7a34471dabce694454}{$\sim$ref}} ()
+\begin{DoxyCompactList}\small\item\em Destroy this reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_aed9cb8611b7e85e2a3ee5d05b13b9a0b}\label{classref_aed9cb8611b7e85e2a3ee5d05b13b9a0b}} 
+\mbox{\hyperlink{classref}{ref}} \& \mbox{\hyperlink{classref_aed9cb8611b7e85e2a3ee5d05b13b9a0b}{operator=}} (\mbox{\hyperlink{classref}{ref}} \&\&r)
+\begin{DoxyCompactList}\small\item\em Move another reference into the current one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a1155f824011414922d9b6a3b5d90c8d8}\label{classref_a1155f824011414922d9b6a3b5d90c8d8}} 
+\mbox{\hyperlink{classref}{ref}} \& \mbox{\hyperlink{classref_a1155f824011414922d9b6a3b5d90c8d8}{operator=}} (const \mbox{\hyperlink{classref}{ref}} \&r)
+\begin{DoxyCompactList}\small\item\em Overwrite this reference with another reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a16ebd4ab3890e76d47cf7ef30f338690}\label{classref_a16ebd4ab3890e76d47cf7ef30f338690}} 
+\mbox{\hyperlink{classref}{ref}} \& \mbox{\hyperlink{classref_a16ebd4ab3890e76d47cf7ef30f338690}{operator=}} (T $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em Overwrite this reference with a pointer to another object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a8a96aae6d9787e988ff148d1dd9a773d}\label{classref_a8a96aae6d9787e988ff148d1dd9a773d}} 
+bool \mbox{\hyperlink{classref_a8a96aae6d9787e988ff148d1dd9a773d}{operator==}} (const \mbox{\hyperlink{classref}{ref}} \&r) const
+\begin{DoxyCompactList}\small\item\em Compare this reference with another reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_ae4fb583b5cdbd8659c8dfc91ca5ba4f2}\label{classref_ae4fb583b5cdbd8659c8dfc91ca5ba4f2}} 
+bool \mbox{\hyperlink{classref_ae4fb583b5cdbd8659c8dfc91ca5ba4f2}{operator!=}} (const \mbox{\hyperlink{classref}{ref}} \&r) const
+\begin{DoxyCompactList}\small\item\em Compare this reference with another reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a6131b1c40dd6977c7e005826ba660213}\label{classref_a6131b1c40dd6977c7e005826ba660213}} 
+bool \mbox{\hyperlink{classref_a6131b1c40dd6977c7e005826ba660213}{operator==}} (const T $\ast$ptr) const
+\begin{DoxyCompactList}\small\item\em Compare this reference with a pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a932a54e9c0e107e7edf78d550ef4852f}\label{classref_a932a54e9c0e107e7edf78d550ef4852f}} 
+bool \mbox{\hyperlink{classref_a932a54e9c0e107e7edf78d550ef4852f}{operator!=}} (const T $\ast$ptr) const
+\begin{DoxyCompactList}\small\item\em Compare this reference with a pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_acc07281f5c8afd7660e0965da19a2c0c}\label{classref_acc07281f5c8afd7660e0965da19a2c0c}} 
+T $\ast$ \mbox{\hyperlink{classref_acc07281f5c8afd7660e0965da19a2c0c}{operator-\/$>$}} ()
+\begin{DoxyCompactList}\small\item\em Access the object referenced by this reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a2b60a27dafb793f808195c2ddfd8d013}\label{classref_a2b60a27dafb793f808195c2ddfd8d013}} 
+const T $\ast$ \mbox{\hyperlink{classref_a2b60a27dafb793f808195c2ddfd8d013}{operator-\/$>$}} () const
+\begin{DoxyCompactList}\small\item\em Access the object referenced by this reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a04924b0547cd850f3a39fda293021e3b}\label{classref_a04924b0547cd850f3a39fda293021e3b}} 
+T \& \mbox{\hyperlink{classref_a04924b0547cd850f3a39fda293021e3b}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Return a C++ reference to the referenced object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a42119083ef6adbb393680aaee8331f25}\label{classref_a42119083ef6adbb393680aaee8331f25}} 
+const T \& \mbox{\hyperlink{classref_a42119083ef6adbb393680aaee8331f25}{operator$\ast$}} () const
+\begin{DoxyCompactList}\small\item\em Return a const C++ reference to the referenced object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a6afd60eceb2144f888591fe9b3a05b86}\label{classref_a6afd60eceb2144f888591fe9b3a05b86}} 
+\mbox{\hyperlink{classref_a6afd60eceb2144f888591fe9b3a05b86}{operator T$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Return a pointer to the referenced object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_ad70261d8ee00b42350f69c96be30beaa}\label{classref_ad70261d8ee00b42350f69c96be30beaa}} 
+T $\ast$ \mbox{\hyperlink{classref_ad70261d8ee00b42350f69c96be30beaa}{get\+\_\+ptr}} ()
+\begin{DoxyCompactList}\small\item\em Return a const pointer to the referenced object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a76b8f2eec00eb3c3041cc9c7fb14ba0b}\label{classref_a76b8f2eec00eb3c3041cc9c7fb14ba0b}} 
+const T $\ast$ \mbox{\hyperlink{classref_a76b8f2eec00eb3c3041cc9c7fb14ba0b}{get\+\_\+ptr}} () const
+\begin{DoxyCompactList}\small\item\em Return a pointer to the referenced object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a32c2f3c2bde5b57e6ef0a80254773854}\label{classref_a32c2f3c2bde5b57e6ef0a80254773854}} 
+\mbox{\hyperlink{classref_a32c2f3c2bde5b57e6ef0a80254773854}{ref}} ()
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily nullptr}-\/valued reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_ac593e903c13a8dfe520978053ac4b319}\label{classref_ac593e903c13a8dfe520978053ac4b319}} 
+\mbox{\hyperlink{classref_ac593e903c13a8dfe520978053ac4b319}{ref}} (T $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em Construct a reference from a pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_ab6041fce6b4a78faac0613b3b05e74e0}\label{classref_ab6041fce6b4a78faac0613b3b05e74e0}} 
+\mbox{\hyperlink{classref_ab6041fce6b4a78faac0613b3b05e74e0}{ref}} (const \mbox{\hyperlink{classref}{ref}} \&r)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_ad41a149bcd364f1e9e62730114b4298c}\label{classref_ad41a149bcd364f1e9e62730114b4298c}} 
+\mbox{\hyperlink{classref_ad41a149bcd364f1e9e62730114b4298c}{ref}} (\mbox{\hyperlink{classref}{ref}} \&\&r) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a0f91cf031c803c7a34471dabce694454}\label{classref_a0f91cf031c803c7a34471dabce694454}} 
+\mbox{\hyperlink{classref_a0f91cf031c803c7a34471dabce694454}{$\sim$ref}} ()
+\begin{DoxyCompactList}\small\item\em Destroy this reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a4c6d8a37ad46ae5b885c5a1b2d9df835}\label{classref_a4c6d8a37ad46ae5b885c5a1b2d9df835}} 
+\mbox{\hyperlink{classref}{ref}} \& \mbox{\hyperlink{classref_a4c6d8a37ad46ae5b885c5a1b2d9df835}{operator=}} (\mbox{\hyperlink{classref}{ref}} \&\&r) noexcept
+\begin{DoxyCompactList}\small\item\em Move another reference into the current one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_aee9ff2f8bff8e2f3b04ba4df34f996be}\label{classref_aee9ff2f8bff8e2f3b04ba4df34f996be}} 
+\mbox{\hyperlink{classref}{ref}} \& \mbox{\hyperlink{classref_aee9ff2f8bff8e2f3b04ba4df34f996be}{operator=}} (const \mbox{\hyperlink{classref}{ref}} \&r) noexcept
+\begin{DoxyCompactList}\small\item\em Overwrite this reference with another reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a6582cebb1a1bd77d708a22021ee94269}\label{classref_a6582cebb1a1bd77d708a22021ee94269}} 
+\mbox{\hyperlink{classref}{ref}} \& \mbox{\hyperlink{classref_a6582cebb1a1bd77d708a22021ee94269}{operator=}} (T $\ast$ptr) noexcept
+\begin{DoxyCompactList}\small\item\em Overwrite this reference with a pointer to another object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a8a96aae6d9787e988ff148d1dd9a773d}\label{classref_a8a96aae6d9787e988ff148d1dd9a773d}} 
+bool \mbox{\hyperlink{classref_a8a96aae6d9787e988ff148d1dd9a773d}{operator==}} (const \mbox{\hyperlink{classref}{ref}} \&r) const
+\begin{DoxyCompactList}\small\item\em Compare this reference with another reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_ae4fb583b5cdbd8659c8dfc91ca5ba4f2}\label{classref_ae4fb583b5cdbd8659c8dfc91ca5ba4f2}} 
+bool \mbox{\hyperlink{classref_ae4fb583b5cdbd8659c8dfc91ca5ba4f2}{operator!=}} (const \mbox{\hyperlink{classref}{ref}} \&r) const
+\begin{DoxyCompactList}\small\item\em Compare this reference with another reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a6131b1c40dd6977c7e005826ba660213}\label{classref_a6131b1c40dd6977c7e005826ba660213}} 
+bool \mbox{\hyperlink{classref_a6131b1c40dd6977c7e005826ba660213}{operator==}} (const T $\ast$ptr) const
+\begin{DoxyCompactList}\small\item\em Compare this reference with a pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a932a54e9c0e107e7edf78d550ef4852f}\label{classref_a932a54e9c0e107e7edf78d550ef4852f}} 
+bool \mbox{\hyperlink{classref_a932a54e9c0e107e7edf78d550ef4852f}{operator!=}} (const T $\ast$ptr) const
+\begin{DoxyCompactList}\small\item\em Compare this reference with a pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_acc07281f5c8afd7660e0965da19a2c0c}\label{classref_acc07281f5c8afd7660e0965da19a2c0c}} 
+T $\ast$ \mbox{\hyperlink{classref_acc07281f5c8afd7660e0965da19a2c0c}{operator-\/$>$}} ()
+\begin{DoxyCompactList}\small\item\em Access the object referenced by this reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a2b60a27dafb793f808195c2ddfd8d013}\label{classref_a2b60a27dafb793f808195c2ddfd8d013}} 
+const T $\ast$ \mbox{\hyperlink{classref_a2b60a27dafb793f808195c2ddfd8d013}{operator-\/$>$}} () const
+\begin{DoxyCompactList}\small\item\em Access the object referenced by this reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a04924b0547cd850f3a39fda293021e3b}\label{classref_a04924b0547cd850f3a39fda293021e3b}} 
+T \& \mbox{\hyperlink{classref_a04924b0547cd850f3a39fda293021e3b}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Return a C++ reference to the referenced object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a42119083ef6adbb393680aaee8331f25}\label{classref_a42119083ef6adbb393680aaee8331f25}} 
+const T \& \mbox{\hyperlink{classref_a42119083ef6adbb393680aaee8331f25}{operator$\ast$}} () const
+\begin{DoxyCompactList}\small\item\em Return a const C++ reference to the referenced object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a6afd60eceb2144f888591fe9b3a05b86}\label{classref_a6afd60eceb2144f888591fe9b3a05b86}} 
+\mbox{\hyperlink{classref_a6afd60eceb2144f888591fe9b3a05b86}{operator T$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Return a pointer to the referenced object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a729c7bfb0f66cd2f5dfb99a60bc4b22c}\label{classref_a729c7bfb0f66cd2f5dfb99a60bc4b22c}} 
+T $\ast$ \mbox{\hyperlink{classref_a729c7bfb0f66cd2f5dfb99a60bc4b22c}{get}} ()
+\begin{DoxyCompactList}\small\item\em Return a const pointer to the referenced object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a26dd230ed73ec0413f48458188ab9813}\label{classref_a26dd230ed73ec0413f48458188ab9813}} 
+const T $\ast$ \mbox{\hyperlink{classref_a26dd230ed73ec0413f48458188ab9813}{get}} () const
+\begin{DoxyCompactList}\small\item\em Return a pointer to the referenced object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classref_a89e360634c72a4f6a487b893f3de2d79}\label{classref_a89e360634c72a4f6a487b893f3de2d79}} 
+\mbox{\hyperlink{classref_a89e360634c72a4f6a487b893f3de2d79}{operator bool}} () const
+\begin{DoxyCompactList}\small\item\em Check if the object is defined. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classref_a44b9ce3ad046c6bbe6a4107f84dbd435}\label{classref_a44b9ce3ad046c6bbe6a4107f84dbd435}} 
+T $\ast$ {\bfseries m\+\_\+ptr} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename T$>$\newline
+class ref$<$ T $>$}
+
+Reference counting helper. 
+
+The {\itshape ref} refeference template is a simple wrapper to store a pointer to an object. It takes care of increasing and decreasing the reference count of the object. When the last reference goes out of scope, the associated object will be deallocated.
+
+The {\itshape ref} template is a simple wrapper to store a pointer to an object. It takes care of increasing and decreasing the object\textquotesingle{}s reference count as needed. When the last reference goes out of scope, the associated object will be deallocated.
+
+The advantage over C++ solutions such as {\ttfamily std\+::shared\+\_\+ptr} is that the reference count is very compactly integrated into the base object itself. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/tests/object.\+h\end{DoxyCompactItemize}

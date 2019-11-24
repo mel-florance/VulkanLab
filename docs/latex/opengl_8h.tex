@@ -1,0 +1,58 @@
+\hypertarget{opengl_8h}{}\doxysection{Référence du fichier ext/nanogui/include/nanogui/opengl.h}
+\label{opengl_8h}\index{ext/nanogui/include/nanogui/opengl.h@{ext/nanogui/include/nanogui/opengl.h}}
+{\ttfamily \#include $<$nanogui/common.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L\+F\+W/glfw3.\+h$>$}\newline
+{\ttfamily \#include $<$nanovg.\+h$>$}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{opengl_8h_a6b5e082158b04f849cb9002229a22b88}{nvg\+\_\+is\+\_\+image\+\_\+icon}} (int value)
+\begin{DoxyCompactList}\small\item\em Determine whether an icon ID is a texture loaded via {\ttfamily nvg\+\_\+image\+\_\+icon}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{opengl_8h_a469d26830ca33e072a66ad36c3e40a3e}{nvg\+\_\+is\+\_\+font\+\_\+icon}} (int value)
+\begin{DoxyCompactList}\small\item\em Determine whether an icon ID is a font-\/based icon (e.\+g. from {\ttfamily entypo.\+ttf}). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{opengl_8h_a1f4f89d213c3d1c0a3649f29eb027920}\label{opengl_8h_a1f4f89d213c3d1c0a3649f29eb027920}} 
+\mbox{\hyperlink{include_2nanogui_2common_8h_a7258172a953ba844ab2900b6bc521b1e}{N\+A\+N\+O\+G\+U\+I\+\_\+\+E\+X\+P\+O\+RT}} bool \mbox{\hyperlink{opengl_8h_a1f4f89d213c3d1c0a3649f29eb027920}{nanogui\+\_\+check\+\_\+glerror}} (const char $\ast$cmd)
+\begin{DoxyCompactList}\small\item\em Check for Open\+GL errors and warn if one is found (returns \textquotesingle{}true\textquotesingle{} in that case\textquotesingle{}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{opengl_8h_a469d26830ca33e072a66ad36c3e40a3e}\label{opengl_8h_a469d26830ca33e072a66ad36c3e40a3e}} 
+\index{opengl.h@{opengl.h}!nvg\_is\_font\_icon@{nvg\_is\_font\_icon}}
+\index{nvg\_is\_font\_icon@{nvg\_is\_font\_icon}!opengl.h@{opengl.h}}
+\doxysubsubsection{\texorpdfstring{nvg\_is\_font\_icon()}{nvg\_is\_font\_icon()}}
+{\footnotesize\ttfamily bool nvg\+\_\+is\+\_\+font\+\_\+icon (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determine whether an icon ID is a font-\/based icon (e.\+g. from {\ttfamily entypo.\+ttf}). 
+
+\textbackslash{}rst See \+:func\+:{\ttfamily nanogui\+::nvg\+\_\+is\+\_\+image\+\_\+icon} for details. \textbackslash{}endrst
+
+
+\begin{DoxyParams}{Paramètres}
+{\em value} & The integral value of the icon.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Whether or not this is a font icon (from {\ttfamily entypo.\+ttf}). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{opengl_8h_a6b5e082158b04f849cb9002229a22b88}\label{opengl_8h_a6b5e082158b04f849cb9002229a22b88}} 
+\index{opengl.h@{opengl.h}!nvg\_is\_image\_icon@{nvg\_is\_image\_icon}}
+\index{nvg\_is\_image\_icon@{nvg\_is\_image\_icon}!opengl.h@{opengl.h}}
+\doxysubsubsection{\texorpdfstring{nvg\_is\_image\_icon()}{nvg\_is\_image\_icon()}}
+{\footnotesize\ttfamily bool nvg\+\_\+is\+\_\+image\+\_\+icon (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determine whether an icon ID is a texture loaded via {\ttfamily nvg\+\_\+image\+\_\+icon}. 
+
+\textbackslash{}rst The implementation defines all {\ttfamily value $<$ 1024} as image icons, and everything {\ttfamily $>$= 1024} as an Entypo icon (see \+:ref\+:{\ttfamily file\+\_\+nanogui\+\_\+entypo.\+h}). The value {\ttfamily 1024} exists to provide a generous buffer on how many images may have been loaded by Nano\+VG. \textbackslash{}endrst
+
+
+\begin{DoxyParams}{Paramètres}
+{\em value} & The integral value of the icon.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Whether or not this is an image icon. 
+\end{DoxyReturn}

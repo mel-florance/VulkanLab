@@ -1,0 +1,49 @@
+\hypertarget{structstring__caster}{}\doxysection{Référence du modèle de la structure string\+\_\+caster$<$ String\+Type, Is\+View $>$}
+\label{structstring__caster}\index{string\_caster$<$ StringType, IsView $>$@{string\_caster$<$ StringType, IsView $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstring__caster_a0d5228e9253c85b930b6230662f2f60c}\label{structstring__caster_a0d5228e9253c85b930b6230662f2f60c}} 
+using {\bfseries CharT} = typename String\+Type\+::value\+\_\+type
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstring__caster_aa38bc121001de95bcf9c45ddbffdb635}\label{structstring__caster_aa38bc121001de95bcf9c45ddbffdb635}} 
+bool {\bfseries load} (\mbox{\hyperlink{classhandle}{handle}} src, bool)
+\item 
+\mbox{\Hypertarget{structstring__caster_afe8c27c979388d23f805bb38f04d94ab}\label{structstring__caster_afe8c27c979388d23f805bb38f04d94ab}} 
+{\bfseries P\+Y\+B\+I\+N\+D11\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+A\+S\+T\+ER} (String\+Type, \+\_\+(P\+Y\+B\+I\+N\+D11\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+N\+A\+ME))
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstring__caster_aac6f059b620b6ada6aed354b9c3f0b56}\label{structstring__caster_aac6f059b620b6ada6aed354b9c3f0b56}} 
+static \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast} (const String\+Type \&src, return\+\_\+value\+\_\+policy, \mbox{\hyperlink{classhandle}{handle}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstring__caster_a1d6a90921b8dd893b6feecfa98859d28}\label{structstring__caster_a1d6a90921b8dd893b6feecfa98859d28}} 
+static constexpr size\+\_\+t {\bfseries U\+T\+F\+\_\+N} = 8 $\ast$ sizeof(CharT)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstring__caster_aecfd8bb6526b02b2d55f13744bd61ad6}\label{structstring__caster_aecfd8bb6526b02b2d55f13744bd61ad6}} 
+{\footnotesize template$<$typename C  = CharT$>$ }\\bool {\bfseries load\+\_\+bytes} (enable\+\_\+if\+\_\+t$<$ sizeof(C)==1, \mbox{\hyperlink{classhandle}{handle}} $>$ src)
+\item 
+\mbox{\Hypertarget{structstring__caster_a04ddb444c522af40c8234e4a7b709226}\label{structstring__caster_a04ddb444c522af40c8234e4a7b709226}} 
+{\footnotesize template$<$typename C  = CharT$>$ }\\bool {\bfseries load\+\_\+bytes} (enable\+\_\+if\+\_\+t$<$ sizeof(C) !=1, \mbox{\hyperlink{classhandle}{handle}} $>$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstring__caster_a1298236fa6ceac5b187b87926cc18cf4}\label{structstring__caster_a1298236fa6ceac5b187b87926cc18cf4}} 
+static \mbox{\hyperlink{classhandle}{handle}} {\bfseries decode\+\_\+utfN} (const char $\ast$\mbox{\hyperlink{classbuffer}{buffer}}, ssize\+\_\+t nbytes)
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/cast.\+h\end{DoxyCompactItemize}

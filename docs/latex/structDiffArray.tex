@@ -1,0 +1,555 @@
+\hypertarget{structDiffArray}{}\doxysection{Référence du modèle de la structure Diff\+Array$<$ Type $>$}
+\label{structDiffArray}\index{DiffArray$<$ Type $>$@{DiffArray$<$ Type $>$}}
+
+
+Reverse-\/mode autodiff array.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Diff\+Array$<$ Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structDiffArray}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_a597a4edc20e17e3349f4f10d155563a1}\label{structDiffArray_a597a4edc20e17e3349f4f10d155563a1}} 
+using {\bfseries Base} = enoki\+::\+Array\+Base$<$ value\+\_\+t$<$ Type $>$, \mbox{\hyperlink{structDiffArray}{Diff\+Array}}$<$ Type $>$ $>$
+\item 
+\mbox{\Hypertarget{structDiffArray_a6888d41eccb0c19719455e2eecbd0fd4}\label{structDiffArray_a6888d41eccb0c19719455e2eecbd0fd4}} 
+using {\bfseries Tape} = enoki\+::\+Tape$<$ Type $>$
+\item 
+\mbox{\Hypertarget{structDiffArray_a40184f05a4b2606e8d942968493afe54}\label{structDiffArray_a40184f05a4b2606e8d942968493afe54}} 
+using {\bfseries Index} = uint32\+\_\+t
+\item 
+\mbox{\Hypertarget{structDiffArray_a4394add435ca280ad2177bf7490ebb38}\label{structDiffArray_a4394add435ca280ad2177bf7490ebb38}} 
+using {\bfseries Underlying\+Type} = Type
+\item 
+\mbox{\Hypertarget{structDiffArray_adaf567288ecd11328437b847c53a79b6}\label{structDiffArray_adaf567288ecd11328437b847c53a79b6}} 
+using {\bfseries Array\+Type} = \mbox{\hyperlink{structDiffArray}{Diff\+Array}}
+\item 
+\mbox{\Hypertarget{structDiffArray_aed744bbebf08c09b4069ae0dae1c576a}\label{structDiffArray_aed744bbebf08c09b4069ae0dae1c576a}} 
+using {\bfseries Mask\+Type} = \mbox{\hyperlink{structDiffArray}{Diff\+Array}}$<$ mask\+\_\+t$<$ Type $>$ $>$
+\item 
+\mbox{\Hypertarget{structDiffArray_ace3965b480425938326d2394ade28d85}\label{structDiffArray_ace3965b480425938326d2394ade28d85}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries Replace\+Value} = \mbox{\hyperlink{structDiffArray}{Diff\+Array}}$<$ replace\+\_\+scalar\+\_\+t$<$ Type, T, false $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_a1509e3ff638ea8365c56adf2cc13f362}\label{structDiffArray_a1509e3ff638ea8365c56adf2cc13f362}} 
+void {\bfseries set\+\_\+requires\+\_\+gradient\+\_\+} (bool value)
+\item 
+\mbox{\Hypertarget{structDiffArray_a4b445452a9461b7ff2fe04b2f5eaf183}\label{structDiffArray_a4b445452a9461b7ff2fe04b2f5eaf183}} 
+bool {\bfseries requires\+\_\+gradient\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a06a2142bff76e1ad65fa2582586f7d81}\label{structDiffArray_a06a2142bff76e1ad65fa2582586f7d81}} 
+void {\bfseries set\+\_\+label\+\_\+} (const char $\ast$label) const
+\item 
+\mbox{\Hypertarget{structDiffArray_ade6b325773bcc0acddccbb8a23e3b1fb}\label{structDiffArray_ade6b325773bcc0acddccbb8a23e3b1fb}} 
+void {\bfseries backward\+\_\+} (bool free\+\_\+graph) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a7cb203f996c1e30dc36fa29322b6559f}\label{structDiffArray_a7cb203f996c1e30dc36fa29322b6559f}} 
+void {\bfseries forward\+\_\+} (bool free\+\_\+graph) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a876ddfa2bb2390fe2f807e040789b535}\label{structDiffArray_a876ddfa2bb2390fe2f807e040789b535}} 
+auto {\bfseries operator-\/$>$} () const
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Constructors / destructors}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_a7f1336824151fb29d675daca44e8452d}\label{structDiffArray_a7f1336824151fb29d675daca44e8452d}} 
+{\bfseries Diff\+Array} ()=default
+\item 
+\mbox{\Hypertarget{structDiffArray_a9b7bf0a2b32b4a0e5fe90a605985c01e}\label{structDiffArray_a9b7bf0a2b32b4a0e5fe90a605985c01e}} 
+{\bfseries $\sim$\+Diff\+Array} ()
+\item 
+\mbox{\Hypertarget{structDiffArray_a1d0e1243761aa9671091b4716a548460}\label{structDiffArray_a1d0e1243761aa9671091b4716a548460}} 
+{\bfseries Diff\+Array} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a)
+\item 
+\mbox{\Hypertarget{structDiffArray_a4769b36b7c8117f02882fb44048334ac}\label{structDiffArray_a4769b36b7c8117f02882fb44048334ac}} 
+{\bfseries Diff\+Array} (\mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&\&a)
+\item 
+\mbox{\Hypertarget{structDiffArray_a7b2939adff539a09b29b0ae1ff0c42a1}\label{structDiffArray_a7b2939adff539a09b29b0ae1ff0c42a1}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries Diff\+Array} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}}$<$ T $>$ \&v, \mbox{\hyperlink{structdetail_1_1reinterpret__flag}{detail\+::reinterpret\+\_\+flag}})
+\item 
+\mbox{\Hypertarget{structDiffArray_a9aed5c2230b99b152592c94927cf46fd}\label{structDiffArray_a9aed5c2230b99b152592c94927cf46fd}} 
+{\footnotesize template$<$typename Type2 , enable\+\_\+if\+\_\+t$<$!std\+::is\+\_\+same\+\_\+v$<$ Type, Type2 $>$$>$  = 0$>$ }\\{\bfseries Diff\+Array} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}}$<$ Type2 $>$ \&a)
+\item 
+\mbox{\Hypertarget{structDiffArray_ab555ab6db4146321dcdb387cc76a4d3b}\label{structDiffArray_ab555ab6db4146321dcdb387cc76a4d3b}} 
+{\footnotesize template$<$typename Type2 , enable\+\_\+if\+\_\+t$<$!std\+::is\+\_\+same\+\_\+v$<$ Type, Type2 $>$$>$  = 0$>$ }\\{\bfseries Diff\+Array} (\mbox{\hyperlink{structDiffArray}{Diff\+Array}}$<$ Type2 $>$ \&\&a)
+\item 
+\mbox{\Hypertarget{structDiffArray_af660debe6d909702b7d9cff2dc69d43a}\label{structDiffArray_af660debe6d909702b7d9cff2dc69d43a}} 
+{\bfseries Diff\+Array} (Type \&\&value)
+\item 
+\mbox{\Hypertarget{structDiffArray_a63ec05aee680ba3fc2cfe3dede6648c0}\label{structDiffArray_a63ec05aee680ba3fc2cfe3dede6648c0}} 
+{\footnotesize template$<$typename... Args, enable\+\_\+if\+\_\+t$<$ sizeof...(\+Args) !=0 \&\&std\+::conjunction\+\_\+v$<$ std\+::negation$<$ is\+\_\+diff\+\_\+array$<$ Args $>$$>$... $>$$>$  = 0$>$ }\\{\bfseries Diff\+Array} (Args \&\&... \mbox{\hyperlink{classargs}{args}})
+\item 
+\mbox{\Hypertarget{structDiffArray_a6da14c275e33fa4827947e996ec22377}\label{structDiffArray_a6da14c275e33fa4827947e996ec22377}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} \& {\bfseries operator=} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a)
+\item 
+\mbox{\Hypertarget{structDiffArray_a832b26968b964a205c91e7308901eb29}\label{structDiffArray_a832b26968b964a205c91e7308901eb29}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} \& {\bfseries operator=} (\mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&\&a)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Operations that don\textquotesingle{}t require derivatives}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_a6b7ebbc359ee31f3cdd0265f79aa3f95}\label{structDiffArray_a6b7ebbc359ee31f3cdd0265f79aa3f95}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries mod\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a) const
+\item 
+\mbox{\Hypertarget{structDiffArray_ad227751557bd09f0737175582d708e2d}\label{structDiffArray_ad227751557bd09f0737175582d708e2d}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries mulhi\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a) const
+\item 
+\mbox{\Hypertarget{structDiffArray_aa0404d9afb641a235ad69c77626be74b}\label{structDiffArray_aa0404d9afb641a235ad69c77626be74b}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries not\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a0b24b98892378e29b6cc26791e653e86}\label{structDiffArray_a0b24b98892378e29b6cc26791e653e86}} 
+{\footnotesize template$<$typename Mask $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE value\+\_\+t$<$ Type $>$ {\bfseries extract\+\_\+} (const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structDiffArray_aefdada6d04a5fcd61a0ea4067741e76f}\label{structDiffArray_aefdada6d04a5fcd61a0ea4067741e76f}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries lzcnt\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a6e4cd9619f8dd864dca7eb8e2ce92517}\label{structDiffArray_a6e4cd9619f8dd864dca7eb8e2ce92517}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries tzcnt\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a67445dea9b10877eebf084d4a095701a}\label{structDiffArray_a67445dea9b10877eebf084d4a095701a}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries popcnt\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a4219bef8b0d3c2cc65b6f67587af9684}\label{structDiffArray_a4219bef8b0d3c2cc65b6f67587af9684}} 
+{\footnotesize template$<$size\+\_\+t Imm$>$ }\\\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries sl\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a60df646985bc181460f65fbf0d70d249}\label{structDiffArray_a60df646985bc181460f65fbf0d70d249}} 
+{\footnotesize template$<$size\+\_\+t Imm$>$ }\\\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries sr\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_ae7702b88fb8c402af9da7b4efb2b57f3}\label{structDiffArray_ae7702b88fb8c402af9da7b4efb2b57f3}} 
+{\footnotesize template$<$size\+\_\+t Imm$>$ }\\\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries rol\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a6849cdc058d75c5b20997e3997243a43}\label{structDiffArray_a6849cdc058d75c5b20997e3997243a43}} 
+{\footnotesize template$<$size\+\_\+t Imm$>$ }\\\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries ror\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a5ceffc10a7e11a04067723c7ebcdba12}\label{structDiffArray_a5ceffc10a7e11a04067723c7ebcdba12}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries sl\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a) const
+\item 
+\mbox{\Hypertarget{structDiffArray_aa0c71508a4849e88e4d9d135ae38f537}\label{structDiffArray_aa0c71508a4849e88e4d9d135ae38f537}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries sr\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a1b450785e0a924ea6b3eacd678e58e33}\label{structDiffArray_a1b450785e0a924ea6b3eacd678e58e33}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries rol\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a) const
+\item 
+\mbox{\Hypertarget{structDiffArray_ab538e03b4c6c160c766b71e61db6d643}\label{structDiffArray_ab538e03b4c6c160c766b71e61db6d643}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries ror\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a40ba114cf51776f42ff48ec13f201bfe}\label{structDiffArray_a40ba114cf51776f42ff48ec13f201bfe}} 
+auto {\bfseries eq\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&d) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a7f8497970848116e30dd48e85b0d1f00}\label{structDiffArray_a7f8497970848116e30dd48e85b0d1f00}} 
+auto {\bfseries neq\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&d) const
+\item 
+\mbox{\Hypertarget{structDiffArray_ab4b97cf23a7a676332336cceec4944de}\label{structDiffArray_ab4b97cf23a7a676332336cceec4944de}} 
+auto {\bfseries lt\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&d) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a38d3eebd58b356386a14a085d134d725}\label{structDiffArray_a38d3eebd58b356386a14a085d134d725}} 
+auto {\bfseries le\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&d) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a5291055dca1bfd95a12bd5e385bf3f47}\label{structDiffArray_a5291055dca1bfd95a12bd5e385bf3f47}} 
+auto {\bfseries gt\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&d) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a6a778528306313485844d3242100ff66}\label{structDiffArray_a6a778528306313485844d3242100ff66}} 
+auto {\bfseries ge\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&d) const
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Horizontal operations}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_aecb32af8c5c7a3f54144a2b28eee2535}\label{structDiffArray_aecb32af8c5c7a3f54144a2b28eee2535}} 
+auto {\bfseries all\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_aa239c02be4320535d9e4cc7af5200d12}\label{structDiffArray_aa239c02be4320535d9e4cc7af5200d12}} 
+auto {\bfseries any\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a37d5919c52aa2413c0181ed5772bfbde}\label{structDiffArray_a37d5919c52aa2413c0181ed5772bfbde}} 
+auto {\bfseries count\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_aec30701743637f02e07136bc3d18ada5}\label{structDiffArray_aec30701743637f02e07136bc3d18ada5}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries hsum\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a7841826ff9286eb5507289ae7cdf9dc7}\label{structDiffArray_a7841826ff9286eb5507289ae7cdf9dc7}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries hprod\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a668815c561d6ff35203ba1878024237e}\label{structDiffArray_a668815c561d6ff35203ba1878024237e}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries hmax\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a87a7c06c1c49abd0ecf133103dbaeb1c}\label{structDiffArray_a87a7c06c1c49abd0ecf133103dbaeb1c}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries hmin\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a011f9339386a48371055bb74cb410e83}\label{structDiffArray_a011f9339386a48371055bb74cb410e83}} 
+{\footnotesize template$<$typename T  = Scalar, enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+pointer\+\_\+v$<$ T $>$$>$  = 0$>$ }\\auto {\bfseries partition\+\_\+} () const
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Access to internals}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_aeb2fa88f9f050aab13b474502b34c6c7}\label{structDiffArray_aeb2fa88f9f050aab13b474502b34c6c7}} 
+void {\bfseries set\+\_\+index\+\_\+} (Index index)
+\item 
+\mbox{\Hypertarget{structDiffArray_a32e974794fcbc0acff01154523ec69b1}\label{structDiffArray_a32e974794fcbc0acff01154523ec69b1}} 
+Index {\bfseries index\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_ab037ba4f27c86313296b81f86b5e6e0a}\label{structDiffArray_ab037ba4f27c86313296b81f86b5e6e0a}} 
+Type \& {\bfseries value\+\_\+} ()
+\item 
+\mbox{\Hypertarget{structDiffArray_a07b8a7d47d6b7cb0911143555457656e}\label{structDiffArray_a07b8a7d47d6b7cb0911143555457656e}} 
+const Type \& {\bfseries value\+\_\+} () const
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_a575e4cfcea39d21033af9b38389bb2cf}\label{structDiffArray_a575e4cfcea39d21033af9b38389bb2cf}} 
+static void {\bfseries backward\+\_\+static\+\_\+} (bool free\+\_\+graph)
+\item 
+\mbox{\Hypertarget{structDiffArray_a88ee94ac6f783c91fc413af56d6b3abd}\label{structDiffArray_a88ee94ac6f783c91fc413af56d6b3abd}} 
+static void {\bfseries forward\+\_\+static\+\_\+} (bool free\+\_\+graph)
+\item 
+\mbox{\Hypertarget{structDiffArray_a631ee18c0f3c88adc715382eaf9f6c61}\label{structDiffArray_a631ee18c0f3c88adc715382eaf9f6c61}} 
+static std\+::string {\bfseries graphviz\+\_\+} (const std\+::vector$<$ Index $>$ \&indices)
+\item 
+\mbox{\Hypertarget{structDiffArray_a61bbd3929eda25497650f3e9281744d2}\label{structDiffArray_a61bbd3929eda25497650f3e9281744d2}} 
+static void {\bfseries push\+\_\+prefix\+\_\+} (const char $\ast$label)
+\item 
+\mbox{\Hypertarget{structDiffArray_afcac985a30c93d8745b379c8ace3f249}\label{structDiffArray_afcac985a30c93d8745b379c8ace3f249}} 
+static void {\bfseries pop\+\_\+prefix\+\_\+} ()
+\item 
+\mbox{\Hypertarget{structDiffArray_a54a12861388fb9ee9552dc69284b8ccd}\label{structDiffArray_a54a12861388fb9ee9552dc69284b8ccd}} 
+static void {\bfseries inc\+\_\+ref\+\_\+ext\+\_\+} (Index index)
+\item 
+\mbox{\Hypertarget{structDiffArray_a77ddc04aa25ad9661c65af23522581e5}\label{structDiffArray_a77ddc04aa25ad9661c65af23522581e5}} 
+static void {\bfseries dec\+\_\+ref\+\_\+ext\+\_\+} (Index index)
+\item 
+\mbox{\Hypertarget{structDiffArray_aef62215b44fa297505ae87f2db742f33}\label{structDiffArray_aef62215b44fa297505ae87f2db742f33}} 
+static void {\bfseries set\+\_\+scatter\+\_\+gather\+\_\+operand\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&v, bool permute)
+\item 
+\mbox{\Hypertarget{structDiffArray_a636188520a4295cacc9e0b4588c1de6a}\label{structDiffArray_a636188520a4295cacc9e0b4588c1de6a}} 
+static void {\bfseries clear\+\_\+scatter\+\_\+gather\+\_\+operand\+\_\+} ()
+\item 
+\mbox{\Hypertarget{structDiffArray_a376a85417861fbc08e04c004f68de189}\label{structDiffArray_a376a85417861fbc08e04c004f68de189}} 
+static void {\bfseries set\+\_\+log\+\_\+level\+\_\+} (uint32\+\_\+t level)
+\item 
+\mbox{\Hypertarget{structDiffArray_adc909b962fdb339381728d1a5e8597e4}\label{structDiffArray_adc909b962fdb339381728d1a5e8597e4}} 
+static uint32\+\_\+t {\bfseries log\+\_\+level\+\_\+} ()
+\item 
+\mbox{\Hypertarget{structDiffArray_aaa84de169cc5343538a195c8b15c3765}\label{structDiffArray_aaa84de169cc5343538a195c8b15c3765}} 
+static void {\bfseries set\+\_\+graph\+\_\+simplification\+\_\+} (uint32\+\_\+t level)
+\item 
+\mbox{\Hypertarget{structDiffArray_a66cef3d4012d6d8ffffaa54971c2c8cc}\label{structDiffArray_a66cef3d4012d6d8ffffaa54971c2c8cc}} 
+static void {\bfseries simplify\+\_\+graph\+\_\+} ()
+\item 
+\mbox{\Hypertarget{structDiffArray_a24907faba5188e4e5e815fed07573388}\label{structDiffArray_a24907faba5188e4e5e815fed07573388}} 
+static std\+::string {\bfseries whos\+\_\+} ()
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Standard initializers}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_a5b062f413fb51ac3f3deee248822d460}\label{structDiffArray_a5b062f413fb51ac3f3deee248822d460}} 
+{\footnotesize template$<$typename... Args$>$ }\\static \mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries empty\+\_\+} (Args... \mbox{\hyperlink{classargs}{args}})
+\item 
+\mbox{\Hypertarget{structDiffArray_a76c1d6f2c792c3556d49ccde709e984b}\label{structDiffArray_a76c1d6f2c792c3556d49ccde709e984b}} 
+{\footnotesize template$<$typename... Args$>$ }\\static \mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries zero\+\_\+} (Args... \mbox{\hyperlink{classargs}{args}})
+\item 
+\mbox{\Hypertarget{structDiffArray_a649b2e49fd53f781d49a7af25127cded}\label{structDiffArray_a649b2e49fd53f781d49a7af25127cded}} 
+{\footnotesize template$<$typename... Args$>$ }\\static \mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries arange\+\_\+} (Args... \mbox{\hyperlink{classargs}{args}})
+\item 
+\mbox{\Hypertarget{structDiffArray_a68182574133ba62074b66943893b5a8d}\label{structDiffArray_a68182574133ba62074b66943893b5a8d}} 
+{\footnotesize template$<$typename... Args$>$ }\\static \mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries linspace\+\_\+} (Args... \mbox{\hyperlink{classargs}{args}})
+\item 
+\mbox{\Hypertarget{structDiffArray_a1561926c9b90c040107c907722bb83d1}\label{structDiffArray_a1561926c9b90c040107c907722bb83d1}} 
+{\footnotesize template$<$typename... Args$>$ }\\static \mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries full\+\_\+} (Args... \mbox{\hyperlink{classargs}{args}})
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_aa3bf98b654fb57af62633775750e3091}\label{structDiffArray_aa3bf98b654fb57af62633775750e3091}} 
+static constexpr size\+\_\+t {\bfseries Size} = is\+\_\+scalar\+\_\+v$<$Type$>$ ? 1 \+: array\+\_\+size\+\_\+v$<$Type$>$
+\item 
+\mbox{\Hypertarget{structDiffArray_a1444b0857a8033ce304db5a401fadddc}\label{structDiffArray_a1444b0857a8033ce304db5a401fadddc}} 
+static constexpr size\+\_\+t {\bfseries Depth} = is\+\_\+scalar\+\_\+v$<$Type$>$ ? 1 \+: array\+\_\+depth\+\_\+v$<$Type$>$
+\item 
+\mbox{\Hypertarget{structDiffArray_a240dc864dee844fc76cba3a776105b9d}\label{structDiffArray_a240dc864dee844fc76cba3a776105b9d}} 
+static constexpr bool {\bfseries Approx} = array\+\_\+approx\+\_\+v$<$Type$>$
+\item 
+\mbox{\Hypertarget{structDiffArray_a1869b2362f5b137970fceabb97e1e428}\label{structDiffArray_a1869b2362f5b137970fceabb97e1e428}} 
+static constexpr bool {\bfseries Is\+Mask} = is\+\_\+mask\+\_\+v$<$Type$>$
+\item 
+\mbox{\Hypertarget{structDiffArray_ae7d9c000f00c2d8de548fa9af5cc1abe}\label{structDiffArray_ae7d9c000f00c2d8de548fa9af5cc1abe}} 
+static constexpr bool {\bfseries Is\+C\+U\+DA} = is\+\_\+cuda\+\_\+array\+\_\+v$<$Type$>$
+\item 
+\mbox{\Hypertarget{structDiffArray_a1cdc566e0b48260a3148dc86c7fa0f32}\label{structDiffArray_a1cdc566e0b48260a3148dc86c7fa0f32}} 
+static constexpr bool {\bfseries Is\+Diff} = true
+\item 
+static constexpr bool {\bfseries Enabled}
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_ac41ffabe21d67c783d6f327d0607d0ff}\label{structDiffArray_ac41ffabe21d67c783d6f327d0607d0ff}} 
+using {\bfseries Arg} = std\+::conditional\+\_\+t$<$ std\+::is\+\_\+scalar\+\_\+v$<$ Type $>$, Type, Type \&\& $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_a67fc6d86d0c1b7261a6f8b7c8dbd7d1b}\label{structDiffArray_a67fc6d86d0c1b7261a6f8b7c8dbd7d1b}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structTape}{Tape}} $\ast$ {\bfseries tape} ()
+\item 
+\mbox{\Hypertarget{structDiffArray_a3949fd7cb4631cf307c3aea38aff6a52}\label{structDiffArray_a3949fd7cb4631cf307c3aea38aff6a52}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries create} (Index index, Arg value)
+\item 
+\mbox{\Hypertarget{structDiffArray_a783a2218a4aa89b810731a59b56d9715}\label{structDiffArray_a783a2218a4aa89b810731a59b56d9715}} 
+static E\+N\+O\+K\+I\+\_\+\+N\+O\+I\+N\+L\+I\+NE void {\bfseries fail\+\_\+unsupported} (const char $\ast$msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_a08fdad35387ec6454659ee689facf777}\label{structDiffArray_a08fdad35387ec6454659ee689facf777}} 
+Type {\bfseries m\+\_\+value}
+\item 
+\mbox{\Hypertarget{structDiffArray_a23f13cf6832a502f2d4561b03be86fee}\label{structDiffArray_a23f13cf6832a502f2d4561b03be86fee}} 
+Index {\bfseries m\+\_\+index} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Vertical operations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_a7f1e3480defb654f6587e73f488c71d2}\label{structDiffArray_a7f1e3480defb654f6587e73f488c71d2}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries add\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a) const
+\item 
+\mbox{\Hypertarget{structDiffArray_ab696fb763767e13c9a340e988fd4153a}\label{structDiffArray_ab696fb763767e13c9a340e988fd4153a}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries sub\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a565c8f6c577dec1d22e2d41795b5940b}\label{structDiffArray_a565c8f6c577dec1d22e2d41795b5940b}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries mul\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a) const
+\item 
+\mbox{\Hypertarget{structDiffArray_aa64f7b6bc2e01dd649a2a0aad484bedb}\label{structDiffArray_aa64f7b6bc2e01dd649a2a0aad484bedb}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries div\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a) const
+\item 
+\mbox{\Hypertarget{structDiffArray_af1b62dc750a4c449dfd44adb3437b0b0}\label{structDiffArray_af1b62dc750a4c449dfd44adb3437b0b0}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries fmadd\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a, const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&b) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a58da0894c66265ba86e735c78f7778b5}\label{structDiffArray_a58da0894c66265ba86e735c78f7778b5}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries fmsub\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a, const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&b) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a9fb85026a086ae0a38f7c02835be0e54}\label{structDiffArray_a9fb85026a086ae0a38f7c02835be0e54}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries fnmadd\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a, const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&b) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a9ed17f65659ae644c3507a868513d644}\label{structDiffArray_a9ed17f65659ae644c3507a868513d644}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries fnmsub\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a, const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&b) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a1d643ecf2c3e69749dde2a5989b65604}\label{structDiffArray_a1d643ecf2c3e69749dde2a5989b65604}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries neg\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_ac79fc5fad81e653300e8ffd59707dc37}\label{structDiffArray_ac79fc5fad81e653300e8ffd59707dc37}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries abs\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_ac8d5403bda29096a144db495d9c779f8}\label{structDiffArray_ac8d5403bda29096a144db495d9c779f8}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries sqrt\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a0d5c58fb66d759624e16695e620a7d21}\label{structDiffArray_a0d5c58fb66d759624e16695e620a7d21}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries cbrt\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a13ad09a1eb5cc2735b3e9b6a974a0ab7}\label{structDiffArray_a13ad09a1eb5cc2735b3e9b6a974a0ab7}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries rcp\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_ac5bbec9a73207f621f756fa360276ca3}\label{structDiffArray_ac5bbec9a73207f621f756fa360276ca3}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries rsqrt\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a87957c46aaa5d7a60b0f1c023eea2d60}\label{structDiffArray_a87957c46aaa5d7a60b0f1c023eea2d60}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries min\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a9808575926512d2926acd7dd52ed7940}\label{structDiffArray_a9808575926512d2926acd7dd52ed7940}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries max\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&a) const
+\item 
+\mbox{\Hypertarget{structDiffArray_ab9057a0307a6c5e8ce4e99a2dbdc2059}\label{structDiffArray_ab9057a0307a6c5e8ce4e99a2dbdc2059}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries floor\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a0dc8a5658a4d465052e24fbc741e0144}\label{structDiffArray_a0dc8a5658a4d465052e24fbc741e0144}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries ceil\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a4487cdcebe65297de23408e6dce4ccd6}\label{structDiffArray_a4487cdcebe65297de23408e6dce4ccd6}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries trunc\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a58a9876a02c909211c4c489244ced424}\label{structDiffArray_a58a9876a02c909211c4c489244ced424}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries round\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_ab42812ce5f6fa0def4df8914971df56d}\label{structDiffArray_ab42812ce5f6fa0def4df8914971df56d}} 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries ceil2int\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a0d4f8ab1e2138f5118c421f6bdf90595}\label{structDiffArray_a0d4f8ab1e2138f5118c421f6bdf90595}} 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries floor2int\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_ac62d8538a0f197d9eb9b74cfba2f1584}\label{structDiffArray_ac62d8538a0f197d9eb9b74cfba2f1584}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries sin\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_aa9ee09030c1b5d5beb0ad68ad38c35bd}\label{structDiffArray_aa9ee09030c1b5d5beb0ad68ad38c35bd}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries cos\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a7ef4ec8bdad4e634554aa999c2e69feb}\label{structDiffArray_a7ef4ec8bdad4e634554aa999c2e69feb}} 
+std\+::pair$<$ \mbox{\hyperlink{structDiffArray}{Diff\+Array}}, \mbox{\hyperlink{structDiffArray}{Diff\+Array}} $>$ {\bfseries sincos\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a4232019bef5e85279bbf0d38eb8e13f6}\label{structDiffArray_a4232019bef5e85279bbf0d38eb8e13f6}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries tan\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a8d65073a3e00101f6038e87fc843150a}\label{structDiffArray_a8d65073a3e00101f6038e87fc843150a}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries csc\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_ac7e0e0ca59fb34f2a552eeed0c54a1bc}\label{structDiffArray_ac7e0e0ca59fb34f2a552eeed0c54a1bc}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries sec\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a0e38b835c0a8d2fc48067278325d63f2}\label{structDiffArray_a0e38b835c0a8d2fc48067278325d63f2}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries cot\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_aa15f874843fb6d1be203a9bbfc17eb4c}\label{structDiffArray_aa15f874843fb6d1be203a9bbfc17eb4c}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries asin\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a94e4d925957b5358cb3bffbfbc49a447}\label{structDiffArray_a94e4d925957b5358cb3bffbfbc49a447}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries acos\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_af9a53e83617936c4f484f0fc8dceba9c}\label{structDiffArray_af9a53e83617936c4f484f0fc8dceba9c}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries atan\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_aaf736f6b4c5c1770f7d5d3c88292ffc1}\label{structDiffArray_aaf736f6b4c5c1770f7d5d3c88292ffc1}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries atan2\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&x) const
+\item 
+\mbox{\Hypertarget{structDiffArray_ae389d585d066fa28c07eb9f5b722b0de}\label{structDiffArray_ae389d585d066fa28c07eb9f5b722b0de}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries sinh\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a20cee8d96910a1d5483817c4b2ee4ce7}\label{structDiffArray_a20cee8d96910a1d5483817c4b2ee4ce7}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries cosh\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_aec641c83dd5a8aebe3be43dcd6eaeff1}\label{structDiffArray_aec641c83dd5a8aebe3be43dcd6eaeff1}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries csch\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a4f7a9d2e1d951faa0134f06be711d64c}\label{structDiffArray_a4f7a9d2e1d951faa0134f06be711d64c}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries sech\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a7f2e52d6643cf684c261b677fbc79f0f}\label{structDiffArray_a7f2e52d6643cf684c261b677fbc79f0f}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries tanh\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a259a0056f632bbac53b503c39e9bb645}\label{structDiffArray_a259a0056f632bbac53b503c39e9bb645}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries asinh\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a4f2ad8abb1bbace43ff56afa9bbc161b}\label{structDiffArray_a4f2ad8abb1bbace43ff56afa9bbc161b}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries acosh\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a0e4fa58dd91cd6e4cecc3f51244836bb}\label{structDiffArray_a0e4fa58dd91cd6e4cecc3f51244836bb}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries atanh\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a5f376a488c8660136bf9a3bdcad76133}\label{structDiffArray_a5f376a488c8660136bf9a3bdcad76133}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries exp\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a0229414531fda814f4c9ab741301566e}\label{structDiffArray_a0229414531fda814f4c9ab741301566e}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries log\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_ade72f990007cdf3ebf0b44c9850b4c5f}\label{structDiffArray_ade72f990007cdf3ebf0b44c9850b4c5f}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries or\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&m) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a8a27fbda9f39686d09bce974fea2d685}\label{structDiffArray_a8a27fbda9f39686d09bce974fea2d685}} 
+{\footnotesize template$<$typename Mask $>$ }\\\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries or\+\_\+} (const \mbox{\hyperlink{structMask}{Mask}} \&m) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a416cb194b2e0b4ecf50e71e9ece2cfa8}\label{structDiffArray_a416cb194b2e0b4ecf50e71e9ece2cfa8}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries and\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&m) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a568a42093944e75081416865e92fae58}\label{structDiffArray_a568a42093944e75081416865e92fae58}} 
+{\footnotesize template$<$typename Mask $>$ }\\\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries and\+\_\+} (const \mbox{\hyperlink{structMask}{Mask}} \&m) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a16f5c5517f3f07fa5adab7d2e857b1e5}\label{structDiffArray_a16f5c5517f3f07fa5adab7d2e857b1e5}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries xor\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&m) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a95d4e2c3994aac5e0bce91ccf393840d}\label{structDiffArray_a95d4e2c3994aac5e0bce91ccf393840d}} 
+{\footnotesize template$<$typename Mask $>$ }\\\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries xor\+\_\+} (const \mbox{\hyperlink{structMask}{Mask}} \&m) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a9adc511dbe82986c11dd5e796c5abd6c}\label{structDiffArray_a9adc511dbe82986c11dd5e796c5abd6c}} 
+\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries andnot\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&m) const
+\item 
+\mbox{\Hypertarget{structDiffArray_aab89c13d6c62e4627cd90a5b69ce780a}\label{structDiffArray_aab89c13d6c62e4627cd90a5b69ce780a}} 
+{\footnotesize template$<$typename Mask $>$ }\\\mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries andnot\+\_\+} (const \mbox{\hyperlink{structMask}{Mask}} \&m) const
+\item 
+\mbox{\Hypertarget{structDiffArray_abec418ca73e64405d1e53664a09d73c9}\label{structDiffArray_abec418ca73e64405d1e53664a09d73c9}} 
+static \mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries select\+\_\+} (const \mbox{\hyperlink{structDiffArray}{Diff\+Array}}$<$ mask\+\_\+t$<$ Type $>$$>$ \&m, const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&t, const \mbox{\hyperlink{structDiffArray}{Diff\+Array}} \&f)
+\end{DoxyCompactItemize}
+\doxysubsection*{Scatter/gather operations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_a7e7a38a09d9021af2103867b23f79ba2}\label{structDiffArray_a7e7a38a09d9021af2103867b23f79ba2}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Offset , typename Mask $>$ }\\void {\bfseries scatter\+\_\+} (void $\ast$ptr, const Offset \&offset, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a9df8aa2554214276708697b43f5ca764}\label{structDiffArray_a9df8aa2554214276708697b43f5ca764}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Offset , typename Mask $>$ }\\void {\bfseries scatter\+\_\+add\+\_\+} (void $\ast$ptr, const Offset \&offset, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a221511afa51ea3097e4bed1b550c698f}\label{structDiffArray_a221511afa51ea3097e4bed1b550c698f}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Offset , typename Mask $>$ }\\static \mbox{\hyperlink{structDiffArray}{Diff\+Array}} {\bfseries gather\+\_\+} (const void $\ast$ptr, const Offset \&offset, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\end{DoxyCompactItemize}
+\doxysubsection*{Coefficient access}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDiffArray_a421a714129e8e42d7cb8152b3a04380d}\label{structDiffArray_a421a714129e8e42d7cb8152b3a04380d}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_ae0154653ca6f5e811eedd3cc245dfcdf}\label{structDiffArray_ae0154653ca6f5e811eedd3cc245dfcdf}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_ab7de417c208adb58d99f86520dc74aac}\label{structDiffArray_ab7de417c208adb58d99f86520dc74aac}} 
+E\+N\+O\+K\+I\+\_\+\+N\+O\+I\+N\+L\+I\+NE void {\bfseries resize} (size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structDiffArray_a0363d724e5fee2e7884fce33383a90d6}\label{structDiffArray_a0363d724e5fee2e7884fce33383a90d6}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a0c38fc04bc679575254a9733c0c08d11}{Scalar}} $\ast$ {\bfseries data} ()
+\item 
+\mbox{\Hypertarget{structDiffArray_ae554b050abff422faf43286a69762418}\label{structDiffArray_ae554b050abff422faf43286a69762418}} 
+const E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a0c38fc04bc679575254a9733c0c08d11}{Scalar}} $\ast$ {\bfseries data} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_a26cfdffabe516481e7402ced8ddd2c93}\label{structDiffArray_a26cfdffabe516481e7402ced8ddd2c93}} 
+{\footnotesize template$<$typename... Args$>$ }\\decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries coeff} (Args... \mbox{\hyperlink{classargs}{args}})
+\item 
+\mbox{\Hypertarget{structDiffArray_afa42c9db0a3e46f999acd3eab1104ac4}\label{structDiffArray_afa42c9db0a3e46f999acd3eab1104ac4}} 
+{\footnotesize template$<$typename... Args$>$ }\\decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries coeff} (Args... \mbox{\hyperlink{classargs}{args}}) const
+\item 
+\mbox{\Hypertarget{structDiffArray_a11e70cebe1bbc78abf845a47ea623b73}\label{structDiffArray_a11e70cebe1bbc78abf845a47ea623b73}} 
+const Type \& {\bfseries gradient\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDiffArray_ab3ec88ac81254d46e7ec8dd80572cf69}\label{structDiffArray_ab3ec88ac81254d46e7ec8dd80572cf69}} 
+void {\bfseries set\+\_\+gradient\+\_\+} (const Type \&value, bool backward=true)
+\item 
+\mbox{\Hypertarget{structDiffArray_abea324b9d2a08eb4478cc87f41572c89}\label{structDiffArray_abea324b9d2a08eb4478cc87f41572c89}} 
+static const Type \& {\bfseries gradient\+\_\+static\+\_\+} (Index index)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename Type$>$\newline
+struct Diff\+Array$<$ Type $>$}
+
+Reverse-\/mode autodiff array. 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structDiffArray_ae88e01e67df2fc9ab095d35dbe0920dd}\label{structDiffArray_ae88e01e67df2fc9ab095d35dbe0920dd}} 
+\index{DiffArray$<$ Type $>$@{DiffArray$<$ Type $>$}!Enabled@{Enabled}}
+\index{Enabled@{Enabled}!DiffArray$<$ Type $>$@{DiffArray$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{Enabled}{Enabled}}
+{\footnotesize\ttfamily template$<$typename Type$>$ \\
+constexpr bool \mbox{\hyperlink{structDiffArray}{Diff\+Array}}$<$ Type $>$\+::Enabled\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{        std::is\_floating\_point\_v<scalar\_t<Type>> \&\& !is\_mask\_v<Type>}
+
+\end{DoxyCode}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/autodiff.\+h\end{DoxyCompactItemize}

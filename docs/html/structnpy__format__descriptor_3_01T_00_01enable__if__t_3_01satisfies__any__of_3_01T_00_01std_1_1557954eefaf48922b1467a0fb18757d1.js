@@ -1,0 +1,6 @@
+var structnpy__format__descriptor_3_01T_00_01enable__if__t_3_01satisfies__any__of_3_01T_00_01std_1_1557954eefaf48922b1467a0fb18757d1 =
+[
+    [ "dtype", "structnpy__format__descriptor_3_01T_00_01enable__if__t_3_01satisfies__any__of_3_01T_00_01std_1_1557954eefaf48922b1467a0fb18757d1.html#a19c914b27b36fdbdb70e6318e8065e6e", null ],
+    [ "value", "structnpy__format__descriptor_3_01T_00_01enable__if__t_3_01satisfies__any__of_3_01T_00_01std_1_1557954eefaf48922b1467a0fb18757d1.html#abce30595c9f88fad1ca546c8940c3b2b", null ],
+    [ "values", "structnpy__format__descriptor_3_01T_00_01enable__if__t_3_01satisfies__any__of_3_01T_00_01std_1_1557954eefaf48922b1467a0fb18757d1.html#a7dacbadf81c8653bb2eb266315f9cb23", null ]
+];

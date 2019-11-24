@@ -1,0 +1,99 @@
+\hypertarget{structbuffer__info}{}\doxysection{Référence de la structure buffer\+\_\+info}
+\label{structbuffer__info}\index{buffer\_info@{buffer\_info}}
+
+
+Information record describing a Python buffer object.  
+
+
+
+
+{\ttfamily \#include $<$buffer\+\_\+info.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbuffer__info_1_1private__ctr__tag}{private\+\_\+ctr\+\_\+tag}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structbuffer__info_a8104f4194a05f50ce3150367dcc52196}\label{structbuffer__info_a8104f4194a05f50ce3150367dcc52196}} 
+{\bfseries buffer\+\_\+info} (void $\ast$ptr, ssize\+\_\+t itemsize, const std\+::string \&format, ssize\+\_\+t ndim, detail\+::any\+\_\+container$<$ ssize\+\_\+t $>$ shape\+\_\+in, detail\+::any\+\_\+container$<$ ssize\+\_\+t $>$ strides\+\_\+in, bool readonly=false)
+\item 
+\mbox{\Hypertarget{structbuffer__info_ac0c1b6032f809ef3ee6cd44af001b573}\label{structbuffer__info_ac0c1b6032f809ef3ee6cd44af001b573}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries buffer\+\_\+info} (T $\ast$ptr, detail\+::any\+\_\+container$<$ ssize\+\_\+t $>$ shape\+\_\+in, detail\+::any\+\_\+container$<$ ssize\+\_\+t $>$ strides\+\_\+in, bool readonly=false)
+\item 
+\mbox{\Hypertarget{structbuffer__info_aa127fd9449a1c9c883866b6aa8012843}\label{structbuffer__info_aa127fd9449a1c9c883866b6aa8012843}} 
+{\bfseries buffer\+\_\+info} (void $\ast$ptr, ssize\+\_\+t itemsize, const std\+::string \&format, ssize\+\_\+t size, bool readonly=false)
+\item 
+\mbox{\Hypertarget{structbuffer__info_a0d78ac362b1859220c0cb859b5483390}\label{structbuffer__info_a0d78ac362b1859220c0cb859b5483390}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries buffer\+\_\+info} (T $\ast$ptr, ssize\+\_\+t size, bool readonly=false)
+\item 
+\mbox{\Hypertarget{structbuffer__info_a0287798bb2f50c8c19bbe5ee3e913cb6}\label{structbuffer__info_a0287798bb2f50c8c19bbe5ee3e913cb6}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries buffer\+\_\+info} (const T $\ast$ptr, ssize\+\_\+t size, bool readonly=true)
+\item 
+\mbox{\Hypertarget{structbuffer__info_a18bf6023b6d4bb685d345d5acb9b71ca}\label{structbuffer__info_a18bf6023b6d4bb685d345d5acb9b71ca}} 
+{\bfseries buffer\+\_\+info} (Py\+\_\+buffer $\ast$view, bool ownview=true)
+\item 
+\mbox{\Hypertarget{structbuffer__info_a7c5a7e3878ecda87f0e60448b2bf7d1e}\label{structbuffer__info_a7c5a7e3878ecda87f0e60448b2bf7d1e}} 
+{\bfseries buffer\+\_\+info} (const \mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}} \&)=delete
+\item 
+\mbox{\Hypertarget{structbuffer__info_ab55caff9667d44d8ffec6822c4a09068}\label{structbuffer__info_ab55caff9667d44d8ffec6822c4a09068}} 
+\mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}} \& {\bfseries operator=} (const \mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}} \&)=delete
+\item 
+\mbox{\Hypertarget{structbuffer__info_a6ea2c0767021b4dc20c6116b6989c3aa}\label{structbuffer__info_a6ea2c0767021b4dc20c6116b6989c3aa}} 
+{\bfseries buffer\+\_\+info} (\mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}} \&\&other)
+\item 
+\mbox{\Hypertarget{structbuffer__info_a21fc6598b9a1e8df410d1168971a2208}\label{structbuffer__info_a21fc6598b9a1e8df410d1168971a2208}} 
+\mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}} \& {\bfseries operator=} (\mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}} \&\&rhs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structbuffer__info_a2976ad4b157156ebbcffe667888e2d28}\label{structbuffer__info_a2976ad4b157156ebbcffe667888e2d28}} 
+void $\ast$ {\bfseries ptr} = nullptr
+\item 
+\mbox{\Hypertarget{structbuffer__info_a8a95447f854c217a3b76168627900139}\label{structbuffer__info_a8a95447f854c217a3b76168627900139}} 
+ssize\+\_\+t {\bfseries itemsize} = 0
+\item 
+\mbox{\Hypertarget{structbuffer__info_aa8d7471a42f3656b1b7a8b94d8fe03ae}\label{structbuffer__info_aa8d7471a42f3656b1b7a8b94d8fe03ae}} 
+ssize\+\_\+t {\bfseries size} = 0
+\item 
+\mbox{\Hypertarget{structbuffer__info_af5d89b84be8905b695a23b914e92bbda}\label{structbuffer__info_af5d89b84be8905b695a23b914e92bbda}} 
+std\+::string {\bfseries format}
+\item 
+\mbox{\Hypertarget{structbuffer__info_a81d14cf3fc7ceae1b811f335bf35cd97}\label{structbuffer__info_a81d14cf3fc7ceae1b811f335bf35cd97}} 
+ssize\+\_\+t {\bfseries ndim} = 0
+\item 
+\mbox{\Hypertarget{structbuffer__info_a69da91575dde98ab488789dfd2d8daf4}\label{structbuffer__info_a69da91575dde98ab488789dfd2d8daf4}} 
+std\+::vector$<$ ssize\+\_\+t $>$ {\bfseries shape}
+\item 
+\mbox{\Hypertarget{structbuffer__info_abd738097cc1960c4955040eec0619026}\label{structbuffer__info_abd738097cc1960c4955040eec0619026}} 
+std\+::vector$<$ ssize\+\_\+t $>$ {\bfseries strides}
+\item 
+\mbox{\Hypertarget{structbuffer__info_aaa59cf34240184fc2bcad92bb3cb10bc}\label{structbuffer__info_aaa59cf34240184fc2bcad92bb3cb10bc}} 
+bool {\bfseries readonly} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structbuffer__info_ace43580d635d587d7475831fc74394db}\label{structbuffer__info_ace43580d635d587d7475831fc74394db}} 
+{\bfseries buffer\+\_\+info} (\mbox{\hyperlink{structbuffer__info_1_1private__ctr__tag}{private\+\_\+ctr\+\_\+tag}}, void $\ast$ptr, ssize\+\_\+t itemsize, const std\+::string \&format, ssize\+\_\+t ndim, detail\+::any\+\_\+container$<$ ssize\+\_\+t $>$ \&\&shape\+\_\+in, detail\+::any\+\_\+container$<$ ssize\+\_\+t $>$ \&\&strides\+\_\+in, bool readonly)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structbuffer__info_ae697a03b445d86c31a50b04777131881}\label{structbuffer__info_ae697a03b445d86c31a50b04777131881}} 
+Py\+\_\+buffer $\ast$ {\bfseries view} = nullptr
+\item 
+\mbox{\Hypertarget{structbuffer__info_ade90dcd845c90f78c5f68db0944aa7db}\label{structbuffer__info_ade90dcd845c90f78c5f68db0944aa7db}} 
+bool {\bfseries ownview} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Information record describing a Python buffer object. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/buffer\+\_\+info.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,47 @@
+\hypertarget{structarg}{}\doxysection{Référence de la structure arg}
+\label{structarg}\index{arg@{arg}}
+
+
+{\ttfamily \#include $<$cast.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de arg\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structarg}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structarg_ae6211325dd7551f254b0428f9e1e4e4c}\label{structarg_ae6211325dd7551f254b0428f9e1e4e4c}} 
+constexpr \mbox{\hyperlink{structarg_ae6211325dd7551f254b0428f9e1e4e4c}{arg}} (const char $\ast$\mbox{\hyperlink{structname}{name}}=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs an argument with the name of the argument; if null or omitted, this is a positional argument. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structarg_af21c066dfb7fe62ff952a8ea4713b7ed}\label{structarg_af21c066dfb7fe62ff952a8ea4713b7ed}} 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{structarg__v}{arg\+\_\+v}} \mbox{\hyperlink{structarg_af21c066dfb7fe62ff952a8ea4713b7ed}{operator=}} (T \&\&\mbox{\hyperlink{structdetail_1_1value}{value}}) const
+\begin{DoxyCompactList}\small\item\em Assign a value to this argument. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structarg_affdcf2c99a2f27cb539efd6853335d4b}\label{structarg_affdcf2c99a2f27cb539efd6853335d4b}} 
+\mbox{\hyperlink{structarg}{arg}} \& \mbox{\hyperlink{structarg_affdcf2c99a2f27cb539efd6853335d4b}{noconvert}} (bool flag=true)
+\begin{DoxyCompactList}\small\item\em Indicate that the type should not be converted in the type caster. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structarg_a99082d77a1a365593a16939f03194e5e}\label{structarg_a99082d77a1a365593a16939f03194e5e}} 
+\mbox{\hyperlink{structarg}{arg}} \& \mbox{\hyperlink{structarg_a99082d77a1a365593a16939f03194e5e}{none}} (bool flag=true)
+\begin{DoxyCompactList}\small\item\em Indicates that the argument should/shouldn\textquotesingle{}t allow None (e.\+g. for nullable pointer args) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structarg_a19d6eebdcc5e2c4679c5f77760adb5dc}\label{structarg_a19d6eebdcc5e2c4679c5f77760adb5dc}} 
+const char $\ast$ \mbox{\hyperlink{structarg_a19d6eebdcc5e2c4679c5f77760adb5dc}{name}}
+\begin{DoxyCompactList}\small\item\em If non-\/null, this is a named kwargs argument. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structarg_af69a71cd0c34cbce3ef8705e7b7da817}\label{structarg_af69a71cd0c34cbce3ef8705e7b7da817}} 
+bool \mbox{\hyperlink{structarg_af69a71cd0c34cbce3ef8705e7b7da817}{flag\+\_\+noconvert}}\+: 1
+\begin{DoxyCompactList}\small\item\em If set, do not allow conversion (requires a supporting type caster!) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structarg_a57121005d089a7b05536d320ebc9d32f}\label{structarg_a57121005d089a7b05536d320ebc9d32f}} 
+bool \mbox{\hyperlink{structarg_a57121005d089a7b05536d320ebc9d32f}{flag\+\_\+none}}\+: 1
+\begin{DoxyCompactList}\small\item\em If set (the default), allow None to be passed to this argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Annotation for arguments 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/cast.\+h\end{DoxyCompactItemize}

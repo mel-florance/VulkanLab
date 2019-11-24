@@ -1,0 +1,33 @@
+\hypertarget{classscoped__estream__redirect}{}\doxysection{Référence de la classe scoped\+\_\+estream\+\_\+redirect}
+\label{classscoped__estream__redirect}\index{scoped\_estream\_redirect@{scoped\_estream\_redirect}}
+
+
+{\ttfamily \#include $<$iostream.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de scoped\+\_\+estream\+\_\+redirect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classscoped__estream__redirect}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classscoped__estream__redirect_a85d52a127c735fd9d4abc8f3748081bd}\label{classscoped__estream__redirect_a85d52a127c735fd9d4abc8f3748081bd}} 
+{\bfseries scoped\+\_\+estream\+\_\+redirect} (std\+::ostream \&costream=std\+::cerr, \mbox{\hyperlink{classobject}{object}} pyostream=\mbox{\hyperlink{classmodule_a40817edef0ded5727701534bcded9982}{module\+::import}}(\char`\"{}sys\char`\"{}).attr(\char`\"{}stderr\char`\"{}))
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\textbackslash{}rst Like {\ttfamily \mbox{\hyperlink{classscoped__ostream__redirect}{scoped\+\_\+ostream\+\_\+redirect}}}, but redirects cerr by default. This class is provided primary to make {\ttfamily py\+::call\+\_\+guard} easier to make.
+
+.. code-\/block\+:: cpp
+
+m.\+def(\char`\"{}noisy\+\_\+func\char`\"{}, \&noisy\+\_\+func, py\+::call\+\_\+guard$<$\mbox{\hyperlink{classscoped__ostream__redirect}{scoped\+\_\+ostream\+\_\+redirect}}, \mbox{\hyperlink{classscoped__estream__redirect}{scoped\+\_\+estream\+\_\+redirect}}$>$());
+
+\textbackslash{}endrst 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/iostream.\+h\end{DoxyCompactItemize}

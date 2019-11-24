@@ -1,0 +1,91 @@
+\hypertarget{classFloatBox}{}\doxysection{Référence du modèle de la classe Float\+Box$<$ Scalar $>$}
+\label{classFloatBox}\index{FloatBox$<$ Scalar $>$@{FloatBox$<$ Scalar $>$}}
+
+
+\mbox{\hyperlink{structA}{A}} specialization of \mbox{\hyperlink{classTextBox}{Text\+Box}} representing floating point values.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/textbox.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Float\+Box$<$ Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classFloatBox}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFloatBox_a8d602c461fcbcd2c4690194169334248}\label{classFloatBox_a8d602c461fcbcd2c4690194169334248}} 
+{\bfseries Float\+Box} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, Scalar value=(Scalar) 0.f)
+\item 
+\mbox{\Hypertarget{classFloatBox_a51019767be1a1f43784762d6799d3a0d}\label{classFloatBox_a51019767be1a1f43784762d6799d3a0d}} 
+std\+::string {\bfseries number\+\_\+format} () const
+\item 
+\mbox{\Hypertarget{classFloatBox_a03365ae25c3d74b5bbe7e01c97aaa03b}\label{classFloatBox_a03365ae25c3d74b5bbe7e01c97aaa03b}} 
+void {\bfseries number\+\_\+format} (const std\+::string \&\mbox{\hyperlink{classTextBox_a6cb58ed33a52b25b341cd0ff997f61a1}{format}})
+\item 
+\mbox{\Hypertarget{classFloatBox_afa6fdac5f249ab3f9b6506a2e57c860f}\label{classFloatBox_afa6fdac5f249ab3f9b6506a2e57c860f}} 
+Scalar {\bfseries value} () const
+\item 
+\mbox{\Hypertarget{classFloatBox_a9e0b6d6d6259534bc050e8f6cc8dd68d}\label{classFloatBox_a9e0b6d6d6259534bc050e8f6cc8dd68d}} 
+void {\bfseries set\+\_\+value} (Scalar value)
+\item 
+\mbox{\Hypertarget{classFloatBox_a690fbdbea71ad894f215bc0e11d8cb71}\label{classFloatBox_a690fbdbea71ad894f215bc0e11d8cb71}} 
+void {\bfseries set\+\_\+callback} (const std\+::function$<$ void(Scalar)$>$ \&cb)
+\item 
+\mbox{\Hypertarget{classFloatBox_ac2df9fa1ffe1282a9c3c5121fbf4d51f}\label{classFloatBox_ac2df9fa1ffe1282a9c3c5121fbf4d51f}} 
+void {\bfseries set\+\_\+value\+\_\+increment} (Scalar incr)
+\item 
+\mbox{\Hypertarget{classFloatBox_aefb23ecb9caafa9bf261d7bbaf759302}\label{classFloatBox_aefb23ecb9caafa9bf261d7bbaf759302}} 
+void {\bfseries set\+\_\+min\+\_\+value} (Scalar min\+\_\+value)
+\item 
+\mbox{\Hypertarget{classFloatBox_adadde15459f9005fedcbb670fe471b7f}\label{classFloatBox_adadde15459f9005fedcbb670fe471b7f}} 
+void {\bfseries set\+\_\+max\+\_\+value} (Scalar max\+\_\+value)
+\item 
+\mbox{\Hypertarget{classFloatBox_a12ab23bba662eef7c9beb97114f1dc2a}\label{classFloatBox_a12ab23bba662eef7c9beb97114f1dc2a}} 
+void {\bfseries set\+\_\+min\+\_\+max\+\_\+values} (Scalar min\+\_\+value, Scalar max\+\_\+value)
+\item 
+\mbox{\Hypertarget{classFloatBox_a102e3e3dad2eae7a18e0be1d43812ca7}\label{classFloatBox_a102e3e3dad2eae7a18e0be1d43812ca7}} 
+virtual bool \mbox{\hyperlink{classFloatBox_a102e3e3dad2eae7a18e0be1d43812ca7}{mouse\+\_\+button\+\_\+event}} (const Vector2i \&p, int button, bool down, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse button event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFloatBox_a24df19bd74eba36ac67806b889030f36}\label{classFloatBox_a24df19bd74eba36ac67806b889030f36}} 
+virtual bool \mbox{\hyperlink{classFloatBox_a24df19bd74eba36ac67806b889030f36}{mouse\+\_\+drag\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse drag event (default implementation\+: do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFloatBox_a3cbd4fef735319e79746e4d1632861cc}\label{classFloatBox_a3cbd4fef735319e79746e4d1632861cc}} 
+virtual bool \mbox{\hyperlink{classFloatBox_a3cbd4fef735319e79746e4d1632861cc}{scroll\+\_\+event}} (const Vector2i \&p, const \mbox{\hyperlink{structArray}{Vector2f}} \&rel) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse scroll event (default implementation\+: propagate to children) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFloatBox_a992b2f394b75e713b950ecf15b5055fe}\label{classFloatBox_a992b2f394b75e713b950ecf15b5055fe}} 
+std\+::string {\bfseries m\+\_\+number\+\_\+format}
+\item 
+\mbox{\Hypertarget{classFloatBox_af613c0d7dce7936af9ffd15cfc0947a0}\label{classFloatBox_af613c0d7dce7936af9ffd15cfc0947a0}} 
+Scalar {\bfseries m\+\_\+mouse\+\_\+down\+\_\+value}
+\item 
+\mbox{\Hypertarget{classFloatBox_a4969c46141bf7fa6fa452dceaeb1bae2}\label{classFloatBox_a4969c46141bf7fa6fa452dceaeb1bae2}} 
+Scalar {\bfseries m\+\_\+value\+\_\+increment}
+\item 
+\mbox{\Hypertarget{classFloatBox_aa6b7ab5c137aa9ccc2cb82a965df5b7f}\label{classFloatBox_aa6b7ab5c137aa9ccc2cb82a965df5b7f}} 
+Scalar {\bfseries m\+\_\+min\+\_\+value}
+\item 
+\mbox{\Hypertarget{classFloatBox_afd4401f78423556234a26d7d6568e36e}\label{classFloatBox_afd4401f78423556234a26d7d6568e36e}} 
+Scalar {\bfseries m\+\_\+max\+\_\+value}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename Scalar$>$\newline
+class Float\+Box$<$ Scalar $>$}
+
+\mbox{\hyperlink{structA}{A}} specialization of \mbox{\hyperlink{classTextBox}{Text\+Box}} representing floating point values. 
+
+The emplate parametersshould a be floating point type, e.\+g. {\ttfamily float} or {\ttfamily double}. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{textbox_8h}{textbox.\+h}}\end{DoxyCompactItemize}

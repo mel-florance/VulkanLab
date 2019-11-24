@@ -1,0 +1,131 @@
+\hypertarget{structCooMatrix}{}\doxysection{Référence du modèle de la structure Coo\+Matrix$<$ ValueT, OffsetT $>$}
+\label{structCooMatrix}\index{CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}}
+
+
+{\ttfamily \#include $<$sparse\+\_\+matrix.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structCooMatrix_1_1CooTuple}{Coo\+Tuple}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structCooMatrix_a9908fbd890d7ae0a9f3681cf4c1bc16a}{Clear}} ()
+\item 
+\mbox{\Hypertarget{structCooMatrix_a3763b7fdf5cd9d542a654b4b982f8cd9}\label{structCooMatrix_a3763b7fdf5cd9d542a654b4b982f8cd9}} 
+void {\bfseries Display} ()
+\item 
+{\footnotesize template$<$typename Csr\+MatrixT $>$ }\\void \mbox{\hyperlink{structCooMatrix_a608717be698924063b299396059da6f5}{Init\+Csr\+Symmetric}} (Csr\+MatrixT \&csr\+\_\+matrix)
+\item 
+{\footnotesize template$<$typename Csr\+MatrixT $>$ }\\void \mbox{\hyperlink{structCooMatrix_a3f15f0ba393f76953d4e323fcb10aa7d}{Init\+Csr\+Relabel}} (Csr\+MatrixT \&csr\+\_\+matrix, OffsetT $\ast$relabel\+\_\+indices)
+\item 
+void \mbox{\hyperlink{structCooMatrix_a19619626b957ad51482afc5df2ff6bca}{Init\+Metis}} (const string \&metis\+\_\+filename)
+\item 
+void \mbox{\hyperlink{structCooMatrix_afb8e49cecabf1c9d4a60a841f9e4f416}{Init\+Market}} (const string \&market\+\_\+filename, ValueT default\+\_\+value=1.\+0, bool verbose=false)
+\item 
+int \mbox{\hyperlink{structCooMatrix_ab6020e875c1bd7bf3449958c89a78051}{Init\+Dense}} (OffsetT num\+\_\+rows, OffsetT num\+\_\+cols, ValueT default\+\_\+value=1.\+0, bool verbose=false)
+\item 
+int \mbox{\hyperlink{structCooMatrix_aed8e9a2f7ce228c00728c743b12c85dd}{Init\+Wheel}} (OffsetT spokes, ValueT default\+\_\+value=1.\+0, bool verbose=false)
+\item 
+int \mbox{\hyperlink{structCooMatrix_ac116d0a07cdd9f915d18da9bd9304a72}{Init\+Grid2d}} (OffsetT width, bool self\+\_\+loop, ValueT default\+\_\+value=1.\+0)
+\item 
+int \mbox{\hyperlink{structCooMatrix_a0ddb2838ae4db39672fbfc5fcbf9e448}{Init\+Grid3d}} (OffsetT width, bool self\+\_\+loop, ValueT default\+\_\+value=1.\+0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structCooMatrix_a33b21807ef5c4ba2ac19afb65269fa38}\label{structCooMatrix_a33b21807ef5c4ba2ac19afb65269fa38}} 
+int {\bfseries num\+\_\+rows}
+\item 
+\mbox{\Hypertarget{structCooMatrix_aa621296d1646805da296be2d2c7c1e19}\label{structCooMatrix_aa621296d1646805da296be2d2c7c1e19}} 
+int {\bfseries num\+\_\+cols}
+\item 
+\mbox{\Hypertarget{structCooMatrix_abd705160103a5150747ba160decaefd7}\label{structCooMatrix_abd705160103a5150747ba160decaefd7}} 
+int {\bfseries num\+\_\+nonzeros}
+\item 
+\mbox{\Hypertarget{structCooMatrix_a4116ad087ee7b855775cdf355a03b940}\label{structCooMatrix_a4116ad087ee7b855775cdf355a03b940}} 
+\mbox{\hyperlink{structCooMatrix_1_1CooTuple}{Coo\+Tuple}} $\ast$ {\bfseries coo\+\_\+tuples}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename ValueT, typename OffsetT$>$\newline
+struct Coo\+Matrix$<$ Value\+T, Offset\+T $>$}
+
+C\+OO matrix type. \mbox{\hyperlink{structA}{A}} C\+OO matrix is just a vector of edge tuples. Tuples are sorted first by row, then by column. 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{structCooMatrix_a9908fbd890d7ae0a9f3681cf4c1bc16a}\label{structCooMatrix_a9908fbd890d7ae0a9f3681cf4c1bc16a}} 
+\index{CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+void \mbox{\hyperlink{structCooMatrix}{Coo\+Matrix}}$<$ ValueT, OffsetT $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clear \mbox{\Hypertarget{structCooMatrix_a3f15f0ba393f76953d4e323fcb10aa7d}\label{structCooMatrix_a3f15f0ba393f76953d4e323fcb10aa7d}} 
+\index{CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}!InitCsrRelabel@{InitCsrRelabel}}
+\index{InitCsrRelabel@{InitCsrRelabel}!CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{InitCsrRelabel()}{InitCsrRelabel()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+template$<$typename Csr\+MatrixT $>$ \\
+void \mbox{\hyperlink{structCooMatrix}{Coo\+Matrix}}$<$ ValueT, OffsetT $>$\+::Init\+Csr\+Relabel (\begin{DoxyParamCaption}\item[{Csr\+MatrixT \&}]{csr\+\_\+matrix,  }\item[{OffsetT $\ast$}]{relabel\+\_\+indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Builds a C\+OO sparse from a relabeled C\+SR matrix. \mbox{\Hypertarget{structCooMatrix_a608717be698924063b299396059da6f5}\label{structCooMatrix_a608717be698924063b299396059da6f5}} 
+\index{CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}!InitCsrSymmetric@{InitCsrSymmetric}}
+\index{InitCsrSymmetric@{InitCsrSymmetric}!CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{InitCsrSymmetric()}{InitCsrSymmetric()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+template$<$typename Csr\+MatrixT $>$ \\
+void \mbox{\hyperlink{structCooMatrix}{Coo\+Matrix}}$<$ ValueT, OffsetT $>$\+::Init\+Csr\+Symmetric (\begin{DoxyParamCaption}\item[{Csr\+MatrixT \&}]{csr\+\_\+matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Builds a symmetric C\+OO sparse from an asymmetric C\+SR matrix. \mbox{\Hypertarget{structCooMatrix_ab6020e875c1bd7bf3449958c89a78051}\label{structCooMatrix_ab6020e875c1bd7bf3449958c89a78051}} 
+\index{CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}!InitDense@{InitDense}}
+\index{InitDense@{InitDense}!CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{InitDense()}{InitDense()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+int \mbox{\hyperlink{structCooMatrix}{Coo\+Matrix}}$<$ ValueT, OffsetT $>$\+::Init\+Dense (\begin{DoxyParamCaption}\item[{OffsetT}]{num\+\_\+rows,  }\item[{OffsetT}]{num\+\_\+cols,  }\item[{ValueT}]{default\+\_\+value = {\ttfamily 1.0},  }\item[{bool}]{verbose = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Builds a dense matrix \mbox{\Hypertarget{structCooMatrix_ac116d0a07cdd9f915d18da9bd9304a72}\label{structCooMatrix_ac116d0a07cdd9f915d18da9bd9304a72}} 
+\index{CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}!InitGrid2d@{InitGrid2d}}
+\index{InitGrid2d@{InitGrid2d}!CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{InitGrid2d()}{InitGrid2d()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+int \mbox{\hyperlink{structCooMatrix}{Coo\+Matrix}}$<$ ValueT, OffsetT $>$\+::Init\+Grid2d (\begin{DoxyParamCaption}\item[{OffsetT}]{width,  }\item[{bool}]{self\+\_\+loop,  }\item[{ValueT}]{default\+\_\+value = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Builds a square 2D grid C\+SR matrix. Interior num\+\_\+vertices have degree 5 when including a self-\/loop.
+
+Returns 0 on success, 1 on failure. \mbox{\Hypertarget{structCooMatrix_a0ddb2838ae4db39672fbfc5fcbf9e448}\label{structCooMatrix_a0ddb2838ae4db39672fbfc5fcbf9e448}} 
+\index{CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}!InitGrid3d@{InitGrid3d}}
+\index{InitGrid3d@{InitGrid3d}!CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{InitGrid3d()}{InitGrid3d()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+int \mbox{\hyperlink{structCooMatrix}{Coo\+Matrix}}$<$ ValueT, OffsetT $>$\+::Init\+Grid3d (\begin{DoxyParamCaption}\item[{OffsetT}]{width,  }\item[{bool}]{self\+\_\+loop,  }\item[{ValueT}]{default\+\_\+value = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Builds a square 3D grid C\+OO sparse matrix. Interior num\+\_\+vertices have degree 7 when including a self-\/loop. Values are unintialized, coo\+\_\+tuples are sorted. \mbox{\Hypertarget{structCooMatrix_afb8e49cecabf1c9d4a60a841f9e4f416}\label{structCooMatrix_afb8e49cecabf1c9d4a60a841f9e4f416}} 
+\index{CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}!InitMarket@{InitMarket}}
+\index{InitMarket@{InitMarket}!CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{InitMarket()}{InitMarket()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+void \mbox{\hyperlink{structCooMatrix}{Coo\+Matrix}}$<$ ValueT, OffsetT $>$\+::Init\+Market (\begin{DoxyParamCaption}\item[{const string \&}]{market\+\_\+filename,  }\item[{ValueT}]{default\+\_\+value = {\ttfamily 1.0},  }\item[{bool}]{verbose = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Builds a M\+A\+R\+K\+ET C\+OO sparse from the given file. \mbox{\Hypertarget{structCooMatrix_a19619626b957ad51482afc5df2ff6bca}\label{structCooMatrix_a19619626b957ad51482afc5df2ff6bca}} 
+\index{CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}!InitMetis@{InitMetis}}
+\index{InitMetis@{InitMetis}!CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{InitMetis()}{InitMetis()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+void \mbox{\hyperlink{structCooMatrix}{Coo\+Matrix}}$<$ ValueT, OffsetT $>$\+::Init\+Metis (\begin{DoxyParamCaption}\item[{const string \&}]{metis\+\_\+filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Builds a M\+E\+T\+IS C\+OO sparse from the given file. \mbox{\Hypertarget{structCooMatrix_aed8e9a2f7ce228c00728c743b12c85dd}\label{structCooMatrix_aed8e9a2f7ce228c00728c743b12c85dd}} 
+\index{CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}!InitWheel@{InitWheel}}
+\index{InitWheel@{InitWheel}!CooMatrix$<$ ValueT, OffsetT $>$@{CooMatrix$<$ ValueT, OffsetT $>$}}
+\doxysubsubsection{\texorpdfstring{InitWheel()}{InitWheel()}}
+{\footnotesize\ttfamily template$<$typename ValueT, typename OffsetT$>$ \\
+int \mbox{\hyperlink{structCooMatrix}{Coo\+Matrix}}$<$ ValueT, OffsetT $>$\+::Init\+Wheel (\begin{DoxyParamCaption}\item[{OffsetT}]{spokes,  }\item[{ValueT}]{default\+\_\+value = {\ttfamily 1.0},  }\item[{bool}]{verbose = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Builds a wheel C\+OO sparse matrix having spokes spokes. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/cub/experimental/sparse\+\_\+matrix.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+\hypertarget{structinternals}{}\doxysection{Référence de la structure internals}
+\label{structinternals}\index{internals@{internals}}
+
+
+{\ttfamily \#include $<$internals.\+h$>$}
+
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structinternals_a55c8874ee4ee135c2ed8b3f5a958e6a3}\label{structinternals_a55c8874ee4ee135c2ed8b3f5a958e6a3}} 
+type\+\_\+map$<$ \mbox{\hyperlink{structtype__info}{type\+\_\+info}} $\ast$ $>$ {\bfseries registered\+\_\+types\+\_\+cpp}
+\item 
+\mbox{\Hypertarget{structinternals_a6148bb4956e17d8a61f410cac7227d04}\label{structinternals_a6148bb4956e17d8a61f410cac7227d04}} 
+std\+::unordered\+\_\+map$<$ Py\+Type\+Object $\ast$, std\+::vector$<$ \mbox{\hyperlink{structtype__info}{type\+\_\+info}} $\ast$ $>$ $>$ {\bfseries registered\+\_\+types\+\_\+py}
+\item 
+\mbox{\Hypertarget{structinternals_af0f521098c149429cd68e058fae16e06}\label{structinternals_af0f521098c149429cd68e058fae16e06}} 
+std\+::unordered\+\_\+multimap$<$ const void $\ast$, \mbox{\hyperlink{structinstance}{instance}} $\ast$ $>$ {\bfseries registered\+\_\+instances}
+\item 
+\mbox{\Hypertarget{structinternals_a46a3096ec216e6229e944bbc6cff7b3d}\label{structinternals_a46a3096ec216e6229e944bbc6cff7b3d}} 
+std\+::unordered\+\_\+set$<$ std\+::pair$<$ const Py\+Object $\ast$, const char $\ast$ $>$, \mbox{\hyperlink{structoverload__hash}{overload\+\_\+hash}} $>$ {\bfseries inactive\+\_\+overload\+\_\+cache}
+\item 
+\mbox{\Hypertarget{structinternals_acec753819721884fcd4a650dcdfa40d2}\label{structinternals_acec753819721884fcd4a650dcdfa40d2}} 
+type\+\_\+map$<$ std\+::vector$<$ bool($\ast$)(Py\+Object $\ast$, void $\ast$\&)$>$ $>$ {\bfseries direct\+\_\+conversions}
+\item 
+\mbox{\Hypertarget{structinternals_a10f84966ff086d44cd078d139b3646d9}\label{structinternals_a10f84966ff086d44cd078d139b3646d9}} 
+std\+::unordered\+\_\+map$<$ const Py\+Object $\ast$, std\+::vector$<$ Py\+Object $\ast$ $>$ $>$ {\bfseries patients}
+\item 
+\mbox{\Hypertarget{structinternals_a77114b8520f529d44be95aa700a7cd29}\label{structinternals_a77114b8520f529d44be95aa700a7cd29}} 
+std\+::forward\+\_\+list$<$ void($\ast$)(std\+::exception\+\_\+ptr)$>$ {\bfseries registered\+\_\+exception\+\_\+translators}
+\item 
+\mbox{\Hypertarget{structinternals_ad52baba07c7497fa2797e7db740707f4}\label{structinternals_ad52baba07c7497fa2797e7db740707f4}} 
+std\+::unordered\+\_\+map$<$ std\+::string, void $\ast$ $>$ {\bfseries shared\+\_\+data}
+\item 
+\mbox{\Hypertarget{structinternals_a4584170bdf82fabe271d296055c75ff7}\label{structinternals_a4584170bdf82fabe271d296055c75ff7}} 
+std\+::vector$<$ Py\+Object $\ast$ $>$ {\bfseries loader\+\_\+patient\+\_\+stack}
+\item 
+\mbox{\Hypertarget{structinternals_ad322abbf9d8c4915221324444ab33192}\label{structinternals_ad322abbf9d8c4915221324444ab33192}} 
+std\+::forward\+\_\+list$<$ std\+::string $>$ {\bfseries static\+\_\+strings}
+\item 
+\mbox{\Hypertarget{structinternals_a6115d4d47cb0cf54c97b9f2b772054c8}\label{structinternals_a6115d4d47cb0cf54c97b9f2b772054c8}} 
+Py\+Type\+Object $\ast$ {\bfseries static\+\_\+property\+\_\+type}
+\item 
+\mbox{\Hypertarget{structinternals_a661c7e4987fe016874efc57ae26873df}\label{structinternals_a661c7e4987fe016874efc57ae26873df}} 
+Py\+Type\+Object $\ast$ {\bfseries default\+\_\+metaclass}
+\item 
+\mbox{\Hypertarget{structinternals_ad18c3a70ddfa0ec128e4f8013f81c6bd}\label{structinternals_ad18c3a70ddfa0ec128e4f8013f81c6bd}} 
+Py\+Object $\ast$ {\bfseries instance\+\_\+base}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Internal data structure used to track registered instances and types. Whenever binary incompatible changes are made to this structure, {\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+S\+\_\+\+V\+E\+R\+S\+I\+ON} must be incremented. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/detail/internals.\+h\end{DoxyCompactItemize}

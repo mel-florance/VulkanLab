@@ -1,0 +1,27 @@
+var structEigenProps =
+[
+    [ "if_zero", "structEigenProps.html#aa728072a2702217ee987bf9ab3b9d07d", null ],
+    [ "Scalar", "structEigenProps.html#ae36317e24288de2c7b47017ce58acc37", null ],
+    [ "StrideType", "structEigenProps.html#a21dcc2d713c484e7a84e679c793e8fea", null ],
+    [ "Type", "structEigenProps.html#ababed0b6298eeb5f4ded06da92c96cd7", null ],
+    [ "conformable", "structEigenProps.html#a370b3557e63a8619c290a0dd36523a14", null ],
+    [ "cols", "structEigenProps.html#a11241a3435168ade35c58f1a2899df8b", null ],
+    [ "descriptor", "structEigenProps.html#aa3861d665ff4bf5df6b531008fe358ef", null ],
+    [ "dynamic", "structEigenProps.html#a8cda015be17e948b92d687ff58c78169", null ],
+    [ "dynamic_stride", "structEigenProps.html#a32861acd4f8d759619f7a3438a5a56a4", null ],
+    [ "fixed", "structEigenProps.html#a4234c331255e14bd0e2a817ac9e0352e", null ],
+    [ "fixed_cols", "structEigenProps.html#afc4954afca9a4dd098b009a5653b2b48", null ],
+    [ "fixed_rows", "structEigenProps.html#a4fdf3fa6c9908561ddfac176c9c106f7", null ],
+    [ "inner_stride", "structEigenProps.html#aadd1cceef220ef97abe8eb74f1f78ecd", null ],
+    [ "outer_stride", "structEigenProps.html#ac31d9e8cc3baff0f804000486c35759d", null ],
+    [ "requires_col_major", "structEigenProps.html#a070c53f0e952e411c98e3ddfdbeaae3d", null ],
+    [ "requires_row_major", "structEigenProps.html#a71445c69c5e4084c30449ff2207571c7", null ],
+    [ "row_major", "structEigenProps.html#a290ebf6baed2dca134f928c13dda4030", null ],
+    [ "rows", "structEigenProps.html#a2f00028920ef3138640e602c80ff9a0d", null ],
+    [ "show_c_contiguous", "structEigenProps.html#a280202108f280aab1ccbe5f9e946a8eb", null ],
+    [ "show_f_contiguous", "structEigenProps.html#ae9fd27ba9318cfb3d632f80bfc04e94f", null ],
+    [ "show_order", "structEigenProps.html#ae3040a55462cdeaed7843ba858eb8e68", null ],
+    [ "show_writeable", "structEigenProps.html#a028698ea3f672d4a0e95922dc6553f23", null ],
+    [ "size", "structEigenProps.html#a9765247d03fa7156e28b73409689df17", null ],
+    [ "vector", "structEigenProps.html#a6c26ad4c67abd91b08285b63afed9ab9", null ]
+];

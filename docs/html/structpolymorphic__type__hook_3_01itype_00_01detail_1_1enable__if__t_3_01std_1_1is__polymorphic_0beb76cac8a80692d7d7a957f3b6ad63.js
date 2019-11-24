@@ -1,0 +1,4 @@
+var structpolymorphic__type__hook_3_01itype_00_01detail_1_1enable__if__t_3_01std_1_1is__polymorphic_0beb76cac8a80692d7d7a957f3b6ad63 =
+[
+    [ "get", "structpolymorphic__type__hook_3_01itype_00_01detail_1_1enable__if__t_3_01std_1_1is__polymorphic_0beb76cac8a80692d7d7a957f3b6ad63.html#a616c79b5c66408c0ccceae50504bfc1f", null ]
+];

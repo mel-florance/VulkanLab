@@ -1,0 +1,4 @@
+var structpybind11_1_1polymorphic__type__hook_3_01itype_00_01detail_1_1enable__if__t_3_01std_1_1is__ede351517968b3a3b6566f6ef10d55b6 =
+[
+    [ "get", "structpybind11_1_1polymorphic__type__hook_3_01itype_00_01detail_1_1enable__if__t_3_01std_1_1is__ede351517968b3a3b6566f6ef10d55b6.html#a787858a3fb194781da5bb91463efb2d8", null ]
+];

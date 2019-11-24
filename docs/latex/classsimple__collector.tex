@@ -1,0 +1,41 @@
+\hypertarget{classsimple__collector}{}\doxysection{Référence du modèle de la classe simple\+\_\+collector$<$ policy $>$}
+\label{classsimple__collector}\index{simple\_collector$<$ policy $>$@{simple\_collector$<$ policy $>$}}
+
+
+{\ttfamily \#include $<$cast.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimple__collector_a21c964eaf130362b6044709cec9c31cf}\label{classsimple__collector_a21c964eaf130362b6044709cec9c31cf}} 
+{\footnotesize template$<$typename... Ts$>$ }\\{\bfseries simple\+\_\+collector} (Ts \&\&...values)
+\item 
+\mbox{\Hypertarget{classsimple__collector_a328467968ae3f57f561834780a631c36}\label{classsimple__collector_a328467968ae3f57f561834780a631c36}} 
+const \mbox{\hyperlink{classtuple}{tuple}} \& {\bfseries args} () const \&
+\item 
+\mbox{\Hypertarget{classsimple__collector_a41400f1ddfad6849df25ef53f084762b}\label{classsimple__collector_a41400f1ddfad6849df25ef53f084762b}} 
+\mbox{\hyperlink{classdict}{dict}} {\bfseries kwargs} () const
+\item 
+\mbox{\Hypertarget{classsimple__collector_aaa12c5a3e17b5d49003ba6beaa676906}\label{classsimple__collector_aaa12c5a3e17b5d49003ba6beaa676906}} 
+\mbox{\hyperlink{classtuple}{tuple}} {\bfseries args} () \&\&
+\item 
+\mbox{\Hypertarget{classsimple__collector_aa5e692afd78c541e35034ff013d5ad1e}\label{classsimple__collector_aa5e692afd78c541e35034ff013d5ad1e}} 
+\mbox{\hyperlink{classobject}{object}} \mbox{\hyperlink{classsimple__collector_aa5e692afd78c541e35034ff013d5ad1e}{call}} (Py\+Object $\ast$ptr) const
+\begin{DoxyCompactList}\small\item\em Call a Python function and pass the collected arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimple__collector_af9aa9390996b287502d645ce11d100bb}\label{classsimple__collector_af9aa9390996b287502d645ce11d100bb}} 
+\mbox{\hyperlink{classtuple}{tuple}} {\bfseries m\+\_\+args}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$return\+\_\+value\+\_\+policy policy$>$\newline
+class simple\+\_\+collector$<$ policy $>$}
+
+Helper class which collects only positional arguments for a Python function call. \mbox{\hyperlink{structA}{A}} fancier version below can collect any argument, but this one is optimal for simple calls. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/cast.\+h\end{DoxyCompactItemize}

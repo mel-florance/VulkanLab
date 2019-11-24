@@ -1,0 +1,96 @@
+\hypertarget{classiterator}{}\doxysection{Référence de la classe iterator}
+\label{classiterator}\index{iterator@{iterator}}
+
+
+{\ttfamily \#include $<$pytypes.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classiterator}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classiterator_ab77598aff5149ea763f55e0a375c58bd}\label{classiterator_ab77598aff5149ea763f55e0a375c58bd}} 
+using {\bfseries iterator\+\_\+category} = std\+::input\+\_\+iterator\+\_\+tag
+\item 
+\mbox{\Hypertarget{classiterator_a573d7d10c131e60e9dbc7f691a3c03b1}\label{classiterator_a573d7d10c131e60e9dbc7f691a3c03b1}} 
+using {\bfseries difference\+\_\+type} = ssize\+\_\+t
+\item 
+\mbox{\Hypertarget{classiterator_abe68ba19a8452dd80cf2c893c1feb9d6}\label{classiterator_abe68ba19a8452dd80cf2c893c1feb9d6}} 
+using {\bfseries value\+\_\+type} = \mbox{\hyperlink{classhandle}{handle}}
+\item 
+\mbox{\Hypertarget{classiterator_af05a87057b5891fb984648429ca60492}\label{classiterator_af05a87057b5891fb984648429ca60492}} 
+using {\bfseries reference} = const \mbox{\hyperlink{classhandle}{handle}}
+\item 
+\mbox{\Hypertarget{classiterator_a47f6aa746357c82353203dfcbe8d8c1c}\label{classiterator_a47f6aa746357c82353203dfcbe8d8c1c}} 
+using {\bfseries pointer} = const \mbox{\hyperlink{classhandle}{handle}} $\ast$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classiterator_a4adf5ce6a7bb9704511805c89b79684d}\label{classiterator_a4adf5ce6a7bb9704511805c89b79684d}} 
+\mbox{\hyperlink{classiterator}{iterator}} \& {\bfseries operator++} ()
+\item 
+\mbox{\Hypertarget{classiterator_a49f48e4e587336b7fa48d609ee8f1779}\label{classiterator_a49f48e4e587336b7fa48d609ee8f1779}} 
+\mbox{\hyperlink{classiterator}{iterator}} {\bfseries operator++} (int)
+\item 
+\mbox{\Hypertarget{classiterator_ac92dc18748448d5e9878c2df3c36eca2}\label{classiterator_ac92dc18748448d5e9878c2df3c36eca2}} 
+\mbox{\hyperlink{classhandle}{reference}} {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{classiterator_ae157ebb58c3c02e644023b31616f2491}\label{classiterator_ae157ebb58c3c02e644023b31616f2491}} 
+\mbox{\hyperlink{classhandle}{pointer}} {\bfseries operator-\/$>$} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classiterator}{iterator}} \mbox{\hyperlink{classiterator_ace2b4797f9e34e51c1df9d52ba164203}{sentinel}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classiterator_ab04b3480fcce40c9d37d7a8b425e46a8}\label{classiterator_ab04b3480fcce40c9d37d7a8b425e46a8}} 
+void {\bfseries advance} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classiterator_a6713b0f7092affdad18ae668b86dd81f}\label{classiterator_a6713b0f7092affdad18ae668b86dd81f}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries value} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classiterator_a81d10d7799462c7ca5e7cf19119ca356}\label{classiterator_a81d10d7799462c7ca5e7cf19119ca356}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classiterator}{iterator}} \&a, const \mbox{\hyperlink{classiterator}{iterator}} \&b)
+\item 
+\mbox{\Hypertarget{classiterator_a55a8ee0e80dad1a7da9d751c25bc0386}\label{classiterator_a55a8ee0e80dad1a7da9d751c25bc0386}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classiterator}{iterator}} \&a, const \mbox{\hyperlink{classiterator}{iterator}} \&b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\textbackslash{}rst Wraps a Python iterator so that it can also be used as a C++ input iterator
+
+Caveat\+: copying an iterator does not (and cannot) clone the internal state of the Python iterable. This also applies to the post-\/increment operator. This iterator should only be used to retrieve the current value using {\ttfamily operator$\ast$()}. \textbackslash{}endrst 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classiterator_ace2b4797f9e34e51c1df9d52ba164203}\label{classiterator_ace2b4797f9e34e51c1df9d52ba164203}} 
+\index{iterator@{iterator}!sentinel@{sentinel}}
+\index{sentinel@{sentinel}!iterator@{iterator}}
+\doxysubsubsection{\texorpdfstring{sentinel()}{sentinel()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classiterator}{iterator}} iterator\+::sentinel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\textbackslash{}rst The value which marks the end of the iteration. {\ttfamily it == \mbox{\hyperlink{classiterator_ace2b4797f9e34e51c1df9d52ba164203}{iterator\+::sentinel()}}} is equivalent to catching {\ttfamily Stop\+Iteration} in Python.
+
+.. code-\/block\+:: cpp \begin{DoxyVerb}void foo(py::iterator it) {
+    while (it != py::iterator::sentinel()) {
+\end{DoxyVerb}
+ use {\ttfamily $\ast$it} ++it; \} \} \textbackslash{}endrst 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/pytypes.\+h\end{DoxyCompactItemize}

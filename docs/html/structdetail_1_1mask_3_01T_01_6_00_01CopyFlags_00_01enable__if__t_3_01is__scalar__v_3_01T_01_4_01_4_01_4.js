@@ -1,0 +1,4 @@
+var structdetail_1_1mask_3_01T_01_6_00_01CopyFlags_00_01enable__if__t_3_01is__scalar__v_3_01T_01_4_01_4_01_4 =
+[
+    [ "type", "structdetail_1_1mask_3_01T_01_6_00_01CopyFlags_00_01enable__if__t_3_01is__scalar__v_3_01T_01_4_01_4_01_4.html#a54e333514f5d72656da4b98edd70ac3e", null ]
+];

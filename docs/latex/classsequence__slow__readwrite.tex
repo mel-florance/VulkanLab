@@ -1,0 +1,67 @@
+\hypertarget{classsequence__slow__readwrite}{}\doxysection{Référence de la classe sequence\+\_\+slow\+\_\+readwrite}
+\label{classsequence__slow__readwrite}\index{sequence\_slow\_readwrite@{sequence\_slow\_readwrite}}
+
+
+Full read and write access using the sequence protocol\+: see {\ttfamily detail\+::sequence\+\_\+accessor}  
+
+
+
+
+{\ttfamily \#include $<$pytypes.\+h$>$}
+
+\doxysubsection*{Types protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_a2697f5faf3ab47b580e49071a9993010}\label{classsequence__slow__readwrite_a2697f5faf3ab47b580e49071a9993010}} 
+using {\bfseries iterator\+\_\+category} = std\+::random\+\_\+access\+\_\+iterator\+\_\+tag
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_a8ce9048b056a9f653715535c60f2d4bf}\label{classsequence__slow__readwrite_a8ce9048b056a9f653715535c60f2d4bf}} 
+using {\bfseries value\+\_\+type} = \mbox{\hyperlink{classobject}{object}}
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_ad59d36dc33d3bcff00de01c2d21ffe42}\label{classsequence__slow__readwrite_ad59d36dc33d3bcff00de01c2d21ffe42}} 
+using {\bfseries reference} = \mbox{\hyperlink{classaccessor}{sequence\+\_\+accessor}}
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_a5d342cf04b1e283c0dbb03e741cb3ae8}\label{classsequence__slow__readwrite_a5d342cf04b1e283c0dbb03e741cb3ae8}} 
+using {\bfseries pointer} = \mbox{\hyperlink{structarrow__proxy}{arrow\+\_\+proxy}}$<$ const \mbox{\hyperlink{classaccessor}{sequence\+\_\+accessor}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_a955e2d54fdeeb18c53e268ca6d5aa04e}\label{classsequence__slow__readwrite_a955e2d54fdeeb18c53e268ca6d5aa04e}} 
+{\bfseries sequence\+\_\+slow\+\_\+readwrite} (\mbox{\hyperlink{classhandle}{handle}} obj, ssize\+\_\+t index)
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_a6061367a92256c30a9b69e062f839682}\label{classsequence__slow__readwrite_a6061367a92256c30a9b69e062f839682}} 
+\mbox{\hyperlink{classaccessor}{reference}} {\bfseries dereference} () const
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_a96167779622e78b49732210fd0c18855}\label{classsequence__slow__readwrite_a96167779622e78b49732210fd0c18855}} 
+void {\bfseries increment} ()
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_a14d280d9247d5b25b81486bb08cdf4a4}\label{classsequence__slow__readwrite_a14d280d9247d5b25b81486bb08cdf4a4}} 
+void {\bfseries decrement} ()
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_a8bef7e89f0ebfadca7cca71d688fb5cd}\label{classsequence__slow__readwrite_a8bef7e89f0ebfadca7cca71d688fb5cd}} 
+void {\bfseries advance} (ssize\+\_\+t n)
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_a7efc0f4d3cc74714cc043ef1d65c3ab7}\label{classsequence__slow__readwrite_a7efc0f4d3cc74714cc043ef1d65c3ab7}} 
+bool {\bfseries equal} (const \mbox{\hyperlink{classsequence__slow__readwrite}{sequence\+\_\+slow\+\_\+readwrite}} \&b) const
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_a971f935ea0b4db43994eb1adc4327ec4}\label{classsequence__slow__readwrite_a971f935ea0b4db43994eb1adc4327ec4}} 
+ssize\+\_\+t {\bfseries distance\+\_\+to} (const \mbox{\hyperlink{classsequence__slow__readwrite}{sequence\+\_\+slow\+\_\+readwrite}} \&b) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_a5994776ab2bdaee761add4b819409a30}\label{classsequence__slow__readwrite_a5994776ab2bdaee761add4b819409a30}} 
+\mbox{\hyperlink{classhandle}{handle}} {\bfseries obj}
+\item 
+\mbox{\Hypertarget{classsequence__slow__readwrite_a577235a9eefa7405454e770c164cebfe}\label{classsequence__slow__readwrite_a577235a9eefa7405454e770c164cebfe}} 
+ssize\+\_\+t {\bfseries index}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Full read and write access using the sequence protocol\+: see {\ttfamily detail\+::sequence\+\_\+accessor} 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/pytypes.\+h\end{DoxyCompactItemize}

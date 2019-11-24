@@ -1,0 +1,71 @@
+\hypertarget{structtype__info}{}\doxysection{Référence de la structure type\+\_\+info}
+\label{structtype__info}\index{type\_info@{type\_info}}
+
+
+{\ttfamily \#include $<$internals.\+h$>$}
+
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtype__info_a9d303522ded86597dda91813722a39cc}\label{structtype__info_a9d303522ded86597dda91813722a39cc}} 
+Py\+Type\+Object $\ast$ {\bfseries type}
+\item 
+\mbox{\Hypertarget{structtype__info_ae4ae74c1d137f901f75c28e847e157e1}\label{structtype__info_ae4ae74c1d137f901f75c28e847e157e1}} 
+const std\+::type\+\_\+info $\ast$ {\bfseries cpptype}
+\item 
+\mbox{\Hypertarget{structtype__info_a5030f67ec35a633be08c1b2dc868975b}\label{structtype__info_a5030f67ec35a633be08c1b2dc868975b}} 
+size\+\_\+t {\bfseries type\+\_\+size}
+\item 
+\mbox{\Hypertarget{structtype__info_aacdceab2742cfbc06be7a1be1679ff34}\label{structtype__info_aacdceab2742cfbc06be7a1be1679ff34}} 
+size\+\_\+t {\bfseries type\+\_\+align}
+\item 
+\mbox{\Hypertarget{structtype__info_a41c3d2416443b60665994a348e556cf8}\label{structtype__info_a41c3d2416443b60665994a348e556cf8}} 
+size\+\_\+t {\bfseries holder\+\_\+size\+\_\+in\+\_\+ptrs}
+\item 
+\mbox{\Hypertarget{structtype__info_ad4d8bc132b993129bfdd1556f3c3d001}\label{structtype__info_ad4d8bc132b993129bfdd1556f3c3d001}} 
+void $\ast$($\ast$ {\bfseries operator\+\_\+new} )(size\+\_\+t)
+\item 
+\mbox{\Hypertarget{structtype__info_a2670999c513361a3a569238f51ecc450}\label{structtype__info_a2670999c513361a3a569238f51ecc450}} 
+void($\ast$ {\bfseries init\+\_\+instance} )(\mbox{\hyperlink{structinstance}{instance}} $\ast$, const void $\ast$)
+\item 
+\mbox{\Hypertarget{structtype__info_a79c1cb88eb2e8fdc60d7370eaf2ad0ea}\label{structtype__info_a79c1cb88eb2e8fdc60d7370eaf2ad0ea}} 
+void($\ast$ {\bfseries dealloc} )(\mbox{\hyperlink{structvalue__and__holder}{value\+\_\+and\+\_\+holder}} \&v\+\_\+h)
+\item 
+\mbox{\Hypertarget{structtype__info_aea372863c3f5dfb6d5625480373ce432}\label{structtype__info_aea372863c3f5dfb6d5625480373ce432}} 
+std\+::vector$<$ Py\+Object $\ast$($\ast$)(Py\+Object $\ast$, Py\+Type\+Object $\ast$)$>$ {\bfseries implicit\+\_\+conversions}
+\item 
+\mbox{\Hypertarget{structtype__info_ae87b2f5ab971392a547757b0cf0c173e}\label{structtype__info_ae87b2f5ab971392a547757b0cf0c173e}} 
+std\+::vector$<$ std\+::pair$<$ const std\+::type\+\_\+info $\ast$, void $\ast$($\ast$)(void $\ast$)$>$ $>$ {\bfseries implicit\+\_\+casts}
+\item 
+\mbox{\Hypertarget{structtype__info_ad1ea3e4746ea66e67520e829541efd95}\label{structtype__info_ad1ea3e4746ea66e67520e829541efd95}} 
+std\+::vector$<$ bool($\ast$)(Py\+Object $\ast$, void $\ast$\&)$>$ $\ast$ {\bfseries direct\+\_\+conversions}
+\item 
+\mbox{\Hypertarget{structtype__info_ae6e0ffbd11cb347896494ead333b8e4d}\label{structtype__info_ae6e0ffbd11cb347896494ead333b8e4d}} 
+\mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}} $\ast$($\ast$ {\bfseries get\+\_\+buffer} )(Py\+Object $\ast$, void $\ast$) = nullptr
+\item 
+\mbox{\Hypertarget{structtype__info_a610a9a58683d2cb70158fd084bd1f30b}\label{structtype__info_a610a9a58683d2cb70158fd084bd1f30b}} 
+void $\ast$ {\bfseries get\+\_\+buffer\+\_\+data} = nullptr
+\item 
+\mbox{\Hypertarget{structtype__info_a22057dde59f6dac304c12c97286222c8}\label{structtype__info_a22057dde59f6dac304c12c97286222c8}} 
+void $\ast$($\ast$ {\bfseries module\+\_\+local\+\_\+load} )(Py\+Object $\ast$, const \mbox{\hyperlink{structtype__info}{type\+\_\+info}} $\ast$) = nullptr
+\item 
+\mbox{\Hypertarget{structtype__info_a106e005c60fd65fbf01569e25b52fe50}\label{structtype__info_a106e005c60fd65fbf01569e25b52fe50}} 
+bool {\bfseries simple\+\_\+type}\+: 1
+\item 
+\mbox{\Hypertarget{structtype__info_aaa5c825d7f12a1312174bd566e825199}\label{structtype__info_aaa5c825d7f12a1312174bd566e825199}} 
+bool {\bfseries simple\+\_\+ancestors}\+: 1
+\item 
+\mbox{\Hypertarget{structtype__info_ac917cda35113f21ca3951c4d11f2aa71}\label{structtype__info_ac917cda35113f21ca3951c4d11f2aa71}} 
+bool {\bfseries default\+\_\+holder}\+: 1
+\item 
+\mbox{\Hypertarget{structtype__info_a800bae8b10c62683b4367268a37be661}\label{structtype__info_a800bae8b10c62683b4367268a37be661}} 
+bool {\bfseries module\+\_\+local}\+: 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Additional type information which does not fit into the Py\+Type\+Object. Changes to this struct also require bumping {\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+S\+\_\+\+V\+E\+R\+S\+I\+ON}. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/detail/internals.\+h\end{DoxyCompactItemize}

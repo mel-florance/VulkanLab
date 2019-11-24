@@ -1,0 +1,43 @@
+\hypertarget{structcontainer__traits}{}\doxysection{Référence du modèle de la structure container\+\_\+traits$<$ T $>$}
+\label{structcontainer__traits}\index{container\_traits$<$ T $>$@{container\_traits$<$ T $>$}}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structcontainer__traits_a0a60178e5fff65d3a89a1454776e1668}\label{structcontainer__traits_a0a60178e5fff65d3a89a1454776e1668}} 
+{\footnotesize template$<$typename T2 $>$ }\\static std\+::true\+\_\+type {\bfseries test\+\_\+comparable} (decltype(std\+::declval$<$ const T2 \& $>$()==std\+::declval$<$ const T2 \& $>$()) $\ast$)
+\item 
+\mbox{\Hypertarget{structcontainer__traits_ac2cd8fecd9029ec8e2a4d14b04223d6d}\label{structcontainer__traits_ac2cd8fecd9029ec8e2a4d14b04223d6d}} 
+{\footnotesize template$<$typename T2 $>$ }\\static std\+::false\+\_\+type {\bfseries test\+\_\+comparable} (...)
+\item 
+\mbox{\Hypertarget{structcontainer__traits_a00e1d17df72634112a0d82724df08e97}\label{structcontainer__traits_a00e1d17df72634112a0d82724df08e97}} 
+{\footnotesize template$<$typename T2 $>$ }\\static std\+::true\+\_\+type {\bfseries test\+\_\+value} (typename T2\+::value\+\_\+type $\ast$)
+\item 
+\mbox{\Hypertarget{structcontainer__traits_a8ed5be321721d91c3d68ef269b848988}\label{structcontainer__traits_a8ed5be321721d91c3d68ef269b848988}} 
+{\footnotesize template$<$typename T2 $>$ }\\static std\+::false\+\_\+type {\bfseries test\+\_\+value} (...)
+\item 
+\mbox{\Hypertarget{structcontainer__traits_a29ea1a081953a79394605cc9ca7a3694}\label{structcontainer__traits_a29ea1a081953a79394605cc9ca7a3694}} 
+{\footnotesize template$<$typename T2 $>$ }\\static std\+::true\+\_\+type {\bfseries test\+\_\+pair} (typename T2\+::first\+\_\+type $\ast$, typename T2\+::second\+\_\+type $\ast$)
+\item 
+\mbox{\Hypertarget{structcontainer__traits_afbc50d3448c347e73f94cfe1a8d1b2b8}\label{structcontainer__traits_afbc50d3448c347e73f94cfe1a8d1b2b8}} 
+{\footnotesize template$<$typename T2 $>$ }\\static std\+::false\+\_\+type {\bfseries test\+\_\+pair} (...)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structcontainer__traits_ab2461388054411125b0719d7faf82978}\label{structcontainer__traits_ab2461388054411125b0719d7faf82978}} 
+static constexpr const bool {\bfseries is\+\_\+comparable} = std\+::is\+\_\+same$<$std\+::true\+\_\+type, decltype(test\+\_\+comparable$<$T$>$(nullptr))$>$\+::value
+\item 
+\mbox{\Hypertarget{structcontainer__traits_ae17fa45f5c1984602e162ba0d9ee7f72}\label{structcontainer__traits_ae17fa45f5c1984602e162ba0d9ee7f72}} 
+static constexpr const bool {\bfseries is\+\_\+pair} = std\+::is\+\_\+same$<$std\+::true\+\_\+type, decltype(test\+\_\+pair$<$T$>$(nullptr, nullptr))$>$\+::value
+\item 
+\mbox{\Hypertarget{structcontainer__traits_a766d4e152eb677e230229880dee2dbb2}\label{structcontainer__traits_a766d4e152eb677e230229880dee2dbb2}} 
+static constexpr const bool {\bfseries is\+\_\+vector} = std\+::is\+\_\+same$<$std\+::true\+\_\+type, decltype(test\+\_\+value$<$T$>$(nullptr))$>$\+::value
+\item 
+\mbox{\Hypertarget{structcontainer__traits_ae5c7a42dfa2b713aae741ed37d6c192b}\label{structcontainer__traits_ae5c7a42dfa2b713aae741ed37d6c192b}} 
+static constexpr const bool {\bfseries is\+\_\+element} = !is\+\_\+pair \&\& !is\+\_\+vector
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/stl\+\_\+bind.\+h\end{DoxyCompactItemize}

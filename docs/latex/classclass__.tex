@@ -1,0 +1,168 @@
+\hypertarget{classclass__}{}\doxysection{Référence du modèle de la classe class\+\_\+$<$ type\+\_\+, options $>$}
+\label{classclass__}\index{class\_$<$ type\_, options $>$@{class\_$<$ type\_, options $>$}}
+Graphe d\textquotesingle{}héritage de class\+\_\+$<$ type\+\_\+, options $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classclass__}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structclass___1_1is__valid__class__option}{is\+\_\+valid\+\_\+class\+\_\+option}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclass___a90e08a4ecffb596c1f1055f47747ad91}\label{classclass___a90e08a4ecffb596c1f1055f47747ad91}} 
+using {\bfseries type} = type\+\_\+
+\item 
+\mbox{\Hypertarget{classclass___a18716f57a4db37eb2e5482309e5253c4}\label{classclass___a18716f57a4db37eb2e5482309e5253c4}} 
+using {\bfseries type\+\_\+alias} = detail\+::exactly\+\_\+one\+\_\+t$<$ is\+\_\+subtype, void, options... $>$
+\item 
+\mbox{\Hypertarget{classclass___ad22258342739bda577366b3a13a98796}\label{classclass___ad22258342739bda577366b3a13a98796}} 
+using {\bfseries holder\+\_\+type} = detail\+::exactly\+\_\+one\+\_\+t$<$ is\+\_\+holder, std\+::unique\+\_\+ptr$<$ type $>$, options... $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclass___a0c0ddf3d9d90319b5ca87ebdcac4cf28}\label{classclass___a0c0ddf3d9d90319b5ca87ebdcac4cf28}} 
+{\footnotesize template$<$typename... Extra$>$ }\\{\bfseries class\+\_\+} (\mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structscope}{scope}}, const char $\ast$\mbox{\hyperlink{structname}{name}}, const Extra \&... extra)
+\item 
+\mbox{\Hypertarget{classclass___a94b10f477ed961e4b85ea7da9eda16c7}\label{classclass___a94b10f477ed961e4b85ea7da9eda16c7}} 
+{\footnotesize template$<$typename Func , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def} (const char $\ast$name\+\_\+, Func \&\&f, const Extra \&... extra)
+\item 
+\mbox{\Hypertarget{classclass___a691aae941b44e34c7351731f269fcaff}\label{classclass___a691aae941b44e34c7351731f269fcaff}} 
+{\footnotesize template$<$typename Func , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def\+\_\+static} (const char $\ast$name\+\_\+, Func \&\&f, const Extra \&... extra)
+\item 
+\mbox{\Hypertarget{classclass___a33f32e20792b94c7dd2b6c8440d15050}\label{classclass___a33f32e20792b94c7dd2b6c8440d15050}} 
+{\footnotesize template$<$detail\+::op\+\_\+id id, detail\+::op\+\_\+type ot, typename L , typename R , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def} (const detail\+::op\+\_\+$<$ id, ot, L, R $>$ \&op, const Extra \&... extra)
+\item 
+\mbox{\Hypertarget{classclass___a4cab61de13f33263eb6a31dd91dfdeb9}\label{classclass___a4cab61de13f33263eb6a31dd91dfdeb9}} 
+{\footnotesize template$<$detail\+::op\+\_\+id id, detail\+::op\+\_\+type ot, typename L , typename R , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def\+\_\+cast} (const detail\+::op\+\_\+$<$ id, ot, L, R $>$ \&op, const Extra \&... extra)
+\item 
+\mbox{\Hypertarget{classclass___a8b6307ed7817398318d1cc1609f69adf}\label{classclass___a8b6307ed7817398318d1cc1609f69adf}} 
+{\footnotesize template$<$typename... Args, typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def} (const detail\+::initimpl\+::constructor$<$ Args... $>$ \&\mbox{\hyperlink{include_2nanogui_2common_8h_a0ebf62ccbfe834d82325affd0e1794a4}{init}}, const Extra \&... extra)
+\item 
+\mbox{\Hypertarget{classclass___aebf24734236ad776f18819d03c6b0e14}\label{classclass___aebf24734236ad776f18819d03c6b0e14}} 
+{\footnotesize template$<$typename... Args, typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def} (const detail\+::initimpl\+::alias\+\_\+constructor$<$ Args... $>$ \&\mbox{\hyperlink{include_2nanogui_2common_8h_a0ebf62ccbfe834d82325affd0e1794a4}{init}}, const Extra \&... extra)
+\item 
+\mbox{\Hypertarget{classclass___ae0c7a19e6e278ec165edcfb60671b71f}\label{classclass___ae0c7a19e6e278ec165edcfb60671b71f}} 
+{\footnotesize template$<$typename... Args, typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def} (detail\+::initimpl\+::factory$<$ Args... $>$ \&\&\mbox{\hyperlink{include_2nanogui_2common_8h_a0ebf62ccbfe834d82325affd0e1794a4}{init}}, const Extra \&... extra)
+\item 
+\mbox{\Hypertarget{classclass___a872d4b21283515f794739264673cd2d8}\label{classclass___a872d4b21283515f794739264673cd2d8}} 
+{\footnotesize template$<$typename... Args, typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def} (detail\+::initimpl\+::pickle\+\_\+factory$<$ Args... $>$ \&\&pf, const Extra \&...extra)
+\item 
+\mbox{\Hypertarget{classclass___acbd135c9fd33010bc99085e5d333bf55}\label{classclass___acbd135c9fd33010bc99085e5d333bf55}} 
+{\footnotesize template$<$typename Func $>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def\+\_\+buffer} (Func \&\&func)
+\item 
+\mbox{\Hypertarget{classclass___a13babe9644a320b11f55d4c737780397}\label{classclass___a13babe9644a320b11f55d4c737780397}} 
+{\footnotesize template$<$typename Return , typename Class , typename... Args$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def\+\_\+buffer} (Return(Class\+::$\ast$func)(Args...))
+\item 
+\mbox{\Hypertarget{classclass___a96ca3406293a4a91090f419590358cd0}\label{classclass___a96ca3406293a4a91090f419590358cd0}} 
+{\footnotesize template$<$typename Return , typename Class , typename... Args$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def\+\_\+buffer} (Return(Class\+::$\ast$func)(Args...) const)
+\item 
+\mbox{\Hypertarget{classclass___a3018817da2690cc989745c7d744438cb}\label{classclass___a3018817da2690cc989745c7d744438cb}} 
+{\footnotesize template$<$typename C , typename D , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def\+\_\+readwrite} (const char $\ast$\mbox{\hyperlink{structname}{name}}, D C\+::$\ast$pm, const Extra \&... extra)
+\item 
+\mbox{\Hypertarget{classclass___ac98b5db2ad54da585cc9d28a8748e420}\label{classclass___ac98b5db2ad54da585cc9d28a8748e420}} 
+{\footnotesize template$<$typename C , typename D , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def\+\_\+readonly} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const D C\+::$\ast$pm, const Extra \&...extra)
+\item 
+\mbox{\Hypertarget{classclass___ab5f2fa205966fb138364019ff23d96de}\label{classclass___ab5f2fa205966fb138364019ff23d96de}} 
+{\footnotesize template$<$typename D , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def\+\_\+readwrite\+\_\+static} (const char $\ast$\mbox{\hyperlink{structname}{name}}, D $\ast$pm, const Extra \&...extra)
+\item 
+\mbox{\Hypertarget{classclass___aaa095752a8d0fc1bd45e4404502df5e9}\label{classclass___aaa095752a8d0fc1bd45e4404502df5e9}} 
+{\footnotesize template$<$typename D , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def\+\_\+readonly\+\_\+static} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const D $\ast$pm, const Extra \&...extra)
+\item 
+\mbox{\Hypertarget{classclass___a0b005f5ca971191308806807682cdf94}\label{classclass___a0b005f5ca971191308806807682cdf94}} 
+{\footnotesize template$<$typename Getter , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& \mbox{\hyperlink{classclass___a0b005f5ca971191308806807682cdf94}{def\+\_\+property\+\_\+readonly}} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const Getter \&fget, const Extra \&...extra)
+\begin{DoxyCompactList}\small\item\em Uses return\+\_\+value\+\_\+policy\+::reference\+\_\+internal by default. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classclass___ac7f87d627ffe20ca113b2c42eb746d45}\label{classclass___ac7f87d627ffe20ca113b2c42eb746d45}} 
+{\footnotesize template$<$typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& \mbox{\hyperlink{classclass___ac7f87d627ffe20ca113b2c42eb746d45}{def\+\_\+property\+\_\+readonly}} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const \mbox{\hyperlink{classcpp__function}{cpp\+\_\+function}} \&fget, const Extra \&...extra)
+\begin{DoxyCompactList}\small\item\em Uses \mbox{\hyperlink{classcpp__function}{cpp\+\_\+function}}\textquotesingle{}s return\+\_\+value\+\_\+policy by default. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classclass___afa89332683e8e7e134472d5dc83ba6b3}\label{classclass___afa89332683e8e7e134472d5dc83ba6b3}} 
+{\footnotesize template$<$typename Getter , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& \mbox{\hyperlink{classclass___afa89332683e8e7e134472d5dc83ba6b3}{def\+\_\+property\+\_\+readonly\+\_\+static}} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const Getter \&fget, const Extra \&...extra)
+\begin{DoxyCompactList}\small\item\em Uses return\+\_\+value\+\_\+policy\+::reference by default. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classclass___a84efdefa8be30cf8fe803793474430c1}\label{classclass___a84efdefa8be30cf8fe803793474430c1}} 
+{\footnotesize template$<$typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& \mbox{\hyperlink{classclass___a84efdefa8be30cf8fe803793474430c1}{def\+\_\+property\+\_\+readonly\+\_\+static}} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const \mbox{\hyperlink{classcpp__function}{cpp\+\_\+function}} \&fget, const Extra \&...extra)
+\begin{DoxyCompactList}\small\item\em Uses \mbox{\hyperlink{classcpp__function}{cpp\+\_\+function}}\textquotesingle{}s return\+\_\+value\+\_\+policy by default. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classclass___a2f2cd90a7ae2f7895e0b0caadac82f6f}\label{classclass___a2f2cd90a7ae2f7895e0b0caadac82f6f}} 
+{\footnotesize template$<$typename Getter , typename Setter , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& \mbox{\hyperlink{classclass___a2f2cd90a7ae2f7895e0b0caadac82f6f}{def\+\_\+property}} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const Getter \&fget, const Setter \&fset, const Extra \&...extra)
+\begin{DoxyCompactList}\small\item\em Uses return\+\_\+value\+\_\+policy\+::reference\+\_\+internal by default. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classclass___a14c7125697800c6b8987c1c5f15aaea9}\label{classclass___a14c7125697800c6b8987c1c5f15aaea9}} 
+{\footnotesize template$<$typename Getter , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& {\bfseries def\+\_\+property} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const Getter \&fget, const \mbox{\hyperlink{classcpp__function}{cpp\+\_\+function}} \&fset, const Extra \&...extra)
+\item 
+\mbox{\Hypertarget{classclass___ab976d0a595ac11629949c1faa8b2e09d}\label{classclass___ab976d0a595ac11629949c1faa8b2e09d}} 
+{\footnotesize template$<$typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& \mbox{\hyperlink{classclass___ab976d0a595ac11629949c1faa8b2e09d}{def\+\_\+property}} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const \mbox{\hyperlink{classcpp__function}{cpp\+\_\+function}} \&fget, const \mbox{\hyperlink{classcpp__function}{cpp\+\_\+function}} \&fset, const Extra \&...extra)
+\begin{DoxyCompactList}\small\item\em Uses \mbox{\hyperlink{classcpp__function}{cpp\+\_\+function}}\textquotesingle{}s return\+\_\+value\+\_\+policy by default. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classclass___ab78c60e008d354283f76eef3b7c6e221}\label{classclass___ab78c60e008d354283f76eef3b7c6e221}} 
+{\footnotesize template$<$typename Getter , typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& \mbox{\hyperlink{classclass___ab78c60e008d354283f76eef3b7c6e221}{def\+\_\+property\+\_\+static}} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const Getter \&fget, const \mbox{\hyperlink{classcpp__function}{cpp\+\_\+function}} \&fset, const Extra \&...extra)
+\begin{DoxyCompactList}\small\item\em Uses return\+\_\+value\+\_\+policy\+::reference by default. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classclass___a1c2c3cfa3f7ba78fcb344a716dcc59a3}\label{classclass___a1c2c3cfa3f7ba78fcb344a716dcc59a3}} 
+{\footnotesize template$<$typename... Extra$>$ }\\\mbox{\hyperlink{classclass__}{class\+\_\+}} \& \mbox{\hyperlink{classclass___a1c2c3cfa3f7ba78fcb344a716dcc59a3}{def\+\_\+property\+\_\+static}} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const \mbox{\hyperlink{classcpp__function}{cpp\+\_\+function}} \&fget, const \mbox{\hyperlink{classcpp__function}{cpp\+\_\+function}} \&fset, const Extra \&...extra)
+\begin{DoxyCompactList}\small\item\em Uses \mbox{\hyperlink{classcpp__function}{cpp\+\_\+function}}\textquotesingle{}s return\+\_\+value\+\_\+policy by default. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclass___a118815a833b1fe76c91536afdfc1f305}\label{classclass___a118815a833b1fe76c91536afdfc1f305}} 
+{\footnotesize template$<$typename Base , detail\+::enable\+\_\+if\+\_\+t$<$ is\+\_\+base$<$ Base $>$\+::value, int $>$  = 0$>$ }\\static void {\bfseries add\+\_\+base} (detail\+::type\+\_\+record \&rec)
+\item 
+\mbox{\Hypertarget{classclass___a3e06e8a15ef89f19a08a9ca0bf8277de}\label{classclass___a3e06e8a15ef89f19a08a9ca0bf8277de}} 
+{\footnotesize template$<$typename Base , detail\+::enable\+\_\+if\+\_\+t$<$!is\+\_\+base$<$ Base $>$\+::value, int $>$  = 0$>$ }\\static void {\bfseries add\+\_\+base} (detail\+::type\+\_\+record \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclass___adc028ddb268afeb2f697ea6c0b820772}\label{classclass___adc028ddb268afeb2f697ea6c0b820772}} 
+constexpr static bool {\bfseries has\+\_\+alias} = !std\+::is\+\_\+void$<$type\+\_\+alias$>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclass___a2e54cec004893ee1c17924e21882aef8}\label{classclass___a2e54cec004893ee1c17924e21882aef8}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries is\+\_\+holder} = detail\+::is\+\_\+holder\+\_\+type$<$ type\+\_\+, T $>$
+\item 
+\mbox{\Hypertarget{classclass___af8959b802a53c37b63f3ea5634d569f0}\label{classclass___af8959b802a53c37b63f3ea5634d569f0}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries is\+\_\+subtype} = detail\+::is\+\_\+strict\+\_\+base\+\_\+of$<$ type\+\_\+, T $>$
+\item 
+\mbox{\Hypertarget{classclass___a1e7080ed67b323eba06206098e688cab}\label{classclass___a1e7080ed67b323eba06206098e688cab}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries is\+\_\+base} = detail\+::is\+\_\+strict\+\_\+base\+\_\+of$<$ T, type\+\_\+ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclass___a0b9fc3852fd1fd8959fa58f3a9d9b92f}\label{classclass___a0b9fc3852fd1fd8959fa58f3a9d9b92f}} 
+{\footnotesize template$<$typename T $>$ }\\static void \mbox{\hyperlink{classclass___a0b9fc3852fd1fd8959fa58f3a9d9b92f}{init\+\_\+holder}} (detail\+::instance $\ast$inst, detail\+::value\+\_\+and\+\_\+holder \&v\+\_\+h, const holder\+\_\+type $\ast$, const std\+::enable\+\_\+shared\+\_\+from\+\_\+this$<$ T $>$ $\ast$)
+\begin{DoxyCompactList}\small\item\em Initialize holder object, variant 1\+: object derives from enable\+\_\+shared\+\_\+from\+\_\+this. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classclass___abc6798d9cce39b2bff9a32200c67f036}\label{classclass___abc6798d9cce39b2bff9a32200c67f036}} 
+static void {\bfseries init\+\_\+holder\+\_\+from\+\_\+existing} (const detail\+::value\+\_\+and\+\_\+holder \&v\+\_\+h, const holder\+\_\+type $\ast$holder\+\_\+ptr, std\+::true\+\_\+type)
+\item 
+\mbox{\Hypertarget{classclass___ae9aea4b6092c2d1d3fd70205ce06a2ec}\label{classclass___ae9aea4b6092c2d1d3fd70205ce06a2ec}} 
+static void {\bfseries init\+\_\+holder\+\_\+from\+\_\+existing} (const detail\+::value\+\_\+and\+\_\+holder \&v\+\_\+h, const holder\+\_\+type $\ast$holder\+\_\+ptr, std\+::false\+\_\+type)
+\item 
+\mbox{\Hypertarget{classclass___adeece97080849a4a259d82c5bf3a7a8e}\label{classclass___adeece97080849a4a259d82c5bf3a7a8e}} 
+static void \mbox{\hyperlink{classclass___adeece97080849a4a259d82c5bf3a7a8e}{init\+\_\+holder}} (detail\+::instance $\ast$inst, detail\+::value\+\_\+and\+\_\+holder \&v\+\_\+h, const holder\+\_\+type $\ast$holder\+\_\+ptr, const void $\ast$)
+\begin{DoxyCompactList}\small\item\em Initialize holder object, variant 2\+: try to construct from existing holder object, if possible. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classclass___a20391d006c3476cc8f0317a7e82dccfe}{init\+\_\+instance}} (detail\+::instance $\ast$inst, const void $\ast$holder\+\_\+ptr)
+\item 
+\mbox{\Hypertarget{classclass___a6b1260e369fcbc36da23cc813c88d163}\label{classclass___a6b1260e369fcbc36da23cc813c88d163}} 
+static void \mbox{\hyperlink{classclass___a6b1260e369fcbc36da23cc813c88d163}{dealloc}} (detail\+::value\+\_\+and\+\_\+holder \&v\+\_\+h)
+\begin{DoxyCompactList}\small\item\em Deallocates an instance; via holder, if constructed; otherwise via operator delete. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classclass___a74a1148a1b704ab4ba15e769d226577b}\label{classclass___a74a1148a1b704ab4ba15e769d226577b}} 
+static detail\+::function\+\_\+record $\ast$ {\bfseries get\+\_\+function\+\_\+record} (\mbox{\hyperlink{classhandle}{handle}} h)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classclass___a20391d006c3476cc8f0317a7e82dccfe}\label{classclass___a20391d006c3476cc8f0317a7e82dccfe}} 
+\index{class\_$<$ type\_, options $>$@{class\_$<$ type\_, options $>$}!init\_instance@{init\_instance}}
+\index{init\_instance@{init\_instance}!class\_$<$ type\_, options $>$@{class\_$<$ type\_, options $>$}}
+\doxysubsubsection{\texorpdfstring{init\_instance()}{init\_instance()}}
+{\footnotesize\ttfamily template$<$typename type\+\_\+, typename... options$>$ \\
+static void \mbox{\hyperlink{classclass__}{class\+\_\+}}$<$ type\+\_\+, \mbox{\hyperlink{classoptions}{options}} $>$\+::init\+\_\+instance (\begin{DoxyParamCaption}\item[{detail\+::instance $\ast$}]{inst,  }\item[{const void $\ast$}]{holder\+\_\+ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Performs instance initialization including constructing a holder and registering the known instance. Should be called as soon as the {\ttfamily type} value\+\_\+ptr is set for an instance. Takes an optional pointer to an existing holder to use; if not specified and the instance is {\ttfamily .owned}, a new holder will be constructed to manage the value pointer. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/pybind11.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,309 @@
+\hypertarget{classScreen}{}\doxysection{Référence de la classe Screen}
+\label{classScreen}\index{Screen@{Screen}}
+
+
+Represents a display surface (i.\+e. a full-\/screen or windowed G\+L\+FW window) and forms the root element of a hierarchy of nanogui widgets.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/screen.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classScreen}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScreen_ad43d3d6273d36bc4e2cd8129ef5d40cb}{Screen}} (const Vector2i \&\mbox{\hyperlink{classWidget_aa793702fbc88538c62fb6e01e7dea071}{size}}, const std\+::string \&\mbox{\hyperlink{classScreen_a36bfb3bc60b51da565514a2d5b758f97}{caption}}=\char`\"{}Unnamed\char`\"{}, bool resizable=true, bool fullscreen=false, bool depth\+\_\+buffer=true, bool stencil\+\_\+buffer=true, bool float\+\_\+buffer=false, unsigned int gl\+\_\+major=3, unsigned int gl\+\_\+minor=2)
+\item 
+\mbox{\Hypertarget{classScreen_a4243bc17596af96415b09ac48205676d}\label{classScreen_a4243bc17596af96415b09ac48205676d}} 
+virtual \mbox{\hyperlink{classScreen_a4243bc17596af96415b09ac48205676d}{$\sim$\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Release all resources. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a36bfb3bc60b51da565514a2d5b758f97}\label{classScreen_a36bfb3bc60b51da565514a2d5b758f97}} 
+const std\+::string \& \mbox{\hyperlink{classScreen_a36bfb3bc60b51da565514a2d5b758f97}{caption}} () const
+\begin{DoxyCompactList}\small\item\em Get the window title bar caption. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a0cf610d7ccf3be6c5b52c415614289b9}\label{classScreen_a0cf610d7ccf3be6c5b52c415614289b9}} 
+void \mbox{\hyperlink{classScreen_a0cf610d7ccf3be6c5b52c415614289b9}{set\+\_\+caption}} (const std\+::string \&\mbox{\hyperlink{classScreen_a36bfb3bc60b51da565514a2d5b758f97}{caption}})
+\begin{DoxyCompactList}\small\item\em Set the window title bar caption. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a776e1c7133e321a92193ea0b45c4e7cf}\label{classScreen_a776e1c7133e321a92193ea0b45c4e7cf}} 
+const \mbox{\hyperlink{classColor}{Color}} \& \mbox{\hyperlink{classScreen_a776e1c7133e321a92193ea0b45c4e7cf}{background}} () const
+\begin{DoxyCompactList}\small\item\em Return the screen\textquotesingle{}s background color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a1e7bdb42cdc1b026bdcda9c63e6e64bc}\label{classScreen_a1e7bdb42cdc1b026bdcda9c63e6e64bc}} 
+void \mbox{\hyperlink{classScreen_a1e7bdb42cdc1b026bdcda9c63e6e64bc}{set\+\_\+background}} (const \mbox{\hyperlink{classColor}{Color}} \&\mbox{\hyperlink{classScreen_a776e1c7133e321a92193ea0b45c4e7cf}{background}})
+\begin{DoxyCompactList}\small\item\em Set the screen\textquotesingle{}s background color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a91ea6bd695a2770a61db18c6b0e0f01a}\label{classScreen_a91ea6bd695a2770a61db18c6b0e0f01a}} 
+void \mbox{\hyperlink{classScreen_a91ea6bd695a2770a61db18c6b0e0f01a}{set\+\_\+visible}} (bool \mbox{\hyperlink{classWidget_a5aadbf5207a17eb0f12e8bab5ada9c02}{visible}})
+\begin{DoxyCompactList}\small\item\em Set the top-\/level window visibility (no effect on full-\/screen windows) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a4054e9974520af32215ddb10a7e97a5d}\label{classScreen_a4054e9974520af32215ddb10a7e97a5d}} 
+void \mbox{\hyperlink{classScreen_a4054e9974520af32215ddb10a7e97a5d}{set\+\_\+size}} (const Vector2i \&\mbox{\hyperlink{classWidget_aa793702fbc88538c62fb6e01e7dea071}{size}})
+\begin{DoxyCompactList}\small\item\em Set window size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a115eeaf0cabd36b262a41306d3465ab4}\label{classScreen_a115eeaf0cabd36b262a41306d3465ab4}} 
+const Vector2i \& \mbox{\hyperlink{classScreen_a115eeaf0cabd36b262a41306d3465ab4}{framebuffer\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em Return the framebuffer size (potentially larger than \mbox{\hyperlink{classWidget_aa793702fbc88538c62fb6e01e7dea071}{size()}} on high-\/\+D\+PI screens) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_aa6a86fe17fb50f49ad82a52bddfe9da9}\label{classScreen_aa6a86fe17fb50f49ad82a52bddfe9da9}} 
+void \mbox{\hyperlink{classScreen_aa6a86fe17fb50f49ad82a52bddfe9da9}{redraw}} ()
+\begin{DoxyCompactList}\small\item\em Send an event that will cause the screen to be redrawn at the next event loop iteration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a35e74266b2a04e37b354ceff7a5f1031}\label{classScreen_a35e74266b2a04e37b354ceff7a5f1031}} 
+virtual void \mbox{\hyperlink{classScreen_a35e74266b2a04e37b354ceff7a5f1031}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the screen with the background color (gl\+Clear\+Color, gl\+Clear, etc.) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_afc8a3f0afae7f66833a6caf4924302f1}\label{classScreen_afc8a3f0afae7f66833a6caf4924302f1}} 
+virtual void \mbox{\hyperlink{classScreen_afc8a3f0afae7f66833a6caf4924302f1}{draw\+\_\+all}} ()
+\begin{DoxyCompactList}\small\item\em Draw the \mbox{\hyperlink{classScreen}{Screen}} contents. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a446d773bb54c66df5889d3ee9a25e8ec}\label{classScreen_a446d773bb54c66df5889d3ee9a25e8ec}} 
+virtual void \mbox{\hyperlink{classScreen_a446d773bb54c66df5889d3ee9a25e8ec}{draw\+\_\+contents}} ()
+\begin{DoxyCompactList}\small\item\em Calls \mbox{\hyperlink{classScreen_a35e74266b2a04e37b354ceff7a5f1031}{clear()}} and draws the window contents --- put your rendering code here. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_ab1b58d75b45e9409f7a04add8fed2607}\label{classScreen_ab1b58d75b45e9409f7a04add8fed2607}} 
+float \mbox{\hyperlink{classScreen_ab1b58d75b45e9409f7a04add8fed2607}{pixel\+\_\+ratio}} () const
+\begin{DoxyCompactList}\small\item\em Return the ratio between pixel and device coordinates (e.\+g. $>$= 2 on Mac Retina displays) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_ab831c3d128318eaffb67fd42885ab40a}\label{classScreen_ab831c3d128318eaffb67fd42885ab40a}} 
+virtual bool \mbox{\hyperlink{classScreen_ab831c3d128318eaffb67fd42885ab40a}{drop\+\_\+event}} (const std\+::vector$<$ std\+::string $>$ \&)
+\begin{DoxyCompactList}\small\item\em Handle a file drop event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_ad8242c8e693b3a8b9205865d0466b1fb}\label{classScreen_ad8242c8e693b3a8b9205865d0466b1fb}} 
+virtual bool \mbox{\hyperlink{classScreen_ad8242c8e693b3a8b9205865d0466b1fb}{keyboard\+\_\+event}} (int key, int scancode, int action, int modifiers)
+\begin{DoxyCompactList}\small\item\em Default keyboard event handler. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a5c8752b78cfc14546cfaa9eeb2e23382}\label{classScreen_a5c8752b78cfc14546cfaa9eeb2e23382}} 
+virtual bool \mbox{\hyperlink{classScreen_a5c8752b78cfc14546cfaa9eeb2e23382}{keyboard\+\_\+character\+\_\+event}} (unsigned int codepoint)
+\begin{DoxyCompactList}\small\item\em Text input event handler\+: codepoint is native endian U\+T\+F-\/32 format. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_ab1a4c0670d1f6f1b5172ba4b2a95f3ff}\label{classScreen_ab1a4c0670d1f6f1b5172ba4b2a95f3ff}} 
+virtual bool \mbox{\hyperlink{classScreen_ab1a4c0670d1f6f1b5172ba4b2a95f3ff}{resize\+\_\+event}} (const Vector2i \&\mbox{\hyperlink{classWidget_aa793702fbc88538c62fb6e01e7dea071}{size}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classWindow}{Window}} resize event handler. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_af362b09fbfa01e495c01fdb236e6a56a}\label{classScreen_af362b09fbfa01e495c01fdb236e6a56a}} 
+std\+::function$<$ void(Vector2i)$>$ \mbox{\hyperlink{classScreen_af362b09fbfa01e495c01fdb236e6a56a}{resize\+\_\+callback}} () const
+\begin{DoxyCompactList}\small\item\em Set the resize callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a31000b5b8ae0182f70988726b9b6c780}\label{classScreen_a31000b5b8ae0182f70988726b9b6c780}} 
+void {\bfseries set\+\_\+resize\+\_\+callback} (const std\+::function$<$ void(Vector2i)$>$ \&callback)
+\item 
+\mbox{\Hypertarget{classScreen_a8a55ca076a7698e7f526a624e4d76078}\label{classScreen_a8a55ca076a7698e7f526a624e4d76078}} 
+Vector2i \mbox{\hyperlink{classScreen_a8a55ca076a7698e7f526a624e4d76078}{mouse\+\_\+pos}} () const
+\begin{DoxyCompactList}\small\item\em Return the last observed mouse position value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a76619881fb09ab605af619a2e0beae2c}\label{classScreen_a76619881fb09ab605af619a2e0beae2c}} 
+\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$ \mbox{\hyperlink{classScreen_a76619881fb09ab605af619a2e0beae2c}{glfw\+\_\+window}} () const
+\begin{DoxyCompactList}\small\item\em Return a pointer to the underlying G\+L\+FW window data structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a07073439c63923da29091398aba80e7e}\label{classScreen_a07073439c63923da29091398aba80e7e}} 
+\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ \mbox{\hyperlink{classScreen_a07073439c63923da29091398aba80e7e}{nvg\+\_\+context}} () const
+\begin{DoxyCompactList}\small\item\em Return a pointer to the underlying Nano\+VG draw context. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_af50d4c10e8207e4f21d3aefc29865153}\label{classScreen_af50d4c10e8207e4f21d3aefc29865153}} 
+\mbox{\hyperlink{classTexture_a129b619e8e93e97e25f3ab879b6bf85c}{Texture\+::\+Component\+Format}} \mbox{\hyperlink{classScreen_af50d4c10e8207e4f21d3aefc29865153}{component\+\_\+format}} () const
+\begin{DoxyCompactList}\small\item\em Return the component format underlying the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a7f84d0a1cca4a10c18e8804a700dcaec}\label{classScreen_a7f84d0a1cca4a10c18e8804a700dcaec}} 
+\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6}{Texture\+::\+Pixel\+Format}} \mbox{\hyperlink{classScreen_a7f84d0a1cca4a10c18e8804a700dcaec}{pixel\+\_\+format}} () const
+\begin{DoxyCompactList}\small\item\em Return the pixel format underlying the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a79aed7172886c0a06fd5e245898fd987}\label{classScreen_a79aed7172886c0a06fd5e245898fd987}} 
+bool \mbox{\hyperlink{classScreen_a79aed7172886c0a06fd5e245898fd987}{has\+\_\+depth\+\_\+buffer}} () const
+\begin{DoxyCompactList}\small\item\em Does the framebuffer have a depth buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a3ca310c31f04b19b9a1cd24ba87c54ab}\label{classScreen_a3ca310c31f04b19b9a1cd24ba87c54ab}} 
+bool \mbox{\hyperlink{classScreen_a3ca310c31f04b19b9a1cd24ba87c54ab}{has\+\_\+stencil\+\_\+buffer}} () const
+\begin{DoxyCompactList}\small\item\em Does the framebuffer have a stencil buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a8b5c4285a836995543d36c47d06de2a4}\label{classScreen_a8b5c4285a836995543d36c47d06de2a4}} 
+bool \mbox{\hyperlink{classScreen_a8b5c4285a836995543d36c47d06de2a4}{has\+\_\+float\+\_\+buffer}} () const
+\begin{DoxyCompactList}\small\item\em Does the framebuffer use a floating point representation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a39c9e71ffd8556cbc8e5b81b7772fd55}\label{classScreen_a39c9e71ffd8556cbc8e5b81b7772fd55}} 
+void \mbox{\hyperlink{classScreen_a39c9e71ffd8556cbc8e5b81b7772fd55}{nvg\+\_\+flush}} ()
+\begin{DoxyCompactList}\small\item\em Flush all queued up Nano\+VG rendering commands. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a6670a55229bf81447f491fedcae0f068}\label{classScreen_a6670a55229bf81447f491fedcae0f068}} 
+void \mbox{\hyperlink{classScreen_a6670a55229bf81447f491fedcae0f068}{set\+\_\+shutdown\+\_\+glfw}} (bool v)
+\begin{DoxyCompactList}\small\item\em Shut down G\+L\+FW when the window is closed? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a34df4931a64d6ca00f2606a36f34fb9b}\label{classScreen_a34df4931a64d6ca00f2606a36f34fb9b}} 
+bool {\bfseries shutdown\+\_\+glfw} ()
+\item 
+\mbox{\Hypertarget{classScreen_a87f68bdcdecef0d2ec566040cba1ac54}\label{classScreen_a87f68bdcdecef0d2ec566040cba1ac54}} 
+bool \mbox{\hyperlink{classScreen_a87f68bdcdecef0d2ec566040cba1ac54}{tooltip\+\_\+fade\+\_\+in\+\_\+progress}} () const
+\begin{DoxyCompactList}\small\item\em Is a tooltip currently fading in? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_a878563c7996050f0ea56db8ffc3167a7}\label{classScreen_a878563c7996050f0ea56db8ffc3167a7}} 
+void \mbox{\hyperlink{classScreen_a878563c7996050f0ea56db8ffc3167a7}{perform\+\_\+layout}} ()
+\begin{DoxyCompactList}\small\item\em Compute the layout of all widgets. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScreen_ae7576476fc6e6a6eaa66389fdc41fe72}{Screen}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScreen_adfe43f1609d61d257dc3264de7927ec6}{initialize}} (\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$\mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}}, bool shutdown\+\_\+glfw)
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{classScreen}{Screen}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScreen_ad94898be89935c3ab1ca56cb2a024cba}\label{classScreen_ad94898be89935c3ab1ca56cb2a024cba}} 
+void {\bfseries cursor\+\_\+pos\+\_\+callback\+\_\+event} (double x, double y)
+\item 
+\mbox{\Hypertarget{classScreen_a7d61bd097ae22c49cc7e9b05a582a16e}\label{classScreen_a7d61bd097ae22c49cc7e9b05a582a16e}} 
+void {\bfseries mouse\+\_\+button\+\_\+callback\+\_\+event} (int button, int action, int modifiers)
+\item 
+\mbox{\Hypertarget{classScreen_a973ff04cd7fdcb7ec301056676410975}\label{classScreen_a973ff04cd7fdcb7ec301056676410975}} 
+void {\bfseries key\+\_\+callback\+\_\+event} (int key, int scancode, int action, int mods)
+\item 
+\mbox{\Hypertarget{classScreen_aee6a07d023fca176ef879c94e50a11f3}\label{classScreen_aee6a07d023fca176ef879c94e50a11f3}} 
+void {\bfseries char\+\_\+callback\+\_\+event} (unsigned int codepoint)
+\item 
+\mbox{\Hypertarget{classScreen_a4bca998a24ed85f769f36d89153a7022}\label{classScreen_a4bca998a24ed85f769f36d89153a7022}} 
+void {\bfseries drop\+\_\+callback\+\_\+event} (int count, const char $\ast$$\ast$filenames)
+\item 
+\mbox{\Hypertarget{classScreen_a0c3e43177217164a32b6bba3ae4ce1f2}\label{classScreen_a0c3e43177217164a32b6bba3ae4ce1f2}} 
+void {\bfseries scroll\+\_\+callback\+\_\+event} (double x, double y)
+\item 
+\mbox{\Hypertarget{classScreen_ad0ae6adcce360f4007665cbc187cb414}\label{classScreen_ad0ae6adcce360f4007665cbc187cb414}} 
+void {\bfseries resize\+\_\+callback\+\_\+event} (int \mbox{\hyperlink{classWidget_a03c9a3f3ff19d7f39b8e6be03357d87a}{width}}, int \mbox{\hyperlink{classWidget_ad83cc00012e97a403dd65b289f4ceffe}{height}})
+\item 
+\mbox{\Hypertarget{classScreen_a8fd9b1685500c9e6c9756295260723bb}\label{classScreen_a8fd9b1685500c9e6c9756295260723bb}} 
+void {\bfseries update\+\_\+focus} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$widget)
+\item 
+\mbox{\Hypertarget{classScreen_a0d211dc8f0c00835541cb1a7fe8a64c1}\label{classScreen_a0d211dc8f0c00835541cb1a7fe8a64c1}} 
+void {\bfseries dispose\+\_\+window} (\mbox{\hyperlink{classWindow}{Window}} $\ast$\mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}})
+\item 
+\mbox{\Hypertarget{classScreen_ad02337e56cf2a722124f030de9100650}\label{classScreen_ad02337e56cf2a722124f030de9100650}} 
+void {\bfseries center\+\_\+window} (\mbox{\hyperlink{classWindow}{Window}} $\ast$\mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}})
+\item 
+\mbox{\Hypertarget{classScreen_a881f867caae1600d7be8d36c220d97f8}\label{classScreen_a881f867caae1600d7be8d36c220d97f8}} 
+void {\bfseries move\+\_\+window\+\_\+to\+\_\+front} (\mbox{\hyperlink{classWindow}{Window}} $\ast$\mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}})
+\item 
+\mbox{\Hypertarget{classScreen_add42331e98dfe10a44b2e3bf1b66287b}\label{classScreen_add42331e98dfe10a44b2e3bf1b66287b}} 
+void {\bfseries draw\+\_\+widgets} ()
+\item 
+\mbox{\Hypertarget{classScreen_addd9a13f6a3f5af7105865927ba5c721}\label{classScreen_addd9a13f6a3f5af7105865927ba5c721}} 
+virtual void \mbox{\hyperlink{classScreen_addd9a13f6a3f5af7105865927ba5c721}{perform\+\_\+layout}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Invoke the associated layout generator to properly place child widgets, if any. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classScreen_a1456e91cef01ec0e4b1147797e19e983}\label{classScreen_a1456e91cef01ec0e4b1147797e19e983}} 
+\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$ {\bfseries m\+\_\+glfw\+\_\+window} = nullptr
+\item 
+\mbox{\Hypertarget{classScreen_a9032b7ec5c5a101c4aa39a188ba0d087}\label{classScreen_a9032b7ec5c5a101c4aa39a188ba0d087}} 
+\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ {\bfseries m\+\_\+nvg\+\_\+context} = nullptr
+\item 
+\mbox{\Hypertarget{classScreen_ad9f2008717018e1627b8248ab2231654}\label{classScreen_ad9f2008717018e1627b8248ab2231654}} 
+\mbox{\hyperlink{group__input_ga89261ae18c75e863aaf2656ecdd238f4}{G\+L\+F\+Wcursor}} $\ast$ {\bfseries m\+\_\+cursors} \mbox{[}(size\+\_\+t) \mbox{\hyperlink{include_2nanogui_2common_8h_ac9c915d433bdce7b6b47c0956c850f43aa89e3c29e1f8c3210f0ced9916f441e2}{Cursor\+::\+Cursor\+Count}}\mbox{]}
+\item 
+\mbox{\Hypertarget{classScreen_a50308cc9d9ead2f085df63c5181cae65}\label{classScreen_a50308cc9d9ead2f085df63c5181cae65}} 
+\mbox{\hyperlink{include_2nanogui_2common_8h_ac9c915d433bdce7b6b47c0956c850f43}{Cursor}} {\bfseries m\+\_\+cursor}
+\item 
+\mbox{\Hypertarget{classScreen_a3240b719e3059b37d42120fe4b106502}\label{classScreen_a3240b719e3059b37d42120fe4b106502}} 
+std\+::vector$<$ \mbox{\hyperlink{classWidget}{Widget}} $\ast$ $>$ {\bfseries m\+\_\+focus\+\_\+path}
+\item 
+\mbox{\Hypertarget{classScreen_ac4e0ba53572b475a49d3d04bb1facfd8}\label{classScreen_ac4e0ba53572b475a49d3d04bb1facfd8}} 
+Vector2i {\bfseries m\+\_\+fbsize}
+\item 
+\mbox{\Hypertarget{classScreen_a6df58a967da8da91342fcfe1d3f0c5e8}\label{classScreen_a6df58a967da8da91342fcfe1d3f0c5e8}} 
+float {\bfseries m\+\_\+pixel\+\_\+ratio}
+\item 
+\mbox{\Hypertarget{classScreen_a2be6bc15b797f9ba89f4c2b6852b0307}\label{classScreen_a2be6bc15b797f9ba89f4c2b6852b0307}} 
+int {\bfseries m\+\_\+mouse\+\_\+state}
+\item 
+\mbox{\Hypertarget{classScreen_ac5af6c5f70c0e10358c37b0d6e92a9fa}\label{classScreen_ac5af6c5f70c0e10358c37b0d6e92a9fa}} 
+int {\bfseries m\+\_\+modifiers}
+\item 
+\mbox{\Hypertarget{classScreen_ab4f77fa68e4c440cde3fa68c1564d560}\label{classScreen_ab4f77fa68e4c440cde3fa68c1564d560}} 
+Vector2i {\bfseries m\+\_\+mouse\+\_\+pos}
+\item 
+\mbox{\Hypertarget{classScreen_a3756cdd83859bfa401ca84f31d3218a0}\label{classScreen_a3756cdd83859bfa401ca84f31d3218a0}} 
+bool {\bfseries m\+\_\+drag\+\_\+active}
+\item 
+\mbox{\Hypertarget{classScreen_a92d066caca440c589a3b67586629371e}\label{classScreen_a92d066caca440c589a3b67586629371e}} 
+\mbox{\hyperlink{classWidget}{Widget}} $\ast$ {\bfseries m\+\_\+drag\+\_\+widget} = nullptr
+\item 
+\mbox{\Hypertarget{classScreen_a600300ad37a6bd6fbcaa192d1706718c}\label{classScreen_a600300ad37a6bd6fbcaa192d1706718c}} 
+double {\bfseries m\+\_\+last\+\_\+interaction}
+\item 
+\mbox{\Hypertarget{classScreen_abed796a72538477f4141f819188ec8ee}\label{classScreen_abed796a72538477f4141f819188ec8ee}} 
+bool {\bfseries m\+\_\+process\+\_\+events} = true
+\item 
+\mbox{\Hypertarget{classScreen_ac8aa71cd8215c25409591e1450e947d4}\label{classScreen_ac8aa71cd8215c25409591e1450e947d4}} 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries m\+\_\+background}
+\item 
+\mbox{\Hypertarget{classScreen_ac6150ec4ef94ffd5b0d14501318c4463}\label{classScreen_ac6150ec4ef94ffd5b0d14501318c4463}} 
+std\+::string {\bfseries m\+\_\+caption}
+\item 
+\mbox{\Hypertarget{classScreen_a51a731e3af124963cc06de95c1e75c2a}\label{classScreen_a51a731e3af124963cc06de95c1e75c2a}} 
+bool {\bfseries m\+\_\+shutdown\+\_\+glfw}
+\item 
+\mbox{\Hypertarget{classScreen_a2bf7e67cdd0dd2bc474c70ffb89b4a1b}\label{classScreen_a2bf7e67cdd0dd2bc474c70ffb89b4a1b}} 
+bool {\bfseries m\+\_\+fullscreen}
+\item 
+\mbox{\Hypertarget{classScreen_ade0d862b3a293083e584f2b1e7a6f812}\label{classScreen_ade0d862b3a293083e584f2b1e7a6f812}} 
+bool {\bfseries m\+\_\+depth\+\_\+buffer}
+\item 
+\mbox{\Hypertarget{classScreen_af5a3adfdfd2e3fe3e72363b93e0ae341}\label{classScreen_af5a3adfdfd2e3fe3e72363b93e0ae341}} 
+bool {\bfseries m\+\_\+stencil\+\_\+buffer}
+\item 
+\mbox{\Hypertarget{classScreen_a12f2ed5690f710f8ae3df5686eb7ab39}\label{classScreen_a12f2ed5690f710f8ae3df5686eb7ab39}} 
+bool {\bfseries m\+\_\+float\+\_\+buffer}
+\item 
+\mbox{\Hypertarget{classScreen_abeda468a167a9431b5504d844a02ee57}\label{classScreen_abeda468a167a9431b5504d844a02ee57}} 
+bool {\bfseries m\+\_\+redraw}
+\item 
+\mbox{\Hypertarget{classScreen_acfae5ff6208f6414a34a023ccacc4d2d}\label{classScreen_acfae5ff6208f6414a34a023ccacc4d2d}} 
+std\+::function$<$ void(Vector2i)$>$ {\bfseries m\+\_\+resize\+\_\+callback}
+\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classScreen_a29fa75ce3911bef8c5f4414f6f0242b8}\label{classScreen_a29fa75ce3911bef8c5f4414f6f0242b8}} 
+class {\bfseries Widget}
+\item 
+\mbox{\Hypertarget{classScreen_a553f958a25683445088050a69d3de8e9}\label{classScreen_a553f958a25683445088050a69d3de8e9}} 
+class {\bfseries Window}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+Represents a display surface (i.\+e. a full-\/screen or windowed G\+L\+FW window) and forms the root element of a hierarchy of nanogui widgets. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classScreen_ad43d3d6273d36bc4e2cd8129ef5d40cb}\label{classScreen_ad43d3d6273d36bc4e2cd8129ef5d40cb}} 
+\index{Screen@{Screen}!Screen@{Screen}}
+\index{Screen@{Screen}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{Screen()}{Screen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Screen\+::\+Screen (\begin{DoxyParamCaption}\item[{const Vector2i \&}]{size,  }\item[{const std\+::string \&}]{caption = {\ttfamily \char`\"{}Unnamed\char`\"{}},  }\item[{bool}]{resizable = {\ttfamily true},  }\item[{bool}]{fullscreen = {\ttfamily false},  }\item[{bool}]{depth\+\_\+buffer = {\ttfamily true},  }\item[{bool}]{stencil\+\_\+buffer = {\ttfamily true},  }\item[{bool}]{float\+\_\+buffer = {\ttfamily false},  }\item[{unsigned int}]{gl\+\_\+major = {\ttfamily 3},  }\item[{unsigned int}]{gl\+\_\+minor = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+Create a new \mbox{\hyperlink{classScreen}{Screen}} instance
+
+
+\begin{DoxyParams}{Paramètres}
+{\em size} & Size in pixels at 96 dpi (on high-\/\+D\+PI screens, the actual resolution in terms of hardware pixels may be larger by an integer factor)\\
+\hline
+{\em caption} & \mbox{\hyperlink{classWindow}{Window}} title (in U\+T\+F-\/8 encoding)\\
+\hline
+{\em resizable} & If creating a window, should it be resizable?\\
+\hline
+{\em fullscreen} & Specifies whether to create a windowed or full-\/screen view\\
+\hline
+{\em stencil\+\_\+buffer} & Should an 8-\/bit stencil buffer be allocated? Nano\+VG requires this to rasterize non-\/convex polygons. (Nano\+G\+UI does not render such polygons, but your application might.)\\
+\hline
+{\em float\+\_\+buffer} & Should Nano\+G\+UI try to allocate a floating point framebuffer? This is useful for H\+DR and wide-\/gamut displays.\\
+\hline
+{\em gl\+\_\+major} & The requested Open\+GL Major version number. The default is 3, if changed the value must correspond to a forward compatible core profile (for portability reasons). For example, set this to 4 and gl\+\_\+minor to 1 for a forward compatible core Open\+GL 4.\+1 profile. Requesting an invalid profile will result in no context (and therefore no G\+UI) being created. This attribute is ignored when targeting Open\+GL ES 2 or Metal.\\
+\hline
+{\em gl\+\_\+minor} & The requested Open\+GL Minor version number. The default is 2, if changed the value must correspond to a forward compatible core profile (for portability reasons). For example, set this to 1 and gl\+\_\+major to 4 for a forward compatible core Open\+GL 4.\+1 profile. Requesting an invalid profile will result in no context (and therefore no G\+UI) being created. This attribute is ignored when targeting Open\+GL ES 2 or Metal. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScreen_ae7576476fc6e6a6eaa66389fdc41fe72}\label{classScreen_ae7576476fc6e6a6eaa66389fdc41fe72}} 
+\index{Screen@{Screen}!Screen@{Screen}}
+\index{Screen@{Screen}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{Screen()}{Screen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Screen\+::\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Performs no initialization at all. Use this if the application is responsible for setting up G\+L\+FW, Open\+GL, etc.
+
+In this case, override \mbox{\hyperlink{classScreen}{Screen}} and call initalize() with a pointer to an existing {\ttfamily \mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}}} instance
+
+You will also be responsible in this case to deliver G\+L\+FW callbacks to the appropriate callback event handlers below 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classScreen_adfe43f1609d61d257dc3264de7927ec6}\label{classScreen_adfe43f1609d61d257dc3264de7927ec6}} 
+\index{Screen@{Screen}!initialize@{initialize}}
+\index{initialize@{initialize}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void Screen\+::initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} $\ast$}]{window,  }\item[{bool}]{shutdown\+\_\+glfw }\end{DoxyParamCaption})}
+
+
+
+Initialize the \mbox{\hyperlink{classScreen}{Screen}}. 
+
+Fixes retina display-\/related font rendering issue (\#185)
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{screen_8h}{screen.\+h}}\item 
+ext/nanogui/src/screen.\+cpp\end{DoxyCompactItemize}

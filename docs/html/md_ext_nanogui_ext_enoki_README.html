@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.8.16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vulkan Lab: README</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">Vulkan Lab
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part --><!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('md_ext_nanogui_ext_enoki_README.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">README </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p align="center"></p>
+<p><img src="https://github.com/mitsuba-renderer/enoki/raw/master/docs/enoki-logo.png" alt="Enoki logo" width="300" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md19"></a>
+Enoki — structured vectorization and differentiation on modern processor architectures</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">Documentation  </th><th class="markdownTableHeadCenter">Linux  </th><th class="markdownTableHeadCenter">Windows   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><a href="http://enoki.readthedocs.org/en/master"><img src="https://readthedocs.org/projects/enoki/badge/?version=master" alt="docs" class="inline"/></a>  </td><td class="markdownTableBodyCenter"><a href="https://rgl-ci.epfl.ch/viewType.html?buildTypeId=Enoki_Build&amp;guest=1"><img src="https://rgl-ci.epfl.ch/app/rest/builds/buildType(id:Enoki_Build)/statusIcon.svg" alt="rgl-ci" class="inline"/></a>  </td><td class="markdownTableBodyCenter"><a href="https://ci.appveyor.com/project/wjakob/enoki/branch/master"><img src="https://ci.appveyor.com/api/projects/status/68db7e5es7el1btd/branch/master?svg=true" alt="appveyor" class="inline"/></a>   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md20"></a>
+Introduction</h2>
+<p><b>Enoki</b> is a C++ template library that enables automatic transformations of numerical code, for instance to create a "wide" vectorized variant of an algorithm that runs on the CPU or GPU, or to compute gradients via transparent forward/reverse-mode automatic differentation.</p>
+<p>The core parts of the library are implemented as a set of header files with no dependencies other than a sufficiently C++17-capable compiler (GCC &gt;= 8.2, Clang &gt;= 7.0, Visual Studio &gt;= 2017). Enoki code reduces to efficient SIMD instructions available on modern CPUs and GPUs—in particular, Enoki supports:</p>
+<ul>
+<li><b>Intel</b>: AVX512, AVX2, AVX, and SSE4.2,</li>
+<li><b>ARM</b>: NEON/VFPV4 on armv7-a, Advanced SIMD on 64-bit armv8-a,</li>
+<li><b>NVIDIA</b>: CUDA via a <em>Parallel <a class="el" href="structThread.html">Thread</a> Execution</em> (PTX) just-in-time compiler.</li>
+<li><b>Fallback</b>: a scalar fallback mode ensures that programs still run even if none of the above are available.</li>
+</ul>
+<p>Deploying a program on top of Enoki usually serves three goals:</p>
+<ol type="1">
+<li>Enoki ships with a convenient library of special functions and data structures that facilitate implementation of numerical code (vectors, matrices, complex numbers, quaternions, etc.).</li>
+<li><p class="startli">Programs built using these can be instantiated as <em>wide</em> versions that process many arguments at once (either on the CPU or the GPU).</p>
+<p class="startli">Enoki is also <em>structured</em> in the sense that it handles complex programs with custom data structures, lambda functions, loadable modules, virtual method calls, and many other modern C++ features.</p>
+</li>
+<li>If derivatives are desired (e.g. for stochastic gradient descent), Enoki performs transparent forward or reverse-mode automatic differentiation of the entire program.</li>
+</ol>
+<p>Finally, Enoki can do all of the above simultaneously: if desired, it can compile the same source code to multiple different implementations (e.g. scalar, AVX512, and CUDA+autodiff).</p>
+<h3><a class="anchor" id="autotoc_md21"></a>
+Motivation</h3>
+<p>The development of this library was prompted by the author's frustration with the current vectorization landscape:</p>
+<ol type="1">
+<li>Auto-vectorization in state-of-the-art compilers is inherently local. <a class="el" href="structA.html">A</a> computation whose call graph spans separate compilation units (e.g. multiple shared libraries) simply can't be vectorized.</li>
+<li><p class="startli">Data structures must be converted into a <em>Structure of Arrays</em> (SoA) layout to be eligible for vectorization.</p>
+<p class="startli"><img src="https://github.com/mitsuba-renderer/enoki/raw/master/docs/intro-01.png" alt="SoA layout" width="400" class="inline"/> </p>
+<p class="startli">This is analogous to performing a matrix transpose of an application's entire memory layout—an intrusive change that is likely to touch almost every line of code.</p>
+</li>
+<li><p class="startli">Parts of the application likely have to be rewritten using <a href="https://software.intel.com/sites/landingpage/IntrinsicsGuide">intrinsic instructions</a>, which is going to look something like this:</p>
+<p class="startli"><img src="https://github.com/mitsuba-renderer/enoki/raw/master/docs/intro-02.png" alt="intrinsics" width="400" class="inline"/> </p>
+<p class="startli">Intrinsics-heavy code is challenging to read and modify once written, and it is inherently non-portable. CUDA provides a nice language environment for programming GPUs but does nothing to help with the other requirements (vectorization on CPUs, automatic differentiation).</p>
+</li>
+<li>Vectorized transcendental functions (<em>exp</em>, <em>cos</em>, <em>erf</em>, ..) are not widely available. Intel, AMD, and CUDA provide proprietary implementations, but many compilers don't include them by default.</li>
+<li>It is desirable to retain both scalar and vector versions of an algorithm, but ensuring their consistency throughout the development cycle becomes a maintenance nightmare.</li>
+<li><p class="startli"><em>Domain-specific languages</em> (DSLs) for vectorization such as <a href="https://ispc.github.io">ISPC</a> address many of the above issues but assume that the main computation underlying an application can be condensed into a compact kernel that is implementable using the limited language subset of the DSL (e.g. plain C in the case of ISPC).</p>
+<p class="startli">This is not the case for complex applications, where the "kernel" may be spread out over many separate modules involving high-level language features such as functional or object-oriented programming.</p>
+</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md22"></a>
+What Enoki does differently</h3>
+<p>Enoki addresses these issues and provides a <em>complete</em> solution for vectorizing and differentiating modern C++ applications with nontrivial control flow and data structures, dynamic memory allocation, virtual method calls, and vector calls across module boundaries. It has the following design goals:</p>
+<ol type="1">
+<li><b>Unobtrusive</b>. Only minor modifications are necessary to convert existing C++ code into its Enoki-vectorized equivalent, which remains readable and maintainable.</li>
+<li><b>No code duplication</b>. It is generally desirable to provide both scalar and vectorized versions of an API, e.g. for debugging, and to preserve compatibility with legacy code. Enoki code extensively relies on class and function templates to achieve this goal without any code duplication—the same code template can be leveraged to create scalar, CPU SIMD, and GPU implementations, and each variant can provide gradients via automatic differentiation if desired.</li>
+<li><b><a class="el" href="structCustom.html">Custom</a> data structures</b>. Enoki can also vectorize custom data structures. All the hard work (e.g. conversion to SoA format) is handled by the C++17 type system.</li>
+<li><b><a class="el" href="structFunction.html">Function</a> calls</b>. Vectorized calls to functions in other compilation units (e.g. a dynamically loaded plugin) are possible. Enoki can even vectorize method or virtual method calls (e.g. <code>instance-&gt;my_function(arg1, arg2, ...);</code> when <code>instance</code> turns out to be an array containing many different instances).</li>
+<li><p class="startli"><b>Mathematical library</b>. Enoki includes an extensive mathematical support library with complex numbers, matrices, quaternions, and related operations (determinants, matrix, inversion, etc.). <a class="el" href="structA.html">A</a> set of transcendental and special functions supports real, complex, and quaternion-valued arguments in single and double-precision using polynomial or rational polynomial approximations, generally with an average error of &lt;1/2 ULP on their full domain. These include exponentials, logarithms, and trigonometric and hyperbolic functions, as well as their inverses. Enoki also provides real-valued versions of error function variants, Bessel functions, and elliptical integrals.</p>
+<p class="startli"><img src="https://github.com/mitsuba-renderer/enoki/raw/master/docs/intro-03.png" alt="Transcendentals" width="720" class="inline"/> </p>
+<p class="startli">Importantly, all of this functionality is realized using the abstractions of Enoki, which means that it transparently composes with vectorization, the JIT compiler for generating CUDA kernels, automatic differentiation, etc.</p>
+</li>
+<li><b>Portability</b>. When creating vectorized CPU code, Enoki supports arbitrary array sizes that don't necessarily match what is supported by the underlying hardware (e.g. 16 x single precision on a machine, whose SSE vector only has hardware support for 4 x single precision operands). The library uses template metaprogramming techniques to efficiently map array expressions onto the available hardware resources. This greatly simplifies development because it's enough to write a single implementation of a numerical algorithm that can then be deployed on any target architecture. There are non-vectorized fallbacks for everything, thus programs will run even on unsupported architectures (albeit without the performance benefits of vectorization).</li>
+<li><p class="startli"><b>Modular architecture</b>. Enoki is split into two major components: the front-end provides various high-level array operations, while the back-end provides the basic ingredients that are needed to realize these operations using the SIMD instruction <a class="el" href="classset.html">set(s)</a> supported by the target architecture.</p>
+<p class="startli">The CPU vector back-ends e.g. make heavy use of SIMD intrinsics to ensure that compilers generate efficient machine code. The intrinsics are contained in separate back-end header files (e.g. <code><a class="el" href="array__avx_8h_source.html">array_avx.h</a></code> for AVX intrinsics), which provide rudimentary arithmetic and bit-level operations. Fancier operations (e.g. <em>atan2</em>) use the back-ends as an abstract interface to the hardware, which means that it's simple to support other instruction sets such as a hypothetical future AVX1024 or even an entirely different architecture (e.g. a DSP chip) by just adding a new back-end.</p>
+</li>
+<li><b>License</b>. Enoki is available under a non-viral open source license (3-clause BSD).</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md23"></a>
+Cloning</h2>
+<p>Enoki depends on two other repositories (<a href="https://github.com/pybind/pybind11">pybind11</a> and <a href="https://nvlabs.github.io/cub">cub</a>) that are required when using certain optional features, specifically differentiable GPU arrays with Python bindings.</p>
+<p>To fetch the entire project including these dependencies, clone the project using the <code>--recursive</code> flag as follows:</p>
+<div class="fragment"><div class="line">$ git clone --recursive https://github.com/mitsuba-renderer/enoki</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md24"></a>
+Documentation</h2>
+<p>An extensive set of tutorials and reference documentation are available at <a href="http://enoki.readthedocs.org/en/master">readthedocs.org</a>.</p>
+<h2><a class="anchor" id="autotoc_md25"></a>
+About</h2>
+<p>This project was created by <a href="http://rgl.epfl.ch/people/wjakob">Wenzel Jakob</a>. It is named after <a href="https://en.wikipedia.org/wiki/Enokitake">Enokitake</a>, a type of mushroom with many long and parallel stalks reminiscent of data flow in vectorized arithmetic.</p>
+<p>Enoki is the numerical foundation of version 2 of the <a href="https://github.com/mitsuba-renderer/mitsuba2">Mitsuba renderer</a>, though it is significantly more general and should be a trusty tool for a variety of simulation and optimization problems.</p>
+<p>When using Enoki in academic projects, please cite</p>
+<div class="fragment"><div class="line">@misc{Enoki,</div>
+<div class="line">   author = {Wenzel Jakob},</div>
+<div class="line">   year = {2019},</div>
+<div class="line">   note = {https://github.com/mitsuba-renderer/enoki},</div>
+<div class="line">   title = {Enoki: structured vectorization and differentiation on modern processor architectures}</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+    <ul>
+        <li class="footer">
+            Generated on Dimanche 24 Novembre 2019 18:11:48 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
+            Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
+        </li>
+    </ul>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>

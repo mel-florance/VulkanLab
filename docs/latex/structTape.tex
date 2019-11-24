@@ -1,0 +1,166 @@
+\hypertarget{structTape}{}\doxysection{Référence du modèle de la structure Tape$<$ Type $>$}
+\label{structTape}\index{Tape$<$ Type $>$@{Tape$<$ Type $>$}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structTape_1_1Detail}{Detail}}
+\item 
+struct \mbox{\hyperlink{structTape_1_1Edge}{Edge}}
+\item 
+struct \mbox{\hyperlink{structTape_1_1Node}{Node}}
+\item 
+struct \mbox{\hyperlink{structTape_1_1SimplificationLock}{Simplification\+Lock}}
+\item 
+struct \mbox{\hyperlink{structTape_1_1Special}{Special}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_a1f1d1cf32d769a24f9d1af2b54fd7615}\label{structTape_a1f1d1cf32d769a24f9d1af2b54fd7615}} 
+using {\bfseries Index} = uint32\+\_\+t
+\item 
+\mbox{\Hypertarget{structTape_a3c2337df4642aedfc1d0e9219969f697}\label{structTape_a3c2337df4642aedfc1d0e9219969f697}} 
+using {\bfseries Mask} = mask\+\_\+t$<$ Type $>$
+\item 
+\mbox{\Hypertarget{structTape_afa19ee12b725ec4f4288c21f240074d8}\label{structTape_afa19ee12b725ec4f4288c21f240074d8}} 
+using {\bfseries Int64} = int64\+\_\+array\+\_\+t$<$ Type $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{Indent}\textbf{ Append unary/binary/ternary operations to the tape}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_a8ef36d88f7ae1a2c05cb8a8c643ecbec}\label{structTape_a8ef36d88f7ae1a2c05cb8a8c643ecbec}} 
+Index {\bfseries append} (const char $\ast$label, size\+\_\+t size, Index i1, const Type \&w1)
+\item 
+\mbox{\Hypertarget{structTape_aabe4c8b4fcad24e925ac006342ea2603}\label{structTape_aabe4c8b4fcad24e925ac006342ea2603}} 
+Index {\bfseries append} (const char $\ast$label, size\+\_\+t size, Index i1, Index i2, const Type \&w1, const Type \&w2)
+\item 
+\mbox{\Hypertarget{structTape_a2946463fc9e024d3f2f3eb1feec07271}\label{structTape_a2946463fc9e024d3f2f3eb1feec07271}} 
+Index {\bfseries append} (const char $\ast$label, size\+\_\+t size, Index i1, Index i2, Index i3, const Type \&w1, const Type \&w2, const Type \&w3)
+\item 
+\mbox{\Hypertarget{structTape_a9415a617cf9d7a2542a88903ec7b80f9}\label{structTape_a9415a617cf9d7a2542a88903ec7b80f9}} 
+Index {\bfseries append\+\_\+gather} (const Int64 \&offset, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\item 
+\mbox{\Hypertarget{structTape_ae89a01cc283113f9b508f874ffedd6d0}\label{structTape_ae89a01cc283113f9b508f874ffedd6d0}} 
+void {\bfseries append\+\_\+scatter} (Index index, const Int64 \&offset, const \mbox{\hyperlink{structMask}{Mask}} \&mask, bool scatter\+\_\+add)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Append nodes and edges to the tape}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_add0c7a40bd413023886b6d2b050977a2}\label{structTape_add0c7a40bd413023886b6d2b050977a2}} 
+Index {\bfseries append\+\_\+node} (size\+\_\+t size, const char $\ast$label)
+\item 
+\mbox{\Hypertarget{structTape_a5941e910ab9688c9a4b481a249ad671f}\label{structTape_a5941e910ab9688c9a4b481a249ad671f}} 
+Index {\bfseries append\+\_\+leaf} (size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structTape_abf8b4996af28566c3deb097d243b8e54}\label{structTape_abf8b4996af28566c3deb097d243b8e54}} 
+void {\bfseries append\+\_\+edge} (Index src, Index dst, const Type \&weight)
+\item 
+\mbox{\Hypertarget{structTape_a7373b15e0d7350ee8888785685da8b59}\label{structTape_a7373b15e0d7350ee8888785685da8b59}} 
+void {\bfseries append\+\_\+edge\+\_\+prod} (Index src, Index dst, const Type \&weight1, const Type \&weight2)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Reference counting}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_ab58618f879a67e1e7837c34c47f7c681}\label{structTape_ab58618f879a67e1e7837c34c47f7c681}} 
+void {\bfseries dec\+\_\+ref\+\_\+ext} (Index index)
+\item 
+\mbox{\Hypertarget{structTape_a5006f5f872bd9f861bdb3f781a69819a}\label{structTape_a5006f5f872bd9f861bdb3f781a69819a}} 
+void {\bfseries inc\+\_\+ref\+\_\+ext} (Index index)
+\item 
+\mbox{\Hypertarget{structTape_ab5590e8c5565a1b13e68b8f11d3a43f9}\label{structTape_ab5590e8c5565a1b13e68b8f11d3a43f9}} 
+void {\bfseries dec\+\_\+ref\+\_\+int} (Index index, Index from)
+\item 
+\mbox{\Hypertarget{structTape_a7b38a46898d2813085b0df6136e659ef}\label{structTape_a7b38a46898d2813085b0df6136e659ef}} 
+void {\bfseries inc\+\_\+ref\+\_\+int} (Index index, Index from)
+\item 
+\mbox{\Hypertarget{structTape_a5675d93240af7838b09fae9818198344}\label{structTape_a5675d93240af7838b09fae9818198344}} 
+void {\bfseries free\+\_\+node} (Index index)
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Fonctions membres privées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_a190507aff8e46086e6e51d0cc4fe39df}\label{structTape_a190507aff8e46086e6e51d0cc4fe39df}} 
+static \mbox{\hyperlink{structTape}{Tape}} $\ast$ {\bfseries get} () E\+N\+O\+K\+I\+\_\+\+P\+U\+RE
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_aa34d24129caee53f5f384c1b3b76d8a7}\label{structTape_aa34d24129caee53f5f384c1b3b76d8a7}} 
+\mbox{\hyperlink{structTape_1_1Detail}{Detail}} $\ast$ {\bfseries d} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_a14339d1d1c112f3546aa11901e6f4fe7}\label{structTape_a14339d1d1c112f3546aa11901e6f4fe7}} 
+static \mbox{\hyperlink{structTape}{Tape}} {\bfseries s\+\_\+tape}
+\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_a34107774049b9473102cbd009485aad7}\label{structTape_a34107774049b9473102cbd009485aad7}} 
+{\footnotesize template$<$typename T $>$ }\\struct {\bfseries Diff\+Array}
+\end{DoxyCompactItemize}
+\doxysubsection*{Other operations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_aeaf04753836d4f33dea5a160b90742c7}\label{structTape_aeaf04753836d4f33dea5a160b90742c7}} 
+void {\bfseries set\+\_\+scatter\+\_\+gather\+\_\+operand} (Index $\ast$index, size\+\_\+t size, bool permute)
+\item 
+\mbox{\Hypertarget{structTape_a2f2ea0665612075d5b2e6f45a2e2c9f2}\label{structTape_a2f2ea0665612075d5b2e6f45a2e2c9f2}} 
+void {\bfseries push\+\_\+prefix} (const char $\ast$)
+\item 
+\mbox{\Hypertarget{structTape_aafc4bf40da0ee19d7ec562cbfae54cb0}\label{structTape_aafc4bf40da0ee19d7ec562cbfae54cb0}} 
+void {\bfseries pop\+\_\+prefix} ()
+\item 
+\mbox{\Hypertarget{structTape_ab7845b14fe79abf43922fac7621f3c08}\label{structTape_ab7845b14fe79abf43922fac7621f3c08}} 
+void {\bfseries backward} (bool free\+\_\+graph)
+\item 
+\mbox{\Hypertarget{structTape_a4ff9f890547e2cc31df8dae22256f2db}\label{structTape_a4ff9f890547e2cc31df8dae22256f2db}} 
+void {\bfseries forward} (bool free\+\_\+graph)
+\item 
+\mbox{\Hypertarget{structTape_ae2dcaa295b8828525a3a142a76702ec7}\label{structTape_ae2dcaa295b8828525a3a142a76702ec7}} 
+void {\bfseries backward} (Index index, bool free\+\_\+graph)
+\item 
+\mbox{\Hypertarget{structTape_af75b7572d03fcd4c6f52761fc619d64c}\label{structTape_af75b7572d03fcd4c6f52761fc619d64c}} 
+void {\bfseries forward} (Index index, bool free\+\_\+graph)
+\item 
+\mbox{\Hypertarget{structTape_abf352f0501d5cacd172b0400666bc228}\label{structTape_abf352f0501d5cacd172b0400666bc228}} 
+void {\bfseries set\+\_\+gradient} (Index index, const Type \&value, bool backward=true)
+\item 
+\mbox{\Hypertarget{structTape_a07ba2d99bb784a750e7e66f959887874}\label{structTape_a07ba2d99bb784a750e7e66f959887874}} 
+void {\bfseries set\+\_\+label} (Index index, const char $\ast$\mbox{\hyperlink{structname}{name}})
+\item 
+\mbox{\Hypertarget{structTape_a23884ddbc831e37dbfb1ec47718fe14c}\label{structTape_a23884ddbc831e37dbfb1ec47718fe14c}} 
+const Type \& {\bfseries gradient} (Index index)
+\item 
+\mbox{\Hypertarget{structTape_a564f3c7ca347fa1a33f0c7ce7c055836}\label{structTape_a564f3c7ca347fa1a33f0c7ce7c055836}} 
+std\+::string {\bfseries graphviz} (const std\+::vector$<$ Index $>$ \&indices)
+\item 
+\mbox{\Hypertarget{structTape_a28517e53db7cf651dc92327afe5f2871}\label{structTape_a28517e53db7cf651dc92327afe5f2871}} 
+void \mbox{\hyperlink{structTape_a28517e53db7cf651dc92327afe5f2871}{set\+\_\+log\+\_\+level}} (uint32\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Current log level (0 == none, 1 == minimal, 2 == moderate, 3 == high, 4 == everything) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structTape_a3d84b6a19eecb22716c9f83863b57d1d}\label{structTape_a3d84b6a19eecb22716c9f83863b57d1d}} 
+uint32\+\_\+t {\bfseries log\+\_\+level} () const
+\item 
+\mbox{\Hypertarget{structTape_ae774b9aebf5b5bd3f910c7d65731358b}\label{structTape_ae774b9aebf5b5bd3f910c7d65731358b}} 
+void {\bfseries set\+\_\+graph\+\_\+simplification} (bool)
+\item 
+\mbox{\Hypertarget{structTape_a360007635c48ad456f8865e686b7967b}\label{structTape_a360007635c48ad456f8865e686b7967b}} 
+void {\bfseries simplify\+\_\+graph} ()
+\item 
+\mbox{\Hypertarget{structTape_a2d5df0ac900e5e3ecc2192ae750bf266}\label{structTape_a2d5df0ac900e5e3ecc2192ae750bf266}} 
+std\+::string {\bfseries whos} () const
+\item 
+\mbox{\Hypertarget{structTape_a0252b6ef9e489d1ac56c04ca1c682f04}\label{structTape_a0252b6ef9e489d1ac56c04ca1c682f04}} 
+static void {\bfseries cuda\+\_\+callback} (void $\ast$)
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/autodiff.\+h\item 
+ext/nanogui/ext/enoki/src/autodiff/autodiff.\+cpp\end{DoxyCompactItemize}

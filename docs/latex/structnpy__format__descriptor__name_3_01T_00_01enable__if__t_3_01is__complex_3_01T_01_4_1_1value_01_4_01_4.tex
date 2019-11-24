@@ -1,0 +1,30 @@
+\hypertarget{structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01is__complex_3_01T_01_4_1_1value_01_4_01_4}{}\doxysection{Référence du modèle de la structure npy\+\_\+format\+\_\+descriptor\+\_\+name$<$ T, enable\+\_\+if\+\_\+t$<$ is\+\_\+complex$<$ T $>$\+::value $>$ $>$}
+\label{structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01is__complex_3_01T_01_4_1_1value_01_4_01_4}\index{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ is\_complex$<$ T $>$::value $>$ $>$@{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ is\_complex$<$ T $>$::value $>$ $>$}}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr auto {\bfseries name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01is__complex_3_01T_01_4_1_1value_01_4_01_4_a91a1cf06542fda2a3f429360d083ecdc}\label{structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01is__complex_3_01T_01_4_1_1value_01_4_01_4_a91a1cf06542fda2a3f429360d083ecdc}} 
+\index{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ is\_complex$<$ T $>$::value $>$ $>$@{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ is\_complex$<$ T $>$::value $>$ $>$}!name@{name}}
+\index{name@{name}!npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ is\_complex$<$ T $>$::value $>$ $>$@{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ is\_complex$<$ T $>$::value $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+constexpr auto \mbox{\hyperlink{structnpy__format__descriptor__name}{npy\+\_\+format\+\_\+descriptor\+\_\+name}}$<$ T, enable\+\_\+if\+\_\+t$<$ \mbox{\hyperlink{structis__complex}{is\+\_\+complex}}$<$ T $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}} $>$ $>$\+::\mbox{\hyperlink{structname}{name}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \_<std::is\_same<typename T::value\_type, float>::value}
+\DoxyCodeLine{                                   || std::is\_same<typename T::value\_type, double>::value>(}
+\DoxyCodeLine{        \_(\textcolor{stringliteral}{"complex"}) + \_<sizeof(typename T::value\_type)*16>(), \_(\textcolor{stringliteral}{"longcomplex"})}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/numpy.\+h\end{DoxyCompactItemize}

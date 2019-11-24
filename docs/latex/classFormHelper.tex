@@ -1,0 +1,150 @@
+\hypertarget{classFormHelper}{}\doxysection{Référence de la classe Form\+Helper}
+\label{classFormHelper}\index{FormHelper@{FormHelper}}
+
+
+Convenience class to create simple Ant\+Tweak\+Bar-\/style layouts that expose variables of various types using Nano\+G\+UI widgets.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/formhelper.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFormHelper_ae6f5da0462663fe7efaa5f41cfcd70e9}\label{classFormHelper_ae6f5da0462663fe7efaa5f41cfcd70e9}} 
+\mbox{\hyperlink{classFormHelper_ae6f5da0462663fe7efaa5f41cfcd70e9}{Form\+Helper}} (\mbox{\hyperlink{classScreen}{Screen}} $\ast$screen)
+\begin{DoxyCompactList}\small\item\em Create a helper class to construct Nano\+G\+UI widgets on the given screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a17b94b6ceb31f994275f95fb95644aa7}\label{classFormHelper_a17b94b6ceb31f994275f95fb95644aa7}} 
+\mbox{\hyperlink{classWindow}{Window}} $\ast$ \mbox{\hyperlink{classFormHelper_a17b94b6ceb31f994275f95fb95644aa7}{add\+\_\+window}} (const Vector2i \&pos, const std\+::string \&title=\char`\"{}Untitled\char`\"{})
+\begin{DoxyCompactList}\small\item\em Add a new top-\/level window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a5456d4e96abae99800154b6b28dee739}\label{classFormHelper_a5456d4e96abae99800154b6b28dee739}} 
+\mbox{\hyperlink{classLabel}{Label}} $\ast$ \mbox{\hyperlink{classFormHelper_a5456d4e96abae99800154b6b28dee739}{add\+\_\+group}} (const std\+::string \&caption)
+\begin{DoxyCompactList}\small\item\em Add a new group that may contain several sub-\/widgets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a9691b9f0e2bdd98bd0dfe34213b693d7}\label{classFormHelper_a9691b9f0e2bdd98bd0dfe34213b693d7}} 
+{\footnotesize template$<$typename Type $>$ }\\detail\+::\+Form\+Widget$<$ Type $>$ $\ast$ \mbox{\hyperlink{classFormHelper_a9691b9f0e2bdd98bd0dfe34213b693d7}{add\+\_\+variable}} (const std\+::string \&label, const std\+::function$<$ void(const Type \&)$>$ \&setter, const std\+::function$<$ Type()$>$ \&getter, bool editable=true)
+\begin{DoxyCompactList}\small\item\em Add a new data widget controlled using custom getter/setter functions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a6398b24799910fd36d1faecd4a9fc19c}\label{classFormHelper_a6398b24799910fd36d1faecd4a9fc19c}} 
+{\footnotesize template$<$typename Type $>$ }\\detail\+::\+Form\+Widget$<$ Type $>$ $\ast$ \mbox{\hyperlink{classFormHelper_a6398b24799910fd36d1faecd4a9fc19c}{add\+\_\+variable}} (const std\+::string \&label, Type \&value, bool editable=true)
+\begin{DoxyCompactList}\small\item\em Add a new data widget that exposes a raw variable in memory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_af234a287cd09d0a8406856b87774d6e8}\label{classFormHelper_af234a287cd09d0a8406856b87774d6e8}} 
+\mbox{\hyperlink{classButton}{Button}} $\ast$ \mbox{\hyperlink{classFormHelper_af234a287cd09d0a8406856b87774d6e8}{add\+\_\+button}} (const std\+::string \&label, const std\+::function$<$ void()$>$ \&cb)
+\begin{DoxyCompactList}\small\item\em Add a button with a custom callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_ae64fb7cf29b7c76e7565b2b8635132ab}\label{classFormHelper_ae64fb7cf29b7c76e7565b2b8635132ab}} 
+void \mbox{\hyperlink{classFormHelper_ae64fb7cf29b7c76e7565b2b8635132ab}{add\+\_\+widget}} (const std\+::string \&label, \mbox{\hyperlink{classWidget}{Widget}} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Add an arbitrary (optionally labeled) widget to the layout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_acb569e79b8e31cf6fc4b40e67e4ea8ac}\label{classFormHelper_acb569e79b8e31cf6fc4b40e67e4ea8ac}} 
+void \mbox{\hyperlink{classFormHelper_acb569e79b8e31cf6fc4b40e67e4ea8ac}{refresh}} ()
+\begin{DoxyCompactList}\small\item\em Cause all widgets to re-\/synchronize with the underlying variable state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a7ca612ba92f7cc38affa28baf0684595}\label{classFormHelper_a7ca612ba92f7cc38affa28baf0684595}} 
+\mbox{\hyperlink{classWindow}{Window}} $\ast$ \mbox{\hyperlink{classFormHelper_a7ca612ba92f7cc38affa28baf0684595}{window}} ()
+\begin{DoxyCompactList}\small\item\em Access the currently active \mbox{\hyperlink{classWindow}{Window}} instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a05a243312d572da28aa24c4b0ffc967b}\label{classFormHelper_a05a243312d572da28aa24c4b0ffc967b}} 
+void \mbox{\hyperlink{classFormHelper_a05a243312d572da28aa24c4b0ffc967b}{set\+\_\+window}} (\mbox{\hyperlink{classWindow}{Window}} $\ast$\mbox{\hyperlink{classFormHelper_a7ca612ba92f7cc38affa28baf0684595}{window}})
+\begin{DoxyCompactList}\small\item\em Set the active \mbox{\hyperlink{classWindow}{Window}} instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_ac6b72b051ad0804863ce43e9d1f0cf35}\label{classFormHelper_ac6b72b051ad0804863ce43e9d1f0cf35}} 
+void \mbox{\hyperlink{classFormHelper_ac6b72b051ad0804863ce43e9d1f0cf35}{set\+\_\+fixed\+\_\+size}} (const Vector2i \&fw)
+\begin{DoxyCompactList}\small\item\em Specify a fixed size for newly added widgets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_ab268b12550246715d8f9bea478f1e3d8}\label{classFormHelper_ab268b12550246715d8f9bea478f1e3d8}} 
+Vector2i \mbox{\hyperlink{classFormHelper_ab268b12550246715d8f9bea478f1e3d8}{fixed\+\_\+size}} ()
+\begin{DoxyCompactList}\small\item\em The current fixed size being used for newly added widgets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a7f4f9b685e8a657356a9ed797d18859b}\label{classFormHelper_a7f4f9b685e8a657356a9ed797d18859b}} 
+const std\+::string \& \mbox{\hyperlink{classFormHelper_a7f4f9b685e8a657356a9ed797d18859b}{group\+\_\+font\+\_\+name}} () const
+\begin{DoxyCompactList}\small\item\em The font name being used for group headers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a3ccdcf9393f5e3489ff361dafc069bad}\label{classFormHelper_a3ccdcf9393f5e3489ff361dafc069bad}} 
+void \mbox{\hyperlink{classFormHelper_a3ccdcf9393f5e3489ff361dafc069bad}{set\+\_\+group\+\_\+font\+\_\+name}} (const std\+::string \&\mbox{\hyperlink{structname}{name}})
+\begin{DoxyCompactList}\small\item\em Sets the font name to be used for group headers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a2ad71ac8abcbd3e52fc42434896fda03}\label{classFormHelper_a2ad71ac8abcbd3e52fc42434896fda03}} 
+const std\+::string \& \mbox{\hyperlink{classFormHelper_a2ad71ac8abcbd3e52fc42434896fda03}{label\+\_\+font\+\_\+name}} () const
+\begin{DoxyCompactList}\small\item\em The font name being used for labels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_ab25e24126e596df71c411e6bd677f615}\label{classFormHelper_ab25e24126e596df71c411e6bd677f615}} 
+void \mbox{\hyperlink{classFormHelper_ab25e24126e596df71c411e6bd677f615}{set\+\_\+label\+\_\+font\+\_\+name}} (const std\+::string \&\mbox{\hyperlink{structname}{name}})
+\begin{DoxyCompactList}\small\item\em Sets the font name being used for labels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_aae582953481ff613f59ff2bfe6ca891d}\label{classFormHelper_aae582953481ff613f59ff2bfe6ca891d}} 
+int \mbox{\hyperlink{classFormHelper_aae582953481ff613f59ff2bfe6ca891d}{group\+\_\+font\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em The size of the font being used for group headers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_aa8e214e8eac13109f9722dab62287d44}\label{classFormHelper_aa8e214e8eac13109f9722dab62287d44}} 
+void \mbox{\hyperlink{classFormHelper_aa8e214e8eac13109f9722dab62287d44}{set\+\_\+group\+\_\+font\+\_\+size}} (int value)
+\begin{DoxyCompactList}\small\item\em Sets the size of the font being used for group headers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a0627ce2bb3f5f2959911f574d73b993f}\label{classFormHelper_a0627ce2bb3f5f2959911f574d73b993f}} 
+int \mbox{\hyperlink{classFormHelper_a0627ce2bb3f5f2959911f574d73b993f}{label\+\_\+font\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em The size of the font being used for labels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_aba3b14b0012d1cde916ec9ab64e8ac94}\label{classFormHelper_aba3b14b0012d1cde916ec9ab64e8ac94}} 
+void \mbox{\hyperlink{classFormHelper_aba3b14b0012d1cde916ec9ab64e8ac94}{set\+\_\+label\+\_\+font\+\_\+size}} (int value)
+\begin{DoxyCompactList}\small\item\em Sets the size of the font being used for labels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_ae8c7a8a0ec943faa9b7d66cdd7bc45fb}\label{classFormHelper_ae8c7a8a0ec943faa9b7d66cdd7bc45fb}} 
+int \mbox{\hyperlink{classFormHelper_ae8c7a8a0ec943faa9b7d66cdd7bc45fb}{widget\+\_\+font\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em The size of the font being used for non-\/group / non-\/label widgets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a53a4ad3992c747f28497c22b428212ec}\label{classFormHelper_a53a4ad3992c747f28497c22b428212ec}} 
+void \mbox{\hyperlink{classFormHelper_a53a4ad3992c747f28497c22b428212ec}{set\+\_\+widget\+\_\+font\+\_\+size}} (int value)
+\begin{DoxyCompactList}\small\item\em Sets the size of the font being used for non-\/group / non-\/label widgets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFormHelper_a7547698e2f86fd5292e9fde3c5a40216}\label{classFormHelper_a7547698e2f86fd5292e9fde3c5a40216}} 
+\mbox{\hyperlink{classref}{ref}}$<$ \mbox{\hyperlink{classScreen}{Screen}} $>$ \mbox{\hyperlink{classFormHelper_a7547698e2f86fd5292e9fde3c5a40216}{m\+\_\+screen}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structA}{A}} reference to the nanogui\+::\+Screen this \mbox{\hyperlink{classFormHelper}{Form\+Helper}} is assisting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a675be9fdf97a04292ee8bd7c4ebf74b2}\label{classFormHelper_a675be9fdf97a04292ee8bd7c4ebf74b2}} 
+\mbox{\hyperlink{classref}{ref}}$<$ \mbox{\hyperlink{classWindow}{Window}} $>$ \mbox{\hyperlink{classFormHelper_a675be9fdf97a04292ee8bd7c4ebf74b2}{m\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structA}{A}} reference to the nanogui\+::\+Window this \mbox{\hyperlink{classFormHelper}{Form\+Helper}} is controlling. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a9e4d61d9eab2c4d6d91911aa28ac66fe}\label{classFormHelper_a9e4d61d9eab2c4d6d91911aa28ac66fe}} 
+\mbox{\hyperlink{classref}{ref}}$<$ \mbox{\hyperlink{classAdvancedGridLayout}{Advanced\+Grid\+Layout}} $>$ \mbox{\hyperlink{classFormHelper_a9e4d61d9eab2c4d6d91911aa28ac66fe}{m\+\_\+layout}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structA}{A}} reference to the nanogui\+::\+Advanced\+Grid\+Layout this \mbox{\hyperlink{classFormHelper}{Form\+Helper}} is using. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a933fa5625bbb562388e928fb4f80d62e}\label{classFormHelper_a933fa5625bbb562388e928fb4f80d62e}} 
+std\+::vector$<$ std\+::function$<$ void()$>$ $>$ \mbox{\hyperlink{classFormHelper_a933fa5625bbb562388e928fb4f80d62e}{m\+\_\+refresh\+\_\+callbacks}}
+\begin{DoxyCompactList}\small\item\em The callbacks associated with all widgets this \mbox{\hyperlink{classFormHelper}{Form\+Helper}} is managing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a207ed407e47ce0b46be2413cc1ca2ec4}\label{classFormHelper_a207ed407e47ce0b46be2413cc1ca2ec4}} 
+std\+::string \mbox{\hyperlink{classFormHelper_a207ed407e47ce0b46be2413cc1ca2ec4}{m\+\_\+group\+\_\+font\+\_\+name}} = \char`\"{}sans-\/bold\char`\"{}
+\begin{DoxyCompactList}\small\item\em The group header font name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a203c82f452256d4bdba36da6f99c90eb}\label{classFormHelper_a203c82f452256d4bdba36da6f99c90eb}} 
+std\+::string \mbox{\hyperlink{classFormHelper_a203c82f452256d4bdba36da6f99c90eb}{m\+\_\+label\+\_\+font\+\_\+name}} = \char`\"{}sans\char`\"{}
+\begin{DoxyCompactList}\small\item\em The label font name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a3819eb586d18d2326f7f990a5c334a7e}\label{classFormHelper_a3819eb586d18d2326f7f990a5c334a7e}} 
+Vector2i \mbox{\hyperlink{classFormHelper_a3819eb586d18d2326f7f990a5c334a7e}{m\+\_\+fixed\+\_\+size}} = Vector2i(0, 20)
+\begin{DoxyCompactList}\small\item\em The fixed size for newly added widgets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_aa32bea23be7b4ccc3d3b77c44f882a77}\label{classFormHelper_aa32bea23be7b4ccc3d3b77c44f882a77}} 
+int \mbox{\hyperlink{classFormHelper_aa32bea23be7b4ccc3d3b77c44f882a77}{m\+\_\+group\+\_\+font\+\_\+size}} = 20
+\begin{DoxyCompactList}\small\item\em The font size for group headers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_af28ed5070a5a99558ad4b92bf82143f7}\label{classFormHelper_af28ed5070a5a99558ad4b92bf82143f7}} 
+int \mbox{\hyperlink{classFormHelper_af28ed5070a5a99558ad4b92bf82143f7}{m\+\_\+label\+\_\+font\+\_\+size}} = 16
+\begin{DoxyCompactList}\small\item\em The font size for labels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a24ba55d5a996a9534e51b1f0ed4f7a21}\label{classFormHelper_a24ba55d5a996a9534e51b1f0ed4f7a21}} 
+int \mbox{\hyperlink{classFormHelper_a24ba55d5a996a9534e51b1f0ed4f7a21}{m\+\_\+widget\+\_\+font\+\_\+size}} = 16
+\begin{DoxyCompactList}\small\item\em The font size for non-\/group / non-\/label widgets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a1aa32dca77eee4974ee57679d5353203}\label{classFormHelper_a1aa32dca77eee4974ee57679d5353203}} 
+int \mbox{\hyperlink{classFormHelper_a1aa32dca77eee4974ee57679d5353203}{m\+\_\+pre\+\_\+group\+\_\+spacing}} = 15
+\begin{DoxyCompactList}\small\item\em The spacing used {\bfseries{before}} new groups. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_a0c628343f3c073638b90de0e48404ad4}\label{classFormHelper_a0c628343f3c073638b90de0e48404ad4}} 
+int \mbox{\hyperlink{classFormHelper_a0c628343f3c073638b90de0e48404ad4}{m\+\_\+post\+\_\+group\+\_\+spacing}} = 5
+\begin{DoxyCompactList}\small\item\em The spacing used {\bfseries{after}} each group. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFormHelper_adf38cae9f0450b222c8ef8a160c9ed59}\label{classFormHelper_adf38cae9f0450b222c8ef8a160c9ed59}} 
+int \mbox{\hyperlink{classFormHelper_adf38cae9f0450b222c8ef8a160c9ed59}{m\+\_\+variable\+\_\+spacing}} = 5
+\begin{DoxyCompactList}\small\item\em The spacing between all other widgets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Convenience class to create simple Ant\+Tweak\+Bar-\/style layouts that expose variables of various types using Nano\+G\+UI widgets. 
+
+{\bfseries{Example}}\+:
+
+\textbackslash{}rst .. code-\/block\+:: cpp
+
+// \mbox{[} ... initialize Nano\+G\+UI, construct screen ... \mbox{]}
+
+Form\+Helper$\ast$ h = new \mbox{\hyperlink{classFormHelper}{Form\+Helper(screen)}};
+
+// Add a new windows widget h-\/$>$add\+\_\+window(Vector2i(10,10),\char`\"{}\+Menu\char`\"{});
+
+// Start a new group h-\/$>$add\+\_\+group(\char`\"{}\+Group 1\char`\"{});
+
+// Expose an integer variable by reference h-\/$>$add\+\_\+variable(\char`\"{}integer variable\char`\"{}, a\+\_\+int);
+
+// Expose a float variable via setter/getter functions h-\/$>$add\+\_\+variable( \mbox{[}\&\mbox{]}(float value) \{ a\+\_\+float = value; \}, \mbox{[}\&\mbox{]}() \{ return $\ast$a\+\_\+float; \}, \char`\"{}float variable\char`\"{});
+
+// add a new button h-\/$>$add\+\_\+button(\char`\"{}\+Button\char`\"{}, \mbox{[}\&\mbox{]}() \{ std\+::cout $<$$<$ \char`\"{}\+Button pressed\char`\"{} $<$$<$ std\+::endl; \});
+
+\textbackslash{}endrst 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{formhelper_8h}{formhelper.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,198 @@
+\hypertarget{classobject__api}{}\doxysection{Référence du modèle de la classe object\+\_\+api$<$ Derived $>$}
+\label{classobject__api}\index{object\_api$<$ Derived $>$@{object\_api$<$ Derived $>$}}
+
+
+{\ttfamily \#include $<$pytypes.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de object\+\_\+api$<$ Derived $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classobject__api}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classiterator}{iterator}} \mbox{\hyperlink{classobject__api_a18ff315942ef1238c6c9d28c0ef9301f}{begin}} () const
+\item 
+\mbox{\Hypertarget{classobject__api_a67b1b3d151adc273eeda39837e63f581}\label{classobject__api_a67b1b3d151adc273eeda39837e63f581}} 
+\mbox{\hyperlink{classiterator}{iterator}} \mbox{\hyperlink{classobject__api_a67b1b3d151adc273eeda39837e63f581}{end}} () const
+\begin{DoxyCompactList}\small\item\em Return a sentinel which ends iteration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classaccessor}{item\+\_\+accessor}} \mbox{\hyperlink{classobject__api_a22a02d920a489c385a2502802e547943}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{classhandle}{handle}} key) const
+\item 
+\mbox{\Hypertarget{classobject__api_a81277a47b87a2a79f216895d7a5018a8}\label{classobject__api_a81277a47b87a2a79f216895d7a5018a8}} 
+\mbox{\hyperlink{classaccessor}{item\+\_\+accessor}} \mbox{\hyperlink{classobject__api_a81277a47b87a2a79f216895d7a5018a8}{operator\mbox{[}$\,$\mbox{]}}} (const char $\ast$key) const
+\begin{DoxyCompactList}\small\item\em See above (the only difference is that they key is provided as a string literal) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classaccessor}{obj\+\_\+attr\+\_\+accessor}} \mbox{\hyperlink{classobject__api_a17b39579263007abe74cfbf80015ebd9}{attr}} (\mbox{\hyperlink{classhandle}{handle}} key) const
+\item 
+\mbox{\Hypertarget{classobject__api_ae5a18d371ec699cd68561d78503b493f}\label{classobject__api_ae5a18d371ec699cd68561d78503b493f}} 
+\mbox{\hyperlink{classaccessor}{str\+\_\+attr\+\_\+accessor}} \mbox{\hyperlink{classobject__api_ae5a18d371ec699cd68561d78503b493f}{attr}} (const char $\ast$key) const
+\begin{DoxyCompactList}\small\item\em See above (the only difference is that they key is provided as a string literal) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classargs__proxy}{args\+\_\+proxy}} \mbox{\hyperlink{classobject__api_a52879030de31db181cb1ec02c6f001b4}{operator$\ast$}} () const
+\item 
+\mbox{\Hypertarget{classobject__api_a07869da2a7cdbcb1a8877c50b18aee83}\label{classobject__api_a07869da2a7cdbcb1a8877c50b18aee83}} 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classobject__api_a07869da2a7cdbcb1a8877c50b18aee83}{contains}} (T \&\&item) const
+\begin{DoxyCompactList}\small\item\em Check if the given item is contained within this object, i.\+e. {\ttfamily item in obj}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$return\+\_\+value\+\_\+policy policy = return\+\_\+value\+\_\+policy\+::automatic\+\_\+reference, typename... Args$>$ }\\\mbox{\hyperlink{classobject}{object}} \mbox{\hyperlink{classobject__api_abe9df612ead8f4239dc32154d68e0cc1}{operator()}} (Args \&\&...\mbox{\hyperlink{classargs}{args}}) const
+\item 
+\mbox{\Hypertarget{classobject__api_a805215f1a7d50f7fb6a6ffb723707c73}\label{classobject__api_a805215f1a7d50f7fb6a6ffb723707c73}} 
+{\footnotesize template$<$return\+\_\+value\+\_\+policy policy = return\+\_\+value\+\_\+policy\+::automatic\+\_\+reference, typename... Args$>$ }\\{\bfseries P\+Y\+B\+I\+N\+D11\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}call(...) was deprecated in favor of operator()(...)\char`\"{}) object call(Args \&\&... \mbox{\hyperlink{classargs}{args}}) const
+\item 
+\mbox{\Hypertarget{classobject__api_a63b93f9f16e8e08c9672fe553c054885}\label{classobject__api_a63b93f9f16e8e08c9672fe553c054885}} 
+bool \mbox{\hyperlink{classobject__api_a63b93f9f16e8e08c9672fe553c054885}{is}} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\begin{DoxyCompactList}\small\item\em Equivalent to {\ttfamily obj is other} in Python. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classobject__api_a29bb566d25e37a236a322267ef1c59eb}\label{classobject__api_a29bb566d25e37a236a322267ef1c59eb}} 
+bool \mbox{\hyperlink{classobject__api_a29bb566d25e37a236a322267ef1c59eb}{is\+\_\+none}} () const
+\begin{DoxyCompactList}\small\item\em Equivalent to {\ttfamily obj is None} in Python. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classobject__api_ae1d3648ad3568f13a4e9f28556bb6e99}\label{classobject__api_ae1d3648ad3568f13a4e9f28556bb6e99}} 
+bool \mbox{\hyperlink{classobject__api_ae1d3648ad3568f13a4e9f28556bb6e99}{equal}} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\begin{DoxyCompactList}\small\item\em Equivalent to obj == other in Python. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classobject__api_acd277a1d6dea84b197d78925b523133c}\label{classobject__api_acd277a1d6dea84b197d78925b523133c}} 
+bool {\bfseries not\+\_\+equal} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a31c5855f0468b7e83584997a9ccb48bf}\label{classobject__api_a31c5855f0468b7e83584997a9ccb48bf}} 
+bool {\bfseries operator$<$} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a04fe4d81ee95c83ba2eb0f25220b9881}\label{classobject__api_a04fe4d81ee95c83ba2eb0f25220b9881}} 
+bool {\bfseries operator$<$=} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_ac99465e3bdd49159c9964ba927f63a19}\label{classobject__api_ac99465e3bdd49159c9964ba927f63a19}} 
+bool {\bfseries operator$>$} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a774f6938db60a302a924c140a8b2b2db}\label{classobject__api_a774f6938db60a302a924c140a8b2b2db}} 
+bool {\bfseries operator$>$=} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a7a3fb2cd069528bbd6fc27191644e825}\label{classobject__api_a7a3fb2cd069528bbd6fc27191644e825}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator-\/} () const
+\item 
+\mbox{\Hypertarget{classobject__api_a94189a6ba2cc0b6d6d37c15ab687020c}\label{classobject__api_a94189a6ba2cc0b6d6d37c15ab687020c}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator$\sim$} () const
+\item 
+\mbox{\Hypertarget{classobject__api_ad6ef9a4778c241d7de5be1d156d9fe9f}\label{classobject__api_ad6ef9a4778c241d7de5be1d156d9fe9f}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator+} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a45163ca4d236907be32d912e557e788d}\label{classobject__api_a45163ca4d236907be32d912e557e788d}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator+=} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_af0b869fef44a2e9fa441cf401cb5924e}\label{classobject__api_af0b869fef44a2e9fa441cf401cb5924e}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator-\/} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_adb8d619cd0c82fdba2abf02874b36a9b}\label{classobject__api_adb8d619cd0c82fdba2abf02874b36a9b}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator-\/=} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a0234fe4fb54ebbb5ef66d2871877ebee}\label{classobject__api_a0234fe4fb54ebbb5ef66d2871877ebee}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator$\ast$} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a851b5be0ac808f1e9ed1fc79ac770ae2}\label{classobject__api_a851b5be0ac808f1e9ed1fc79ac770ae2}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator$\ast$=} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a9b19ab413bd6077f45efeb6cff06b5c4}\label{classobject__api_a9b19ab413bd6077f45efeb6cff06b5c4}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator/} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a4b9e5ae02327c2ff44e25dc0f1168e64}\label{classobject__api_a4b9e5ae02327c2ff44e25dc0f1168e64}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator/=} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_afd4b5ba4bd12f50897ecd210af322703}\label{classobject__api_afd4b5ba4bd12f50897ecd210af322703}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator$\vert$} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a625aa25cf930253e2e731349b91d8048}\label{classobject__api_a625aa25cf930253e2e731349b91d8048}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator$\vert$=} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a16d99ba5de2da080463080fd20eba640}\label{classobject__api_a16d99ba5de2da080463080fd20eba640}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator\&} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_ac5a561b5ef0c8518d5c1f0e98185fb3e}\label{classobject__api_ac5a561b5ef0c8518d5c1f0e98185fb3e}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator\&=} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_acc1fc225681c932e6f3579bf43ef1e47}\label{classobject__api_acc1fc225681c932e6f3579bf43ef1e47}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator$^\wedge$} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_aa0287f61e2ec9962bead679f640c62ea}\label{classobject__api_aa0287f61e2ec9962bead679f640c62ea}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator$^\wedge$=} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a497229c4f1c3842eba6ceeddbfb5dca7}\label{classobject__api_a497229c4f1c3842eba6ceeddbfb5dca7}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator$<$$<$} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a68ca4903ae971465b87c148e9e4a4bed}\label{classobject__api_a68ca4903ae971465b87c148e9e4a4bed}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator$<$$<$=} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_a1c874cdc51a00badff0938afca076365}\label{classobject__api_a1c874cdc51a00badff0938afca076365}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator$>$$>$} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_abcee9a0ac25d249d8ae6d17a5747ee2f}\label{classobject__api_abcee9a0ac25d249d8ae6d17a5747ee2f}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator$>$$>$=} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other) const
+\item 
+\mbox{\Hypertarget{classobject__api_afcae7cc760d93c39ae46192c2545f371}\label{classobject__api_afcae7cc760d93c39ae46192c2545f371}} 
+pybind11\+::str {\bfseries str} () const
+\item 
+\mbox{\Hypertarget{classobject__api_ad1febfb66cd1ecdc3d339ad0125f6da8}\label{classobject__api_ad1febfb66cd1ecdc3d339ad0125f6da8}} 
+\mbox{\hyperlink{classaccessor}{str\+\_\+attr\+\_\+accessor}} \mbox{\hyperlink{classobject__api_ad1febfb66cd1ecdc3d339ad0125f6da8}{doc}} () const
+\begin{DoxyCompactList}\small\item\em Get or set the object\textquotesingle{}s docstring, i.\+e. {\ttfamily obj.\+\_\+\+\_\+doc\+\_\+\+\_\+}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classobject__api_ad342c9c181e1c9bdd634828276aebd24}\label{classobject__api_ad342c9c181e1c9bdd634828276aebd24}} 
+int \mbox{\hyperlink{classobject__api_ad342c9c181e1c9bdd634828276aebd24}{ref\+\_\+count}} () const
+\begin{DoxyCompactList}\small\item\em Return the object\textquotesingle{}s current reference count. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classobject__api_a6e7d5542b300b4ef13c65c58124a410a}\label{classobject__api_a6e7d5542b300b4ef13c65c58124a410a}} 
+\mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{classobject__api_a6e7d5542b300b4ef13c65c58124a410a}{get\+\_\+type}} () const
+\begin{DoxyCompactList}\small\item\em Return a handle to the Python type object underlying the instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classobject__api_a77f45ef8c64e8fcc3f8bea236ea35457}\label{classobject__api_a77f45ef8c64e8fcc3f8bea236ea35457}} 
+const Derived \& {\bfseries derived} () const
+\item 
+\mbox{\Hypertarget{classobject__api_a5fe9a41837cfbe5504fdd5c41a79b557}\label{classobject__api_a5fe9a41837cfbe5504fdd5c41a79b557}} 
+bool {\bfseries rich\+\_\+compare} (\mbox{\hyperlink{classobject__api}{object\+\_\+api}} const \&other, int value) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename Derived$>$\newline
+class object\+\_\+api$<$ Derived $>$}
+
+\textbackslash{}rst \mbox{\hyperlink{structA}{A}} mixin class which adds common functions to {\ttfamily handle}, {\ttfamily object} and various accessors. The only requirement for {\ttfamily Derived} is to implement {\ttfamily Py\+Object $\ast$\+Derived\+::ptr() const}. \textbackslash{}endrst 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classobject__api_a17b39579263007abe74cfbf80015ebd9}\label{classobject__api_a17b39579263007abe74cfbf80015ebd9}} 
+\index{object\_api$<$ Derived $>$@{object\_api$<$ Derived $>$}!attr@{attr}}
+\index{attr@{attr}!object\_api$<$ Derived $>$@{object\_api$<$ Derived $>$}}
+\doxysubsubsection{\texorpdfstring{attr()}{attr()}}
+{\footnotesize\ttfamily template$<$typename D $>$ \\
+\mbox{\hyperlink{classaccessor}{obj\+\_\+attr\+\_\+accessor}} \mbox{\hyperlink{classobject__api}{object\+\_\+api}}$<$ D $>$\+::attr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhandle}{handle}}}]{key }\end{DoxyParamCaption}) const}
+
+\textbackslash{}rst Return an internal functor to access the object\textquotesingle{}s attributes. Casting the returned {\ttfamily detail\+::obj\+\_\+attr\+\_\+accessor} instance to a {\ttfamily handle} or {\ttfamily object} subclass causes a corresponding call to {\ttfamily getattr}. Assigning a {\ttfamily handle} or {\ttfamily object} subclass causes a call to {\ttfamily setattr}. \textbackslash{}endrst \mbox{\Hypertarget{classobject__api_a18ff315942ef1238c6c9d28c0ef9301f}\label{classobject__api_a18ff315942ef1238c6c9d28c0ef9301f}} 
+\index{object\_api$<$ Derived $>$@{object\_api$<$ Derived $>$}!begin@{begin}}
+\index{begin@{begin}!object\_api$<$ Derived $>$@{object\_api$<$ Derived $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$typename D $>$ \\
+\mbox{\hyperlink{classiterator}{iterator}} \mbox{\hyperlink{classobject__api}{object\+\_\+api}}$<$ D $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\textbackslash{}rst Return an iterator equivalent to calling {\ttfamily iter()} in Python. The object must be a collection which supports the iteration protocol. \textbackslash{}endrst \mbox{\Hypertarget{classobject__api_abe9df612ead8f4239dc32154d68e0cc1}\label{classobject__api_abe9df612ead8f4239dc32154d68e0cc1}} 
+\index{object\_api$<$ Derived $>$@{object\_api$<$ Derived $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!object\_api$<$ Derived $>$@{object\_api$<$ Derived $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename Derived $>$ \\
+template$<$return\+\_\+value\+\_\+policy policy, typename... Args$>$ \\
+\mbox{\hyperlink{classobject}{object}} \mbox{\hyperlink{classobject__api}{object\+\_\+api}}$<$ Derived $>$\+::operator() (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption}) const}
+
+\textbackslash{}rst Assuming the Python object is a function or implements the {\ttfamily \+\_\+\+\_\+call\+\_\+\+\_\+} protocol, {\ttfamily operator()} invokes the underlying function, passing an arbitrary set of parameters. The result is returned as a {\ttfamily object} and may need to be converted back into a Python object using {\ttfamily \mbox{\hyperlink{classhandle_a8158ff37b59a73d48140ab4d718316b9}{handle\+::cast()}}}.
+
+When some of the arguments cannot be converted to Python objects, the function will throw a {\ttfamily cast\+\_\+error} exception. When the Python function call fails, a {\ttfamily \mbox{\hyperlink{classerror__already__set}{error\+\_\+already\+\_\+set}}} exception is thrown. \textbackslash{}endrst \mbox{\Hypertarget{classobject__api_a52879030de31db181cb1ec02c6f001b4}\label{classobject__api_a52879030de31db181cb1ec02c6f001b4}} 
+\index{object\_api$<$ Derived $>$@{object\_api$<$ Derived $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!object\_api$<$ Derived $>$@{object\_api$<$ Derived $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename D $>$ \\
+\mbox{\hyperlink{classargs__proxy}{args\+\_\+proxy}} \mbox{\hyperlink{classobject__api}{object\+\_\+api}}$<$ D $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\textbackslash{}rst Matches $\ast$ unpacking in Python, e.\+g. to unpack arguments out of a {\ttfamily tuple} or {\ttfamily list} for a function call. Applying another $\ast$ to the result yields unpacking, e.\+g. to unpack a dict as function keyword arguments. See \+:ref\+:{\ttfamily calling\+\_\+python\+\_\+functions}. \textbackslash{}endrst \mbox{\Hypertarget{classobject__api_a22a02d920a489c385a2502802e547943}\label{classobject__api_a22a02d920a489c385a2502802e547943}} 
+\index{object\_api$<$ Derived $>$@{object\_api$<$ Derived $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!object\_api$<$ Derived $>$@{object\_api$<$ Derived $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename D $>$ \\
+\mbox{\hyperlink{classaccessor}{item\+\_\+accessor}} \mbox{\hyperlink{classobject__api}{object\+\_\+api}}$<$ D $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhandle}{handle}}}]{key }\end{DoxyParamCaption}) const}
+
+\textbackslash{}rst Return an internal functor to invoke the object\textquotesingle{}s sequence protocol. Casting the returned {\ttfamily detail\+::item\+\_\+accessor} instance to a {\ttfamily handle} or {\ttfamily object} subclass causes a corresponding call to {\ttfamily \+\_\+\+\_\+getitem\+\_\+\+\_\+}. Assigning a {\ttfamily handle} or {\ttfamily object} subclass causes a call to {\ttfamily \+\_\+\+\_\+setitem\+\_\+\+\_\+}. \textbackslash{}endrst 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/pytypes.\+h\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/cast.\+h\end{DoxyCompactItemize}

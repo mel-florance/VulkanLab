@@ -1,0 +1,22 @@
+\hypertarget{structreplace__scalar_3_01T_00_01Value_00_01CopyFlags_00_01enable__if__array__t_3_01T_01_4_01_4}{}\doxysection{Référence du modèle de la structure replace\+\_\+scalar$<$ T, Value, Copy\+Flags, enable\+\_\+if\+\_\+array\+\_\+t$<$ T $>$ $>$}
+\label{structreplace__scalar_3_01T_00_01Value_00_01CopyFlags_00_01enable__if__array__t_3_01T_01_4_01_4}\index{replace\_scalar$<$ T, Value, CopyFlags, enable\_if\_array\_t$<$ T $>$ $>$@{replace\_scalar$<$ T, Value, CopyFlags, enable\_if\_array\_t$<$ T $>$ $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structreplace__scalar_3_01T_00_01Value_00_01CopyFlags_00_01enable__if__array__t_3_01T_01_4_01_4_a10272f3f5d015f590db9e0c3d65639a3}\label{structreplace__scalar_3_01T_00_01Value_00_01CopyFlags_00_01enable__if__array__t_3_01T_01_4_01_4_a10272f3f5d015f590db9e0c3d65639a3}} 
+using {\bfseries type} = std\+::conditional\+\_\+t$<$ Copy\+Flags, detail\+::copy\+\_\+flags\+\_\+t$<$ T, \mbox{\hyperlink{structArray}{Array}} $>$, \mbox{\hyperlink{structArray}{Array}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structreplace__scalar_3_01T_00_01Value_00_01CopyFlags_00_01enable__if__array__t_3_01T_01_4_01_4_a895f5d85370e9c8847ed29f29b717283}\label{structreplace__scalar_3_01T_00_01Value_00_01CopyFlags_00_01enable__if__array__t_3_01T_01_4_01_4_a895f5d85370e9c8847ed29f29b717283}} 
+using {\bfseries Entry} = replace\+\_\+scalar\+\_\+t$<$ detail\+::packet\+\_\+t$<$ T $>$, Value, Copy\+Flags $>$
+\item 
+\mbox{\Hypertarget{structreplace__scalar_3_01T_00_01Value_00_01CopyFlags_00_01enable__if__array__t_3_01T_01_4_01_4_a8f286722ca7b389aa4d32f72f6c3f025}\label{structreplace__scalar_3_01T_00_01Value_00_01CopyFlags_00_01enable__if__array__t_3_01T_01_4_01_4_a8f286722ca7b389aa4d32f72f6c3f025}} 
+using {\bfseries Array} = typename std\+::decay\+\_\+t$<$ T $>$\+::Derived\+::template Replace\+Value$<$ Entry $>$
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array\+\_\+traits.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,32 @@
+\hypertarget{structexactly__one}{}\doxysection{Référence du modèle de la structure exactly\+\_\+one$<$ Predicate, Default, Ts $>$}
+\label{structexactly__one}\index{exactly\_one$<$ Predicate, Default, Ts $>$@{exactly\_one$<$ Predicate, Default, Ts $>$}}
+
+
+{\ttfamily \#include $<$common.\+h$>$}
+
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structexactly__one_ae80ab0a0e6f21d11a9a8b821cc2e352e}\label{structexactly__one_ae80ab0a0e6f21d11a9a8b821cc2e352e}} 
+using {\bfseries type} = conditional\+\_\+t$<$ found, typename \mbox{\hyperlink{structpack__element}{pack\+\_\+element}}$<$ index, Ts... $>$\+::type, Default $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structexactly__one_a2e88399d33d5e51e1b27f785259f408c}\label{structexactly__one_a2e88399d33d5e51e1b27f785259f408c}} 
+static constexpr auto {\bfseries found} = constexpr\+\_\+sum(Predicate$<$Ts$>$\+::value...)
+\item 
+\mbox{\Hypertarget{structexactly__one_af0f0e1092da1fbf5d87040bb9428e613}\label{structexactly__one_af0f0e1092da1fbf5d87040bb9428e613}} 
+static constexpr auto {\bfseries index} = found ? constexpr\+\_\+first$<$Predicate, Ts...$>$() \+: 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$template$<$ typename $>$ class Predicate, typename Default, typename... Ts$>$\newline
+struct exactly\+\_\+one$<$ Predicate, Default, Ts $>$}
+
+Return the one and only type which matches the predicate, or Default if none match. If more than one type matches the predicate, fail at compile-\/time. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/detail/common.\+h\end{DoxyCompactItemize}

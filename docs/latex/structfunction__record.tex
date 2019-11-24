@@ -1,0 +1,82 @@
+\hypertarget{structfunction__record}{}\doxysection{Référence de la structure function\+\_\+record}
+\label{structfunction__record}\index{function\_record@{function\_record}}
+
+
+Internal data structure which holds metadata about a bound function (signature, overloads, etc.)  
+
+
+
+
+{\ttfamily \#include $<$attr.\+h$>$}
+
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfunction__record_a55d760eb0046c3beec8a20d94ed1d07c}\label{structfunction__record_a55d760eb0046c3beec8a20d94ed1d07c}} 
+char $\ast$ \mbox{\hyperlink{structfunction__record_a55d760eb0046c3beec8a20d94ed1d07c}{name}} = nullptr
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structFunction}{Function}} name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_a01cd5465d0e01d7f0995982b918efed4}\label{structfunction__record_a01cd5465d0e01d7f0995982b918efed4}} 
+char $\ast$ {\bfseries doc} = nullptr
+\item 
+\mbox{\Hypertarget{structfunction__record_aed1e3374bb684af2676d1aeb457c65b5}\label{structfunction__record_aed1e3374bb684af2676d1aeb457c65b5}} 
+char $\ast$ \mbox{\hyperlink{structfunction__record_aed1e3374bb684af2676d1aeb457c65b5}{signature}} = nullptr
+\begin{DoxyCompactList}\small\item\em Human-\/readable version of the function signature. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_abc060d33223e10553cb15c879e326ef5}\label{structfunction__record_abc060d33223e10553cb15c879e326ef5}} 
+std\+::vector$<$ \mbox{\hyperlink{structargument__record}{argument\+\_\+record}} $>$ \mbox{\hyperlink{structfunction__record_abc060d33223e10553cb15c879e326ef5}{args}}
+\begin{DoxyCompactList}\small\item\em List of registered keyword arguments. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_a0e6a4fd6fef173a1958f8c14c6610ac9}\label{structfunction__record_a0e6a4fd6fef173a1958f8c14c6610ac9}} 
+\mbox{\hyperlink{classhandle}{handle}}($\ast$ \mbox{\hyperlink{structfunction__record_a0e6a4fd6fef173a1958f8c14c6610ac9}{impl}} )(\mbox{\hyperlink{structfunction__call}{function\+\_\+call}} \&) = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer to lambda function which converts arguments and performs the actual call. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_ada09f0077964b216ba0bf9c12cb6c25f}\label{structfunction__record_ada09f0077964b216ba0bf9c12cb6c25f}} 
+void $\ast$ \mbox{\hyperlink{structfunction__record_ada09f0077964b216ba0bf9c12cb6c25f}{data}} \mbox{[}3\mbox{]} = \{ \}
+\begin{DoxyCompactList}\small\item\em Storage for the wrapped function pointer and captured data, if any. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_aa3019482c3aba125c05edf641d557576}\label{structfunction__record_aa3019482c3aba125c05edf641d557576}} 
+void($\ast$ \mbox{\hyperlink{structfunction__record_aa3019482c3aba125c05edf641d557576}{free\+\_\+data}} )(\mbox{\hyperlink{structfunction__record}{function\+\_\+record}} $\ast$ptr) = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer to custom destructor for \textquotesingle{}data\textquotesingle{} (if needed) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_a27926b7355bd89048ff5da97758b5282}\label{structfunction__record_a27926b7355bd89048ff5da97758b5282}} 
+return\+\_\+value\+\_\+policy \mbox{\hyperlink{structfunction__record_a27926b7355bd89048ff5da97758b5282}{policy}} = return\+\_\+value\+\_\+policy\+::automatic
+\begin{DoxyCompactList}\small\item\em Return value policy associated with this function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_aa014e3469d353ed93ffb67d626879a29}\label{structfunction__record_aa014e3469d353ed93ffb67d626879a29}} 
+bool \mbox{\hyperlink{structfunction__record_aa014e3469d353ed93ffb67d626879a29}{is\+\_\+constructor}}\+: 1
+\begin{DoxyCompactList}\small\item\em True if name == \textquotesingle{}{\bfseries{init}}\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_a2a002c9d435634209613d4be9f3d5d7c}\label{structfunction__record_a2a002c9d435634209613d4be9f3d5d7c}} 
+bool \mbox{\hyperlink{structfunction__record_a2a002c9d435634209613d4be9f3d5d7c}{is\+\_\+new\+\_\+style\+\_\+constructor}}\+: 1
+\begin{DoxyCompactList}\small\item\em True if this is a new-\/style {\ttfamily \+\_\+\+\_\+init\+\_\+\+\_\+} defined in {\ttfamily \mbox{\hyperlink{init_8h_source}{detail/init.\+h}}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_abdee0c594dc06ef0b4d4b136255ea971}\label{structfunction__record_abdee0c594dc06ef0b4d4b136255ea971}} 
+bool \mbox{\hyperlink{structfunction__record_abdee0c594dc06ef0b4d4b136255ea971}{is\+\_\+stateless}}\+: 1
+\begin{DoxyCompactList}\small\item\em True if this is a stateless function pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_ab57608549c3d2c71771feda7808a2595}\label{structfunction__record_ab57608549c3d2c71771feda7808a2595}} 
+bool \mbox{\hyperlink{structfunction__record_ab57608549c3d2c71771feda7808a2595}{is\+\_\+operator}}\+: 1
+\begin{DoxyCompactList}\small\item\em True if this is an operator ({\bfseries{add}}), etc. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_af05b5fc3d6d3b5bcec45bbd1c3e75f15}\label{structfunction__record_af05b5fc3d6d3b5bcec45bbd1c3e75f15}} 
+bool \mbox{\hyperlink{structfunction__record_af05b5fc3d6d3b5bcec45bbd1c3e75f15}{has\+\_\+args}}\+: 1
+\begin{DoxyCompactList}\small\item\em True if the function has a \textquotesingle{}$\ast$args\textquotesingle{} argument. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_af72350bd8c047108e403ff873c0a1f7d}\label{structfunction__record_af72350bd8c047108e403ff873c0a1f7d}} 
+bool \mbox{\hyperlink{structfunction__record_af72350bd8c047108e403ff873c0a1f7d}{has\+\_\+kwargs}}\+: 1
+\begin{DoxyCompactList}\small\item\em True if the function has a \textquotesingle{}$\ast$$\ast$kwargs\textquotesingle{} argument. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_aaad664f057b3151927053a855ec3aea0}\label{structfunction__record_aaad664f057b3151927053a855ec3aea0}} 
+bool \mbox{\hyperlink{structfunction__record_aaad664f057b3151927053a855ec3aea0}{is\+\_\+method}}\+: 1
+\begin{DoxyCompactList}\small\item\em True if this is a method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_a8082876641e039386647a6b6b5118d41}\label{structfunction__record_a8082876641e039386647a6b6b5118d41}} 
+std\+::uint16\+\_\+t \mbox{\hyperlink{structfunction__record_a8082876641e039386647a6b6b5118d41}{nargs}}
+\begin{DoxyCompactList}\small\item\em Number of arguments (including py\+::args and/or py\+::kwargs, if present) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_a3297bc630d16b17a5559025615390ffa}\label{structfunction__record_a3297bc630d16b17a5559025615390ffa}} 
+Py\+Method\+Def $\ast$ \mbox{\hyperlink{structfunction__record_a3297bc630d16b17a5559025615390ffa}{def}} = nullptr
+\begin{DoxyCompactList}\small\item\em Python method object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_ad4112e6eb003c64f181968b2759a08af}\label{structfunction__record_ad4112e6eb003c64f181968b2759a08af}} 
+\mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structfunction__record_ad4112e6eb003c64f181968b2759a08af}{scope}}
+\begin{DoxyCompactList}\small\item\em Python handle to the parent scope (a class or a module) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_a647a4421f0491047b6ea680efd2c0e45}\label{structfunction__record_a647a4421f0491047b6ea680efd2c0e45}} 
+\mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structfunction__record_a647a4421f0491047b6ea680efd2c0e45}{sibling}}
+\begin{DoxyCompactList}\small\item\em Python handle to the sibling function representing an overload chain. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__record_a141b30999d54286b04d06ad6180dbf99}\label{structfunction__record_a141b30999d54286b04d06ad6180dbf99}} 
+\mbox{\hyperlink{structfunction__record}{function\+\_\+record}} $\ast$ \mbox{\hyperlink{structfunction__record_a141b30999d54286b04d06ad6180dbf99}{next}} = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer to next overload. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Internal data structure which holds metadata about a bound function (signature, overloads, etc.) 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/attr.\+h\end{DoxyCompactItemize}

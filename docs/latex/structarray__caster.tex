@@ -1,0 +1,37 @@
+\hypertarget{structarray__caster}{}\doxysection{Référence du modèle de la structure array\+\_\+caster$<$ Array\+Type, Value, Resizable, Size $>$}
+\label{structarray__caster}\index{array\_caster$<$ ArrayType, Value, Resizable, Size $>$@{array\_caster$<$ ArrayType, Value, Resizable, Size $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structarray__caster_a9614e5ea042dadbc2f12c067d6bd27f2}\label{structarray__caster_a9614e5ea042dadbc2f12c067d6bd27f2}} 
+using {\bfseries value\+\_\+conv} = \mbox{\hyperlink{classtype__caster}{make\+\_\+caster}}$<$ Value $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structarray__caster_ad0d8f8e2a90d20917e3496f8aeea6d8b}\label{structarray__caster_ad0d8f8e2a90d20917e3496f8aeea6d8b}} 
+bool {\bfseries load} (\mbox{\hyperlink{classhandle}{handle}} src, bool convert)
+\item 
+\mbox{\Hypertarget{structarray__caster_a0c14bf91b3fea20a11f5c086a1a04fa0}\label{structarray__caster_a0c14bf91b3fea20a11f5c086a1a04fa0}} 
+{\bfseries P\+Y\+B\+I\+N\+D11\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+A\+S\+T\+ER} (Array\+Type, \+\_\+(\char`\"{}List\mbox{[}\char`\"{})+value\+\_\+conv\+::name+\+\_\+$<$ Resizable $>$(\+\_\+(\char`\"{}\char`\"{}), \+\_\+(\char`\"{}\mbox{[}\char`\"{})+\+\_\+$<$ Size $>$()+\+\_\+(\char`\"{}\mbox{]}\char`\"{}))+\+\_\+(\char`\"{}\mbox{]}\char`\"{}))
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structarray__caster_a5eac243c7f9bca8dbe58fc914e93a2a0}\label{structarray__caster_a5eac243c7f9bca8dbe58fc914e93a2a0}} 
+{\footnotesize template$<$typename T $>$ }\\static \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast} (T \&\&src, return\+\_\+value\+\_\+policy policy, \mbox{\hyperlink{classhandle}{handle}} parent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structarray__caster_ad03d44f30c641c1a3fdf5946e6a0b278}\label{structarray__caster_ad03d44f30c641c1a3fdf5946e6a0b278}} 
+{\footnotesize template$<$bool R = Resizable$>$ }\\bool {\bfseries require\+\_\+size} (enable\+\_\+if\+\_\+t$<$ R, size\+\_\+t $>$ size)
+\item 
+\mbox{\Hypertarget{structarray__caster_ab7f0af43c0cf800f662c468834dad5d6}\label{structarray__caster_ab7f0af43c0cf800f662c468834dad5d6}} 
+{\footnotesize template$<$bool R = Resizable$>$ }\\bool {\bfseries require\+\_\+size} (enable\+\_\+if\+\_\+t$<$!R, size\+\_\+t $>$ size)
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/stl.\+h\end{DoxyCompactItemize}

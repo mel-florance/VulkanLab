@@ -1,0 +1,49 @@
+\hypertarget{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4}{}\doxysection{Référence du modèle de la classe type\+\_\+caster$<$ std\+::reference\+\_\+wrapper$<$ type $>$ $>$}
+\label{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4}\index{type\_caster$<$ std::reference\_wrapper$<$ type $>$ $>$@{type\_caster$<$ std::reference\_wrapper$<$ type $>$ $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_a6685ce2cf35603c77c4830453c900be5}\label{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_a6685ce2cf35603c77c4830453c900be5}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries cast\+\_\+op\+\_\+type} = std\+::reference\+\_\+wrapper$<$ type $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_ae3db464b00bc218012b7a111b90fd1c2}\label{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_ae3db464b00bc218012b7a111b90fd1c2}} 
+bool {\bfseries load} (\mbox{\hyperlink{classhandle}{handle}} src, bool convert)
+\item 
+\mbox{\Hypertarget{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_a47a6b670b773eac43a50bb678ae41839}\label{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_a47a6b670b773eac43a50bb678ae41839}} 
+{\bfseries operator std\+::reference\+\_\+wrapper$<$ type $>$} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_a345e25ad868cc4b8659dbe1c7f3b1153}\label{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_a345e25ad868cc4b8659dbe1c7f3b1153}} 
+static \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast} (const std\+::reference\+\_\+wrapper$<$ type $>$ \&src, return\+\_\+value\+\_\+policy policy, \mbox{\hyperlink{classhandle}{handle}} parent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_a4022644d041c739e86d54af79bcfe548}\label{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_a4022644d041c739e86d54af79bcfe548}} 
+static constexpr auto {\bfseries name} = caster\+\_\+t\+::name
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_aacb9c164be7f2aee252ed035e25745dc}\label{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_aacb9c164be7f2aee252ed035e25745dc}} 
+using {\bfseries caster\+\_\+t} = \mbox{\hyperlink{classtype__caster}{make\+\_\+caster}}$<$ type $>$
+\item 
+\mbox{\Hypertarget{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_a227dbe7028336c53110cf9a2244a17cc}\label{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_a227dbe7028336c53110cf9a2244a17cc}} 
+using {\bfseries subcaster\+\_\+cast\+\_\+op\+\_\+type} = typename caster\+\_\+t\+::template cast\+\_\+op\+\_\+type$<$ type $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_a2c5f776f1f05b49eb52715dadff905c2}\label{classtype__caster_3_01std_1_1reference__wrapper_3_01type_01_4_01_4_a2c5f776f1f05b49eb52715dadff905c2}} 
+\mbox{\hyperlink{classtype__caster}{caster\+\_\+t}} {\bfseries subcaster}
+\end{DoxyCompactItemize}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/cast.\+h\end{DoxyCompactItemize}

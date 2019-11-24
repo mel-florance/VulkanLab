@@ -1,0 +1,119 @@
+\hypertarget{structCommandLineArgs}{}\doxysection{Référence de la structure Command\+Line\+Args}
+\label{structCommandLineArgs}\index{CommandLineArgs@{CommandLineArgs}}
+
+
+{\ttfamily \#include $<$test\+\_\+util.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCommandLineArgs_afa2cefbe0064bf78998650791b97eed3}{Command\+Line\+Args}} (int argc, char $\ast$$\ast$argv)
+\item 
+bool \mbox{\hyperlink{structCommandLineArgs_adc2deac620ac144d46a04959da56459d}{Check\+Cmd\+Line\+Flag}} (const char $\ast$arg\+\_\+name)
+\item 
+{\footnotesize template$<$typename T $>$ }\\int \mbox{\hyperlink{structCommandLineArgs_a99446566dbb7bff437ee656c8908e3a1}{Num\+Naked\+Args}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{structCommandLineArgs_a3650b1b71ebe38e28d9c7ee64e4d3c8f}{Get\+Cmd\+Line\+Argument}} (int index, T \&val)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{structCommandLineArgs_a126ee0ffbabf3f4e35655447c54d308e}{Get\+Cmd\+Line\+Argument}} (const char $\ast$arg\+\_\+name, T \&val)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{structCommandLineArgs_adb9c46afde841a588cc65eae34d9dd58}{Get\+Cmd\+Line\+Arguments}} (const char $\ast$arg\+\_\+name, std\+::vector$<$ T $>$ \&vals)
+\item 
+int \mbox{\hyperlink{structCommandLineArgs_abb0ee3da1233ecb2e1331b15c85817c9}{Parsed\+Argc}} ()
+\item 
+cuda\+Error\+\_\+t \mbox{\hyperlink{structCommandLineArgs_a2ac5fdaf2ccc86447aa71f53a27f2144}{Device\+Init}} (int dev=-\/1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structCommandLineArgs_a9cfe510266e409edc609166480affa54}\label{structCommandLineArgs_a9cfe510266e409edc609166480affa54}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries keys}
+\item 
+\mbox{\Hypertarget{structCommandLineArgs_a470ec785053201a4c5efd01db10ad2b0}\label{structCommandLineArgs_a470ec785053201a4c5efd01db10ad2b0}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries values}
+\item 
+\mbox{\Hypertarget{structCommandLineArgs_a18ea6fb358132ab37adfeffd0d3538ac}\label{structCommandLineArgs_a18ea6fb358132ab37adfeffd0d3538ac}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries args}
+\item 
+\mbox{\Hypertarget{structCommandLineArgs_ae198a27f67c1a935a908847a9548f969}\label{structCommandLineArgs_ae198a27f67c1a935a908847a9548f969}} 
+cuda\+Device\+Prop {\bfseries device\+Prop}
+\item 
+\mbox{\Hypertarget{structCommandLineArgs_a04a7f1509e5831480df065f563f278d3}\label{structCommandLineArgs_a04a7f1509e5831480df065f563f278d3}} 
+float {\bfseries device\+\_\+giga\+\_\+bandwidth}
+\item 
+\mbox{\Hypertarget{structCommandLineArgs_a3ac71c96bfa74b4efdddd4a5baa9a95f}\label{structCommandLineArgs_a3ac71c96bfa74b4efdddd4a5baa9a95f}} 
+size\+\_\+t {\bfseries device\+\_\+free\+\_\+physmem}
+\item 
+\mbox{\Hypertarget{structCommandLineArgs_a0ee7f1092e825828904fcb71d4b81707}\label{structCommandLineArgs_a0ee7f1092e825828904fcb71d4b81707}} 
+size\+\_\+t {\bfseries device\+\_\+total\+\_\+physmem}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Utility for parsing command line arguments 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{structCommandLineArgs_afa2cefbe0064bf78998650791b97eed3}\label{structCommandLineArgs_afa2cefbe0064bf78998650791b97eed3}} 
+\index{CommandLineArgs@{CommandLineArgs}!CommandLineArgs@{CommandLineArgs}}
+\index{CommandLineArgs@{CommandLineArgs}!CommandLineArgs@{CommandLineArgs}}
+\doxysubsubsection{\texorpdfstring{CommandLineArgs()}{CommandLineArgs()}}
+{\footnotesize\ttfamily Command\+Line\+Args\+::\+Command\+Line\+Args (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{structCommandLineArgs_adc2deac620ac144d46a04959da56459d}\label{structCommandLineArgs_adc2deac620ac144d46a04959da56459d}} 
+\index{CommandLineArgs@{CommandLineArgs}!CheckCmdLineFlag@{CheckCmdLineFlag}}
+\index{CheckCmdLineFlag@{CheckCmdLineFlag}!CommandLineArgs@{CommandLineArgs}}
+\doxysubsubsection{\texorpdfstring{CheckCmdLineFlag()}{CheckCmdLineFlag()}}
+{\footnotesize\ttfamily bool Command\+Line\+Args\+::\+Check\+Cmd\+Line\+Flag (\begin{DoxyParamCaption}\item[{const char $\ast$}]{arg\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks whether a flag \char`\"{}-\/-\/$<$flag$>$\char`\"{} is present in the commandline \mbox{\Hypertarget{structCommandLineArgs_a2ac5fdaf2ccc86447aa71f53a27f2144}\label{structCommandLineArgs_a2ac5fdaf2ccc86447aa71f53a27f2144}} 
+\index{CommandLineArgs@{CommandLineArgs}!DeviceInit@{DeviceInit}}
+\index{DeviceInit@{DeviceInit}!CommandLineArgs@{CommandLineArgs}}
+\doxysubsubsection{\texorpdfstring{DeviceInit()}{DeviceInit()}}
+{\footnotesize\ttfamily cuda\+Error\+\_\+t Command\+Line\+Args\+::\+Device\+Init (\begin{DoxyParamCaption}\item[{int}]{dev = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialize device \mbox{\Hypertarget{structCommandLineArgs_a126ee0ffbabf3f4e35655447c54d308e}\label{structCommandLineArgs_a126ee0ffbabf3f4e35655447c54d308e}} 
+\index{CommandLineArgs@{CommandLineArgs}!GetCmdLineArgument@{GetCmdLineArgument}}
+\index{GetCmdLineArgument@{GetCmdLineArgument}!CommandLineArgs@{CommandLineArgs}}
+\doxysubsubsection{\texorpdfstring{GetCmdLineArgument()}{GetCmdLineArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Command\+Line\+Args\+::\+Get\+Cmd\+Line\+Argument (\begin{DoxyParamCaption}\item[{const char $\ast$}]{arg\+\_\+name,  }\item[{T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the value specified for a given commandline parameter --$<$flag$>$=\mbox{\Hypertarget{structCommandLineArgs_a3650b1b71ebe38e28d9c7ee64e4d3c8f}\label{structCommandLineArgs_a3650b1b71ebe38e28d9c7ee64e4d3c8f}} 
+\index{CommandLineArgs@{CommandLineArgs}!GetCmdLineArgument@{GetCmdLineArgument}}
+\index{GetCmdLineArgument@{GetCmdLineArgument}!CommandLineArgs@{CommandLineArgs}}
+\doxysubsubsection{\texorpdfstring{GetCmdLineArgument()}{GetCmdLineArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Command\+Line\+Args\+::\+Get\+Cmd\+Line\+Argument (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the commandline parameter for a given index (not including flags) \mbox{\Hypertarget{structCommandLineArgs_adb9c46afde841a588cc65eae34d9dd58}\label{structCommandLineArgs_adb9c46afde841a588cc65eae34d9dd58}} 
+\index{CommandLineArgs@{CommandLineArgs}!GetCmdLineArguments@{GetCmdLineArguments}}
+\index{GetCmdLineArguments@{GetCmdLineArguments}!CommandLineArgs@{CommandLineArgs}}
+\doxysubsubsection{\texorpdfstring{GetCmdLineArguments()}{GetCmdLineArguments()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Command\+Line\+Args\+::\+Get\+Cmd\+Line\+Arguments (\begin{DoxyParamCaption}\item[{const char $\ast$}]{arg\+\_\+name,  }\item[{std\+::vector$<$ T $>$ \&}]{vals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the values specified for a given commandline parameter --$<$flag$>$=
+
+,
+
+$\ast$ \mbox{\Hypertarget{structCommandLineArgs_a99446566dbb7bff437ee656c8908e3a1}\label{structCommandLineArgs_a99446566dbb7bff437ee656c8908e3a1}} 
+\index{CommandLineArgs@{CommandLineArgs}!NumNakedArgs@{NumNakedArgs}}
+\index{NumNakedArgs@{NumNakedArgs}!CommandLineArgs@{CommandLineArgs}}
+\doxysubsubsection{\texorpdfstring{NumNakedArgs()}{NumNakedArgs()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int Command\+Line\+Args\+::\+Num\+Naked\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns number of naked (non-\/flag and non-\/key-\/value) commandline parameters \mbox{\Hypertarget{structCommandLineArgs_abb0ee3da1233ecb2e1331b15c85817c9}\label{structCommandLineArgs_abb0ee3da1233ecb2e1331b15c85817c9}} 
+\index{CommandLineArgs@{CommandLineArgs}!ParsedArgc@{ParsedArgc}}
+\index{ParsedArgc@{ParsedArgc}!CommandLineArgs@{CommandLineArgs}}
+\doxysubsubsection{\texorpdfstring{ParsedArgc()}{ParsedArgc()}}
+{\footnotesize\ttfamily int Command\+Line\+Args\+::\+Parsed\+Argc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The number of pairs parsed 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/cub/test/test\+\_\+util.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,25 @@
+var classclang_1_1cindex_1_1Diagnostic =
+[
+    [ "__init__", "classclang_1_1cindex_1_1Diagnostic.html#a056a8f56e3418f966733125af5617ad3", null ],
+    [ "__del__", "classclang_1_1cindex_1_1Diagnostic.html#a332135c9162cad430909c28ffe3af817", null ],
+    [ "__repr__", "classclang_1_1cindex_1_1Diagnostic.html#a6f185144f20d947b8b219ab9533458b7", null ],
+    [ "category_name", "classclang_1_1cindex_1_1Diagnostic.html#a0ab05bb89872cc4181d5a47425ce3a43", null ],
+    [ "category_number", "classclang_1_1cindex_1_1Diagnostic.html#add0314fd5e2652f9cb4a4565abb7b2a5", null ],
+    [ "children", "classclang_1_1cindex_1_1Diagnostic.html#a08c4a3126cc3a352168c3145f176450e", null ],
+    [ "disable_option", "classclang_1_1cindex_1_1Diagnostic.html#a1a9c23911aadc6ac360d7dec6b5c7e03", null ],
+    [ "fixits", "classclang_1_1cindex_1_1Diagnostic.html#aeb31a21eb6d80a07537c53447758f5d8", null ],
+    [ "from_param", "classclang_1_1cindex_1_1Diagnostic.html#abced921d74ba4eec835a79bbfc9aac46", null ],
+    [ "location", "classclang_1_1cindex_1_1Diagnostic.html#a382a6e23881d5dc6c8acb6e528fc02d0", null ],
+    [ "option", "classclang_1_1cindex_1_1Diagnostic.html#a4f7e607e64b044c08951547736461c61", null ],
+    [ "ranges", "classclang_1_1cindex_1_1Diagnostic.html#ab08b3d96967eb47c8863959c0d32c26a", null ],
+    [ "severity", "classclang_1_1cindex_1_1Diagnostic.html#a7a3e7ff37252f7891af28b88231e7b86", null ],
+    [ "spelling", "classclang_1_1cindex_1_1Diagnostic.html#a9ec3f63253ac449df1d2625b5aed35b9", null ],
+    [ "diag", "classclang_1_1cindex_1_1Diagnostic.html#a08c03f9d711dbae87febc4fbd70f041d", null ],
+    [ "diag_set", "classclang_1_1cindex_1_1Diagnostic.html#a05b333ad740fba2a76c8875499069929", null ],
+    [ "Error", "classclang_1_1cindex_1_1Diagnostic.html#acd0d2b1ec3629652da8f156d563113c3", null ],
+    [ "Fatal", "classclang_1_1cindex_1_1Diagnostic.html#ad345b901214ff110572d7d10c5c6dee3", null ],
+    [ "Ignored", "classclang_1_1cindex_1_1Diagnostic.html#a4056e77ef8c9f3088256e4cf3f19ca82", null ],
+    [ "Note", "classclang_1_1cindex_1_1Diagnostic.html#a83f4ec8b66da7b5d6bacdb86ffd3e87d", null ],
+    [ "ptr", "classclang_1_1cindex_1_1Diagnostic.html#a408ac7e26c5fa67ded038bef6ed62a58", null ],
+    [ "Warning", "classclang_1_1cindex_1_1Diagnostic.html#aefa0879bf8f6fc6209d4e45b921e92b1", null ]
+];

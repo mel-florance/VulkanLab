@@ -46,7 +46,7 @@ var classFPSCamera =
     [ "setSpeedMultiplier", "classFPSCamera.html#a2f231f86724f7313696e041cc2059fe1", null ],
     [ "setVelocity", "classFPSCamera.html#ae75d273d5cbde958036583a43e7f3e87", null ],
     [ "setYaw", "classFPSCamera.html#a7ed37ece3ee5e928398c6ab21d667adc", null ],
-    [ "update", "classFPSCamera.html#a74aaa28494ca10f7dae147bc5c148980", null ],
+    [ "update", "classFPSCamera.html#a8161aec9831a44679d699919f81b03d9", null ],
     [ "constrainAxis", "classFPSCamera.html#ac824e7f31713b552982738b02fc2f3ee", null ],
     [ "delta", "classFPSCamera.html#a5a9c34ff74e0bc259d15f5f3bb274963", null ],
     [ "friction", "classFPSCamera.html#a74dab14a43c02ee4fc0e0640ea91c7f0", null ],

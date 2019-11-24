@@ -1,0 +1,32 @@
+\hypertarget{structis__fmt__numeric_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_4_01_4}{}\doxysection{Référence du modèle de la structure is\+\_\+fmt\+\_\+numeric$<$ T, enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+arithmetic$<$ T $>$\+::value $>$ $>$}
+\label{structis__fmt__numeric_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_4_01_4}\index{is\_fmt\_numeric$<$ T, enable\_if\_t$<$ std::is\_arithmetic$<$ T $>$::value $>$ $>$@{is\_fmt\_numeric$<$ T, enable\_if\_t$<$ std::is\_arithmetic$<$ T $>$::value $>$ $>$}}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structis__fmt__numeric_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_4_01_4_af2f8e78558e1a3cc6c77196456c00a77}\label{structis__fmt__numeric_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_4_01_4_af2f8e78558e1a3cc6c77196456c00a77}} 
+static constexpr bool {\bfseries value} = true
+\item 
+static constexpr int {\bfseries index}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structis__fmt__numeric_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_4_01_4_aaabd4d87f843cbbdf2a352417dc127ca}\label{structis__fmt__numeric_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_4_01_4_aaabd4d87f843cbbdf2a352417dc127ca}} 
+\index{is\_fmt\_numeric$<$ T, enable\_if\_t$<$ std::is\_arithmetic$<$ T $>$::value $>$ $>$@{is\_fmt\_numeric$<$ T, enable\_if\_t$<$ std::is\_arithmetic$<$ T $>$::value $>$ $>$}!index@{index}}
+\index{index@{index}!is\_fmt\_numeric$<$ T, enable\_if\_t$<$ std::is\_arithmetic$<$ T $>$::value $>$ $>$@{is\_fmt\_numeric$<$ T, enable\_if\_t$<$ std::is\_arithmetic$<$ T $>$::value $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+constexpr int \mbox{\hyperlink{structis__fmt__numeric}{is\+\_\+fmt\+\_\+numeric}}$<$ T, enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+arithmetic$<$ T $>$\+::value $>$ $>$\+::index\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= std::is\_same<T, bool>::value ? 0 : 1 + (}
+\DoxyCodeLine{        std::is\_integral<T>::value ? detail::log2(\textcolor{keyword}{sizeof}(T))*2 + std::is\_unsigned<T>::value : 8 + (}
+\DoxyCodeLine{        std::is\_same<T, double>::value ? 1 : std::is\_same<T, long double>::value ? 2 : 0))}
+
+\end{DoxyCode}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/detail/common.\+h\end{DoxyCompactItemize}

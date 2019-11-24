@@ -1,0 +1,102 @@
+\hypertarget{classSlider}{}\doxysection{Référence de la classe Slider}
+\label{classSlider}\index{Slider@{Slider}}
+
+
+Fractional slider widget with mouse control.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/slider.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Slider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classSlider}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSlider_a5e0144750ec9afc82126043ad0b1941d}\label{classSlider_a5e0144750ec9afc82126043ad0b1941d}} 
+{\bfseries Slider} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}})
+\item 
+\mbox{\Hypertarget{classSlider_a2a3fa62fddd3e53f8b92ba01b38ce8a9}\label{classSlider_a2a3fa62fddd3e53f8b92ba01b38ce8a9}} 
+float {\bfseries value} () const
+\item 
+\mbox{\Hypertarget{classSlider_ac1edff2b035f5528109a5b4440f04916}\label{classSlider_ac1edff2b035f5528109a5b4440f04916}} 
+void {\bfseries set\+\_\+value} (float value)
+\item 
+\mbox{\Hypertarget{classSlider_a4335a85632ea519c072554b2bc8bd866}\label{classSlider_a4335a85632ea519c072554b2bc8bd866}} 
+const \mbox{\hyperlink{classColor}{Color}} \& {\bfseries highlight\+\_\+color} () const
+\item 
+\mbox{\Hypertarget{classSlider_a681f31c28d5139840b60185ab4424984}\label{classSlider_a681f31c28d5139840b60185ab4424984}} 
+void {\bfseries set\+\_\+highlight\+\_\+color} (const \mbox{\hyperlink{classColor}{Color}} \&highlight\+\_\+color)
+\item 
+\mbox{\Hypertarget{classSlider_a5b5f24372eb013c043bea27952da6824}\label{classSlider_a5b5f24372eb013c043bea27952da6824}} 
+std\+::pair$<$ float, float $>$ {\bfseries range} () const
+\item 
+\mbox{\Hypertarget{classSlider_a921e0b05426781be4fc462d57a642d92}\label{classSlider_a921e0b05426781be4fc462d57a642d92}} 
+void {\bfseries set\+\_\+range} (std\+::pair$<$ float, float $>$ \mbox{\hyperlink{structrange}{range}})
+\item 
+\mbox{\Hypertarget{classSlider_a2acef32c56ca92efe4ad5f14dcf9898b}\label{classSlider_a2acef32c56ca92efe4ad5f14dcf9898b}} 
+std\+::pair$<$ float, float $>$ {\bfseries highlighted\+\_\+range} () const
+\item 
+\mbox{\Hypertarget{classSlider_a01ac6443d3b5f2a64fd553e8dc6b948b}\label{classSlider_a01ac6443d3b5f2a64fd553e8dc6b948b}} 
+void {\bfseries set\+\_\+highlighted\+\_\+range} (std\+::pair$<$ float, float $>$ highlighted\+\_\+range)
+\item 
+\mbox{\Hypertarget{classSlider_a655c94bcbfa5404a166bdb00911090a8}\label{classSlider_a655c94bcbfa5404a166bdb00911090a8}} 
+std\+::function$<$ void(float)$>$ {\bfseries callback} () const
+\item 
+\mbox{\Hypertarget{classSlider_a97c57c04bc0dbb668caa4402d6c4fb25}\label{classSlider_a97c57c04bc0dbb668caa4402d6c4fb25}} 
+void {\bfseries set\+\_\+callback} (const std\+::function$<$ void(float)$>$ \&callback)
+\item 
+\mbox{\Hypertarget{classSlider_a8edc709e44254a763d6dc0575b85e752}\label{classSlider_a8edc709e44254a763d6dc0575b85e752}} 
+std\+::function$<$ void(float)$>$ {\bfseries final\+\_\+callback} () const
+\item 
+\mbox{\Hypertarget{classSlider_ae3c5e270fa3c8303c07df95296728090}\label{classSlider_ae3c5e270fa3c8303c07df95296728090}} 
+void {\bfseries set\+\_\+final\+\_\+callback} (const std\+::function$<$ void(float)$>$ \&callback)
+\item 
+\mbox{\Hypertarget{classSlider_a9c0f3e90d10018e4a84825ab39f589d5}\label{classSlider_a9c0f3e90d10018e4a84825ab39f589d5}} 
+virtual Vector2i \mbox{\hyperlink{classSlider_a9c0f3e90d10018e4a84825ab39f589d5}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const override
+\begin{DoxyCompactList}\small\item\em Compute the preferred size of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSlider_ad346d0571da4e38209e3ec03012bd495}\label{classSlider_ad346d0571da4e38209e3ec03012bd495}} 
+virtual bool \mbox{\hyperlink{classSlider_ad346d0571da4e38209e3ec03012bd495}{mouse\+\_\+drag\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse drag event (default implementation\+: do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSlider_acb3972d0455174acedb08f7092638e92}\label{classSlider_acb3972d0455174acedb08f7092638e92}} 
+virtual bool \mbox{\hyperlink{classSlider_acb3972d0455174acedb08f7092638e92}{mouse\+\_\+button\+\_\+event}} (const Vector2i \&p, int button, bool down, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse button event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSlider_a01a56ee14d837c431ad79f60b1c0d8ca}\label{classSlider_a01a56ee14d837c431ad79f60b1c0d8ca}} 
+virtual void \mbox{\hyperlink{classSlider_a01a56ee14d837c431ad79f60b1c0d8ca}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draw the widget (and all child widgets) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSlider_a7a18f08f976f4165c671b36d5d4d75e6}\label{classSlider_a7a18f08f976f4165c671b36d5d4d75e6}} 
+float {\bfseries m\+\_\+value}
+\item 
+\mbox{\Hypertarget{classSlider_a68a2834c1f6642589274a88d8d199cb0}\label{classSlider_a68a2834c1f6642589274a88d8d199cb0}} 
+std\+::function$<$ void(float)$>$ {\bfseries m\+\_\+callback}
+\item 
+\mbox{\Hypertarget{classSlider_a56cea61ed0026673666ba38a076312bd}\label{classSlider_a56cea61ed0026673666ba38a076312bd}} 
+std\+::function$<$ void(float)$>$ {\bfseries m\+\_\+final\+\_\+callback}
+\item 
+\mbox{\Hypertarget{classSlider_a917b894548fedecec7a611a42da2c157}\label{classSlider_a917b894548fedecec7a611a42da2c157}} 
+std\+::pair$<$ float, float $>$ {\bfseries m\+\_\+range}
+\item 
+\mbox{\Hypertarget{classSlider_aae839a3254ed4483075a35b1154d0990}\label{classSlider_aae839a3254ed4483075a35b1154d0990}} 
+std\+::pair$<$ float, float $>$ {\bfseries m\+\_\+highlighted\+\_\+range}
+\item 
+\mbox{\Hypertarget{classSlider_ae6b2f79845f10be1a005aa30517c0f4b}\label{classSlider_ae6b2f79845f10be1a005aa30517c0f4b}} 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries m\+\_\+highlight\+\_\+color}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+Fractional slider widget with mouse control. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{slider_8h}{slider.\+h}}\item 
+ext/nanogui/src/slider.\+cpp\end{DoxyCompactItemize}

@@ -1,12 +1,12 @@
-\hypertarget{classMesh}{}\doxysection{Mesh Class Reference}
+\hypertarget{classMesh}{}\doxysection{Référence de la classe Mesh}
 \label{classMesh}\index{Mesh@{Mesh}}
-Inheritance diagram for Mesh\+:\begin{figure}[H]
+Graphe d\textquotesingle{}héritage de Mesh\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classMesh}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Types}
+\doxysubsection*{Types publics}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classMesh_aeb3bf4ac51deb70f986f82f655dbf3ab}\label{classMesh_aeb3bf4ac51deb70f986f82f655dbf3ab}} 
@@ -29,20 +29,23 @@ enum {\bfseries Draw\+Mode} \{ \newline
 {\bfseries Q\+U\+A\+DS} = 0x0007
  \}
 \item 
-\mbox{\Hypertarget{classMesh_ad3f4b66e4bd7ce9027e4f1ed55123ab6}\label{classMesh_ad3f4b66e4bd7ce9027e4f1ed55123ab6}} 
+\mbox{\Hypertarget{classMesh_aa19b2d0d2c50fd4d2b8a779ff88dd5a3}\label{classMesh_aa19b2d0d2c50fd4d2b8a779ff88dd5a3}} 
 typedef std\+::map$<$ \mbox{\hyperlink{classArrayBuffer}{Array\+Buffer}} $\ast$, std\+::vector$<$ \mbox{\hyperlink{classVertexBuffer}{Vertex\+Buffer}} $\ast$ $>$ $>$ {\bfseries Mesh\+Buffers}
 \end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classMesh_a2af137f1571af89172b9c102302c416b}{Mesh}} ()
 \item 
 \mbox{\hyperlink{classMesh_a5efe4da1a4c0971cfb037bd70304c303}{$\sim$\+Mesh}} ()
 \item 
+\mbox{\Hypertarget{classMesh_ad86996d0fc1cf0ca146a8939efeab335}\label{classMesh_ad86996d0fc1cf0ca146a8939efeab335}} 
+void {\bfseries setup\+Buffers} ()
+\item 
 \mbox{\Hypertarget{classMesh_a4060b21a507f3cd18ceb1a36d68b78c6}\label{classMesh_a4060b21a507f3cd18ceb1a36d68b78c6}} 
 void {\bfseries set\+Vertices} (std\+::vector$<$ float $>$ verts)
 \item 
-const std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classMesh_a3975a57573aa543e3c39acbe2a8566cb}{get\+Vertices}} () const
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classMesh_a3c1e1a3b70d5a869f233a996bb49cbc1}{get\+Vertices}} ()
 \item 
 float \mbox{\hyperlink{classMesh_a6d63f26cd67650d06ddb72bcd4d59df6}{get\+Vertices\+Memory\+Size}} ()
 \item 
@@ -52,7 +55,7 @@ void \mbox{\hyperlink{classMesh_a25843b82a4ccba520195c66e170be3fc}{set\+Vertex\+
 \item 
 void \mbox{\hyperlink{classMesh_a996a8668fa2ca7d95d6d10744c833bc8}{draw}} ()
 \item 
-const std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classMesh_adff434672a84240ef8bc24e98d091479}{get\+Uvs}} () const
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classMesh_a829d947f35f5c0be7807f61681402db8}{get\+Uvs}} ()
 \item 
 void \mbox{\hyperlink{classMesh_a29d3d37a9fe658ad216860b5d85c4a84}{set\+Uvs}} (std\+::vector$<$ float $>$ uvs)
 \item 
@@ -62,22 +65,38 @@ bool \mbox{\hyperlink{classMesh_a76ac540c1cbd21634fbe27b4aa85ab50}{is\+Wireframe
 \item 
 void \mbox{\hyperlink{classMesh_a75a296d00b2be8ebc6315ef875132595}{set\+Wireframe}} (bool wireframe)
 \item 
-const std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classMesh_a3295b043a81354fbb7de067fb9bf1678}{get\+Normals}} () const
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classMesh_ab11ef272de4aa26c3af88ac65d97592c}{get\+Normals}} ()
 \item 
 void \mbox{\hyperlink{classMesh_a866f45cfa5de32181c5d60ca4430728c}{set\+Normals}} (const std\+::vector$<$ float $>$ \&normals)
 \item 
-void \mbox{\hyperlink{classMesh_a2dd8ed32865acee8d6d7bb94c5e36e24}{add\+Buffer}} (\mbox{\hyperlink{classArrayBuffer}{Array\+Buffer}} $\ast$vao, \mbox{\hyperlink{classVertexBuffer}{Vertex\+Buffer}} $\ast$buffer)
+void \mbox{\hyperlink{classMesh_a2dd8ed32865acee8d6d7bb94c5e36e24}{add\+Buffer}} (\mbox{\hyperlink{classArrayBuffer}{Array\+Buffer}} $\ast$vao, \mbox{\hyperlink{classVertexBuffer}{Vertex\+Buffer}} $\ast$\mbox{\hyperlink{classbuffer}{buffer}})
 \item 
-void \mbox{\hyperlink{classMesh_a174d50069daebf65d0ca069ef2296828}{add\+Array\+Buffer}} (\mbox{\hyperlink{classArrayBuffer}{Array\+Buffer}} $\ast$buffer)
+void \mbox{\hyperlink{classMesh_a174d50069daebf65d0ca069ef2296828}{add\+Array\+Buffer}} (\mbox{\hyperlink{classArrayBuffer}{Array\+Buffer}} $\ast$\mbox{\hyperlink{classbuffer}{buffer}})
 \item 
-\mbox{\hyperlink{classMaterial}{Material}} $\ast$ \mbox{\hyperlink{classMesh_a848b58b9b1c49199da9fbc41b444be1d}{get\+Material}} () const
+\mbox{\hyperlink{classMaterial}{Material}} $\ast$ \mbox{\hyperlink{classMesh_ac6c0a54711137e63cab14ba5fff24372}{get\+Material}} ()
 \item 
 void \mbox{\hyperlink{classMesh_acee71afee77988e9233bee788ac501f3}{set\+Material}} (\mbox{\hyperlink{classMaterial}{Material}} $\ast$material)
 \item 
 bool \mbox{\hyperlink{classMesh_aadf9a7aebf1ee4a11f06e4069420644e}{has\+Material}} ()
+\item 
+const char $\ast$ \mbox{\hyperlink{classMesh_a44b628e3bc0abbe84e614379e7ec8bfe}{get\+Name}} ()
+\item 
+void \mbox{\hyperlink{classMesh_a899eff5d2a7255ea3a40f64d7e1aef06}{set\+Name}} (const char $\ast$\mbox{\hyperlink{structname}{name}})
+\item 
+std\+::vector$<$ unsigned int $>$ \& \mbox{\hyperlink{classMesh_a7defab68ed8dd13b92ccb62d2b638ddd}{get\+Indices}} ()
+\item 
+void \mbox{\hyperlink{classMesh_ab9eca9f93a9c69f7d778dba7a9a2a34e}{set\+Mesh\+Indices}} (const std\+::vector$<$ unsigned int $>$ \&indices)
+\item 
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classMesh_a8fddff1bfa5c11f460cf8e5ad3f9c3fa}{get\+Tangents}} ()
+\item 
+\mbox{\Hypertarget{classMesh_a90ccf69171997b05b031969c27aa7892}\label{classMesh_a90ccf69171997b05b031969c27aa7892}} 
+void {\bfseries set\+Tangents} (const std\+::vector$<$ float $>$ \&tangents)
 \end{DoxyCompactItemize}
-\doxysubsection*{Protected Attributes}
+\doxysubsection*{Attributs protégés}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMesh_a26632e27b772f24b069a738e7983b9da}\label{classMesh_a26632e27b772f24b069a738e7983b9da}} 
+std\+::vector$<$ unsigned int $>$ {\bfseries indices}
 \item 
 \mbox{\Hypertarget{classMesh_a6ad1226aabf6b2a0ded67b8dee1fb514}\label{classMesh_a6ad1226aabf6b2a0ded67b8dee1fb514}} 
 std\+::vector$<$ float $>$ {\bfseries vertices}
@@ -87,9 +106,15 @@ std\+::vector$<$ float $>$ {\bfseries uvs}
 \item 
 \mbox{\Hypertarget{classMesh_a50e5b298d8e342be15f8d5ab027109b6}\label{classMesh_a50e5b298d8e342be15f8d5ab027109b6}} 
 std\+::vector$<$ float $>$ {\bfseries normals}
+\item 
+\mbox{\Hypertarget{classMesh_a0a0988787990036b918e11f47d8c57cd}\label{classMesh_a0a0988787990036b918e11f47d8c57cd}} 
+std\+::vector$<$ float $>$ {\bfseries tangents}
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMesh_ac4b8c67570e8c1bef31f5da043dcf3b3}\label{classMesh_ac4b8c67570e8c1bef31f5da043dcf3b3}} 
+const char $\ast$ {\bfseries name}
 \item 
 \mbox{\Hypertarget{classMesh_af580f92e63a9ca3f615447e85324b346}\label{classMesh_af580f92e63a9ca3f615447e85324b346}} 
 Mesh\+Buffers {\bfseries buffers}
@@ -108,7 +133,7 @@ Draw\+Mode {\bfseries draw\+Mode}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\doxysubsection{Documentation des constructeurs et destructeur}
 \mbox{\Hypertarget{classMesh_a2af137f1571af89172b9c102302c416b}\label{classMesh_a2af137f1571af89172b9c102302c416b}} 
 \index{Mesh@{Mesh}!Mesh@{Mesh}}
 \index{Mesh@{Mesh}!Mesh@{Mesh}}
@@ -123,7 +148,7 @@ Draw\+Mode {\bfseries draw\+Mode}
 
 \mbox{\hyperlink{classMesh}{Mesh}} destructor. 
 
-\doxysubsection{Member Function Documentation}
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classMesh_a174d50069daebf65d0ca069ef2296828}\label{classMesh_a174d50069daebf65d0ca069ef2296828}} 
 \index{Mesh@{Mesh}!addArrayBuffer@{addArrayBuffer}}
 \index{addArrayBuffer@{addArrayBuffer}!Mesh@{Mesh}}
@@ -131,7 +156,7 @@ Draw\+Mode {\bfseries draw\+Mode}
 {\footnotesize\ttfamily void Mesh\+::add\+Array\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArrayBuffer}{Array\+Buffer}} $\ast$}]{buffer }\end{DoxyParamCaption})}
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em buffer} & \\
 \hline
 \end{DoxyParams}
@@ -142,7 +167,7 @@ Draw\+Mode {\bfseries draw\+Mode}
 {\footnotesize\ttfamily void Mesh\+::add\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArrayBuffer}{Array\+Buffer}} $\ast$}]{vao,  }\item[{\mbox{\hyperlink{classVertexBuffer}{Vertex\+Buffer}} $\ast$}]{buffer }\end{DoxyParamCaption})}
 
 If the mesh array buffer is not a nullptr, then add the new buffer to the list of mesh\textquotesingle{}s buffers. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em type} & \\
 \hline
 {\em buffer} & \\
@@ -154,28 +179,46 @@ If the mesh array buffer is not a nullptr, then add the new buffer to the list o
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void Mesh\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Draw the mesh. \mbox{\Hypertarget{classMesh_a848b58b9b1c49199da9fbc41b444be1d}\label{classMesh_a848b58b9b1c49199da9fbc41b444be1d}} 
+Draw the mesh. \mbox{\Hypertarget{classMesh_a7defab68ed8dd13b92ccb62d2b638ddd}\label{classMesh_a7defab68ed8dd13b92ccb62d2b638ddd}} 
+\index{Mesh@{Mesh}!getIndices@{getIndices}}
+\index{getIndices@{getIndices}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{getIndices()}{getIndices()}}
+{\footnotesize\ttfamily std\+::vector$<$unsigned int$>$\& Mesh\+::get\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the indices of the mesh. \mbox{\Hypertarget{classMesh_ac6c0a54711137e63cab14ba5fff24372}\label{classMesh_ac6c0a54711137e63cab14ba5fff24372}} 
 \index{Mesh@{Mesh}!getMaterial@{getMaterial}}
 \index{getMaterial@{getMaterial}!Mesh@{Mesh}}
 \doxysubsubsection{\texorpdfstring{getMaterial()}{getMaterial()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classMaterial}{Material}}$\ast$ Mesh\+::get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMaterial}{Material}}$\ast$ Mesh\+::get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the mesh material. \mbox{\Hypertarget{classMesh_a3295b043a81354fbb7de067fb9bf1678}\label{classMesh_a3295b043a81354fbb7de067fb9bf1678}} 
+Return the mesh material. \mbox{\Hypertarget{classMesh_a44b628e3bc0abbe84e614379e7ec8bfe}\label{classMesh_a44b628e3bc0abbe84e614379e7ec8bfe}} 
+\index{Mesh@{Mesh}!getName@{getName}}
+\index{getName@{getName}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const char$\ast$ Mesh\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the name of the mesh. \mbox{\Hypertarget{classMesh_ab11ef272de4aa26c3af88ac65d97592c}\label{classMesh_ab11ef272de4aa26c3af88ac65d97592c}} 
 \index{Mesh@{Mesh}!getNormals@{getNormals}}
 \index{getNormals@{getNormals}!Mesh@{Mesh}}
 \doxysubsubsection{\texorpdfstring{getNormals()}{getNormals()}}
-{\footnotesize\ttfamily const std\+::vector$<$float$>$\& Mesh\+::get\+Normals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$\& Mesh\+::get\+Normals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the normals data array. \begin{DoxyReturn}{Returns}
+Return the normals data array. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classMesh_adff434672a84240ef8bc24e98d091479}\label{classMesh_adff434672a84240ef8bc24e98d091479}} 
+\mbox{\Hypertarget{classMesh_a8fddff1bfa5c11f460cf8e5ad3f9c3fa}\label{classMesh_a8fddff1bfa5c11f460cf8e5ad3f9c3fa}} 
+\index{Mesh@{Mesh}!getTangents@{getTangents}}
+\index{getTangents@{getTangents}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{getTangents()}{getTangents()}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$\& Mesh\+::get\+Tangents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the mesh tangents. \mbox{\Hypertarget{classMesh_a829d947f35f5c0be7807f61681402db8}\label{classMesh_a829d947f35f5c0be7807f61681402db8}} 
 \index{Mesh@{Mesh}!getUvs@{getUvs}}
 \index{getUvs@{getUvs}!Mesh@{Mesh}}
 \doxysubsubsection{\texorpdfstring{getUvs()}{getUvs()}}
-{\footnotesize\ttfamily const std\+::vector$<$float$>$\& Mesh\+::get\+Uvs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$\& Mesh\+::get\+Uvs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the mesh uvs array. \begin{DoxyReturn}{Returns}
+Return the mesh uvs array. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classMesh_a41756799d1d904f6faa390b038cfe65b}\label{classMesh_a41756799d1d904f6faa390b038cfe65b}} 
@@ -190,13 +233,13 @@ Return the size in bytes of the uvs. \mbox{\Hypertarget{classMesh_a09f597db1ca84
 \doxysubsubsection{\texorpdfstring{getVertexCount()}{getVertexCount()}}
 {\footnotesize\ttfamily unsigned int Mesh\+::get\+Vertex\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the mesh vertex count. \mbox{\Hypertarget{classMesh_a3975a57573aa543e3c39acbe2a8566cb}\label{classMesh_a3975a57573aa543e3c39acbe2a8566cb}} 
+Return the mesh vertex count. \mbox{\Hypertarget{classMesh_a3c1e1a3b70d5a869f233a996bb49cbc1}\label{classMesh_a3c1e1a3b70d5a869f233a996bb49cbc1}} 
 \index{Mesh@{Mesh}!getVertices@{getVertices}}
 \index{getVertices@{getVertices}!Mesh@{Mesh}}
 \doxysubsubsection{\texorpdfstring{getVertices()}{getVertices()}}
-{\footnotesize\ttfamily const std\+::vector$<$float$>$\& Mesh\+::get\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$\& Mesh\+::get\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the mesh vertices. \begin{DoxyReturn}{Returns}
+Return the mesh vertices. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classMesh_a6d63f26cd67650d06ddb72bcd4d59df6}\label{classMesh_a6d63f26cd67650d06ddb72bcd4d59df6}} 
@@ -217,7 +260,7 @@ Check if a mesh has a material assigned. \mbox{\Hypertarget{classMesh_a76ac540c1
 \doxysubsubsection{\texorpdfstring{isWireframe()}{isWireframe()}}
 {\footnotesize\ttfamily bool Mesh\+::is\+Wireframe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return wireframe enabled. \begin{DoxyReturn}{Returns}
+Return wireframe enabled. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classMesh_acee71afee77988e9233bee788ac501f3}\label{classMesh_acee71afee77988e9233bee788ac501f3}} 
@@ -227,18 +270,30 @@ Return wireframe enabled. \begin{DoxyReturn}{Returns}
 {\footnotesize\ttfamily void Mesh\+::set\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMaterial}{Material}} $\ast$}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the mesh material. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em material} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMesh_a866f45cfa5de32181c5d60ca4430728c}\label{classMesh_a866f45cfa5de32181c5d60ca4430728c}} 
+\mbox{\Hypertarget{classMesh_ab9eca9f93a9c69f7d778dba7a9a2a34e}\label{classMesh_ab9eca9f93a9c69f7d778dba7a9a2a34e}} 
+\index{Mesh@{Mesh}!setMeshIndices@{setMeshIndices}}
+\index{setMeshIndices@{setMeshIndices}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{setMeshIndices()}{setMeshIndices()}}
+{\footnotesize\ttfamily void Mesh\+::set\+Mesh\+Indices (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ unsigned int $>$ \&}]{indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the mesh indices. \mbox{\Hypertarget{classMesh_a899eff5d2a7255ea3a40f64d7e1aef06}\label{classMesh_a899eff5d2a7255ea3a40f64d7e1aef06}} 
+\index{Mesh@{Mesh}!setName@{setName}}
+\index{setName@{setName}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Mesh\+::set\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the name of the mesh. \mbox{\Hypertarget{classMesh_a866f45cfa5de32181c5d60ca4430728c}\label{classMesh_a866f45cfa5de32181c5d60ca4430728c}} 
 \index{Mesh@{Mesh}!setNormals@{setNormals}}
 \index{setNormals@{setNormals}!Mesh@{Mesh}}
 \doxysubsubsection{\texorpdfstring{setNormals()}{setNormals()}}
 {\footnotesize\ttfamily void Mesh\+::set\+Normals (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ float $>$ \&}]{normals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the normals data array. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em normals} & \\
 \hline
 \end{DoxyParams}
@@ -249,7 +304,7 @@ Set the normals data array.
 {\footnotesize\ttfamily void Mesh\+::set\+Uvs (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$}]{uvs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the mesh uvs array. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em uvs} & \\
 \hline
 \end{DoxyParams}
@@ -266,13 +321,13 @@ Set the vertex count of the mesh. \mbox{\Hypertarget{classMesh_a75a296d00b2be8eb
 {\footnotesize\ttfamily void Mesh\+::set\+Wireframe (\begin{DoxyParamCaption}\item[{bool}]{wireframe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set wireframe enabled. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em wireframe} & \\
 \hline
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
 Engine/src/\+Geometry/Mesh.\+h\item 
 Engine/src/\+Geometry/Mesh.\+cpp\end{DoxyCompactItemize}

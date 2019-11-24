@@ -1,0 +1,4 @@
+var structcompare__buffer__info_3_01T_00_01detail_1_1enable__if__t_3_01detail_1_1is__pod__struct_3_01T_01_4_1_1value_01_4_01_4 =
+[
+    [ "compare", "structcompare__buffer__info_3_01T_00_01detail_1_1enable__if__t_3_01detail_1_1is__pod__struct_3_01T_01_4_1_1value_01_4_01_4.html#ab0e66eb6cf042e81ddbb11d5f16d2ecb", null ]
+];

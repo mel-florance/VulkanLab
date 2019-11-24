@@ -1,0 +1,106 @@
+\hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4}{}\doxysection{Référence du modèle de la structure struct\+\_\+support$<$ T, enable\+\_\+if\+\_\+static\+\_\+array\+\_\+t$<$ T $>$ $>$}
+\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4}\index{struct\_support$<$ T, enable\_if\_static\_array\_t$<$ T $>$ $>$@{struct\_support$<$ T, enable\_if\_static\_array\_t$<$ T $>$ $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a83914896c322a85202cfb3a677067b92}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a83914896c322a85202cfb3a677067b92}} 
+using {\bfseries Dynamic} = std\+::conditional\+\_\+t$<$ array\+\_\+depth\+\_\+v$<$ T $>$==1, \mbox{\hyperlink{structDynamicArray}{Dynamic\+Array}}$<$ std\+::decay\+\_\+t$<$ T $>$ $>$, typename T\+::template Replace\+Value$<$ make\+\_\+dynamic\+\_\+t$<$ value\+\_\+t$<$ T $>$ $>$$>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a1e8b663cf57aa98df52bd5d9fa91fe97}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a1e8b663cf57aa98df52bd5d9fa91fe97}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries slices} (const T \&value)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a376cd49f8c91497a828d044bddaa086a}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a376cd49f8c91497a828d044bddaa086a}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries packets} (const T \&value)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a934e9d34d9ced195a5844f86b7a67cb9}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a934e9d34d9ced195a5844f86b7a67cb9}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries set\+\_\+slices} (T \&value, size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a2f6d4610ee4fb528c32339c1dba20924}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a2f6d4610ee4fb528c32339c1dba20924}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE T {\bfseries zero} (size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a3eb90bbd7ab0e96fcb2eee0e38ff88dc}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a3eb90bbd7ab0e96fcb2eee0e38ff88dc}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE T {\bfseries empty} (size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a00d3d0b5a7a32f6efc4453cb002e44f6}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a00d3d0b5a7a32f6efc4453cb002e44f6}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries masked} (T \&value, const mask\+\_\+t$<$ T $>$ \&mask)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a504ed17cc86418a677e94260f5c21c6e}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a504ed17cc86418a677e94260f5c21c6e}} 
+{\footnotesize template$<$typename T2 $>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries packet} (T2 \&value, size\+\_\+t i)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a04b4abe7dee1a08837e5b8b76e8d59f1}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a04b4abe7dee1a08837e5b8b76e8d59f1}} 
+{\footnotesize template$<$typename T2 $>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries detach} (T2 \&value)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_aedb72e3e65c74d07686412497f53d130}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_aedb72e3e65c74d07686412497f53d130}} 
+{\footnotesize template$<$typename T2 $>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries gradient} (T2 \&value)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a682a0bb98ee215e6de097d709e9bb561}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a682a0bb98ee215e6de097d709e9bb561}} 
+{\footnotesize template$<$typename T2 $>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries slice} (T2 \&value, size\+\_\+t i)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a6dd271043568498dc2254ce4751495a7}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a6dd271043568498dc2254ce4751495a7}} 
+{\footnotesize template$<$typename T2 $>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries slice\+\_\+ptr} (T2 \&value, size\+\_\+t i)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_aa69248b1e4b6a5f78cf6eb2516895209}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_aa69248b1e4b6a5f78cf6eb2516895209}} 
+{\footnotesize template$<$typename T2 $>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries ref\+\_\+wrap} (T2 \&value)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_abf8a96910f662d30006cfa84f93468d2}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_abf8a96910f662d30006cfa84f93468d2}} 
+{\footnotesize template$<$typename Mem $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries compress} (Mem \&mem, const expr\+\_\+t$<$ T $>$ \&value, const mask\+\_\+t$<$ expr\+\_\+t$<$ T $>$$>$ \&mask)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a125eda5e524a131a2413e4ffffed7ba8}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a125eda5e524a131a2413e4ffffed7ba8}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE T {\bfseries compress} (const T \&value, const mask\+\_\+t$<$ T $>$ \&mask)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a0bd2ce409d265729a6bdfc6a8a524b42}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a0bd2ce409d265729a6bdfc6a8a524b42}} 
+{\footnotesize template$<$typename Src , typename Index , typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE T {\bfseries gather} (const Src \&src, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_ab1a0a056c2bc743ceef71fa40848791c}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_ab1a0a056c2bc743ceef71fa40848791c}} 
+{\footnotesize template$<$typename Dst , typename Index , typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries scatter} (Dst \&dst, const T \&value, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a785492bcd01ae9a768b1c4345a8a8d24}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a785492bcd01ae9a768b1c4345a8a8d24}} 
+{\footnotesize template$<$typename Dst , typename Index , typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries scatter\+\_\+add} (Dst \&dst, const T \&value, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a522534b2711f18713de5e669b1fcd872}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a522534b2711f18713de5e669b1fcd872}} 
+static constexpr bool {\bfseries Is\+Dynamic} = is\+\_\+dynamic\+\_\+v$<$value\+\_\+t$<$T$>$$>$
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a6de6c600d09313be4edfeb8a5a6253c8}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a6de6c600d09313be4edfeb8a5a6253c8}} 
+static constexpr size\+\_\+t {\bfseries Size} = T\+::\+Size
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a2063efd6d66040eea33ca58ec96c91e2}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a2063efd6d66040eea33ca58ec96c91e2}} 
+{\footnotesize template$<$typename T2 , size\+\_\+t... Is$>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries packet} (T2 \&value, size\+\_\+t i, std\+::index\+\_\+sequence$<$ Is... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a453ac4d195d3dc64191c2fca27572b45}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a453ac4d195d3dc64191c2fca27572b45}} 
+{\footnotesize template$<$typename T2 , size\+\_\+t... Is$>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries slice} (T2 \&value, size\+\_\+t i, std\+::index\+\_\+sequence$<$ Is... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a3933b8f1c327800e0741a7d03ceb00a2}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a3933b8f1c327800e0741a7d03ceb00a2}} 
+{\footnotesize template$<$typename T2 , size\+\_\+t... Is$>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries slice\+\_\+ptr} (T2 \&value, size\+\_\+t i, std\+::index\+\_\+sequence$<$ Is... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_af07a060a0b5e3d1e87aa90f634c90c89}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_af07a060a0b5e3d1e87aa90f634c90c89}} 
+{\footnotesize template$<$typename T2 , size\+\_\+t... Is$>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries ref\+\_\+wrap} (T2 \&value, std\+::index\+\_\+sequence$<$ Is... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a9ad4bb0efb55c9ba3bda49060a80cea5}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a9ad4bb0efb55c9ba3bda49060a80cea5}} 
+{\footnotesize template$<$typename Src , typename Index , typename Mask , size\+\_\+t... Is$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE T {\bfseries gather} (const Src \&src, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask, std\+::index\+\_\+sequence$<$ Is... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a90f16ce4ba41b09f745ed26b23299705}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a90f16ce4ba41b09f745ed26b23299705}} 
+{\footnotesize template$<$typename T2 , size\+\_\+t... Is$>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries detach} (T2 \&a, std\+::index\+\_\+sequence$<$ Is... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a02794df7238c9c1b959e81d53f0f5149}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a02794df7238c9c1b959e81d53f0f5149}} 
+{\footnotesize template$<$typename T2 , size\+\_\+t... Is$>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries gradient} (T2 \&a, std\+::index\+\_\+sequence$<$ Is... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_ae8c2c19fbf5fe6c01adf026ce80ffbe3}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_ae8c2c19fbf5fe6c01adf026ce80ffbe3}} 
+{\footnotesize template$<$typename Dst , typename Index , typename Mask , size\+\_\+t... Is$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries scatter} (Dst \&src, const T \&value, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask, std\+::index\+\_\+sequence$<$ Is... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a3aa27cc9d65adb9e9d23121ea5ec3dff}\label{structstruct__support_3_01T_00_01enable__if__static__array__t_3_01T_01_4_01_4_a3aa27cc9d65adb9e9d23121ea5ec3dff}} 
+{\footnotesize template$<$typename Dst , typename Index , typename Mask , size\+\_\+t... Is$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries scatter\+\_\+add} (Dst \&src, const T \&value, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask, std\+::index\+\_\+sequence$<$ Is... $>$)
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array\+\_\+struct.\+h\end{DoxyCompactItemize}

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['texture_514',['Texture',['../classTexture.html#ad75e18c41a307806cec75852d5142b40',1,'Texture']]],
-  ['tick_515',['tick',['../classECS_1_1EntitySystem.html#aa004b7ba46554525538e785c1eb6be40',1,'ECS::EntitySystem::tick()'],['../classECS_1_1World.html#aac33fad54c600dc5e5f477a663ede9c7',1,'ECS::World::tick()']]],
-  ['timer_516',['Timer',['../classTimer.html#a80855c126b8bab779e90e838f7eac562',1,'Timer']]]
+  ['quad_4845',['Quad',['../classQuad.html#ae446d188d645cc5c512336f25d1a697a',1,'Quad']]],
+  ['quaternion_4846',['Quaternion',['../structQuaternion.html#a70dc1788cb7db9abd17e7623f9bb031e',1,'Quaternion']]]
 ];

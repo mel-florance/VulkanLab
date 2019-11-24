@@ -1,0 +1,26 @@
+var structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036 =
+[
+    [ "Array", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#ae50cafc5d34bea31357f0f903a29d0aa", null ],
+    [ "cast_op_type", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a8508add2dda883fb545f1dd99f308f9e", null ],
+    [ "MapType", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a391c5cc0dc508b2437a1eed00373a0cd", null ],
+    [ "props", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a339df14cd281e693445558541f6d8484", null ],
+    [ "Scalar", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#acf1fefc74798e0927ede82bd2e66c563", null ],
+    [ "stride_ctor_default", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a582e431b1d9b7c0d643bb060de910757", null ],
+    [ "stride_ctor_dual", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#ae6f635fa73cdb9e48fa141d352e2aa49", null ],
+    [ "stride_ctor_inner", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a46241b9cd595b7c67a5d481681446aac", null ],
+    [ "stride_ctor_outer", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a49160099eabf649565c68005fd7cd6f9", null ],
+    [ "Type", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a7d126e8cb8878ef9844ac13d82c207c3", null ],
+    [ "data", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#ac686e17571a4ac09c831542b78fb6cef", null ],
+    [ "data", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#af3d840a801c52bbbaf5dd0cbfa5d76ae", null ],
+    [ "load", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a309c5508a42ddc540a20c3e3cb733ba6", null ],
+    [ "make_stride", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a186fb755db57c11960e4445f8d33ac7d", null ],
+    [ "make_stride", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a9d0212ae747fdc92594cadf7195c556c", null ],
+    [ "make_stride", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#aea611aa8a5ce60cc5e22ce1ae21cd337", null ],
+    [ "make_stride", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a44f651aa72e01fa53cc86c7f7b36225a", null ],
+    [ "operator Type &", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#ad827f6b614a298d03de2029da5f56639", null ],
+    [ "operator Type *", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#aa94cbaee52ae9c97fd8186a7c644bb85", null ],
+    [ "copy_or_ref", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#aeb29e7f4753d9b1c826f36f28ceafe41", null ],
+    [ "map", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a2b8f1a1fa46fc8fe628dcebb3abb5dda", null ],
+    [ "need_writeable", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#a7b4b88ea31e3024f45238786dceca5ee", null ],
+    [ "ref", "structtype__caster_3_01Eigen_1_1Ref_3_01PlainObjectType_00_010_00_01StrideType_01_4_00_01enable_3455b8e5aa85b1bf78207500f11d7036.html#af75c463fac3d2a571c400e6366c4e7e5", null ]
+];

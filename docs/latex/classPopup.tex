@@ -1,0 +1,103 @@
+\hypertarget{classPopup}{}\doxysection{Référence de la classe Popup}
+\label{classPopup}\index{Popup@{Popup}}
+
+
+\mbox{\hyperlink{classPopup}{Popup}} window for combo boxes, popup buttons, nested dialogs etc.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/popup.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Popup\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classPopup}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPopup_a30588ec4d329d1848dbad25270dd30be}\label{classPopup_a30588ec4d329d1848dbad25270dd30be}} 
+enum {\bfseries Side} \{ {\bfseries Left} = 0, 
+{\bfseries Right}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPopup_a5c5ff679de62fce7e122f2ec6877981d}\label{classPopup_a5c5ff679de62fce7e122f2ec6877981d}} 
+\mbox{\hyperlink{classPopup_a5c5ff679de62fce7e122f2ec6877981d}{Popup}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, \mbox{\hyperlink{classWindow}{Window}} $\ast$\mbox{\hyperlink{classPopup_a410e96a791ad260d9398eb3f133e0998}{parent\+\_\+window}}=nullptr)
+\begin{DoxyCompactList}\small\item\em Create a new popup parented to a screen (first argument) and a parent window (if applicable) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopup_a3041073367df90ad81625b80219c655c}\label{classPopup_a3041073367df90ad81625b80219c655c}} 
+void \mbox{\hyperlink{classPopup_a3041073367df90ad81625b80219c655c}{set\+\_\+anchor\+\_\+pos}} (const Vector2i \&\mbox{\hyperlink{classPopup_a4a5f66d72ebea666af38666ec66b0fa7}{anchor\+\_\+pos}})
+\begin{DoxyCompactList}\small\item\em Return the anchor position in the parent window; the placement of the popup is relative to it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopup_a4a5f66d72ebea666af38666ec66b0fa7}\label{classPopup_a4a5f66d72ebea666af38666ec66b0fa7}} 
+const Vector2i \& \mbox{\hyperlink{classPopup_a4a5f66d72ebea666af38666ec66b0fa7}{anchor\+\_\+pos}} () const
+\begin{DoxyCompactList}\small\item\em Set the anchor position in the parent window; the placement of the popup is relative to it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopup_a81cf3e84fb0e4ec5a2eb0ed9caec2b2d}\label{classPopup_a81cf3e84fb0e4ec5a2eb0ed9caec2b2d}} 
+void \mbox{\hyperlink{classPopup_a81cf3e84fb0e4ec5a2eb0ed9caec2b2d}{set\+\_\+anchor\+\_\+offset}} (int \mbox{\hyperlink{classPopup_a516878360d7ccafb085b21a6caeae738}{anchor\+\_\+offset}})
+\begin{DoxyCompactList}\small\item\em Set the anchor height; this determines the vertical shift relative to the anchor position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopup_a516878360d7ccafb085b21a6caeae738}\label{classPopup_a516878360d7ccafb085b21a6caeae738}} 
+int \mbox{\hyperlink{classPopup_a516878360d7ccafb085b21a6caeae738}{anchor\+\_\+offset}} () const
+\begin{DoxyCompactList}\small\item\em Return the anchor height; this determines the vertical shift relative to the anchor position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopup_ae78283a8f2f0e85e5d4fb01a9a7f8ee6}\label{classPopup_ae78283a8f2f0e85e5d4fb01a9a7f8ee6}} 
+void \mbox{\hyperlink{classPopup_ae78283a8f2f0e85e5d4fb01a9a7f8ee6}{set\+\_\+anchor\+\_\+size}} (int \mbox{\hyperlink{classPopup_afec8b601dc976b33d3a310ae4a0c0afa}{anchor\+\_\+size}})
+\begin{DoxyCompactList}\small\item\em Set the anchor width. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopup_afec8b601dc976b33d3a310ae4a0c0afa}\label{classPopup_afec8b601dc976b33d3a310ae4a0c0afa}} 
+int \mbox{\hyperlink{classPopup_afec8b601dc976b33d3a310ae4a0c0afa}{anchor\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em Return the anchor width. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopup_a954053fa565782911ba97720abc2d38f}\label{classPopup_a954053fa565782911ba97720abc2d38f}} 
+void \mbox{\hyperlink{classPopup_a954053fa565782911ba97720abc2d38f}{set\+\_\+side}} (Side popup\+\_\+side)
+\begin{DoxyCompactList}\small\item\em Set the side of the parent window at which popup will appear. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopup_ab4c25d97fa6df737c9f3f06139029d17}\label{classPopup_ab4c25d97fa6df737c9f3f06139029d17}} 
+Side \mbox{\hyperlink{classPopup_ab4c25d97fa6df737c9f3f06139029d17}{side}} () const
+\begin{DoxyCompactList}\small\item\em Return the side of the parent window at which popup will appear. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopup_a410e96a791ad260d9398eb3f133e0998}\label{classPopup_a410e96a791ad260d9398eb3f133e0998}} 
+\mbox{\hyperlink{classWindow}{Window}} $\ast$ \mbox{\hyperlink{classPopup_a410e96a791ad260d9398eb3f133e0998}{parent\+\_\+window}} ()
+\begin{DoxyCompactList}\small\item\em Return the parent window of the popup. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopup_a1287512caa1390a454ad80eb443d3618}\label{classPopup_a1287512caa1390a454ad80eb443d3618}} 
+const \mbox{\hyperlink{classWindow}{Window}} $\ast$ \mbox{\hyperlink{classPopup_a1287512caa1390a454ad80eb443d3618}{parent\+\_\+window}} () const
+\begin{DoxyCompactList}\small\item\em Return the parent window of the popup. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopup_a3057d20cabcf12864ba3cc768da50afb}\label{classPopup_a3057d20cabcf12864ba3cc768da50afb}} 
+virtual void \mbox{\hyperlink{classPopup_a3057d20cabcf12864ba3cc768da50afb}{perform\+\_\+layout}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Invoke the associated layout generator to properly place child widgets, if any. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopup_a621256dc125f9c43b89a4e549ac12f56}\label{classPopup_a621256dc125f9c43b89a4e549ac12f56}} 
+virtual void \mbox{\hyperlink{classPopup_a621256dc125f9c43b89a4e549ac12f56}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draw the popup window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPopup_ab8c0e217dd24cc71698d326120b99f6f}\label{classPopup_ab8c0e217dd24cc71698d326120b99f6f}} 
+virtual void \mbox{\hyperlink{classPopup_ab8c0e217dd24cc71698d326120b99f6f}{refresh\+\_\+relative\+\_\+placement}} () override
+\begin{DoxyCompactList}\small\item\em Internal helper function to maintain nested window position values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPopup_a789c7a8ea832977d350668c47311df09}\label{classPopup_a789c7a8ea832977d350668c47311df09}} 
+\mbox{\hyperlink{classWindow}{Window}} $\ast$ {\bfseries m\+\_\+parent\+\_\+window}
+\item 
+\mbox{\Hypertarget{classPopup_a1923de694be08bae9a04bd09cee53fb2}\label{classPopup_a1923de694be08bae9a04bd09cee53fb2}} 
+Vector2i {\bfseries m\+\_\+anchor\+\_\+pos}
+\item 
+\mbox{\Hypertarget{classPopup_a36617c2f02415a8d43a530c65549ef6f}\label{classPopup_a36617c2f02415a8d43a530c65549ef6f}} 
+int {\bfseries m\+\_\+anchor\+\_\+offset}
+\item 
+\mbox{\Hypertarget{classPopup_a78848079b4f5e27f3607c7e1245db708}\label{classPopup_a78848079b4f5e27f3607c7e1245db708}} 
+int {\bfseries m\+\_\+anchor\+\_\+size}
+\item 
+\mbox{\Hypertarget{classPopup_ab8565140f1e860600458ad349d49c12c}\label{classPopup_ab8565140f1e860600458ad349d49c12c}} 
+Side {\bfseries m\+\_\+side}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{classPopup}{Popup}} window for combo boxes, popup buttons, nested dialogs etc. 
+
+Usually the \mbox{\hyperlink{classPopup}{Popup}} instance is constructed by another widget (e.\+g. \mbox{\hyperlink{classPopupButton}{Popup\+Button}}) and does not need to be created by hand. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{popup_8h}{popup.\+h}}\item 
+ext/nanogui/src/popup.\+cpp\end{DoxyCompactItemize}

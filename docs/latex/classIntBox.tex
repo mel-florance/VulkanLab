@@ -1,0 +1,82 @@
+\hypertarget{classIntBox}{}\doxysection{Référence du modèle de la classe Int\+Box$<$ Scalar $>$}
+\label{classIntBox}\index{IntBox$<$ Scalar $>$@{IntBox$<$ Scalar $>$}}
+
+
+\mbox{\hyperlink{structA}{A}} specialization of \mbox{\hyperlink{classTextBox}{Text\+Box}} for representing integral values.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/textbox.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Int\+Box$<$ Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classIntBox}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIntBox_a6bc08b3c258626a7da07f4c0cb4fe767}\label{classIntBox_a6bc08b3c258626a7da07f4c0cb4fe767}} 
+{\bfseries Int\+Box} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, Scalar value=(Scalar) 0)
+\item 
+\mbox{\Hypertarget{classIntBox_a069783c020b91a8da240eb4ffdf3ce83}\label{classIntBox_a069783c020b91a8da240eb4ffdf3ce83}} 
+Scalar {\bfseries value} () const
+\item 
+\mbox{\Hypertarget{classIntBox_a1ea9dc5d8a81452dce176cf656f647fd}\label{classIntBox_a1ea9dc5d8a81452dce176cf656f647fd}} 
+void {\bfseries set\+\_\+value} (Scalar value)
+\item 
+\mbox{\Hypertarget{classIntBox_ab7c6fa67875f01f567f6b919c6179108}\label{classIntBox_ab7c6fa67875f01f567f6b919c6179108}} 
+void {\bfseries set\+\_\+callback} (const std\+::function$<$ void(Scalar)$>$ \&cb)
+\item 
+\mbox{\Hypertarget{classIntBox_ae9b62a8871470d4e895e27a03dcf24be}\label{classIntBox_ae9b62a8871470d4e895e27a03dcf24be}} 
+void {\bfseries set\+\_\+value\+\_\+increment} (Scalar incr)
+\item 
+\mbox{\Hypertarget{classIntBox_ac203160ce732b5bddc0af6c3adb5b95b}\label{classIntBox_ac203160ce732b5bddc0af6c3adb5b95b}} 
+void {\bfseries set\+\_\+min\+\_\+value} (Scalar min\+\_\+value)
+\item 
+\mbox{\Hypertarget{classIntBox_a9f829bf1627d6c7d36c4b05cb89d02b3}\label{classIntBox_a9f829bf1627d6c7d36c4b05cb89d02b3}} 
+void {\bfseries set\+\_\+max\+\_\+value} (Scalar max\+\_\+value)
+\item 
+\mbox{\Hypertarget{classIntBox_aeb759b6b72aa7698a2b752fbeab70e90}\label{classIntBox_aeb759b6b72aa7698a2b752fbeab70e90}} 
+void {\bfseries set\+\_\+min\+\_\+max\+\_\+values} (Scalar min\+\_\+value, Scalar max\+\_\+value)
+\item 
+\mbox{\Hypertarget{classIntBox_ab6cfa5b95a0a55e03cd9bbcecc550d38}\label{classIntBox_ab6cfa5b95a0a55e03cd9bbcecc550d38}} 
+virtual bool \mbox{\hyperlink{classIntBox_ab6cfa5b95a0a55e03cd9bbcecc550d38}{mouse\+\_\+button\+\_\+event}} (const Vector2i \&p, int button, bool down, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse button event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIntBox_a5e89861a408a4d9d7ea5409e94528f48}\label{classIntBox_a5e89861a408a4d9d7ea5409e94528f48}} 
+virtual bool \mbox{\hyperlink{classIntBox_a5e89861a408a4d9d7ea5409e94528f48}{mouse\+\_\+drag\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse drag event (default implementation\+: do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIntBox_a8569f8ee595b70510cc47d031c083112}\label{classIntBox_a8569f8ee595b70510cc47d031c083112}} 
+virtual bool \mbox{\hyperlink{classIntBox_a8569f8ee595b70510cc47d031c083112}{scroll\+\_\+event}} (const Vector2i \&p, const \mbox{\hyperlink{structArray}{Vector2f}} \&rel) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse scroll event (default implementation\+: propagate to children) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIntBox_a684ad53162ee3b876f9789fedb5106ad}\label{classIntBox_a684ad53162ee3b876f9789fedb5106ad}} 
+Scalar {\bfseries m\+\_\+mouse\+\_\+down\+\_\+value}
+\item 
+\mbox{\Hypertarget{classIntBox_af8a50078febae321e7e03b267e646786}\label{classIntBox_af8a50078febae321e7e03b267e646786}} 
+Scalar {\bfseries m\+\_\+value\+\_\+increment}
+\item 
+\mbox{\Hypertarget{classIntBox_ac858c5495e0d1d299771d89204b804d9}\label{classIntBox_ac858c5495e0d1d299771d89204b804d9}} 
+Scalar {\bfseries m\+\_\+min\+\_\+value}
+\item 
+\mbox{\Hypertarget{classIntBox_aba2a8bbfa31da2fb279c3f615afe4f1b}\label{classIntBox_aba2a8bbfa31da2fb279c3f615afe4f1b}} 
+Scalar {\bfseries m\+\_\+max\+\_\+value}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename Scalar$>$\newline
+class Int\+Box$<$ Scalar $>$}
+
+\mbox{\hyperlink{structA}{A}} specialization of \mbox{\hyperlink{classTextBox}{Text\+Box}} for representing integral values. 
+
+Template parameters should be integral types, e.\+g. {\ttfamily int}, {\ttfamily long}, {\ttfamily uint32\+\_\+t}, etc. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{textbox_8h}{textbox.\+h}}\end{DoxyCompactItemize}

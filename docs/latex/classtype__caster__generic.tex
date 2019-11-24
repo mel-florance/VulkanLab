@@ -1,0 +1,75 @@
+\hypertarget{classtype__caster__generic}{}\doxysection{Référence de la classe type\+\_\+caster\+\_\+generic}
+\label{classtype__caster__generic}\index{type\_caster\_generic@{type\_caster\_generic}}
+Graphe d\textquotesingle{}héritage de type\+\_\+caster\+\_\+generic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.440514cm]{classtype__caster__generic}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_a596f9ddd637dc921c7e19a1a8438f0a8}\label{classtype__caster__generic_a596f9ddd637dc921c7e19a1a8438f0a8}} 
+P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE {\bfseries type\+\_\+caster\+\_\+generic} (const std\+::type\+\_\+info \&\mbox{\hyperlink{structtype__info}{type\+\_\+info}})
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_a1d732714e600767de350cb3c6c8bb291}\label{classtype__caster__generic_a1d732714e600767de350cb3c6c8bb291}} 
+{\bfseries type\+\_\+caster\+\_\+generic} (const \mbox{\hyperlink{structtype__info}{type\+\_\+info}} $\ast$typeinfo)
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_aa841c81d370ff23ccafa8507cc01a0b1}\label{classtype__caster__generic_aa841c81d370ff23ccafa8507cc01a0b1}} 
+bool {\bfseries load} (\mbox{\hyperlink{classhandle}{handle}} src, bool convert)
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_ad532f221c703a0b54ccee305988a46d4}\label{classtype__caster__generic_ad532f221c703a0b54ccee305988a46d4}} 
+void {\bfseries load\+\_\+value} (\mbox{\hyperlink{structvalue__and__holder}{value\+\_\+and\+\_\+holder}} \&\&v\+\_\+h)
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_a0a08f0af0579001f749a42d2671fb859}\label{classtype__caster__generic_a0a08f0af0579001f749a42d2671fb859}} 
+bool {\bfseries try\+\_\+implicit\+\_\+casts} (\mbox{\hyperlink{classhandle}{handle}} src, bool convert)
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_a1192cfe91ebc0a78fa912b78a810a39a}\label{classtype__caster__generic_a1192cfe91ebc0a78fa912b78a810a39a}} 
+bool {\bfseries try\+\_\+direct\+\_\+conversions} (\mbox{\hyperlink{classhandle}{handle}} src)
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_ac292948adb39e608d4ad380f3bb24f2c}\label{classtype__caster__generic_ac292948adb39e608d4ad380f3bb24f2c}} 
+void {\bfseries check\+\_\+holder\+\_\+compat} ()
+\item 
+P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{classtype__caster__generic_a9e76e336b90a56185b35d47c34aeecd7}{try\+\_\+load\+\_\+foreign\+\_\+module\+\_\+local}} (\mbox{\hyperlink{classhandle}{handle}} src)
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_a1f07975f281fa5681f6586a04581edd4}\label{classtype__caster__generic_a1f07975f281fa5681f6586a04581edd4}} 
+{\footnotesize template$<$typename ThisT $>$ }\\P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE bool {\bfseries load\+\_\+impl} (\mbox{\hyperlink{classhandle}{handle}} src, bool convert)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_a7256e99988999dc3735dadaf55757b4a}\label{classtype__caster__generic_a7256e99988999dc3735dadaf55757b4a}} 
+static P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast} (const void $\ast$\+\_\+src, return\+\_\+value\+\_\+policy policy, \mbox{\hyperlink{classhandle}{handle}} parent, const detail\+::type\+\_\+info $\ast$tinfo, void $\ast$($\ast$copy\+\_\+constructor)(const void $\ast$), void $\ast$($\ast$move\+\_\+constructor)(const void $\ast$), const void $\ast$existing\+\_\+holder=nullptr)
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_a15be63015f7dc58ae09d57d9aaa71840}\label{classtype__caster__generic_a15be63015f7dc58ae09d57d9aaa71840}} 
+static P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE void $\ast$ {\bfseries local\+\_\+load} (Py\+Object $\ast$src, const \mbox{\hyperlink{structtype__info}{type\+\_\+info}} $\ast$ti)
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_a2f47b7a5edcbc5d26abfb7807baf5139}\label{classtype__caster__generic_a2f47b7a5edcbc5d26abfb7807baf5139}} 
+static P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE std\+::pair$<$ const void $\ast$, const \mbox{\hyperlink{structtype__info}{type\+\_\+info}} $\ast$ $>$ {\bfseries src\+\_\+and\+\_\+type} (const void $\ast$src, const std\+::type\+\_\+info \&cast\+\_\+type, const std\+::type\+\_\+info $\ast$rtti\+\_\+type=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_ae0fcfb286c3f28721b89b077a9e1fe6d}\label{classtype__caster__generic_ae0fcfb286c3f28721b89b077a9e1fe6d}} 
+const \mbox{\hyperlink{structtype__info}{type\+\_\+info}} $\ast$ {\bfseries typeinfo} = nullptr
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_a933477d5828f6dd91375131d4af086ff}\label{classtype__caster__generic_a933477d5828f6dd91375131d4af086ff}} 
+const std\+::type\+\_\+info $\ast$ {\bfseries cpptype} = nullptr
+\item 
+\mbox{\Hypertarget{classtype__caster__generic_a077b8d1e4af829443b2e41c3e5786f4d}\label{classtype__caster__generic_a077b8d1e4af829443b2e41c3e5786f4d}} 
+void $\ast$ {\bfseries value} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classtype__caster__generic_a9e76e336b90a56185b35d47c34aeecd7}\label{classtype__caster__generic_a9e76e336b90a56185b35d47c34aeecd7}} 
+\index{type\_caster\_generic@{type\_caster\_generic}!try\_load\_foreign\_module\_local@{try\_load\_foreign\_module\_local}}
+\index{try\_load\_foreign\_module\_local@{try\_load\_foreign\_module\_local}!type\_caster\_generic@{type\_caster\_generic}}
+\doxysubsubsection{\texorpdfstring{try\_load\_foreign\_module\_local()}{try\_load\_foreign\_module\_local()}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE bool type\+\_\+caster\+\_\+generic\+::try\+\_\+load\+\_\+foreign\+\_\+module\+\_\+local (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhandle}{handle}}}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Try to load with foreign typeinfo, if available. Used when there is no native typeinfo, or when the native one wasn\textquotesingle{}t able to produce a value. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/cast.\+h\end{DoxyCompactItemize}

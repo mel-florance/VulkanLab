@@ -1,0 +1,91 @@
+\hypertarget{classargument__loader}{}\doxysection{Référence du modèle de la classe argument\+\_\+loader$<$ Args $>$}
+\label{classargument__loader}\index{argument\_loader$<$ Args $>$@{argument\_loader$<$ Args $>$}}
+
+
+Helper class which loads arguments for C++ functions called from Python.  
+
+
+
+
+{\ttfamily \#include $<$cast.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classargument__loader_ac5cff5197a03f99f06169af9f43d6537}\label{classargument__loader_ac5cff5197a03f99f06169af9f43d6537}} 
+bool {\bfseries load\+\_\+args} (\mbox{\hyperlink{structfunction__call}{function\+\_\+call}} \&call)
+\item 
+\mbox{\Hypertarget{classargument__loader_a5d84d64cfc5643563f65b0e21310ca6c}\label{classargument__loader_a5d84d64cfc5643563f65b0e21310ca6c}} 
+{\footnotesize template$<$typename Return , typename Guard , typename Func $>$ }\\enable\+\_\+if\+\_\+t$<$!std\+::is\+\_\+void$<$ Return $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}}, Return $>$ {\bfseries call} (Func \&\&f) \&\&
+\item 
+\mbox{\Hypertarget{classargument__loader_a1671b063ca065c47975b4aa7853b403c}\label{classargument__loader_a1671b063ca065c47975b4aa7853b403c}} 
+{\footnotesize template$<$typename Return , typename Guard , typename Func $>$ }\\enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+void$<$ Return $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}}, \mbox{\hyperlink{structvoid__type}{void\+\_\+type}} $>$ {\bfseries call} (Func \&\&f) \&\&
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classargument__loader_aefd489f954b4706554d6c4e7e705617f}\label{classargument__loader_aefd489f954b4706554d6c4e7e705617f}} 
+static constexpr bool {\bfseries has\+\_\+kwargs} = kwargs\+\_\+pos $<$ 0
+\item 
+\mbox{\Hypertarget{classargument__loader_a9436dd2f1d26de4dcfb7e5f7edffef93}\label{classargument__loader_a9436dd2f1d26de4dcfb7e5f7edffef93}} 
+static constexpr bool {\bfseries has\+\_\+args} = args\+\_\+pos $<$ 0
+\item 
+\mbox{\Hypertarget{classargument__loader_a48c33de6037140357b1ba8fd154cff59}\label{classargument__loader_a48c33de6037140357b1ba8fd154cff59}} 
+static constexpr auto {\bfseries arg\+\_\+names} = concat(type\+\_\+descr(\mbox{\hyperlink{classtype__caster}{make\+\_\+caster}}$<$Args$>$\+::\mbox{\hyperlink{structname}{name}})...)
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classargument__loader_a986ee7712a6ab2a9aa87a6b1a5de091e}\label{classargument__loader_a986ee7712a6ab2a9aa87a6b1a5de091e}} 
+using {\bfseries indices} = make\+\_\+index\+\_\+sequence$<$ sizeof...(Args)$>$
+\item 
+\mbox{\Hypertarget{classargument__loader_a76572f7ee75b4c32372ce5f7d1042862}\label{classargument__loader_a76572f7ee75b4c32372ce5f7d1042862}} 
+{\footnotesize template$<$typename Arg $>$ }\\using {\bfseries argument\+\_\+is\+\_\+args} = std\+::is\+\_\+same$<$ intrinsic\+\_\+t$<$ Arg $>$, \mbox{\hyperlink{classargs}{args}} $>$
+\item 
+\mbox{\Hypertarget{classargument__loader_abc37fc86f897e620ab7013d80797ad94}\label{classargument__loader_abc37fc86f897e620ab7013d80797ad94}} 
+{\footnotesize template$<$typename Arg $>$ }\\using {\bfseries argument\+\_\+is\+\_\+kwargs} = std\+::is\+\_\+same$<$ intrinsic\+\_\+t$<$ Arg $>$, \mbox{\hyperlink{classkwargs}{kwargs}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classargument__loader_a1bd02f5a72913ab5b0b1e5fbf4e5eede}\label{classargument__loader_a1bd02f5a72913ab5b0b1e5fbf4e5eede}} 
+{\footnotesize template$<$size\+\_\+t... Is$>$ }\\bool {\bfseries load\+\_\+impl\+\_\+sequence} (\mbox{\hyperlink{structfunction__call}{function\+\_\+call}} \&call, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Is... $>$)
+\item 
+\mbox{\Hypertarget{classargument__loader_a8c7e0501491eb186e86b1713f47177b0}\label{classargument__loader_a8c7e0501491eb186e86b1713f47177b0}} 
+{\footnotesize template$<$typename Return , typename Func , size\+\_\+t... Is, typename Guard $>$ }\\Return {\bfseries call\+\_\+impl} (Func \&\&f, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Is... $>$, Guard \&\&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classargument__loader_a847cfcbb6d6d0a145f6efa534bc365cc}\label{classargument__loader_a847cfcbb6d6d0a145f6efa534bc365cc}} 
+static bool {\bfseries load\+\_\+impl\+\_\+sequence} (\mbox{\hyperlink{structfunction__call}{function\+\_\+call}} \&, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$$>$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classargument__loader_a6407a173182c5bb8a3edc757690e8437}\label{classargument__loader_a6407a173182c5bb8a3edc757690e8437}} 
+std\+::tuple$<$ \mbox{\hyperlink{classtype__caster}{make\+\_\+caster}}$<$ Args $>$... $>$ {\bfseries argcasters}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classargument__loader_a284643dafad9d0b0bc558ad6c6811fd5}\label{classargument__loader_a284643dafad9d0b0bc558ad6c6811fd5}} 
+static constexpr auto {\bfseries args\+\_\+pos} = constexpr\+\_\+first$<$argument\+\_\+is\+\_\+args, Args...$>$() -\/ (int) sizeof...(Args)
+\item 
+\mbox{\Hypertarget{classargument__loader_a498bd813bd22efca13e6aab2191408c0}\label{classargument__loader_a498bd813bd22efca13e6aab2191408c0}} 
+static constexpr auto {\bfseries kwargs\+\_\+pos} = constexpr\+\_\+first$<$argument\+\_\+is\+\_\+kwargs, Args...$>$() -\/ (int) sizeof...(Args)
+\item 
+\mbox{\Hypertarget{classargument__loader_a985850612f7b99d46f96166b000dfdc3}\label{classargument__loader_a985850612f7b99d46f96166b000dfdc3}} 
+static constexpr bool {\bfseries args\+\_\+kwargs\+\_\+are\+\_\+last} = kwargs\+\_\+pos $>$= -\/ 1 \&\& args\+\_\+pos $>$= kwargs\+\_\+pos -\/ 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename... Args$>$\newline
+class argument\+\_\+loader$<$ Args $>$}
+
+Helper class which loads arguments for C++ functions called from Python. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/cast.\+h\end{DoxyCompactItemize}

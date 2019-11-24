@@ -1,0 +1,52 @@
+\hypertarget{classmulti__array__iterator}{}\doxysection{Référence du modèle de la classe multi\+\_\+array\+\_\+iterator$<$ N $>$}
+\label{classmulti__array__iterator}\index{multi\_array\_iterator$<$ N $>$@{multi\_array\_iterator$<$ N $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmulti__array__iterator_acae334d3b88a49fe7301a79d04a02563}\label{classmulti__array__iterator_acae334d3b88a49fe7301a79d04a02563}} 
+using {\bfseries container\+\_\+type} = std\+::vector$<$ ssize\+\_\+t $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmulti__array__iterator_a658a64d1b635a6e581fc606913490dec}\label{classmulti__array__iterator_a658a64d1b635a6e581fc606913490dec}} 
+{\bfseries multi\+\_\+array\+\_\+iterator} (const std\+::array$<$ \mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}}, N $>$ \&buffers, const container\+\_\+type \&shape)
+\item 
+\mbox{\Hypertarget{classmulti__array__iterator_a7e20dd4a6014bf9d69995f6e8825ee90}\label{classmulti__array__iterator_a7e20dd4a6014bf9d69995f6e8825ee90}} 
+\mbox{\hyperlink{classmulti__array__iterator}{multi\+\_\+array\+\_\+iterator}} \& {\bfseries operator++} ()
+\item 
+\mbox{\Hypertarget{classmulti__array__iterator_aae21619a2f9dc2b336a9228039294d83}\label{classmulti__array__iterator_aae21619a2f9dc2b336a9228039294d83}} 
+{\footnotesize template$<$size\+\_\+t K, class T  = void$>$ }\\T $\ast$ {\bfseries data} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmulti__array__iterator_a2740d33901dfd375f6658a3bcd20204c}\label{classmulti__array__iterator_a2740d33901dfd375f6658a3bcd20204c}} 
+using {\bfseries common\+\_\+iter} = \mbox{\hyperlink{classcommon__iterator}{common\+\_\+iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmulti__array__iterator_a85c8a4dc414d59349b386b2be869ab94}\label{classmulti__array__iterator_a85c8a4dc414d59349b386b2be869ab94}} 
+void {\bfseries init\+\_\+common\+\_\+iterator} (const \mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}} \&\mbox{\hyperlink{classbuffer}{buffer}}, const container\+\_\+type \&shape, \mbox{\hyperlink{classcommon__iterator}{common\+\_\+iter}} \&\mbox{\hyperlink{classiterator}{iterator}}, container\+\_\+type \&strides)
+\item 
+\mbox{\Hypertarget{classmulti__array__iterator_a09ca65425b0f55aa190b0699d056b1b5}\label{classmulti__array__iterator_a09ca65425b0f55aa190b0699d056b1b5}} 
+void {\bfseries increment\+\_\+common\+\_\+iterator} (size\+\_\+t dim)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmulti__array__iterator_afeae6cd1d456858edbf02f635b9f65bd}\label{classmulti__array__iterator_afeae6cd1d456858edbf02f635b9f65bd}} 
+container\+\_\+type {\bfseries m\+\_\+shape}
+\item 
+\mbox{\Hypertarget{classmulti__array__iterator_a20308e15031d4cd3e2fd623599a1b867}\label{classmulti__array__iterator_a20308e15031d4cd3e2fd623599a1b867}} 
+container\+\_\+type {\bfseries m\+\_\+index}
+\item 
+\mbox{\Hypertarget{classmulti__array__iterator_a92b49c0747956eebc969cd59530d5df1}\label{classmulti__array__iterator_a92b49c0747956eebc969cd59530d5df1}} 
+std\+::array$<$ \mbox{\hyperlink{classcommon__iterator}{common\+\_\+iter}}, N $>$ {\bfseries m\+\_\+common\+\_\+iterator}
+\end{DoxyCompactItemize}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/numpy.\+h\end{DoxyCompactItemize}

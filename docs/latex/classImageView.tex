@@ -1,0 +1,120 @@
+\hypertarget{classImageView}{}\doxysection{Référence de la classe Image\+View}
+\label{classImageView}\index{ImageView@{ImageView}}
+
+
+\mbox{\hyperlink{structA}{A}} widget for displaying, panning, and zooming images. Numerical R\+G\+BA pixel information is shown at large magnifications.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/imageview.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Image\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classImageView}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classImageView_a2dd05235d30b94a482cc31e6ec474882}\label{classImageView_a2dd05235d30b94a482cc31e6ec474882}} 
+using {\bfseries Pixel\+Callback} = std\+::function$<$ void(const Vector2i \&, char $\ast$$\ast$, size\+\_\+t)$>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classImageView_af4897acdf65686d338dcca9331f062ef}\label{classImageView_af4897acdf65686d338dcca9331f062ef}} 
+\mbox{\hyperlink{classImageView_af4897acdf65686d338dcca9331f062ef}{Image\+View}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}})
+\begin{DoxyCompactList}\small\item\em Initialize the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_a72f9475733d5879208060c178bec8649}\label{classImageView_a72f9475733d5879208060c178bec8649}} 
+\mbox{\hyperlink{classTexture}{Texture}} $\ast$ \mbox{\hyperlink{classImageView_a72f9475733d5879208060c178bec8649}{image}} ()
+\begin{DoxyCompactList}\small\item\em Return the currently active image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_a6c9b38386d63a120dac831ef71889c8f}\label{classImageView_a6c9b38386d63a120dac831ef71889c8f}} 
+const \mbox{\hyperlink{classTexture}{Texture}} $\ast$ \mbox{\hyperlink{classImageView_a6c9b38386d63a120dac831ef71889c8f}{image}} () const
+\begin{DoxyCompactList}\small\item\em Return the currently active image (const version) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_ad1a18e90903dc916e022c2c544344fd5}\label{classImageView_ad1a18e90903dc916e022c2c544344fd5}} 
+void \mbox{\hyperlink{classImageView_ad1a18e90903dc916e022c2c544344fd5}{set\+\_\+image}} (\mbox{\hyperlink{classTexture}{Texture}} $\ast$\mbox{\hyperlink{classImageView_a72f9475733d5879208060c178bec8649}{image}})
+\begin{DoxyCompactList}\small\item\em Set the currently active image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_ae22b95ab508ced4d2f330fa189067471}\label{classImageView_ae22b95ab508ced4d2f330fa189067471}} 
+void \mbox{\hyperlink{classImageView_ae22b95ab508ced4d2f330fa189067471}{center}} ()
+\begin{DoxyCompactList}\small\item\em Center the image on the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_ab5b82ac6272bd2a7f6d020d5792834d4}\label{classImageView_ab5b82ac6272bd2a7f6d020d5792834d4}} 
+void \mbox{\hyperlink{classImageView_ab5b82ac6272bd2a7f6d020d5792834d4}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Center the image on the screen and set the scale to 1\+:1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_af60163d74bcc917826628c775071a94c}\label{classImageView_af60163d74bcc917826628c775071a94c}} 
+void \mbox{\hyperlink{classImageView_af60163d74bcc917826628c775071a94c}{set\+\_\+pixel\+\_\+callback}} (const Pixel\+Callback \&\mbox{\hyperlink{classImageView_a23304fa239bcf098381f386ee2308752}{pixel\+\_\+callback}})
+\begin{DoxyCompactList}\small\item\em Set the callback that is used to acquire information about pixel components. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_a23304fa239bcf098381f386ee2308752}\label{classImageView_a23304fa239bcf098381f386ee2308752}} 
+const Pixel\+Callback \& \mbox{\hyperlink{classImageView_a23304fa239bcf098381f386ee2308752}{pixel\+\_\+callback}} () const
+\begin{DoxyCompactList}\small\item\em Return the callback that is used to acquire information about pixel components. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_a64acf0dfae7a94b3cd194b420362686a}\label{classImageView_a64acf0dfae7a94b3cd194b420362686a}} 
+\mbox{\hyperlink{structArray}{Vector2f}} \mbox{\hyperlink{classImageView_a64acf0dfae7a94b3cd194b420362686a}{offset}} () const
+\begin{DoxyCompactList}\small\item\em Return the pixel offset of the zoomed image rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_a5fb33d48e627a347fb5a627c820b4537}\label{classImageView_a5fb33d48e627a347fb5a627c820b4537}} 
+void \mbox{\hyperlink{classImageView_a5fb33d48e627a347fb5a627c820b4537}{set\+\_\+offset}} (const \mbox{\hyperlink{structArray}{Vector2f}} \&\mbox{\hyperlink{classImageView_a64acf0dfae7a94b3cd194b420362686a}{offset}})
+\begin{DoxyCompactList}\small\item\em Set the pixel offset of the zoomed image rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_a4360b616fb413e5d3efd3e9e826d2eea}\label{classImageView_a4360b616fb413e5d3efd3e9e826d2eea}} 
+float \mbox{\hyperlink{classImageView_a4360b616fb413e5d3efd3e9e826d2eea}{scale}} () const
+\begin{DoxyCompactList}\small\item\em Return the current magnification of the image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_a612fef9051d40650aa362fc9d0312cee}\label{classImageView_a612fef9051d40650aa362fc9d0312cee}} 
+void \mbox{\hyperlink{classImageView_a612fef9051d40650aa362fc9d0312cee}{set\+\_\+scale}} (float \mbox{\hyperlink{classImageView_a4360b616fb413e5d3efd3e9e826d2eea}{scale}})
+\begin{DoxyCompactList}\small\item\em Set the current magnification of the image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_adc72cccdb019b15bc6b9a5bc0336bc41}\label{classImageView_adc72cccdb019b15bc6b9a5bc0336bc41}} 
+\mbox{\hyperlink{structArray}{Vector2f}} \mbox{\hyperlink{classImageView_adc72cccdb019b15bc6b9a5bc0336bc41}{pos\+\_\+to\+\_\+pixel}} (const \mbox{\hyperlink{structArray}{Vector2f}} \&p) const
+\begin{DoxyCompactList}\small\item\em Convert a position within the widget to a pixel position in the image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_a9e8047a3ed4bcfa83f1d9dc42b81f753}\label{classImageView_a9e8047a3ed4bcfa83f1d9dc42b81f753}} 
+\mbox{\hyperlink{structArray}{Vector2f}} \mbox{\hyperlink{classImageView_a9e8047a3ed4bcfa83f1d9dc42b81f753}{pixel\+\_\+to\+\_\+pos}} (const \mbox{\hyperlink{structArray}{Vector2f}} \&p) const
+\begin{DoxyCompactList}\small\item\em Convert a pixel position in the image to a position within the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_a22f3b5b23f61955c3c519d5296560464}\label{classImageView_a22f3b5b23f61955c3c519d5296560464}} 
+virtual bool \mbox{\hyperlink{classImageView_a22f3b5b23f61955c3c519d5296560464}{keyboard\+\_\+event}} (int key, int scancode, int action, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a keyboard event (default implementation\+: do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_a3391a39d485cb621704c99a3d593e4fa}\label{classImageView_a3391a39d485cb621704c99a3d593e4fa}} 
+virtual bool \mbox{\hyperlink{classImageView_a3391a39d485cb621704c99a3d593e4fa}{mouse\+\_\+drag\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse drag event (default implementation\+: do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_ab44ad67aa3fc2635054d844eddd220e6}\label{classImageView_ab44ad67aa3fc2635054d844eddd220e6}} 
+virtual bool \mbox{\hyperlink{classImageView_ab44ad67aa3fc2635054d844eddd220e6}{scroll\+\_\+event}} (const Vector2i \&p, const \mbox{\hyperlink{structArray}{Vector2f}} \&rel) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse scroll event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_ac0d3e880e8dff3353fc08f021bebf364}\label{classImageView_ac0d3e880e8dff3353fc08f021bebf364}} 
+virtual void \mbox{\hyperlink{classImageView_ac0d3e880e8dff3353fc08f021bebf364}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draw the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImageView_a3dc0ad3b34c443ee1d0d6b8724f4356d}\label{classImageView_a3dc0ad3b34c443ee1d0d6b8724f4356d}} 
+virtual void \mbox{\hyperlink{classImageView_a3dc0ad3b34c443ee1d0d6b8724f4356d}{draw\+\_\+contents}} () override
+\begin{DoxyCompactList}\small\item\em Draw the widget contents. Override this method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classImageView_a29c1cb202c709308a9b768a0f79976f6}\label{classImageView_a29c1cb202c709308a9b768a0f79976f6}} 
+nanogui\+::ref$<$ \mbox{\hyperlink{classShader}{Shader}} $>$ {\bfseries m\+\_\+image\+\_\+shader}
+\item 
+\mbox{\Hypertarget{classImageView_a86d8b9d11465e32401d761082db846f4}\label{classImageView_a86d8b9d11465e32401d761082db846f4}} 
+nanogui\+::ref$<$ \mbox{\hyperlink{classTexture}{Texture}} $>$ {\bfseries m\+\_\+image}
+\item 
+\mbox{\Hypertarget{classImageView_a3d1381808d92e1edce14fd2c4c1d297b}\label{classImageView_a3d1381808d92e1edce14fd2c4c1d297b}} 
+float {\bfseries m\+\_\+scale} = 0
+\item 
+\mbox{\Hypertarget{classImageView_a32e1b25cc582cc366f51020ae7c1ab7e}\label{classImageView_a32e1b25cc582cc366f51020ae7c1ab7e}} 
+\mbox{\hyperlink{structArray}{Vector2f}} {\bfseries m\+\_\+offset} = 0
+\item 
+\mbox{\Hypertarget{classImageView_a883cb3738f597ab6422b145473685ddc}\label{classImageView_a883cb3738f597ab6422b145473685ddc}} 
+bool {\bfseries m\+\_\+draw\+\_\+image\+\_\+border}
+\item 
+\mbox{\Hypertarget{classImageView_a0d7a304fd770e80a980a221e11acb588}\label{classImageView_a0d7a304fd770e80a980a221e11acb588}} 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries m\+\_\+image\+\_\+border\+\_\+color}
+\item 
+\mbox{\Hypertarget{classImageView_a0cc8e4c726bfd0a6073e12de892c1f4c}\label{classImageView_a0cc8e4c726bfd0a6073e12de892c1f4c}} 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries m\+\_\+image\+\_\+background\+\_\+color}
+\item 
+\mbox{\Hypertarget{classImageView_acf6d02065d50306a0e80d6216d402fac}\label{classImageView_acf6d02065d50306a0e80d6216d402fac}} 
+Pixel\+Callback {\bfseries m\+\_\+pixel\+\_\+callback}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{structA}{A}} widget for displaying, panning, and zooming images. Numerical R\+G\+BA pixel information is shown at large magnifications. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{imageview_8h}{imageview.\+h}}\item 
+ext/nanogui/src/imageview.\+cpp\end{DoxyCompactItemize}

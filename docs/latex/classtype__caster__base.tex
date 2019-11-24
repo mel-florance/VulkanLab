@@ -1,0 +1,98 @@
+\hypertarget{classtype__caster__base}{}\doxysection{Référence du modèle de la classe type\+\_\+caster\+\_\+base$<$ type $>$}
+\label{classtype__caster__base}\index{type\_caster\_base$<$ type $>$@{type\_caster\_base$<$ type $>$}}
+
+
+Generic type caster for objects stored on the heap.  
+
+
+
+
+{\ttfamily \#include $<$cast.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de type\+\_\+caster\+\_\+base$<$ type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.992882cm]{classtype__caster__base}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster__base_aaa39552464f51c50eec989142f3568a5}\label{classtype__caster__base_aaa39552464f51c50eec989142f3568a5}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries cast\+\_\+op\+\_\+type} = detail\+::cast\+\_\+op\+\_\+type$<$ T $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster__base_af4a4330eee584b6dbd6f081989e3ac3b}\label{classtype__caster__base_af4a4330eee584b6dbd6f081989e3ac3b}} 
+{\bfseries type\+\_\+caster\+\_\+base} (const std\+::type\+\_\+info \&info)
+\item 
+\mbox{\Hypertarget{classtype__caster__base_a85b59a4a11dff7fe2a8c57212f3da388}\label{classtype__caster__base_a85b59a4a11dff7fe2a8c57212f3da388}} 
+{\bfseries operator itype $\ast$} ()
+\item 
+\mbox{\Hypertarget{classtype__caster__base_a4d96130f31bfce209074d07e7adfd5dd}\label{classtype__caster__base_a4d96130f31bfce209074d07e7adfd5dd}} 
+{\bfseries operator itype \&} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster__base_acd5bd2fafc86fb3160c7955bfc2f88de}\label{classtype__caster__base_acd5bd2fafc86fb3160c7955bfc2f88de}} 
+static \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast} (const itype \&src, return\+\_\+value\+\_\+policy policy, \mbox{\hyperlink{classhandle}{handle}} parent)
+\item 
+\mbox{\Hypertarget{classtype__caster__base_abd0cc8e51c0882bb1b81710745295811}\label{classtype__caster__base_abd0cc8e51c0882bb1b81710745295811}} 
+static \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast} (itype \&\&src, return\+\_\+value\+\_\+policy, \mbox{\hyperlink{classhandle}{handle}} parent)
+\item 
+\mbox{\Hypertarget{classtype__caster__base_ad5559aeb9ea8d133f3a62ca22b4a1ae5}\label{classtype__caster__base_ad5559aeb9ea8d133f3a62ca22b4a1ae5}} 
+static std\+::pair$<$ const void $\ast$, const \mbox{\hyperlink{structtype__info}{type\+\_\+info}} $\ast$ $>$ {\bfseries src\+\_\+and\+\_\+type} (const itype $\ast$src)
+\item 
+\mbox{\Hypertarget{classtype__caster__base_a0fa8012ef36eabd7993fdd3adb4fbf92}\label{classtype__caster__base_a0fa8012ef36eabd7993fdd3adb4fbf92}} 
+static \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast} (const itype $\ast$src, return\+\_\+value\+\_\+policy policy, \mbox{\hyperlink{classhandle}{handle}} parent)
+\item 
+\mbox{\Hypertarget{classtype__caster__base_a0754eb4fb420f51d5e38a99c9b2e725e}\label{classtype__caster__base_a0754eb4fb420f51d5e38a99c9b2e725e}} 
+static \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast\+\_\+holder} (const itype $\ast$src, const void $\ast$holder)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster__base_a1287a0b427306b31949df84e062373ba}\label{classtype__caster__base_a1287a0b427306b31949df84e062373ba}} 
+static constexpr auto {\bfseries name} = \+\_\+$<$type$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Types protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster__base_ab5020d71e0fb1d9e827af0f280c575ac}\label{classtype__caster__base_ab5020d71e0fb1d9e827af0f280c575ac}} 
+using {\bfseries Constructor} = void $\ast$($\ast$)(const void $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster__base_a369831bdda16afdc431102e26553aa66}\label{classtype__caster__base_a369831bdda16afdc431102e26553aa66}} 
+{\footnotesize template$<$typename T , typename  = enable\+\_\+if\+\_\+t$<$is\+\_\+copy\+\_\+constructible$<$\+T$>$\+::value$>$$>$ }\\static auto {\bfseries make\+\_\+copy\+\_\+constructor} (const T $\ast$x) -\/$>$ decltype(new T($\ast$x), Constructor
+\item 
+\mbox{\Hypertarget{classtype__caster__base_a0a667ee7f1da87bf7efd2b75d5108975}\label{classtype__caster__base_a0a667ee7f1da87bf7efd2b75d5108975}} 
+{\footnotesize template$<$typename T , typename  = enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+move\+\_\+constructible$<$\+T$>$\+::value$>$$>$ }\\static auto {\bfseries make\+\_\+move\+\_\+constructor} (const T $\ast$x) -\/$>$ decltype(new T(std\+::move($\ast$const\+\_\+cast$<$ T $\ast$ $>$(x))), Constructor
+\item 
+\mbox{\Hypertarget{classtype__caster__base_a8d096e63217768f54daacdfc1cfb4b22}\label{classtype__caster__base_a8d096e63217768f54daacdfc1cfb4b22}} 
+static Constructor {\bfseries make\+\_\+copy\+\_\+constructor} (...)
+\item 
+\mbox{\Hypertarget{classtype__caster__base_a24699183cc7c1c07c2a3de7674ca7419}\label{classtype__caster__base_a24699183cc7c1c07c2a3de7674ca7419}} 
+static Constructor {\bfseries make\+\_\+move\+\_\+constructor} (...)
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtype__caster__base_acae382b915569ed097e3e9714c93cfd0}\label{classtype__caster__base_acae382b915569ed097e3e9714c93cfd0}} 
+using {\bfseries itype} = intrinsic\+\_\+t$<$ type $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename type$>$\newline
+class type\+\_\+caster\+\_\+base$<$ type $>$}
+
+Generic type caster for objects stored on the heap. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/cast.\+h\end{DoxyCompactItemize}

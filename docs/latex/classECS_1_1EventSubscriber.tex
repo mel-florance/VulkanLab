@@ -1,29 +1,29 @@
-\hypertarget{classECS_1_1EventSubscriber}{}\doxysection{E\+CS\+::Event\+Subscriber$<$ T $>$ Class Template Reference}
+\hypertarget{classECS_1_1EventSubscriber}{}\doxysection{Référence du modèle de la classe E\+CS\+::Event\+Subscriber$<$ T $>$}
 \label{classECS_1_1EventSubscriber}\index{ECS::EventSubscriber$<$ T $>$@{ECS::EventSubscriber$<$ T $>$}}
 
 
 {\ttfamily \#include $<$E\+C\+S.\+h$>$}
 
-Inheritance diagram for E\+CS\+::Event\+Subscriber$<$ T $>$\+:\begin{figure}[H]
+Graphe d\textquotesingle{}héritage de E\+CS\+::Event\+Subscriber$<$ T $>$\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classECS_1_1EventSubscriber}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{classECS_1_1EventSubscriber_a4de8a075a0e50b4096ffaf7f7f5cd93e}{receive}} (\mbox{\hyperlink{classECS_1_1World}{World}} $\ast$world, const T \&event)=0
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\doxysubsection{Description détaillée}
 \subsubsection*{template$<$typename T$>$\newline
 class E\+C\+S\+::\+Event\+Subscriber$<$ T $>$}
 
 Subclass this as Event\+Subscriber$<$\+Event\+Type$>$ and then call \mbox{\hyperlink{classECS_1_1World_aa2db19a953f848953be9d16f9179baef}{World\+::subscribe()}} in order to subscribe to events. Make sure to call \mbox{\hyperlink{classECS_1_1World_ac1b90014c228b00b59eaf7dade6c66b7}{World\+::unsubscribe()}} or \mbox{\hyperlink{classECS_1_1World_a6ad62e75db172d6a57a1bdcd434fa782}{World\+::unsubscribe\+All()}} when your subscriber is deleted! 
 
-\doxysubsection{Member Function Documentation}
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classECS_1_1EventSubscriber_a4de8a075a0e50b4096ffaf7f7f5cd93e}\label{classECS_1_1EventSubscriber_a4de8a075a0e50b4096ffaf7f7f5cd93e}} 
 \index{ECS::EventSubscriber$<$ T $>$@{ECS::EventSubscriber$<$ T $>$}!receive@{receive}}
 \index{receive@{receive}!ECS::EventSubscriber$<$ T $>$@{ECS::EventSubscriber$<$ T $>$}}
@@ -33,10 +33,10 @@ virtual void \mbox{\hyperlink{classECS_1_1EventSubscriber}{E\+C\+S\+::\+Event\+S
 
 Called when an event is emitted by the world. 
 
-Implemented in \mbox{\hyperlink{classTestSystem_a446cdd024d781b2f626dafad39e24368}{Test\+System}}, \mbox{\hyperlink{classTestSystem_a7fc850f879ce2cdfdb69a93aa17b6588}{Test\+System}}, \mbox{\hyperlink{classTestSystem_aa4389bba918269c018b25c3c6e916eba}{Test\+System}}, and \mbox{\hyperlink{classTestSystem_ad90426a000847d27c190948148feeaf9}{Test\+System}}.
+Implémenté dans \mbox{\hyperlink{classTestSystem_a446cdd024d781b2f626dafad39e24368}{Test\+System}}, \mbox{\hyperlink{classTestSystem_a7fc850f879ce2cdfdb69a93aa17b6588}{Test\+System}}, \mbox{\hyperlink{classTestSystem_aa4389bba918269c018b25c3c6e916eba}{Test\+System}}, et \mbox{\hyperlink{classTestSystem_ad90426a000847d27c190948148feeaf9}{Test\+System}}.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
 \item 
 Engine/src/\+E\+C\+S/E\+C\+S.\+h\end{DoxyCompactItemize}

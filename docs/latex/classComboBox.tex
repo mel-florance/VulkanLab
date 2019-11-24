@@ -1,0 +1,87 @@
+\hypertarget{classComboBox}{}\doxysection{Référence de la classe Combo\+Box}
+\label{classComboBox}\index{ComboBox@{ComboBox}}
+
+
+Simple combo box widget based on a popup button.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/combobox.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Combo\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classComboBox}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComboBox_a0e8d223d6003dedd88aa3a53a01334c1}\label{classComboBox_a0e8d223d6003dedd88aa3a53a01334c1}} 
+\mbox{\hyperlink{classComboBox_a0e8d223d6003dedd88aa3a53a01334c1}{Combo\+Box}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}})
+\begin{DoxyCompactList}\small\item\em Create an empty combo box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_af7c170de9d48625ec51584dbf2e71ad9}\label{classComboBox_af7c170de9d48625ec51584dbf2e71ad9}} 
+\mbox{\hyperlink{classComboBox_af7c170de9d48625ec51584dbf2e71ad9}{Combo\+Box}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, const std\+::vector$<$ std\+::string $>$ \&\mbox{\hyperlink{classComboBox_a2f047d68391be3139d1a289b54f7c641}{items}})
+\begin{DoxyCompactList}\small\item\em Create a new combo box with the given items. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_ae30979468d506c19795eb10db1ea8c26}\label{classComboBox_ae30979468d506c19795eb10db1ea8c26}} 
+\mbox{\hyperlink{classComboBox_ae30979468d506c19795eb10db1ea8c26}{Combo\+Box}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, const std\+::vector$<$ std\+::string $>$ \&\mbox{\hyperlink{classComboBox_a2f047d68391be3139d1a289b54f7c641}{items}}, const std\+::vector$<$ std\+::string $>$ \&\mbox{\hyperlink{classComboBox_a6a9b482d8dc5d6a6738786dd3c40eddf}{items\+\_\+short}})
+\begin{DoxyCompactList}\small\item\em Create a new combo box with the given items, providing both short and long descriptive labels for each item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_a817c39e60a371e5e67ae66b909708958}\label{classComboBox_a817c39e60a371e5e67ae66b909708958}} 
+int \mbox{\hyperlink{classComboBox_a817c39e60a371e5e67ae66b909708958}{selected\+\_\+index}} () const
+\begin{DoxyCompactList}\small\item\em The current index this \mbox{\hyperlink{classComboBox}{Combo\+Box}} has selected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_a238e67d51c34427acb2338159a8216cd}\label{classComboBox_a238e67d51c34427acb2338159a8216cd}} 
+void \mbox{\hyperlink{classComboBox_a238e67d51c34427acb2338159a8216cd}{set\+\_\+selected\+\_\+index}} (int idx)
+\begin{DoxyCompactList}\small\item\em Sets the current index this \mbox{\hyperlink{classComboBox}{Combo\+Box}} has selected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_a81a1687b3940cf299c1c1a6e26b79c58}\label{classComboBox_a81a1687b3940cf299c1c1a6e26b79c58}} 
+std\+::function$<$ void(int)$>$ \mbox{\hyperlink{classComboBox_a81a1687b3940cf299c1c1a6e26b79c58}{callback}} () const
+\begin{DoxyCompactList}\small\item\em The callback to execute for this \mbox{\hyperlink{classComboBox}{Combo\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_ae6816f1cf3acdebc03609305fb118d9d}\label{classComboBox_ae6816f1cf3acdebc03609305fb118d9d}} 
+void \mbox{\hyperlink{classComboBox_ae6816f1cf3acdebc03609305fb118d9d}{set\+\_\+callback}} (const std\+::function$<$ void(int)$>$ \&\mbox{\hyperlink{classComboBox_a81a1687b3940cf299c1c1a6e26b79c58}{callback}})
+\begin{DoxyCompactList}\small\item\em Sets the callback to execute for this \mbox{\hyperlink{classComboBox}{Combo\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_aa7e8dbc04be50314e28c71645a69d9c4}\label{classComboBox_aa7e8dbc04be50314e28c71645a69d9c4}} 
+void \mbox{\hyperlink{classComboBox_aa7e8dbc04be50314e28c71645a69d9c4}{set\+\_\+items}} (const std\+::vector$<$ std\+::string $>$ \&\mbox{\hyperlink{classComboBox_a2f047d68391be3139d1a289b54f7c641}{items}}, const std\+::vector$<$ std\+::string $>$ \&\mbox{\hyperlink{classComboBox_a6a9b482d8dc5d6a6738786dd3c40eddf}{items\+\_\+short}})
+\begin{DoxyCompactList}\small\item\em Sets the items for this \mbox{\hyperlink{classComboBox}{Combo\+Box}}, providing both short and long descriptive lables for each item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_a7f1055d4b8ec3f0b52c7f59e48c01942}\label{classComboBox_a7f1055d4b8ec3f0b52c7f59e48c01942}} 
+void \mbox{\hyperlink{classComboBox_a7f1055d4b8ec3f0b52c7f59e48c01942}{set\+\_\+items}} (const std\+::vector$<$ std\+::string $>$ \&\mbox{\hyperlink{classComboBox_a2f047d68391be3139d1a289b54f7c641}{items}})
+\begin{DoxyCompactList}\small\item\em Sets the items for this \mbox{\hyperlink{classComboBox}{Combo\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_a2f047d68391be3139d1a289b54f7c641}\label{classComboBox_a2f047d68391be3139d1a289b54f7c641}} 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classComboBox_a2f047d68391be3139d1a289b54f7c641}{items}} () const
+\begin{DoxyCompactList}\small\item\em The items associated with this \mbox{\hyperlink{classComboBox}{Combo\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_a6a9b482d8dc5d6a6738786dd3c40eddf}\label{classComboBox_a6a9b482d8dc5d6a6738786dd3c40eddf}} 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classComboBox_a6a9b482d8dc5d6a6738786dd3c40eddf}{items\+\_\+short}} () const
+\begin{DoxyCompactList}\small\item\em The short descriptions associated with this \mbox{\hyperlink{classComboBox}{Combo\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_aec46449d403a160e8b109a098b3920e1}\label{classComboBox_aec46449d403a160e8b109a098b3920e1}} 
+virtual bool \mbox{\hyperlink{classComboBox_aec46449d403a160e8b109a098b3920e1}{scroll\+\_\+event}} (const Vector2i \&p, const \mbox{\hyperlink{structArray}{Vector2f}} \&rel) override
+\begin{DoxyCompactList}\small\item\em Handles mouse scrolling events for this \mbox{\hyperlink{classComboBox}{Combo\+Box}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComboBox_a405ec45a54dbcd0680c0c535f1f13fac}\label{classComboBox_a405ec45a54dbcd0680c0c535f1f13fac}} 
+\mbox{\hyperlink{classVScrollPanel}{V\+Scroll\+Panel}} $\ast$ \mbox{\hyperlink{classComboBox_a405ec45a54dbcd0680c0c535f1f13fac}{m\+\_\+scroll}} = nullptr
+\begin{DoxyCompactList}\small\item\em Scroll panel used to store the combo box contents. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_a3de7dd9b8d591213cc2a7c38e15b76b1}\label{classComboBox_a3de7dd9b8d591213cc2a7c38e15b76b1}} 
+\mbox{\hyperlink{classWidget}{Widget}} $\ast$ \mbox{\hyperlink{classComboBox_a3de7dd9b8d591213cc2a7c38e15b76b1}{m\+\_\+container}} = nullptr
+\begin{DoxyCompactList}\small\item\em Container containing the buttons. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_a5c8b74cf9e2ef6de74a2a48655253938}\label{classComboBox_a5c8b74cf9e2ef6de74a2a48655253938}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classComboBox_a5c8b74cf9e2ef6de74a2a48655253938}{m\+\_\+items}}
+\begin{DoxyCompactList}\small\item\em The items associated with this \mbox{\hyperlink{classComboBox}{Combo\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_a9c7bcf2eb950b05527177ae7a2a4d05f}\label{classComboBox_a9c7bcf2eb950b05527177ae7a2a4d05f}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classComboBox_a9c7bcf2eb950b05527177ae7a2a4d05f}{m\+\_\+items\+\_\+short}}
+\begin{DoxyCompactList}\small\item\em The short descriptions of items associated with this \mbox{\hyperlink{classComboBox}{Combo\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_adb9f788f6e7b8c3bf226676e4068f490}\label{classComboBox_adb9f788f6e7b8c3bf226676e4068f490}} 
+std\+::function$<$ void(int)$>$ \mbox{\hyperlink{classComboBox_adb9f788f6e7b8c3bf226676e4068f490}{m\+\_\+callback}}
+\begin{DoxyCompactList}\small\item\em The callback for this \mbox{\hyperlink{classComboBox}{Combo\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComboBox_aeafe0717b50722dc59db14c583a1fadb}\label{classComboBox_aeafe0717b50722dc59db14c583a1fadb}} 
+int \mbox{\hyperlink{classComboBox_aeafe0717b50722dc59db14c583a1fadb}{m\+\_\+selected\+\_\+index}}
+\begin{DoxyCompactList}\small\item\em The current index this \mbox{\hyperlink{classComboBox}{Combo\+Box}} has selected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+Simple combo box widget based on a popup button. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{combobox_8h}{combobox.\+h}}\item 
+ext/nanogui/src/combobox.\+cpp\end{DoxyCompactItemize}

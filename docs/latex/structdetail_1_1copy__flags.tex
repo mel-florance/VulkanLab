@@ -1,0 +1,46 @@
+\hypertarget{structdetail_1_1copy__flags}{}\doxysection{Référence du modèle de la structure detail\+::copy\+\_\+flags$<$ S, T $>$}
+\label{structdetail_1_1copy__flags}\index{detail::copy\_flags$<$ S, T $>$@{detail::copy\_flags$<$ S, T $>$}}
+
+
+Copy modifier flags (const/pointer/lvalue/rvalue reference from \textquotesingle{}S\textquotesingle{} to \textquotesingle{}T\textquotesingle{})  
+
+
+
+
+{\ttfamily \#include $<$array\+\_\+traits.\+h$>$}
+
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdetail_1_1copy__flags_a5c774c23c215c076e0d35da7b7060482}\label{structdetail_1_1copy__flags_a5c774c23c215c076e0d35da7b7060482}} 
+using {\bfseries type} = T4
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdetail_1_1copy__flags_a5e71994e219c2f96e97597e4ea2b164c}\label{structdetail_1_1copy__flags_a5e71994e219c2f96e97597e4ea2b164c}} 
+using {\bfseries R} = std\+::remove\+\_\+reference\+\_\+t$<$ S $>$
+\item 
+\mbox{\Hypertarget{structdetail_1_1copy__flags_a92b3605011a484dd1fd34e3f2453e248}\label{structdetail_1_1copy__flags_a92b3605011a484dd1fd34e3f2453e248}} 
+using {\bfseries T1} = std\+::conditional\+\_\+t$<$ std\+::is\+\_\+const\+\_\+v$<$ R $>$, std\+::add\+\_\+const\+\_\+t$<$ T $>$, T $>$
+\item 
+\mbox{\Hypertarget{structdetail_1_1copy__flags_a69f7d1f5cdff4b3e6d9ab7031134cc3b}\label{structdetail_1_1copy__flags_a69f7d1f5cdff4b3e6d9ab7031134cc3b}} 
+using {\bfseries T2} = std\+::conditional\+\_\+t$<$ std\+::is\+\_\+pointer\+\_\+v$<$ S $>$, std\+::add\+\_\+pointer\+\_\+t$<$ T1 $>$, T1 $>$
+\item 
+\mbox{\Hypertarget{structdetail_1_1copy__flags_aaaf7e128cb46c869582c9cbcf6542ce3}\label{structdetail_1_1copy__flags_aaaf7e128cb46c869582c9cbcf6542ce3}} 
+using {\bfseries T3} = std\+::conditional\+\_\+t$<$ std\+::is\+\_\+lvalue\+\_\+reference\+\_\+v$<$ S $>$, std\+::add\+\_\+lvalue\+\_\+reference\+\_\+t$<$ T2 $>$, T2 $>$
+\item 
+\mbox{\Hypertarget{structdetail_1_1copy__flags_aaedb74096b1adedfbfeb120a31bf7330}\label{structdetail_1_1copy__flags_aaedb74096b1adedfbfeb120a31bf7330}} 
+using {\bfseries T4} = std\+::conditional\+\_\+t$<$ std\+::is\+\_\+rvalue\+\_\+reference\+\_\+v$<$ S $>$, std\+::add\+\_\+rvalue\+\_\+reference\+\_\+t$<$ T3 $>$, T3 $>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename S, typename T$>$\newline
+struct detail\+::copy\+\_\+flags$<$ S, T $>$}
+
+Copy modifier flags (const/pointer/lvalue/rvalue reference from \textquotesingle{}S\textquotesingle{} to \textquotesingle{}T\textquotesingle{}) 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array\+\_\+traits.\+h\end{DoxyCompactItemize}

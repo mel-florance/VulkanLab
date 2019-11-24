@@ -1,0 +1,32 @@
+\hypertarget{structcall__guard}{}\doxysection{Référence du modèle de la structure call\+\_\+guard$<$ Ts $>$}
+\label{structcall__guard}\index{call\_guard$<$ Ts $>$@{call\_guard$<$ Ts $>$}}
+
+
+{\ttfamily \#include $<$attr.\+h$>$}
+
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename... Ts$>$\newline
+struct call\+\_\+guard$<$ Ts $>$}
+
+\textbackslash{}rst \mbox{\hyperlink{structA}{A}} call policy which places one or more guard variables ({\ttfamily Ts...}) around the function call.
+
+For example, this definition\+:
+
+.. code-\/block\+:: cpp \begin{DoxyVerb}m.def("foo", foo, py::call_guard<T>());
+\end{DoxyVerb}
+
+
+is equivalent to the following pseudocode\+:
+
+.. code-\/block\+:: cpp \begin{DoxyVerb}m.def("foo", [](args...) {
+    T scope_guard;
+    return foo(args...); // forwarded arguments
+});
+\end{DoxyVerb}
+ \textbackslash{}endrst 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/attr.\+h\end{DoxyCompactItemize}

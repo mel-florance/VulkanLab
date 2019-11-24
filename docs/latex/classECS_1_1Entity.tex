@@ -1,10 +1,10 @@
-\hypertarget{classECS_1_1Entity}{}\doxysection{E\+CS\+::Entity Class Reference}
+\hypertarget{classECS_1_1Entity}{}\doxysection{Référence de la classe E\+CS\+::Entity}
 \label{classECS_1_1Entity}\index{ECS::Entity@{ECS::Entity}}
 
 
 {\ttfamily \#include $<$E\+C\+S.\+h$>$}
 
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classECS_1_1Entity_a7de29f4037936e8f90a2c248fa738cb2}\label{classECS_1_1Entity_a7de29f4037936e8f90a2c248fa738cb2}} 
@@ -16,7 +16,7 @@
 \item 
 {\footnotesize template$<$typename T , typename V , typename... Types$>$ }\\bool \mbox{\hyperlink{classECS_1_1Entity_ac2b919b03ebdf0c6873ee09f578e6a35}{has}} () const
 \item 
-{\footnotesize template$<$typename T , typename... Args$>$ }\\\mbox{\hyperlink{classECS_1_1ComponentHandle}{Component\+Handle}}$<$ T $>$ \mbox{\hyperlink{classECS_1_1Entity_ad53ec6c48ef319838aa12bf0b4d84976}{assign}} (Args \&\&... args)
+{\footnotesize template$<$typename T , typename... Args$>$ }\\\mbox{\hyperlink{classECS_1_1ComponentHandle}{Component\+Handle}}$<$ T $>$ \mbox{\hyperlink{classECS_1_1Entity_ad53ec6c48ef319838aa12bf0b4d84976}{assign}} (Args \&\&... \mbox{\hyperlink{classargs}{args}})
 \item 
 {\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classECS_1_1Entity_a22d66f6a041c4c5e313aa7d62e01f54f}{remove}} ()
 \item 
@@ -31,13 +31,13 @@ size\+\_\+t \mbox{\hyperlink{classECS_1_1Entity_a6f07948b8c2e8a6da1f26f436afa141
 \mbox{\Hypertarget{classECS_1_1Entity_a3582ff5fecb2e9b78c05ae03371b8087}\label{classECS_1_1Entity_a3582ff5fecb2e9b78c05ae03371b8087}} 
 bool {\bfseries is\+Pending\+Destroy} () const
 \end{DoxyCompactItemize}
-\doxysubsection*{Static Public Attributes}
+\doxysubsection*{Attributs publics statiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classECS_1_1Entity_a5445a5ea2e2dddc2f627c391da7932e9}\label{classECS_1_1Entity_a5445a5ea2e2dddc2f627c391da7932e9}} 
 const static size\+\_\+t {\bfseries Invalid\+Entity\+Id} = 0
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classECS_1_1Entity_a8e4fc6757e2cbccf4fc1e674e7ad0b09}\label{classECS_1_1Entity_a8e4fc6757e2cbccf4fc1e674e7ad0b09}} 
@@ -52,7 +52,7 @@ size\+\_\+t {\bfseries id}
 \mbox{\Hypertarget{classECS_1_1Entity_a92ec5f10727b6ad4db364a2bdbb66631}\label{classECS_1_1Entity_a92ec5f10727b6ad4db364a2bdbb66631}} 
 bool {\bfseries b\+Pending\+Destroy} = false
 \end{DoxyCompactItemize}
-\doxysubsection*{Friends}
+\doxysubsection*{Amis}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classECS_1_1Entity_a7b4bcdf992c21ae83363f25df05b1d25}\label{classECS_1_1Entity_a7b4bcdf992c21ae83363f25df05b1d25}} 
@@ -60,10 +60,10 @@ class {\bfseries World}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
-A container for components. Entities do not have any logic of their own, except of that which to manage components. Components themselves are generally structs that contain data with which Entity\+Systems can act upon, but technically any data type may be used as a component, though only one of each data type may be on a single \mbox{\hyperlink{classECS_1_1Entity}{Entity}} at a time. 
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{structA}{A}} container for components. Entities do not have any logic of their own, except of that which to manage components. Components themselves are generally structs that contain data with which Entity\+Systems can act upon, but technically any data type may be used as a component, though only one of each data type may be on a single \mbox{\hyperlink{classECS_1_1Entity}{Entity}} at a time. 
 
-\doxysubsection{Member Function Documentation}
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classECS_1_1Entity_ad53ec6c48ef319838aa12bf0b4d84976}\label{classECS_1_1Entity_ad53ec6c48ef319838aa12bf0b4d84976}} 
 \index{ECS::Entity@{ECS::Entity}!assign@{assign}}
 \index{assign@{assign}!ECS::Entity@{ECS::Entity}}
@@ -128,6 +128,6 @@ bool E\+C\+S\+::\+Entity\+::with (\begin{DoxyParamCaption}\item[{typename std\+:
 
 Call a function with components from this entity as arguments. This will return true if this entity has all specified components attached, and false if otherwise. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
 \item 
 Engine/src/\+E\+C\+S/E\+C\+S.\+h\end{DoxyCompactItemize}

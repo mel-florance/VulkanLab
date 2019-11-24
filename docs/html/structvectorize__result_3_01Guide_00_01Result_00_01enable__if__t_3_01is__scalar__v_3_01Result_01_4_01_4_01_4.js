@@ -1,0 +1,4 @@
+var structvectorize__result_3_01Guide_00_01Result_00_01enable__if__t_3_01is__scalar__v_3_01Result_01_4_01_4_01_4 =
+[
+    [ "type", "structvectorize__result_3_01Guide_00_01Result_00_01enable__if__t_3_01is__scalar__v_3_01Result_01_4_01_4_01_4.html#a6d8481cebfd896acc6690e9e54b826ce", null ]
+];

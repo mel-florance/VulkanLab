@@ -1,0 +1,43 @@
+\hypertarget{classany__container}{}\doxysection{Référence du modèle de la classe any\+\_\+container$<$ T $>$}
+\label{classany__container}\index{any\_container$<$ T $>$@{any\_container$<$ T $>$}}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classany__container_a16c36f2f2714692d2112d66cf539f882}\label{classany__container_a16c36f2f2714692d2112d66cf539f882}} 
+{\footnotesize template$<$typename It , typename  = enable\+\_\+if\+\_\+t$<$is\+\_\+input\+\_\+iterator$<$\+It$>$\+::value$>$$>$ }\\{\bfseries any\+\_\+container} (It first, It last)
+\item 
+\mbox{\Hypertarget{classany__container_a683c6b51acd3f23aa48505b2bca83629}\label{classany__container_a683c6b51acd3f23aa48505b2bca83629}} 
+{\footnotesize template$<$typename Container , typename  = enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+convertible$<$decltype($\ast$std\+::begin(std\+::declval$<$const Container \&$>$()$>$ }\\{\bfseries any\+\_\+container} (const Container \&c)
+\item 
+\mbox{\Hypertarget{classany__container_a7bc3471a016f7dafe3878fa66497ad26}\label{classany__container_a7bc3471a016f7dafe3878fa66497ad26}} 
+{\footnotesize template$<$typename T\+In , typename  = enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+convertible$<$\+T\+In, T$>$\+::value$>$$>$ }\\{\bfseries any\+\_\+container} (const std\+::initializer\+\_\+list$<$ T\+In $>$ \&c)
+\item 
+\mbox{\Hypertarget{classany__container_a6a530db0c5ae047d9d7fcea35426b278}\label{classany__container_a6a530db0c5ae047d9d7fcea35426b278}} 
+{\bfseries any\+\_\+container} (std\+::vector$<$ T $>$ \&\&v)
+\item 
+\mbox{\Hypertarget{classany__container_afd688b631f9201494f55e82e6ff4b099}\label{classany__container_afd688b631f9201494f55e82e6ff4b099}} 
+{\bfseries operator std\+::vector$<$ T $>$ \&\&} () \&\&
+\item 
+\mbox{\Hypertarget{classany__container_ae5a25a73f1b28c327ac32c0e04baf143}\label{classany__container_ae5a25a73f1b28c327ac32c0e04baf143}} 
+std\+::vector$<$ T $>$ \& {\bfseries operator$\ast$} ()
+\item 
+\mbox{\Hypertarget{classany__container_ac9c65b23fcf65d86e33e68759329d35e}\label{classany__container_ac9c65b23fcf65d86e33e68759329d35e}} 
+const std\+::vector$<$ T $>$ \& {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{classany__container_a47c855832d83d1ccb543ff206b59f327}\label{classany__container_a47c855832d83d1ccb543ff206b59f327}} 
+std\+::vector$<$ T $>$ $\ast$ {\bfseries operator-\/$>$} ()
+\item 
+\mbox{\Hypertarget{classany__container_ac8c067f37efdffba9d64bf34823c4ad6}\label{classany__container_ac8c067f37efdffba9d64bf34823c4ad6}} 
+const std\+::vector$<$ T $>$ $\ast$ {\bfseries operator-\/$>$} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classany__container_a16795a6f1158467d3eb8fc44547c17df}\label{classany__container_a16795a6f1158467d3eb8fc44547c17df}} 
+std\+::vector$<$ T $>$ {\bfseries v}
+\end{DoxyCompactItemize}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/detail/common.\+h\end{DoxyCompactItemize}

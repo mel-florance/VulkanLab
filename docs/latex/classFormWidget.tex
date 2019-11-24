@@ -1,0 +1,66 @@
+\hypertarget{classFormWidget}{}\doxysection{Référence du modèle de la classe Form\+Widget$<$ T, sfinae $>$}
+\label{classFormWidget}\index{FormWidget$<$ T, sfinae $>$@{FormWidget$<$ T, sfinae $>$}}
+
+
+\mbox{\hyperlink{structA}{A}} template wrapper class for assisting in the creation of various form widgets.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/formhelper.\+h$>$}
+
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename T, typename sfinae = std\+::true\+\_\+type$>$\newline
+class Form\+Widget$<$ T, sfinae $>$}
+
+\mbox{\hyperlink{structA}{A}} template wrapper class for assisting in the creation of various form widgets. 
+
+\textbackslash{}rst The partial template specializations are\+:
+
+
+\begin{DoxyItemize}
+\item Inheritance from \+:class\+:{\ttfamily nanogui\+::\+Combo\+Box} for {\ttfamily enum} types\+:
+
+.. code-\/block\+:: cpp
+
+template $<$typename t$>$=\char`\"{}\char`\"{}$>$ class \mbox{\hyperlink{classFormWidget}{Form\+Widget}}$<$T, typename std\+::is\+\_\+enum$<$\+T$>$\+::type$>$ \+: public \mbox{\hyperlink{classComboBox}{Combo\+Box}}
+\item Inheritance from \+:class\+:{\ttfamily nanogui\+::\+Int\+Box} for integral types\+:
+
+.. code-\/block\+:: cpp
+
+template $<$typename t$>$=\char`\"{}\char`\"{}$>$ class \mbox{\hyperlink{classFormWidget}{Form\+Widget}}$<$T, typename std\+::is\+\_\+integral$<$\+T$>$\+::type$>$ \+: public \mbox{\hyperlink{classIntBox}{Int\+Box$<$\+T$>$}}
+\item Inheritance from \+:class\+:{\ttfamily nanogui\+::\+Float\+Box} for floating point types\+:
+
+.. code-\/block\+:: cpp
+
+template $<$typename t$>$=\char`\"{}\char`\"{}$>$ class \mbox{\hyperlink{classFormWidget}{Form\+Widget}}$<$T, typename std\+::is\+\_\+floating\+\_\+point$<$\+T$>$\+::type$>$ \+: public \mbox{\hyperlink{classFloatBox}{Float\+Box$<$\+T$>$}}
+\end{DoxyItemize}
+
+The full template specializations are\+:
+
+
+\begin{DoxyItemize}
+\item Inheritance from \+:class\+:{\ttfamily nanogui\+::\+Check\+Box} for booleans\+:
+
+.. code-\/block\+:: cpp
+
+template $<$$>$ class \mbox{\hyperlink{classFormWidget_3_01bool_00_01std_1_1true__type_01_4}{Form\+Widget$<$bool, std\+::true\+\_\+type$>$}} \+: public \mbox{\hyperlink{classCheckBox}{Check\+Box}}
+\item Inheritance from \+:class\+:{\ttfamily nanogui\+::\+Text\+Box} for strings\+:
+
+.. code-\/block\+:: cpp
+
+template $<$$>$ class \mbox{\hyperlink{classFormWidget_3_01std_1_1string_00_01std_1_1true__type_01_4}{Form\+Widget$<$std\+::string, std\+::true\+\_\+type$>$}} \+: public \mbox{\hyperlink{classTextBox}{Text\+Box}}
+\item Inheritance from \+:class\+:{\ttfamily nanogui\+::\+Color\+Picker} for \+:class\+:{\ttfamily nanogui\+::\+Color} types\+:
+
+.. code-\/block\+:: cpp
+
+template $<$$>$ class \mbox{\hyperlink{classFormWidget_3_01Color_00_01std_1_1true__type_01_4}{Form\+Widget$<$\+Color, std\+::true\+\_\+type$>$}} \+: public \mbox{\hyperlink{classColorPicker}{Color\+Picker}}
+\end{DoxyItemize}
+
+Please refer to the bottom of \+:ref\+:{\ttfamily program\+\_\+listing\+\_\+file\+\_\+nanogui\+\_\+formhelper.\+h} for the implementation details. \textbackslash{}endrst 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{formhelper_8h}{formhelper.\+h}}\end{DoxyCompactItemize}

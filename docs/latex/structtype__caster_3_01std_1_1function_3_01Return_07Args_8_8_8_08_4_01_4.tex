@@ -1,0 +1,34 @@
+\hypertarget{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4}{}\doxysection{Référence du modèle de la structure type\+\_\+caster$<$ std\+::function$<$ Return(Args...)$>$ $>$}
+\label{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4}\index{type\_caster$<$ std::function$<$ Return(Args...)$>$ $>$@{type\_caster$<$ std::function$<$ Return(Args...)$>$ $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4_a999a24be8c1275653033e2a779d54df4}\label{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4_a999a24be8c1275653033e2a779d54df4}} 
+using {\bfseries type} = std\+::function$<$ Return(Args...)$>$
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4_af58553629081c43d42bf22aeef9b427b}\label{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4_af58553629081c43d42bf22aeef9b427b}} 
+using {\bfseries retval\+\_\+type} = conditional\+\_\+t$<$ std\+::is\+\_\+same$<$ Return, void $>$\+::value, \mbox{\hyperlink{structvoid__type}{void\+\_\+type}}, Return $>$
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4_a6e676866eac82dd787cf2567db70c67d}\label{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4_a6e676866eac82dd787cf2567db70c67d}} 
+using {\bfseries function\+\_\+type} = Return($\ast$)(Args...)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4_a0663ae2830092a6f20eb81195742d2bc}\label{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4_a0663ae2830092a6f20eb81195742d2bc}} 
+bool {\bfseries load} (\mbox{\hyperlink{classhandle}{handle}} src, bool convert)
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4_a08c7d15f59155364101977b4a4fadb52}\label{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4_a08c7d15f59155364101977b4a4fadb52}} 
+{\bfseries P\+Y\+B\+I\+N\+D11\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+A\+S\+T\+ER} (type, \+\_\+(\char`\"{}Callable\mbox{[}\mbox{[}\char`\"{})+concat(\mbox{\hyperlink{classtype__caster}{make\+\_\+caster}}$<$ Args $>$\+::name...)+\+\_\+(\char`\"{}\mbox{]}, \char`\"{})+\mbox{\hyperlink{classtype__caster}{make\+\_\+caster}}$<$ retval\+\_\+type $>$\+::\mbox{\hyperlink{structname}{name}}+\+\_\+(\char`\"{}\mbox{]}\char`\"{}))
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4_a1aa8ac47ff237f05e9d23bc199754e7a}\label{structtype__caster_3_01std_1_1function_3_01Return_07Args_8_8_8_08_4_01_4_a1aa8ac47ff237f05e9d23bc199754e7a}} 
+{\footnotesize template$<$typename Func $>$ }\\static \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast} (Func \&\&f\+\_\+, return\+\_\+value\+\_\+policy policy, \mbox{\hyperlink{classhandle}{handle}})
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/functional.\+h\end{DoxyCompactItemize}

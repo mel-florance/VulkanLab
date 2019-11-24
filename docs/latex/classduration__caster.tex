@@ -1,0 +1,40 @@
+\hypertarget{classduration__caster}{}\doxysection{Référence du modèle de la classe duration\+\_\+caster$<$ type $>$}
+\label{classduration__caster}\index{duration\_caster$<$ type $>$@{duration\_caster$<$ type $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classduration__caster_aa56a3f1e4b4c1651fbe0b52f9575e1bd}\label{classduration__caster_aa56a3f1e4b4c1651fbe0b52f9575e1bd}} 
+typedef type\+::rep {\bfseries rep}
+\item 
+\mbox{\Hypertarget{classduration__caster_ac22f4732d7e0b975d5c5d2e82a7635c4}\label{classduration__caster_ac22f4732d7e0b975d5c5d2e82a7635c4}} 
+typedef type\+::period {\bfseries period}
+\item 
+\mbox{\Hypertarget{classduration__caster_a04fee4c68761f22d238c731c4a89e150}\label{classduration__caster_a04fee4c68761f22d238c731c4a89e150}} 
+typedef std\+::chrono\+::duration$<$ uint\+\_\+fast32\+\_\+t, std\+::ratio$<$ 86400 $>$ $>$ {\bfseries days}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classduration__caster_ac5394869ec7d87be76a8cd574d76f3a4}\label{classduration__caster_ac5394869ec7d87be76a8cd574d76f3a4}} 
+bool {\bfseries load} (\mbox{\hyperlink{classhandle}{handle}} src, bool)
+\item 
+\mbox{\Hypertarget{classduration__caster_a3518d09fefb62b0be79c37d79c298822}\label{classduration__caster_a3518d09fefb62b0be79c37d79c298822}} 
+{\bfseries P\+Y\+B\+I\+N\+D11\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+A\+S\+T\+ER} (type, \+\_\+(\char`\"{}datetime.\+timedelta\char`\"{}))
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classduration__caster_ad36a0673aec0ea43023763e9680eb88c}\label{classduration__caster_ad36a0673aec0ea43023763e9680eb88c}} 
+static const std\+::chrono\+::duration$<$ rep, period $>$ \& {\bfseries get\+\_\+duration} (const std\+::chrono\+::duration$<$ rep, period $>$ \&src)
+\item 
+\mbox{\Hypertarget{classduration__caster_aed28187c877e7c2e084ba5c1c4d0f9be}\label{classduration__caster_aed28187c877e7c2e084ba5c1c4d0f9be}} 
+{\footnotesize template$<$typename Clock $>$ }\\static std\+::chrono\+::duration$<$ rep, period $>$ {\bfseries get\+\_\+duration} (const std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{classClock}{Clock}}, std\+::chrono\+::duration$<$ rep, period $>$$>$ \&src)
+\item 
+\mbox{\Hypertarget{classduration__caster_a84c3172d12565e8d1921801f1cc5a698}\label{classduration__caster_a84c3172d12565e8d1921801f1cc5a698}} 
+static \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast} (const type \&src, return\+\_\+value\+\_\+policy, \mbox{\hyperlink{classhandle}{handle}})
+\end{DoxyCompactItemize}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/chrono.\+h\end{DoxyCompactItemize}

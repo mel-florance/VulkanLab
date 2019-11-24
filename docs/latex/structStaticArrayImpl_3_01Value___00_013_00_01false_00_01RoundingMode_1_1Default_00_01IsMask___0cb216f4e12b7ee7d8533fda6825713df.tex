@@ -1,0 +1,107 @@
+\hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df}{}\doxysection{Référence du modèle de la structure Static\+Array\+Impl$<$ Value\+\_\+, 3, false, Rounding\+Mode\+::Default, Is\+Mask\+\_\+, Derived\+\_\+, enable\+\_\+if\+\_\+int64\+\_\+t$<$ Value\+\_\+ $>$ $>$}
+\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df}\index{StaticArrayImpl$<$ Value\_, 3, false, RoundingMode::Default, IsMask\_, Derived\_, enable\_if\_int64\_t$<$ Value\_ $>$ $>$@{StaticArrayImpl$<$ Value\_, 3, false, RoundingMode::Default, IsMask\_, Derived\_, enable\_if\_int64\_t$<$ Value\_ $>$ $>$}}
+
+
+Partial overload of \mbox{\hyperlink{structStaticArrayImpl}{Static\+Array\+Impl}} for the n=3 case (64 bit integers)  
+
+
+
+
+{\ttfamily \#include $<$array\+\_\+avx2.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Static\+Array\+Impl$<$ Value\+\_\+, 3, false, Rounding\+Mode\+::Default, Is\+Mask\+\_\+, Derived\+\_\+, enable\+\_\+if\+\_\+int64\+\_\+t$<$ Value\+\_\+ $>$ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.731067cm]{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a4e9132c10465ab1ca09b85d3493b7b5c}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a4e9132c10465ab1ca09b85d3493b7b5c}} 
+using {\bfseries Base} = \mbox{\hyperlink{structStaticArrayImpl}{Static\+Array\+Impl}}$<$ Value\+\_\+, 4, false, Rounding\+Mode\+::\+Default, Is\+Mask\+\_\+, Derived\+\_\+ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_ad5f4ad2bdad4a352700027a8d0a58e38}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_ad5f4ad2bdad4a352700027a8d0a58e38}} 
+{\footnotesize template$<$int I0, int I1, int I2$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Derived {\bfseries shuffle\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_ab209a98254cfc6c4c455aedee0f26f60}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_ab209a98254cfc6c4c455aedee0f26f60}} 
+{\footnotesize template$<$typename Index $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Derived {\bfseries shuffle\+\_\+} (const Index \&idx) const
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Horizontal operations (adapted for the n=3 case)}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_aa90a42f5cddbf2c1966c974e7a0fee3b}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_aa90a42f5cddbf2c1966c974e7a0fee3b}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Value {\bfseries hsum\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a999a7b81cb3482330287e9b2f36482dc}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a999a7b81cb3482330287e9b2f36482dc}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Value {\bfseries hprod\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a1f466518f336b7736ca7b78bb398e281}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a1f466518f336b7736ca7b78bb398e281}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Value {\bfseries hmin\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_aca7617b2090641e17083dd2ac51e5976}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_aca7617b2090641e17083dd2ac51e5976}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Value {\bfseries hmax\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a85a94373386dc1c334c8a9aa66b69e60}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a85a94373386dc1c334c8a9aa66b69e60}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE bool {\bfseries all\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_acf640436982e0c83889c6163e7c14dc0}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_acf640436982e0c83889c6163e7c14dc0}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE bool {\bfseries any\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_aae025efbeb30ad6eeda7f3dc4561b2dc}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_aae025efbeb30ad6eeda7f3dc4561b2dc}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE uint32\+\_\+t {\bfseries bitmask\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_aa79d778dd943c15c914b91d062d22e7a}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_aa79d778dd943c15c914b91d062d22e7a}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries count\+\_\+} () const
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Loading/writing data (adapted for the n=3 case)}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a4d010646cba5ca2eced6367260ea2201}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a4d010646cba5ca2eced6367260ea2201}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries store\+\_\+} (void $\ast$ptr) const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a060b6d22dc309d82c45053fb793462e2}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a060b6d22dc309d82c45053fb793462e2}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries store\+\_\+unaligned\+\_\+} (void $\ast$ptr) const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a0f35eb60c432d9d9d3d476747e903633}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a0f35eb60c432d9d9d3d476747e903633}} 
+{\footnotesize template$<$typename Mask $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries store\+\_\+unaligned\+\_\+} (void $\ast$ptr, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_aee3d0c8a36cc5e8c255b9a7e015ece7f}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_aee3d0c8a36cc5e8c255b9a7e015ece7f}} 
+{\footnotesize template$<$typename Mask $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries store\+\_\+} (void $\ast$ptr, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_ab5c9504aaef1f758ccf62e08ff2c3d84}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_ab5c9504aaef1f758ccf62e08ff2c3d84}} 
+{\footnotesize template$<$typename Mask $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries compress\+\_\+} (Value\+\_\+ $\ast$\&ptr, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a038c663df55ca9ea982f55b46b8b7a16}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a038c663df55ca9ea982f55b46b8b7a16}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries mask\+\_\+} ()
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a5471c55a5854d048a602523fb4a8bd5b}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a5471c55a5854d048a602523fb4a8bd5b}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Derived {\bfseries load\+\_\+} (const void $\ast$ptr)
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a22c1585ae9b4e10af889a7b4c82ed093}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a22c1585ae9b4e10af889a7b4c82ed093}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Derived {\bfseries load\+\_\+unaligned\+\_\+} (const void $\ast$ptr)
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_aba5fe723b0a28ed434f0c9c5d763e89b}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_aba5fe723b0a28ed434f0c9c5d763e89b}} 
+{\footnotesize template$<$typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Derived {\bfseries load\+\_\+} (const void $\ast$ptr, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a9ac4f10d2095a1f59e532fff3fb1e8b3}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a9ac4f10d2095a1f59e532fff3fb1e8b3}} 
+{\footnotesize template$<$typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Derived {\bfseries load\+\_\+unaligned\+\_\+} (const void $\ast$ptr, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\item 
+\mbox{\Hypertarget{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a8f745231471f948c9ffe0724a5dc6c73}\label{structStaticArrayImpl_3_01Value___00_013_00_01false_00_01RoundingMode_1_1Default_00_01IsMask___0cb216f4e12b7ee7d8533fda6825713df_a8f745231471f948c9ffe0724a5dc6c73}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Index , typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Derived {\bfseries gather\+\_\+} (const void $\ast$ptr, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename Value\+\_\+, bool Is\+Mask\+\_\+, typename Derived\+\_\+$>$\newline
+struct Static\+Array\+Impl$<$ Value\+\_\+, 3, false, Rounding\+Mode\+::\+Default, Is\+Mask\+\_\+, Derived\+\_\+, enable\+\_\+if\+\_\+int64\+\_\+t$<$ Value\+\_\+ $>$ $>$}
+
+Partial overload of \mbox{\hyperlink{structStaticArrayImpl}{Static\+Array\+Impl}} for the n=3 case (64 bit integers) 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array\+\_\+avx2.\+h\end{DoxyCompactItemize}

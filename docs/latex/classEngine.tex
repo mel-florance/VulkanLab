@@ -1,6 +1,6 @@
-\hypertarget{classEngine}{}\doxysection{Engine Class Reference}
+\hypertarget{classEngine}{}\doxysection{Référence de la classe Engine}
 \label{classEngine}\index{Engine@{Engine}}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classLoop}{Loop}} $\ast$ \mbox{\hyperlink{classEngine_aacb9251cd60a59ecd13cb63cda11a174}{get\+Loop}} () const
@@ -21,7 +21,7 @@ void \mbox{\hyperlink{classEngine_a91cbb1c8a67e9353735f004d2d3fdd86}{set\+Window
 \item 
 \mbox{\hyperlink{classSceneManager}{Scene\+Manager}} $\ast$ \mbox{\hyperlink{classEngine_a6e0056511f89987ade28f7486e51da08}{get\+Scenes\+Manager}} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Static Public Member Functions}
+\doxysubsection*{Fonctions membres publiques statiques}
 \begin{DoxyCompactItemize}
 \item 
 static void \mbox{\hyperlink{classEngine_a4d8066dd213a03f5420d1bf60f150ca7}{start}} ()
@@ -34,7 +34,7 @@ static void \mbox{\hyperlink{classEngine_ab4be5b320148b83636c74e3103d747a6}{rend
 \item 
 static void \mbox{\hyperlink{classEngine_ac1f464fae5491e590c5442a61738bd38}{on\+Event}} (Event\+Type event, \mbox{\hyperlink{structEvent}{Event}} $\ast$data)
 \end{DoxyCompactItemize}
-\doxysubsection*{Static Public Attributes}
+\doxysubsection*{Attributs publics statiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classEngine_ab44caa70713c4df4bbf157687cda6048}\label{classEngine_ab44caa70713c4df4bbf157687cda6048}} 
@@ -43,7 +43,7 @@ static \mbox{\hyperlink{classLoop}{Loop}} $\ast$ {\bfseries loop} = nullptr
 \mbox{\Hypertarget{classEngine_ac06e32d8c07245592fd134aba790db32}\label{classEngine_ac06e32d8c07245592fd134aba790db32}} 
 static \mbox{\hyperlink{classSceneManager}{Scene\+Manager}} $\ast$ {\bfseries scenes\+Manager} = nullptr
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classEngine_ac0f751dbfd692994d5f2a1853389cfcc}\label{classEngine_ac0f751dbfd692994d5f2a1853389cfcc}} 
@@ -57,14 +57,14 @@ static \mbox{\hyperlink{classSceneManager}{Scene\+Manager}} $\ast$ {\bfseries sc
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Member Function Documentation}
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classEngine_aacb9251cd60a59ecd13cb63cda11a174}\label{classEngine_aacb9251cd60a59ecd13cb63cda11a174}} 
 \index{Engine@{Engine}!getLoop@{getLoop}}
 \index{getLoop@{getLoop}!Engine@{Engine}}
 \doxysubsubsection{\texorpdfstring{getLoop()}{getLoop()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classLoop}{Loop}}$\ast$ Engine\+::get\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the engine loop. \begin{DoxyReturn}{Returns}
+Return the engine loop. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classEngine_a13a74eae23b166f801a4df9c8eddc857}\label{classEngine_a13a74eae23b166f801a4df9c8eddc857}} 
@@ -73,7 +73,7 @@ Return the engine loop. \begin{DoxyReturn}{Returns}
 \doxysubsubsection{\texorpdfstring{getRenderer()}{getRenderer()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classRenderer}{Renderer}}$\ast$ Engine\+::get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the currently attached renderer. \begin{DoxyReturn}{Returns}
+Return the currently attached renderer. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classEngine_a6e0056511f89987ade28f7486e51da08}\label{classEngine_a6e0056511f89987ade28f7486e51da08}} 
@@ -88,7 +88,7 @@ Return a reference to the scenes\+Manager pointer. \mbox{\Hypertarget{classEngin
 \doxysubsubsection{\texorpdfstring{getViewport()}{getViewport()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classViewport}{Viewport}}$\ast$ Engine\+::get\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the currently attached viewport. \begin{DoxyReturn}{Returns}
+Return the currently attached viewport. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classEngine_a489f7416219428daaf485df049051bd9}\label{classEngine_a489f7416219428daaf485df049051bd9}} 
@@ -97,7 +97,7 @@ Return the currently attached viewport. \begin{DoxyReturn}{Returns}
 \doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classWindow}{Window}}$\ast$ Engine\+::get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the current window \begin{DoxyReturn}{Returns}
+Return the current window \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classEngine_ac1f464fae5491e590c5442a61738bd38}\label{classEngine_ac1f464fae5491e590c5442a61738bd38}} 
@@ -113,7 +113,7 @@ When an event occurs. \mbox{\Hypertarget{classEngine_ab4be5b320148b83636c74e3103
 {\footnotesize\ttfamily void Engine\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLoop}{Loop}} $\ast$}]{loop,  }\item[{\mbox{\hyperlink{classEngine}{Engine}} $\ast$}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Call the attached renderer. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em loop} & \\
 \hline
 {\em self} & \\
@@ -126,7 +126,7 @@ Call the attached renderer.
 {\footnotesize\ttfamily void Engine\+::set\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLoop}{Loop}} $\ast$}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the engine loop. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em loop} & \\
 \hline
 \end{DoxyParams}
@@ -137,7 +137,7 @@ Set the engine loop.
 {\footnotesize\ttfamily void Engine\+::set\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRenderer}{Renderer}} $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the renderer used to draw. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em renderer} & \\
 \hline
 \end{DoxyParams}
@@ -148,7 +148,7 @@ Set the renderer used to draw.
 {\footnotesize\ttfamily void Engine\+::set\+Viewport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classViewport}{Viewport}} $\ast$}]{viewport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the viewport to display to. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em viewport} & \\
 \hline
 \end{DoxyParams}
@@ -177,7 +177,7 @@ Stop the engine \mbox{\Hypertarget{classEngine_af4e46c0122281e3892f6ba1241225208
 {\footnotesize\ttfamily void Engine\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLoop}{Loop}} $\ast$}]{loop,  }\item[{\mbox{\hyperlink{classEngine}{Engine}} $\ast$}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Update routine of the engine 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em loop} & \\
 \hline
 {\em self} & \\
@@ -185,7 +185,7 @@ Update routine of the engine
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
 Engine/src/\+Core/Engine.\+h\item 
 Engine/src/\+Core/Engine.\+cpp\end{DoxyCompactItemize}

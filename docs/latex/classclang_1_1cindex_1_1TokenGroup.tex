@@ -1,0 +1,70 @@
+\hypertarget{classclang_1_1cindex_1_1TokenGroup}{}\doxysection{Référence de la classe clang.\+cindex.\+Token\+Group}
+\label{classclang_1_1cindex_1_1TokenGroup}\index{clang.cindex.TokenGroup@{clang.cindex.TokenGroup}}
+Graphe d\textquotesingle{}héritage de clang.\+cindex.\+Token\+Group\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classclang_1_1cindex_1_1TokenGroup}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1TokenGroup_a844ea69731f6b3473216e052cc550b3e}\label{classclang_1_1cindex_1_1TokenGroup_a844ea69731f6b3473216e052cc550b3e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, tu, memory, count)
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1TokenGroup_ab83cb9caa11a9f48940e1e226ce070dd}\label{classclang_1_1cindex_1_1TokenGroup_ab83cb9caa11a9f48940e1e226ce070dd}} 
+def {\bfseries \+\_\+\+\_\+del\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classclang_1_1cindex_1_1TokenGroup_a9150328425087e3a58ecc402a372213e}{get\+\_\+tokens}} (tu, extent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1TokenGroup_ab6a6a0ad0a0240a33c058364ec9a1e43}\label{classclang_1_1cindex_1_1TokenGroup_ab6a6a0ad0a0240a33c058364ec9a1e43}} 
+{\bfseries \+\_\+tu}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1TokenGroup_abc7639c1392742732bdac776bbb8feb0}\label{classclang_1_1cindex_1_1TokenGroup_abc7639c1392742732bdac776bbb8feb0}} 
+{\bfseries \+\_\+memory}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1TokenGroup_ac605d2d4464158d4b9c604739c31c559}\label{classclang_1_1cindex_1_1TokenGroup_ac605d2d4464158d4b9c604739c31c559}} 
+{\bfseries \+\_\+count}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Helper class to facilitate token management.
+
+Tokens are allocated from libclang in chunks. They must be disposed of as a
+collective group.
+
+One purpose of this class is for instances to represent groups of allocated
+tokens. Each token in a group contains a reference back to an instance of
+this class. When all tokens from a group are garbage collected, it allows
+this class to be garbage collected. When this class is garbage collected,
+it calls the libclang destructor which invalidates all tokens in the group.
+
+You should not instantiate this class outside of this module.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classclang_1_1cindex_1_1TokenGroup_a9150328425087e3a58ecc402a372213e}\label{classclang_1_1cindex_1_1TokenGroup_a9150328425087e3a58ecc402a372213e}} 
+\index{clang.cindex.TokenGroup@{clang.cindex.TokenGroup}!get\_tokens@{get\_tokens}}
+\index{get\_tokens@{get\_tokens}!clang.cindex.TokenGroup@{clang.cindex.TokenGroup}}
+\doxysubsubsection{\texorpdfstring{get\_tokens()}{get\_tokens()}}
+{\footnotesize\ttfamily def clang.\+cindex.\+Token\+Group.\+get\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{tu,  }\item[{}]{extent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Helper method to return all tokens in an extent.
+
+This functionality is needed multiple places in this module. We define
+it here because it seems like a logical place.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/tools/clang/cindex.\+py\end{DoxyCompactItemize}

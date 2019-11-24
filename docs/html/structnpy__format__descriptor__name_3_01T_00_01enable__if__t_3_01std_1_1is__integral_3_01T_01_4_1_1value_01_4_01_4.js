@@ -1,0 +1,4 @@
+var structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01std_1_1is__integral_3_01T_01_4_1_1value_01_4_01_4 =
+[
+    [ "name", "structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01std_1_1is__integral_3_01T_01_4_1_1value_01_4_01_4.html#a8ed8aec337a5ea7bdb051ff9b376c8fc", null ]
+];

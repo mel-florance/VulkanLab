@@ -1,0 +1,70 @@
+\hypertarget{classscoped__ostream__redirect}{}\doxysection{Référence de la classe scoped\+\_\+ostream\+\_\+redirect}
+\label{classscoped__ostream__redirect}\index{scoped\_ostream\_redirect@{scoped\_ostream\_redirect}}
+
+
+{\ttfamily \#include $<$iostream.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de scoped\+\_\+ostream\+\_\+redirect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classscoped__ostream__redirect}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classscoped__ostream__redirect_ad03c41b00f3efb1753c75e9e5962e1cd}\label{classscoped__ostream__redirect_ad03c41b00f3efb1753c75e9e5962e1cd}} 
+{\bfseries scoped\+\_\+ostream\+\_\+redirect} (std\+::ostream \&costream=std\+::cout, \mbox{\hyperlink{classobject}{object}} pyostream=\mbox{\hyperlink{classmodule_a40817edef0ded5727701534bcded9982}{module\+::import}}(\char`\"{}sys\char`\"{}).attr(\char`\"{}stdout\char`\"{}))
+\item 
+\mbox{\Hypertarget{classscoped__ostream__redirect_a1246061ecc80a86fb4ccdaba343ce2fc}\label{classscoped__ostream__redirect_a1246061ecc80a86fb4ccdaba343ce2fc}} 
+{\bfseries scoped\+\_\+ostream\+\_\+redirect} (const \mbox{\hyperlink{classscoped__ostream__redirect}{scoped\+\_\+ostream\+\_\+redirect}} \&)=delete
+\item 
+\mbox{\Hypertarget{classscoped__ostream__redirect_a2c7e1be131aaf58cc07bd103b376c500}\label{classscoped__ostream__redirect_a2c7e1be131aaf58cc07bd103b376c500}} 
+{\bfseries scoped\+\_\+ostream\+\_\+redirect} (\mbox{\hyperlink{classscoped__ostream__redirect}{scoped\+\_\+ostream\+\_\+redirect}} \&\&other)=default
+\item 
+\mbox{\Hypertarget{classscoped__ostream__redirect_a803809f8dbe73390bec2856a3cecb088}\label{classscoped__ostream__redirect_a803809f8dbe73390bec2856a3cecb088}} 
+\mbox{\hyperlink{classscoped__ostream__redirect}{scoped\+\_\+ostream\+\_\+redirect}} \& {\bfseries operator=} (const \mbox{\hyperlink{classscoped__ostream__redirect}{scoped\+\_\+ostream\+\_\+redirect}} \&)=delete
+\item 
+\mbox{\Hypertarget{classscoped__ostream__redirect_a3d1283c16eca978edac8101f1b891f5c}\label{classscoped__ostream__redirect_a3d1283c16eca978edac8101f1b891f5c}} 
+\mbox{\hyperlink{classscoped__ostream__redirect}{scoped\+\_\+ostream\+\_\+redirect}} \& {\bfseries operator=} (\mbox{\hyperlink{classscoped__ostream__redirect}{scoped\+\_\+ostream\+\_\+redirect}} \&\&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classscoped__ostream__redirect_a519992f77b1bfc432f151b2a890a85cf}\label{classscoped__ostream__redirect_a519992f77b1bfc432f151b2a890a85cf}} 
+std\+::streambuf $\ast$ {\bfseries old}
+\item 
+\mbox{\Hypertarget{classscoped__ostream__redirect_a1d9b813b2e4e5bd72b1a735a9e9b13cb}\label{classscoped__ostream__redirect_a1d9b813b2e4e5bd72b1a735a9e9b13cb}} 
+std\+::ostream \& {\bfseries costream}
+\item 
+\mbox{\Hypertarget{classscoped__ostream__redirect_a8c3f64929efe3287aaa247f5c8d0559d}\label{classscoped__ostream__redirect_a8c3f64929efe3287aaa247f5c8d0559d}} 
+detail\+::pythonbuf {\bfseries buffer}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\textbackslash{}rst This a move-\/only guard that redirects output.
+
+.. code-\/block\+:: cpp \begin{DoxyVerb}#include <pybind11/iostream.h>
+
+...
+
+{
+    py::scoped_ostream_redirect output;
+    std::cout << "Hello, World!"; // Python stdout
+} // <-- return std::cout to normal
+\end{DoxyVerb}
+
+
+You can explicitly pass the c++ stream and the python object, for example to guard stderr instead.
+
+.. code-\/block\+:: cpp \begin{DoxyVerb}{
+    py::scoped_ostream_redirect output{std::cerr, py::module::import("sys").attr("stderr")};
+    std::cerr << "Hello, World!";
+}
+\end{DoxyVerb}
+ \textbackslash{}endrst 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/iostream.\+h\end{DoxyCompactItemize}

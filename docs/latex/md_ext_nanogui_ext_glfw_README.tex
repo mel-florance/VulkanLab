@@ -1,0 +1,228 @@
+\href{https://travis-ci.org/glfw/glfw}{\texttt{ }} \href{https://ci.appveyor.com/project/elmindreda/glfw}{\texttt{ }} \href{https://scan.coverity.com/projects/glfw-glfw}{\texttt{ }}\hypertarget{md_ext_nanogui_ext_glfw_README_autotoc_md48}{}\doxysection{Introduction}\label{md_ext_nanogui_ext_glfw_README_autotoc_md48}
+G\+L\+FW is an Open Source, multi-\/platform library for Open\+GL, Open\+GL ES and Vulkan application development. It provides a simple, platform-\/independent A\+PI for creating windows, contexts and surfaces, reading input, handling events, etc.
+
+G\+L\+FW natively supports Windows, mac\+OS and Linux and other Unix-\/like systems. On Linux both X11 and Wayland is supported.
+
+G\+L\+FW is licensed under the \href{http://www.glfw.org/license.html}{\texttt{ zlib/libpng license}}.
+
+You can \href{http://www.glfw.org/download.html}{\texttt{ download}} the latest stable release as source or Windows binaries, or fetch the {\ttfamily latest} branch from Git\+Hub. Each release starting with 3.\+0 also has a corresponding \href{https://github.com/glfw/glfw/releases}{\texttt{ annotated tag}} with source and binary archives.
+
+The \href{http://www.glfw.org/docs/latest/}{\texttt{ documentation}} is available online and is included in all source and binary archives. See the \href{https://www.glfw.org/docs/latest/news.html}{\texttt{ release notes}} for new features, caveats and deprecations in the latest release. For more details see the \href{http://www.glfw.org/changelog.html}{\texttt{ version history}}.
+
+The {\ttfamily master} branch is the stable integration branch and {\itshape should} always compile and run on all supported platforms, although details of newly added features may change until they have been included in a release. New features and many bug fixes live in \href{https://github.com/glfw/glfw/branches/all}{\texttt{ other branches}} until they are stable enough to merge.
+
+If you are new to G\+L\+FW, you may find the \href{http://www.glfw.org/docs/latest/quick.html}{\texttt{ tutorial}} for G\+L\+FW 3 useful. If you have used G\+L\+FW 2 in the past, there is a \href{http://www.glfw.org/docs/latest/moving.html}{\texttt{ transition guide}} for moving to the G\+L\+FW 3 A\+PI.\hypertarget{md_ext_nanogui_ext_glfw_README_autotoc_md49}{}\doxysection{Compiling G\+L\+FW}\label{md_ext_nanogui_ext_glfw_README_autotoc_md49}
+G\+L\+FW itself requires only the headers and libraries for your OS and window system. It does not need the headers for any context creation A\+PI (W\+GL, G\+LX, E\+GL, N\+S\+GL, O\+S\+Mesa) or rendering A\+PI (Open\+GL, Open\+GL ES, Vulkan) to enable support for them.
+
+G\+L\+FW supports compilation on Windows with Visual C++ 2010 and later, Min\+GW and Min\+G\+W-\/w64, on mac\+OS with Clang and on Linux and other Unix-\/like systems with G\+CC and Clang. It will likely compile in other environments as well, but this is not regularly tested.
+
+There are \href{http://www.glfw.org/download.html}{\texttt{ pre-\/compiled Windows binaries}} available for all supported compilers.
+
+See the \href{http://www.glfw.org/docs/latest/compile.html}{\texttt{ compilation guide}} for more information about how to compile G\+L\+FW yourself.\hypertarget{md_ext_nanogui_ext_glfw_README_autotoc_md50}{}\doxysection{Using G\+L\+FW}\label{md_ext_nanogui_ext_glfw_README_autotoc_md50}
+See the \href{http://www.glfw.org/docs/latest/}{\texttt{ documentation}} for tutorials, guides and the A\+PI reference.\hypertarget{md_ext_nanogui_ext_glfw_README_autotoc_md51}{}\doxysection{Contributing to G\+L\+FW}\label{md_ext_nanogui_ext_glfw_README_autotoc_md51}
+See the \href{https://github.com/glfw/glfw/blob/master/docs/CONTRIBUTING.md}{\texttt{ contribution guide}} for more information.\hypertarget{md_ext_nanogui_ext_glfw_README_autotoc_md52}{}\doxysection{System requirements}\label{md_ext_nanogui_ext_glfw_README_autotoc_md52}
+G\+L\+FW supports Windows XP and later and mac\+OS 10.\+8 and later. Linux and other Unix-\/like systems running the X \mbox{\hyperlink{classWindow}{Window}} System are supported even without a desktop environment or modern extensions, although some features require a running window or clipboard manager. The O\+S\+Mesa backend requires Mesa 6.\+3.
+
+See the \href{http://www.glfw.org/docs/latest/compat.html}{\texttt{ compatibility guide}} in the documentation for more information.\hypertarget{md_ext_nanogui_ext_glfw_README_autotoc_md53}{}\doxysection{Dependencies}\label{md_ext_nanogui_ext_glfw_README_autotoc_md53}
+G\+L\+FW itself depends only on the headers and libraries for your window system.
+
+The (experimental) Wayland backend also depends on the {\ttfamily extra-\/cmake-\/modules} package, which is used to generated Wayland protocol headers.
+
+The examples and test programs depend on a number of tiny libraries. These are located in the {\ttfamily deps/} directory.
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/kimgr/getopt_port/}{\texttt{ getopt\+\_\+port}} for examples with command-\/line options
+\item \href{https://github.com/tinycthread/tinycthread}{\texttt{ Tiny\+C\+Thread}} for threaded examples
+\item \href{https://github.com/Dav1dde/glad}{\texttt{ glad2}} for loading Open\+GL and Vulkan functions
+\item \href{https://github.com/datenwolf/linmath.h}{\texttt{ linmath.\+h}} for linear algebra in examples
+\item \href{https://github.com/vurtun/nuklear}{\texttt{ Nuklear}} for test and example UI
+\item \href{https://github.com/nothings/stb}{\texttt{ stb\+\_\+image\+\_\+write}} for writing images to disk
+\end{DoxyItemize}
+
+The documentation is generated with \href{http://doxygen.org/}{\texttt{ Doxygen}} if C\+Make can find that tool.\hypertarget{md_ext_nanogui_ext_glfw_README_autotoc_md54}{}\doxysection{Reporting bugs}\label{md_ext_nanogui_ext_glfw_README_autotoc_md54}
+Bugs are reported to our \href{https://github.com/glfw/glfw/issues}{\texttt{ issue tracker}}. Please check the \href{https://github.com/glfw/glfw/blob/master/docs/CONTRIBUTING.md}{\texttt{ contribution guide}} for information on what to include when reporting a bug.\hypertarget{md_ext_nanogui_ext_glfw_README_autotoc_md55}{}\doxysection{Changelog}\label{md_ext_nanogui_ext_glfw_README_autotoc_md55}
+User-\/visible changes since the last release.\hypertarget{md_ext_nanogui_ext_glfw_README_autotoc_md56}{}\doxysection{Contact}\label{md_ext_nanogui_ext_glfw_README_autotoc_md56}
+On \href{http://www.glfw.org/}{\texttt{ glfw.\+org}} you can find the latest version of G\+L\+FW, as well as news, documentation and other information about the project.
+
+If you have questions related to the use of G\+L\+FW, we have a \href{http://discourse.glfw.org/}{\texttt{ forum}}, and the {\ttfamily \#glfw} I\+RC channel on \href{http://freenode.net/}{\texttt{ Freenode}}.
+
+If you have a bug to report, a patch to submit or a feature you\textquotesingle{}d like to request, please file it in the \href{https://github.com/glfw/glfw/issues}{\texttt{ issue tracker}} on Git\+Hub.
+
+Finally, if you\textquotesingle{}re interested in helping out with the development of G\+L\+FW or porting it to your favorite platform, join us on the forum, Git\+Hub or I\+RC.\hypertarget{md_ext_nanogui_ext_glfw_README_autotoc_md57}{}\doxysection{Acknowledgements}\label{md_ext_nanogui_ext_glfw_README_autotoc_md57}
+G\+L\+FW exists because people around the world donated their time and lent their skills.
+
+
+\begin{DoxyItemize}
+\item Bobyshev Alexander
+\item Matt Arsenault
+\item David Avedissian
+\item Keith Bauer
+\item John Bartholomew
+\item Coşku Baş
+\item Niklas Behrens
+\item Andrew Belt
+\item Niklas Bergström
+\item Denis Bernard
+\item Doug Binks
+\item blanco
+\item Kyle Brenneman
+\item Rok Breulj
+\item Martin Capitanio
+\item David Carlier
+\item Arturo Castro
+\item Chi-\/kwan Chan
+\item Ian Clarkson
+\item Michał Cichoń
+\item Lambert Clara
+\item Anna Clarke
+\item Yaron Cohen-\/\+Tal
+\item Omar Cornut
+\item Andrew Corrigan
+\item Bailey Cosier
+\item Noel Cower
+\item Jason Daly
+\item Jarrod Davis
+\item Olivier Delannoy
+\item Paul R. Deppe
+\item Michael Dickens
+\item Роман Донченко
+\item Mario Dorn
+\item Wolfgang Draxinger
+\item Jonathan Dummer
+\item Ralph Eastwood
+\item Fredrik Ehnbom
+\item Robin Eklind
+\item Siavash Eliasi
+\item Felipe Ferreira
+\item Michael Fogleman
+\item Gerald Franz
+\item Mário Freitas
+\item Ge\+O4d
+\item Marcus Geelnard
+\item Stephen Gowen
+\item Kovid Goyal
+\item Eloi Marín Gratacós
+\item Stefan Gustavson
+\item Jonathan Hale
+\item Sylvain Hellegouarch
+\item Matthew Henry
+\item heromyth
+\item Lucas Hinderberger
+\item Paul Holden
+\item Warren Hu
+\item Intellectual\+Kitty
+\item Aaron Jacobs
+\item Erik S. V. Jansson
+\item Toni Jovanoski
+\item Arseny Kapoulkine
+\item Cem Karan
+\item Osman Keskin
+\item Josh Kilmer
+\item Cameron King
+\item Peter Knut
+\item Christoph Kubisch
+\item Yuri Kunde Schlesner
+\item Konstantin Käfer
+\item Eric Larson
+\item Robin Leffmann
+\item Glenn Lewis
+\item Shane Liesegang
+\item Eyal Lotem
+\item Aaron Loucks
+\item Tristam Mac\+Donald
+\item Hans Mackowiak
+\item Дмитри Малышев
+\item Zbigniew Mandziejewicz
+\item Adam Marcus
+\item Célestin Marot
+\item Kyle Mc\+Donald
+\item David Medlock
+\item Bryce Mehring
+\item Jonathan Mercier
+\item Marcel Metz
+\item Liam Middlebrook
+\item Jonathan Miller
+\item Kenneth Miller
+\item Bruce Mitchener
+\item Jack Moffitt
+\item Jeff Molofee
+\item Alexander Monakov
+\item Pierre Morel
+\item Jon Morton
+\item Pierre Moulon
+\item Martins Mozeiko
+\item Julian Møller
+\item ndogxj
+\item Kristian Nielsen
+\item Kamil Nowakowski
+\item Denis Ovod
+\item Ozzy
+\item Andri Pálsson
+\item Peoro
+\item Braden Pellett
+\item Christopher Pelloux
+\item Arturo J. Pérez
+\item Anthony Pesch
+\item Orson Peters
+\item Emmanuel Gil Peyrot
+\item Cyril Pichard
+\item Keith Pitt
+\item Stanislav Podgorskiy
+\item Nathan Poirier
+\item Alexandre Pretyman
+\item przemekmirek
+\item Philip Rideout
+\item Eddie Ringle
+\item Max Risuhin
+\item Jorge Rodriguez
+\item Ed Ropple
+\item Aleksey Rybalkin
+\item Riku Salminen
+\item Brandon Schaefer
+\item Sebastian Schuberth
+\item Christian Sdunek
+\item Matt Sealey
+\item Steve Sexton
+\item Arkady Shapkin
+\item Yoshiki Shibukawa
+\item Dmitri Shuralyov
+\item Daniel Skorupski
+\item Bradley Smith
+\item Cliff Smolinsky
+\item Patrick Snape
+\item Erlend Sogge Heggen
+\item Julian Squires
+\item Johannes Stein
+\item Pontus Stenetorp
+\item Michael Stocker
+\item Justin Stoecker
+\item Elviss Strazdins
+\item Paul Sultana
+\item Nathan Sweet
+\item T\+T\+K-\/\+Bandit
+\item Sergey Tikhomirov
+\item Arthur Tombs
+\item Ioannis Tsakpinis
+\item Samuli Tuomola
+\item Matthew Turner
+\item urraka
+\item Elias Vanderstuyft
+\item Stef Velzel
+\item Jari Vetoniemi
+\item Ricardo Vieira
+\item Nicholas Vitovitch
+\item Simon Voordouw
+\item Corentin Wallez
+\item Torsten Walluhn
+\item Patrick Walton
+\item Xo Wang
+\item Jay Weisskopf
+\item Frank Wille
+\item Ryogo Yoshimura
+\item Andrey Zholos
+\item Santi Zupancic
+\item Jonas Ådahl
+\item Lasse Öörni
+\item All the unmentioned and anonymous contributors in the G\+L\+FW community, for bug reports, patches, feedback, testing and encouragement 
+\end{DoxyItemize}

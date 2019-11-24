@@ -1,16 +1,16 @@
-\hypertarget{classECS_1_1EntitySystem}{}\doxysection{E\+CS\+::Entity\+System Class Reference}
+\hypertarget{classECS_1_1EntitySystem}{}\doxysection{Référence de la classe E\+CS\+::Entity\+System}
 \label{classECS_1_1EntitySystem}\index{ECS::EntitySystem@{ECS::EntitySystem}}
 
 
 {\ttfamily \#include $<$E\+C\+S.\+h$>$}
 
-Inheritance diagram for E\+CS\+::Entity\+System\+:\begin{figure}[H]
+Graphe d\textquotesingle{}héritage de E\+CS\+::Entity\+System\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classECS_1_1EntitySystem}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{classECS_1_1EntitySystem_af3b321db010c23da73fa270b8c7fb865}{configure}} (\mbox{\hyperlink{classECS_1_1World}{World}} $\ast$world)
@@ -21,12 +21,12 @@ virtual void \mbox{\hyperlink{classECS_1_1EntitySystem_aa004b7ba46554525538e785c
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
-A system that acts on entities. Generally, this will act on a subset of entities using \mbox{\hyperlink{classECS_1_1World_ac1060983911a221c120ef1bf370a6eee}{World\+::each()}}.
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{structA}{A}} system that acts on entities. Generally, this will act on a subset of entities using \mbox{\hyperlink{classECS_1_1World_ac1060983911a221c120ef1bf370a6eee}{World\+::each()}}.
 
 Systems often will respond to events by subclassing \mbox{\hyperlink{classECS_1_1EventSubscriber}{Event\+Subscriber}}. You may use \mbox{\hyperlink{classECS_1_1EntitySystem_af3b321db010c23da73fa270b8c7fb865}{configure()}} to subscribe to events, but remember to unsubscribe in \mbox{\hyperlink{classECS_1_1EntitySystem_afa595ef472522135f8736940c98d0aa0}{unconfigure()}}. 
 
-\doxysubsection{Member Function Documentation}
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classECS_1_1EntitySystem_af3b321db010c23da73fa270b8c7fb865}\label{classECS_1_1EntitySystem_af3b321db010c23da73fa270b8c7fb865}} 
 \index{ECS::EntitySystem@{ECS::EntitySystem}!configure@{configure}}
 \index{configure@{configure}!ECS::EntitySystem@{ECS::EntitySystem}}
@@ -35,7 +35,7 @@ Systems often will respond to events by subclassing \mbox{\hyperlink{classECS_1_
 
 Called when this system is added to a world. 
 
-Reimplemented in \mbox{\hyperlink{classTestSystem_ad91c9683b913e1d0af16e319faf128af}{Test\+System}}.
+Réimplémentée dans \mbox{\hyperlink{classTestSystem_ad91c9683b913e1d0af16e319faf128af}{Test\+System}}.
 
 \mbox{\Hypertarget{classECS_1_1EntitySystem_aa004b7ba46554525538e785c1eb6be40}\label{classECS_1_1EntitySystem_aa004b7ba46554525538e785c1eb6be40}} 
 \index{ECS::EntitySystem@{ECS::EntitySystem}!tick@{tick}}
@@ -51,10 +51,10 @@ Called when \mbox{\hyperlink{classECS_1_1World_aac33fad54c600dc5e5f477a663ede9c7
 
 Called when this system is being removed from a world. 
 
-Reimplemented in \mbox{\hyperlink{classTestSystem_a0a2aab73d52fd9ba2b66799a28c95994}{Test\+System}}.
+Réimplémentée dans \mbox{\hyperlink{classTestSystem_a0a2aab73d52fd9ba2b66799a28c95994}{Test\+System}}.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
 \item 
 Engine/src/\+E\+C\+S/E\+C\+S.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\hypertarget{structNVGparams}{}\doxysection{Référence de la structure N\+V\+Gparams}
+\label{structNVGparams}\index{NVGparams@{NVGparams}}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structNVGparams_a6976a0363fdbfa0ef1e756556ef05f97}\label{structNVGparams_a6976a0363fdbfa0ef1e756556ef05f97}} 
+void $\ast$ {\bfseries user\+Ptr}
+\item 
+\mbox{\Hypertarget{structNVGparams_a273c8d7199cc5dc4f1a69e12f0b90229}\label{structNVGparams_a273c8d7199cc5dc4f1a69e12f0b90229}} 
+int {\bfseries edge\+Anti\+Alias}
+\item 
+\mbox{\Hypertarget{structNVGparams_a81ed5e34489ea1ea16e4adb41d40b3c6}\label{structNVGparams_a81ed5e34489ea1ea16e4adb41d40b3c6}} 
+int($\ast$ {\bfseries render\+Create} )(void $\ast$uptr)
+\item 
+\mbox{\Hypertarget{structNVGparams_a4c642be50dc96ab8d4d0bfa5c7113d88}\label{structNVGparams_a4c642be50dc96ab8d4d0bfa5c7113d88}} 
+int($\ast$ {\bfseries render\+Create\+Texture} )(void $\ast$uptr, int type, int w, int h, int image\+Flags, const unsigned char $\ast$data)
+\item 
+\mbox{\Hypertarget{structNVGparams_aa57d2bdba43c55004d67f0e7eb3a085a}\label{structNVGparams_aa57d2bdba43c55004d67f0e7eb3a085a}} 
+int($\ast$ {\bfseries render\+Delete\+Texture} )(void $\ast$uptr, int image)
+\item 
+\mbox{\Hypertarget{structNVGparams_a07bb4e272902adcef81d5fda4f424036}\label{structNVGparams_a07bb4e272902adcef81d5fda4f424036}} 
+int($\ast$ {\bfseries render\+Update\+Texture} )(void $\ast$uptr, int image, int x, int y, int w, int h, const unsigned char $\ast$data)
+\item 
+\mbox{\Hypertarget{structNVGparams_a119af5ccb73859ae1fbb1c548cebae4e}\label{structNVGparams_a119af5ccb73859ae1fbb1c548cebae4e}} 
+int($\ast$ {\bfseries render\+Get\+Texture\+Size} )(void $\ast$uptr, int image, int $\ast$w, int $\ast$h)
+\item 
+\mbox{\Hypertarget{structNVGparams_ae37d4f0af5b14c2d6dfab2870bd651b1}\label{structNVGparams_ae37d4f0af5b14c2d6dfab2870bd651b1}} 
+void($\ast$ {\bfseries render\+Viewport} )(void $\ast$uptr, float width, float height, float device\+Pixel\+Ratio)
+\item 
+\mbox{\Hypertarget{structNVGparams_ac1ecf6714c7d014cccd369a8e06368da}\label{structNVGparams_ac1ecf6714c7d014cccd369a8e06368da}} 
+void($\ast$ {\bfseries render\+Cancel} )(void $\ast$uptr)
+\item 
+\mbox{\Hypertarget{structNVGparams_a411865807dc225c2a97718b0318745a0}\label{structNVGparams_a411865807dc225c2a97718b0318745a0}} 
+void($\ast$ {\bfseries render\+Flush} )(void $\ast$uptr)
+\item 
+\mbox{\Hypertarget{structNVGparams_aba61fd416543934c7d894584368c054f}\label{structNVGparams_aba61fd416543934c7d894584368c054f}} 
+void($\ast$ {\bfseries render\+Fill} )(void $\ast$uptr, \mbox{\hyperlink{structNVGpaint}{N\+V\+Gpaint}} $\ast$paint, \mbox{\hyperlink{structNVGcompositeOperationState}{N\+V\+Gcomposite\+Operation\+State}} composite\+Operation, \mbox{\hyperlink{structNVGscissor}{N\+V\+Gscissor}} $\ast$scissor, float fringe, const float $\ast$bounds, const \mbox{\hyperlink{structNVGpath}{N\+V\+Gpath}} $\ast$paths, int npaths)
+\item 
+\mbox{\Hypertarget{structNVGparams_aa0b8d16374964cf7e058bf66d477a05d}\label{structNVGparams_aa0b8d16374964cf7e058bf66d477a05d}} 
+void($\ast$ {\bfseries render\+Stroke} )(void $\ast$uptr, \mbox{\hyperlink{structNVGpaint}{N\+V\+Gpaint}} $\ast$paint, \mbox{\hyperlink{structNVGcompositeOperationState}{N\+V\+Gcomposite\+Operation\+State}} composite\+Operation, \mbox{\hyperlink{structNVGscissor}{N\+V\+Gscissor}} $\ast$scissor, float fringe, float stroke\+Width, const \mbox{\hyperlink{structNVGpath}{N\+V\+Gpath}} $\ast$paths, int npaths)
+\item 
+\mbox{\Hypertarget{structNVGparams_aed1530c97eee4124a537254d040fdf3c}\label{structNVGparams_aed1530c97eee4124a537254d040fdf3c}} 
+void($\ast$ {\bfseries render\+Triangles} )(void $\ast$uptr, \mbox{\hyperlink{structNVGpaint}{N\+V\+Gpaint}} $\ast$paint, \mbox{\hyperlink{structNVGcompositeOperationState}{N\+V\+Gcomposite\+Operation\+State}} composite\+Operation, \mbox{\hyperlink{structNVGscissor}{N\+V\+Gscissor}} $\ast$scissor, const \mbox{\hyperlink{structNVGvertex}{N\+V\+Gvertex}} $\ast$verts, int nverts)
+\item 
+\mbox{\Hypertarget{structNVGparams_a9b86750adc99046d843beaddc1f8fd5d}\label{structNVGparams_a9b86750adc99046d843beaddc1f8fd5d}} 
+void($\ast$ {\bfseries render\+Delete} )(void $\ast$uptr)
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/nanovg/src/nanovg.\+h\end{DoxyCompactItemize}

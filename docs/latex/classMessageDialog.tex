@@ -1,0 +1,63 @@
+\hypertarget{classMessageDialog}{}\doxysection{Référence de la classe Message\+Dialog}
+\label{classMessageDialog}\index{MessageDialog@{MessageDialog}}
+
+
+Simple \char`\"{}\+O\+K\char`\"{} or \char`\"{}\+Yes/\+No\char`\"{}-\/style modal dialogs.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/messagedialog.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Message\+Dialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classMessageDialog}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMessageDialog_a15b8a702e1b8c2f2775dc4976237425b}\label{classMessageDialog_a15b8a702e1b8c2f2775dc4976237425b}} 
+enum \mbox{\hyperlink{classMessageDialog_a15b8a702e1b8c2f2775dc4976237425b}{Type}} \{ {\bfseries Information}, 
+{\bfseries Question}, 
+{\bfseries Warning}
+ \}
+\begin{DoxyCompactList}\small\item\em Classification of the type of message this \mbox{\hyperlink{classMessageDialog}{Message\+Dialog}} represents. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMessageDialog_aa527a8918f4ba178392d74c151d9c125}\label{classMessageDialog_aa527a8918f4ba178392d74c151d9c125}} 
+{\bfseries Message\+Dialog} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, \mbox{\hyperlink{classMessageDialog_a15b8a702e1b8c2f2775dc4976237425b}{Type}} type, const std\+::string \&title=\char`\"{}Untitled\char`\"{}, const std\+::string \&message=\char`\"{}Message\char`\"{}, const std\+::string \&button\+\_\+text=\char`\"{}OK\char`\"{}, const std\+::string \&alt\+\_\+button\+\_\+text=\char`\"{}Cancel\char`\"{}, bool alt\+\_\+button=false)
+\item 
+\mbox{\Hypertarget{classMessageDialog_a18964b8b65173516cde2f3653b70ab23}\label{classMessageDialog_a18964b8b65173516cde2f3653b70ab23}} 
+\mbox{\hyperlink{classLabel}{Label}} $\ast$ {\bfseries message\+\_\+label} ()
+\item 
+\mbox{\Hypertarget{classMessageDialog_a266bff6cca474dffdf8cf2df85329e79}\label{classMessageDialog_a266bff6cca474dffdf8cf2df85329e79}} 
+const \mbox{\hyperlink{classLabel}{Label}} $\ast$ {\bfseries message\+\_\+label} () const
+\item 
+\mbox{\Hypertarget{classMessageDialog_a47b209b616e36a62604d18daf6862dad}\label{classMessageDialog_a47b209b616e36a62604d18daf6862dad}} 
+std\+::function$<$ void(int)$>$ {\bfseries callback} () const
+\item 
+\mbox{\Hypertarget{classMessageDialog_a3bfedfed591e82d9bdd00b5d8a693d7b}\label{classMessageDialog_a3bfedfed591e82d9bdd00b5d8a693d7b}} 
+void {\bfseries set\+\_\+callback} (const std\+::function$<$ void(int)$>$ \&callback)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMessageDialog_acbe5d06b02197e17268dc5957494b589}\label{classMessageDialog_acbe5d06b02197e17268dc5957494b589}} 
+std\+::function$<$ void(int)$>$ {\bfseries m\+\_\+callback}
+\item 
+\mbox{\Hypertarget{classMessageDialog_abb9ddff35ce13269f5d1c7050400f1e6}\label{classMessageDialog_abb9ddff35ce13269f5d1c7050400f1e6}} 
+\mbox{\hyperlink{classLabel}{Label}} $\ast$ {\bfseries m\+\_\+message\+\_\+label}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+Simple \char`\"{}\+O\+K\char`\"{} or \char`\"{}\+Yes/\+No\char`\"{}-\/style modal dialogs. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{messagedialog_8h}{messagedialog.\+h}}\item 
+ext/nanogui/src/messagedialog.\+cpp\end{DoxyCompactItemize}

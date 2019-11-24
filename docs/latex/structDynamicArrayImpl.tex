@@ -1,0 +1,297 @@
+\hypertarget{structDynamicArrayImpl}{}\doxysection{Référence du modèle de la structure Dynamic\+Array\+Impl$<$ Packet\+\_\+, Derived\+\_\+ $>$}
+\label{structDynamicArrayImpl}\index{DynamicArrayImpl$<$ Packet\_, Derived\_ $>$@{DynamicArrayImpl$<$ Packet\_, Derived\_ $>$}}
+Graphe d\textquotesingle{}héritage de Dynamic\+Array\+Impl$<$ Packet\+\_\+, Derived\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structDynamicArrayImpl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_af6b0edc691d1ad724b307ee6b48056e6}\label{structDynamicArrayImpl_af6b0edc691d1ad724b307ee6b48056e6}} 
+auto {\bfseries operator-\/$>$} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a4b80ca1fbfaaf6f7ef154245cc4577b2}\label{structDynamicArrayImpl_a4b80ca1fbfaaf6f7ef154245cc4577b2}} 
+{\footnotesize template$<$typename Mask $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} {\bfseries extract\+\_\+} (const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a4eade8eb72419d3cf9b571a87aa0fc96}\label{structDynamicArrayImpl_a4eade8eb72419d3cf9b571a87aa0fc96}} 
+\mbox{\hyperlink{structDynamicArrayReference}{Dynamic\+Array\+Reference}}$<$ \mbox{\hyperlink{structPacket}{Packet}} $>$ {\bfseries ref\+\_\+wrap\+\_\+} () const
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Constructors}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a615d2bad422e178fefea1f2514133cc5}\label{structDynamicArrayImpl_a615d2bad422e178fefea1f2514133cc5}} 
+{\bfseries Dynamic\+Array\+Impl} ()=default
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a2e92235cc3b4de80004193575ee2deba}\label{structDynamicArrayImpl_a2e92235cc3b4de80004193575ee2deba}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries $\sim$\+Dynamic\+Array\+Impl} ()
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a1b2495e146ab828fdd0d7050c67c77ae}\label{structDynamicArrayImpl_a1b2495e146ab828fdd0d7050c67c77ae}} 
+{\footnotesize template$<$typename... Ts, enable\+\_\+if\+\_\+t$<$ sizeof...(\+Ts) $>$  = 2 \&\& std\+::conjunction\+\_\+v$<$detail\+::is\+\_\+constructible$<$\+Value, Ts$>$...$>$$>$ }\\Derived2 {\bfseries Dynamic\+Array\+Impl} (const \mbox{\hyperlink{structDynamicArrayImpl}{Dynamic\+Array\+Impl}}$<$ Packet2, Derived2 $>$ \&value)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_abc326e8f1492319ffa467c537cb104a4}\label{structDynamicArrayImpl_abc326e8f1492319ffa467c537cb104a4}} 
+{\footnotesize template$<$typename Value2 , typename Derived2 $>$ }\\{\bfseries Dynamic\+Array\+Impl} (const \mbox{\hyperlink{structArrayBase}{Array\+Base}}$<$ Value2, Derived2 $>$ \&value)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a702b524c5c1f2f91c41ae6af35c6b4f1}\label{structDynamicArrayImpl_a702b524c5c1f2f91c41ae6af35c6b4f1}} 
+{\footnotesize template$<$typename Packet2 , typename Derived2 $>$ }\\{\bfseries Dynamic\+Array\+Impl} (const \mbox{\hyperlink{structDynamicArrayImpl}{Dynamic\+Array\+Impl}}$<$ Packet2, Derived2 $>$ \&other, \mbox{\hyperlink{structdetail_1_1reinterpret__flag}{detail\+::reinterpret\+\_\+flag}})
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_aff486942765c085bdfe05fb742569adc}\label{structDynamicArrayImpl_aff486942765c085bdfe05fb742569adc}} 
+{\footnotesize template$<$typename T  = Packet\+\_\+, enable\+\_\+if\+\_\+mask\+\_\+t$<$ T $>$  = 0$>$ }\\{\bfseries Dynamic\+Array\+Impl} (bool value, \mbox{\hyperlink{structdetail_1_1reinterpret__flag}{detail\+::reinterpret\+\_\+flag}})
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a7bc78c0c9d87e977ad1b57e5a4fbf9e0}\label{structDynamicArrayImpl_a7bc78c0c9d87e977ad1b57e5a4fbf9e0}} 
+{\footnotesize template$<$typename T , enable\+\_\+if\+\_\+t$<$ is\+\_\+scalar\+\_\+v$<$ T $>$$>$  = 0$>$ }\\{\bfseries Dynamic\+Array\+Impl} (const T \&value)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Assignment operators}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a3587643add59b6e94c0b32ed70fc22aa}\label{structDynamicArrayImpl_a3587643add59b6e94c0b32ed70fc22aa}} 
+{\footnotesize template$<$typename T , enable\+\_\+if\+\_\+t$<$ is\+\_\+scalar\+\_\+v$<$ T $>$$>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+N\+O\+I\+N\+L\+I\+NE \mbox{\hyperlink{structDynamicArrayImpl}{Dynamic\+Array\+Impl}} \& {\bfseries operator=} (const T \&value)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a9ff13cf17ef97a0b4049f083648d0100}\label{structDynamicArrayImpl_a9ff13cf17ef97a0b4049f083648d0100}} 
+E\+N\+O\+K\+I\+\_\+\+N\+O\+I\+N\+L\+I\+NE \mbox{\hyperlink{structDynamicArrayImpl}{Dynamic\+Array\+Impl}} \& {\bfseries operator=} (const \mbox{\hyperlink{structDynamicArrayImpl}{Dynamic\+Array\+Impl}} \&other)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_ac4944c7822cb0eadadbb54e5f1d33ece}\label{structDynamicArrayImpl_ac4944c7822cb0eadadbb54e5f1d33ece}} 
+{\footnotesize template$<$typename Packet2 , typename Derived2 $>$ }\\E\+N\+O\+K\+I\+\_\+\+N\+O\+I\+N\+L\+I\+NE \mbox{\hyperlink{structDynamicArrayImpl}{Dynamic\+Array\+Impl}} \& {\bfseries operator=} (const \mbox{\hyperlink{structDynamicArrayImpl}{Dynamic\+Array\+Impl}}$<$ Packet2, Derived2 $>$ \&other)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_affb67c0b862700ef0731473f1312a842}\label{structDynamicArrayImpl_affb67c0b862700ef0731473f1312a842}} 
+{\footnotesize template$<$typename Value2 , typename Derived2 $>$ }\\E\+N\+O\+K\+I\+\_\+\+N\+O\+I\+N\+L\+I\+NE \mbox{\hyperlink{structDynamicArrayImpl}{Dynamic\+Array\+Impl}} \& {\bfseries operator=} (const \mbox{\hyperlink{structArrayBase}{Array\+Base}}$<$ Value2, Derived2 $>$ \&other)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a089e34ab5fadbc04b36d36ce41e91cb5}\label{structDynamicArrayImpl_a089e34ab5fadbc04b36d36ce41e91cb5}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structDynamicArrayImpl}{Dynamic\+Array\+Impl}} \& {\bfseries operator=} (\mbox{\hyperlink{structDynamicArrayImpl}{Dynamic\+Array\+Impl}} \&\&other)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a7560630dac8557f49b05be3454739ac8}\label{structDynamicArrayImpl_a7560630dac8557f49b05be3454739ac8}} 
+void {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Functions to access the array contents}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a415e848b218bb4272a3ad131e63627aa}\label{structDynamicArrayImpl_a415e848b218bb4272a3ad131e63627aa}} 
+bool {\bfseries is\+\_\+mapped} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_ad4ae2a9a46506ba42bba41c4f89b9b16}\label{structDynamicArrayImpl_ad4ae2a9a46506ba42bba41c4f89b9b16}} 
+size\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a6d4edc76f534ccf64b01fb9462a22d1c}\label{structDynamicArrayImpl_a6d4edc76f534ccf64b01fb9462a22d1c}} 
+size\+\_\+t {\bfseries packets} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a313099dd325754fcd40ca6006217a3fc}\label{structDynamicArrayImpl_a313099dd325754fcd40ca6006217a3fc}} 
+size\+\_\+t {\bfseries packets\+\_\+allocated} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_aa72c94f2dba023dc0616d642bebf0f99}\label{structDynamicArrayImpl_aa72c94f2dba023dc0616d642bebf0f99}} 
+size\+\_\+t {\bfseries capacity} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a65f9ea53a2d37f2846bbbb6470f07425}\label{structDynamicArrayImpl_a65f9ea53a2d37f2846bbbb6470f07425}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a0cdf4d8c408ff3f174e775e9d9ccda04}\label{structDynamicArrayImpl_a0cdf4d8c408ff3f174e775e9d9ccda04}} 
+size\+\_\+t {\bfseries nbytes} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a539aa0ecfa6cd235cfd8b4d2e32ec0b8}\label{structDynamicArrayImpl_a539aa0ecfa6cd235cfd8b4d2e32ec0b8}} 
+const E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} $\ast$ {\bfseries data} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a0c7a328a3fd42ed123d9813dd568d5d3}\label{structDynamicArrayImpl_a0c7a328a3fd42ed123d9813dd568d5d3}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} $\ast$ {\bfseries data} ()
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a783ce948263a55c199a0b84fda8b14e3}\label{structDynamicArrayImpl_a783ce948263a55c199a0b84fda8b14e3}} 
+const E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structPacket}{Packet}} $\ast$ {\bfseries packet\+\_\+ptr} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_ac7dce5bf481eb987a350d0c30a6d9d81}\label{structDynamicArrayImpl_ac7dce5bf481eb987a350d0c30a6d9d81}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structPacket}{Packet}} $\ast$ {\bfseries packet\+\_\+ptr} ()
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a10205a421199ed8379f5edbdb1a1830b}\label{structDynamicArrayImpl_a10205a421199ed8379f5edbdb1a1830b}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries coeff} (size\+\_\+t i)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a84623106e580014908e1713334f0ca9a}\label{structDynamicArrayImpl_a84623106e580014908e1713334f0ca9a}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries coeff} (size\+\_\+t i) const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_ab4118d8e45ce05b00ad4554518d8253b}\label{structDynamicArrayImpl_ab4118d8e45ce05b00ad4554518d8253b}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structPacket}{Packet}} \& {\bfseries packet} (size\+\_\+t i)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a7b0905f3dc325d6e8cf92140975c66f3}\label{structDynamicArrayImpl_a7b0905f3dc325d6e8cf92140975c66f3}} 
+const E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structPacket}{Packet}} \& {\bfseries packet} (size\+\_\+t i) const
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Horizontal array operations}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a1c2ddac2985fe946ec3d71cd52d7f8d9}\label{structDynamicArrayImpl_a1c2ddac2985fe946ec3d71cd52d7f8d9}} 
+\mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} {\bfseries hsum\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_ad70b7fb1b4070d2284a2a1779f70a274}\label{structDynamicArrayImpl_ad70b7fb1b4070d2284a2a1779f70a274}} 
+\mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} {\bfseries hprod\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a6dbd8204f4bd40a1749eed3549940b5e}\label{structDynamicArrayImpl_a6dbd8204f4bd40a1749eed3549940b5e}} 
+\mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} {\bfseries hmin\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a1be84ea1a9032167942dabf99a38bd62}\label{structDynamicArrayImpl_a1be84ea1a9032167942dabf99a38bd62}} 
+\mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} {\bfseries hmax\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_ad02b6fb966f86cf8298b0eb77bf862f2}\label{structDynamicArrayImpl_ad02b6fb966f86cf8298b0eb77bf862f2}} 
+bool {\bfseries any\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a86f72d087bb03ccf7538a3e240305435}\label{structDynamicArrayImpl_a86f72d087bb03ccf7538a3e240305435}} 
+bool {\bfseries all\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a11b55f35884376930e14e68357a202ad}\label{structDynamicArrayImpl_a11b55f35884376930e14e68357a202ad}} 
+size\+\_\+t {\bfseries count\+\_\+} () const
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_adba9110e86b145c67042b11f85d7ac57}\label{structDynamicArrayImpl_adba9110e86b145c67042b11f85d7ac57}} 
+Packet\+Holder {\bfseries m\+\_\+packets}
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a535be722cedb86b41c4d8bf8f25f6e96}\label{structDynamicArrayImpl_a535be722cedb86b41c4d8bf8f25f6e96}} 
+Size {\bfseries m\+\_\+size} = 0
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a2c08adddd87641fdef5df6d5a6a37403}\label{structDynamicArrayImpl_a2c08adddd87641fdef5df6d5a6a37403}} 
+Size {\bfseries m\+\_\+packets\+\_\+allocated} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Aliases and constants}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_abf62869a3a3131eb87f79f2fd990d66c}\label{structDynamicArrayImpl_abf62869a3a3131eb87f79f2fd990d66c}} 
+using {\bfseries Size} = uint32\+\_\+t
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a8ebaa2cb93eb7bd668a583f073972d3e}\label{structDynamicArrayImpl_a8ebaa2cb93eb7bd668a583f073972d3e}} 
+using {\bfseries Base} = \mbox{\hyperlink{structArrayBase}{Array\+Base}}$<$ value\+\_\+t$<$ Packet\+\_\+ $>$, Derived\+\_\+ $>$
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_af6a18c6b3719776d508360999338a183}\label{structDynamicArrayImpl_af6a18c6b3719776d508360999338a183}} 
+using {\bfseries Packet} = Packet\+\_\+
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a535e4eb46b2dea85fd89c74aed978b39}\label{structDynamicArrayImpl_a535e4eb46b2dea85fd89c74aed978b39}} 
+using {\bfseries Index\+Packet} = uint\+\_\+array\+\_\+t$<$ \mbox{\hyperlink{classarray__t}{array\+\_\+t}}$<$ Packet\+\_\+ $>$, false $>$
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_afc41933ee337575b4981beee1656cd0c}\label{structDynamicArrayImpl_afc41933ee337575b4981beee1656cd0c}} 
+using {\bfseries Index\+Scalar} = scalar\+\_\+t$<$ Index\+Packet $>$
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_ae10628062bbc86d7d54cb3ce9449e8f0}\label{structDynamicArrayImpl_ae10628062bbc86d7d54cb3ce9449e8f0}} 
+using {\bfseries Packet\+Holder} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structPacket}{Packet}}\mbox{[}$\,$\mbox{]}$>$
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_afa91d640216ee317067fe2afc6a8f278}\label{structDynamicArrayImpl_afa91d640216ee317067fe2afc6a8f278}} 
+static constexpr size\+\_\+t {\bfseries Packet\+Size} = Packet\+::\+Size
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a585b09997566c95a362c36aebf8a110b}\label{structDynamicArrayImpl_a585b09997566c95a362c36aebf8a110b}} 
+static constexpr bool {\bfseries Approx} = Packet\+::\+Approx
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a9b524d76eb378c4103fb297f621c047e}\label{structDynamicArrayImpl_a9b524d76eb378c4103fb297f621c047e}} 
+static constexpr Rounding\+Mode {\bfseries Mode} = Packet\+::\+Mode
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a059e90ef818c63500759a134aabb0772}\label{structDynamicArrayImpl_a059e90ef818c63500759a134aabb0772}} 
+static constexpr bool {\bfseries Is\+Mask} = Packet\+::\+Is\+Mask
+\end{DoxyCompactItemize}
+\doxysubsection*{Vertical array operations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a4c3946d954c12eae2457bc0cb480c1b9}\label{structDynamicArrayImpl_a4c3946d954c12eae2457bc0cb480c1b9}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+F\+W\+D\+\_\+\+U\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON} (not, \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}}, $\sim$a)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a3958c06d1a30193edb64bd08edcc0d9f}\label{structDynamicArrayImpl_a3958c06d1a30193edb64bd08edcc0d9f}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+F\+W\+D\+\_\+\+U\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON} (neg, \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}}, -\/a)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_ae1c205fea4f6b76f7c09a73dbde1b59d}\label{structDynamicArrayImpl_ae1c205fea4f6b76f7c09a73dbde1b59d}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+F\+W\+D\+\_\+\+U\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON} (abs, \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}}, abs(a))
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a615fc80ca01c25dc0ea72bad1546519f}\label{structDynamicArrayImpl_a615fc80ca01c25dc0ea72bad1546519f}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+F\+W\+D\+\_\+\+U\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON} (ceil, \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}}, ceil(a))
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a89e357e6b190cf128e6ccc850290c33c}\label{structDynamicArrayImpl_a89e357e6b190cf128e6ccc850290c33c}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+F\+W\+D\+\_\+\+U\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON} (floor, \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}}, floor(a))
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a54a226938824c7855ba37e4477b348b4}\label{structDynamicArrayImpl_a54a226938824c7855ba37e4477b348b4}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+F\+W\+D\+\_\+\+U\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON} (sqrt, \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}}, sqrt(a))
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_addb4ff3cc173610d1a2fceaf0739b03a}\label{structDynamicArrayImpl_addb4ff3cc173610d1a2fceaf0739b03a}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+F\+W\+D\+\_\+\+U\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON} (round, \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}}, round(a))
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_abad67cb33ea9030f283fe756948b34a6}\label{structDynamicArrayImpl_abad67cb33ea9030f283fe756948b34a6}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+F\+W\+D\+\_\+\+U\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON} (trunc, \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}}, trunc(a))
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a811df2553cbbd3ffb57b98a283945227}\label{structDynamicArrayImpl_a811df2553cbbd3ffb57b98a283945227}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+F\+W\+D\+\_\+\+U\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON} (rsqrt, \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}}, rsqrt(a))
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_aac2e342af0a7c4521528157fd040cc4f}\label{structDynamicArrayImpl_aac2e342af0a7c4521528157fd040cc4f}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+F\+W\+D\+\_\+\+U\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON} (rcp, \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}}, rcp(a))
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a6ee2fa5b4a6142a254236e48a9b1bbbb}\label{structDynamicArrayImpl_a6ee2fa5b4a6142a254236e48a9b1bbbb}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Index , typename Mask $>$ }\\void {\bfseries scatter\+\_\+} (void $\ast$mem, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_aa016397221869f1a77db88933640d2a2}\label{structDynamicArrayImpl_aa016397221869f1a77db88933640d2a2}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Index , typename Mask $>$ }\\void {\bfseries scatter\+\_\+add\+\_\+} (void $\ast$mem, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a4708b253d3b0a388c8432498b4846358}\label{structDynamicArrayImpl_a4708b253d3b0a388c8432498b4846358}} 
+{\footnotesize template$<$typename Mask $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries compress\+\_\+} (float $\ast$\&ptr, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_ad5421b9408feb51061a382cf5bb7b4d7}\label{structDynamicArrayImpl_ad5421b9408feb51061a382cf5bb7b4d7}} 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries ceil2int\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_ae1b03c93cc079a01f1ce8374b78fd0bf}\label{structDynamicArrayImpl_ae1b03c93cc079a01f1ce8374b78fd0bf}} 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries floor2int\+\_\+} () const
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_ab218b6004108a5835d04d96ec4828dc8}\label{structDynamicArrayImpl_ab218b6004108a5835d04d96ec4828dc8}} 
+{\footnotesize template$<$typename Mask $>$ }\\static \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries select\+\_\+} (const \mbox{\hyperlink{structMask}{Mask}} \&mask, const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&t, const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&f)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a5f52eba8f94c7b4a06d477e274ebacdf}\label{structDynamicArrayImpl_a5f52eba8f94c7b4a06d477e274ebacdf}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Index , typename Mask $>$ }\\static \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries gather\+\_\+} (const void $\ast$mem, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_aacb8ca2aaae30b58742a953fcbf14e18}\label{structDynamicArrayImpl_aacb8ca2aaae30b58742a953fcbf14e18}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Index , typename Func , typename... Args, typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries transform\+\_\+} (void $\ast$ptr, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask, const Func \&func, const Args \&... \mbox{\hyperlink{classargs}{args}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Initialization helper functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+N\+O\+K\+I\+\_\+\+N\+O\+I\+N\+L\+I\+NE void \mbox{\hyperlink{structDynamicArrayImpl_a92987711ee579965c569655b667b6d3d}{resize}} (size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Resize the buffer to the desired size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a57db51626913559cb9492709467289db}\label{structDynamicArrayImpl_a57db51626913559cb9492709467289db}} 
+void {\bfseries clean\+\_\+trailing\+\_\+} ()
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a1c8cc978c3f01d1042222bbc44a08779}\label{structDynamicArrayImpl_a1c8cc978c3f01d1042222bbc44a08779}} 
+{\footnotesize template$<$typename... Args$>$ }\\void {\bfseries resize\+\_\+like} (const Args \&... \mbox{\hyperlink{classargs}{args}})
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_aa0bcf93d7e9ae121782e50bc3725603a}\label{structDynamicArrayImpl_aa0bcf93d7e9ae121782e50bc3725603a}} 
+static \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries map} (void $\ast$ptr, size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a431c6e188707f3a43f459d46e8e0c462}\label{structDynamicArrayImpl_a431c6e188707f3a43f459d46e8e0c462}} 
+static \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries empty\+\_\+} (size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a1230ab92c01ea0280f71fdd5b908ba9f}\label{structDynamicArrayImpl_a1230ab92c01ea0280f71fdd5b908ba9f}} 
+static \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries zero\+\_\+} (size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a735e0821247796a8c4931c3845f0ef20}\label{structDynamicArrayImpl_a735e0821247796a8c4931c3845f0ef20}} 
+static \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries full\+\_\+} (const \mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} \&value, size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_ad776771cb83206035856cc2b9e6a943b}\label{structDynamicArrayImpl_ad776771cb83206035856cc2b9e6a943b}} 
+static \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \mbox{\hyperlink{structDynamicArrayImpl_ad776771cb83206035856cc2b9e6a943b}{arange\+\_\+}} (ssize\+\_\+t start, ssize\+\_\+t stop, ssize\+\_\+t step)
+\begin{DoxyCompactList}\small\item\em Construct an evenly spaced integer sequence. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a9f448735ac02929fe8b72e7cb04aecd4}\label{structDynamicArrayImpl_a9f448735ac02929fe8b72e7cb04aecd4}} 
+static \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} {\bfseries linspace\+\_\+} (\mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} min, \mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} max, size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structDynamicArrayImpl_a2d8f2d573744a6aef6416f266eafa809}\label{structDynamicArrayImpl_a2d8f2d573744a6aef6416f266eafa809}} 
+{\footnotesize template$<$typename... Args$>$ }\\static size\+\_\+t {\bfseries check\+\_\+size} (const Args \&... \mbox{\hyperlink{classargs}{args}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{structDynamicArrayImpl_a92987711ee579965c569655b667b6d3d}\label{structDynamicArrayImpl_a92987711ee579965c569655b667b6d3d}} 
+\index{DynamicArrayImpl$<$ Packet\_, Derived\_ $>$@{DynamicArrayImpl$<$ Packet\_, Derived\_ $>$}!resize@{resize}}
+\index{resize@{resize}!DynamicArrayImpl$<$ Packet\_, Derived\_ $>$@{DynamicArrayImpl$<$ Packet\_, Derived\_ $>$}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$typename Packet\+\_\+, typename Derived\+\_\+$>$ \\
+E\+N\+O\+K\+I\+\_\+\+N\+O\+I\+N\+L\+I\+NE void \mbox{\hyperlink{structDynamicArrayImpl}{Dynamic\+Array\+Impl}}$<$ Packet\+\_\+, Derived\+\_\+ $>$\+::resize (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resize the buffer to the desired size. 
+
+When the capacity is insufficient, the implementation destroys the current contents and allocates a new (uninitialized) buffer
+
+When compiled in debug mode, newly allocated floating point arrays will be initialized with Na\+Ns. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/dynamic.\+h\end{DoxyCompactItemize}

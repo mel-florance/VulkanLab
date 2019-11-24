@@ -1,0 +1,106 @@
+
+
+\hypertarget{md_ext_nanogui_ext_enoki_README_autotoc_md19}{}\doxysection{Enoki — structured vectorization and differentiation on modern processor architectures}\label{md_ext_nanogui_ext_enoki_README_autotoc_md19}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Documentation  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Linux  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Windows   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Documentation  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Linux  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Windows   }\\\cline{1-3}
+\endhead
+\PBS\centering \href{http://enoki.readthedocs.org/en/master}{\texttt{ }}  &\PBS\centering \href{https://rgl-ci.epfl.ch/viewType.html?buildTypeId=Enoki_Build&guest=1}{\texttt{ }}  &\PBS\centering \href{https://ci.appveyor.com/project/wjakob/enoki/branch/master}{\texttt{ }}   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_ext_nanogui_ext_enoki_README_autotoc_md20}{}\doxysubsection{Introduction}\label{md_ext_nanogui_ext_enoki_README_autotoc_md20}
+{\bfseries{Enoki}} is a C++ template library that enables automatic transformations of numerical code, for instance to create a \char`\"{}wide\char`\"{} vectorized variant of an algorithm that runs on the C\+PU or G\+PU, or to compute gradients via transparent forward/reverse-\/mode automatic differentation.
+
+The core parts of the library are implemented as a set of header files with no dependencies other than a sufficiently C++17-\/capable compiler (G\+CC $>$= 8.\+2, Clang $>$= 7.\+0, Visual Studio $>$= 2017). Enoki code reduces to efficient S\+I\+MD instructions available on modern C\+P\+Us and G\+P\+Us—in particular, Enoki supports\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Intel}}\+: A\+V\+X512, A\+V\+X2, A\+VX, and S\+S\+E4.\+2,
+\item {\bfseries{A\+RM}}\+: N\+E\+O\+N/\+V\+F\+P\+V4 on armv7-\/a, Advanced S\+I\+MD on 64-\/bit armv8-\/a,
+\item {\bfseries{N\+V\+I\+D\+IA}}\+: C\+U\+DA via a {\itshape Parallel \mbox{\hyperlink{structThread}{Thread}} Execution} (P\+TX) just-\/in-\/time compiler.
+\item {\bfseries{Fallback}}\+: a scalar fallback mode ensures that programs still run even if none of the above are available.
+\end{DoxyItemize}
+
+Deploying a program on top of Enoki usually serves three goals\+:
+
+
+\begin{DoxyEnumerate}
+\item Enoki ships with a convenient library of special functions and data structures that facilitate implementation of numerical code (vectors, matrices, complex numbers, quaternions, etc.).
+\item Programs built using these can be instantiated as {\itshape wide} versions that process many arguments at once (either on the C\+PU or the G\+PU).
+
+Enoki is also {\itshape structured} in the sense that it handles complex programs with custom data structures, lambda functions, loadable modules, virtual method calls, and many other modern C++ features.
+\item If derivatives are desired (e.\+g. for stochastic gradient descent), Enoki performs transparent forward or reverse-\/mode automatic differentiation of the entire program.
+\end{DoxyEnumerate}
+
+Finally, Enoki can do all of the above simultaneously\+: if desired, it can compile the same source code to multiple different implementations (e.\+g. scalar, A\+V\+X512, and C\+U\+D\+A+autodiff).\hypertarget{md_ext_nanogui_ext_enoki_README_autotoc_md21}{}\doxysubsubsection{Motivation}\label{md_ext_nanogui_ext_enoki_README_autotoc_md21}
+The development of this library was prompted by the author\textquotesingle{}s frustration with the current vectorization landscape\+:
+
+
+\begin{DoxyEnumerate}
+\item Auto-\/vectorization in state-\/of-\/the-\/art compilers is inherently local. \mbox{\hyperlink{structA}{A}} computation whose call graph spans separate compilation units (e.\+g. multiple shared libraries) simply can\textquotesingle{}t be vectorized.
+\item Data structures must be converted into a {\itshape Structure of Arrays} (SoA) layout to be eligible for vectorization.
+
+ 
+
+This is analogous to performing a matrix transpose of an application\textquotesingle{}s entire memory layout—an intrusive change that is likely to touch almost every line of code.
+\item Parts of the application likely have to be rewritten using \href{https://software.intel.com/sites/landingpage/IntrinsicsGuide}{\texttt{ intrinsic instructions}}, which is going to look something like this\+:
+
+ 
+
+Intrinsics-\/heavy code is challenging to read and modify once written, and it is inherently non-\/portable. C\+U\+DA provides a nice language environment for programming G\+P\+Us but does nothing to help with the other requirements (vectorization on C\+P\+Us, automatic differentiation).
+\item Vectorized transcendental functions ({\itshape exp}, {\itshape cos}, {\itshape erf}, ..) are not widely available. Intel, A\+MD, and C\+U\+DA provide proprietary implementations, but many compilers don\textquotesingle{}t include them by default.
+\item It is desirable to retain both scalar and vector versions of an algorithm, but ensuring their consistency throughout the development cycle becomes a maintenance nightmare.
+\item {\itshape Domain-\/specific languages} (D\+S\+Ls) for vectorization such as \href{https://ispc.github.io}{\texttt{ I\+S\+PC}} address many of the above issues but assume that the main computation underlying an application can be condensed into a compact kernel that is implementable using the limited language subset of the D\+SL (e.\+g. plain C in the case of I\+S\+PC).
+
+This is not the case for complex applications, where the \char`\"{}kernel\char`\"{} may be spread out over many separate modules involving high-\/level language features such as functional or object-\/oriented programming.
+\end{DoxyEnumerate}\hypertarget{md_ext_nanogui_ext_enoki_README_autotoc_md22}{}\doxysubsubsection{What Enoki does differently}\label{md_ext_nanogui_ext_enoki_README_autotoc_md22}
+Enoki addresses these issues and provides a {\itshape complete} solution for vectorizing and differentiating modern C++ applications with nontrivial control flow and data structures, dynamic memory allocation, virtual method calls, and vector calls across module boundaries. It has the following design goals\+:
+
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Unobtrusive}}. Only minor modifications are necessary to convert existing C++ code into its Enoki-\/vectorized equivalent, which remains readable and maintainable.
+\item {\bfseries{No code duplication}}. It is generally desirable to provide both scalar and vectorized versions of an A\+PI, e.\+g. for debugging, and to preserve compatibility with legacy code. Enoki code extensively relies on class and function templates to achieve this goal without any code duplication—the same code template can be leveraged to create scalar, C\+PU S\+I\+MD, and G\+PU implementations, and each variant can provide gradients via automatic differentiation if desired.
+\item {\bfseries{\mbox{\hyperlink{structCustom}{Custom}} data structures}}. Enoki can also vectorize custom data structures. All the hard work (e.\+g. conversion to SoA format) is handled by the C++17 type system.
+\item {\bfseries{\mbox{\hyperlink{structFunction}{Function}} calls}}. Vectorized calls to functions in other compilation units (e.\+g. a dynamically loaded plugin) are possible. Enoki can even vectorize method or virtual method calls (e.\+g. {\ttfamily instance-\/$>$my\+\_\+function(arg1, arg2, ...);} when {\ttfamily instance} turns out to be an array containing many different instances).
+\item {\bfseries{Mathematical library}}. Enoki includes an extensive mathematical support library with complex numbers, matrices, quaternions, and related operations (determinants, matrix, inversion, etc.). \mbox{\hyperlink{structA}{A}} set of transcendental and special functions supports real, complex, and quaternion-\/valued arguments in single and double-\/precision using polynomial or rational polynomial approximations, generally with an average error of $<$1/2 U\+LP on their full domain. These include exponentials, logarithms, and trigonometric and hyperbolic functions, as well as their inverses. Enoki also provides real-\/valued versions of error function variants, Bessel functions, and elliptical integrals.
+
+ 
+
+Importantly, all of this functionality is realized using the abstractions of Enoki, which means that it transparently composes with vectorization, the J\+IT compiler for generating C\+U\+DA kernels, automatic differentiation, etc.
+\item {\bfseries{Portability}}. When creating vectorized C\+PU code, Enoki supports arbitrary array sizes that don\textquotesingle{}t necessarily match what is supported by the underlying hardware (e.\+g. 16 x single precision on a machine, whose S\+SE vector only has hardware support for 4 x single precision operands). The library uses template metaprogramming techniques to efficiently map array expressions onto the available hardware resources. This greatly simplifies development because it\textquotesingle{}s enough to write a single implementation of a numerical algorithm that can then be deployed on any target architecture. There are non-\/vectorized fallbacks for everything, thus programs will run even on unsupported architectures (albeit without the performance benefits of vectorization).
+\item {\bfseries{Modular architecture}}. Enoki is split into two major components\+: the front-\/end provides various high-\/level array operations, while the back-\/end provides the basic ingredients that are needed to realize these operations using the S\+I\+MD instruction \mbox{\hyperlink{classset}{set(s)}} supported by the target architecture.
+
+The C\+PU vector back-\/ends e.\+g. make heavy use of S\+I\+MD intrinsics to ensure that compilers generate efficient machine code. The intrinsics are contained in separate back-\/end header files (e.\+g. {\ttfamily \mbox{\hyperlink{array__avx_8h_source}{array\+\_\+avx.\+h}}} for A\+VX intrinsics), which provide rudimentary arithmetic and bit-\/level operations. Fancier operations (e.\+g. {\itshape atan2}) use the back-\/ends as an abstract interface to the hardware, which means that it\textquotesingle{}s simple to support other instruction sets such as a hypothetical future A\+V\+X1024 or even an entirely different architecture (e.\+g. a D\+SP chip) by just adding a new back-\/end.
+\item {\bfseries{License}}. Enoki is available under a non-\/viral open source license (3-\/clause B\+SD).
+\end{DoxyEnumerate}\hypertarget{md_ext_nanogui_ext_enoki_README_autotoc_md23}{}\doxysubsection{Cloning}\label{md_ext_nanogui_ext_enoki_README_autotoc_md23}
+Enoki depends on two other repositories (\href{https://github.com/pybind/pybind11}{\texttt{ pybind11}} and \href{https://nvlabs.github.io/cub}{\texttt{ cub}}) that are required when using certain optional features, specifically differentiable G\+PU arrays with Python bindings.
+
+To fetch the entire project including these dependencies, clone the project using the {\ttfamily -\/-\/recursive} flag as follows\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ git clone -\/-\/recursive https://github.com/mitsuba-\/renderer/enoki}
+\end{DoxyCode}
+\hypertarget{md_ext_nanogui_ext_enoki_README_autotoc_md24}{}\doxysubsection{Documentation}\label{md_ext_nanogui_ext_enoki_README_autotoc_md24}
+An extensive set of tutorials and reference documentation are available at \href{http://enoki.readthedocs.org/en/master}{\texttt{ readthedocs.\+org}}.\hypertarget{md_ext_nanogui_ext_enoki_README_autotoc_md25}{}\doxysubsection{About}\label{md_ext_nanogui_ext_enoki_README_autotoc_md25}
+This project was created by \href{http://rgl.epfl.ch/people/wjakob}{\texttt{ Wenzel Jakob}}. It is named after \href{https://en.wikipedia.org/wiki/Enokitake}{\texttt{ Enokitake}}, a type of mushroom with many long and parallel stalks reminiscent of data flow in vectorized arithmetic.
+
+Enoki is the numerical foundation of version 2 of the \href{https://github.com/mitsuba-renderer/mitsuba2}{\texttt{ Mitsuba renderer}}, though it is significantly more general and should be a trusty tool for a variety of simulation and optimization problems.
+
+When using Enoki in academic projects, please cite
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@misc\{Enoki,}
+\DoxyCodeLine{   author = \{Wenzel Jakob\},}
+\DoxyCodeLine{   year = \{2019\},}
+\DoxyCodeLine{   note = \{https://github.com/mitsuba-\/renderer/enoki\},}
+\DoxyCodeLine{   title = \{Enoki: structured vectorization and differentiation on modern processor architectures\}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ 

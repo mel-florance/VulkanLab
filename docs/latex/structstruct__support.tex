@@ -1,0 +1,73 @@
+\hypertarget{structstruct__support}{}\doxysection{Référence du modèle de la structure struct\+\_\+support$<$ T, typename $>$}
+\label{structstruct__support}\index{struct\_support$<$ T, typename $>$@{struct\_support$<$ T, typename $>$}}
+
+
+Helper class for custom data structures.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstruct__support_a89e3ee70742c6c3d82ef8faac1d17e07}\label{structstruct__support_a89e3ee70742c6c3d82ef8faac1d17e07}} 
+using {\bfseries Dynamic} = T
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstruct__support_a20d321563352f6b5fb0cb385f37ab08d}\label{structstruct__support_a20d321563352f6b5fb0cb385f37ab08d}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries slices} (const T \&)
+\item 
+\mbox{\Hypertarget{structstruct__support_ae0964f6a5b1aa0570f7e315f067aeebc}\label{structstruct__support_ae0964f6a5b1aa0570f7e315f067aeebc}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries packets} (const T \&)
+\item 
+\mbox{\Hypertarget{structstruct__support_ae06d7e6a254993c3f17c5c40edebabc6}\label{structstruct__support_ae06d7e6a254993c3f17c5c40edebabc6}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries set\+\_\+slices} (const T \&, size\+\_\+t)
+\item 
+\mbox{\Hypertarget{structstruct__support_ac4928e3ddf4f41759217e321096488aa}\label{structstruct__support_ac4928e3ddf4f41759217e321096488aa}} 
+{\footnotesize template$<$typename T2 $>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries slice} (T2 \&\&value, size\+\_\+t)
+\item 
+\mbox{\Hypertarget{structstruct__support_a12ad16506234ee7ebf11dc3756116201}\label{structstruct__support_a12ad16506234ee7ebf11dc3756116201}} 
+{\footnotesize template$<$typename T2 $>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries slice\+\_\+ptr} (T2 \&\&value, size\+\_\+t)
+\item 
+\mbox{\Hypertarget{structstruct__support_a2cfd7fbbe74e8650a2d7645a17fc1e81}\label{structstruct__support_a2cfd7fbbe74e8650a2d7645a17fc1e81}} 
+{\footnotesize template$<$typename T2 $>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries packet} (T2 \&\&value, size\+\_\+t)
+\item 
+\mbox{\Hypertarget{structstruct__support_a702ab68b4512e5ebb101f283bcf5bc75}\label{structstruct__support_a702ab68b4512e5ebb101f283bcf5bc75}} 
+{\footnotesize template$<$typename T2 $>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries ref\+\_\+wrap} (T2 \&\&value)
+\item 
+\mbox{\Hypertarget{structstruct__support_a5ab2268b36680c5bf4568a6a11bb7f2a}\label{structstruct__support_a5ab2268b36680c5bf4568a6a11bb7f2a}} 
+{\footnotesize template$<$typename T2 $>$ }\\static decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries detach} (T2 \&\&value)
+\item 
+\mbox{\Hypertarget{structstruct__support_a507d73e9705ae03338949ad148bcc90b}\label{structstruct__support_a507d73e9705ae03338949ad148bcc90b}} 
+{\footnotesize template$<$typename Mem $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries compress} (Mem \&mem, const T \&value, bool mask)
+\item 
+\mbox{\Hypertarget{structstruct__support_a47e68572615db76470ce8b78a95ed2e6}\label{structstruct__support_a47e68572615db76470ce8b78a95ed2e6}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE T {\bfseries zero} (size\+\_\+t)
+\item 
+\mbox{\Hypertarget{structstruct__support_a35b5f43ea615af1dd87331418dbf149f}\label{structstruct__support_a35b5f43ea615af1dd87331418dbf149f}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE T {\bfseries empty} (size\+\_\+t)
+\item 
+\mbox{\Hypertarget{structstruct__support_a9dd93c3bfa3578bb78518611e63242dd}\label{structstruct__support_a9dd93c3bfa3578bb78518611e63242dd}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE detail\+::\+Masked\+Value$<$ T $>$ {\bfseries masked} (T \&value, bool mask)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstruct__support_a82711f515e50ab73194ab312726fabad}\label{structstruct__support_a82711f515e50ab73194ab312726fabad}} 
+static constexpr bool {\bfseries Is\+Dynamic} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename T, typename$>$\newline
+struct struct\+\_\+support$<$ T, typename $>$}
+
+Helper class for custom data structures. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array\+\_\+struct.\+h\end{DoxyCompactItemize}

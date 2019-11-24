@@ -1,0 +1,206 @@
+\hypertarget{structArcball}{}\doxysection{Référence de la structure Arcball}
+\label{structArcball}\index{Arcball@{Arcball}}
+
+
+\mbox{\hyperlink{structArcball}{Arcball}} helper class to interactively rotate objects on-\/screen.  
+
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structArcball_aec23f882194a0e12b6d382ba3329685e}{Arcball}} (float \mbox{\hyperlink{structArcball_a94a639c87d6edd55fc53144a3efae7b0}{speed\+\_\+factor}}=2.\+0f)
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structArcball_a3171650a5dcb71a91642f91738bd95bd}{Arcball}} (const \mbox{\hyperlink{structQuaternion}{Quaternion4f}} \&quat)
+\item 
+\mbox{\hyperlink{structQuaternion}{Quaternion4f}} \& \mbox{\hyperlink{structArcball_a4a471d749c4a12547e8b3563990936c9}{state}} ()
+\begin{DoxyCompactList}\small\item\em Returs the current internal rotation state of the \mbox{\hyperlink{structArcball}{Arcball}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArcball_ab51f8ba9ada8836dd9dfdd35668dac5e}\label{structArcball_ab51f8ba9ada8836dd9dfdd35668dac5e}} 
+const \mbox{\hyperlink{structQuaternion}{Quaternion4f}} \& \mbox{\hyperlink{structArcball_ab51f8ba9ada8836dd9dfdd35668dac5e}{state}} () const
+\begin{DoxyCompactList}\small\item\em {\ttfamily const} version of \mbox{\hyperlink{structArcball_a4a471d749c4a12547e8b3563990936c9}{Arcball\+::state}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArcball_a69fb7c08ab7d174c345b73114fd1c4c1}\label{structArcball_a69fb7c08ab7d174c345b73114fd1c4c1}} 
+void \mbox{\hyperlink{structArcball_a69fb7c08ab7d174c345b73114fd1c4c1}{set\+\_\+state}} (const \mbox{\hyperlink{structQuaternion}{Quaternion4f}} \&\mbox{\hyperlink{structArcball_a4a471d749c4a12547e8b3563990936c9}{state}})
+\begin{DoxyCompactList}\small\item\em Sets the rotation of this \mbox{\hyperlink{structArcball}{Arcball}}. The \mbox{\hyperlink{structArcball}{Arcball}} will be marked as {\bfseries{not}} active. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structArcball_a31e0e660576724e2796bc1dada7297db}{set\+\_\+size}} (Vector2i \mbox{\hyperlink{structArcball_a70e9b9b40e586ed29db4786b331f011f}{size}})
+\begin{DoxyCompactList}\small\item\em Sets the screen size in pixels associated with the \mbox{\hyperlink{structArcball}{Arcball}} widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArcball_a70e9b9b40e586ed29db4786b331f011f}\label{structArcball_a70e9b9b40e586ed29db4786b331f011f}} 
+const Vector2i \& \mbox{\hyperlink{structArcball_a70e9b9b40e586ed29db4786b331f011f}{size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current size of this \mbox{\hyperlink{structArcball}{Arcball}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArcball_a8db8a46af448ad9354a34c7ff7bb0d3f}\label{structArcball_a8db8a46af448ad9354a34c7ff7bb0d3f}} 
+void \mbox{\hyperlink{structArcball_a8db8a46af448ad9354a34c7ff7bb0d3f}{set\+\_\+speed\+\_\+factor}} (float \mbox{\hyperlink{structArcball_a94a639c87d6edd55fc53144a3efae7b0}{speed\+\_\+factor}})
+\begin{DoxyCompactList}\small\item\em Sets the speed at which this \mbox{\hyperlink{structArcball}{Arcball}} rotates. See also m\+\_\+speed\+\_\+factor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArcball_a94a639c87d6edd55fc53144a3efae7b0}\label{structArcball_a94a639c87d6edd55fc53144a3efae7b0}} 
+float \mbox{\hyperlink{structArcball_a94a639c87d6edd55fc53144a3efae7b0}{speed\+\_\+factor}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current speed at which this \mbox{\hyperlink{structArcball}{Arcball}} rotates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArcball_a2c3477b8b93e95696d7968cc93dd7e49}\label{structArcball_a2c3477b8b93e95696d7968cc93dd7e49}} 
+bool \mbox{\hyperlink{structArcball_a2c3477b8b93e95696d7968cc93dd7e49}{active}} () const
+\begin{DoxyCompactList}\small\item\em Returns whether or not this \mbox{\hyperlink{structArcball}{Arcball}} is currently active. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structArcball_ac3789dc075f56a94cd273871fc695def}{button}} (Vector2i pos, bool pressed)
+\begin{DoxyCompactList}\small\item\em Signals a state change from active to non-\/active, or vice-\/versa. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structArcball_adc7a4b76a042e145586e7cd17a985e6f}{motion}} (Vector2i pos)
+\begin{DoxyCompactList}\small\item\em When active, updates m\+\_\+incr corresponding to the specified position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix4f}} \mbox{\hyperlink{structArcball_a03018544f914a95a2d09f71dc44971f1}{matrix}} () const
+\item 
+\mbox{\Hypertarget{structArcball_a2df06906d8c4f323f17b24dfc1fa79c7}\label{structArcball_a2df06906d8c4f323f17b24dfc1fa79c7}} 
+\mbox{\hyperlink{structQuaternion}{Quaternion4f}} \mbox{\hyperlink{structArcball_a2df06906d8c4f323f17b24dfc1fa79c7}{active\+\_\+state}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current rotation {\itshape including} the active motion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structArcball_a6652967587805ed119dff52cb296e055}{interrupt}} ()
+\begin{DoxyCompactList}\small\item\em Interrupts the current \mbox{\hyperlink{structArcball}{Arcball}} motion by calling \mbox{\hyperlink{structArcball_ac3789dc075f56a94cd273871fc695def}{Arcball\+::button}} with {\ttfamily (0, 0)} and {\ttfamily false}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structArcball_a7498e446185cdc40662dbe1722cdb22f}\label{structArcball_a7498e446185cdc40662dbe1722cdb22f}} 
+bool {\bfseries m\+\_\+active}
+\item 
+\mbox{\Hypertarget{structArcball_aabe7ff76c10c5e63e1b550e11a48f6a6}\label{structArcball_aabe7ff76c10c5e63e1b550e11a48f6a6}} 
+Vector2i {\bfseries m\+\_\+last\+\_\+pos}
+\item 
+\mbox{\Hypertarget{structArcball_a46382bffea00b6977ee399bdf301c151}\label{structArcball_a46382bffea00b6977ee399bdf301c151}} 
+Vector2i {\bfseries m\+\_\+size}
+\item 
+\mbox{\Hypertarget{structArcball_abbc8f83893715b2348b10220bc8538fe}\label{structArcball_abbc8f83893715b2348b10220bc8538fe}} 
+\mbox{\hyperlink{structQuaternion}{Quaternion4f}} {\bfseries m\+\_\+quat}
+\item 
+\mbox{\Hypertarget{structArcball_abd9bfda0e3f320d569c1dd574eb329fc}\label{structArcball_abd9bfda0e3f320d569c1dd574eb329fc}} 
+\mbox{\hyperlink{structQuaternion}{Quaternion4f}} {\bfseries m\+\_\+incr}
+\item 
+\mbox{\Hypertarget{structArcball_ab8ff561ce5a6f1d9f6dcfcc50ebc0378}\label{structArcball_ab8ff561ce5a6f1d9f6dcfcc50ebc0378}} 
+float {\bfseries m\+\_\+speed\+\_\+factor}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{structArcball}{Arcball}} helper class to interactively rotate objects on-\/screen. 
+
+The \mbox{\hyperlink{structArcball}{Arcball}} class enables fluid interaction by representing rotations using a quaternion, and is setup to be used in conjunction with the existing mouse callbacks defined in nanogui\+::\+Widget. The \mbox{\hyperlink{structArcball}{Arcball}} operates by maintaining an \char`\"{}active\char`\"{} state which is typically controlled using a mouse button click / release. \mbox{\hyperlink{structA}{A}} click pressed would call \mbox{\hyperlink{structArcball_ac3789dc075f56a94cd273871fc695def}{Arcball\+::button}} with {\ttfamily down = true}, and a click released with {\ttfamily down = false}. The high level mechanics are\+:
+
+
+\begin{DoxyEnumerate}
+\item The \mbox{\hyperlink{structArcball}{Arcball}} is made active by calling \mbox{\hyperlink{structArcball_ac3789dc075f56a94cd273871fc695def}{Arcball\+::button}} with a specified click location, and {\ttfamily down = true}.
+\item As the user holds the mouse button down and drags, calls to \mbox{\hyperlink{structArcball_adc7a4b76a042e145586e7cd17a985e6f}{Arcball\+::motion}} are issued. Internally, the \mbox{\hyperlink{structArcball}{Arcball}} keeps track of how far the rotation is from the start click. During the active state, m\+\_\+quat is not updated, call \mbox{\hyperlink{structArcball_a03018544f914a95a2d09f71dc44971f1}{Arcball\+::matrix}} to get the current rotation for use in drawing updates. Receiving the rotation as a matrix will usually be more convenient for traditional pipelines, however you can also acquire the associated rotation quaternion \mbox{\hyperlink{structArcball_a2df06906d8c4f323f17b24dfc1fa79c7}{Arcball\+::active\+\_\+state}}.
+\item The user releases the mouse button, and a call to \mbox{\hyperlink{structArcball_ac3789dc075f56a94cd273871fc695def}{Arcball\+::button}} with {\ttfamily down = false}. The \mbox{\hyperlink{structArcball}{Arcball}} is no longer active, and its internal m\+\_\+quat is updated.
+\end{DoxyEnumerate}
+
+\mbox{\hyperlink{structA}{A}} very simple nanogui\+::\+Screen derived class to illustrate usage\+:
+
+\textbackslash{}rst .. code-\/block\+:: cpp
+
+class Arcball\+Screen \+: public nanogui\+::\+Screen \{ public\+: // Creating a 400x400 window Arcball\+Screen() \+: nanogui\+::\+Screen(\{400, 400\}, \char`\"{}\+Arcball\+Demo\char`\"{}) \{ m\+\_\+arcball.\+set\+\_\+size(m\+\_\+size);// Note 1 \}
+
+virtual bool mouse\+\_\+button\+\_\+event(const Vector2i \&p, int button, bool down, int modifiers) override \{ // In this example, we are using the left mouse button // to control the arcball motion if (button == G\+L\+F\+W\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+1) \{ m\+\_\+arcball.\+button(p, down);// Note 2 return true; \} return false; \}
+
+virtual bool mouse\+\_\+motion\+\_\+event(const Vector2i \&p, const Vector2i \&rel, int button, int modifiers) override \{ if (button == G\+L\+F\+W\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+1) \{ m\+\_\+arcball.\+motion(p);// Note 2 return true; \} return false; \}
+
+virtual void draw\+\_\+contents() override \{ // Option 1\+: acquire a 4x4 homogeneous rotation matrix Matrix4f rotation = m\+\_\+arcball.\+matrix(); // Option 2\+: acquire an equivalent quaternion Quaternion4f rotation = m\+\_\+arcball.\+active\+\_\+state(); // ... do some drawing with the current rotation ... \}
+
+protected\+: nanogui\+::\+Arcball m\+\_\+arcball; \};
+
+{\bfseries{Note 1}} The user is responsible for setting the size with \+:func\+:{\ttfamily \mbox{\hyperlink{structArcball_a31e0e660576724e2796bc1dada7297db}{Arcball\+::set\+\_\+size}} $<$nanogui\+::\+Arcball\+::set\+\_\+size$>$}, this does {\bfseries{not}} need to be the same as the \mbox{\hyperlink{classScreen}{Screen}} dimensions (e.\+g., you are using the \mbox{\hyperlink{structArcball}{Arcball}} to control a specific {\ttfamily gl\+Viewport}).
+
+{\bfseries{Note 2}} Be aware that the input vector {\ttfamily p} to \+:func\+:{\ttfamily \mbox{\hyperlink{classWidget_a734311a7dff38ba580147df04cb65373}{Widget\+::mouse\+\_\+button\+\_\+event}} $<$nanogui\+::\+Widget\+::mouse\+\_\+button\+\_\+event$>$} and \+:func\+:{\ttfamily \mbox{\hyperlink{classWidget_ae1c7d166adad9e10cbc4903555107ea1}{Widget\+::mouse\+\_\+motion\+\_\+event}} $<$nanogui\+::\+Widget\+::mouse\+\_\+motion\+\_\+event$>$} are in the coordinates of the \mbox{\hyperlink{classScreen}{Screen}} dimensions (top left is {\ttfamily (0, 0)}, bottom right is {\ttfamily (width, height)}). If you are using the \mbox{\hyperlink{structArcball}{Arcball}} to control a subregion of the \mbox{\hyperlink{classScreen}{Screen}}, you will want to transform the input {\ttfamily p} before calling \+:func\+:{\ttfamily \mbox{\hyperlink{structArcball_ac3789dc075f56a94cd273871fc695def}{Arcball\+::button}} $<$nanogui\+::\+Arcball\+::button$>$} or \+:func\+:{\ttfamily \mbox{\hyperlink{structArcball_adc7a4b76a042e145586e7cd17a985e6f}{Arcball\+::motion}} $<$nanogui\+::\+Arcball\+::motion$>$}. For example, if controlling the right half of the screen, you might create {\ttfamily Vector2i adjusted\+\_\+click(p.\+x() -\/ (m\+\_\+size.\+x() / 2), p.\+y())}, and then call {\ttfamily m\+\_\+arcball.\+motion(adjusted\+\_\+click)}. \textbackslash{}endrst 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{structArcball_aec23f882194a0e12b6d382ba3329685e}\label{structArcball_aec23f882194a0e12b6d382ba3329685e}} 
+\index{Arcball@{Arcball}!Arcball@{Arcball}}
+\index{Arcball@{Arcball}!Arcball@{Arcball}}
+\doxysubsubsection{\texorpdfstring{Arcball()}{Arcball()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Arcball\+::\+Arcball (\begin{DoxyParamCaption}\item[{float}]{speed\+\_\+factor = {\ttfamily 2.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The default constructor. 
+
+\textbackslash{}rst .. note\+:\+:
+
+Make sure to call \+:func\+:{\ttfamily \mbox{\hyperlink{structArcball_a31e0e660576724e2796bc1dada7297db}{Arcball\+::set\+\_\+size}} $<$nanogui\+::\+Arcball\+::set\+\_\+size$>$} after construction. \textbackslash{}endrst
+
+
+\begin{DoxyParams}{Paramètres}
+{\em speed\+\_\+factor} & The speed at which the \mbox{\hyperlink{structArcball}{Arcball}} rotates (default\+: {\ttfamily 2.\+0}). See also m\+\_\+speed\+\_\+factor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structArcball_a3171650a5dcb71a91642f91738bd95bd}\label{structArcball_a3171650a5dcb71a91642f91738bd95bd}} 
+\index{Arcball@{Arcball}!Arcball@{Arcball}}
+\index{Arcball@{Arcball}!Arcball@{Arcball}}
+\doxysubsubsection{\texorpdfstring{Arcball()}{Arcball()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Arcball\+::\+Arcball (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structQuaternion}{Quaternion4f}} \&}]{quat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs an \mbox{\hyperlink{structArcball}{Arcball}} based off of the specified rotation.
+
+\textbackslash{}rst .. note\+:\+:
+
+Make sure to call \+:func\+:{\ttfamily \mbox{\hyperlink{structArcball_a31e0e660576724e2796bc1dada7297db}{Arcball\+::set\+\_\+size}} $<$nanogui\+::\+Arcball\+::set\+\_\+size$>$} after construction. \textbackslash{}endrst 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{structArcball_ac3789dc075f56a94cd273871fc695def}\label{structArcball_ac3789dc075f56a94cd273871fc695def}} 
+\index{Arcball@{Arcball}!button@{button}}
+\index{button@{button}!Arcball@{Arcball}}
+\doxysubsubsection{\texorpdfstring{button()}{button()}}
+{\footnotesize\ttfamily void Arcball\+::button (\begin{DoxyParamCaption}\item[{Vector2i}]{pos,  }\item[{bool}]{pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Signals a state change from active to non-\/active, or vice-\/versa. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em pos} & The click location, should be in the same coordinate system as specified by m\+\_\+size.\\
+\hline
+{\em pressed} & When {\ttfamily true}, this \mbox{\hyperlink{structArcball}{Arcball}} becomes active. When {\ttfamily false}, this \mbox{\hyperlink{structArcball}{Arcball}} becomes non-\/active, and its internal m\+\_\+quat is updated with the final rotation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structArcball_a6652967587805ed119dff52cb296e055}\label{structArcball_a6652967587805ed119dff52cb296e055}} 
+\index{Arcball@{Arcball}!interrupt@{interrupt}}
+\index{interrupt@{interrupt}!Arcball@{Arcball}}
+\doxysubsubsection{\texorpdfstring{interrupt()}{interrupt()}}
+{\footnotesize\ttfamily void Arcball\+::interrupt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Interrupts the current \mbox{\hyperlink{structArcball}{Arcball}} motion by calling \mbox{\hyperlink{structArcball_ac3789dc075f56a94cd273871fc695def}{Arcball\+::button}} with {\ttfamily (0, 0)} and {\ttfamily false}. 
+
+Use this method to \char`\"{}close\char`\"{} the state of the \mbox{\hyperlink{structArcball}{Arcball}} when a mouse release event is not available. You would use this method if you need to stop the \mbox{\hyperlink{structArcball}{Arcball}} from updating its internal rotation, but the event stopping the rotation does {\bfseries{not}} come from a mouse release. For example, you have a callback that created a nanogui\+::\+Message\+Dialog which will now be in focus. \mbox{\Hypertarget{structArcball_a03018544f914a95a2d09f71dc44971f1}\label{structArcball_a03018544f914a95a2d09f71dc44971f1}} 
+\index{Arcball@{Arcball}!matrix@{matrix}}
+\index{matrix@{matrix}!Arcball@{Arcball}}
+\doxysubsubsection{\texorpdfstring{matrix()}{matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix4f}} Arcball\+::matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current rotation {\itshape including} the active motion, suitable for use with typical homogeneous matrix transformations. The upper left 3x3 block is the rotation matrix, with 0-\/0-\/0-\/1 as the right-\/most column / bottom row. \mbox{\Hypertarget{structArcball_adc7a4b76a042e145586e7cd17a985e6f}\label{structArcball_adc7a4b76a042e145586e7cd17a985e6f}} 
+\index{Arcball@{Arcball}!motion@{motion}}
+\index{motion@{motion}!Arcball@{Arcball}}
+\doxysubsubsection{\texorpdfstring{motion()}{motion()}}
+{\footnotesize\ttfamily bool Arcball\+::motion (\begin{DoxyParamCaption}\item[{Vector2i}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+When active, updates m\+\_\+incr corresponding to the specified position. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em pos} & Where the mouse has been dragged \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structArcball_a31e0e660576724e2796bc1dada7297db}\label{structArcball_a31e0e660576724e2796bc1dada7297db}} 
+\index{Arcball@{Arcball}!set\_size@{set\_size}}
+\index{set\_size@{set\_size}!Arcball@{Arcball}}
+\doxysubsubsection{\texorpdfstring{set\_size()}{set\_size()}}
+{\footnotesize\ttfamily void Arcball\+::set\+\_\+size (\begin{DoxyParamCaption}\item[{Vector2i}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the screen size in pixels associated with the \mbox{\hyperlink{structArcball}{Arcball}} widget. 
+
+The size of the \mbox{\hyperlink{structArcball}{Arcball}} and the positions provided in \mbox{\hyperlink{structArcball_ac3789dc075f56a94cd273871fc695def}{Arcball\+::button}} and \mbox{\hyperlink{structArcball_adc7a4b76a042e145586e7cd17a985e6f}{Arcball\+::motion}} are in the same units (usually pixels in screen-\/space). \mbox{\Hypertarget{structArcball_a4a471d749c4a12547e8b3563990936c9}\label{structArcball_a4a471d749c4a12547e8b3563990936c9}} 
+\index{Arcball@{Arcball}!state@{state}}
+\index{state@{state}!Arcball@{Arcball}}
+\doxysubsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structQuaternion}{Quaternion4f}}\& Arcball\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returs the current internal rotation state of the \mbox{\hyperlink{structArcball}{Arcball}}. 
+
+Use \mbox{\hyperlink{structArcball_a03018544f914a95a2d09f71dc44971f1}{Arcball\+::matrix}} for drawing loops. This method will not return any updates while m\+\_\+active is {\ttfamily true}. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{arcball_8h}{arcball.\+h}}\end{DoxyCompactItemize}

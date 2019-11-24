@@ -1,0 +1,68 @@
+\hypertarget{classclang_1_1cindex_1_1CompilationDatabase}{}\doxysection{Référence de la classe clang.\+cindex.\+Compilation\+Database}
+\label{classclang_1_1cindex_1_1CompilationDatabase}\index{clang.cindex.CompilationDatabase@{clang.cindex.CompilationDatabase}}
+Graphe d\textquotesingle{}héritage de clang.\+cindex.\+Compilation\+Database\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classclang_1_1cindex_1_1CompilationDatabase}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1CompilationDatabase_acf30f67181322a9d156c13f3056e0cad}\label{classclang_1_1cindex_1_1CompilationDatabase_acf30f67181322a9d156c13f3056e0cad}} 
+def {\bfseries \+\_\+\+\_\+del\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classclang_1_1cindex_1_1CompilationDatabase_a3139af0be754d6cda1dd5c040f4e46e3}{get\+Compile\+Commands}} (self, filename)
+\item 
+def \mbox{\hyperlink{classclang_1_1cindex_1_1CompilationDatabase_a09689ad956d9a214a6678c74387df50a}{get\+All\+Compile\+Commands}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1CompilationDatabase_af3aa7653dbb2c9ec061364a25f8813b1}\label{classclang_1_1cindex_1_1CompilationDatabase_af3aa7653dbb2c9ec061364a25f8813b1}} 
+def {\bfseries from\+\_\+result} (res, fn, \mbox{\hyperlink{classargs}{args}})
+\item 
+def \mbox{\hyperlink{classclang_1_1cindex_1_1CompilationDatabase_a33f0895bd5b5785a22fb047b58b64d62}{from\+Directory}} (build\+Dir)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}The CompilationDatabase is a wrapper class around
+clang::tooling::CompilationDatabase
+
+It enables querying how a specific source file can be built.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classclang_1_1cindex_1_1CompilationDatabase_a33f0895bd5b5785a22fb047b58b64d62}\label{classclang_1_1cindex_1_1CompilationDatabase_a33f0895bd5b5785a22fb047b58b64d62}} 
+\index{clang.cindex.CompilationDatabase@{clang.cindex.CompilationDatabase}!fromDirectory@{fromDirectory}}
+\index{fromDirectory@{fromDirectory}!clang.cindex.CompilationDatabase@{clang.cindex.CompilationDatabase}}
+\doxysubsubsection{\texorpdfstring{fromDirectory()}{fromDirectory()}}
+{\footnotesize\ttfamily def clang.\+cindex.\+Compilation\+Database.\+from\+Directory (\begin{DoxyParamCaption}\item[{}]{build\+Dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Builds a CompilationDatabase from the database found in buildDir\end{DoxyVerb}
+ \mbox{\Hypertarget{classclang_1_1cindex_1_1CompilationDatabase_a09689ad956d9a214a6678c74387df50a}\label{classclang_1_1cindex_1_1CompilationDatabase_a09689ad956d9a214a6678c74387df50a}} 
+\index{clang.cindex.CompilationDatabase@{clang.cindex.CompilationDatabase}!getAllCompileCommands@{getAllCompileCommands}}
+\index{getAllCompileCommands@{getAllCompileCommands}!clang.cindex.CompilationDatabase@{clang.cindex.CompilationDatabase}}
+\doxysubsubsection{\texorpdfstring{getAllCompileCommands()}{getAllCompileCommands()}}
+{\footnotesize\ttfamily def clang.\+cindex.\+Compilation\+Database.\+get\+All\+Compile\+Commands (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get an iterable object providing all the CompileCommands available from
+the database.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classclang_1_1cindex_1_1CompilationDatabase_a3139af0be754d6cda1dd5c040f4e46e3}\label{classclang_1_1cindex_1_1CompilationDatabase_a3139af0be754d6cda1dd5c040f4e46e3}} 
+\index{clang.cindex.CompilationDatabase@{clang.cindex.CompilationDatabase}!getCompileCommands@{getCompileCommands}}
+\index{getCompileCommands@{getCompileCommands}!clang.cindex.CompilationDatabase@{clang.cindex.CompilationDatabase}}
+\doxysubsubsection{\texorpdfstring{getCompileCommands()}{getCompileCommands()}}
+{\footnotesize\ttfamily def clang.\+cindex.\+Compilation\+Database.\+get\+Compile\+Commands (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get an iterable object providing all the CompileCommands available to
+build filename. Returns None if filename is not found in the database.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/tools/clang/cindex.\+py\end{DoxyCompactItemize}

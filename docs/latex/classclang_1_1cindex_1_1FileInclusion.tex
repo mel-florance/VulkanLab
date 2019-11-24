@@ -1,0 +1,56 @@
+\hypertarget{classclang_1_1cindex_1_1FileInclusion}{}\doxysection{Référence de la classe clang.\+cindex.\+File\+Inclusion}
+\label{classclang_1_1cindex_1_1FileInclusion}\index{clang.cindex.FileInclusion@{clang.cindex.FileInclusion}}
+Graphe d\textquotesingle{}héritage de clang.\+cindex.\+File\+Inclusion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classclang_1_1cindex_1_1FileInclusion}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1FileInclusion_a4e33f5cc4cca9f3379fcd06b735ae187}\label{classclang_1_1cindex_1_1FileInclusion_a4e33f5cc4cca9f3379fcd06b735ae187}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, src, tgt, loc, depth)
+\item 
+def \mbox{\hyperlink{classclang_1_1cindex_1_1FileInclusion_a310e90c7959dea437a6087699e673469}{is\+\_\+input\+\_\+file}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1FileInclusion_a5de8185e162eb97ff1ff0bca5474fce3}\label{classclang_1_1cindex_1_1FileInclusion_a5de8185e162eb97ff1ff0bca5474fce3}} 
+{\bfseries source}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1FileInclusion_a2adcc6ae3a421e2e494469818250f7fe}\label{classclang_1_1cindex_1_1FileInclusion_a2adcc6ae3a421e2e494469818250f7fe}} 
+{\bfseries include}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1FileInclusion_afb7700cdf41e21875cd8679207463aa7}\label{classclang_1_1cindex_1_1FileInclusion_afb7700cdf41e21875cd8679207463aa7}} 
+{\bfseries location}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1FileInclusion_a5137f9b56c9ab16092587ea4c8afb9e7}\label{classclang_1_1cindex_1_1FileInclusion_a5137f9b56c9ab16092587ea4c8afb9e7}} 
+{\bfseries depth}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}The FileInclusion class represents the inclusion of one source file by
+another via a '#include' directive or as the input file for the translation
+unit. This class provides information about the included file, the including
+file, the location of the '#include' directive and the depth of the included
+file in the stack. Note that the input file has depth 0.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classclang_1_1cindex_1_1FileInclusion_a310e90c7959dea437a6087699e673469}\label{classclang_1_1cindex_1_1FileInclusion_a310e90c7959dea437a6087699e673469}} 
+\index{clang.cindex.FileInclusion@{clang.cindex.FileInclusion}!is\_input\_file@{is\_input\_file}}
+\index{is\_input\_file@{is\_input\_file}!clang.cindex.FileInclusion@{clang.cindex.FileInclusion}}
+\doxysubsubsection{\texorpdfstring{is\_input\_file()}{is\_input\_file()}}
+{\footnotesize\ttfamily def clang.\+cindex.\+File\+Inclusion.\+is\+\_\+input\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}True if the included file is the input file.\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/tools/clang/cindex.\+py\end{DoxyCompactItemize}

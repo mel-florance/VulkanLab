@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.8.16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vulkan Lab:  Fichier source de ext/nanogui/ext/enoki/include/enoki/color.h</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">Vulkan Lab
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part --><!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('color_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">color.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    enoki/color.h -- Color space transformations (only sRGB so far)</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    Enoki is a C++ template library that enables transparent vectorization</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">    of numerical kernels using SIMD instruction sets available on current</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    processor architectures.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">    Copyright (c) 2019 Wenzel Jakob &lt;wenzel.jakob@epfl.ch&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    All rights reserved. Use of this source code is governed by a BSD-style</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">    license that can be found in the LICENSE file.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;enoki/array.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a>(enoki)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;ENOKI_UNARY_OPERATION(linear_to_srgb, linear_to_srgb&lt;true&gt;(x)) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Value r = Scalar(12.92);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="structMask.html">Mask</a> large_mask = x &gt; Scalar(0.0031308);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (ENOKI_LIKELY(any(large_mask))) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        Value y = sqrt(x), p, q;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">if</span> constexpr (Single) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            p = poly5(y, -0.0016829072605308378, 0.03453868659826638,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                      0.7642611304733891, 2.0041169284241644,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                      0.7551545191665577, -0.016202083165206348);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            q = poly5(y, 4.178892964897981e-7, -0.00004375359692957097,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                      0.03467195408529984, 0.6085338522168684,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                      1.8970238036421054, 1.);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            p = poly10(y, -3.7113872202050023e-6, -0.00021805827098915798,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                       0.002531335520959116, 0.2263810267005674,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                       3.0477578489880823, 15.374469584296442,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                       32.44669922192121, 27.901125077137042, 8.450947414259522,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                       0.5838023820686707, -0.0031151377052754843);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            q = poly10(y, 2.2380622409188757e-11, -8.387527630781522e-9,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                       0.00007045228641004039, 0.007244514696840552,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                       0.21749170309546628, 2.575446652731678,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                       13.297981743005433, 30.50364355650628, 29.70548706952188,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                       10.723011300050162, 1.);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        masked(r, large_mask) = p / q;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> r * x;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;ENOKI_UNARY_OPERATION(srgb_to_linear, srgb_to_linear&lt;true&gt;(x)) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    Value r = Scalar(1.0 / 12.92);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="structMask.html">Mask</a> large_mask = x &gt; Scalar(0.04045);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (ENOKI_LIKELY(any(large_mask))) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        Value p, q;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span> constexpr (Single) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            p = poly4(x, -0.0163933279112946, -0.7386328024653209,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                      -11.199318357635072, -47.46726633009393,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                      -36.04572663838034);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            q = poly4(x, -0.004261480793199332, -19.140923959601675,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                      -59.096406619244426, -18.225745396846637, 1.);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            p = poly9(x, -0.008042950896814532, -0.5489744177844188,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                      -14.786385491859248, -200.19589605282445,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                      -1446.951694673217, -5548.704065887224,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                      -10782.158977031822, -9735.250875334352,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                      -3483.4445569178347, -342.62884098034357);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            q = poly9(x, -2.2132610916769585e-8, -9.646075249097724,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                      -237.47722999429413, -2013.8039726540235,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                      -7349.477378676199, -11916.470977597566,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                      -8059.219012060384, -1884.7738197074218,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                      -84.8098437770271, 1.);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        masked(r, large_mask) = p / q;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> r * x;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a>(enoki)</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a577cd817cb71b655998cad4387cdaeba"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a></div><div class="ttdeci">#define NAMESPACE_BEGIN(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:38</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a12bb24ea980ca8fb1f46b1992bc9c83a"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a></div><div class="ttdeci">#define NAMESPACE_END(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:50</div></div>
+<div class="ttc" id="astructMask_html"><div class="ttname"><a href="structMask.html">Mask</a></div><div class="ttdoc">Generic mask class, which broadcasts from the outer to inner dimensions.</div><div class="ttdef"><b>Definition:</b> array.h:96</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+    <ul>
+        <li class="navelem"><a class="el" href="dir_31cedd4509e06940f559c1ca2f722e02.html">ext</a></li><li class="navelem"><a class="el" href="dir_3b52d0ee0647600b951b1b620984dcd1.html">nanogui</a></li><li class="navelem"><a class="el" href="dir_c47f8aa3d1432e7c017b47a1f02de629.html">ext</a></li><li class="navelem"><a class="el" href="dir_b6d96ee8b8f0229eabb5488b1d906655.html">enoki</a></li><li class="navelem"><a class="el" href="dir_f7ebcc942138522cecdc375c05981e1e.html">include</a></li><li class="navelem"><a class="el" href="dir_a588628791bc439fc94037a0f0bda863.html">enoki</a></li><li class="navelem"><b>color.h</b></li>
+        <li class="footer">
+            Generated on Dimanche 24 Novembre 2019 18:11:47 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
+            Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
+        </li>
+    </ul>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>

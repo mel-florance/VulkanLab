@@ -1,0 +1,79 @@
+\hypertarget{include_2nanogui_2python_8h}{}\doxysection{Référence du fichier ext/nanogui/include/nanogui/python.h}
+\label{include_2nanogui_2python_8h}\index{ext/nanogui/include/nanogui/python.h@{ext/nanogui/include/nanogui/python.h}}
+{\ttfamily \#include $<$nanogui/common.\+h$>$}\newline
+{\ttfamily \#include $<$pybind11/pybind11.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}}
+\item 
+struct \mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{include_2nanogui_2python_8h_aa7606ce4d35381b6c7b49640f9ee7af3}\label{include_2nanogui_2python_8h_aa7606ce4d35381b6c7b49640f9ee7af3}} 
+\#define \mbox{\hyperlink{include_2nanogui_2python_8h_aa7606ce4d35381b6c7b49640f9ee7af3}{N\+A\+N\+O\+G\+U\+I\+\_\+\+W\+I\+D\+G\+E\+T\+\_\+\+O\+V\+E\+R\+L\+O\+A\+DS}}(Parent)
+\begin{DoxyCompactList}\small\item\em Provides a {\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+O\+V\+E\+R\+L\+O\+AD} for any relevant \mbox{\hyperlink{classWidget}{Widget}} items that need to be bound. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{include_2nanogui_2python_8h_ac4b253a38992eb5cbb63444f538ff707}{N\+A\+N\+O\+G\+U\+I\+\_\+\+L\+A\+Y\+O\+U\+T\+\_\+\+O\+V\+E\+R\+L\+O\+A\+DS}}(Parent)
+\begin{DoxyCompactList}\small\item\em Provides a {\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+O\+V\+E\+R\+L\+O\+AD} for any relevant \mbox{\hyperlink{classLayout}{Layout}} items that need to be bound. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{include_2nanogui_2python_8h_adb17893c4d7a847efec3135849aca84d}{N\+A\+N\+O\+G\+U\+I\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+O\+V\+E\+R\+L\+O\+A\+DS}}(Parent)
+\begin{DoxyCompactList}\small\item\em Provides a {\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+O\+V\+E\+R\+L\+O\+AD} for any relevant \mbox{\hyperlink{classScreen}{Screen}} items that need to be bound. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{include_2nanogui_2python_8h_a80e1f4e9a56811bcee6da28775304692}\label{include_2nanogui_2python_8h_a80e1f4e9a56811bcee6da28775304692}} 
+typedef struct \mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} {\bfseries N\+V\+Gcontext}
+\item 
+\mbox{\Hypertarget{include_2nanogui_2python_8h_ad32b29d40e7ab4d55f2f79d0443e0911}\label{include_2nanogui_2python_8h_ad32b29d40e7ab4d55f2f79d0443e0911}} 
+typedef struct \mbox{\hyperlink{structGLFWwindow}{G\+L\+F\+Wwindow}} {\bfseries G\+L\+F\+Wwindow}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{include_2nanogui_2python_8h_ac4b253a38992eb5cbb63444f538ff707}\label{include_2nanogui_2python_8h_ac4b253a38992eb5cbb63444f538ff707}} 
+\index{python.h@{python.h}!NANOGUI\_LAYOUT\_OVERLOADS@{NANOGUI\_LAYOUT\_OVERLOADS}}
+\index{NANOGUI\_LAYOUT\_OVERLOADS@{NANOGUI\_LAYOUT\_OVERLOADS}!python.h@{python.h}}
+\doxysubsubsection{\texorpdfstring{NANOGUI\_LAYOUT\_OVERLOADS}{NANOGUI\_LAYOUT\_OVERLOADS}}
+{\footnotesize\ttfamily \#define N\+A\+N\+O\+G\+U\+I\+\_\+\+L\+A\+Y\+O\+U\+T\+\_\+\+O\+V\+E\+R\+L\+O\+A\+DS(\begin{DoxyParamCaption}\item[{}]{Parent }\end{DoxyParamCaption})}
+
+{\bfseries Valeur \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{::nanogui::Vector2i \mbox{\hyperlink{classWindow_afeb982db9cbe9c1d30f88f9c4f7c2afe}{preferred\_size}}(\mbox{\hyperlink{structNVGcontext}{NVGcontext}} *ctx, const ::nanogui::Widget *widget)\textcolor{keyword}{ const override }\{ \(\backslash\)}
+\DoxyCodeLine{        PYBIND11\_OVERLOAD(::nanogui::Vector2i, Parent, \mbox{\hyperlink{classWindow_afeb982db9cbe9c1d30f88f9c4f7c2afe}{preferred\_size}}, ctx, widget); \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{    void \mbox{\hyperlink{classPopup_a3057d20cabcf12864ba3cc768da50afb}{perform\_layout}}(\mbox{\hyperlink{structNVGcontext}{NVGcontext}} *ctx, ::nanogui::Widget *widget)\textcolor{keyword}{ const override }\{ \(\backslash\)}
+\DoxyCodeLine{        PYBIND11\_OVERLOAD(\textcolor{keywordtype}{void}, Parent, \mbox{\hyperlink{classPopup_a3057d20cabcf12864ba3cc768da50afb}{perform\_layout}}, ctx, widget); \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Provides a {\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+O\+V\+E\+R\+L\+O\+AD} for any relevant \mbox{\hyperlink{classLayout}{Layout}} items that need to be bound. 
+
+\mbox{\Hypertarget{include_2nanogui_2python_8h_adb17893c4d7a847efec3135849aca84d}\label{include_2nanogui_2python_8h_adb17893c4d7a847efec3135849aca84d}} 
+\index{python.h@{python.h}!NANOGUI\_SCREEN\_OVERLOADS@{NANOGUI\_SCREEN\_OVERLOADS}}
+\index{NANOGUI\_SCREEN\_OVERLOADS@{NANOGUI\_SCREEN\_OVERLOADS}!python.h@{python.h}}
+\doxysubsubsection{\texorpdfstring{NANOGUI\_SCREEN\_OVERLOADS}{NANOGUI\_SCREEN\_OVERLOADS}}
+{\footnotesize\ttfamily \#define N\+A\+N\+O\+G\+U\+I\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+O\+V\+E\+R\+L\+O\+A\+DS(\begin{DoxyParamCaption}\item[{}]{Parent }\end{DoxyParamCaption})}
+
+{\bfseries Valeur \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{virtual} \textcolor{keywordtype}{void} draw\_all()\textcolor{keyword}{ override }\{ \(\backslash\)}
+\DoxyCodeLine{        PYBIND11\_OVERLOAD(\textcolor{keywordtype}{void}, Parent, draw\_all); \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{    virtual \textcolor{keywordtype}{void} draw\_contents()\textcolor{keyword}{ override }\{ \(\backslash\)}
+\DoxyCodeLine{        PYBIND11\_OVERLOAD(\textcolor{keywordtype}{void}, Parent, draw\_contents); \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{    virtual \textcolor{keywordtype}{bool} drop\_event(\textcolor{keyword}{const} std::vector<std::string> \&filenames)\textcolor{keyword}{ override }\{ \(\backslash\)}
+\DoxyCodeLine{        PYBIND11\_OVERLOAD(\textcolor{keywordtype}{bool}, Parent, drop\_event, filenames); \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{    virtual \textcolor{keywordtype}{bool} resize\_event(const ::nanogui::Vector2i \&size)\textcolor{keyword}{ override }\{ \(\backslash\)}
+\DoxyCodeLine{        PYBIND11\_OVERLOAD(\textcolor{keywordtype}{bool}, Parent, resize\_event, size); \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Provides a {\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+O\+V\+E\+R\+L\+O\+AD} for any relevant \mbox{\hyperlink{classScreen}{Screen}} items that need to be bound. 
+

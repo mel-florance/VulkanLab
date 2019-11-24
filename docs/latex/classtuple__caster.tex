@@ -1,0 +1,79 @@
+\hypertarget{classtuple__caster}{}\doxysection{Référence du modèle de la classe tuple\+\_\+caster$<$ Tuple, Ts $>$}
+\label{classtuple__caster}\index{tuple\_caster$<$ Tuple, Ts $>$@{tuple\_caster$<$ Tuple, Ts $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtuple__caster_a2f1b288b872b4198d752374cb614b24b}\label{classtuple__caster_a2f1b288b872b4198d752374cb614b24b}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries cast\+\_\+op\+\_\+type} = type
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtuple__caster_a5068d29ae84a185fbc5e942c17709096}\label{classtuple__caster_a5068d29ae84a185fbc5e942c17709096}} 
+bool {\bfseries load} (\mbox{\hyperlink{classhandle}{handle}} src, bool convert)
+\item 
+\mbox{\Hypertarget{classtuple__caster_aafca74b6a6c2bf8297677534a7ac0a31}\label{classtuple__caster_aafca74b6a6c2bf8297677534a7ac0a31}} 
+{\bfseries operator type} () \&
+\item 
+\mbox{\Hypertarget{classtuple__caster_abdef03c6f4286e4b0b36bc6779d33f83}\label{classtuple__caster_abdef03c6f4286e4b0b36bc6779d33f83}} 
+{\bfseries operator type} () \&\&
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtuple__caster_ab0a47ea2b14a9771cea035bc44cba5b1}\label{classtuple__caster_ab0a47ea2b14a9771cea035bc44cba5b1}} 
+{\footnotesize template$<$typename T $>$ }\\static \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast} (T \&\&src, return\+\_\+value\+\_\+policy policy, \mbox{\hyperlink{classhandle}{handle}} parent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtuple__caster_ac5732f181ed863ea77052affd48e33a0}\label{classtuple__caster_ac5732f181ed863ea77052affd48e33a0}} 
+static constexpr auto {\bfseries name} = \+\_\+(\char`\"{}Tuple\mbox{[}\char`\"{}) + concat(\mbox{\hyperlink{classtype__caster}{make\+\_\+caster}}$<$Ts$>$\+::name...) + \+\_\+(\char`\"{}\mbox{]}\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtuple__caster_a9f833c2141a2bd5d3ae2625752436aba}\label{classtuple__caster_a9f833c2141a2bd5d3ae2625752436aba}} 
+{\footnotesize template$<$size\+\_\+t... Is$>$ }\\type {\bfseries implicit\+\_\+cast} (\mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Is... $>$) \&
+\item 
+\mbox{\Hypertarget{classtuple__caster_a3101ab61e84c97fd09104355e095b491}\label{classtuple__caster_a3101ab61e84c97fd09104355e095b491}} 
+{\footnotesize template$<$size\+\_\+t... Is$>$ }\\type {\bfseries implicit\+\_\+cast} (\mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Is... $>$) \&\&
+\item 
+\mbox{\Hypertarget{classtuple__caster_a86bacf2d7f440d7cc2f42620c9622f19}\label{classtuple__caster_a86bacf2d7f440d7cc2f42620c9622f19}} 
+{\footnotesize template$<$size\+\_\+t... Is$>$ }\\bool {\bfseries load\+\_\+impl} (const \mbox{\hyperlink{classsequence}{sequence}} \&seq, bool convert, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Is... $>$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtuple__caster_a69ae2feb001453601165fc693e74584b}\label{classtuple__caster_a69ae2feb001453601165fc693e74584b}} 
+static constexpr bool {\bfseries load\+\_\+impl} (const \mbox{\hyperlink{classsequence}{sequence}} \&, bool, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$$>$)
+\item 
+\mbox{\Hypertarget{classtuple__caster_a85f19b13b0bfda89d32cdc631b1652c0}\label{classtuple__caster_a85f19b13b0bfda89d32cdc631b1652c0}} 
+{\footnotesize template$<$typename T , size\+\_\+t... Is$>$ }\\static \mbox{\hyperlink{classhandle}{handle}} {\bfseries cast\+\_\+impl} (T \&\&src, return\+\_\+value\+\_\+policy policy, \mbox{\hyperlink{classhandle}{handle}} parent, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Is... $>$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtuple__caster_a5a772e6404951d9cbfdfb9d06d342de1}\label{classtuple__caster_a5a772e6404951d9cbfdfb9d06d342de1}} 
+Tuple$<$ \mbox{\hyperlink{classtype__caster}{make\+\_\+caster}}$<$ Ts $>$... $>$ {\bfseries subcasters}
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtuple__caster_ab0de0fe03d054e1670df32f39459e3af}\label{classtuple__caster_ab0de0fe03d054e1670df32f39459e3af}} 
+using {\bfseries type} = Tuple$<$ Ts... $>$
+\item 
+\mbox{\Hypertarget{classtuple__caster_af3c85c05963d3cfb37dd7ffab38392ac}\label{classtuple__caster_af3c85c05963d3cfb37dd7ffab38392ac}} 
+using {\bfseries indices} = make\+\_\+index\+\_\+sequence$<$ size $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtuple__caster_ad0a1ec89fb884bdbdfe7f2593d40a955}\label{classtuple__caster_ad0a1ec89fb884bdbdfe7f2593d40a955}} 
+static constexpr auto {\bfseries size} = sizeof...(Ts)
+\end{DoxyCompactItemize}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/cast.\+h\end{DoxyCompactItemize}

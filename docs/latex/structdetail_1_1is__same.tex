@@ -1,0 +1,46 @@
+\hypertarget{structdetail_1_1is__same}{}\doxysection{Référence du modèle de la structure detail\+::is\+\_\+same$<$ T0, T1 $>$}
+\label{structdetail_1_1is__same}\index{detail::is\_same$<$ T0, T1 $>$@{detail::is\_same$<$ T0, T1 $>$}}
+
+
+Value equivalence between arithmetic type to work around subtle issues between \textquotesingle{}long\textquotesingle{} vs \textquotesingle{}long long\textquotesingle{} on O\+SX.  
+
+
+
+
+{\ttfamily \#include $<$array\+\_\+traits.\+h$>$}
+
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr bool {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename T0, typename T1$>$\newline
+struct detail\+::is\+\_\+same$<$ T0, T1 $>$}
+
+Value equivalence between arithmetic type to work around subtle issues between \textquotesingle{}long\textquotesingle{} vs \textquotesingle{}long long\textquotesingle{} on O\+SX. 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structdetail_1_1is__same_a79dc4f3b34c617c23a167bd16bdd1da1}\label{structdetail_1_1is__same_a79dc4f3b34c617c23a167bd16bdd1da1}} 
+\index{detail::is\_same$<$ T0, T1 $>$@{detail::is\_same$<$ T0, T1 $>$}!value@{value}}
+\index{value@{value}!detail::is\_same$<$ T0, T1 $>$@{detail::is\_same$<$ T0, T1 $>$}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$typename T0 , typename T1 $>$ \\
+constexpr bool \mbox{\hyperlink{structdetail_1_1is__same}{detail\+::is\+\_\+same}}$<$ T0, T1 $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            \textcolor{keyword}{sizeof}(T0) == \textcolor{keyword}{sizeof}(T1) \&\&}
+\DoxyCodeLine{            std::is\_floating\_point\_v<T0> == std::is\_floating\_point\_v<T1> \&\&}
+\DoxyCodeLine{            std::is\_signed\_v<T0> == std::is\_signed\_v<T1> \&\&}
+\DoxyCodeLine{            std::is\_arithmetic\_v<T0> == std::is\_arithmetic\_v<T1>}
+
+\end{DoxyCode}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array\+\_\+traits.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\hypertarget{classerror__already__set}{}\doxysection{Référence de la classe error\+\_\+already\+\_\+set}
+\label{classerror__already__set}\index{error\_already\_set@{error\_already\_set}}
+
+
+{\ttfamily \#include $<$pytypes.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de error\+\_\+already\+\_\+set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classerror__already__set}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classerror__already__set_a9f6456fb9f03460d943682037132e819}{error\+\_\+already\+\_\+set}} ()
+\item 
+\mbox{\Hypertarget{classerror__already__set_a8bea74f30b56b414ee2629009cb252f4}\label{classerror__already__set_a8bea74f30b56b414ee2629009cb252f4}} 
+{\bfseries error\+\_\+already\+\_\+set} (const \mbox{\hyperlink{classerror__already__set}{error\+\_\+already\+\_\+set}} \&)=default
+\item 
+\mbox{\Hypertarget{classerror__already__set_a77db6b6c5770db3ec72f6e522375084a}\label{classerror__already__set_a77db6b6c5770db3ec72f6e522375084a}} 
+{\bfseries error\+\_\+already\+\_\+set} (\mbox{\hyperlink{classerror__already__set}{error\+\_\+already\+\_\+set}} \&\&)=default
+\item 
+void \mbox{\hyperlink{classerror__already__set_a751b231e5c796447d867cf30007a7fc0}{restore}} ()
+\item 
+\mbox{\Hypertarget{classerror__already__set_a471237e45e4049e9e9ec4bc049621eb1}\label{classerror__already__set_a471237e45e4049e9e9ec4bc049621eb1}} 
+void {\bfseries clear} ()
+\item 
+bool \mbox{\hyperlink{classerror__already__set_a6585d62b1153c401745df155a7c87f6f}{matches}} (\mbox{\hyperlink{classhandle}{handle}} exc) const
+\item 
+\mbox{\Hypertarget{classerror__already__set_ac3dd32df00bb90cf034e30b7f9cb0586}\label{classerror__already__set_ac3dd32df00bb90cf034e30b7f9cb0586}} 
+const \mbox{\hyperlink{classobject}{object}} \& {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classerror__already__set_ab69e6db7ddbce99a0d9a40711aa14001}\label{classerror__already__set_ab69e6db7ddbce99a0d9a40711aa14001}} 
+const \mbox{\hyperlink{classobject}{object}} \& {\bfseries value} () const
+\item 
+\mbox{\Hypertarget{classerror__already__set_ad97488f248a56d4214cf1ac659769222}\label{classerror__already__set_ad97488f248a56d4214cf1ac659769222}} 
+const \mbox{\hyperlink{classobject}{object}} \& {\bfseries trace} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classerror__already__set_a4fb1cc418f591ff6040619dd0766343f}\label{classerror__already__set_a4fb1cc418f591ff6040619dd0766343f}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries m\+\_\+type}
+\item 
+\mbox{\Hypertarget{classerror__already__set_adf0e7d9b24f3ca45d8e159090ac385dd}\label{classerror__already__set_adf0e7d9b24f3ca45d8e159090ac385dd}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries m\+\_\+value}
+\item 
+\mbox{\Hypertarget{classerror__already__set_a0289c345099b55760dd13f076dbd9368}\label{classerror__already__set_a0289c345099b55760dd13f076dbd9368}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries m\+\_\+trace}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fetch and hold an error which was already set in Python. An instance of this is typically thrown to propagate python-\/side errors back through C++ which can either be caught manually or else falls back to the function dispatcher (which then raises the captured error back to python). 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classerror__already__set_a9f6456fb9f03460d943682037132e819}\label{classerror__already__set_a9f6456fb9f03460d943682037132e819}} 
+\index{error\_already\_set@{error\_already\_set}!error\_already\_set@{error\_already\_set}}
+\index{error\_already\_set@{error\_already\_set}!error\_already\_set@{error\_already\_set}}
+\doxysubsubsection{\texorpdfstring{error\_already\_set()}{error\_already\_set()}}
+{\footnotesize\ttfamily error\+\_\+already\+\_\+set\+::error\+\_\+already\+\_\+set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a new exception from the current Python error indicator, if any. The current Python error indicator will be cleared. 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classerror__already__set_a6585d62b1153c401745df155a7c87f6f}\label{classerror__already__set_a6585d62b1153c401745df155a7c87f6f}} 
+\index{error\_already\_set@{error\_already\_set}!matches@{matches}}
+\index{matches@{matches}!error\_already\_set@{error\_already\_set}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily bool error\+\_\+already\+\_\+set\+::matches (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhandle}{handle}}}]{exc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if the currently trapped error type matches the given Python exception class (or a subclass thereof). May also be passed a tuple to search for any exception class matches in the given tuple. \mbox{\Hypertarget{classerror__already__set_a751b231e5c796447d867cf30007a7fc0}\label{classerror__already__set_a751b231e5c796447d867cf30007a7fc0}} 
+\index{error\_already\_set@{error\_already\_set}!restore@{restore}}
+\index{restore@{restore}!error\_already\_set@{error\_already\_set}}
+\doxysubsubsection{\texorpdfstring{restore()}{restore()}}
+{\footnotesize\ttfamily void error\+\_\+already\+\_\+set\+::restore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Give the currently-\/held error back to Python, if any. If there is currently a Python error already set it is cleared first. After this call, the current object no longer stores the error variables (but the {\ttfamily .what()} string is still available). 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/pytypes.\+h\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/pybind11.\+h\end{DoxyCompactItemize}

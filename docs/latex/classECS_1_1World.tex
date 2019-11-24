@@ -1,10 +1,10 @@
-\hypertarget{classECS_1_1World}{}\doxysection{E\+CS\+::World Class Reference}
+\hypertarget{classECS_1_1World}{}\doxysection{Référence de la classe E\+CS\+::World}
 \label{classECS_1_1World}\index{ECS::World@{ECS::World}}
 
 
 {\ttfamily \#include $<$E\+C\+S.\+h$>$}
 
-\doxysubsection*{Public Types}
+\doxysubsection*{Types publics}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classECS_1_1World_a96c7e909ad4ce70ae4d52951ecae2aae}\label{classECS_1_1World_a96c7e909ad4ce70ae4d52951ecae2aae}} 
@@ -28,7 +28,7 @@ using {\bfseries Subscriber\+Ptr\+Allocator} = std\+::allocator\+\_\+traits$<$ A
 \mbox{\Hypertarget{classECS_1_1World_afd28d4ca046581bb1161ba86004515f6}\label{classECS_1_1World_afd28d4ca046581bb1161ba86004515f6}} 
 using {\bfseries Subscriber\+Pair\+Allocator} = std\+::allocator\+\_\+traits$<$ Allocator $>$\+::template rebind\+\_\+alloc$<$ std\+::pair$<$ const Type\+Index, std\+::vector$<$ \mbox{\hyperlink{classECS_1_1Internal_1_1BaseEventSubscriber}{Internal\+::\+Base\+Event\+Subscriber}} $\ast$, Subscriber\+Ptr\+Allocator $>$ $>$$>$
 \end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classECS_1_1World_a120055055c5cd7673c6358d2e0f731c0}\label{classECS_1_1World_a120055055c5cd7673c6358d2e0f731c0}} 
@@ -87,14 +87,14 @@ void \mbox{\hyperlink{classECS_1_1World_aac33fad54c600dc5e5f477a663ede9c7}{tick}
 \mbox{\Hypertarget{classECS_1_1World_a8c7462770ce1c070d5e1053225cc2007}\label{classECS_1_1World_a8c7462770ce1c070d5e1053225cc2007}} 
 Entity\+Allocator \& {\bfseries get\+Primary\+Allocator} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Static Public Member Functions}
+\doxysubsection*{Fonctions membres publiques statiques}
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$ \mbox{\hyperlink{classECS_1_1World_a5f475f6c1d5c3dc4722284dbc82a2298}{create\+World}} (Allocator alloc)
 \item 
 static \mbox{\hyperlink{classECS_1_1World}{World}} $\ast$ \mbox{\hyperlink{classECS_1_1World_a2a559e39040bdbe201c87a7bd9bfb909}{create\+World}} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classECS_1_1World_a2ac9cda326ec407189b494544c3a58df}\label{classECS_1_1World_a2ac9cda326ec407189b494544c3a58df}} 
@@ -120,10 +120,10 @@ size\+\_\+t {\bfseries last\+Entity\+Id} = 0
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\doxysubsection{Description détaillée}
 The world creates, destroys, and manages entities. The lifetime of entities and {\itshape registered} systems are handled by the world (don\textquotesingle{}t delete a system without unregistering it from the world first!), while event subscribers have their own lifetimes (the world doesn\textquotesingle{}t delete them automatically when the world is deleted). 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\doxysubsection{Documentation des constructeurs et destructeur}
 \mbox{\Hypertarget{classECS_1_1World_a88c1a8eb01efe2ec276db14bae65a602}\label{classECS_1_1World_a88c1a8eb01efe2ec276db14bae65a602}} 
 \index{ECS::World@{ECS::World}!````~World@{$\sim$World}}
 \index{````~World@{$\sim$World}!ECS::World@{ECS::World}}
@@ -134,7 +134,7 @@ Destroying the world will emit On\+Entity\+Destroyed events and call \mbox{\hype
 
 Use World\+::destroy\+World to destroy and deallocate the world, do not manually delete the world! 
 
-\doxysubsection{Member Function Documentation}
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classECS_1_1World_a0242fa4d1ad76970de27ec897907705e}\label{classECS_1_1World_a0242fa4d1ad76970de27ec897907705e}} 
 \index{ECS::World@{ECS::World}!all@{all}}
 \index{all@{all}!ECS::World@{ECS::World}}
@@ -177,7 +177,7 @@ If immediate is false (recommended), then the entity won\textquotesingle{}t be i
 
 This function is safe to call multiple times on a single entity. Note that calling this once with immediate = false and then calling it with immediate = true will remove the entity from the pending destroy queue and will immediately destroy it {\itshape without} emitting a second On\+Entity\+Destroyed event.
 
-A warning\+: Do not set immediate to true if you are currently iterating through entities! \mbox{\Hypertarget{classECS_1_1World_a8ab7fc08cb14e9226c9ad03345ee751c}\label{classECS_1_1World_a8ab7fc08cb14e9226c9ad03345ee751c}} 
+\mbox{\hyperlink{structA}{A}} warning\+: Do not set immediate to true if you are currently iterating through entities! \mbox{\Hypertarget{classECS_1_1World_a8ab7fc08cb14e9226c9ad03345ee751c}\label{classECS_1_1World_a8ab7fc08cb14e9226c9ad03345ee751c}} 
 \index{ECS::World@{ECS::World}!each@{each}}
 \index{each@{each}!ECS::World@{ECS::World}}
 \doxysubsubsection{\texorpdfstring{each()}{each()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -252,6 +252,6 @@ Unsubscribe from an event. \mbox{\Hypertarget{classECS_1_1World_a6ad62e75db172d6
 
 Unsubscribe from all events. Don\textquotesingle{}t be afraid of the void pointer, just pass in your subscriber as normal. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
 \item 
 Engine/src/\+E\+C\+S/E\+C\+S.\+h\end{DoxyCompactItemize}

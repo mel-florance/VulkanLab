@@ -1,0 +1,38 @@
+\hypertarget{structprocess__attribute_3_01keep__alive_3_01Nurse_00_01Patient_01_4_01_4}{}\doxysection{Référence du modèle de la structure process\+\_\+attribute$<$ keep\+\_\+alive$<$ Nurse, Patient $>$ $>$}
+\label{structprocess__attribute_3_01keep__alive_3_01Nurse_00_01Patient_01_4_01_4}\index{process\_attribute$<$ keep\_alive$<$ Nurse, Patient $>$ $>$@{process\_attribute$<$ keep\_alive$<$ Nurse, Patient $>$ $>$}}
+
+
+{\ttfamily \#include $<$attr.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de process\+\_\+attribute$<$ keep\+\_\+alive$<$ Nurse, Patient $>$ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structprocess__attribute_3_01keep__alive_3_01Nurse_00_01Patient_01_4_01_4}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structprocess__attribute_3_01keep__alive_3_01Nurse_00_01Patient_01_4_01_4_a2204d919885c6255592c878d436b0dd9}\label{structprocess__attribute_3_01keep__alive_3_01Nurse_00_01Patient_01_4_01_4_a2204d919885c6255592c878d436b0dd9}} 
+{\footnotesize template$<$size\+\_\+t N = Nurse, size\+\_\+t P = Patient, enable\+\_\+if\+\_\+t$<$ N !=0 \&\&\+P !=0, int $>$  = 0$>$ }\\static void {\bfseries precall} (\mbox{\hyperlink{structfunction__call}{function\+\_\+call}} \&call)
+\item 
+\mbox{\Hypertarget{structprocess__attribute_3_01keep__alive_3_01Nurse_00_01Patient_01_4_01_4_a938350d8359b6dcceab9b9c0ec264fe4}\label{structprocess__attribute_3_01keep__alive_3_01Nurse_00_01Patient_01_4_01_4_a938350d8359b6dcceab9b9c0ec264fe4}} 
+{\footnotesize template$<$size\+\_\+t N = Nurse, size\+\_\+t P = Patient, enable\+\_\+if\+\_\+t$<$ N !=0 \&\&\+P !=0, int $>$  = 0$>$ }\\static void {\bfseries postcall} (\mbox{\hyperlink{structfunction__call}{function\+\_\+call}} \&, \mbox{\hyperlink{classhandle}{handle}})
+\item 
+\mbox{\Hypertarget{structprocess__attribute_3_01keep__alive_3_01Nurse_00_01Patient_01_4_01_4_afb78d6550e0edc2aa66c8ab8a3397f12}\label{structprocess__attribute_3_01keep__alive_3_01Nurse_00_01Patient_01_4_01_4_afb78d6550e0edc2aa66c8ab8a3397f12}} 
+{\footnotesize template$<$size\+\_\+t N = Nurse, size\+\_\+t P = Patient, enable\+\_\+if\+\_\+t$<$ N==0$\vert$$\vert$\+P==0, int $>$  = 0$>$ }\\static void {\bfseries precall} (\mbox{\hyperlink{structfunction__call}{function\+\_\+call}} \&)
+\item 
+\mbox{\Hypertarget{structprocess__attribute_3_01keep__alive_3_01Nurse_00_01Patient_01_4_01_4_a6ceb3b0fe29a57c56d18b3f1dfcd09eb}\label{structprocess__attribute_3_01keep__alive_3_01Nurse_00_01Patient_01_4_01_4_a6ceb3b0fe29a57c56d18b3f1dfcd09eb}} 
+{\footnotesize template$<$size\+\_\+t N = Nurse, size\+\_\+t P = Patient, enable\+\_\+if\+\_\+t$<$ N==0$\vert$$\vert$\+P==0, int $>$  = 0$>$ }\\static void {\bfseries postcall} (\mbox{\hyperlink{structfunction__call}{function\+\_\+call}} \&call, \mbox{\hyperlink{classhandle}{handle}} ret)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$size\+\_\+t Nurse, size\+\_\+t Patient$>$\newline
+struct process\+\_\+attribute$<$ keep\+\_\+alive$<$ Nurse, Patient $>$ $>$}
+
+Process a \mbox{\hyperlink{structkeep__alive}{keep\+\_\+alive}} call policy -- invokes keep\+\_\+alive\+\_\+impl during the pre-\/call handler if both Nurse, Patient != 0 and use the post-\/call handler otherwise 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/attr.\+h\end{DoxyCompactItemize}

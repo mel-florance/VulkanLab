@@ -1,0 +1,58 @@
+\hypertarget{structfunction__call}{}\doxysection{Référence de la structure function\+\_\+call}
+\label{structfunction__call}\index{function\_call@{function\_call}}
+
+
+Internal data associated with a single function call.  
+
+
+
+
+{\ttfamily \#include $<$cast.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfunction__call_a7e92652f2171a83f7d690f57983c1631}\label{structfunction__call_a7e92652f2171a83f7d690f57983c1631}} 
+{\bfseries function\+\_\+call} (const \mbox{\hyperlink{structfunction__record}{function\+\_\+record}} \&f, \mbox{\hyperlink{classhandle}{handle}} p)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfunction__call_afadf98c8478fd2c1958003cedefa38d7}\label{structfunction__call_afadf98c8478fd2c1958003cedefa38d7}} 
+const \mbox{\hyperlink{structfunction__record}{function\+\_\+record}} \& \mbox{\hyperlink{structfunction__call_afadf98c8478fd2c1958003cedefa38d7}{func}}
+\begin{DoxyCompactList}\small\item\em The function data\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__call_ae77a8a65a8ae5ebbbd2eb17bc9ff54d3}\label{structfunction__call_ae77a8a65a8ae5ebbbd2eb17bc9ff54d3}} 
+std\+::vector$<$ \mbox{\hyperlink{classhandle}{handle}} $>$ \mbox{\hyperlink{structfunction__call_ae77a8a65a8ae5ebbbd2eb17bc9ff54d3}{args}}
+\begin{DoxyCompactList}\small\item\em Arguments passed to the function\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__call_aef756a1f9206af0d2e3fdb684b2d6b5f}\label{structfunction__call_aef756a1f9206af0d2e3fdb684b2d6b5f}} 
+std\+::vector$<$ bool $>$ \mbox{\hyperlink{structfunction__call_aef756a1f9206af0d2e3fdb684b2d6b5f}{args\+\_\+convert}}
+\begin{DoxyCompactList}\small\item\em The {\ttfamily convert} value the arguments should be loaded with. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classobject}{object}} \mbox{\hyperlink{structfunction__call_a13ff878b84d1c7a41c0f28c62db36925}{args\+\_\+ref}}
+\item 
+\mbox{\Hypertarget{structfunction__call_a1ae7a6c18887e3c791b6cb16b2cc98c0}\label{structfunction__call_a1ae7a6c18887e3c791b6cb16b2cc98c0}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries kwargs\+\_\+ref}
+\item 
+\mbox{\Hypertarget{structfunction__call_a72923821447a70a799f862a501eee20d}\label{structfunction__call_a72923821447a70a799f862a501eee20d}} 
+\mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structfunction__call_a72923821447a70a799f862a501eee20d}{parent}}
+\begin{DoxyCompactList}\small\item\em The parent, if any. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfunction__call_a8f9e4659cf3ca4be507d2220420b9c00}\label{structfunction__call_a8f9e4659cf3ca4be507d2220420b9c00}} 
+\mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structfunction__call_a8f9e4659cf3ca4be507d2220420b9c00}{init\+\_\+self}}
+\begin{DoxyCompactList}\small\item\em If this is a call to an initializer, this argument contains {\ttfamily self} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Internal data associated with a single function call. 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structfunction__call_a13ff878b84d1c7a41c0f28c62db36925}\label{structfunction__call_a13ff878b84d1c7a41c0f28c62db36925}} 
+\index{function\_call@{function\_call}!args\_ref@{args\_ref}}
+\index{args\_ref@{args\_ref}!function\_call@{function\_call}}
+\doxysubsubsection{\texorpdfstring{args\_ref}{args\_ref}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classobject}{object}} function\+\_\+call\+::args\+\_\+ref}
+
+Extra references for the optional {\ttfamily py\+::args} and/or {\ttfamily py\+::kwargs} arguments (which, if present, are also in {\ttfamily args} but without a reference). 
+
+La documentation de cette structure a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/cast.\+h\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/attr.\+h\end{DoxyCompactItemize}

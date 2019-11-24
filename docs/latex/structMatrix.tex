@@ -1,0 +1,114 @@
+\hypertarget{structMatrix}{}\doxysection{Référence du modèle de la structure Matrix$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+ $>$}
+\label{structMatrix}\index{Matrix$<$ Value\_, Size\_, Approx\_ $>$@{Matrix$<$ Value\_, Size\_, Approx\_ $>$}}
+Graphe d\textquotesingle{}héritage de Matrix$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.396509cm]{structMatrix}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMatrix_a472d6e097f452f04c64568cbb10ce74d}\label{structMatrix_a472d6e097f452f04c64568cbb10ce74d}} 
+using {\bfseries Entry} = Value\+\_\+
+\item 
+\mbox{\Hypertarget{structMatrix_aa4583d648e41d31b5ea4159aa9571fdf}\label{structMatrix_aa4583d648e41d31b5ea4159aa9571fdf}} 
+using {\bfseries Column} = \mbox{\hyperlink{structArray}{Array}}$<$ Entry, Size\+\_\+, Approx\+\_\+ $>$
+\item 
+\mbox{\Hypertarget{structMatrix_a2cb8db2b3718d8e5fe18a4fbfec22aba}\label{structMatrix_a2cb8db2b3718d8e5fe18a4fbfec22aba}} 
+using {\bfseries Base} = \mbox{\hyperlink{structStaticArrayImpl}{Static\+Array\+Impl}}$<$ \mbox{\hyperlink{structArray}{Column}}, Size\+\_\+, Approx\+\_\+, Rounding\+Mode\+::\+Default, false, \mbox{\hyperlink{structMatrix}{Matrix}}$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{structMatrix_a2351624d7c9d94342a640ccd184e5e6d}\label{structMatrix_a2351624d7c9d94342a640ccd184e5e6d}} 
+using {\bfseries Array\+Type} = \mbox{\hyperlink{structMatrix}{Matrix}}
+\item 
+\mbox{\Hypertarget{structMatrix_a5f363f22992a839100d0bdfc4738277d}\label{structMatrix_a5f363f22992a839100d0bdfc4738277d}} 
+using {\bfseries Mask\+Type} = \mbox{\hyperlink{structMask}{Mask}}$<$ mask\+\_\+t$<$ \mbox{\hyperlink{structArray}{Column}} $>$, Size\+\_\+, Approx\+\_\+, Rounding\+Mode\+::\+Default $>$
+\item 
+\mbox{\Hypertarget{structMatrix_a237d7f5a2c70d3a3e0b657a5df372459}\label{structMatrix_a237d7f5a2c70d3a3e0b657a5df372459}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries Replace\+Value} = \mbox{\hyperlink{structMatrix}{Matrix}}$<$ value\+\_\+t$<$ T $>$, Size\+\_\+, is\+\_\+std\+\_\+float\+\_\+v$<$ scalar\+\_\+t$<$ T $>$ $>$ \&\&is\+\_\+std\+\_\+float\+\_\+v$<$ scalar\+\_\+t$<$ Value\+\_\+ $>$ $>$ ? Approx\+\_\+ \+:array\+\_\+approx\+\_\+v$<$ T $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMatrix_af42766803a24b59736d7234c6f718b84}\label{structMatrix_af42766803a24b59736d7234c6f718b84}} 
+{\bfseries E\+N\+O\+K\+I\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+B\+A\+S\+IC} (\mbox{\hyperlink{structStaticArrayImpl}{Base}}, \mbox{\hyperlink{structMatrix}{Matrix}})
+\item 
+\mbox{\Hypertarget{structMatrix_a7b2842066eff7f28f2fa737240bf0d04}\label{structMatrix_a7b2842066eff7f28f2fa737240bf0d04}} 
+{\footnotesize template$<$typename Value2 , size\+\_\+t Size2, bool Approx2, enable\+\_\+if\+\_\+t$<$ Size2==\+Size\+\_\+ $>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structMatrix_a7b2842066eff7f28f2fa737240bf0d04}{Matrix}} (const \mbox{\hyperlink{structMatrix}{Matrix}}$<$ Value2, Size2, Approx2 $>$ \&m)
+\begin{DoxyCompactList}\small\item\em Initialize from a incompatible matrix. \end{DoxyCompactList}\item 
+{\footnotesize template$<$size\+\_\+t Size2, bool Approx2, enable\+\_\+if\+\_\+t$<$ Size2 !=\+Size\+\_\+ $>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structMatrix_a54a113dc865e9d0537f73aa89957ae6f}{Matrix}} (const \mbox{\hyperlink{structMatrix}{Matrix}}$<$ Value\+\_\+, Size2, Approx2 $>$ \&m)
+\begin{DoxyCompactList}\small\item\em Initialize from an incompatible matrix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structMatrix_afd03f0d3c9c44e4ba157c0c2254690cf}\label{structMatrix_afd03f0d3c9c44e4ba157c0c2254690cf}} 
+{\footnotesize template$<$typename T , enable\+\_\+if\+\_\+t$<$(array\+\_\+depth\+\_\+v$<$ T $>$$<$=\+Base\+::\+Depth -\/ 2$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries Matrix} (T \&\&v)
+\item 
+\mbox{\Hypertarget{structMatrix_afd03f0d3c9c44e4ba157c0c2254690cf}\label{structMatrix_afd03f0d3c9c44e4ba157c0c2254690cf}} 
+{\footnotesize template$<$typename T , enable\+\_\+if\+\_\+t$<$(array\+\_\+depth\+\_\+v$<$ T $>$  = = Base\+::\+Depth$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE {\bfseries Matrix} (T \&\&v)
+\item 
+\mbox{\Hypertarget{structMatrix_ad24d9669e072fcb75e165aa6df7a2f76}\label{structMatrix_ad24d9669e072fcb75e165aa6df7a2f76}} 
+{\footnotesize template$<$typename... Args, enable\+\_\+if\+\_\+t$<$ sizeof...(\+Args)==\+Size\+\_\+ \&\&std\+::conjunction\+\_\+v$<$ std\+::is\+\_\+constructible$<$ Column, Args $>$... $>$$>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structMatrix_ad24d9669e072fcb75e165aa6df7a2f76}{Matrix}} (const Args \&... \mbox{\hyperlink{classargs}{args}})
+\begin{DoxyCompactList}\small\item\em Initialize the matrix from a list of columns. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structMatrix_ad24d9669e072fcb75e165aa6df7a2f76}\label{structMatrix_ad24d9669e072fcb75e165aa6df7a2f76}} 
+{\footnotesize template$<$typename... Args, enable\+\_\+if\+\_\+t$<$ sizeof...(\+Args)==\+Size\+\_\+ $\ast$\+Size\+\_\+ \&\&std\+::conjunction\+\_\+v$<$ std\+::is\+\_\+constructible$<$ Entry, Args $>$... $>$$>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structMatrix_ad24d9669e072fcb75e165aa6df7a2f76}{Matrix}} (const Args \&... \mbox{\hyperlink{classargs}{args}})
+\begin{DoxyCompactList}\small\item\em Initialize the matrix from a list of entries in row-\/major order. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structMatrix_a83858ba8e8e89317e1d4fbee9ed89efa}\label{structMatrix_a83858ba8e8e89317e1d4fbee9ed89efa}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArray}{Column}} \& {\bfseries col} (size\+\_\+t index)
+\item 
+\mbox{\Hypertarget{structMatrix_afee12b728b8e7f4a1e6cfbe6cb1185f2}\label{structMatrix_afee12b728b8e7f4a1e6cfbe6cb1185f2}} 
+const E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArray}{Column}} \& {\bfseries col} (size\+\_\+t index) const
+\item 
+\mbox{\Hypertarget{structMatrix_a72ddcac316525e32008b8665e6277a70}\label{structMatrix_a72ddcac316525e32008b8665e6277a70}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArray}{Column}} {\bfseries row} (size\+\_\+t index) const
+\item 
+\mbox{\Hypertarget{structMatrix_afb1a01607101cda038ef246cf3072a90}\label{structMatrix_afb1a01607101cda038ef246cf3072a90}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structMatrix_afb1a01607101cda038ef246cf3072a90}{operator()}} (size\+\_\+t i, size\+\_\+t j)
+\begin{DoxyCompactList}\small\item\em Return a reference to the (i, j) element. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structMatrix_a5b6b7812215db22b1f196c31c2715e00}\label{structMatrix_a5b6b7812215db22b1f196c31c2715e00}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structMatrix_a5b6b7812215db22b1f196c31c2715e00}{operator()}} (size\+\_\+t i, size\+\_\+t j) const
+\begin{DoxyCompactList}\small\item\em Return a reference to the (i, j) element (const) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMatrix_aac36cb5d623282073e2976f9797c6d89}\label{structMatrix_aac36cb5d623282073e2976f9797c6d89}} 
+{\footnotesize template$<$typename... Column$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structMatrix}{Matrix}} {\bfseries from\+\_\+cols} (const \mbox{\hyperlink{structArray}{Column}} \&... cols)
+\item 
+\mbox{\Hypertarget{structMatrix_ae66c5f47f6c8da93d13b95e2d6227d81}\label{structMatrix_ae66c5f47f6c8da93d13b95e2d6227d81}} 
+{\footnotesize template$<$typename... Row$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structMatrix}{Matrix}} {\bfseries from\+\_\+rows} (const Row \&... rows)
+\item 
+\mbox{\Hypertarget{structMatrix_a259f034de8df66db23808251bb5d9bae}\label{structMatrix_a259f034de8df66db23808251bb5d9bae}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Derived {\bfseries zero\+\_\+} (size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structMatrix_a88ea48d8a46c5892f585efcec5bf8a9e}\label{structMatrix_a88ea48d8a46c5892f585efcec5bf8a9e}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Derived {\bfseries empty\+\_\+} (size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structMatrix_a37f163606718783c735e6b9055059a64}\label{structMatrix_a37f163606718783c735e6b9055059a64}} 
+{\footnotesize template$<$typename T $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structMatrix}{Matrix}} {\bfseries full\+\_\+} (const T \&value, size\+\_\+t size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMatrix_aaf262708a4fb7bb25f5f736305eee49b}\label{structMatrix_aaf262708a4fb7bb25f5f736305eee49b}} 
+static constexpr bool {\bfseries Is\+Matrix} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{structMatrix_a54a113dc865e9d0537f73aa89957ae6f}\label{structMatrix_a54a113dc865e9d0537f73aa89957ae6f}} 
+\index{Matrix$<$ Value\_, Size\_, Approx\_ $>$@{Matrix$<$ Value\_, Size\_, Approx\_ $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix$<$ Value\_, Size\_, Approx\_ $>$@{Matrix$<$ Value\_, Size\_, Approx\_ $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}}
+{\footnotesize\ttfamily template$<$typename Value\+\_\+, size\+\_\+t Size\+\_\+, bool Approx\+\_\+$>$ \\
+template$<$size\+\_\+t Size2, bool Approx2, enable\+\_\+if\+\_\+t$<$ Size2 !=\+Size\+\_\+ $>$  = 0$>$ \\
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structMatrix}{Matrix}}$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+ $>$\+::\mbox{\hyperlink{structMatrix}{Matrix}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}}$<$ Value\+\_\+, Size2, Approx2 $>$ \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize from an incompatible matrix. 
+
+Other matrix is bigger -- retain the top left part
+
+Other matrix is smaller -- copy the top left part and set remainder to identity
+
+La documentation de cette structure a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/fwd.\+h\item 
+ext/nanogui/ext/enoki/include/enoki/matrix.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{structEigenProps}{}\doxysection{Référence du modèle de la structure Eigen\+Props$<$ Type\+\_\+ $>$}
+\label{structEigenProps}\index{EigenProps$<$ Type\_ $>$@{EigenProps$<$ Type\_ $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEigenProps_ababed0b6298eeb5f4ded06da92c96cd7}\label{structEigenProps_ababed0b6298eeb5f4ded06da92c96cd7}} 
+using {\bfseries Type} = Type\+\_\+
+\item 
+\mbox{\Hypertarget{structEigenProps_ae36317e24288de2c7b47017ce58acc37}\label{structEigenProps_ae36317e24288de2c7b47017ce58acc37}} 
+using {\bfseries Scalar} = typename Type\+::\+Scalar
+\item 
+\mbox{\Hypertarget{structEigenProps_a21dcc2d713c484e7a84e679c793e8fea}\label{structEigenProps_a21dcc2d713c484e7a84e679c793e8fea}} 
+using {\bfseries Stride\+Type} = typename \mbox{\hyperlink{structeigen__extract__stride}{eigen\+\_\+extract\+\_\+stride}}$<$ Type $>$\+::type
+\item 
+\mbox{\Hypertarget{structEigenProps_aa728072a2702217ee987bf9ab3b9d07d}\label{structEigenProps_aa728072a2702217ee987bf9ab3b9d07d}} 
+{\footnotesize template$<$Eigen\+Index i, Eigen\+Index ifzero$>$ }\\using {\bfseries if\+\_\+zero} = std\+::integral\+\_\+constant$<$ Eigen\+Index, i==0 ? ifzero \+:i $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEigenProps_a370b3557e63a8619c290a0dd36523a14}\label{structEigenProps_a370b3557e63a8619c290a0dd36523a14}} 
+static \mbox{\hyperlink{structEigenConformable}{Eigen\+Conformable}}$<$ row\+\_\+major $>$ {\bfseries conformable} (const \mbox{\hyperlink{classarray}{array}} \&a)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEigenProps_a2f00028920ef3138640e602c80ff9a0d}\label{structEigenProps_a2f00028920ef3138640e602c80ff9a0d}} 
+static constexpr Eigen\+Index {\bfseries rows} = Type\+::\+Rows\+At\+Compile\+Time
+\item 
+\mbox{\Hypertarget{structEigenProps_a11241a3435168ade35c58f1a2899df8b}\label{structEigenProps_a11241a3435168ade35c58f1a2899df8b}} 
+static constexpr Eigen\+Index {\bfseries cols} = Type\+::\+Cols\+At\+Compile\+Time
+\item 
+\mbox{\Hypertarget{structEigenProps_a9765247d03fa7156e28b73409689df17}\label{structEigenProps_a9765247d03fa7156e28b73409689df17}} 
+static constexpr Eigen\+Index {\bfseries size} = Type\+::\+Size\+At\+Compile\+Time
+\item 
+\mbox{\Hypertarget{structEigenProps_a290ebf6baed2dca134f928c13dda4030}\label{structEigenProps_a290ebf6baed2dca134f928c13dda4030}} 
+static constexpr bool {\bfseries row\+\_\+major} = Type\+::\+Is\+Row\+Major
+\item 
+\mbox{\Hypertarget{structEigenProps_a6c26ad4c67abd91b08285b63afed9ab9}\label{structEigenProps_a6c26ad4c67abd91b08285b63afed9ab9}} 
+static constexpr bool {\bfseries vector} = Type\+::\+Is\+Vector\+At\+Compile\+Time
+\item 
+\mbox{\Hypertarget{structEigenProps_a4fdf3fa6c9908561ddfac176c9c106f7}\label{structEigenProps_a4fdf3fa6c9908561ddfac176c9c106f7}} 
+static constexpr bool {\bfseries fixed\+\_\+rows} = rows != Eigen\+::\+Dynamic
+\item 
+\mbox{\Hypertarget{structEigenProps_afc4954afca9a4dd098b009a5653b2b48}\label{structEigenProps_afc4954afca9a4dd098b009a5653b2b48}} 
+static constexpr bool {\bfseries fixed\+\_\+cols} = cols != Eigen\+::\+Dynamic
+\item 
+\mbox{\Hypertarget{structEigenProps_a4234c331255e14bd0e2a817ac9e0352e}\label{structEigenProps_a4234c331255e14bd0e2a817ac9e0352e}} 
+static constexpr bool {\bfseries fixed} = size != Eigen\+::\+Dynamic
+\item 
+\mbox{\Hypertarget{structEigenProps_a8cda015be17e948b92d687ff58c78169}\label{structEigenProps_a8cda015be17e948b92d687ff58c78169}} 
+static constexpr bool {\bfseries dynamic} = !fixed\+\_\+rows \&\& !fixed\+\_\+cols
+\item 
+\mbox{\Hypertarget{structEigenProps_aadd1cceef220ef97abe8eb74f1f78ecd}\label{structEigenProps_aadd1cceef220ef97abe8eb74f1f78ecd}} 
+static constexpr Eigen\+Index {\bfseries inner\+\_\+stride} = if\+\_\+zero$<$Stride\+Type\+::\+Inner\+Stride\+At\+Compile\+Time, 1$>$\+::value
+\item 
+static constexpr Eigen\+Index {\bfseries outer\+\_\+stride}
+\item 
+\mbox{\Hypertarget{structEigenProps_a32861acd4f8d759619f7a3438a5a56a4}\label{structEigenProps_a32861acd4f8d759619f7a3438a5a56a4}} 
+static constexpr bool {\bfseries dynamic\+\_\+stride} = inner\+\_\+stride == Eigen\+::\+Dynamic \&\& outer\+\_\+stride == Eigen\+::\+Dynamic
+\item 
+\mbox{\Hypertarget{structEigenProps_a71445c69c5e4084c30449ff2207571c7}\label{structEigenProps_a71445c69c5e4084c30449ff2207571c7}} 
+static constexpr bool {\bfseries requires\+\_\+row\+\_\+major} = !dynamic\+\_\+stride \&\& !vector \&\& (row\+\_\+major ? inner\+\_\+stride \+: outer\+\_\+stride) == 1
+\item 
+\mbox{\Hypertarget{structEigenProps_a070c53f0e952e411c98e3ddfdbeaae3d}\label{structEigenProps_a070c53f0e952e411c98e3ddfdbeaae3d}} 
+static constexpr bool {\bfseries requires\+\_\+col\+\_\+major} = !dynamic\+\_\+stride \&\& !vector \&\& (row\+\_\+major ? outer\+\_\+stride \+: inner\+\_\+stride) == 1
+\item 
+\mbox{\Hypertarget{structEigenProps_a028698ea3f672d4a0e95922dc6553f23}\label{structEigenProps_a028698ea3f672d4a0e95922dc6553f23}} 
+static constexpr bool {\bfseries show\+\_\+writeable} = is\+\_\+eigen\+\_\+dense\+\_\+map$<$Type$>$\+::value \&\& is\+\_\+eigen\+\_\+mutable\+\_\+map$<$Type$>$\+::value
+\item 
+\mbox{\Hypertarget{structEigenProps_ae3040a55462cdeaed7843ba858eb8e68}\label{structEigenProps_ae3040a55462cdeaed7843ba858eb8e68}} 
+static constexpr bool {\bfseries show\+\_\+order} = is\+\_\+eigen\+\_\+dense\+\_\+map$<$Type$>$\+::value
+\item 
+\mbox{\Hypertarget{structEigenProps_a280202108f280aab1ccbe5f9e946a8eb}\label{structEigenProps_a280202108f280aab1ccbe5f9e946a8eb}} 
+static constexpr bool {\bfseries show\+\_\+c\+\_\+contiguous} = show\+\_\+order \&\& requires\+\_\+row\+\_\+major
+\item 
+\mbox{\Hypertarget{structEigenProps_ae9fd27ba9318cfb3d632f80bfc04e94f}\label{structEigenProps_ae9fd27ba9318cfb3d632f80bfc04e94f}} 
+static constexpr bool {\bfseries show\+\_\+f\+\_\+contiguous} = !show\+\_\+c\+\_\+contiguous \&\& show\+\_\+order \&\& requires\+\_\+col\+\_\+major
+\item 
+static constexpr auto {\bfseries descriptor}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structEigenProps_aa3861d665ff4bf5df6b531008fe358ef}\label{structEigenProps_aa3861d665ff4bf5df6b531008fe358ef}} 
+\index{EigenProps$<$ Type\_ $>$@{EigenProps$<$ Type\_ $>$}!descriptor@{descriptor}}
+\index{descriptor@{descriptor}!EigenProps$<$ Type\_ $>$@{EigenProps$<$ Type\_ $>$}}
+\doxysubsubsection{\texorpdfstring{descriptor}{descriptor}}
+{\footnotesize\ttfamily template$<$typename Type\+\_\+ $>$ \\
+constexpr auto \mbox{\hyperlink{structEigenProps}{Eigen\+Props}}$<$ Type\+\_\+ $>$\+::descriptor\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{        \_(\textcolor{stringliteral}{"numpy.ndarray["}) + \mbox{\hyperlink{structnpy__format__descriptor}{npy\_format\_descriptor<Scalar>::name}} +}
+\DoxyCodeLine{        \_(\textcolor{stringliteral}{"["})  + \_<fixed\_rows>(\_<(\textcolor{keywordtype}{size\_t}) rows>(), \_(\textcolor{stringliteral}{"m"})) +}
+\DoxyCodeLine{        \_(\textcolor{stringliteral}{", "}) + \_<fixed\_cols>(\_<(\textcolor{keywordtype}{size\_t}) cols>(), \_(\textcolor{stringliteral}{"n"})) +}
+\DoxyCodeLine{        \_(\textcolor{stringliteral}{"]"}) +}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        }
+\DoxyCodeLine{        }
+\DoxyCodeLine{        }
+\DoxyCodeLine{        }
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \_<show\_writeable>(\textcolor{stringliteral}{", flags.writeable"}, \textcolor{stringliteral}{""}) +}
+\DoxyCodeLine{        \_<show\_c\_contiguous>(\textcolor{stringliteral}{", flags.c\_contiguous"}, \textcolor{stringliteral}{""}) +}
+\DoxyCodeLine{        \_<show\_f\_contiguous>(\textcolor{stringliteral}{", flags.f\_contiguous"}, \textcolor{stringliteral}{""}) +}
+\DoxyCodeLine{        \_(\textcolor{stringliteral}{"]"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structEigenProps_ac31d9e8cc3baff0f804000486c35759d}\label{structEigenProps_ac31d9e8cc3baff0f804000486c35759d}} 
+\index{EigenProps$<$ Type\_ $>$@{EigenProps$<$ Type\_ $>$}!outer\_stride@{outer\_stride}}
+\index{outer\_stride@{outer\_stride}!EigenProps$<$ Type\_ $>$@{EigenProps$<$ Type\_ $>$}}
+\doxysubsubsection{\texorpdfstring{outer\_stride}{outer\_stride}}
+{\footnotesize\ttfamily template$<$typename Type\+\_\+ $>$ \\
+constexpr Eigen\+Index \mbox{\hyperlink{structEigenProps}{Eigen\+Props}}$<$ Type\+\_\+ $>$\+::outer\+\_\+stride\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= if\_zero<StrideType::OuterStrideAtCompileTime,}
+\DoxyCodeLine{                                                       vector ? \mbox{\hyperlink{classWidget_aa793702fbc88538c62fb6e01e7dea071}{size}} : row\_major ? cols : rows>::value}
+
+\end{DoxyCode}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/eigen.\+h\end{DoxyCompactItemize}

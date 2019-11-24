@@ -1,0 +1,35 @@
+\hypertarget{classexception}{}\doxysection{Référence du modèle de la classe exception$<$ type $>$}
+\label{classexception}\index{exception$<$ type $>$@{exception$<$ type $>$}}
+
+
+{\ttfamily \#include $<$pybind11.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de exception$<$ type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classexception}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classexception_a34fc75a5802151fdc02549ad85f81b7f}\label{classexception_a34fc75a5802151fdc02549ad85f81b7f}} 
+{\bfseries exception} (\mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structscope}{scope}}, const char $\ast$\mbox{\hyperlink{structname}{name}}, Py\+Object $\ast$\mbox{\hyperlink{structbase}{base}}=Py\+Exc\+\_\+\+Exception)
+\item 
+\mbox{\Hypertarget{classexception_ac9b98aed26c8e302721614222245da93}\label{classexception_ac9b98aed26c8e302721614222245da93}} 
+void {\bfseries operator()} (const char $\ast$message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename type$>$\newline
+class exception$<$ type $>$}
+
+Wrapper to generate a new Python exception type.
+
+This should only be used with Py\+Err\+\_\+\+Set\+String for now. It is not (yet) possible to use as a py\+::base. Template type argument is reserved for future use. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/pybind11.\+h\end{DoxyCompactItemize}

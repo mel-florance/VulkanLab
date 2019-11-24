@@ -1,0 +1,54 @@
+\hypertarget{classunchecked__mutable__reference}{}\doxysection{Référence du modèle de la classe unchecked\+\_\+mutable\+\_\+reference$<$ T, Dims $>$}
+\label{classunchecked__mutable__reference}\index{unchecked\_mutable\_reference$<$ T, Dims $>$@{unchecked\_mutable\_reference$<$ T, Dims $>$}}
+Graphe d\textquotesingle{}héritage de unchecked\+\_\+mutable\+\_\+reference$<$ T, Dims $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classunchecked__mutable__reference}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunchecked__mutable__reference_a1dc6e7e35c5957b7ab3dbcca9fa7e60a}\label{classunchecked__mutable__reference_a1dc6e7e35c5957b7ab3dbcca9fa7e60a}} 
+{\footnotesize template$<$typename... Ix$>$ }\\T \& \mbox{\hyperlink{classunchecked__mutable__reference_a1dc6e7e35c5957b7ab3dbcca9fa7e60a}{operator()}} (Ix... index)
+\begin{DoxyCompactList}\small\item\em Mutable, unchecked access to data at the given indices. \end{DoxyCompactList}\item 
+{\footnotesize template$<$ssize\+\_\+t D = Dims, typename  = enable\+\_\+if\+\_\+t$<$\+D == 1 $\vert$$\vert$ Dynamic$>$$>$ }\\T \& \mbox{\hyperlink{classunchecked__mutable__reference_a9580101363d95e99c1cf2d58d072c289}{operator\mbox{[}$\,$\mbox{]}}} (ssize\+\_\+t index)
+\item 
+\mbox{\Hypertarget{classunchecked__mutable__reference_a7af40f1be08cf6c15f37a52c129ca9ff}\label{classunchecked__mutable__reference_a7af40f1be08cf6c15f37a52c129ca9ff}} 
+{\footnotesize template$<$typename... Ix$>$ }\\T $\ast$ \mbox{\hyperlink{classunchecked__mutable__reference_a7af40f1be08cf6c15f37a52c129ca9ff}{mutable\+\_\+data}} (Ix... ix)
+\begin{DoxyCompactList}\small\item\em Mutable pointer access to the data at the given indices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunchecked__mutable__reference_a9b2c65ae514283f3529e920e528b6aad}\label{classunchecked__mutable__reference_a9b2c65ae514283f3529e920e528b6aad}} 
+using {\bfseries Const\+Base} = \mbox{\hyperlink{classunchecked__reference}{unchecked\+\_\+reference}}$<$ T, Dims $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunchecked__mutable__reference_a4ad5525b6ab61ac1c5536df0249901b3}\label{classunchecked__mutable__reference_a4ad5525b6ab61ac1c5536df0249901b3}} 
+static constexpr bool {\bfseries Dynamic}
+\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunchecked__mutable__reference_abcb10178a21ebe8e899ca951b2e68608}\label{classunchecked__mutable__reference_abcb10178a21ebe8e899ca951b2e68608}} 
+class {\bfseries pybind11\+::array}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classunchecked__mutable__reference_a9580101363d95e99c1cf2d58d072c289}\label{classunchecked__mutable__reference_a9580101363d95e99c1cf2d58d072c289}} 
+\index{unchecked\_mutable\_reference$<$ T, Dims $>$@{unchecked\_mutable\_reference$<$ T, Dims $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!unchecked\_mutable\_reference$<$ T, Dims $>$@{unchecked\_mutable\_reference$<$ T, Dims $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename T , ssize\+\_\+t Dims$>$ \\
+template$<$ssize\+\_\+t D = Dims, typename  = enable\+\_\+if\+\_\+t$<$\+D == 1 $\vert$$\vert$ Dynamic$>$$>$ \\
+T\& \mbox{\hyperlink{classunchecked__mutable__reference}{unchecked\+\_\+mutable\+\_\+reference}}$<$ T, Dims $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{ssize\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Mutable, unchecked access data at the given index; this operator only participates if the reference is to a 1-\/dimensional array (or has runtime dimensions). When present, this is exactly equivalent to {\ttfamily obj(index)}. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/numpy.\+h\end{DoxyCompactItemize}

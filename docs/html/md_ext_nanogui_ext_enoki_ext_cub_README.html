@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.8.16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vulkan Lab: README</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">Vulkan Lab
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part --><!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('md_ext_nanogui_ext_enoki_ext_cub_README.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">README </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><hr  />
+ <h3>About CUB</h3>
+<p>Current release: v1.8.0 (02/16/2018)</p>
+<p>We recommend the <a href="http://nvlabs.github.com/cub">CUB Project Website</a> for further information and examples.</p>
+<p>CUB provides state-of-the-art, reusable software components for every layer of the CUDA programming model:</p><ul>
+<li><a href="https://nvlabs.github.com/cub/group___device_module.html"><b><em>Device-wide primitives</em></b></a><ul>
+<li>Sort, prefix scan, reduction, histogram, etc. <br  />
+</li>
+<li>Compatible with CUDA dynamic parallelism</li>
+</ul>
+</li>
+<li><a href="https://nvlabs.github.com/cub/group___block_module.html"><b><em>Block-wide "collective" primitives</em></b></a><ul>
+<li>I/O, sort, prefix scan, reduction, histogram, etc. <br  />
+</li>
+<li>Compatible with arbitrary thread block sizes and types</li>
+</ul>
+</li>
+<li><a href="https://nvlabs.github.com/cub/group___warp_module.html"><b><em>Warp-wide "collective" primitives</em></b></a><ul>
+<li>Warp-wide prefix scan, reduction, etc.</li>
+<li>Safe and architecture-specific</li>
+</ul>
+</li>
+<li><a href="https://nvlabs.github.com/cub/group___thread_module.html"><b><em>Thread and resource utilities</em></b></a><ul>
+<li>PTX intrinsics, device reflection, texture-caching iterators, caching memory allocators, etc.</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://nvlabs.github.com/cub/cub_overview.png" alt="Orientation of collective primitives within the CUDA software stack" class="inline"/></p>
+<p><br  />
+</p><hr  />
+ <h3><a class="el" href="structA.html">A</a> Simple Example</h3>
+<div class="fragment"><div class="line"> {C++}</div>
+<div class="line">#include &lt;cub/cub.cuh&gt;</div>
+<div class="line"> </div>
+<div class="line">// Block-sorting CUDA kernel</div>
+<div class="line">__global__ void BlockSortKernel(int *d_in, int *d_out)</div>
+<div class="line">{</div>
+<div class="line">     using namespace cub;</div>
+<div class="line"> </div>
+<div class="line">     // Specialize BlockRadixSort, BlockLoad, and BlockStore for 128 threads </div>
+<div class="line">     // owning 16 integer items each</div>
+<div class="line">     typedef BlockRadixSort&lt;int, 128, 16&gt;                     BlockRadixSort;</div>
+<div class="line">     typedef BlockLoad&lt;int, 128, 16, BLOCK_LOAD_TRANSPOSE&gt;   BlockLoad;</div>
+<div class="line">     typedef BlockStore&lt;int, 128, 16, BLOCK_STORE_TRANSPOSE&gt; BlockStore;</div>
+<div class="line"> </div>
+<div class="line">     // Allocate shared memory</div>
+<div class="line">     __shared__ union {</div>
+<div class="line">         typename BlockRadixSort::TempStorage  sort;</div>
+<div class="line">         typename BlockLoad::TempStorage       load; </div>
+<div class="line">         typename BlockStore::TempStorage      store; </div>
+<div class="line">     } temp_storage; </div>
+<div class="line"> </div>
+<div class="line">     int block_offset = blockIdx.x * (128 * 16);      // OffsetT for this block&#39;s ment</div>
+<div class="line"> </div>
+<div class="line">     // Obtain a segment of 2048 consecutive keys that are blocked across threads</div>
+<div class="line">     int thread_keys[16];</div>
+<div class="line">     BlockLoad(temp_storage.load).Load(d_in + block_offset, thread_keys);</div>
+<div class="line">     __syncthreads();</div>
+<div class="line"> </div>
+<div class="line">     // Collectively sort the keys</div>
+<div class="line">     BlockRadixSort(temp_storage.sort).Sort(thread_keys);</div>
+<div class="line">     __syncthreads();</div>
+<div class="line"> </div>
+<div class="line">     // Store the sorted segment </div>
+<div class="line">     BlockStore(temp_storage.store).Store(d_out + block_offset, thread_keys);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Each thread block uses cub::BlockRadixSort to collectively sort its own input segment. The class is specialized by the data type being sorted, by the number of threads per block, by the number of keys per thread, and implicitly by the targeted compilation architecture. <br  />
+</p>
+<p>The cub::BlockLoad and cub::BlockStore classes are similarly specialized. <br  />
+ Furthermore, to provide coalesced accesses to device memory, these primitives are configured to access memory using a striped access pattern (where consecutive threads simultaneously access consecutive items) and then <em>transpose</em> the keys into a <a href="index.html#sec4sec3"><em>blocked arrangement</em></a> of elements across threads.</p>
+<p>Once specialized, these classes expose opaque <code>TempStorage</code> member types. <br  />
+ The thread block uses these storage types to statically allocate the union of shared memory needed by the thread block. (Alternatively these storage types could be aliased to global memory allocations).</p>
+<p><br  />
+</p><hr  />
+ <h3>Stable Releases</h3>
+<p>CUB releases are labeled using version identifiers having three fields: <em>epoch.feature.update</em>. The <em>epoch</em> field corresponds to support for a major change in the CUDA programming model. The <em>feature</em> field corresponds to a stable set of features, functionality, and interface. The <em>update</em> field corresponds to a bug-fix or performance update for that feature set. At the moment, we do not publicly provide non-stable releases such as development snapshots, beta releases or rolling releases. (Feel free to contact us if you would like such things.) See the <a href="http://nvlabs.github.com/cub">CUB Project Website</a> for more information.</p>
+<p><br  />
+</p><hr  />
+ <h3>Contributors</h3>
+<p>CUB is developed as an open-source project by <a href="http://research.nvidia.com">NVIDIA Research</a>. The primary contributor is <a href="http://github.com/dumerrill">Duane Merrill</a>.</p>
+<p><br  />
+</p><hr  />
+ <h3>Open Source License</h3>
+<p>CUB is available under the "New BSD" open-source license:</p>
+<div class="fragment"><div class="line">Copyright (c) 2010-2011, Duane Merrill.  All rights reserved.</div>
+<div class="line">Copyright (c) 2011-2018, NVIDIA CORPORATION.  All rights reserved.</div>
+<div class="line"> </div>
+<div class="line">Redistribution and use in source and binary forms, with or without</div>
+<div class="line">modification, are permitted provided that the following conditions are met:</div>
+<div class="line">   *  Redistributions of source code must retain the above copyright</div>
+<div class="line">      notice, this list of conditions and the following disclaimer.</div>
+<div class="line">   *  Redistributions in binary form must reproduce the above copyright</div>
+<div class="line">      notice, this list of conditions and the following disclaimer in the</div>
+<div class="line">      documentation and/or other materials provided with the distribution.</div>
+<div class="line">   *  Neither the name of the NVIDIA CORPORATION nor the</div>
+<div class="line">      names of its contributors may be used to endorse or promote products</div>
+<div class="line">      derived from this software without specific prior written permission.</div>
+<div class="line"> </div>
+<div class="line">THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND</div>
+<div class="line">ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED</div>
+<div class="line">WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</div>
+<div class="line">DISCLAIMED. IN NO EVENT SHALL NVIDIA CORPORATION BE LIABLE FOR ANY</div>
+<div class="line">DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES</div>
+<div class="line">(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</div>
+<div class="line">LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND</div>
+<div class="line">ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</div>
+<div class="line">(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS</div>
+<div class="line">SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+    <ul>
+        <li class="footer">
+            Generated on Dimanche 24 Novembre 2019 18:11:48 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
+            Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
+        </li>
+    </ul>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>

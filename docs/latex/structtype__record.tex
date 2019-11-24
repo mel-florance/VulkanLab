@@ -1,0 +1,79 @@
+\hypertarget{structtype__record}{}\doxysection{Référence de la structure type\+\_\+record}
+\label{structtype__record}\index{type\_record@{type\_record}}
+
+
+Special data structure which (temporarily) holds metadata about a bound class.  
+
+
+
+
+{\ttfamily \#include $<$attr.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtype__record_ae2bfc26eba5e9e9b6c7f6a22dcbff918}\label{structtype__record_ae2bfc26eba5e9e9b6c7f6a22dcbff918}} 
+P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE void {\bfseries add\+\_\+base} (const std\+::type\+\_\+info \&\mbox{\hyperlink{structbase}{base}}, void $\ast$($\ast$caster)(void $\ast$))
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtype__record_ab188820ddf461b3b49818f34885c5687}\label{structtype__record_ab188820ddf461b3b49818f34885c5687}} 
+\mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structtype__record_ab188820ddf461b3b49818f34885c5687}{scope}}
+\begin{DoxyCompactList}\small\item\em Handle to the parent scope. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_aaf93cf029bb1a9686fd5e72c16ea81a8}\label{structtype__record_aaf93cf029bb1a9686fd5e72c16ea81a8}} 
+const char $\ast$ \mbox{\hyperlink{structtype__record_aaf93cf029bb1a9686fd5e72c16ea81a8}{name}} = nullptr
+\begin{DoxyCompactList}\small\item\em Name of the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_a9b25042abe2522e477656878280c5368}\label{structtype__record_a9b25042abe2522e477656878280c5368}} 
+const std\+::type\+\_\+info $\ast$ {\bfseries type} = nullptr
+\item 
+\mbox{\Hypertarget{structtype__record_aa49cb21026b070945a61a29f081a2442}\label{structtype__record_aa49cb21026b070945a61a29f081a2442}} 
+size\+\_\+t \mbox{\hyperlink{structtype__record_aa49cb21026b070945a61a29f081a2442}{type\+\_\+size}} = 0
+\begin{DoxyCompactList}\small\item\em How large is the underlying C++ type? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_acfe9a04defba752df8501040167c4382}\label{structtype__record_acfe9a04defba752df8501040167c4382}} 
+size\+\_\+t \mbox{\hyperlink{structtype__record_acfe9a04defba752df8501040167c4382}{type\+\_\+align}} = 0
+\begin{DoxyCompactList}\small\item\em What is the alignment of the underlying C++ type? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_a5d94102cfaacdfcf2de248e00fe1afcd}\label{structtype__record_a5d94102cfaacdfcf2de248e00fe1afcd}} 
+size\+\_\+t \mbox{\hyperlink{structtype__record_a5d94102cfaacdfcf2de248e00fe1afcd}{holder\+\_\+size}} = 0
+\begin{DoxyCompactList}\small\item\em How large is the type\textquotesingle{}s holder? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_a9c77a43dea54c475eada38b5ded56a2e}\label{structtype__record_a9c77a43dea54c475eada38b5ded56a2e}} 
+void $\ast$($\ast$ \mbox{\hyperlink{structtype__record_a9c77a43dea54c475eada38b5ded56a2e}{operator\+\_\+new}} )(size\+\_\+t) = nullptr
+\begin{DoxyCompactList}\small\item\em The global operator new can be overridden with a class-\/specific variant. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_ad1d597c02ba9ac676f2c98c96c3ccc54}\label{structtype__record_ad1d597c02ba9ac676f2c98c96c3ccc54}} 
+void($\ast$ \mbox{\hyperlink{structtype__record_ad1d597c02ba9ac676f2c98c96c3ccc54}{init\+\_\+instance}} )(\mbox{\hyperlink{structinstance}{instance}} $\ast$, const void $\ast$) = nullptr
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structFunction}{Function}} pointer to \mbox{\hyperlink{classclass___a20391d006c3476cc8f0317a7e82dccfe}{class\+\_\+$<$..$>$\+::init\+\_\+instance}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_ab2b5fe93f5c5d047014164e931c53c41}\label{structtype__record_ab2b5fe93f5c5d047014164e931c53c41}} 
+void($\ast$ \mbox{\hyperlink{structtype__record_ab2b5fe93f5c5d047014164e931c53c41}{dealloc}} )(detail\+::value\+\_\+and\+\_\+holder \&) = nullptr
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structFunction}{Function}} pointer to \mbox{\hyperlink{classclass___a6b1260e369fcbc36da23cc813c88d163}{class\+\_\+$<$..$>$\+::dealloc}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_ae84dc75887eb2af0bd2b3d1bcfe5496c}\label{structtype__record_ae84dc75887eb2af0bd2b3d1bcfe5496c}} 
+\mbox{\hyperlink{classlist}{list}} \mbox{\hyperlink{structtype__record_ae84dc75887eb2af0bd2b3d1bcfe5496c}{bases}}
+\begin{DoxyCompactList}\small\item\em List of base classes of the newly created type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_ab343e48279172cd6f8ed5a25036bd02b}\label{structtype__record_ab343e48279172cd6f8ed5a25036bd02b}} 
+const char $\ast$ \mbox{\hyperlink{structtype__record_ab343e48279172cd6f8ed5a25036bd02b}{doc}} = nullptr
+\begin{DoxyCompactList}\small\item\em Optional docstring. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_a07699840bb125ef8d7d17122975c4d17}\label{structtype__record_a07699840bb125ef8d7d17122975c4d17}} 
+\mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{structtype__record_a07699840bb125ef8d7d17122975c4d17}{metaclass}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structCustom}{Custom}} metaclass (optional) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_a13c1d8df682426b1de648c1231979231}\label{structtype__record_a13c1d8df682426b1de648c1231979231}} 
+bool \mbox{\hyperlink{structtype__record_a13c1d8df682426b1de648c1231979231}{multiple\+\_\+inheritance}}\+: 1
+\begin{DoxyCompactList}\small\item\em Multiple inheritance marker. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_af7b44bfceaec849cd9832043600b247b}\label{structtype__record_af7b44bfceaec849cd9832043600b247b}} 
+bool \mbox{\hyperlink{structtype__record_af7b44bfceaec849cd9832043600b247b}{dynamic\+\_\+attr}}\+: 1
+\begin{DoxyCompactList}\small\item\em Does the class manage a {\bfseries{dict}}? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_ab5910eea61616c06a02acc36efc21a57}\label{structtype__record_ab5910eea61616c06a02acc36efc21a57}} 
+bool \mbox{\hyperlink{structtype__record_ab5910eea61616c06a02acc36efc21a57}{buffer\+\_\+protocol}}\+: 1
+\begin{DoxyCompactList}\small\item\em Does the class implement the buffer protocol? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_a22be67a2d89db4dcf7ea338dc435f5e3}\label{structtype__record_a22be67a2d89db4dcf7ea338dc435f5e3}} 
+bool \mbox{\hyperlink{structtype__record_a22be67a2d89db4dcf7ea338dc435f5e3}{default\+\_\+holder}}\+: 1
+\begin{DoxyCompactList}\small\item\em Is the default (unique\+\_\+ptr) holder type used? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtype__record_a6a5eaf1332f8278dc0f41643fd6783a7}\label{structtype__record_a6a5eaf1332f8278dc0f41643fd6783a7}} 
+bool \mbox{\hyperlink{structtype__record_a6a5eaf1332f8278dc0f41643fd6783a7}{module\+\_\+local}}\+: 1
+\begin{DoxyCompactList}\small\item\em Is the class definition local to the module shared object? \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Special data structure which (temporarily) holds metadata about a bound class. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/attr.\+h\end{DoxyCompactItemize}

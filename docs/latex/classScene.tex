@@ -1,6 +1,6 @@
-\hypertarget{classScene}{}\doxysection{Scene Class Reference}
+\hypertarget{classScene}{}\doxysection{Référence de la classe Scene}
 \label{classScene}\index{Scene@{Scene}}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classScene_af276ed7b96464878fd52f0530751e95f}{create\+World}} ()
@@ -23,7 +23,7 @@ void \mbox{\hyperlink{classScene_a9e3226b36af4a9e2c84515ae7842b4cd}{set\+World}}
 \item 
 void \mbox{\hyperlink{classScene_ab9a69d451f3dc3cfb76681bd9b0a2e4f}{cleanup\+World}} ()
 \item 
-{\footnotesize template$<$typename T , typename ... Args$>$ }\\void \mbox{\hyperlink{classScene_aa65997f5267a269ef83ced04da48ac8a}{emit}} (Args... args)
+{\footnotesize template$<$typename T , typename ... Args$>$ }\\void \mbox{\hyperlink{classScene_aa65997f5267a269ef83ced04da48ac8a}{emit}} (Args... \mbox{\hyperlink{classargs}{args}})
 \item 
 void \mbox{\hyperlink{classScene_a0e916eb52b4a5fb68f745d3d93cf2ce6}{update}} (float delta=16.\+0f)
 \item 
@@ -34,7 +34,7 @@ unsigned int \mbox{\hyperlink{classScene_af01ad8f2ecc0e53e75318776062270d6}{get\
 \mbox{\Hypertarget{classScene_a36b0ba601306d6d9d628526c2d929545}\label{classScene_a36b0ba601306d6d9d628526c2d929545}} 
 void {\bfseries set\+Active\+Camera} (\mbox{\hyperlink{classCamera}{Camera}} $\ast$active\+Camera)
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classScene_a85da9313715e1e65dba957e93424eb27}\label{classScene_a85da9313715e1e65dba957e93424eb27}} 
@@ -45,7 +45,7 @@ void {\bfseries set\+Active\+Camera} (\mbox{\hyperlink{classCamera}{Camera}} $\a
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Member Function Documentation}
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classScene_ab9a69d451f3dc3cfb76681bd9b0a2e4f}\label{classScene_ab9a69d451f3dc3cfb76681bd9b0a2e4f}} 
 \index{Scene@{Scene}!cleanupWorld@{cleanupWorld}}
 \index{cleanupWorld@{cleanupWorld}!Scene@{Scene}}
@@ -58,7 +58,7 @@ Cleanup the world entities. \mbox{\Hypertarget{classScene_a16127745452e3bfff3945
 \doxysubsubsection{\texorpdfstring{createEntity()}{createEntity()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classECS_1_1Entity}{Entity}}$\ast$ Scene\+::create\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Create a new entity in the world. \begin{DoxyReturn}{Returns}
+Create a new entity in the world. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classScene_af276ed7b96464878fd52f0530751e95f}\label{classScene_af276ed7b96464878fd52f0530751e95f}} 
@@ -86,7 +86,7 @@ Destroy the world. \mbox{\Hypertarget{classScene_a9c3b540943e0da4e73f6cc4b93aa99
 {\footnotesize\ttfamily void Scene\+::disable\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classECS_1_1EntitySystem}{Entity\+System}} $\ast$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Disable a previously added system. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em system} & \\
 \hline
 \end{DoxyParams}
@@ -98,7 +98,7 @@ Disable a previously added system.
 void Scene\+::emit (\begin{DoxyParamCaption}\item[{Args...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Emit a world event 
-\begin{DoxyTemplParams}{Template Parameters}
+\begin{DoxyTemplParams}{Paramètres du template}
 {\em -\/} & T -\/ Event\+Type \\
 \hline
 {\em -\/} & Args -\/ The list of argument to pass. \\
@@ -116,7 +116,7 @@ Enable a previously added system. \mbox{\Hypertarget{classScene_abd2d039ebb8eb76
 \doxysubsubsection{\texorpdfstring{getActiveCamera()}{getActiveCamera()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classCamera}{Camera}}$\ast$ Scene\+::get\+Active\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the active camera. \begin{DoxyReturn}{Returns}
+Return the active camera. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classScene_af01ad8f2ecc0e53e75318776062270d6}\label{classScene_af01ad8f2ecc0e53e75318776062270d6}} 
@@ -125,7 +125,7 @@ Return the active camera. \begin{DoxyReturn}{Returns}
 \doxysubsubsection{\texorpdfstring{getEntitiesCount()}{getEntitiesCount()}}
 {\footnotesize\ttfamily unsigned int Scene\+::get\+Entities\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the number of entities in the world. \begin{DoxyReturn}{Returns}
+Return the number of entities in the world. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classScene_a1de03a8a65fd7413b2992c7d2bc00a9a}\label{classScene_a1de03a8a65fd7413b2992c7d2bc00a9a}} 
@@ -134,7 +134,7 @@ Return the number of entities in the world. \begin{DoxyReturn}{Returns}
 \doxysubsubsection{\texorpdfstring{getWorld()}{getWorld()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classECS_1_1World}{World}}$\ast$ Scene\+::get\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the scene world. \begin{DoxyReturn}{Returns}
+Return the scene world. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classScene_ab356c2b62e4b8dc86beeaccdcd3c50c5}\label{classScene_ab356c2b62e4b8dc86beeaccdcd3c50c5}} 
@@ -145,16 +145,16 @@ Return the scene world. \begin{DoxyReturn}{Returns}
 T$\ast$ Scene\+::register\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Register a system to the E\+CS world. 
-\begin{DoxyTemplParams}{Template Parameters}
+\begin{DoxyTemplParams}{Paramètres du template}
 {\em T} & \\
 \hline
 \end{DoxyTemplParams}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em system} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classScene_a9e3226b36af4a9e2c84515ae7842b4cd}\label{classScene_a9e3226b36af4a9e2c84515ae7842b4cd}} 
@@ -164,7 +164,7 @@ Register a system to the E\+CS world.
 {\footnotesize\ttfamily void Scene\+::set\+World (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classECS_1_1World}{World}} $\ast$}]{world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the scene world. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em world} & \\
 \hline
 \end{DoxyParams}
@@ -176,7 +176,7 @@ Set the scene world.
 
 Update the scene and the associated world. T\+O\+DO\+: At which interval the tick is updated ? 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
 Engine/src/\+Scene/Scene.\+h\item 
 Engine/src/\+Scene/Scene.\+cpp\end{DoxyCompactItemize}

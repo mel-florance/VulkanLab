@@ -1,0 +1,29 @@
+\hypertarget{structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01std_1_1is__integral_3_01T_01_4_1_1value_01_4_01_4}{}\doxysection{Référence du modèle de la structure npy\+\_\+format\+\_\+descriptor\+\_\+name$<$ T, enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral$<$ T $>$\+::value $>$ $>$}
+\label{structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01std_1_1is__integral_3_01T_01_4_1_1value_01_4_01_4}\index{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ std::is\_integral$<$ T $>$::value $>$ $>$@{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ std::is\_integral$<$ T $>$::value $>$ $>$}}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr auto {\bfseries name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01std_1_1is__integral_3_01T_01_4_1_1value_01_4_01_4_a8ed8aec337a5ea7bdb051ff9b376c8fc}\label{structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01std_1_1is__integral_3_01T_01_4_1_1value_01_4_01_4_a8ed8aec337a5ea7bdb051ff9b376c8fc}} 
+\index{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ std::is\_integral$<$ T $>$::value $>$ $>$@{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ std::is\_integral$<$ T $>$::value $>$ $>$}!name@{name}}
+\index{name@{name}!npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ std::is\_integral$<$ T $>$::value $>$ $>$@{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ std::is\_integral$<$ T $>$::value $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+constexpr auto \mbox{\hyperlink{structnpy__format__descriptor__name}{npy\+\_\+format\+\_\+descriptor\+\_\+name}}$<$ T, enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral$<$ T $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}} $>$ $>$\+::\mbox{\hyperlink{structname}{name}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \_<std::is\_same<T, bool>::value>(}
+\DoxyCodeLine{        \_(\textcolor{stringliteral}{"bool"}), \_<std::is\_signed<T>::value>(\textcolor{stringliteral}{"int"}, \textcolor{stringliteral}{"uint"}) + \_<\textcolor{keyword}{sizeof}(T)*8>()}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/numpy.\+h\end{DoxyCompactItemize}

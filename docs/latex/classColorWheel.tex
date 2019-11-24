@@ -1,0 +1,124 @@
+\hypertarget{classColorWheel}{}\doxysection{Référence de la classe Color\+Wheel}
+\label{classColorWheel}\index{ColorWheel@{ColorWheel}}
+
+
+Fancy analog widget to select a color value. This widget was contributed by Dmitriy Morozov.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/colorwheel.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Color\+Wheel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classColorWheel}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classColorWheel_ae5ea633b3a301e5228f9ac9598e105d3}{Color\+Wheel}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, const \mbox{\hyperlink{classColor}{Color}} \&\mbox{\hyperlink{classColorWheel_aa8f6599c27f35eeaf8c720c98407fd95}{color}}=\mbox{\hyperlink{classColor}{Color}}(1.\+0f, 0.\+0f, 0.\+0f, 1.\+0f))
+\item 
+\mbox{\Hypertarget{classColorWheel_a0d4e1e9c7b9fb6232083d511cf762223}\label{classColorWheel_a0d4e1e9c7b9fb6232083d511cf762223}} 
+std\+::function$<$ void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ \mbox{\hyperlink{classColorWheel_a0d4e1e9c7b9fb6232083d511cf762223}{callback}} () const
+\begin{DoxyCompactList}\small\item\em The callback to execute when a user changes the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorWheel_acc2175347f2b592282486921fac2df92}\label{classColorWheel_acc2175347f2b592282486921fac2df92}} 
+void \mbox{\hyperlink{classColorWheel_acc2175347f2b592282486921fac2df92}{set\+\_\+callback}} (const std\+::function$<$ void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ \&\mbox{\hyperlink{classColorWheel_a0d4e1e9c7b9fb6232083d511cf762223}{callback}})
+\begin{DoxyCompactList}\small\item\em Sets the callback to execute when a user changes the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorWheel_aa8f6599c27f35eeaf8c720c98407fd95}\label{classColorWheel_aa8f6599c27f35eeaf8c720c98407fd95}} 
+\mbox{\hyperlink{classColor}{Color}} \mbox{\hyperlink{classColorWheel_aa8f6599c27f35eeaf8c720c98407fd95}{color}} () const
+\begin{DoxyCompactList}\small\item\em The current \mbox{\hyperlink{classColor}{Color}} this \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} has selected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorWheel_a04593b853f952d81d46e1daaae486108}\label{classColorWheel_a04593b853f952d81d46e1daaae486108}} 
+void \mbox{\hyperlink{classColorWheel_a04593b853f952d81d46e1daaae486108}{set\+\_\+color}} (const \mbox{\hyperlink{classColor}{Color}} \&\mbox{\hyperlink{classColorWheel_aa8f6599c27f35eeaf8c720c98407fd95}{color}})
+\begin{DoxyCompactList}\small\item\em Sets the current \mbox{\hyperlink{classColor}{Color}} this \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} has selected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorWheel_a6e884c06607071307a98318a2c7f4e89}\label{classColorWheel_a6e884c06607071307a98318a2c7f4e89}} 
+virtual Vector2i \mbox{\hyperlink{classColorWheel_a6e884c06607071307a98318a2c7f4e89}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const override
+\begin{DoxyCompactList}\small\item\em The preferred size of this \mbox{\hyperlink{classColorWheel}{Color\+Wheel}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorWheel_a4174db1f7d5121127c9f8e3374f5695d}\label{classColorWheel_a4174db1f7d5121127c9f8e3374f5695d}} 
+virtual void \mbox{\hyperlink{classColorWheel_a4174db1f7d5121127c9f8e3374f5695d}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draws the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorWheel_a5a4214493bc0b36a8491b956c603e24f}\label{classColorWheel_a5a4214493bc0b36a8491b956c603e24f}} 
+virtual bool \mbox{\hyperlink{classColorWheel_a5a4214493bc0b36a8491b956c603e24f}{mouse\+\_\+button\+\_\+event}} (const Vector2i \&p, int button, bool down, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handles mouse button click events for the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorWheel_a484525d16af78a246b18ff76ca50495b}\label{classColorWheel_a484525d16af78a246b18ff76ca50495b}} 
+virtual bool \mbox{\hyperlink{classColorWheel_a484525d16af78a246b18ff76ca50495b}{mouse\+\_\+drag\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handles mouse drag events for the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classColorWheel_a39172330aaf2a2955d2c5d4dec8f0fae}\label{classColorWheel_a39172330aaf2a2955d2c5d4dec8f0fae}} 
+float \mbox{\hyperlink{classColorWheel_a39172330aaf2a2955d2c5d4dec8f0fae}{m\+\_\+hue}}
+\begin{DoxyCompactList}\small\item\em The current hue in the H\+SV color model. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classColorWheel_a657741dd8c3f19cd018f657dd9762028}{m\+\_\+white}}
+\item 
+float \mbox{\hyperlink{classColorWheel_a7aa0440a25b9e9e246caa57d696ed291}{m\+\_\+black}}
+\item 
+\mbox{\Hypertarget{classColorWheel_ad6ba588f4d87d336d1afc05cde208de4}\label{classColorWheel_ad6ba588f4d87d336d1afc05cde208de4}} 
+Region \mbox{\hyperlink{classColorWheel_ad6ba588f4d87d336d1afc05cde208de4}{m\+\_\+drag\+\_\+region}}
+\begin{DoxyCompactList}\small\item\em The current region the mouse is interacting with. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classColorWheel_ac101b31c301999ea9d7f0dccaab4dfff}\label{classColorWheel_ac101b31c301999ea9d7f0dccaab4dfff}} 
+std\+::function$<$ void(const \mbox{\hyperlink{classColor}{Color}} \&)$>$ \mbox{\hyperlink{classColorWheel_ac101b31c301999ea9d7f0dccaab4dfff}{m\+\_\+callback}}
+\begin{DoxyCompactList}\small\item\em The current callback to execute when the color value has changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classColorWheel_a9f42c615f61c5b2ef6903d5ce5777604}\label{classColorWheel_a9f42c615f61c5b2ef6903d5ce5777604}} 
+enum {\bfseries Region} \{ {\bfseries None} = 0, 
+{\bfseries Inner\+Triangle} = 1, 
+{\bfseries Outer\+Circle} = 2, 
+{\bfseries Both} = 3
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classColorWheel_a0a6d0f53700ed770349361285d7d41b6}\label{classColorWheel_a0a6d0f53700ed770349361285d7d41b6}} 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries hue2rgb} (float h) const
+\item 
+\mbox{\Hypertarget{classColorWheel_a68debd6d1a4292ef8739bcd825710fcc}\label{classColorWheel_a68debd6d1a4292ef8739bcd825710fcc}} 
+Region {\bfseries adjust\+\_\+position} (const Vector2i \&p, Region considered\+\_\+regions=Both)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+Fancy analog widget to select a color value. This widget was contributed by Dmitriy Morozov. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classColorWheel_ae5ea633b3a301e5228f9ac9598e105d3}\label{classColorWheel_ae5ea633b3a301e5228f9ac9598e105d3}} 
+\index{ColorWheel@{ColorWheel}!ColorWheel@{ColorWheel}}
+\index{ColorWheel@{ColorWheel}!ColorWheel@{ColorWheel}}
+\doxysubsubsection{\texorpdfstring{ColorWheel()}{ColorWheel()}}
+{\footnotesize\ttfamily Color\+Wheel\+::\+Color\+Wheel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWidget}{Widget}} $\ast$}]{parent,  }\item[{const \mbox{\hyperlink{classColor}{Color}} \&}]{color = {\ttfamily \mbox{\hyperlink{classColor}{Color}}(1.0f,~0.0f,~0.0f,~1.0f)} }\end{DoxyParamCaption})}
+
+Adds a \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} to the specified parent.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & The \mbox{\hyperlink{classWidget}{Widget}} to add this \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} to.\\
+\hline
+{\em color} & The initial color of the \mbox{\hyperlink{classColorWheel}{Color\+Wheel}} (default\+: Red). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classColorWheel_a7aa0440a25b9e9e246caa57d696ed291}\label{classColorWheel_a7aa0440a25b9e9e246caa57d696ed291}} 
+\index{ColorWheel@{ColorWheel}!m\_black@{m\_black}}
+\index{m\_black@{m\_black}!ColorWheel@{ColorWheel}}
+\doxysubsubsection{\texorpdfstring{m\_black}{m\_black}}
+{\footnotesize\ttfamily float Color\+Wheel\+::m\+\_\+black\hspace{0.3cm}{\ttfamily [protected]}}
+
+The \textquotesingle{}S\textquotesingle{} (satration) component of the H\+SV color model. See implementation nanogui\+::\+Color\+Wheel\+::color for its usage. Valid values are in the range {\ttfamily \mbox{[}0, 1\mbox{]}}. \mbox{\Hypertarget{classColorWheel_a657741dd8c3f19cd018f657dd9762028}\label{classColorWheel_a657741dd8c3f19cd018f657dd9762028}} 
+\index{ColorWheel@{ColorWheel}!m\_white@{m\_white}}
+\index{m\_white@{m\_white}!ColorWheel@{ColorWheel}}
+\doxysubsubsection{\texorpdfstring{m\_white}{m\_white}}
+{\footnotesize\ttfamily float Color\+Wheel\+::m\+\_\+white\hspace{0.3cm}{\ttfamily [protected]}}
+
+The \textquotesingle{}V\textquotesingle{} (value) component of the H\+SV color model. See implementation nanogui\+::\+Color\+Wheel\+::color for its usage. Valid values are in the range {\ttfamily \mbox{[}0, 1\mbox{]}}. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{colorwheel_8h}{colorwheel.\+h}}\item 
+ext/nanogui/src/colorwheel.\+cpp\end{DoxyCompactItemize}

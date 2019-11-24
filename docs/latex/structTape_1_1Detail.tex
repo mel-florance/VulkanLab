@@ -1,0 +1,52 @@
+\hypertarget{structTape_1_1Detail}{}\doxysection{Référence de la structure Tape$<$ Type $>$\+::Detail}
+\label{structTape_1_1Detail}\index{Tape$<$ Type $>$::Detail@{Tape$<$ Type $>$::Detail}}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_ae999c56f3a10300489d2f47b9beca588}\label{structTape_1_1Detail_ae999c56f3a10300489d2f47b9beca588}} 
+\mbox{\hyperlink{structTape_1_1Node}{Node}} \& {\bfseries node} (Index index)
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_af857b83985b0d79c8ae20123a79387a1}\label{structTape_1_1Detail_af857b83985b0d79c8ae20123a79387a1}} 
+void {\bfseries dfs} (Index k, bool backward, bool clear\+\_\+grad)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_aac32f6126ccf205a4c94d5b3c0dc6672}\label{structTape_1_1Detail_aac32f6126ccf205a4c94d5b3c0dc6672}} 
+Index {\bfseries node\+\_\+counter} = 1
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_adcf45ca56f006ac508877cefe0a45df4}\label{structTape_1_1Detail_adcf45ca56f006ac508877cefe0a45df4}} 
+Index {\bfseries node\+\_\+counter\+\_\+last} = 1
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_ab9a6f5739f597afd5adc6aca2b6cd36c}\label{structTape_1_1Detail_ab9a6f5739f597afd5adc6aca2b6cd36c}} 
+std\+::unordered\+\_\+map$<$ Index, \mbox{\hyperlink{structTape_1_1Node}{Node}} $>$ {\bfseries nodes}
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_a4e1f625f441243b6949167ed405ed7b9}\label{structTape_1_1Detail_a4e1f625f441243b6949167ed405ed7b9}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries prefix}
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_a8c44340fc307ef644034fc562d94ec49}\label{structTape_1_1Detail_a8c44340fc307ef644034fc562d94ec49}} 
+Index $\ast$ {\bfseries scatter\+\_\+gather\+\_\+index} = nullptr
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_a8b33d83919c73c5522a819a3b040fdd6}\label{structTape_1_1Detail_a8b33d83919c73c5522a819a3b040fdd6}} 
+size\+\_\+t {\bfseries scatter\+\_\+gather\+\_\+size} = 0
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_a8644bdc3df8f8bdeb9265ab58f420628}\label{structTape_1_1Detail_a8644bdc3df8f8bdeb9265ab58f420628}} 
+bool {\bfseries scatter\+\_\+gather\+\_\+permute} = false
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_a1eefb643d99f161cfeebffa566ba8bd1}\label{structTape_1_1Detail_a1eefb643d99f161cfeebffa566ba8bd1}} 
+uint32\+\_\+t {\bfseries log\+\_\+level} = E\+N\+O\+K\+I\+\_\+\+A\+U\+T\+O\+D\+I\+F\+F\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+EL
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_a25b4ad56e318e764b2b6043633d19dfb}\label{structTape_1_1Detail_a25b4ad56e318e764b2b6043633d19dfb}} 
+bool {\bfseries graph\+\_\+simplification} = true
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_a38c38ab5a520175e2dceb9991305aa38}\label{structTape_1_1Detail_a38c38ab5a520175e2dceb9991305aa38}} 
+bool {\bfseries is\+\_\+simplified} = true
+\item 
+\mbox{\Hypertarget{structTape_1_1Detail_a7e1318cb18540e25a54191c5d0102cd9}\label{structTape_1_1Detail_a7e1318cb18540e25a54191c5d0102cd9}} 
+std\+::set$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{structTape_1_1Detail_a7e1318cb18540e25a54191c5d0102cd9}{scheduled}}
+\begin{DoxyCompactList}\small\item\em Set of indices selected for next backward pass. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/src/autodiff/autodiff.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.8.16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vulkan Lab:  Fichier source de ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/embed.h</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">Vulkan Lab
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part --><!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('embed_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">embed.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    pybind11/embed.h: Support for embedding the interpreter</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    Copyright (c) 2017 Wenzel Jakob &lt;wenzel.jakob@epfl.ch&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    All rights reserved. Use of this source code is governed by a</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    BSD-style license that can be found in the LICENSE file.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;pybind11.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;eval.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#if defined(PYPY_VERSION)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#  error Embedding the interpreter is not supported with PyPy</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#if PY_MAJOR_VERSION &gt;= 3</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#  define PYBIND11_EMBEDDED_MODULE_IMPL(name)            \</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">      extern &quot;C&quot; PyObject *pybind11_init_impl_##name();  \</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">      extern &quot;C&quot; PyObject *pybind11_init_impl_##name() { \</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">          return pybind11_init_wrapper_##name();         \</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">      }</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#  define PYBIND11_EMBEDDED_MODULE_IMPL(name)            \</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">      extern &quot;C&quot; void pybind11_init_impl_##name();       \</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">      extern &quot;C&quot; void pybind11_init_impl_##name() {      \</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">          pybind11_init_wrapper_##name();                \</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">      }</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define PYBIND11_EMBEDDED_MODULE(name, variable)                              \</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">    static void PYBIND11_CONCAT(pybind11_init_, name)(pybind11::module &amp;);    \</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">    static PyObject PYBIND11_CONCAT(*pybind11_init_wrapper_, name)() {        \</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">        auto m = pybind11::module(PYBIND11_TOSTRING(name));                   \</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">        try {                                                                 \</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">            PYBIND11_CONCAT(pybind11_init_, name)(m);                         \</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">            return m.ptr();                                                   \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">        } catch (pybind11::error_already_set &amp;e) {                            \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">            PyErr_SetString(PyExc_ImportError, e.what());                     \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">            return nullptr;                                                   \</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">        } catch (const std::exception &amp;e) {                                   \</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">            PyErr_SetString(PyExc_ImportError, e.what());                     \</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">            return nullptr;                                                   \</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">        }                                                                     \</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">    }                                                                         \</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">    PYBIND11_EMBEDDED_MODULE_IMPL(name)                                       \</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    pybind11::detail::embedded_module name(PYBIND11_TOSTRING(name),           \</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">                               PYBIND11_CONCAT(pybind11_init_impl_, name));   \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    void PYBIND11_CONCAT(pybind11_init_, name)(pybind11::module &amp;variable)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a>(PYBIND11_NAMESPACE)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a>(detail)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">struct </span><a class="code" href="structembedded__module.html">embedded_module</a> {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#if PY_MAJOR_VERSION &gt;= 3</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">using</span> init_t = PyObject *(*)();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">using</span> init_t = void (*)();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="structembedded__module.html">embedded_module</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="structname.html">name</a>, init_t <a class="code" href="include_2nanogui_2common_8h.html#a0ebf62ccbfe834d82325affd0e1794a4">init</a>) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (Py_IsInitialized())</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            pybind11_fail(<span class="stringliteral">&quot;Can&#39;t add new modules after the interpreter has been initialized&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">auto</span> result = PyImport_AppendInittab(<a class="code" href="structname.html">name</a>, <a class="code" href="include_2nanogui_2common_8h.html#a0ebf62ccbfe834d82325affd0e1794a4">init</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">if</span> (result == -1)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            pybind11_fail(<span class="stringliteral">&quot;Insufficient memory to add a new module&quot;</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a>(detail)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> initialize_interpreter(<span class="keywordtype">bool</span> init_signal_handlers = <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span> (Py_IsInitialized())</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        pybind11_fail(<span class="stringliteral">&quot;The interpreter is already running&quot;</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    Py_InitializeEx(init_signal_handlers ? 1 : 0);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// Make .py files in the working directory available by default</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="classmodule.html#a40817edef0ded5727701534bcded9982">module::import</a>(<span class="stringliteral">&quot;sys&quot;</span>).attr(<span class="stringliteral">&quot;path&quot;</span>).cast&lt;<a class="code" href="classlist.html">list</a>&gt;().append(<span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> finalize_interpreter() {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="classhandle.html">handle</a> builtins(PyEval_GetBuiltins());</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keywordtype">id</span> = PYBIND11_INTERNALS_ID;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">// Get the internals pointer (without creating it if it doesn&#39;t exist).  It&#39;s possible for the</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// internals to be created during Py_Finalize() (e.g. if a py::capsule calls `get_internals()`</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// during destruction), so we get the pointer-pointer here and check it after Py_Finalize().</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    detail::internals **internals_ptr_ptr = detail::get_internals_pp();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">// It could also be stashed in builtins, so look there too:</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">if</span> (builtins.contains(<span class="keywordtype">id</span>) &amp;&amp; isinstance&lt;capsule&gt;(builtins[<span class="keywordtype">id</span>]))</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        internals_ptr_ptr = <a class="code" href="classcapsule.html">capsule</a>(builtins[<span class="keywordtype">id</span>]);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    Py_Finalize();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">if</span> (internals_ptr_ptr) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keyword">delete</span> *internals_ptr_ptr;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        *internals_ptr_ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classscoped__interpreter.html">  182</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscoped__interpreter.html">scoped_interpreter</a> {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="classscoped__interpreter.html">scoped_interpreter</a>(<span class="keywordtype">bool</span> init_signal_handlers = <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        initialize_interpreter(init_signal_handlers);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="classscoped__interpreter.html">scoped_interpreter</a>(<span class="keyword">const</span> <a class="code" href="classscoped__interpreter.html">scoped_interpreter</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="classscoped__interpreter.html">scoped_interpreter</a>(<a class="code" href="classscoped__interpreter.html">scoped_interpreter</a> &amp;&amp;other) noexcept { other.is_valid = <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="code" href="classscoped__interpreter.html">scoped_interpreter</a> &amp;operator=(<span class="keyword">const</span> <a class="code" href="classscoped__interpreter.html">scoped_interpreter</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="classscoped__interpreter.html">scoped_interpreter</a> &amp;operator=(<a class="code" href="classscoped__interpreter.html">scoped_interpreter</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    ~<a class="code" href="classscoped__interpreter.html">scoped_interpreter</a>() {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">if</span> (is_valid)</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            finalize_interpreter();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">bool</span> is_valid = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;};</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a>(PYBIND11_NAMESPACE)</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a577cd817cb71b655998cad4387cdaeba"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a></div><div class="ttdeci">#define NAMESPACE_BEGIN(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:38</div></div>
+<div class="ttc" id="astructname_html"><div class="ttname"><a href="structname.html">name</a></div><div class="ttdoc">Annotation for function names.</div><div class="ttdef"><b>Definition:</b> attr.h:33</div></div>
+<div class="ttc" id="astructembedded__module_html"><div class="ttname"><a href="structembedded__module.html">embedded_module</a></div><div class="ttdoc">Python 2.7/3.x compatible version of PyImport_AppendInittab and error checks.</div><div class="ttdef"><b>Definition:</b> embed.h:73</div></div>
+<div class="ttc" id="aclasslist_html"><div class="ttname"><a href="classlist.html">list</a></div><div class="ttdef"><b>Definition:</b> pytypes.h:1253</div></div>
+<div class="ttc" id="aclasscapsule_html"><div class="ttname"><a href="classcapsule.html">capsule</a></div><div class="ttdef"><b>Definition:</b> pytypes.h:1145</div></div>
+<div class="ttc" id="aclassmodule_html_a40817edef0ded5727701534bcded9982"><div class="ttname"><a href="classmodule.html#a40817edef0ded5727701534bcded9982">module::import</a></div><div class="ttdeci">static module import(const char *name)</div><div class="ttdoc">Import and return a module or throws error_already_set.</div><div class="ttdef"><b>Definition:</b> pybind11.h:848</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a12bb24ea980ca8fb1f46b1992bc9c83a"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a></div><div class="ttdeci">#define NAMESPACE_END(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:50</div></div>
+<div class="ttc" id="aclasshandle_html"><div class="ttname"><a href="classhandle.html">handle</a></div><div class="ttdef"><b>Definition:</b> pytypes.h:174</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a0ebf62ccbfe834d82325affd0e1794a4"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a0ebf62ccbfe834d82325affd0e1794a4">init</a></div><div class="ttdeci">NANOGUI_EXPORT void init()</div><div class="ttdoc">Binds an existing constructor taking arguments Args...</div><div class="ttdef"><b>Definition:</b> pybind11.h:1378</div></div>
+<div class="ttc" id="aclassscoped__interpreter_html"><div class="ttname"><a href="classscoped__interpreter.html">scoped_interpreter</a></div><div class="ttdef"><b>Definition:</b> embed.h:182</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+    <ul>
+        <li class="navelem"><a class="el" href="dir_31cedd4509e06940f559c1ca2f722e02.html">ext</a></li><li class="navelem"><a class="el" href="dir_3b52d0ee0647600b951b1b620984dcd1.html">nanogui</a></li><li class="navelem"><a class="el" href="dir_c47f8aa3d1432e7c017b47a1f02de629.html">ext</a></li><li class="navelem"><a class="el" href="dir_b6d96ee8b8f0229eabb5488b1d906655.html">enoki</a></li><li class="navelem"><a class="el" href="dir_230a61f50b75c9bd2568fbf70224d628.html">ext</a></li><li class="navelem"><a class="el" href="dir_1872470d655adf96850205a15f21df4b.html">pybind11</a></li><li class="navelem"><a class="el" href="dir_fd34490e70dcbc162d1f1703961d7218.html">include</a></li><li class="navelem"><a class="el" href="dir_9daa55e272b3be58228d35bd959be28b.html">pybind11</a></li><li class="navelem"><b>embed.h</b></li>
+        <li class="footer">
+            Generated on Dimanche 24 Novembre 2019 18:11:46 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
+            Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
+        </li>
+    </ul>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+\hypertarget{classclang_1_1cindex_1_1Config}{}\doxysection{Référence de la classe clang.\+cindex.\+Config}
+\label{classclang_1_1cindex_1_1Config}\index{clang.cindex.Config@{clang.cindex.Config}}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1Config_af45aa20aea32be7e7471689d704993c5}\label{classclang_1_1cindex_1_1Config_af45aa20aea32be7e7471689d704993c5}} 
+def {\bfseries lib} (self)
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1Config_ae266f9f6b11d3e14fe6a71231ddb47e7}\label{classclang_1_1cindex_1_1Config_ae266f9f6b11d3e14fe6a71231ddb47e7}} 
+def {\bfseries get\+\_\+filename} (self)
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1Config_acf986fda345a3e0ac7dd9db2392702fd}\label{classclang_1_1cindex_1_1Config_acf986fda345a3e0ac7dd9db2392702fd}} 
+def {\bfseries get\+\_\+cindex\+\_\+library} (self)
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1Config_ac2b6a897b03104d2aec062a8638cfed6}\label{classclang_1_1cindex_1_1Config_ac2b6a897b03104d2aec062a8638cfed6}} 
+def {\bfseries function\+\_\+exists} (self, \mbox{\hyperlink{structname}{name}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classclang_1_1cindex_1_1Config_af71cbc6e5c2b44d4dfc6b83caf0e9fca}{set\+\_\+library\+\_\+path}} (path)
+\item 
+def \mbox{\hyperlink{classclang_1_1cindex_1_1Config_a524eb001dd1b68eec2df45e27275d4da}{set\+\_\+library\+\_\+file}} (filename)
+\item 
+def \mbox{\hyperlink{classclang_1_1cindex_1_1Config_a97f5f830f5eeec69925006f8365f5db4}{set\+\_\+compatibility\+\_\+check}} (check\+\_\+status)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1Config_a47efd6509f576a3ee0ba496ab9faaf6c}\label{classclang_1_1cindex_1_1Config_a47efd6509f576a3ee0ba496ab9faaf6c}} 
+{\bfseries library\+\_\+path} = None
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1Config_acf8c2ebd5b2815f1452ddd6e51725a8c}\label{classclang_1_1cindex_1_1Config_acf8c2ebd5b2815f1452ddd6e51725a8c}} 
+{\bfseries library\+\_\+file} = None
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1Config_a0856960a83da49ff66c7732256904525}\label{classclang_1_1cindex_1_1Config_a0856960a83da49ff66c7732256904525}} 
+bool {\bfseries compatibility\+\_\+check} = False
+\item 
+\mbox{\Hypertarget{classclang_1_1cindex_1_1Config_ae80e012988c651081c2f6609e6cfc161}\label{classclang_1_1cindex_1_1Config_ae80e012988c651081c2f6609e6cfc161}} 
+bool {\bfseries loaded} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classclang_1_1cindex_1_1Config_a97f5f830f5eeec69925006f8365f5db4}\label{classclang_1_1cindex_1_1Config_a97f5f830f5eeec69925006f8365f5db4}} 
+\index{clang.cindex.Config@{clang.cindex.Config}!set\_compatibility\_check@{set\_compatibility\_check}}
+\index{set\_compatibility\_check@{set\_compatibility\_check}!clang.cindex.Config@{clang.cindex.Config}}
+\doxysubsubsection{\texorpdfstring{set\_compatibility\_check()}{set\_compatibility\_check()}}
+{\footnotesize\ttfamily def clang.\+cindex.\+Config.\+set\+\_\+compatibility\+\_\+check (\begin{DoxyParamCaption}\item[{}]{check\+\_\+status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Perform compatibility check when loading libclang
+
+The python bindings are only tested and evaluated with the version of
+libclang they are provided with. To ensure correct behavior a (limited)
+compatibility check is performed when loading the bindings. This check
+will throw an exception, as soon as it fails.
+
+In case these bindings are used with an older version of libclang, parts
+that have been stable between releases may still work. Users of the
+python bindings can disable the compatibility check. This will cause
+the python bindings to load, even though they are written for a newer
+version of libclang. Failures now arise if unsupported or incompatible
+features are accessed. The user is required to test themselves if the
+features they are using are available and compatible between different
+libclang versions.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classclang_1_1cindex_1_1Config_a524eb001dd1b68eec2df45e27275d4da}\label{classclang_1_1cindex_1_1Config_a524eb001dd1b68eec2df45e27275d4da}} 
+\index{clang.cindex.Config@{clang.cindex.Config}!set\_library\_file@{set\_library\_file}}
+\index{set\_library\_file@{set\_library\_file}!clang.cindex.Config@{clang.cindex.Config}}
+\doxysubsubsection{\texorpdfstring{set\_library\_file()}{set\_library\_file()}}
+{\footnotesize\ttfamily def clang.\+cindex.\+Config.\+set\+\_\+library\+\_\+file (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Set the exact location of libclang\end{DoxyVerb}
+ \mbox{\Hypertarget{classclang_1_1cindex_1_1Config_af71cbc6e5c2b44d4dfc6b83caf0e9fca}\label{classclang_1_1cindex_1_1Config_af71cbc6e5c2b44d4dfc6b83caf0e9fca}} 
+\index{clang.cindex.Config@{clang.cindex.Config}!set\_library\_path@{set\_library\_path}}
+\index{set\_library\_path@{set\_library\_path}!clang.cindex.Config@{clang.cindex.Config}}
+\doxysubsubsection{\texorpdfstring{set\_library\_path()}{set\_library\_path()}}
+{\footnotesize\ttfamily def clang.\+cindex.\+Config.\+set\+\_\+library\+\_\+path (\begin{DoxyParamCaption}\item[{}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Set the path in which to search for libclang\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/tools/clang/cindex.\+py\end{DoxyCompactItemize}

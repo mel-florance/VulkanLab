@@ -1,0 +1,26 @@
+var structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650 =
+[
+    [ "Column", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#ac633b486cdd70e619f4114b0423c5651", null ],
+    [ "Dynamic", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#a243d66aefaecd44611e7cedbd13d1dc8", null ],
+    [ "Value", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#a52a6bb1dbbf834b12c3084ffd5f38532", null ],
+    [ "detach", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#a3d2eeff69a653a0f0afe5df8c573eb44", null ],
+    [ "detach", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#a80278bd1a79bd667beffe29e5bc3c23a", null ],
+    [ "empty", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#adb1e28afa87fb40b87d53324baed89ae", null ],
+    [ "gradient", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#a6d99d3308b564b22db00e0fcb2b8978b", null ],
+    [ "gradient", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#aa2d25911c5a3beb67c79229fd4383725", null ],
+    [ "masked", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#a5544f76e47c1dd8c773b3a68ea778f4f", null ],
+    [ "masked", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#a5544f76e47c1dd8c773b3a68ea778f4f", null ],
+    [ "packet", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#ad465da0fc964a3a7d6e5cdd3daadd794", null ],
+    [ "packet", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#ada9dd64ef3e4b55dc2edd21aa5e88ebd", null ],
+    [ "packets", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#acea0d37944a204611c54b9762cc574e8", null ],
+    [ "ref_wrap", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#a01fe407de4f4c0da39ba89e7abd31d3f", null ],
+    [ "ref_wrap", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#aa76d872058dbceb2a3d18e09a54d189f", null ],
+    [ "set_slices", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#a6b745ff2373eac55c418f531cc967994", null ],
+    [ "slice", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#ac675ccb782ad5a9e26b8ab6a6063121d", null ],
+    [ "slice", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#aa5e1248bb5e882a942e5e549202850ba", null ],
+    [ "slice_ptr", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#a7d19c58a7ef33f86b2a06bc4101db9e7", null ],
+    [ "slice_ptr", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#ac6ee1d4b06a0ae881dcf5cd006a2ac18", null ],
+    [ "slices", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#a3f88a4a8b675da385c055f22072506ea", null ],
+    [ "zero", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#a5bd3851c5c21e5ec5e2a3abbc448da82", null ],
+    [ "IsDynamic", "structstruct__support_3_01Matrix_3_01T_00_01Size_00_01Approx_01_4_00_01enable__if__static__arrayd2561ae7742b88e9a278144ce0857650.html#aafcb9887cf585bdb2b0dea793fc65eb8", null ]
+];

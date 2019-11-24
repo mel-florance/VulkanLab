@@ -1,0 +1,49 @@
+\hypertarget{structPacket}{}\doxysection{Référence du modèle de la structure Packet$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$}
+\label{structPacket}\index{Packet$<$ Value\_, Size\_, Approx\_, Mode\_ $>$@{Packet$<$ Value\_, Size\_, Approx\_, Mode\_ $>$}}
+
+
+Generic array class, which broadcasts from the inner to outer dimensions.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Packet$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.845140cm]{structPacket}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structPacket_a68f6b9c2f5ed2b0a6bdec3311c5793c8}\label{structPacket_a68f6b9c2f5ed2b0a6bdec3311c5793c8}} 
+using {\bfseries Base} = \mbox{\hyperlink{structStaticArrayImpl}{Static\+Array\+Impl}}$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+, false, \mbox{\hyperlink{structPacket}{Packet}}$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{structPacket_a7e53ffc281fc98290d5e4ce62fd8ceb7}\label{structPacket_a7e53ffc281fc98290d5e4ce62fd8ceb7}} 
+using {\bfseries Array\+Type} = \mbox{\hyperlink{structPacket}{Packet}}
+\item 
+\mbox{\Hypertarget{structPacket_aa5b4440dd9ae71cf253b0e879705de99}\label{structPacket_aa5b4440dd9ae71cf253b0e879705de99}} 
+using {\bfseries Mask\+Type} = \mbox{\hyperlink{structPacketMask}{Packet\+Mask}}$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$
+\item 
+\mbox{\Hypertarget{structPacket_ac42b72104a4e927910ec631031af8064}\label{structPacket_ac42b72104a4e927910ec631031af8064}} 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{structPacket_ac42b72104a4e927910ec631031af8064}{Replace\+Value}} = \mbox{\hyperlink{structPacket}{Packet}}$<$ T, Size\+\_\+, is\+\_\+std\+\_\+float\+\_\+v$<$ scalar\+\_\+t$<$ T $>$ $>$ \&\&is\+\_\+std\+\_\+float\+\_\+v$<$ scalar\+\_\+t$<$ Value\+\_\+ $>$ $>$ ? Approx\+\_\+ \+:array\+\_\+approx\+\_\+v$<$ scalar\+\_\+t$<$ T $>$ $>$, is\+\_\+std\+\_\+float\+\_\+v$<$ scalar\+\_\+t$<$ T $>$ $>$ \&\&is\+\_\+std\+\_\+float\+\_\+v$<$ scalar\+\_\+t$<$ Value\+\_\+ $>$ $>$ ? Mode\+\_\+ \+:Rounding\+Mode\+::\+Default $>$
+\begin{DoxyCompactList}\small\item\em Type alias for creating a similar-\/shaped array over a different type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structPacket_a839c028c855344983807d2c1d55f685d}\label{structPacket_a839c028c855344983807d2c1d55f685d}} 
+static constexpr bool {\bfseries Broadcast\+Prefer\+Outer} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename Value\+\_\+, size\+\_\+t Size\+\_\+, bool Approx\+\_\+, Rounding\+Mode Mode\+\_\+$>$\newline
+struct Packet$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$}
+
+Generic array class, which broadcasts from the inner to outer dimensions. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array.\+h\end{DoxyCompactItemize}

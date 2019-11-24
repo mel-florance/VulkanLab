@@ -1,0 +1,4 @@
+var structeigen__extract__stride_3_01Eigen_1_1Map_3_01PlainObjectType_00_01MapOptions_00_01StrideType_01_4_01_4 =
+[
+    [ "type", "structeigen__extract__stride_3_01Eigen_1_1Map_3_01PlainObjectType_00_01MapOptions_00_01StrideType_01_4_01_4.html#a5b20e9b2e74fa3bed76831203ba87a9f", null ]
+];

@@ -1,0 +1,88 @@
+\hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4}{}\doxysection{Référence du modèle de la structure struct\+\_\+support$<$ std\+::tuple$<$ Args... $>$ $>$}
+\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4}\index{struct\_support$<$ std::tuple$<$ Args... $>$ $>$@{struct\_support$<$ std::tuple$<$ Args... $>$ $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a9e90eb25f2e2e0d212d1200dc2a560d3}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a9e90eb25f2e2e0d212d1200dc2a560d3}} 
+using {\bfseries Dynamic} = std\+::tuple$<$ enoki\+::make\+\_\+dynamic\+\_\+t$<$ Args $>$... $>$
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_ae8c610467b63bebf4cfef79166d01228}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_ae8c610467b63bebf4cfef79166d01228}} 
+using {\bfseries Value} = std\+::tuple$<$ Args... $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_aa6d42fbd1e92c63e46286556d5afc0f1}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_aa6d42fbd1e92c63e46286556d5afc0f1}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries slices} (const Value \&value)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a6e5357be446cf8fe0b4ca7e483b3e5c3}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a6e5357be446cf8fe0b4ca7e483b3e5c3}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t {\bfseries packets} (const Value \&value)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_aaebfbef57849b1cf78471ed62383be12}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_aaebfbef57849b1cf78471ed62383be12}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries set\+\_\+slices} (Value \&value, size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a4d93405b0cf7dd725005cfe7e8e90773}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a4d93405b0cf7dd725005cfe7e8e90773}} 
+{\footnotesize template$<$typename T2 $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries packet} (T2 \&\&value, size\+\_\+t i)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a2413da2266d6799ff43f8d9ccf3dbaf1}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a2413da2266d6799ff43f8d9ccf3dbaf1}} 
+{\footnotesize template$<$typename T2 $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries slice} (T2 \&\&value, size\+\_\+t i)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a38b326719cdae805a7c76df1b7e051f3}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a38b326719cdae805a7c76df1b7e051f3}} 
+{\footnotesize template$<$typename T2 $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries slice\+\_\+ptr} (T2 \&\&value, size\+\_\+t i)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_adf55fc1fb92713717c4f2c2d69c0200b}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_adf55fc1fb92713717c4f2c2d69c0200b}} 
+{\footnotesize template$<$typename T2 $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries ref\+\_\+wrap} (T2 \&\&value)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_aa5e55e7ff69235755fe52fcf7543ce54}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_aa5e55e7ff69235755fe52fcf7543ce54}} 
+{\footnotesize template$<$typename T2 , typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries masked} (T2 \&\&value, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_aa8dd2d78072aaa32ff5a55d9b1038d07}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_aa8dd2d78072aaa32ff5a55d9b1038d07}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Value {\bfseries zero} (size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_ab5b00852c33e8aefa7ebd999b3e7572b}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_ab5b00852c33e8aefa7ebd999b3e7572b}} 
+static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Value {\bfseries empty} (size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a14d17f5463171c7ca953a09fa2c3a563}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a14d17f5463171c7ca953a09fa2c3a563}} 
+{\footnotesize template$<$typename T2 , typename Index , typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries scatter} (T2 \&dst, const Value \&value, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_aea20efa5dbaff2ff8757e67c4500d1d1}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_aea20efa5dbaff2ff8757e67c4500d1d1}} 
+{\footnotesize template$<$typename T2 , typename Index , typename Mask $>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Value {\bfseries gather} (const T2 \&src, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_aab0cb7d4a05365f7a6e442bfdb52d8e6}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_aab0cb7d4a05365f7a6e442bfdb52d8e6}} 
+static constexpr bool {\bfseries Is\+Dynamic} = std\+::disjunction\+\_\+v$<$enoki\+::is\+\_\+dynamic$<$Args$>$...$>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a1d118aa85741bde1773304df0b48561c}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a1d118aa85741bde1773304df0b48561c}} 
+{\footnotesize template$<$size\+\_\+t... Index$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries set\+\_\+slices} (Value \&value, size\+\_\+t i, std\+::index\+\_\+sequence$<$ Index... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a7926b7b0c0e9e92d8e5f5e28012e110b}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a7926b7b0c0e9e92d8e5f5e28012e110b}} 
+{\footnotesize template$<$typename T2 , size\+\_\+t... Index$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries packet} (T2 \&\&value, size\+\_\+t i, std\+::index\+\_\+sequence$<$ Index... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_ae7d5a562e7c6cbb0b288079b999f6114}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_ae7d5a562e7c6cbb0b288079b999f6114}} 
+{\footnotesize template$<$typename T2 , size\+\_\+t... Index$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries slice} (T2 \&\&value, size\+\_\+t i, std\+::index\+\_\+sequence$<$ Index... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a7a8cc028f3d03c6a7fabad4fc60242dd}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a7a8cc028f3d03c6a7fabad4fc60242dd}} 
+{\footnotesize template$<$typename T2 , size\+\_\+t... Index$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries slice\+\_\+ptr} (T2 \&\&value, size\+\_\+t i, std\+::index\+\_\+sequence$<$ Index... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a1f5117d8401159043c67116ddef2f187}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a1f5117d8401159043c67116ddef2f187}} 
+{\footnotesize template$<$typename T2 , size\+\_\+t... Index$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries ref\+\_\+wrap} (T2 \&\&value, std\+::index\+\_\+sequence$<$ Index... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a0e52c993cca5d0c6f2f5a2559d706645}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a0e52c993cca5d0c6f2f5a2559d706645}} 
+{\footnotesize template$<$typename T2 , typename Mask , size\+\_\+t... Index$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries masked} (T2 \&\&value, const \mbox{\hyperlink{structMask}{Mask}} \&mask, std\+::index\+\_\+sequence$<$ Index... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a9b4358e40e2e35d72f5a77230165d472}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a9b4358e40e2e35d72f5a77230165d472}} 
+{\footnotesize template$<$typename T2 , typename Index , typename Mask , size\+\_\+t... Is$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries scatter} (T2 \&dst, const Value \&value, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask, std\+::index\+\_\+sequence$<$ Is... $>$)
+\item 
+\mbox{\Hypertarget{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a442fd26eedd34357460f0d33bac48df4}\label{structstruct__support_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4_a442fd26eedd34357460f0d33bac48df4}} 
+{\footnotesize template$<$typename T2 , typename Index , typename Mask , size\+\_\+t... Is$>$ }\\static E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE Value {\bfseries gather} (const T2 \&src, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask, std\+::index\+\_\+sequence$<$ Is... $>$)
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/stl.\+h\end{DoxyCompactItemize}

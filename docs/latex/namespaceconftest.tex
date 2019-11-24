@@ -1,0 +1,162 @@
+\hypertarget{namespaceconftest}{}\doxysection{Référence de l\textquotesingle{}espace de nommage conftest}
+\label{namespaceconftest}\index{conftest@{conftest}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classconftest_1_1Capture}{Capture}}
+\item 
+class \mbox{\hyperlink{classconftest_1_1Output}{Output}}
+\item 
+class \mbox{\hyperlink{classconftest_1_1SanitizedString}{Sanitized\+String}}
+\item 
+class \mbox{\hyperlink{classconftest_1_1Unordered}{Unordered}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceconftest_af62df87eb4607f44da303443edfe9a99}{\+\_\+strip\+\_\+and\+\_\+dedent}} (s)
+\item 
+def \mbox{\hyperlink{namespaceconftest_a5e4d8610b6c0f0c7e53d5c26a959ece8}{\+\_\+split\+\_\+and\+\_\+sort}} (s)
+\item 
+def \mbox{\hyperlink{namespaceconftest_abc00aae985b1c675f581befa2e270e96}{\+\_\+make\+\_\+explanation}} (a, b)
+\item 
+def \mbox{\hyperlink{namespaceconftest_aad7bbb453045d1770805438a473317a4}{capture}} (capsys)
+\item 
+\mbox{\Hypertarget{namespaceconftest_aa55f23ef9afe549e17706f5f08d7a206}\label{namespaceconftest_aa55f23ef9afe549e17706f5f08d7a206}} 
+def {\bfseries \+\_\+sanitize\+\_\+general} (s)
+\item 
+\mbox{\Hypertarget{namespaceconftest_a026e9f0c42119eebbd1a05c82cefd7c6}\label{namespaceconftest_a026e9f0c42119eebbd1a05c82cefd7c6}} 
+def {\bfseries \+\_\+sanitize\+\_\+docstring} (thing)
+\item 
+def \mbox{\hyperlink{namespaceconftest_a35de28597d48d0a25c748a140765032e}{doc}} ()
+\item 
+\mbox{\Hypertarget{namespaceconftest_a11c42160f21d91f1686f94c4b3b599c7}\label{namespaceconftest_a11c42160f21d91f1686f94c4b3b599c7}} 
+def {\bfseries \+\_\+sanitize\+\_\+message} (thing)
+\item 
+def \mbox{\hyperlink{namespaceconftest_a8232d5538ccdf81352ae8d484548864e}{msg}} ()
+\item 
+def \mbox{\hyperlink{namespaceconftest_ae323d6c25dca1e94101a23a65a3b2ba5}{pytest\+\_\+assertrepr\+\_\+compare}} (op, left, right)
+\item 
+def \mbox{\hyperlink{namespaceconftest_a91c661a91528bcb9b6c5f6acbc7f6558}{suppress}} (\mbox{\hyperlink{classexception}{exception}})
+\item 
+def \mbox{\hyperlink{namespaceconftest_ae5bb8caa851371d0b8576827a6a20f0f}{gc\+\_\+collect}} ()
+\item 
+def \mbox{\hyperlink{namespaceconftest_abf6aaa58b0abe123198ba68fb26350d5}{pytest\+\_\+configure}} ()
+\item 
+def \mbox{\hyperlink{namespaceconftest_ae518ca03c369fb5c25b213f17bd68e28}{\+\_\+test\+\_\+import\+\_\+pybind11}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceconftest_a09717576f01260cef0351ad35b5956b4}\label{namespaceconftest_a09717576f01260cef0351ad35b5956b4}} 
+{\bfseries \+\_\+unicode\+\_\+marker} = re.\+compile(r\textquotesingle{}u(\textbackslash{}\textquotesingle{}\mbox{[}$^\wedge$\textbackslash{}\textquotesingle{}\mbox{]}$\ast$\textbackslash{}\textquotesingle{})\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespaceconftest_a99f04f8616d549110a9e53f42a9c40b2}\label{namespaceconftest_a99f04f8616d549110a9e53f42a9c40b2}} 
+{\bfseries \+\_\+long\+\_\+marker} = re.\+compile(r\textquotesingle{}(\mbox{[}0-\/9\mbox{]})L\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespaceconftest_a27eaaeed08d3fd09c6ae8e9beb3f421a}\label{namespaceconftest_a27eaaeed08d3fd09c6ae8e9beb3f421a}} 
+{\bfseries \+\_\+hexadecimal} = re.\+compile(r\textquotesingle{}0x\mbox{[}0-\/9a-\/fA-\/F\mbox{]}+\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespaceconftest_a4bac6fd53abd6bc2a5eb7331acefec5c}\label{namespaceconftest_a4bac6fd53abd6bc2a5eb7331acefec5c}} 
+\mbox{\hyperlink{classlist}{list}} {\bfseries collect\+\_\+ignore} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}pytest configuration
+
+Extends output capture as needed by pybind11: ignore constructors, optional unordered lines.
+Adds docstring and exceptions message sanitizers: ignore Python 2 vs 3 differences.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{namespaceconftest_abc00aae985b1c675f581befa2e270e96}\label{namespaceconftest_abc00aae985b1c675f581befa2e270e96}} 
+\index{conftest@{conftest}!\_make\_explanation@{\_make\_explanation}}
+\index{\_make\_explanation@{\_make\_explanation}!conftest@{conftest}}
+\doxysubsubsection{\texorpdfstring{\_make\_explanation()}{\_make\_explanation()}}
+{\footnotesize\ttfamily def conftest.\+\_\+make\+\_\+explanation (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Explanation for a failed assert -- the a and b arguments are List[str]\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconftest_a5e4d8610b6c0f0c7e53d5c26a959ece8}\label{namespaceconftest_a5e4d8610b6c0f0c7e53d5c26a959ece8}} 
+\index{conftest@{conftest}!\_split\_and\_sort@{\_split\_and\_sort}}
+\index{\_split\_and\_sort@{\_split\_and\_sort}!conftest@{conftest}}
+\doxysubsubsection{\texorpdfstring{\_split\_and\_sort()}{\_split\_and\_sort()}}
+{\footnotesize\ttfamily def conftest.\+\_\+split\+\_\+and\+\_\+sort (\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}For output which does not require specific line order\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconftest_af62df87eb4607f44da303443edfe9a99}\label{namespaceconftest_af62df87eb4607f44da303443edfe9a99}} 
+\index{conftest@{conftest}!\_strip\_and\_dedent@{\_strip\_and\_dedent}}
+\index{\_strip\_and\_dedent@{\_strip\_and\_dedent}!conftest@{conftest}}
+\doxysubsubsection{\texorpdfstring{\_strip\_and\_dedent()}{\_strip\_and\_dedent()}}
+{\footnotesize\ttfamily def conftest.\+\_\+strip\+\_\+and\+\_\+dedent (\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}For triple-quote strings\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconftest_ae518ca03c369fb5c25b213f17bd68e28}\label{namespaceconftest_ae518ca03c369fb5c25b213f17bd68e28}} 
+\index{conftest@{conftest}!\_test\_import\_pybind11@{\_test\_import\_pybind11}}
+\index{\_test\_import\_pybind11@{\_test\_import\_pybind11}!conftest@{conftest}}
+\doxysubsubsection{\texorpdfstring{\_test\_import\_pybind11()}{\_test\_import\_pybind11()}}
+{\footnotesize\ttfamily def conftest.\+\_\+test\+\_\+import\+\_\+pybind11 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Early diagnostic for test module initialization errors
+
+When there is an error during initialization, the first import will report the
+real error while all subsequent imports will report nonsense. This import test
+is done early (in the pytest configuration file, before any tests) in order to
+avoid the noise of having all tests fail with identical error messages.
+
+Any possible exception is caught here and reported manually *without* the stack
+trace. This further reduces noise since the trace would only show pytest internals
+which are not useful for debugging pybind11 module issues.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconftest_aad7bbb453045d1770805438a473317a4}\label{namespaceconftest_aad7bbb453045d1770805438a473317a4}} 
+\index{conftest@{conftest}!capture@{capture}}
+\index{capture@{capture}!conftest@{conftest}}
+\doxysubsubsection{\texorpdfstring{capture()}{capture()}}
+{\footnotesize\ttfamily def conftest.\+capture (\begin{DoxyParamCaption}\item[{}]{capsys }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extended `capsys` with context manager and custom equality operators\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconftest_a35de28597d48d0a25c748a140765032e}\label{namespaceconftest_a35de28597d48d0a25c748a140765032e}} 
+\index{conftest@{conftest}!doc@{doc}}
+\index{doc@{doc}!conftest@{conftest}}
+\doxysubsubsection{\texorpdfstring{doc()}{doc()}}
+{\footnotesize\ttfamily def conftest.\+doc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sanitize docstrings and add custom failure explanation\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconftest_ae5bb8caa851371d0b8576827a6a20f0f}\label{namespaceconftest_ae5bb8caa851371d0b8576827a6a20f0f}} 
+\index{conftest@{conftest}!gc\_collect@{gc\_collect}}
+\index{gc\_collect@{gc\_collect}!conftest@{conftest}}
+\doxysubsubsection{\texorpdfstring{gc\_collect()}{gc\_collect()}}
+{\footnotesize\ttfamily def conftest.\+gc\+\_\+collect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run the garbage collector twice (needed when running
+reference counting tests with PyPy) \end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconftest_a8232d5538ccdf81352ae8d484548864e}\label{namespaceconftest_a8232d5538ccdf81352ae8d484548864e}} 
+\index{conftest@{conftest}!msg@{msg}}
+\index{msg@{msg}!conftest@{conftest}}
+\doxysubsubsection{\texorpdfstring{msg()}{msg()}}
+{\footnotesize\ttfamily def conftest.\+msg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sanitize messages and add custom failure explanation\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconftest_ae323d6c25dca1e94101a23a65a3b2ba5}\label{namespaceconftest_ae323d6c25dca1e94101a23a65a3b2ba5}} 
+\index{conftest@{conftest}!pytest\_assertrepr\_compare@{pytest\_assertrepr\_compare}}
+\index{pytest\_assertrepr\_compare@{pytest\_assertrepr\_compare}!conftest@{conftest}}
+\doxysubsubsection{\texorpdfstring{pytest\_assertrepr\_compare()}{pytest\_assertrepr\_compare()}}
+{\footnotesize\ttfamily def conftest.\+pytest\+\_\+assertrepr\+\_\+compare (\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{left,  }\item[{}]{right }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Hook to insert custom failure explanation\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconftest_abf6aaa58b0abe123198ba68fb26350d5}\label{namespaceconftest_abf6aaa58b0abe123198ba68fb26350d5}} 
+\index{conftest@{conftest}!pytest\_configure@{pytest\_configure}}
+\index{pytest\_configure@{pytest\_configure}!conftest@{conftest}}
+\doxysubsubsection{\texorpdfstring{pytest\_configure()}{pytest\_configure()}}
+{\footnotesize\ttfamily def conftest.\+pytest\+\_\+configure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add import suppression and test requirements to `pytest` namespace\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconftest_a91c661a91528bcb9b6c5f6acbc7f6558}\label{namespaceconftest_a91c661a91528bcb9b6c5f6acbc7f6558}} 
+\index{conftest@{conftest}!suppress@{suppress}}
+\index{suppress@{suppress}!conftest@{conftest}}
+\doxysubsubsection{\texorpdfstring{suppress()}{suppress()}}
+{\footnotesize\ttfamily def conftest.\+suppress (\begin{DoxyParamCaption}\item[{}]{exception }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Suppress the desired exception\end{DoxyVerb}
+ 

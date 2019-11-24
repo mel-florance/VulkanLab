@@ -1,0 +1,74 @@
+\hypertarget{classPopupButton}{}\doxysection{Référence de la classe Popup\+Button}
+\label{classPopupButton}\index{PopupButton@{PopupButton}}
+
+
+\mbox{\hyperlink{classButton}{Button}} which launches a popup widget.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/popupbutton.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Popup\+Button\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.333333cm]{classPopupButton}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPopupButton_ada434b7543d94b7f2960d940c4878ff4}\label{classPopupButton_ada434b7543d94b7f2960d940c4878ff4}} 
+{\bfseries Popup\+Button} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, const std\+::string \&\mbox{\hyperlink{classButton_aaea8319d4263882e724432cac08bf77e}{caption}}=\char`\"{}Untitled\char`\"{}, int button\+\_\+icon=0)
+\item 
+\mbox{\Hypertarget{classPopupButton_adb241633d579dd0ea932bc15e8eff6d1}\label{classPopupButton_adb241633d579dd0ea932bc15e8eff6d1}} 
+void {\bfseries set\+\_\+chevron\+\_\+icon} (int \mbox{\hyperlink{classButton_afee33a5ca02c5fce4989c9772c3f506c}{icon}})
+\item 
+\mbox{\Hypertarget{classPopupButton_a5fe9461dc72a8d82054aea37ff57e9e9}\label{classPopupButton_a5fe9461dc72a8d82054aea37ff57e9e9}} 
+int {\bfseries chevron\+\_\+icon} () const
+\item 
+\mbox{\Hypertarget{classPopupButton_a3bbcc52a093298e3b4b1d41659a8c0de}\label{classPopupButton_a3bbcc52a093298e3b4b1d41659a8c0de}} 
+void {\bfseries set\+\_\+side} (Popup\+::\+Side popup\+\_\+side)
+\item 
+\mbox{\Hypertarget{classPopupButton_a454f270d4bae26ed70dc70c93492fd10}\label{classPopupButton_a454f270d4bae26ed70dc70c93492fd10}} 
+Popup\+::\+Side {\bfseries side} () const
+\item 
+\mbox{\Hypertarget{classPopupButton_af8ef14f08e15a94f9de9bb0e1dcc822e}\label{classPopupButton_af8ef14f08e15a94f9de9bb0e1dcc822e}} 
+\mbox{\hyperlink{classPopup}{Popup}} $\ast$ {\bfseries popup} ()
+\item 
+\mbox{\Hypertarget{classPopupButton_a99d1065eb846865d98a73956cda079d3}\label{classPopupButton_a99d1065eb846865d98a73956cda079d3}} 
+const \mbox{\hyperlink{classPopup}{Popup}} $\ast$ {\bfseries popup} () const
+\item 
+\mbox{\Hypertarget{classPopupButton_a7aad21294874502db3f4e38f63f60b7c}\label{classPopupButton_a7aad21294874502db3f4e38f63f60b7c}} 
+virtual void \mbox{\hyperlink{classPopupButton_a7aad21294874502db3f4e38f63f60b7c}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Responsible for drawing the \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopupButton_ae33e513af4fc4ae9286eb2cd6eecb758}\label{classPopupButton_ae33e513af4fc4ae9286eb2cd6eecb758}} 
+virtual Vector2i \mbox{\hyperlink{classPopupButton_ae33e513af4fc4ae9286eb2cd6eecb758}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const override
+\begin{DoxyCompactList}\small\item\em The preferred size of this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPopupButton_aeeb9ec235352f65eb488f19387a44f75}\label{classPopupButton_aeeb9ec235352f65eb488f19387a44f75}} 
+virtual void \mbox{\hyperlink{classPopupButton_aeeb9ec235352f65eb488f19387a44f75}{perform\+\_\+layout}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Invoke the associated layout generator to properly place child widgets, if any. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPopupButton_aad2a88b480aad0aa0377e39649dd8acc}\label{classPopupButton_aad2a88b480aad0aa0377e39649dd8acc}} 
+\mbox{\hyperlink{classPopup}{Popup}} $\ast$ {\bfseries m\+\_\+popup}
+\item 
+\mbox{\Hypertarget{classPopupButton_a1578418c5098f5706a64f5dba657a125}\label{classPopupButton_a1578418c5098f5706a64f5dba657a125}} 
+int {\bfseries m\+\_\+chevron\+\_\+icon}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{classButton}{Button}} which launches a popup widget. 
+
+\begin{DoxyRemark}{Remarques}
+This class overrides nanogui\+::\+Widget\+::m\+Icon\+Extra\+Scale to be {\ttfamily 0.\+8f}, which affects all subclasses of this \mbox{\hyperlink{classWidget}{Widget}}. Subclasses must explicitly set a different value if needed (e.\+g., in their constructor). 
+\end{DoxyRemark}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{popupbutton_8h}{popupbutton.\+h}}\item 
+ext/nanogui/src/popupbutton.\+cpp\end{DoxyCompactItemize}

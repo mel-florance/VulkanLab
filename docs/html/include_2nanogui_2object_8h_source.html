@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.8.16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vulkan Lab:  Fichier source de ext/nanogui/include/nanogui/object.h</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">Vulkan Lab
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part --><!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('include_2nanogui_2object_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">object.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="include_2nanogui_2object_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    nanogui/object.h -- Object base class with support for reference counting</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    NanoGUI was developed by Wenzel Jakob &lt;wenzel.jakob@epfl.ch&gt;.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">    The widget drawing code is based on the NanoVG demo application</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    by Mikko Mononen.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">    All rights reserved. Use of this source code is governed by a</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">    BSD-style license that can be found in the LICENSE.txt file.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="include_2nanogui_2common_8h.html">nanogui/common.h</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;atomic&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a>(nanogui)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> <a class="code" href="classObject.html">Object</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classObject.html#a40860402e64d8008fb42329df7097cdb">   28</a></span>&#160;    <a class="code" href="classObject.html#a40860402e64d8008fb42329df7097cdb">Object</a>() { }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classObject.html#af3b5cd7a9a24ddde484344200cf83281">   31</a></span>&#160;    <a class="code" href="classObject.html#af3b5cd7a9a24ddde484344200cf83281">Object</a>(<span class="keyword">const</span> <a class="code" href="classObject.html">Object</a> &amp;) : m_ref_count(0) {}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classObject.html#a38150f0e9c91699cad350eac8fea192b">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classObject.html#a38150f0e9c91699cad350eac8fea192b">ref_count</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ref_count; };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> inc_ref() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> dec_ref(<span class="keywordtype">bool</span> dealloc = <span class="keyword">true</span>) const noexcept;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;protected:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    virtual ~<a class="code" href="classObject.html">Object</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;private:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    mutable std::atomic&lt;<span class="keywordtype">int</span>&gt; m_ref_count { 0 };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classref.html">ref</a> {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classref.html#a32c2f3c2bde5b57e6ef0a80254773854">   72</a></span>&#160;    <a class="code" href="classref.html#a32c2f3c2bde5b57e6ef0a80254773854">ref</a>() { }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classref.html#ac593e903c13a8dfe520978053ac4b319">   75</a></span>&#160;    <a class="code" href="classref.html#ac593e903c13a8dfe520978053ac4b319">ref</a>(T *ptr) : m_ptr(ptr) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> (m_ptr)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            ((<a class="code" href="classObject.html">Object</a> *) m_ptr)-&gt;inc_ref();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classref.html#ab6041fce6b4a78faac0613b3b05e74e0">   81</a></span>&#160;    <a class="code" href="classref.html#ab6041fce6b4a78faac0613b3b05e74e0">ref</a>(<span class="keyword">const</span> <a class="code" href="classref.html">ref</a> &amp;r) : m_ptr(r.m_ptr) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">if</span> (m_ptr)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            ((<a class="code" href="classObject.html">Object</a> *) m_ptr)-&gt;inc_ref();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classref.html#ad41a149bcd364f1e9e62730114b4298c">   87</a></span>&#160;    <a class="code" href="classref.html#ad41a149bcd364f1e9e62730114b4298c">ref</a>(<a class="code" href="classref.html">ref</a> &amp;&amp;r) noexcept : m_ptr(r.m_ptr) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        r.m_ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classref.html#a0f91cf031c803c7a34471dabce694454">   92</a></span>&#160;    <a class="code" href="classref.html#a0f91cf031c803c7a34471dabce694454">~ref</a>() {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">if</span> (m_ptr)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            ((<a class="code" href="classObject.html">Object</a> *) m_ptr)-&gt;dec_ref();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classref.html#a4c6d8a37ad46ae5b885c5a1b2d9df835">   98</a></span>&#160;    <a class="code" href="classref.html">ref</a>&amp; <a class="code" href="classref.html#a4c6d8a37ad46ae5b885c5a1b2d9df835">operator=</a>(<a class="code" href="classref.html">ref</a>&amp;&amp; r) noexcept {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">if</span> (&amp;r != <span class="keyword">this</span>) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">if</span> (m_ptr)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                ((<a class="code" href="classObject.html">Object</a> *) m_ptr)-&gt;dec_ref();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            m_ptr = r.m_ptr;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            r.m_ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classref.html#aee9ff2f8bff8e2f3b04ba4df34f996be">  109</a></span>&#160;    <a class="code" href="classref.html">ref</a>&amp; <a class="code" href="classref.html#aee9ff2f8bff8e2f3b04ba4df34f996be">operator=</a>(<span class="keyword">const</span> <a class="code" href="classref.html">ref</a>&amp; r) noexcept {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span> (m_ptr != r.m_ptr) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">if</span> (r.m_ptr)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                ((<a class="code" href="classObject.html">Object</a> *) r.m_ptr)-&gt;inc_ref();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">if</span> (m_ptr)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                ((<a class="code" href="classObject.html">Object</a> *) m_ptr)-&gt;dec_ref();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            m_ptr = r.m_ptr;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classref.html#a6582cebb1a1bd77d708a22021ee94269">  121</a></span>&#160;    <a class="code" href="classref.html">ref</a>&amp; <a class="code" href="classref.html#a6582cebb1a1bd77d708a22021ee94269">operator=</a>(T *ptr) noexcept {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (m_ptr != ptr) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">if</span> (ptr)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                ((<a class="code" href="classObject.html">Object</a> *) ptr)-&gt;inc_ref();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keywordflow">if</span> (m_ptr)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                ((<a class="code" href="classObject.html">Object</a> *) m_ptr)-&gt;dec_ref();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            m_ptr = ptr;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classref.html#a8a96aae6d9787e988ff148d1dd9a773d">  133</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classref.html#a8a96aae6d9787e988ff148d1dd9a773d">operator==</a>(<span class="keyword">const</span> <a class="code" href="classref.html">ref</a> &amp;r)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ptr == r.m_ptr; }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classref.html#ae4fb583b5cdbd8659c8dfc91ca5ba4f2">  136</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classref.html#ae4fb583b5cdbd8659c8dfc91ca5ba4f2">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classref.html">ref</a> &amp;r)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ptr != r.m_ptr; }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classref.html#a6131b1c40dd6977c7e005826ba660213">  139</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classref.html#a6131b1c40dd6977c7e005826ba660213">operator==</a>(<span class="keyword">const</span> T* ptr)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ptr == ptr; }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classref.html#a932a54e9c0e107e7edf78d550ef4852f">  142</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classref.html#a932a54e9c0e107e7edf78d550ef4852f">operator!=</a>(<span class="keyword">const</span> T* ptr)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ptr != ptr; }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classref.html#acc07281f5c8afd7660e0965da19a2c0c">  145</a></span>&#160;    T* <a class="code" href="classref.html#acc07281f5c8afd7660e0965da19a2c0c">operator-&gt;</a>() { <span class="keywordflow">return</span> m_ptr; }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classref.html#a2b60a27dafb793f808195c2ddfd8d013">  148</a></span>&#160;    <span class="keyword">const</span> T* <a class="code" href="classref.html#a2b60a27dafb793f808195c2ddfd8d013">operator-&gt;</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ptr; }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classref.html#a04924b0547cd850f3a39fda293021e3b">  151</a></span>&#160;    T&amp; <a class="code" href="classref.html#a04924b0547cd850f3a39fda293021e3b">operator*</a>() { <span class="keywordflow">return</span> *m_ptr; }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classref.html#a42119083ef6adbb393680aaee8331f25">  154</a></span>&#160;    <span class="keyword">const</span> T&amp; <a class="code" href="classref.html#a42119083ef6adbb393680aaee8331f25">operator*</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *m_ptr; }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classref.html#a6afd60eceb2144f888591fe9b3a05b86">  157</a></span>&#160;    <span class="keyword">operator</span> T* () { <span class="keywordflow">return</span> m_ptr; }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classref.html#a729c7bfb0f66cd2f5dfb99a60bc4b22c">  160</a></span>&#160;    T* <a class="code" href="classref.html#a729c7bfb0f66cd2f5dfb99a60bc4b22c">get</a>() { <span class="keywordflow">return</span> m_ptr; }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classref.html#a26dd230ed73ec0413f48458188ab9813">  163</a></span>&#160;    <span class="keyword">const</span> T* <a class="code" href="classref.html#a26dd230ed73ec0413f48458188ab9813">get</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ptr; }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classref.html#a89e360634c72a4f6a487b893f3de2d79">  166</a></span>&#160;    <span class="keyword">operator</span> bool()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ptr != <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    T *m_ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;};</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a>(nanogui)</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassref_html_a6582cebb1a1bd77d708a22021ee94269"><div class="ttname"><a href="classref.html#a6582cebb1a1bd77d708a22021ee94269">ref::operator=</a></div><div class="ttdeci">ref &amp; operator=(T *ptr) noexcept</div><div class="ttdoc">Overwrite this reference with a pointer to another object.</div><div class="ttdef"><b>Definition:</b> object.h:121</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a577cd817cb71b655998cad4387cdaeba"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a></div><div class="ttdeci">#define NAMESPACE_BEGIN(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:38</div></div>
+<div class="ttc" id="aclassref_html_ad41a149bcd364f1e9e62730114b4298c"><div class="ttname"><a href="classref.html#ad41a149bcd364f1e9e62730114b4298c">ref::ref</a></div><div class="ttdeci">ref(ref &amp;&amp;r) noexcept</div><div class="ttdoc">Move constructor.</div><div class="ttdef"><b>Definition:</b> object.h:87</div></div>
+<div class="ttc" id="aclassref_html_a8a96aae6d9787e988ff148d1dd9a773d"><div class="ttname"><a href="classref.html#a8a96aae6d9787e988ff148d1dd9a773d">ref::operator==</a></div><div class="ttdeci">bool operator==(const ref &amp;r) const</div><div class="ttdoc">Compare this reference with another reference.</div><div class="ttdef"><b>Definition:</b> object.h:133</div></div>
+<div class="ttc" id="aclassref_html_ac593e903c13a8dfe520978053ac4b319"><div class="ttname"><a href="classref.html#ac593e903c13a8dfe520978053ac4b319">ref::ref</a></div><div class="ttdeci">ref(T *ptr)</div><div class="ttdoc">Construct a reference from a pointer.</div><div class="ttdef"><b>Definition:</b> object.h:75</div></div>
+<div class="ttc" id="aclassObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdoc">Reference counted object base class.</div><div class="ttdef"><b>Definition:</b> object.h:8</div></div>
+<div class="ttc" id="aclassref_html_a932a54e9c0e107e7edf78d550ef4852f"><div class="ttname"><a href="classref.html#a932a54e9c0e107e7edf78d550ef4852f">ref::operator!=</a></div><div class="ttdeci">bool operator!=(const T *ptr) const</div><div class="ttdoc">Compare this reference with a pointer.</div><div class="ttdef"><b>Definition:</b> object.h:142</div></div>
+<div class="ttc" id="aclassref_html_a32c2f3c2bde5b57e6ef0a80254773854"><div class="ttname"><a href="classref.html#a32c2f3c2bde5b57e6ef0a80254773854">ref::ref</a></div><div class="ttdeci">ref()</div><div class="ttdoc">Create a nullptr-valued reference.</div><div class="ttdef"><b>Definition:</b> object.h:72</div></div>
+<div class="ttc" id="aclassref_html_a0f91cf031c803c7a34471dabce694454"><div class="ttname"><a href="classref.html#a0f91cf031c803c7a34471dabce694454">ref::~ref</a></div><div class="ttdeci">~ref()</div><div class="ttdoc">Destroy this reference.</div><div class="ttdef"><b>Definition:</b> object.h:92</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a12bb24ea980ca8fb1f46b1992bc9c83a"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a></div><div class="ttdeci">#define NAMESPACE_END(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:50</div></div>
+<div class="ttc" id="aclassObject_html_a40860402e64d8008fb42329df7097cdb"><div class="ttname"><a href="classObject.html#a40860402e64d8008fb42329df7097cdb">Object::Object</a></div><div class="ttdeci">Object()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition:</b> object.h:28</div></div>
+<div class="ttc" id="aclassref_html_a04924b0547cd850f3a39fda293021e3b"><div class="ttname"><a href="classref.html#a04924b0547cd850f3a39fda293021e3b">ref::operator*</a></div><div class="ttdeci">T &amp; operator*()</div><div class="ttdoc">Return a C++ reference to the referenced object.</div><div class="ttdef"><b>Definition:</b> object.h:151</div></div>
+<div class="ttc" id="aclassref_html_ae4fb583b5cdbd8659c8dfc91ca5ba4f2"><div class="ttname"><a href="classref.html#ae4fb583b5cdbd8659c8dfc91ca5ba4f2">ref::operator!=</a></div><div class="ttdeci">bool operator!=(const ref &amp;r) const</div><div class="ttdoc">Compare this reference with another reference.</div><div class="ttdef"><b>Definition:</b> object.h:136</div></div>
+<div class="ttc" id="aclassref_html_a2b60a27dafb793f808195c2ddfd8d013"><div class="ttname"><a href="classref.html#a2b60a27dafb793f808195c2ddfd8d013">ref::operator-&gt;</a></div><div class="ttdeci">const T * operator-&gt;() const</div><div class="ttdoc">Access the object referenced by this reference.</div><div class="ttdef"><b>Definition:</b> object.h:148</div></div>
+<div class="ttc" id="aclassref_html_a729c7bfb0f66cd2f5dfb99a60bc4b22c"><div class="ttname"><a href="classref.html#a729c7bfb0f66cd2f5dfb99a60bc4b22c">ref::get</a></div><div class="ttdeci">T * get()</div><div class="ttdoc">Return a const pointer to the referenced object.</div><div class="ttdef"><b>Definition:</b> object.h:160</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a7258172a953ba844ab2900b6bc521b1e"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a></div><div class="ttdeci">#define NANOGUI_EXPORT</div><div class="ttdef"><b>Definition:</b> common.h:72</div></div>
+<div class="ttc" id="aclassref_html_a4c6d8a37ad46ae5b885c5a1b2d9df835"><div class="ttname"><a href="classref.html#a4c6d8a37ad46ae5b885c5a1b2d9df835">ref::operator=</a></div><div class="ttdeci">ref &amp; operator=(ref &amp;&amp;r) noexcept</div><div class="ttdoc">Move another reference into the current one.</div><div class="ttdef"><b>Definition:</b> object.h:98</div></div>
+<div class="ttc" id="aclassref_html_a42119083ef6adbb393680aaee8331f25"><div class="ttname"><a href="classref.html#a42119083ef6adbb393680aaee8331f25">ref::operator*</a></div><div class="ttdeci">const T &amp; operator*() const</div><div class="ttdoc">Return a const C++ reference to the referenced object.</div><div class="ttdef"><b>Definition:</b> object.h:154</div></div>
+<div class="ttc" id="aclassObject_html_af3b5cd7a9a24ddde484344200cf83281"><div class="ttname"><a href="classObject.html#af3b5cd7a9a24ddde484344200cf83281">Object::Object</a></div><div class="ttdeci">Object(const Object &amp;)</div><div class="ttdoc">Copy constructor.</div><div class="ttdef"><b>Definition:</b> object.h:31</div></div>
+<div class="ttc" id="aclassref_html_a6131b1c40dd6977c7e005826ba660213"><div class="ttname"><a href="classref.html#a6131b1c40dd6977c7e005826ba660213">ref::operator==</a></div><div class="ttdeci">bool operator==(const T *ptr) const</div><div class="ttdoc">Compare this reference with a pointer.</div><div class="ttdef"><b>Definition:</b> object.h:139</div></div>
+<div class="ttc" id="aclassref_html"><div class="ttname"><a href="classref.html">ref</a></div><div class="ttdoc">Reference counting helper.</div><div class="ttdef"><b>Definition:</b> object.h:62</div></div>
+<div class="ttc" id="aclassref_html_acc07281f5c8afd7660e0965da19a2c0c"><div class="ttname"><a href="classref.html#acc07281f5c8afd7660e0965da19a2c0c">ref::operator-&gt;</a></div><div class="ttdeci">T * operator-&gt;()</div><div class="ttdoc">Access the object referenced by this reference.</div><div class="ttdef"><b>Definition:</b> object.h:145</div></div>
+<div class="ttc" id="aclassObject_html_a38150f0e9c91699cad350eac8fea192b"><div class="ttname"><a href="classObject.html#a38150f0e9c91699cad350eac8fea192b">Object::ref_count</a></div><div class="ttdeci">int ref_count() const</div><div class="ttdoc">Return the current reference count.</div><div class="ttdef"><b>Definition:</b> object.h:34</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html"><div class="ttname"><a href="include_2nanogui_2common_8h.html">common.h</a></div><div class="ttdoc">Common definitions used by NanoGUI.</div></div>
+<div class="ttc" id="aclassref_html_aee9ff2f8bff8e2f3b04ba4df34f996be"><div class="ttname"><a href="classref.html#aee9ff2f8bff8e2f3b04ba4df34f996be">ref::operator=</a></div><div class="ttdeci">ref &amp; operator=(const ref &amp;r) noexcept</div><div class="ttdoc">Overwrite this reference with another reference.</div><div class="ttdef"><b>Definition:</b> object.h:109</div></div>
+<div class="ttc" id="aclassref_html_a26dd230ed73ec0413f48458188ab9813"><div class="ttname"><a href="classref.html#a26dd230ed73ec0413f48458188ab9813">ref::get</a></div><div class="ttdeci">const T * get() const</div><div class="ttdoc">Return a pointer to the referenced object.</div><div class="ttdef"><b>Definition:</b> object.h:163</div></div>
+<div class="ttc" id="aclassref_html_ab6041fce6b4a78faac0613b3b05e74e0"><div class="ttname"><a href="classref.html#ab6041fce6b4a78faac0613b3b05e74e0">ref::ref</a></div><div class="ttdeci">ref(const ref &amp;r)</div><div class="ttdoc">Copy constructor.</div><div class="ttdef"><b>Definition:</b> object.h:81</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+    <ul>
+        <li class="navelem"><a class="el" href="dir_31cedd4509e06940f559c1ca2f722e02.html">ext</a></li><li class="navelem"><a class="el" href="dir_3b52d0ee0647600b951b1b620984dcd1.html">nanogui</a></li><li class="navelem"><a class="el" href="dir_5721e7ee5207c0c2918a589ae1107b9a.html">include</a></li><li class="navelem"><a class="el" href="dir_7c8bd28dcb08b6a153cc19ab5789aba5.html">nanogui</a></li><li class="navelem"><a class="el" href="include_2nanogui_2object_8h.html">object.h</a></li>
+        <li class="footer">
+            Generated on Dimanche 24 Novembre 2019 18:11:46 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
+            Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
+        </li>
+    </ul>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>

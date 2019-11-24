@@ -1,0 +1,46 @@
+\hypertarget{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb}{}\doxysection{Référence du modèle de la structure type\+\_\+caster$<$ T, enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+arithmetic$<$ T $>$\+::value \&\&!is\+\_\+std\+\_\+char\+\_\+type$<$ T $>$\+::value $>$ $>$}
+\label{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb}\index{type\_caster$<$ T, enable\_if\_t$<$ std::is\_arithmetic$<$ T $>$::value \&\&"!is\_std\_char\_type$<$ T $>$::value $>$ $>$@{type\_caster$<$ T, enable\_if\_t$<$ std::is\_arithmetic$<$ T $>$::value \&\&"!is\_std\_char\_type$<$ T $>$::value $>$ $>$}}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_a069954640b06a1786a4c5e254eaa6176}\label{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_a069954640b06a1786a4c5e254eaa6176}} 
+using {\bfseries \+\_\+py\+\_\+type\+\_\+0} = conditional\+\_\+t$<$ sizeof(T)$<$=sizeof(long), long, long long $>$
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_ae7d4a4ef85d773f9a38afe8bcaf42a8d}\label{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_ae7d4a4ef85d773f9a38afe8bcaf42a8d}} 
+using {\bfseries \+\_\+py\+\_\+type\+\_\+1} = conditional\+\_\+t$<$ std\+::is\+\_\+signed$<$ T $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}}, \+\_\+py\+\_\+type\+\_\+0, typename std\+::make\+\_\+unsigned$<$ \+\_\+py\+\_\+type\+\_\+0 $>$\+::type $>$
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_a21f46f7de7bf5d168e95a61d69ac0076}\label{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_a21f46f7de7bf5d168e95a61d69ac0076}} 
+using {\bfseries py\+\_\+type} = conditional\+\_\+t$<$ std\+::is\+\_\+floating\+\_\+point$<$ T $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}}, double, \+\_\+py\+\_\+type\+\_\+1 $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_acad49e0860c8d2cc010f7368592ff963}\label{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_acad49e0860c8d2cc010f7368592ff963}} 
+bool {\bfseries load} (\mbox{\hyperlink{classhandle}{handle}} src, bool convert)
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_a96a4ee7b970f83b35e0f695a0e00b2bd}\label{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_a96a4ee7b970f83b35e0f695a0e00b2bd}} 
+{\bfseries P\+Y\+B\+I\+N\+D11\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+A\+S\+T\+ER} (T, \+\_\+$<$ std\+::is\+\_\+integral$<$ T $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}} $>$(\char`\"{}int\char`\"{}, \char`\"{}float\char`\"{}))
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_a2a74522a8e3d27c72ca51bebf2671157}\label{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_a2a74522a8e3d27c72ca51bebf2671157}} 
+{\footnotesize template$<$typename U  = T$>$ }\\static std\+::enable\+\_\+if$<$ std\+::is\+\_\+floating\+\_\+point$<$ U $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}}, \mbox{\hyperlink{classhandle}{handle}} $>$\+::type {\bfseries cast} (U src, return\+\_\+value\+\_\+policy, \mbox{\hyperlink{classhandle}{handle}})
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_a3f5f3737a1b6c451ca5dc3477d1c1d3b}\label{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_a3f5f3737a1b6c451ca5dc3477d1c1d3b}} 
+{\footnotesize template$<$typename U  = T$>$ }\\static std\+::enable\+\_\+if$<$!std\+::is\+\_\+floating\+\_\+point$<$ U $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}} \&\&std\+::is\+\_\+signed$<$ U $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}} \&\&(sizeof(U)$<$=sizeof(long)), \mbox{\hyperlink{classhandle}{handle}} $>$\+::type {\bfseries cast} (U src, return\+\_\+value\+\_\+policy, \mbox{\hyperlink{classhandle}{handle}})
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_aabcc3b2b1d04ead58d2b0ad1e580d92f}\label{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_aabcc3b2b1d04ead58d2b0ad1e580d92f}} 
+{\footnotesize template$<$typename U  = T$>$ }\\static std\+::enable\+\_\+if$<$!std\+::is\+\_\+floating\+\_\+point$<$ U $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}} \&\&std\+::is\+\_\+unsigned$<$ U $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}} \&\&(sizeof(U)$<$=sizeof(unsigned long)), \mbox{\hyperlink{classhandle}{handle}} $>$\+::type {\bfseries cast} (U src, return\+\_\+value\+\_\+policy, \mbox{\hyperlink{classhandle}{handle}})
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_aec21fe71fca08abe516b81e88bfd91cf}\label{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_aec21fe71fca08abe516b81e88bfd91cf}} 
+{\footnotesize template$<$typename U  = T$>$ }\\static std\+::enable\+\_\+if$<$!std\+::is\+\_\+floating\+\_\+point$<$ U $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}} \&\&std\+::is\+\_\+signed$<$ U $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}} \&\&(sizeof(U) $>$ sizeof(long)), \mbox{\hyperlink{classhandle}{handle}} $>$\+::type {\bfseries cast} (U src, return\+\_\+value\+\_\+policy, \mbox{\hyperlink{classhandle}{handle}})
+\item 
+\mbox{\Hypertarget{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_a642af58128a1d3b551de5491484636db}\label{structtype__caster_3_01T_00_01enable__if__t_3_01std_1_1is__arithmetic_3_01T_01_4_1_1value_01_6_6b91d1239db355fa5ea0d092a7cad71cb_a642af58128a1d3b551de5491484636db}} 
+{\footnotesize template$<$typename U  = T$>$ }\\static std\+::enable\+\_\+if$<$!std\+::is\+\_\+floating\+\_\+point$<$ U $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}} \&\&std\+::is\+\_\+unsigned$<$ U $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}} \&\&(sizeof(U) $>$ sizeof(unsigned long)), \mbox{\hyperlink{classhandle}{handle}} $>$\+::type {\bfseries cast} (U src, return\+\_\+value\+\_\+policy, \mbox{\hyperlink{classhandle}{handle}})
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/cast.\+h\end{DoxyCompactItemize}

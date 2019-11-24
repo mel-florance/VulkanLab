@@ -1,0 +1,34 @@
+\hypertarget{structdetail_1_1expr__n}{}\doxysection{Référence du modèle de la structure detail\+::expr\+\_\+n$<$ Array, T, Ts $>$}
+\label{structdetail_1_1expr__n}\index{detail::expr\_n$<$ Array, T, Ts $>$@{detail::expr\_n$<$ Array, T, Ts $>$}}
+
+
+Type trait to compute the result of a n-\/ary expression involving types (T, Ts...)  
+
+
+
+
+{\ttfamily \#include $<$array\+\_\+traits.\+h$>$}
+
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdetail_1_1expr__n_a1da91b0c184825861275f762847db744}\label{structdetail_1_1expr__n_a1da91b0c184825861275f762847db744}} 
+using {\bfseries type} = typename std\+::decay\+\_\+t$<$ \mbox{\hyperlink{structArray}{Array}} $>$\+::Derived\+::template Replace\+Value$<$ Value $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdetail_1_1expr__n_aed40ae6fa6dced033fb67607176a08d0}\label{structdetail_1_1expr__n_aed40ae6fa6dced033fb67607176a08d0}} 
+using {\bfseries Value} = expr\+\_\+t$<$ detail\+::packet\+\_\+t$<$ T $>$, detail\+::packet\+\_\+t$<$ Ts $>$... $>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename Array, typename T, typename... Ts$>$\newline
+struct detail\+::expr\+\_\+n$<$ Array, T, Ts $>$}
+
+Type trait to compute the result of a n-\/ary expression involving types (T, Ts...) 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array\+\_\+traits.\+h\end{DoxyCompactItemize}

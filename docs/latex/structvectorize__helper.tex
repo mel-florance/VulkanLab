@@ -1,0 +1,52 @@
+\hypertarget{structvectorize__helper}{}\doxysection{Référence du modèle de la structure vectorize\+\_\+helper$<$ Func, Return, Args $>$}
+\label{structvectorize__helper}\index{vectorize\_helper$<$ Func, Return, Args $>$@{vectorize\_helper$<$ Func, Return, Args $>$}}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structvectorize__helper_af05224004f4912718f47e98245b9efa7}\label{structvectorize__helper_af05224004f4912718f47e98245b9efa7}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries vectorize\+\_\+helper} (T \&\&f)
+\item 
+\mbox{\Hypertarget{structvectorize__helper_a02c424f9db2ec2f63c23741d908acd3f}\label{structvectorize__helper_a02c424f9db2ec2f63c23741d908acd3f}} 
+\mbox{\hyperlink{classobject}{object}} {\bfseries operator()} (typename \mbox{\hyperlink{structvectorize__arg}{vectorize\+\_\+arg}}$<$ Args $>$\+::type... \mbox{\hyperlink{classargs}{args}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structvectorize__helper_aedb3d74ed26237b68b0926b37576d3e4}\label{structvectorize__helper_aedb3d74ed26237b68b0926b37576d3e4}} 
+using {\bfseries arg\+\_\+call\+\_\+types} = std\+::tuple$<$ typename \mbox{\hyperlink{structvectorize__arg}{vectorize\+\_\+arg}}$<$ Args $>$\+::call\+\_\+type... $>$
+\item 
+\mbox{\Hypertarget{structvectorize__helper_a0985ff9e1581d5fe50ea5474afc9bd70}\label{structvectorize__helper_a0985ff9e1581d5fe50ea5474afc9bd70}} 
+{\footnotesize template$<$size\+\_\+t Index$>$ }\\using {\bfseries param\+\_\+n\+\_\+t} = typename std\+::tuple\+\_\+element$<$ Index, arg\+\_\+call\+\_\+types $>$\+::type
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structvectorize__helper_a28616c8268d26caffff8897fb91158ec}\label{structvectorize__helper_a28616c8268d26caffff8897fb91158ec}} 
+{\footnotesize template$<$size\+\_\+t... Index, size\+\_\+t... V\+Index, size\+\_\+t... B\+Index$>$ }\\\mbox{\hyperlink{classobject}{object}} {\bfseries run} (typename \mbox{\hyperlink{structvectorize__arg}{vectorize\+\_\+arg}}$<$ Args $>$\+::type \&...\mbox{\hyperlink{classargs}{args}}, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Index... $>$ i\+\_\+seq, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ V\+Index... $>$ vi\+\_\+seq, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ B\+Index... $>$ bi\+\_\+seq)
+\item 
+\mbox{\Hypertarget{structvectorize__helper_a0e3f27d2ff4f3f8efea5370f15616379}\label{structvectorize__helper_a0e3f27d2ff4f3f8efea5370f15616379}} 
+{\footnotesize template$<$size\+\_\+t... Index, size\+\_\+t... V\+Index, size\+\_\+t... B\+Index$>$ }\\void {\bfseries apply\+\_\+trivial} (std\+::array$<$ \mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}}, N\+Vectorized $>$ \&buffers, std\+::array$<$ void $\ast$, N $>$ \&params, Return $\ast$out, size\+\_\+t size, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Index... $>$, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ V\+Index... $>$, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ B\+Index... $>$)
+\item 
+\mbox{\Hypertarget{structvectorize__helper_a3e61d504478d3c6cfcf893711bfcd74d}\label{structvectorize__helper_a3e61d504478d3c6cfcf893711bfcd74d}} 
+{\footnotesize template$<$size\+\_\+t... Index, size\+\_\+t... V\+Index, size\+\_\+t... B\+Index$>$ }\\void {\bfseries apply\+\_\+broadcast} (std\+::array$<$ \mbox{\hyperlink{structbuffer__info}{buffer\+\_\+info}}, N\+Vectorized $>$ \&buffers, std\+::array$<$ void $\ast$, N $>$ \&params, \mbox{\hyperlink{classarray__t}{array\+\_\+t}}$<$ Return $>$ \&output\+\_\+array, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Index... $>$, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ V\+Index... $>$, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ B\+Index... $>$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structvectorize__helper_aa00643d70d9f78b1d88320b4310d90ba}\label{structvectorize__helper_aa00643d70d9f78b1d88320b4310d90ba}} 
+remove\+\_\+reference\+\_\+t$<$ Func $>$ {\bfseries f}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structvectorize__helper_ac4c4c6cd6d236a0d46421630e7eb19c6}\label{structvectorize__helper_ac4c4c6cd6d236a0d46421630e7eb19c6}} 
+static constexpr size\+\_\+t {\bfseries N} = sizeof...(Args)
+\item 
+\mbox{\Hypertarget{structvectorize__helper_ae8b5677adc19d187769de3b592188e7f}\label{structvectorize__helper_ae8b5677adc19d187769de3b592188e7f}} 
+static constexpr size\+\_\+t {\bfseries N\+Vectorized} = constexpr\+\_\+sum(\mbox{\hyperlink{structvectorize__arg}{vectorize\+\_\+arg}}$<$Args$>$\+::vectorize...)
+\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/numpy.\+h\end{DoxyCompactItemize}

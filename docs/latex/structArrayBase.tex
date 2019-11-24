@@ -1,0 +1,129 @@
+\hypertarget{structArrayBase}{}\doxysection{Référence du modèle de la structure Array\+Base$<$ Value\+\_\+, Derived\+\_\+ $>$}
+\label{structArrayBase}\index{ArrayBase$<$ Value\_, Derived\_ $>$@{ArrayBase$<$ Value\_, Derived\_ $>$}}
+
+
+\mbox{\hyperlink{structBase}{Base}} class of all arrays.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Array\+Base$<$ Value\+\_\+, Derived\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.172414cm]{structArrayBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structArrayBase_af9548059b7a28ede02ebd0907ddb7a08}\label{structArrayBase_af9548059b7a28ede02ebd0907ddb7a08}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structArrayBase_af9548059b7a28ede02ebd0907ddb7a08}{dot\+\_\+}} (const \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \&a) const
+\begin{DoxyCompactList}\small\item\em Dot product fallback implementation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a1f59b3b9a8083e87960c6c5eaadc65e8}\label{structArrayBase_a1f59b3b9a8083e87960c6c5eaadc65e8}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto \mbox{\hyperlink{structArrayBase_a1f59b3b9a8083e87960c6c5eaadc65e8}{hmean\+\_\+}} () const
+\begin{DoxyCompactList}\small\item\em Horizontal mean fallback implementation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a47820adb8b1f2df07ea1155ddcec823c}\label{structArrayBase_a47820adb8b1f2df07ea1155ddcec823c}} 
+{\footnotesize template$<$size\+\_\+t Stride, typename Index , typename Mask $>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE void {\bfseries scatter\+\_\+add\+\_\+} (void $\ast$mem, const Index \&index, const \mbox{\hyperlink{structMask}{Mask}} \&mask) const
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Iterators}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structArrayBase_a70651f43fdaf250ae402bcdfba2f9d59}\label{structArrayBase_a70651f43fdaf250ae402bcdfba2f9d59}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{structArrayBase_ad5d192d8d9fdfa3c41d0421931286e6b}\label{structArrayBase_ad5d192d8d9fdfa3c41d0421931286e6b}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{structArrayBase_a6ce1615531582228c28debdab4461e67}\label{structArrayBase_a6ce1615531582228c28debdab4461e67}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{structArrayBase_af4ba6cf087512f74be874579960867f6}\label{structArrayBase_af4ba6cf087512f74be874579960867f6}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries end} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Element access}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structArrayBase_ab30943c276e94dd98bbfa80f993d7c7a}\label{structArrayBase_ab30943c276e94dd98bbfa80f993d7c7a}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_ab30943c276e94dd98bbfa80f993d7c7a}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t i)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structArray}{Array}} indexing operator with bounds checks in debug mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a2950ea4b9dd40cd9acb74c75d85e00e2}\label{structArrayBase_a2950ea4b9dd40cd9acb74c75d85e00e2}} 
+decltype(auto) E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a2950ea4b9dd40cd9acb74c75d85e00e2}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t i) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structArray}{Array}} indexing operator with bounds checks in debug mode, const version. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_acc9774e8e22b00605e388d1a0746cbb7}\label{structArrayBase_acc9774e8e22b00605e388d1a0746cbb7}} 
+{\footnotesize template$<$typename Mask , enable\+\_\+if\+\_\+mask\+\_\+t$<$ Mask $>$  = 0$>$ }\\E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE auto {\bfseries operator\mbox{[}$\,$\mbox{]}} (const \mbox{\hyperlink{structMask}{Mask}} \&m)
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Curiously Recurring Template design pattern}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}\label{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}} 
+using \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} = Derived\+\_\+
+\begin{DoxyCompactList}\small\item\em Alias to the derived type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_aadbe35ca6afec4f6b32fbf66bf39e78b}\label{structArrayBase_aadbe35ca6afec4f6b32fbf66bf39e78b}} 
+E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \& \mbox{\hyperlink{structArrayBase_aadbe35ca6afec4f6b32fbf66bf39e78b}{derived}} ()
+\begin{DoxyCompactList}\small\item\em Cast to derived type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a32b4e90bfadf4509220b5d9e42c92e62}\label{structArrayBase_a32b4e90bfadf4509220b5d9e42c92e62}} 
+const E\+N\+O\+K\+I\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structArrayBase_a64b8ebeeff4a1417263b8d108b76da13}{Derived}} \& \mbox{\hyperlink{structArrayBase_a32b4e90bfadf4509220b5d9e42c92e62}{derived}} () const
+\begin{DoxyCompactList}\small\item\em Cast to derived type (const version) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Basic declarations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structArrayBase_a21f8a4c388eb1af584128cf730f58881}\label{structArrayBase_a21f8a4c388eb1af584128cf730f58881}} 
+using \mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}} = Value\+\_\+
+\begin{DoxyCompactList}\small\item\em Actual type underlying the derived array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a0c38fc04bc679575254a9733c0c08d11}\label{structArrayBase_a0c38fc04bc679575254a9733c0c08d11}} 
+using \mbox{\hyperlink{structArrayBase_a0c38fc04bc679575254a9733c0c08d11}{Scalar}} = scalar\+\_\+t$<$ Value\+\_\+ $>$
+\begin{DoxyCompactList}\small\item\em Scalar data type all the way at the lowest level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a4cb0f835c14f1ef9b84670239481bae7}\label{structArrayBase_a4cb0f835c14f1ef9b84670239481bae7}} 
+static constexpr size\+\_\+t \mbox{\hyperlink{structArrayBase_a4cb0f835c14f1ef9b84670239481bae7}{Depth}} = 1 + array\+\_\+depth\+\_\+v$<$\mbox{\hyperlink{structArrayBase_a21f8a4c388eb1af584128cf730f58881}{Value}}$>$
+\begin{DoxyCompactList}\small\item\em Specifies how deeply nested this array is. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a195f7ba63b80151fc381675c53b742e7}\label{structArrayBase_a195f7ba63b80151fc381675c53b742e7}} 
+static constexpr bool \mbox{\hyperlink{structArrayBase_a195f7ba63b80151fc381675c53b742e7}{Is\+Mask}} = is\+\_\+mask\+\_\+v$<$Value\+\_\+$>$
+\begin{DoxyCompactList}\small\item\em Is this a mask type? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a6d6ec5b9791f8e2c1e1bbceed901395f}\label{structArrayBase_a6d6ec5b9791f8e2c1e1bbceed901395f}} 
+static constexpr bool \mbox{\hyperlink{structArrayBase_a6d6ec5b9791f8e2c1e1bbceed901395f}{Is\+Dynamic}} = is\+\_\+dynamic\+\_\+v$<$Value\+\_\+$>$
+\begin{DoxyCompactList}\small\item\em Is this a dynamically allocated array (no by default) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a68a4f1e5c753c48f8e467aed4c5c97b4}\label{structArrayBase_a68a4f1e5c753c48f8e467aed4c5c97b4}} 
+static constexpr bool \mbox{\hyperlink{structArrayBase_a68a4f1e5c753c48f8e467aed4c5c97b4}{Is\+Diff}} = is\+\_\+diff\+\_\+array\+\_\+v$<$Value\+\_\+$>$
+\begin{DoxyCompactList}\small\item\em Does this array compute derivatives using automatic differentation? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_ac8d1de3fe78e918b82f47ae5f0d193a7}\label{structArrayBase_ac8d1de3fe78e918b82f47ae5f0d193a7}} 
+static constexpr bool \mbox{\hyperlink{structArrayBase_ac8d1de3fe78e918b82f47ae5f0d193a7}{Is\+C\+U\+DA}} = is\+\_\+cuda\+\_\+array\+\_\+v$<$Value\+\_\+$>$
+\begin{DoxyCompactList}\small\item\em Does this array reside on the G\+PU? (via C\+U\+DA) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a62ac279d1db6b6696bf0fa4d247de0c1}\label{structArrayBase_a62ac279d1db6b6696bf0fa4d247de0c1}} 
+static constexpr bool \mbox{\hyperlink{structArrayBase_a62ac279d1db6b6696bf0fa4d247de0c1}{Is\+Native}} = false
+\begin{DoxyCompactList}\small\item\em Does this array map operations onto native vector instructions? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_ae4beb7c14c7733d35766d2390d6e9118}\label{structArrayBase_ae4beb7c14c7733d35766d2390d6e9118}} 
+static constexpr bool \mbox{\hyperlink{structArrayBase_ae4beb7c14c7733d35766d2390d6e9118}{Is\+K\+Mask}} = false
+\begin{DoxyCompactList}\small\item\em Is this an A\+V\+X512-\/style \textquotesingle{}k\textquotesingle{} mask register? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a82955fff8ba5ad0b2e1abba6e0b09511}\label{structArrayBase_a82955fff8ba5ad0b2e1abba6e0b09511}} 
+static constexpr bool \mbox{\hyperlink{structArrayBase_a82955fff8ba5ad0b2e1abba6e0b09511}{Is\+Recursive}} = false
+\begin{DoxyCompactList}\small\item\em Is the storage representation of this array implemented recursively? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a85f57aa29168d2a58e128084455b76c5}\label{structArrayBase_a85f57aa29168d2a58e128084455b76c5}} 
+static constexpr bool \mbox{\hyperlink{structArrayBase_a85f57aa29168d2a58e128084455b76c5}{Broadcast\+Prefer\+Outer}} = true
+\begin{DoxyCompactList}\small\item\em Always prefer broadcasting to the outer dimensions of a N-\/D array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_ab2fa98d0f1beedf83f91208ea3b16b51}\label{structArrayBase_ab2fa98d0f1beedf83f91208ea3b16b51}} 
+static constexpr bool \mbox{\hyperlink{structArrayBase_ab2fa98d0f1beedf83f91208ea3b16b51}{Is\+Complex}} = false
+\begin{DoxyCompactList}\small\item\em Does this array represent a complex number? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a1a58f0cda68f29152bcde32216a9cc3c}\label{structArrayBase_a1a58f0cda68f29152bcde32216a9cc3c}} 
+static constexpr bool \mbox{\hyperlink{structArrayBase_a1a58f0cda68f29152bcde32216a9cc3c}{Is\+Quaternion}} = false
+\begin{DoxyCompactList}\small\item\em Does this array represent a quaternion? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_a3e93e6271c9468b82e01008bb46affed}\label{structArrayBase_a3e93e6271c9468b82e01008bb46affed}} 
+static constexpr bool \mbox{\hyperlink{structArrayBase_a3e93e6271c9468b82e01008bb46affed}{Is\+Matrix}} = false
+\begin{DoxyCompactList}\small\item\em Does this array represent a matrix? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArrayBase_aa3685250f4bae176c1ccc2a038dd7489}\label{structArrayBase_aa3685250f4bae176c1ccc2a038dd7489}} 
+static constexpr bool \mbox{\hyperlink{structArrayBase_aa3685250f4bae176c1ccc2a038dd7489}{Is\+Masked\+Array}} = false
+\begin{DoxyCompactList}\small\item\em Does this array represent the result of a \textquotesingle{}masked(...)\textquotesingle{} epxpression? \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename Value\+\_\+, typename Derived\+\_\+$>$\newline
+struct Array\+Base$<$ Value\+\_\+, Derived\+\_\+ $>$}
+
+\mbox{\hyperlink{structBase}{Base}} class of all arrays. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array\+\_\+base.\+h\end{DoxyCompactItemize}

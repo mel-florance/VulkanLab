@@ -1,0 +1,385 @@
+\hypertarget{classWidget}{}\doxysection{Référence de la classe Widget}
+\label{classWidget}\index{Widget@{Widget}}
+
+
+\mbox{\hyperlink{structBase}{Base}} class of all widgets.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/widget.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classWidget}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWidget_ad8a3df2ea55d6c75491fbc200dee4a98}\label{classWidget_ad8a3df2ea55d6c75491fbc200dee4a98}} 
+{\bfseries Widget} (std\+::string message)
+\item 
+\mbox{\Hypertarget{classWidget_abd155dd94b1576e39312bf5999518622}\label{classWidget_abd155dd94b1576e39312bf5999518622}} 
+std\+::string {\bfseries the\+\_\+message} () const
+\item 
+\mbox{\Hypertarget{classWidget_a30a0f7c911d2e945e1cb5bb9d1d28c92}\label{classWidget_a30a0f7c911d2e945e1cb5bb9d1d28c92}} 
+virtual int {\bfseries the\+\_\+answer} () const =0
+\item 
+\mbox{\Hypertarget{classWidget_ae893a72dfdef4d6bd223ab080e131efd}\label{classWidget_ae893a72dfdef4d6bd223ab080e131efd}} 
+\mbox{\hyperlink{classWidget_ae893a72dfdef4d6bd223ab080e131efd}{Widget}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}})
+\begin{DoxyCompactList}\small\item\em Construct a new widget with the given parent widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a8e185a157dbf22756147dbae8705316d}\label{classWidget_a8e185a157dbf22756147dbae8705316d}} 
+\mbox{\hyperlink{classWidget}{Widget}} $\ast$ \mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}} ()
+\begin{DoxyCompactList}\small\item\em Return the parent widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a301411ef260e9247040396357b44184e}\label{classWidget_a301411ef260e9247040396357b44184e}} 
+const \mbox{\hyperlink{classWidget}{Widget}} $\ast$ \mbox{\hyperlink{classWidget_a301411ef260e9247040396357b44184e}{parent}} () const
+\begin{DoxyCompactList}\small\item\em Return the parent widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a4472c9ccc7ecff05c1752b9227ee385a}\label{classWidget_a4472c9ccc7ecff05c1752b9227ee385a}} 
+void \mbox{\hyperlink{classWidget_a4472c9ccc7ecff05c1752b9227ee385a}{set\+\_\+parent}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}})
+\begin{DoxyCompactList}\small\item\em Set the parent widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a1f2095d91f5c0784f7bb5435b4f82146}\label{classWidget_a1f2095d91f5c0784f7bb5435b4f82146}} 
+\mbox{\hyperlink{classLayout}{Layout}} $\ast$ \mbox{\hyperlink{classWidget_a1f2095d91f5c0784f7bb5435b4f82146}{layout}} ()
+\begin{DoxyCompactList}\small\item\em Return the used \mbox{\hyperlink{classLayout}{Layout}} generator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a9896777f36bfc15958923689689ef283}\label{classWidget_a9896777f36bfc15958923689689ef283}} 
+const \mbox{\hyperlink{classLayout}{Layout}} $\ast$ \mbox{\hyperlink{classWidget_a9896777f36bfc15958923689689ef283}{layout}} () const
+\begin{DoxyCompactList}\small\item\em Return the used \mbox{\hyperlink{classLayout}{Layout}} generator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a69d625e0ad8e514d4c83af411e96f759}\label{classWidget_a69d625e0ad8e514d4c83af411e96f759}} 
+void \mbox{\hyperlink{classWidget_a69d625e0ad8e514d4c83af411e96f759}{set\+\_\+layout}} (\mbox{\hyperlink{classLayout}{Layout}} $\ast$\mbox{\hyperlink{classWidget_a1f2095d91f5c0784f7bb5435b4f82146}{layout}})
+\begin{DoxyCompactList}\small\item\em Set the used \mbox{\hyperlink{classLayout}{Layout}} generator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a0e49299e4a207bc3f61585216dead5c2}\label{classWidget_a0e49299e4a207bc3f61585216dead5c2}} 
+\mbox{\hyperlink{classTheme}{Theme}} $\ast$ \mbox{\hyperlink{classWidget_a0e49299e4a207bc3f61585216dead5c2}{theme}} ()
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{classTheme}{Theme}} used to draw this widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ac1bc4b0803dc81bda25ad23957682467}\label{classWidget_ac1bc4b0803dc81bda25ad23957682467}} 
+const \mbox{\hyperlink{classTheme}{Theme}} $\ast$ \mbox{\hyperlink{classWidget_ac1bc4b0803dc81bda25ad23957682467}{theme}} () const
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{classTheme}{Theme}} used to draw this widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_aeed0de1f21beaab1608b524145a714d7}\label{classWidget_aeed0de1f21beaab1608b524145a714d7}} 
+virtual void \mbox{\hyperlink{classWidget_aeed0de1f21beaab1608b524145a714d7}{set\+\_\+theme}} (\mbox{\hyperlink{classTheme}{Theme}} $\ast$\mbox{\hyperlink{classWidget_a0e49299e4a207bc3f61585216dead5c2}{theme}})
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classTheme}{Theme}} used to draw this widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ad1b570576e97644587adb92c05444b7c}\label{classWidget_ad1b570576e97644587adb92c05444b7c}} 
+const Vector2i \& \mbox{\hyperlink{classWidget_ad1b570576e97644587adb92c05444b7c}{position}} () const
+\begin{DoxyCompactList}\small\item\em Return the position relative to the parent widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_aa5feebd3ed8540096e75981151754643}\label{classWidget_aa5feebd3ed8540096e75981151754643}} 
+void \mbox{\hyperlink{classWidget_aa5feebd3ed8540096e75981151754643}{set\+\_\+position}} (const Vector2i \&pos)
+\begin{DoxyCompactList}\small\item\em Set the position relative to the parent widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_aae971cdee628cc7563bd2c041adb29ee}\label{classWidget_aae971cdee628cc7563bd2c041adb29ee}} 
+Vector2i \mbox{\hyperlink{classWidget_aae971cdee628cc7563bd2c041adb29ee}{absolute\+\_\+position}} () const
+\begin{DoxyCompactList}\small\item\em Return the absolute position on screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_aa793702fbc88538c62fb6e01e7dea071}\label{classWidget_aa793702fbc88538c62fb6e01e7dea071}} 
+const Vector2i \& \mbox{\hyperlink{classWidget_aa793702fbc88538c62fb6e01e7dea071}{size}} () const
+\begin{DoxyCompactList}\small\item\em Return the size of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a38440936d7c655a6611d669dcf2cb12b}\label{classWidget_a38440936d7c655a6611d669dcf2cb12b}} 
+void \mbox{\hyperlink{classWidget_a38440936d7c655a6611d669dcf2cb12b}{set\+\_\+size}} (const Vector2i \&\mbox{\hyperlink{classWidget_aa793702fbc88538c62fb6e01e7dea071}{size}})
+\begin{DoxyCompactList}\small\item\em set the size of the widget \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a03c9a3f3ff19d7f39b8e6be03357d87a}\label{classWidget_a03c9a3f3ff19d7f39b8e6be03357d87a}} 
+int \mbox{\hyperlink{classWidget_a03c9a3f3ff19d7f39b8e6be03357d87a}{width}} () const
+\begin{DoxyCompactList}\small\item\em Return the width of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ad9ae45c9a4d262fc183291de83fac95e}\label{classWidget_ad9ae45c9a4d262fc183291de83fac95e}} 
+void \mbox{\hyperlink{classWidget_ad9ae45c9a4d262fc183291de83fac95e}{set\+\_\+width}} (int \mbox{\hyperlink{classWidget_a03c9a3f3ff19d7f39b8e6be03357d87a}{width}})
+\begin{DoxyCompactList}\small\item\em Set the width of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ad83cc00012e97a403dd65b289f4ceffe}\label{classWidget_ad83cc00012e97a403dd65b289f4ceffe}} 
+int \mbox{\hyperlink{classWidget_ad83cc00012e97a403dd65b289f4ceffe}{height}} () const
+\begin{DoxyCompactList}\small\item\em Return the height of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a9bef1b725c25592fb7dd730bb03d3088}\label{classWidget_a9bef1b725c25592fb7dd730bb03d3088}} 
+void \mbox{\hyperlink{classWidget_a9bef1b725c25592fb7dd730bb03d3088}{set\+\_\+height}} (int \mbox{\hyperlink{classWidget_ad83cc00012e97a403dd65b289f4ceffe}{height}})
+\begin{DoxyCompactList}\small\item\em Set the height of the widget. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWidget_a92ae7760fe923399a3525ea81533256e}{set\+\_\+fixed\+\_\+size}} (const Vector2i \&\mbox{\hyperlink{classWidget_a648d2992b60fd3da967d783ab8097f2b}{fixed\+\_\+size}})
+\begin{DoxyCompactList}\small\item\em Set the fixed size of this widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a648d2992b60fd3da967d783ab8097f2b}\label{classWidget_a648d2992b60fd3da967d783ab8097f2b}} 
+const Vector2i \& \mbox{\hyperlink{classWidget_a648d2992b60fd3da967d783ab8097f2b}{fixed\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em Return the fixed size (see \mbox{\hyperlink{classWidget_a92ae7760fe923399a3525ea81533256e}{set\+\_\+fixed\+\_\+size()}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a8804f23c01d9d826d81320e0bfe82eaf}\label{classWidget_a8804f23c01d9d826d81320e0bfe82eaf}} 
+int {\bfseries fixed\+\_\+width} () const
+\item 
+\mbox{\Hypertarget{classWidget_aac23a703da939bf94d99e1b9f003612b}\label{classWidget_aac23a703da939bf94d99e1b9f003612b}} 
+int {\bfseries fixed\+\_\+height} () const
+\item 
+\mbox{\Hypertarget{classWidget_a881b782dd52655673f05cab9c3f1725c}\label{classWidget_a881b782dd52655673f05cab9c3f1725c}} 
+void \mbox{\hyperlink{classWidget_a881b782dd52655673f05cab9c3f1725c}{set\+\_\+fixed\+\_\+width}} (int \mbox{\hyperlink{classWidget_a03c9a3f3ff19d7f39b8e6be03357d87a}{width}})
+\begin{DoxyCompactList}\small\item\em Set the fixed width (see \mbox{\hyperlink{classWidget_a92ae7760fe923399a3525ea81533256e}{set\+\_\+fixed\+\_\+size()}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a4599e3bee0feb318886d5701f6d8b312}\label{classWidget_a4599e3bee0feb318886d5701f6d8b312}} 
+void \mbox{\hyperlink{classWidget_a4599e3bee0feb318886d5701f6d8b312}{set\+\_\+fixed\+\_\+height}} (int \mbox{\hyperlink{classWidget_ad83cc00012e97a403dd65b289f4ceffe}{height}})
+\begin{DoxyCompactList}\small\item\em Set the fixed height (see \mbox{\hyperlink{classWidget_a92ae7760fe923399a3525ea81533256e}{set\+\_\+fixed\+\_\+size()}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a5aadbf5207a17eb0f12e8bab5ada9c02}\label{classWidget_a5aadbf5207a17eb0f12e8bab5ada9c02}} 
+bool \mbox{\hyperlink{classWidget_a5aadbf5207a17eb0f12e8bab5ada9c02}{visible}} () const
+\begin{DoxyCompactList}\small\item\em Return whether or not the widget is currently visible (assuming all parents are visible) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_aecd305e24752e046fd68639aefd4e0fa}\label{classWidget_aecd305e24752e046fd68639aefd4e0fa}} 
+void \mbox{\hyperlink{classWidget_aecd305e24752e046fd68639aefd4e0fa}{set\+\_\+visible}} (bool \mbox{\hyperlink{classWidget_a5aadbf5207a17eb0f12e8bab5ada9c02}{visible}})
+\begin{DoxyCompactList}\small\item\em Set whether or not the widget is currently visible (assuming all parents are visible) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_affd3ab07365d049b41179075474db2a5}\label{classWidget_affd3ab07365d049b41179075474db2a5}} 
+bool \mbox{\hyperlink{classWidget_affd3ab07365d049b41179075474db2a5}{visible\+\_\+recursive}} () const
+\begin{DoxyCompactList}\small\item\em Check if this widget is currently visible, taking parent widgets into account. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a2cf46c3bf956d8e209c7567c65d4b198}\label{classWidget_a2cf46c3bf956d8e209c7567c65d4b198}} 
+int \mbox{\hyperlink{classWidget_a2cf46c3bf956d8e209c7567c65d4b198}{child\+\_\+count}} () const
+\begin{DoxyCompactList}\small\item\em Return the number of child widgets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ae3cfd5b738b7bd57ec4a6127801385df}\label{classWidget_ae3cfd5b738b7bd57ec4a6127801385df}} 
+const std\+::vector$<$ \mbox{\hyperlink{classWidget}{Widget}} $\ast$ $>$ \& \mbox{\hyperlink{classWidget_ae3cfd5b738b7bd57ec4a6127801385df}{children}} () const
+\begin{DoxyCompactList}\small\item\em Return the list of child widgets of the current widget. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classWidget_a660e832776cbb8a3438eb2e8ee60b644}{add\+\_\+child}} (int index, \mbox{\hyperlink{classWidget}{Widget}} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Add a child widget to the current widget at the specified index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a7f533680ed21f6712f5d456b64fa30fd}\label{classWidget_a7f533680ed21f6712f5d456b64fa30fd}} 
+void \mbox{\hyperlink{classWidget_a7f533680ed21f6712f5d456b64fa30fd}{add\+\_\+child}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Convenience function which appends a widget at the end. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_af63c783ff80d0a85239722feeb0a8480}\label{classWidget_af63c783ff80d0a85239722feeb0a8480}} 
+void \mbox{\hyperlink{classWidget_af63c783ff80d0a85239722feeb0a8480}{remove\+\_\+child\+\_\+at}} (int index)
+\begin{DoxyCompactList}\small\item\em Remove a child widget by index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ac981422577f4e0dfcbc8be7f4ba6d790}\label{classWidget_ac981422577f4e0dfcbc8be7f4ba6d790}} 
+void \mbox{\hyperlink{classWidget_ac981422577f4e0dfcbc8be7f4ba6d790}{remove\+\_\+child}} (const \mbox{\hyperlink{classWidget}{Widget}} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Remove a child widget by value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ad5b1a75a0e3e8b015b9351086ad5b56e}\label{classWidget_ad5b1a75a0e3e8b015b9351086ad5b56e}} 
+const \mbox{\hyperlink{classWidget}{Widget}} $\ast$ \mbox{\hyperlink{classWidget_ad5b1a75a0e3e8b015b9351086ad5b56e}{child\+\_\+at}} (int index) const
+\begin{DoxyCompactList}\small\item\em Retrieves the child at the specific position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ad0aa499d4a015ed4227e95962cd4387a}\label{classWidget_ad0aa499d4a015ed4227e95962cd4387a}} 
+\mbox{\hyperlink{classWidget}{Widget}} $\ast$ \mbox{\hyperlink{classWidget_ad0aa499d4a015ed4227e95962cd4387a}{child\+\_\+at}} (int index)
+\begin{DoxyCompactList}\small\item\em Retrieves the child at the specific position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a9f07c12e61db62279c623b6885217c62}\label{classWidget_a9f07c12e61db62279c623b6885217c62}} 
+int \mbox{\hyperlink{classWidget_a9f07c12e61db62279c623b6885217c62}{child\+\_\+index}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$widget) const
+\begin{DoxyCompactList}\small\item\em Returns the index of a specific child or -\/1 if not found. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ad97d7e05141ee3fe6dab842d214f236c}\label{classWidget_ad97d7e05141ee3fe6dab842d214f236c}} 
+{\footnotesize template$<$typename Widget\+Class , typename... Args$>$ }\\Widget\+Class $\ast$ \mbox{\hyperlink{classWidget_ad97d7e05141ee3fe6dab842d214f236c}{add}} (const Args \&... \mbox{\hyperlink{classargs}{args}})
+\begin{DoxyCompactList}\small\item\em Variadic shorthand notation to construct and add a child widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}\label{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}} 
+\mbox{\hyperlink{classWindow}{Window}} $\ast$ \mbox{\hyperlink{classWidget_a7ce97c9a8641f8f84638e0cd387b390c}{window}} ()
+\begin{DoxyCompactList}\small\item\em Walk up the hierarchy and return the parent window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a900f114fb76d6fb7df4bb8ca641765ba}\label{classWidget_a900f114fb76d6fb7df4bb8ca641765ba}} 
+const \mbox{\hyperlink{classWindow}{Window}} $\ast$ \mbox{\hyperlink{classWidget_a900f114fb76d6fb7df4bb8ca641765ba}{window}} () const
+\begin{DoxyCompactList}\small\item\em Walk up the hierarchy and return the parent window (const version) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a973690b469b517c22f28e5c284920505}\label{classWidget_a973690b469b517c22f28e5c284920505}} 
+\mbox{\hyperlink{classScreen}{Screen}} $\ast$ \mbox{\hyperlink{classWidget_a973690b469b517c22f28e5c284920505}{screen}} ()
+\begin{DoxyCompactList}\small\item\em Walk up the hierarchy and return the parent screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a56d9c6906d67ded909c9e089402b18b4}\label{classWidget_a56d9c6906d67ded909c9e089402b18b4}} 
+const \mbox{\hyperlink{classScreen}{Screen}} $\ast$ \mbox{\hyperlink{classWidget_a56d9c6906d67ded909c9e089402b18b4}{screen}} () const
+\begin{DoxyCompactList}\small\item\em Walk up the hierarchy and return the parent screen (const version) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a658f09acfd64c47086d01eb1b66e768f}\label{classWidget_a658f09acfd64c47086d01eb1b66e768f}} 
+bool \mbox{\hyperlink{classWidget_a658f09acfd64c47086d01eb1b66e768f}{enabled}} () const
+\begin{DoxyCompactList}\small\item\em Return whether or not this widget is currently enabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_aff3b5886a0a7c3fdf9db00c246858371}\label{classWidget_aff3b5886a0a7c3fdf9db00c246858371}} 
+void \mbox{\hyperlink{classWidget_aff3b5886a0a7c3fdf9db00c246858371}{set\+\_\+enabled}} (bool \mbox{\hyperlink{classWidget_a658f09acfd64c47086d01eb1b66e768f}{enabled}})
+\begin{DoxyCompactList}\small\item\em Set whether or not this widget is currently enabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a32721effaa85d80d0a470cf2320ff49d}\label{classWidget_a32721effaa85d80d0a470cf2320ff49d}} 
+bool \mbox{\hyperlink{classWidget_a32721effaa85d80d0a470cf2320ff49d}{focused}} () const
+\begin{DoxyCompactList}\small\item\em Return whether or not this widget is currently focused. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a81fbc6ce75ec232de44e577900c9370d}\label{classWidget_a81fbc6ce75ec232de44e577900c9370d}} 
+void \mbox{\hyperlink{classWidget_a81fbc6ce75ec232de44e577900c9370d}{set\+\_\+focused}} (bool \mbox{\hyperlink{classWidget_a32721effaa85d80d0a470cf2320ff49d}{focused}})
+\begin{DoxyCompactList}\small\item\em Set whether or not this widget is currently focused. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a2aa1302e0a088684d71df7c627cfc75b}\label{classWidget_a2aa1302e0a088684d71df7c627cfc75b}} 
+void \mbox{\hyperlink{classWidget_a2aa1302e0a088684d71df7c627cfc75b}{request\+\_\+focus}} ()
+\begin{DoxyCompactList}\small\item\em Request the focus to be moved to this widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ac628e20a7b317ecfaeb53d95f1923536}\label{classWidget_ac628e20a7b317ecfaeb53d95f1923536}} 
+const std\+::string \& {\bfseries tooltip} () const
+\item 
+\mbox{\Hypertarget{classWidget_abe6cc88ab0a8fc0742a1cb991b1a3b61}\label{classWidget_abe6cc88ab0a8fc0742a1cb991b1a3b61}} 
+void {\bfseries set\+\_\+tooltip} (const std\+::string \&tooltip)
+\item 
+\mbox{\Hypertarget{classWidget_a2d318554d271e0bdb2d9ff64963aa2cc}\label{classWidget_a2d318554d271e0bdb2d9ff64963aa2cc}} 
+int \mbox{\hyperlink{classWidget_a2d318554d271e0bdb2d9ff64963aa2cc}{font\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em Return current font size. If not set the default of the current theme will be returned. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a6b0a51e0b850c6643cddbd2ce29e7ab3}\label{classWidget_a6b0a51e0b850c6643cddbd2ce29e7ab3}} 
+void \mbox{\hyperlink{classWidget_a6b0a51e0b850c6643cddbd2ce29e7ab3}{set\+\_\+font\+\_\+size}} (int \mbox{\hyperlink{classWidget_a2d318554d271e0bdb2d9ff64963aa2cc}{font\+\_\+size}})
+\begin{DoxyCompactList}\small\item\em Set the font size of this widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a4a38648ea3c65b423cfedfd45255f349}\label{classWidget_a4a38648ea3c65b423cfedfd45255f349}} 
+bool \mbox{\hyperlink{classWidget_a4a38648ea3c65b423cfedfd45255f349}{has\+\_\+font\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em Return whether the font size is explicitly specified for this widget. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classWidget_a63595f509d85057f9cb686478b5881f0}{icon\+\_\+extra\+\_\+scale}} () const
+\item 
+void \mbox{\hyperlink{classWidget_a8cca12523083474303364394610e0b44}{set\+\_\+icon\+\_\+extra\+\_\+scale}} (float scale)
+\item 
+\mbox{\Hypertarget{classWidget_a625ca0233c9a7609b733d723578c4764}\label{classWidget_a625ca0233c9a7609b733d723578c4764}} 
+\mbox{\hyperlink{include_2nanogui_2common_8h_ac9c915d433bdce7b6b47c0956c850f43}{Cursor}} \mbox{\hyperlink{classWidget_a625ca0233c9a7609b733d723578c4764}{cursor}} () const
+\begin{DoxyCompactList}\small\item\em Return a pointer to the cursor of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ada115a14538f4c8326ce735ffd576a39}\label{classWidget_ada115a14538f4c8326ce735ffd576a39}} 
+void \mbox{\hyperlink{classWidget_ada115a14538f4c8326ce735ffd576a39}{set\+\_\+cursor}} (\mbox{\hyperlink{include_2nanogui_2common_8h_ac9c915d433bdce7b6b47c0956c850f43}{Cursor}} \mbox{\hyperlink{classWidget_a625ca0233c9a7609b733d723578c4764}{cursor}})
+\begin{DoxyCompactList}\small\item\em Set the cursor of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ad48ce5b40932c0a87af446baceaabf50}\label{classWidget_ad48ce5b40932c0a87af446baceaabf50}} 
+bool \mbox{\hyperlink{classWidget_ad48ce5b40932c0a87af446baceaabf50}{contains}} (const Vector2i \&p) const
+\begin{DoxyCompactList}\small\item\em Check if the widget contains a certain position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a3a116bd3c9d792aa709edbbbf194e799}\label{classWidget_a3a116bd3c9d792aa709edbbbf194e799}} 
+\mbox{\hyperlink{classWidget}{Widget}} $\ast$ \mbox{\hyperlink{classWidget_a3a116bd3c9d792aa709edbbbf194e799}{find\+\_\+widget}} (const Vector2i \&p)
+\begin{DoxyCompactList}\small\item\em Determine the widget located at the given position value (recursive) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a0c589dd120ec6156e38828fcb22e7dd0}\label{classWidget_a0c589dd120ec6156e38828fcb22e7dd0}} 
+const \mbox{\hyperlink{classWidget}{Widget}} $\ast$ {\bfseries find\+\_\+widget} (const Vector2i \&p) const
+\item 
+\mbox{\Hypertarget{classWidget_a734311a7dff38ba580147df04cb65373}\label{classWidget_a734311a7dff38ba580147df04cb65373}} 
+virtual bool \mbox{\hyperlink{classWidget_a734311a7dff38ba580147df04cb65373}{mouse\+\_\+button\+\_\+event}} (const Vector2i \&p, int button, bool down, int modifiers)
+\begin{DoxyCompactList}\small\item\em Handle a mouse button event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_ae1c7d166adad9e10cbc4903555107ea1}\label{classWidget_ae1c7d166adad9e10cbc4903555107ea1}} 
+virtual bool \mbox{\hyperlink{classWidget_ae1c7d166adad9e10cbc4903555107ea1}{mouse\+\_\+motion\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers)
+\begin{DoxyCompactList}\small\item\em Handle a mouse motion event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_afc5a161bee9326267ffbd050b977a4cc}\label{classWidget_afc5a161bee9326267ffbd050b977a4cc}} 
+virtual bool \mbox{\hyperlink{classWidget_afc5a161bee9326267ffbd050b977a4cc}{mouse\+\_\+drag\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers)
+\begin{DoxyCompactList}\small\item\em Handle a mouse drag event (default implementation\+: do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_aa10e384d949266425feeea8dedd051e8}\label{classWidget_aa10e384d949266425feeea8dedd051e8}} 
+virtual bool \mbox{\hyperlink{classWidget_aa10e384d949266425feeea8dedd051e8}{mouse\+\_\+enter\+\_\+event}} (const Vector2i \&p, bool enter)
+\begin{DoxyCompactList}\small\item\em Handle a mouse enter/leave event (default implementation\+: record this fact, but do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_aabc13ee63e6a6910798d108c971199a5}\label{classWidget_aabc13ee63e6a6910798d108c971199a5}} 
+virtual bool \mbox{\hyperlink{classWidget_aabc13ee63e6a6910798d108c971199a5}{scroll\+\_\+event}} (const Vector2i \&p, const \mbox{\hyperlink{structArray}{Vector2f}} \&rel)
+\begin{DoxyCompactList}\small\item\em Handle a mouse scroll event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_aa1c823fdfd6257cd0da1d51bd7443e88}\label{classWidget_aa1c823fdfd6257cd0da1d51bd7443e88}} 
+virtual bool \mbox{\hyperlink{classWidget_aa1c823fdfd6257cd0da1d51bd7443e88}{focus\+\_\+event}} (bool \mbox{\hyperlink{classWidget_a32721effaa85d80d0a470cf2320ff49d}{focused}})
+\begin{DoxyCompactList}\small\item\em Handle a focus change event (default implementation\+: record the focus status, but do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a473265bfe131efa251e79d562c8c05eb}\label{classWidget_a473265bfe131efa251e79d562c8c05eb}} 
+virtual bool \mbox{\hyperlink{classWidget_a473265bfe131efa251e79d562c8c05eb}{keyboard\+\_\+event}} (int key, int scancode, int action, int modifiers)
+\begin{DoxyCompactList}\small\item\em Handle a keyboard event (default implementation\+: do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_abe0860c496749024421ae4219847279d}\label{classWidget_abe0860c496749024421ae4219847279d}} 
+virtual bool \mbox{\hyperlink{classWidget_abe0860c496749024421ae4219847279d}{keyboard\+\_\+character\+\_\+event}} (unsigned int codepoint)
+\begin{DoxyCompactList}\small\item\em Handle text input (U\+T\+F-\/32 format) (default implementation\+: do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a91c69cc5904c76b8214c37334666bc55}\label{classWidget_a91c69cc5904c76b8214c37334666bc55}} 
+virtual Vector2i \mbox{\hyperlink{classWidget_a91c69cc5904c76b8214c37334666bc55}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const
+\begin{DoxyCompactList}\small\item\em Compute the preferred size of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_addd9a13f6a3f5af7105865927ba5c721}\label{classWidget_addd9a13f6a3f5af7105865927ba5c721}} 
+virtual void \mbox{\hyperlink{classWidget_addd9a13f6a3f5af7105865927ba5c721}{perform\+\_\+layout}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Invoke the associated layout generator to properly place child widgets, if any. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_abfe4a93f411a04598128c7b9aac16909}\label{classWidget_abfe4a93f411a04598128c7b9aac16909}} 
+virtual void \mbox{\hyperlink{classWidget_abfe4a93f411a04598128c7b9aac16909}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Draw the widget (and all child widgets) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWidget_a714cf798aadb4d615f6f60a355382c02}\label{classWidget_a714cf798aadb4d615f6f60a355382c02}} 
+virtual \mbox{\hyperlink{classWidget_a714cf798aadb4d615f6f60a355382c02}{$\sim$\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em Free all resources used by the widget and any children. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classWidget_abeeee3340a17693c986c16f96e992faa}{icon\+\_\+scale}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWidget_af7cab3be0ed70e0f6e97593ec7d9adca}\label{classWidget_af7cab3be0ed70e0f6e97593ec7d9adca}} 
+\mbox{\hyperlink{classWidget}{Widget}} $\ast$ {\bfseries m\+\_\+parent}
+\item 
+\mbox{\Hypertarget{classWidget_aa9f8ab8584ce386c3eee8fa54e39dd23}\label{classWidget_aa9f8ab8584ce386c3eee8fa54e39dd23}} 
+\mbox{\hyperlink{classref}{ref}}$<$ \mbox{\hyperlink{classTheme}{Theme}} $>$ {\bfseries m\+\_\+theme}
+\item 
+\mbox{\Hypertarget{classWidget_af7d863079299bfd5294dc8fc7a70564c}\label{classWidget_af7d863079299bfd5294dc8fc7a70564c}} 
+\mbox{\hyperlink{classref}{ref}}$<$ \mbox{\hyperlink{classLayout}{Layout}} $>$ {\bfseries m\+\_\+layout}
+\item 
+\mbox{\Hypertarget{classWidget_a2283b6f66b49b82dc7cf5e7219cc0e54}\label{classWidget_a2283b6f66b49b82dc7cf5e7219cc0e54}} 
+Vector2i {\bfseries m\+\_\+pos}
+\item 
+\mbox{\Hypertarget{classWidget_a998f8f17497ad3aa5cf6c56f9173df6f}\label{classWidget_a998f8f17497ad3aa5cf6c56f9173df6f}} 
+Vector2i {\bfseries m\+\_\+size}
+\item 
+\mbox{\Hypertarget{classWidget_af1f3e33ddf3de5894cc145868e1e2396}\label{classWidget_af1f3e33ddf3de5894cc145868e1e2396}} 
+Vector2i {\bfseries m\+\_\+fixed\+\_\+size}
+\item 
+\mbox{\Hypertarget{classWidget_aa7b37ad37e11d2f61676d94e75be31ad}\label{classWidget_aa7b37ad37e11d2f61676d94e75be31ad}} 
+std\+::vector$<$ \mbox{\hyperlink{classWidget}{Widget}} $\ast$ $>$ {\bfseries m\+\_\+children}
+\item 
+bool \mbox{\hyperlink{classWidget_aca48c67b69d0a11cc9f93490d36303ee}{m\+\_\+visible}}
+\item 
+bool \mbox{\hyperlink{classWidget_a517d634a94b1d983ef3524bbc234dbc2}{m\+\_\+enabled}}
+\item 
+\mbox{\Hypertarget{classWidget_a44dc9e8ff26676be82b30896acb700e6}\label{classWidget_a44dc9e8ff26676be82b30896acb700e6}} 
+bool {\bfseries m\+\_\+focused}
+\item 
+\mbox{\Hypertarget{classWidget_a388b0c0d056a633a0e3f3ceb2f502459}\label{classWidget_a388b0c0d056a633a0e3f3ceb2f502459}} 
+bool {\bfseries m\+\_\+mouse\+\_\+focus}
+\item 
+\mbox{\Hypertarget{classWidget_a05e27cada45a0f90f9534fbcc38d7dec}\label{classWidget_a05e27cada45a0f90f9534fbcc38d7dec}} 
+std\+::string {\bfseries m\+\_\+tooltip}
+\item 
+\mbox{\Hypertarget{classWidget_a70d0e35218be9b1fed683ccb5f0c9f36}\label{classWidget_a70d0e35218be9b1fed683ccb5f0c9f36}} 
+int {\bfseries m\+\_\+font\+\_\+size}
+\item 
+float \mbox{\hyperlink{classWidget_a58308021f0112e3dd9f1b36256a23c4c}{m\+\_\+icon\+\_\+extra\+\_\+scale}}
+\begin{DoxyCompactList}\small\item\em The amount of extra icon scaling used in addition the the theme\textquotesingle{}s default icon font scale. Default value is {\ttfamily 1.\+0}, which implies that nanogui\+::\+Widget\+::icon\+\_\+scale simply returns the value of nanogui\+::\+Theme\+::m\+\_\+icon\+\_\+scale. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWidget_a270d740cc722e808ba77972124909ced}\label{classWidget_a270d740cc722e808ba77972124909ced}} 
+\mbox{\hyperlink{include_2nanogui_2common_8h_ac9c915d433bdce7b6b47c0956c850f43}{Cursor}} {\bfseries m\+\_\+cursor}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWidget_a6dc7992a6306eb8da22538e778fb34d3}\label{classWidget_a6dc7992a6306eb8da22538e778fb34d3}} 
+std\+::string {\bfseries message}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{structBase}{Base}} class of all widgets. 
+
+\mbox{\hyperlink{classWidget}{Widget}} is the base class of all widgets in {\ttfamily nanogui}. It can also be used as an panel to arrange an arbitrary number of child widgets using a layout generator (see \mbox{\hyperlink{classLayout}{Layout}}). 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classWidget_a660e832776cbb8a3438eb2e8ee60b644}\label{classWidget_a660e832776cbb8a3438eb2e8ee60b644}} 
+\index{Widget@{Widget}!add\_child@{add\_child}}
+\index{add\_child@{add\_child}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{add\_child()}{add\_child()}}
+{\footnotesize\ttfamily void Widget\+::add\+\_\+child (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{classWidget}{Widget}} $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a child widget to the current widget at the specified index. 
+
+This function almost never needs to be called by hand, since the constructor of \mbox{\hyperlink{classWidget}{Widget}} automatically adds the current widget to its parent \mbox{\Hypertarget{classWidget_a63595f509d85057f9cb686478b5881f0}\label{classWidget_a63595f509d85057f9cb686478b5881f0}} 
+\index{Widget@{Widget}!icon\_extra\_scale@{icon\_extra\_scale}}
+\index{icon\_extra\_scale@{icon\_extra\_scale}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{icon\_extra\_scale()}{icon\_extra\_scale()}}
+{\footnotesize\ttfamily float Widget\+::icon\+\_\+extra\+\_\+scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+The amount of extra scaling applied to {\itshape icon} fonts. See nanogui\+::\+Widget\+::m\+\_\+icon\+\_\+extra\+\_\+scale. \mbox{\Hypertarget{classWidget_abeeee3340a17693c986c16f96e992faa}\label{classWidget_abeeee3340a17693c986c16f96e992faa}} 
+\index{Widget@{Widget}!icon\_scale@{icon\_scale}}
+\index{icon\_scale@{icon\_scale}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{icon\_scale()}{icon\_scale()}}
+{\footnotesize\ttfamily float Widget\+::icon\+\_\+scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Convenience definition for subclasses to get the full icon scale for this class of \mbox{\hyperlink{classWidget}{Widget}}. It simple returns the value {\ttfamily m\+\_\+theme-\/$>$m\+\_\+icon\+\_\+scale $\ast$ this-\/$>$m\+\_\+icon\+\_\+extra\+\_\+scale}.
+
+\begin{DoxyRemark}{Remarques}
+See also\+: nanogui\+::\+Theme\+::m\+\_\+icon\+\_\+scale and nanogui\+::\+Widget\+::m\+\_\+icon\+\_\+extra\+\_\+scale. This tiered scaling strategy may not be appropriate with fonts other than {\ttfamily entypo.\+ttf}. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classWidget_a92ae7760fe923399a3525ea81533256e}\label{classWidget_a92ae7760fe923399a3525ea81533256e}} 
+\index{Widget@{Widget}!set\_fixed\_size@{set\_fixed\_size}}
+\index{set\_fixed\_size@{set\_fixed\_size}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{set\_fixed\_size()}{set\_fixed\_size()}}
+{\footnotesize\ttfamily void Widget\+::set\+\_\+fixed\+\_\+size (\begin{DoxyParamCaption}\item[{const Vector2i \&}]{fixed\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the fixed size of this widget. 
+
+If nonzero, components of the fixed size attribute override any values computed by a layout generator associated with this widget. Note that just setting the fixed size alone is not enough to actually change its size; this is done with a call to \mbox{\hyperlink{classWidget_a38440936d7c655a6611d669dcf2cb12b}{set\+\_\+size}} or a call to \mbox{\hyperlink{classWidget_addd9a13f6a3f5af7105865927ba5c721}{perform\+\_\+layout()}} in the parent widget. \mbox{\Hypertarget{classWidget_a8cca12523083474303364394610e0b44}\label{classWidget_a8cca12523083474303364394610e0b44}} 
+\index{Widget@{Widget}!set\_icon\_extra\_scale@{set\_icon\_extra\_scale}}
+\index{set\_icon\_extra\_scale@{set\_icon\_extra\_scale}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{set\_icon\_extra\_scale()}{set\_icon\_extra\_scale()}}
+{\footnotesize\ttfamily void Widget\+::set\+\_\+icon\+\_\+extra\+\_\+scale (\begin{DoxyParamCaption}\item[{float}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the amount of extra scaling applied to {\itshape icon} fonts. See nanogui\+::\+Widget\+::m\+\_\+icon\+\_\+extra\+\_\+scale. 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classWidget_a517d634a94b1d983ef3524bbc234dbc2}\label{classWidget_a517d634a94b1d983ef3524bbc234dbc2}} 
+\index{Widget@{Widget}!m\_enabled@{m\_enabled}}
+\index{m\_enabled@{m\_enabled}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{m\_enabled}{m\_enabled}}
+{\footnotesize\ttfamily bool Widget\+::m\+\_\+enabled\hspace{0.3cm}{\ttfamily [protected]}}
+
+Whether or not this \mbox{\hyperlink{classWidget}{Widget}} is currently enabled. Various different kinds of derived types use this to determine whether or not user input will be accepted. For example, when {\ttfamily m\+\_\+enabled == false}, the state of a \mbox{\hyperlink{classCheckBox}{Check\+Box}} cannot be changed, or a \mbox{\hyperlink{classTextBox}{Text\+Box}} will not allow new input. \mbox{\Hypertarget{classWidget_a58308021f0112e3dd9f1b36256a23c4c}\label{classWidget_a58308021f0112e3dd9f1b36256a23c4c}} 
+\index{Widget@{Widget}!m\_icon\_extra\_scale@{m\_icon\_extra\_scale}}
+\index{m\_icon\_extra\_scale@{m\_icon\_extra\_scale}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{m\_icon\_extra\_scale}{m\_icon\_extra\_scale}}
+{\footnotesize\ttfamily float Widget\+::m\+\_\+icon\+\_\+extra\+\_\+scale\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The amount of extra icon scaling used in addition the the theme\textquotesingle{}s default icon font scale. Default value is {\ttfamily 1.\+0}, which implies that nanogui\+::\+Widget\+::icon\+\_\+scale simply returns the value of nanogui\+::\+Theme\+::m\+\_\+icon\+\_\+scale. 
+
+Most widgets do not need extra scaling, but some (e.\+g., \mbox{\hyperlink{classCheckBox}{Check\+Box}}, \mbox{\hyperlink{classTextBox}{Text\+Box}}) need to adjust the \mbox{\hyperlink{classTheme}{Theme}}\textquotesingle{}s default icon scaling (nanogui\+::\+Theme\+::m\+\_\+icon\+\_\+scale) to properly display icons within their bounds (upscale, or downscale).
+
+\textbackslash{}rst .. note\+:\+:
+
+When using {\ttfamily nvg\+Font\+Size} for icons in subclasses, make sure to call the \+:func\+:{\ttfamily nanogui\+::\+Widget\+::icon\+\_\+scale} function. Expected usage when {\itshape drawing} icon fonts is something like\+:
+
+.. code-\/block\+:: cpp
+
+virtual void \mbox{\hyperlink{classWidget_abfe4a93f411a04598128c7b9aac16909}{draw(\+N\+V\+Gcontext $\ast$ctx)}} \{ // font\+Size depends on the kind of \mbox{\hyperlink{classWidget}{Widget}}. Search for {\ttfamily Font\+Size} // in the \mbox{\hyperlink{classTheme}{Theme}} class (e.\+g., standard vs button) float ih = font\+\_\+size; // assuming your \mbox{\hyperlink{classWidget}{Widget}} has a declared {\ttfamily m\+Icon} if (nvg\+Is\+Font\+Icon(m\+Icon)) \{ ih $\ast$= \mbox{\hyperlink{classWidget_abeeee3340a17693c986c16f96e992faa}{icon\+\_\+scale()}}; nvg\+Font\+Face(ctx, \char`\"{}icons\char`\"{}); nvg\+Font\+Size(ctx, ih); /// remaining drawing code (see button.\+cpp for more) \} \} \textbackslash{}endrst \mbox{\Hypertarget{classWidget_aca48c67b69d0a11cc9f93490d36303ee}\label{classWidget_aca48c67b69d0a11cc9f93490d36303ee}} 
+\index{Widget@{Widget}!m\_visible@{m\_visible}}
+\index{m\_visible@{m\_visible}!Widget@{Widget}}
+\doxysubsubsection{\texorpdfstring{m\_visible}{m\_visible}}
+{\footnotesize\ttfamily bool Widget\+::m\+\_\+visible\hspace{0.3cm}{\ttfamily [protected]}}
+
+Whether or not this \mbox{\hyperlink{classWidget}{Widget}} is currently visible. When a \mbox{\hyperlink{classWidget}{Widget}} is not currently visible, no time is wasted executing its drawing method. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/tests/test\+\_\+embed/test\+\_\+interpreter.\+cpp\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{widget_8h}{widget.\+h}}\item 
+ext/nanogui/src/widget.\+cpp\end{DoxyCompactItemize}

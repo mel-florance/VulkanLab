@@ -1,0 +1,242 @@
+\hypertarget{classTextBox}{}\doxysection{Référence de la classe Text\+Box}
+\label{classTextBox}\index{TextBox@{TextBox}}
+
+
+Multi-\/line read-\/only text widget, ideal for displaying log messages etc.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/textbox.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Text\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.555556cm]{classTextBox}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTextBox_a4e81214ff3a8635f2fe44f29ba0ba7d5}\label{classTextBox_a4e81214ff3a8635f2fe44f29ba0ba7d5}} 
+enum \mbox{\hyperlink{classTextBox_a4e81214ff3a8635f2fe44f29ba0ba7d5}{Alignment}} \{ {\bfseries Left}, 
+{\bfseries Center}, 
+{\bfseries Right}
+ \}
+\begin{DoxyCompactList}\small\item\em How to align the text in the text box. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTextBox_af891734c6a3999615df8e8f9f381884d}\label{classTextBox_af891734c6a3999615df8e8f9f381884d}} 
+{\bfseries Text\+Box} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, const std\+::string \&value=\char`\"{}Untitled\char`\"{})
+\item 
+\mbox{\Hypertarget{classTextBox_a7bcf58c143dfdc6178d89287fefc4203}\label{classTextBox_a7bcf58c143dfdc6178d89287fefc4203}} 
+bool {\bfseries editable} () const
+\item 
+\mbox{\Hypertarget{classTextBox_a519358d3d7c91e3297f12af8b3272304}\label{classTextBox_a519358d3d7c91e3297f12af8b3272304}} 
+void {\bfseries set\+\_\+editable} (bool editable)
+\item 
+\mbox{\Hypertarget{classTextBox_a24f695a0ff7c75f2aaaa70389440821a}\label{classTextBox_a24f695a0ff7c75f2aaaa70389440821a}} 
+bool {\bfseries spinnable} () const
+\item 
+\mbox{\Hypertarget{classTextBox_a0125dc7cb9cc6fa93c9472ca214abeb0}\label{classTextBox_a0125dc7cb9cc6fa93c9472ca214abeb0}} 
+void {\bfseries set\+\_\+spinnable} (bool spinnable)
+\item 
+\mbox{\Hypertarget{classTextBox_a383c40670398b6638427d58cc9e17873}\label{classTextBox_a383c40670398b6638427d58cc9e17873}} 
+const std\+::string \& {\bfseries value} () const
+\item 
+\mbox{\Hypertarget{classTextBox_a83006452c527ca3af6ec765654fae550}\label{classTextBox_a83006452c527ca3af6ec765654fae550}} 
+void {\bfseries set\+\_\+value} (const std\+::string \&value)
+\item 
+\mbox{\Hypertarget{classTextBox_afb6c4d3621442fc8a477344247b1dbde}\label{classTextBox_afb6c4d3621442fc8a477344247b1dbde}} 
+const std\+::string \& {\bfseries default\+\_\+value} () const
+\item 
+\mbox{\Hypertarget{classTextBox_a6314401b331431a5296f6c22522fd5b5}\label{classTextBox_a6314401b331431a5296f6c22522fd5b5}} 
+void {\bfseries set\+\_\+default\+\_\+value} (const std\+::string \&default\+\_\+value)
+\item 
+\mbox{\Hypertarget{classTextBox_ad2867f39650a1dc61e379d3e0449a76d}\label{classTextBox_ad2867f39650a1dc61e379d3e0449a76d}} 
+\mbox{\hyperlink{classTextBox_a4e81214ff3a8635f2fe44f29ba0ba7d5}{Alignment}} {\bfseries alignment} () const
+\item 
+\mbox{\Hypertarget{classTextBox_a182db756349cde4ceaf08ed38aa5b1a2}\label{classTextBox_a182db756349cde4ceaf08ed38aa5b1a2}} 
+void {\bfseries set\+\_\+alignment} (\mbox{\hyperlink{classTextBox_a4e81214ff3a8635f2fe44f29ba0ba7d5}{Alignment}} align)
+\item 
+\mbox{\Hypertarget{classTextBox_a2d0cf94ca31e2e9bbf80129c9a5be3ab}\label{classTextBox_a2d0cf94ca31e2e9bbf80129c9a5be3ab}} 
+const std\+::string \& {\bfseries units} () const
+\item 
+\mbox{\Hypertarget{classTextBox_aac95baf1f5d0dd698298841e7edb46e5}\label{classTextBox_aac95baf1f5d0dd698298841e7edb46e5}} 
+void {\bfseries set\+\_\+units} (const std\+::string \&units)
+\item 
+\mbox{\Hypertarget{classTextBox_ae4f1a30c8edbb3495a98a18dd8e45d82}\label{classTextBox_ae4f1a30c8edbb3495a98a18dd8e45d82}} 
+int {\bfseries units\+\_\+image} () const
+\item 
+\mbox{\Hypertarget{classTextBox_a9d00f5dd96d6a5d8b7ca6afeebd6bdd0}\label{classTextBox_a9d00f5dd96d6a5d8b7ca6afeebd6bdd0}} 
+void {\bfseries set\+\_\+units\+\_\+image} (int image)
+\item 
+\mbox{\Hypertarget{classTextBox_a6cb58ed33a52b25b341cd0ff997f61a1}\label{classTextBox_a6cb58ed33a52b25b341cd0ff997f61a1}} 
+const std\+::string \& \mbox{\hyperlink{classTextBox_a6cb58ed33a52b25b341cd0ff997f61a1}{format}} () const
+\begin{DoxyCompactList}\small\item\em Return the underlying regular expression specifying valid formats. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_a1b19421000f84791e2b6d4a006e98d9f}\label{classTextBox_a1b19421000f84791e2b6d4a006e98d9f}} 
+void \mbox{\hyperlink{classTextBox_a1b19421000f84791e2b6d4a006e98d9f}{set\+\_\+format}} (const std\+::string \&\mbox{\hyperlink{classTextBox_a6cb58ed33a52b25b341cd0ff997f61a1}{format}})
+\begin{DoxyCompactList}\small\item\em Specify a regular expression specifying valid formats. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_a06200d3f2692981f502337533d4386d2}\label{classTextBox_a06200d3f2692981f502337533d4386d2}} 
+const std\+::string \& \mbox{\hyperlink{classTextBox_a06200d3f2692981f502337533d4386d2}{placeholder}} () const
+\begin{DoxyCompactList}\small\item\em Return the placeholder text to be displayed while the text box is empty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_a92b0c326b4d90ffc3ab5ab7c5b9e50b7}\label{classTextBox_a92b0c326b4d90ffc3ab5ab7c5b9e50b7}} 
+void \mbox{\hyperlink{classTextBox_a92b0c326b4d90ffc3ab5ab7c5b9e50b7}{set\+\_\+placeholder}} (const std\+::string \&\mbox{\hyperlink{classTextBox_a06200d3f2692981f502337533d4386d2}{placeholder}})
+\begin{DoxyCompactList}\small\item\em Specify a placeholder text to be displayed while the text box is empty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_abb2de06ca7b8f077c1f01a80b0f738d2}\label{classTextBox_abb2de06ca7b8f077c1f01a80b0f738d2}} 
+virtual void \mbox{\hyperlink{classTextBox_abb2de06ca7b8f077c1f01a80b0f738d2}{set\+\_\+theme}} (\mbox{\hyperlink{classTheme}{Theme}} $\ast$\mbox{\hyperlink{classWidget_a0e49299e4a207bc3f61585216dead5c2}{theme}}) override
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classTheme}{Theme}} used to draw this widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_af9e445ff5912159afc6bcf4dd2b4cf94}\label{classTextBox_af9e445ff5912159afc6bcf4dd2b4cf94}} 
+std\+::function$<$ bool(const std\+::string \&\mbox{\hyperlink{classstr}{str}})$>$ \mbox{\hyperlink{classTextBox_af9e445ff5912159afc6bcf4dd2b4cf94}{callback}} () const
+\begin{DoxyCompactList}\small\item\em The callback to execute when the value of this \mbox{\hyperlink{classTextBox}{Text\+Box}} has changed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_af29e0a17fd76e109c128647dfd3525f4}\label{classTextBox_af29e0a17fd76e109c128647dfd3525f4}} 
+void \mbox{\hyperlink{classTextBox_af29e0a17fd76e109c128647dfd3525f4}{set\+\_\+callback}} (const std\+::function$<$ bool(const std\+::string \&\mbox{\hyperlink{classstr}{str}})$>$ \&\mbox{\hyperlink{classTextBox_af9e445ff5912159afc6bcf4dd2b4cf94}{callback}})
+\begin{DoxyCompactList}\small\item\em Sets the callback to execute when the value of this \mbox{\hyperlink{classTextBox}{Text\+Box}} has changed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_ad4f754441b906ef71525647af00af3e6}\label{classTextBox_ad4f754441b906ef71525647af00af3e6}} 
+virtual bool \mbox{\hyperlink{classTextBox_ad4f754441b906ef71525647af00af3e6}{mouse\+\_\+enter\+\_\+event}} (const Vector2i \&p, bool enter) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse enter/leave event (default implementation\+: record this fact, but do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_a1ed336ccdace04511d93bfc96633835a}\label{classTextBox_a1ed336ccdace04511d93bfc96633835a}} 
+virtual bool \mbox{\hyperlink{classTextBox_a1ed336ccdace04511d93bfc96633835a}{mouse\+\_\+button\+\_\+event}} (const Vector2i \&p, int button, bool down, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse button event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_a709eac988009cf4d52dd83e98e5240b2}\label{classTextBox_a709eac988009cf4d52dd83e98e5240b2}} 
+virtual bool \mbox{\hyperlink{classTextBox_a709eac988009cf4d52dd83e98e5240b2}{mouse\+\_\+motion\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse motion event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_a99fe6f560532295f9aefe68fdf74621f}\label{classTextBox_a99fe6f560532295f9aefe68fdf74621f}} 
+virtual bool \mbox{\hyperlink{classTextBox_a99fe6f560532295f9aefe68fdf74621f}{mouse\+\_\+drag\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse drag event (default implementation\+: do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_af86042c9bd5919b403e234cd01a84631}\label{classTextBox_af86042c9bd5919b403e234cd01a84631}} 
+virtual bool \mbox{\hyperlink{classTextBox_af86042c9bd5919b403e234cd01a84631}{focus\+\_\+event}} (bool \mbox{\hyperlink{classWidget_a32721effaa85d80d0a470cf2320ff49d}{focused}}) override
+\begin{DoxyCompactList}\small\item\em Handle a focus change event (default implementation\+: record the focus status, but do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_af75d8b5416aa723259789eefd2316b7f}\label{classTextBox_af75d8b5416aa723259789eefd2316b7f}} 
+virtual bool \mbox{\hyperlink{classTextBox_af75d8b5416aa723259789eefd2316b7f}{keyboard\+\_\+event}} (int key, int scancode, int action, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a keyboard event (default implementation\+: do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_a169beb8026471528ea4ef3c6541f8262}\label{classTextBox_a169beb8026471528ea4ef3c6541f8262}} 
+virtual bool \mbox{\hyperlink{classTextBox_a169beb8026471528ea4ef3c6541f8262}{keyboard\+\_\+character\+\_\+event}} (unsigned int codepoint) override
+\begin{DoxyCompactList}\small\item\em Handle text input (U\+T\+F-\/32 format) (default implementation\+: do nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_ab20aa1e5b2843ca670b6ab4c066fd323}\label{classTextBox_ab20aa1e5b2843ca670b6ab4c066fd323}} 
+virtual Vector2i \mbox{\hyperlink{classTextBox_ab20aa1e5b2843ca670b6ab4c066fd323}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const override
+\begin{DoxyCompactList}\small\item\em Compute the preferred size of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextBox_a13309b2810d9136496e4d1b4cf3f2f7a}\label{classTextBox_a13309b2810d9136496e4d1b4cf3f2f7a}} 
+virtual void \mbox{\hyperlink{classTextBox_a13309b2810d9136496e4d1b4cf3f2f7a}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draw the widget (and all child widgets) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Types protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTextBox_af6593c79a939edb261e4de9634dda792}\label{classTextBox_af6593c79a939edb261e4de9634dda792}} 
+enum \mbox{\hyperlink{classTextBox_af6593c79a939edb261e4de9634dda792}{Spin\+Area}} \{ {\bfseries None}, 
+{\bfseries Top}, 
+{\bfseries Bottom}
+ \}
+\begin{DoxyCompactList}\small\item\em The location (if any) for the spin area. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTextBox_af04959ff6c8bce841cfaf1ef5d630d51}\label{classTextBox_af04959ff6c8bce841cfaf1ef5d630d51}} 
+bool {\bfseries check\+\_\+format} (const std\+::string \&input, const std\+::string \&\mbox{\hyperlink{classTextBox_a6cb58ed33a52b25b341cd0ff997f61a1}{format}})
+\item 
+\mbox{\Hypertarget{classTextBox_a67f08d7a276819d6bd788acade9cdf9b}\label{classTextBox_a67f08d7a276819d6bd788acade9cdf9b}} 
+bool {\bfseries copy\+\_\+selection} ()
+\item 
+\mbox{\Hypertarget{classTextBox_ae215ae4f064b104a5335472f868c4bf3}\label{classTextBox_ae215ae4f064b104a5335472f868c4bf3}} 
+void {\bfseries paste\+\_\+from\+\_\+clipboard} ()
+\item 
+\mbox{\Hypertarget{classTextBox_a8a0a12b44b5c6ce577d76742381f11dd}\label{classTextBox_a8a0a12b44b5c6ce577d76742381f11dd}} 
+bool {\bfseries delete\+\_\+selection} ()
+\item 
+\mbox{\Hypertarget{classTextBox_a3b30c2333c6ca899664ba9802efcf03d}\label{classTextBox_a3b30c2333c6ca899664ba9802efcf03d}} 
+void {\bfseries update\+\_\+cursor} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx, float lastx, const \mbox{\hyperlink{structNVGglyphPosition}{N\+V\+Gglyph\+Position}} $\ast$glyphs, int \mbox{\hyperlink{classWidget_aa793702fbc88538c62fb6e01e7dea071}{size}})
+\item 
+\mbox{\Hypertarget{classTextBox_abd013255ed1656c35b9ac733aea26d9e}\label{classTextBox_abd013255ed1656c35b9ac733aea26d9e}} 
+float {\bfseries cursor\+\_\+index\+\_\+to\+\_\+position} (int index, float lastx, const \mbox{\hyperlink{structNVGglyphPosition}{N\+V\+Gglyph\+Position}} $\ast$glyphs, int \mbox{\hyperlink{classWidget_aa793702fbc88538c62fb6e01e7dea071}{size}})
+\item 
+\mbox{\Hypertarget{classTextBox_ac531d4f79784506f19239599580e72cd}\label{classTextBox_ac531d4f79784506f19239599580e72cd}} 
+int {\bfseries position\+\_\+to\+\_\+cursor\+\_\+index} (float posx, float lastx, const \mbox{\hyperlink{structNVGglyphPosition}{N\+V\+Gglyph\+Position}} $\ast$glyphs, int \mbox{\hyperlink{classWidget_aa793702fbc88538c62fb6e01e7dea071}{size}})
+\item 
+\mbox{\Hypertarget{classTextBox_aedbde0e02ba163db5aaf69b871b31580}\label{classTextBox_aedbde0e02ba163db5aaf69b871b31580}} 
+\mbox{\hyperlink{classTextBox_af6593c79a939edb261e4de9634dda792}{Spin\+Area}} {\bfseries spin\+\_\+area} (const Vector2i \&pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTextBox_ac11fe48b43880adf947406a6c7a248e0}\label{classTextBox_ac11fe48b43880adf947406a6c7a248e0}} 
+bool {\bfseries m\+\_\+editable}
+\item 
+\mbox{\Hypertarget{classTextBox_ab9dfaa92ae4b28df166cb1961fa017dd}\label{classTextBox_ab9dfaa92ae4b28df166cb1961fa017dd}} 
+bool {\bfseries m\+\_\+spinnable}
+\item 
+\mbox{\Hypertarget{classTextBox_ac68ceef15ed2b83f707dd42d44679895}\label{classTextBox_ac68ceef15ed2b83f707dd42d44679895}} 
+bool {\bfseries m\+\_\+committed}
+\item 
+\mbox{\Hypertarget{classTextBox_a16d9604b80e3510e92a716b293e960f0}\label{classTextBox_a16d9604b80e3510e92a716b293e960f0}} 
+std\+::string {\bfseries m\+\_\+value}
+\item 
+\mbox{\Hypertarget{classTextBox_ad2fe58651c04297269ef997c9c68581e}\label{classTextBox_ad2fe58651c04297269ef997c9c68581e}} 
+std\+::string {\bfseries m\+\_\+default\+\_\+value}
+\item 
+\mbox{\Hypertarget{classTextBox_ad718a39ffe4bf3898c97b91dcaab0413}\label{classTextBox_ad718a39ffe4bf3898c97b91dcaab0413}} 
+\mbox{\hyperlink{classTextBox_a4e81214ff3a8635f2fe44f29ba0ba7d5}{Alignment}} {\bfseries m\+\_\+alignment}
+\item 
+\mbox{\Hypertarget{classTextBox_a449d56102cd5ee6a380b421bd9d77e53}\label{classTextBox_a449d56102cd5ee6a380b421bd9d77e53}} 
+std\+::string {\bfseries m\+\_\+units}
+\item 
+\mbox{\Hypertarget{classTextBox_aca4b52945da87618c9d24a023642f00c}\label{classTextBox_aca4b52945da87618c9d24a023642f00c}} 
+std\+::string {\bfseries m\+\_\+format}
+\item 
+\mbox{\Hypertarget{classTextBox_a51b5721fb5c8511b2e0a40b14af60656}\label{classTextBox_a51b5721fb5c8511b2e0a40b14af60656}} 
+int {\bfseries m\+\_\+units\+\_\+image}
+\item 
+\mbox{\Hypertarget{classTextBox_a6152db9a00055ba905e4a1e758dac698}\label{classTextBox_a6152db9a00055ba905e4a1e758dac698}} 
+std\+::function$<$ bool(const std\+::string \&\mbox{\hyperlink{classstr}{str}})$>$ {\bfseries m\+\_\+callback}
+\item 
+\mbox{\Hypertarget{classTextBox_a3815b86d9c8cd1b15d96d10928acb23e}\label{classTextBox_a3815b86d9c8cd1b15d96d10928acb23e}} 
+bool {\bfseries m\+\_\+valid\+\_\+format}
+\item 
+\mbox{\Hypertarget{classTextBox_ae22fa874e747c4da4a37f411e9ae145c}\label{classTextBox_ae22fa874e747c4da4a37f411e9ae145c}} 
+std\+::string {\bfseries m\+\_\+value\+\_\+temp}
+\item 
+\mbox{\Hypertarget{classTextBox_a1e18bf450d5ccdc8c398843061bdab19}\label{classTextBox_a1e18bf450d5ccdc8c398843061bdab19}} 
+std\+::string {\bfseries m\+\_\+placeholder}
+\item 
+\mbox{\Hypertarget{classTextBox_afa2e6c477f653af6b43c95ec1981c314}\label{classTextBox_afa2e6c477f653af6b43c95ec1981c314}} 
+int {\bfseries m\+\_\+cursor\+\_\+pos}
+\item 
+\mbox{\Hypertarget{classTextBox_a4c1e5064ba5c69b81b75cdf0b341e6a1}\label{classTextBox_a4c1e5064ba5c69b81b75cdf0b341e6a1}} 
+int {\bfseries m\+\_\+selection\+\_\+pos}
+\item 
+\mbox{\Hypertarget{classTextBox_ab4b6baa7b669ec801940ce09c1a66066}\label{classTextBox_ab4b6baa7b669ec801940ce09c1a66066}} 
+Vector2i {\bfseries m\+\_\+mouse\+\_\+pos}
+\item 
+\mbox{\Hypertarget{classTextBox_aa7f1c229682a3c601b78ea4e06be5fe5}\label{classTextBox_aa7f1c229682a3c601b78ea4e06be5fe5}} 
+Vector2i {\bfseries m\+\_\+mouse\+\_\+down\+\_\+pos}
+\item 
+\mbox{\Hypertarget{classTextBox_a30ce669b7f902994ea4a0a05b7b9d4e0}\label{classTextBox_a30ce669b7f902994ea4a0a05b7b9d4e0}} 
+Vector2i {\bfseries m\+\_\+mouse\+\_\+drag\+\_\+pos}
+\item 
+\mbox{\Hypertarget{classTextBox_a65d8a3f0d1aaf59c5fbb20b10f78918e}\label{classTextBox_a65d8a3f0d1aaf59c5fbb20b10f78918e}} 
+int {\bfseries m\+\_\+mouse\+\_\+down\+\_\+modifier}
+\item 
+\mbox{\Hypertarget{classTextBox_a1f0e5d23c81d33434bbc90416aa7c011}\label{classTextBox_a1f0e5d23c81d33434bbc90416aa7c011}} 
+float {\bfseries m\+\_\+text\+\_\+offset}
+\item 
+\mbox{\Hypertarget{classTextBox_a4a3357498323620dc1583bdd2dd874a7}\label{classTextBox_a4a3357498323620dc1583bdd2dd874a7}} 
+double {\bfseries m\+\_\+last\+\_\+click}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Multi-\/line read-\/only text widget, ideal for displaying log messages etc. 
+
+Fancy text box with builtin regular expression-\/based validation.
+
+Appended text can use different colors, but the font size is fixed for the entire widget.
+
+\begin{DoxyRemark}{Remarques}
+This class overrides nanogui\+::\+Widget\+::m\+Icon\+Extra\+Scale to be {\ttfamily 0.\+8f}, which affects all subclasses of this \mbox{\hyperlink{classWidget}{Widget}}. Subclasses must explicitly set a different value if needed (e.\+g., in their constructor). 
+\end{DoxyRemark}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{textbox_8h}{textbox.\+h}}\item 
+ext/nanogui/src/textbox.\+cpp\end{DoxyCompactItemize}

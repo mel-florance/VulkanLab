@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.8.16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vulkan Lab: MetalNanoVG</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">Vulkan Lab
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part --><!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('md_ext_nanogui_ext_nanovg_metal_README.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">MetalNanoVG </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>MetalNanoVG is the native <a href="https://developer.apple.com/metal/">Metal</a> port of <a href="https://github.com/memononen/nanovg">NanoVG</a> that tries to get the most out of Apple's Graphics APIs.</p>
+<h1><a class="anchor" id="autotoc_md71"></a>
+Precautions</h1>
+<ul>
+<li>Works only on <a href="https://support.apple.com/en-us/HT205073">macOS 10.11+</a>, tvOS 9.0+ and <a href="https://developer.apple.com/library/content/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/DeviceCompatibilityMatrix/DeviceCompatibilityMatrix.html#//apple_ref/doc/uid/TP40013599-CH17-SW1">iOS 8.0+</a> (simulator is not supported).</li>
+<li>Not all Apple hardwares are supported even if meets the OS requirement.</li>
+<li><a href="https://en.wikipedia.org/wiki/Automatic_Reference_Counting">ARC</a> is required.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md72"></a>
+Advantages</h1>
+<ul>
+<li>Shared buffers between CPU and GPU.</li>
+<li>Various Metal states are cached whenever possible.</li>
+<li>Low overheads compared to OpenGL.</li>
+<li>Pre-compiled shaders. (no need to compile shaders at runtime)</li>
+<li>Seamless integration with powerful Metal features such as <a href="https://developer.apple.com/documentation/metalperformanceshaders">Metal Performance Shaders</a>.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md73"></a>
+Installation</h1>
+<ol type="1">
+<li>Download both <code>NanoVG</code> and <code>MetalNanoVG</code> source codes.</li>
+<li>Add both <code>NanoVG</code> and <code>MetalNanoVG</code>'s <code>src</code> directories to the header search path.</li>
+<li>Add <code>NanoVG</code>'s <code>src/nanovg.c</code> and <code>MetalNanoVG</code>'s <code>src/nanovg_mtl.m</code> to the <code>Compile Sources</code> section in Xcode.</li>
+<li>Link the <code>Metal</code> and <code>QuartzCore</code> frameworks.</li>
+<li>For best performance, disable <em>GPU Frame Capture</em> and <em>Metal API Validation</em> as described <a href="https://developer.apple.com/library/content/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Dev-Technique/Dev-Technique.html#//apple_ref/doc/uid/TP40014221-CH8-SW3">here</a>.</li>
+</ol>
+<p>Done.</p>
+<h1><a class="anchor" id="autotoc_md74"></a>
+Usage</h1>
+<ol type="1">
+<li>Include the headers.</li>
+</ol>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;nanovg.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;nanovg_mtl.h&quot;</span></div>
+</div><!-- fragment --><ol type="1">
+<li>Pass the <code>CAMetalLayer</code> object when creating the NanoVG context.</li>
+</ol>
+<div class="fragment"><div class="line"><a class="code" href="structNVGcontext.html">NVGcontext</a>* ctx = nvgCreateMTL(metalLayer, NVG_ANTIALIAS | NVG_STENCIL_STROKES);</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md75"></a>
+Benchmark</h1>
+<p>The following table depicts a simple CPU usage benchmark of running the NanoVG demo app on iOS devices with full Retina resolution. Both Metal and OpenGL ES2 implementations get constant 60 FPS.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">iPhone 6s+  </th><th class="markdownTableHeadNone">iPad Pro 12.7" (2015)   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Resolution  </td><td class="markdownTableBodyNone">1080 x 1920  </td><td class="markdownTableBodyNone">2732 * 2048   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Metal  </td><td class="markdownTableBodyNone">20%  </td><td class="markdownTableBodyNone">20%   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">OpenGL ES2  </td><td class="markdownTableBodyNone">35%  </td><td class="markdownTableBodyNone">33%   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md76"></a>
+Example</h1>
+<p>MetalNanoVG was originally created to improve the performance of the iOS app <a href="https://fogofworld.com">Fog of World</a>.</p>
+<p><img src="http://media.fogofworld.com.s3.amazonaws.com/github/fogofworld_screenshot.jpg" alt="Screenshot of Fog of World" class="inline"/> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div class="ttc" id="astructNVGcontext_html"><div class="ttname"><a href="structNVGcontext.html">NVGcontext</a></div><div class="ttdef"><b>Definition:</b> nanovg.c:115</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+    <ul>
+        <li class="footer">
+            Generated on Dimanche 24 Novembre 2019 18:11:48 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
+            Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
+        </li>
+    </ul>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>

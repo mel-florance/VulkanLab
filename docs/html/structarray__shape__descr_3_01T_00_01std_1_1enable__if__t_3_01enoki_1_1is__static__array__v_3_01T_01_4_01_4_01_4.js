@@ -1,0 +1,5 @@
+var structarray__shape__descr_3_01T_00_01std_1_1enable__if__t_3_01enoki_1_1is__static__array__v_3_01T_01_4_01_4_01_4 =
+[
+    [ "name", "structarray__shape__descr_3_01T_00_01std_1_1enable__if__t_3_01enoki_1_1is__static__array__v_3_01T_01_4_01_4_01_4.html#ac3da71b53126a34dc8c0e821039c8df6", null ],
+    [ "name_cont", "structarray__shape__descr_3_01T_00_01std_1_1enable__if__t_3_01enoki_1_1is__static__array__v_3_01T_01_4_01_4_01_4.html#a392f9d833009758cd5ed50ec9993b6cc", null ]
+];

@@ -1,0 +1,86 @@
+\hypertarget{classCanvas}{}\doxysection{Référence de la classe Canvas}
+\label{classCanvas}\index{Canvas@{Canvas}}
+Graphe d\textquotesingle{}héritage de Canvas\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classCanvas}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCanvas_ae467f988923dd735e8cb76ee6066ac1e}{Canvas}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, uint8\+\_\+t samples=4, bool has\+\_\+depth\+\_\+buffer=true, bool has\+\_\+stencil\+\_\+buffer=false, bool clear=true)
+\item 
+\mbox{\Hypertarget{classCanvas_a5916ed50811b750bf2cec2a2bd0ee120}\label{classCanvas_a5916ed50811b750bf2cec2a2bd0ee120}} 
+\mbox{\hyperlink{classRenderPass}{Render\+Pass}} $\ast$ \mbox{\hyperlink{classCanvas_a5916ed50811b750bf2cec2a2bd0ee120}{render\+\_\+pass}} ()
+\begin{DoxyCompactList}\small\item\em Return the render pass associated with the canvas object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCanvas_ab2812b6f8a229ee75fb7458558edbc5f}\label{classCanvas_ab2812b6f8a229ee75fb7458558edbc5f}} 
+void \mbox{\hyperlink{classCanvas_ab2812b6f8a229ee75fb7458558edbc5f}{set\+\_\+draw\+\_\+border}} (const bool \mbox{\hyperlink{classCanvas_acb8191dd0bb64c84be51286c1fb01676}{draw\+\_\+border}})
+\begin{DoxyCompactList}\small\item\em Specify whether to draw the widget border. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCanvas_acb8191dd0bb64c84be51286c1fb01676}\label{classCanvas_acb8191dd0bb64c84be51286c1fb01676}} 
+bool \mbox{\hyperlink{classCanvas_acb8191dd0bb64c84be51286c1fb01676}{draw\+\_\+border}} () const
+\begin{DoxyCompactList}\small\item\em Return whether the widget border will be drawn. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCanvas_a0224d7df9334e314e069735eb2479e0d}\label{classCanvas_a0224d7df9334e314e069735eb2479e0d}} 
+void \mbox{\hyperlink{classCanvas_a0224d7df9334e314e069735eb2479e0d}{set\+\_\+border\+\_\+color}} (const \mbox{\hyperlink{classColor}{Color}} \&\mbox{\hyperlink{classCanvas_a5b4b639cedceb3c1aaebd2401f6a0dd8}{border\+\_\+color}})
+\begin{DoxyCompactList}\small\item\em Specify the widget border color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCanvas_a5b4b639cedceb3c1aaebd2401f6a0dd8}\label{classCanvas_a5b4b639cedceb3c1aaebd2401f6a0dd8}} 
+const \mbox{\hyperlink{classColor}{Color}} \& \mbox{\hyperlink{classCanvas_a5b4b639cedceb3c1aaebd2401f6a0dd8}{border\+\_\+color}} () const
+\begin{DoxyCompactList}\small\item\em Return whether the widget border is drawn. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCanvas_a850d8b3738c6abbab474278d98a4d856}\label{classCanvas_a850d8b3738c6abbab474278d98a4d856}} 
+void \mbox{\hyperlink{classCanvas_a850d8b3738c6abbab474278d98a4d856}{set\+\_\+background\+\_\+color}} (const \mbox{\hyperlink{classColor}{Color}} \&\mbox{\hyperlink{classCanvas_a0fe71730d00bde012b7d3388191a3808}{background\+\_\+color}})
+\begin{DoxyCompactList}\small\item\em Specify the widget background color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCanvas_a0fe71730d00bde012b7d3388191a3808}\label{classCanvas_a0fe71730d00bde012b7d3388191a3808}} 
+const \mbox{\hyperlink{classColor}{Color}} \& \mbox{\hyperlink{classCanvas_a0fe71730d00bde012b7d3388191a3808}{background\+\_\+color}} () const
+\begin{DoxyCompactList}\small\item\em Return whether the widget border is drawn. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCanvas_afd6f2f8e1d86e27bba69e6eeb499dd85}\label{classCanvas_afd6f2f8e1d86e27bba69e6eeb499dd85}} 
+virtual void \mbox{\hyperlink{classCanvas_afd6f2f8e1d86e27bba69e6eeb499dd85}{draw\+\_\+contents}} ()
+\begin{DoxyCompactList}\small\item\em Draw the widget contents. Override this method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCanvas_a13f4cedebba128cab956832799f57255}\label{classCanvas_a13f4cedebba128cab956832799f57255}} 
+virtual void \mbox{\hyperlink{classCanvas_a13f4cedebba128cab956832799f57255}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draw the widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCanvas_ad486b4e8db19ec9c54d44bcd026f8cc2}\label{classCanvas_ad486b4e8db19ec9c54d44bcd026f8cc2}} 
+\mbox{\hyperlink{classref}{ref}}$<$ \mbox{\hyperlink{classRenderPass}{Render\+Pass}} $>$ {\bfseries m\+\_\+render\+\_\+pass}
+\item 
+\mbox{\Hypertarget{classCanvas_a559715a031d47d8ecfb8c2fa6bf12737}\label{classCanvas_a559715a031d47d8ecfb8c2fa6bf12737}} 
+bool {\bfseries m\+\_\+draw\+\_\+border}
+\item 
+\mbox{\Hypertarget{classCanvas_ab5cdd3eca4e8f656381333894bf640fb}\label{classCanvas_ab5cdd3eca4e8f656381333894bf640fb}} 
+\mbox{\hyperlink{classColor}{Color}} {\bfseries m\+\_\+border\+\_\+color}
+\item 
+\mbox{\Hypertarget{classCanvas_a0fee8deaba18c932d2be800f759a9ebc}\label{classCanvas_a0fee8deaba18c932d2be800f759a9ebc}} 
+bool {\bfseries m\+\_\+render\+\_\+to\+\_\+texture}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classCanvas_ae467f988923dd735e8cb76ee6066ac1e}\label{classCanvas_ae467f988923dd735e8cb76ee6066ac1e}} 
+\index{Canvas@{Canvas}!Canvas@{Canvas}}
+\index{Canvas@{Canvas}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{Canvas()}{Canvas()}}
+{\footnotesize\ttfamily Canvas\+::\+Canvas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWidget}{Widget}} $\ast$}]{parent,  }\item[{uint8\+\_\+t}]{samples = {\ttfamily 4},  }\item[{bool}]{has\+\_\+depth\+\_\+buffer = {\ttfamily true},  }\item[{bool}]{has\+\_\+stencil\+\_\+buffer = {\ttfamily false},  }\item[{bool}]{clear = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{classCanvas}{Canvas}} widget
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & The parent widget\\
+\hline
+{\em samples} & The number of pixel samples (M\+S\+AA)\\
+\hline
+{\em has\+\_\+depth\+\_\+buffer} & Should the widget allocate a depth buffer for the underlying render pass?\\
+\hline
+{\em has\+\_\+stencil\+\_\+buffer} & Should the widget allocate a stencil buffer for the underlying render pass?\\
+\hline
+{\em clear} & Should the widget clear its color/depth/stencil buffer? \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{canvas_8h}{canvas.\+h}}\item 
+ext/nanogui/src/canvas.\+cpp\end{DoxyCompactItemize}

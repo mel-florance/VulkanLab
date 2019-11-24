@@ -1,0 +1,92 @@
+\hypertarget{classImagePanel}{}\doxysection{Référence de la classe Image\+Panel}
+\label{classImagePanel}\index{ImagePanel@{ImagePanel}}
+
+
+Image panel widget which shows a number of square-\/shaped icons.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/imagepanel.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Image\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classImagePanel}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classImagePanel_aac0d864686bfc978b391af46b436108e}\label{classImagePanel_aac0d864686bfc978b391af46b436108e}} 
+typedef std\+::vector$<$ std\+::pair$<$ int, std\+::string $>$ $>$ {\bfseries Images}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classImagePanel_afd8545e0eb3e612938b5437e1447e75a}\label{classImagePanel_afd8545e0eb3e612938b5437e1447e75a}} 
+{\bfseries Image\+Panel} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}})
+\item 
+\mbox{\Hypertarget{classImagePanel_a767478676bfb19e021207cbeae5af4e0}\label{classImagePanel_a767478676bfb19e021207cbeae5af4e0}} 
+void {\bfseries set\+\_\+images} (const Images \&data)
+\item 
+\mbox{\Hypertarget{classImagePanel_a9a807e0b4727446e75a841a2c828b28d}\label{classImagePanel_a9a807e0b4727446e75a841a2c828b28d}} 
+const Images \& {\bfseries images} () const
+\item 
+\mbox{\Hypertarget{classImagePanel_ae5faee243d6115f017a5c37dc897a939}\label{classImagePanel_ae5faee243d6115f017a5c37dc897a939}} 
+std\+::function$<$ void(int)$>$ {\bfseries callback} () const
+\item 
+\mbox{\Hypertarget{classImagePanel_a5bb126f2947393930d3a1b004314f892}\label{classImagePanel_a5bb126f2947393930d3a1b004314f892}} 
+void {\bfseries set\+\_\+callback} (const std\+::function$<$ void(int)$>$ \&callback)
+\item 
+\mbox{\Hypertarget{classImagePanel_adb18c1f4fe478c825584aae4ad6a8334}\label{classImagePanel_adb18c1f4fe478c825584aae4ad6a8334}} 
+virtual bool \mbox{\hyperlink{classImagePanel_adb18c1f4fe478c825584aae4ad6a8334}{mouse\+\_\+motion\+\_\+event}} (const Vector2i \&p, const Vector2i \&rel, int button, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse motion event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImagePanel_a982ee922ecf91a66607079946d8de506}\label{classImagePanel_a982ee922ecf91a66607079946d8de506}} 
+virtual bool \mbox{\hyperlink{classImagePanel_a982ee922ecf91a66607079946d8de506}{mouse\+\_\+button\+\_\+event}} (const Vector2i \&p, int button, bool down, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse button event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImagePanel_aa94c6f6f6d7b88826652f2a0959f9342}\label{classImagePanel_aa94c6f6f6d7b88826652f2a0959f9342}} 
+virtual Vector2i \mbox{\hyperlink{classImagePanel_aa94c6f6f6d7b88826652f2a0959f9342}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const override
+\begin{DoxyCompactList}\small\item\em Compute the preferred size of the widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImagePanel_ac517b336576ce836c7bd3d575b3dd20a}\label{classImagePanel_ac517b336576ce836c7bd3d575b3dd20a}} 
+virtual void \mbox{\hyperlink{classImagePanel_ac517b336576ce836c7bd3d575b3dd20a}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draw the widget (and all child widgets) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classImagePanel_a401d855e225fc4c50492de3ce05617bb}\label{classImagePanel_a401d855e225fc4c50492de3ce05617bb}} 
+Vector2i {\bfseries grid\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classImagePanel_a195b69a86b5f54b0d1bff881d5e1cf23}\label{classImagePanel_a195b69a86b5f54b0d1bff881d5e1cf23}} 
+int {\bfseries index\+\_\+for\+\_\+position} (const Vector2i \&p) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classImagePanel_a70062b9e01d335cf78695591d948450e}\label{classImagePanel_a70062b9e01d335cf78695591d948450e}} 
+Images {\bfseries m\+\_\+images}
+\item 
+\mbox{\Hypertarget{classImagePanel_abee82140276f7fffe132118eb5978e8f}\label{classImagePanel_abee82140276f7fffe132118eb5978e8f}} 
+std\+::function$<$ void(int)$>$ {\bfseries m\+\_\+callback}
+\item 
+\mbox{\Hypertarget{classImagePanel_a4816df7d25e21a0f044c145f68b4d5d1}\label{classImagePanel_a4816df7d25e21a0f044c145f68b4d5d1}} 
+int {\bfseries m\+\_\+thumb\+\_\+size}
+\item 
+\mbox{\Hypertarget{classImagePanel_aa9248fc12bfdac0f4834643dc36c1add}\label{classImagePanel_aa9248fc12bfdac0f4834643dc36c1add}} 
+int {\bfseries m\+\_\+spacing}
+\item 
+\mbox{\Hypertarget{classImagePanel_aecdda9188bb5f96b0541f8f7a75f60a5}\label{classImagePanel_aecdda9188bb5f96b0541f8f7a75f60a5}} 
+int {\bfseries m\+\_\+margin}
+\item 
+\mbox{\Hypertarget{classImagePanel_a0500ab335ac783f238936b2cdb640921}\label{classImagePanel_a0500ab335ac783f238936b2cdb640921}} 
+int {\bfseries m\+\_\+mouse\+\_\+index}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Image panel widget which shows a number of square-\/shaped icons. 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{imagepanel_8h}{imagepanel.\+h}}\item 
+ext/nanogui/src/imagepanel.\+cpp\end{DoxyCompactItemize}

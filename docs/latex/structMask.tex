@@ -1,0 +1,58 @@
+\hypertarget{structMask}{}\doxysection{Référence du modèle de la structure Mask$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$}
+\label{structMask}\index{Mask$<$ Value\_, Size\_, Approx\_, Mode\_ $>$@{Mask$<$ Value\_, Size\_, Approx\_, Mode\_ $>$}}
+
+
+Generic mask class, which broadcasts from the outer to inner dimensions.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Mask$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.885522cm]{structMask}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMask_a775f1b8e44c23d353be5c6ba8a01730b}\label{structMask_a775f1b8e44c23d353be5c6ba8a01730b}} 
+using {\bfseries Base} = \mbox{\hyperlink{structStaticArrayImpl}{Static\+Array\+Impl}}$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+, true, \mbox{\hyperlink{structMask}{Mask}}$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$ $>$
+\item 
+\mbox{\Hypertarget{structMask_aaec9a1f2fb6db332355f15f95db5c1ae}\label{structMask_aaec9a1f2fb6db332355f15f95db5c1ae}} 
+using {\bfseries Array\+Type} = \mbox{\hyperlink{structArray}{Array}}$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$
+\item 
+\mbox{\Hypertarget{structMask_a8fc7f03510dd28ca93201260b4b62460}\label{structMask_a8fc7f03510dd28ca93201260b4b62460}} 
+using {\bfseries Mask\+Type} = \mbox{\hyperlink{structMask}{Mask}}
+\item 
+\mbox{\Hypertarget{structMask_a21511c33f5ee9dcdace391e1d6aa70ea}\label{structMask_a21511c33f5ee9dcdace391e1d6aa70ea}} 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{structMask_a21511c33f5ee9dcdace391e1d6aa70ea}{Replace\+Value}} = \mbox{\hyperlink{structMask}{Mask}}$<$ T, Size\+\_\+ $>$
+\begin{DoxyCompactList}\small\item\em Type alias for creating a similar-\/shaped array over a different type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMask_a9f7a271c354d6119e4cc060fa3f03685}\label{structMask_a9f7a271c354d6119e4cc060fa3f03685}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries Mask} (T \&\&value)
+\item 
+\mbox{\Hypertarget{structMask_ac9444a1192ba7cb3c1773114178a1529}\label{structMask_ac9444a1192ba7cb3c1773114178a1529}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries Mask} (T \&\&value, \mbox{\hyperlink{structdetail_1_1reinterpret__flag}{detail\+::reinterpret\+\_\+flag}})
+\item 
+\mbox{\Hypertarget{structMask_a7bf59aacafd325f42a3762312c8d81bc}\label{structMask_a7bf59aacafd325f42a3762312c8d81bc}} 
+{\footnotesize template$<$typename T1 , typename T2 , typename T  = Mask, enable\+\_\+if\+\_\+t$<$ array\+\_\+depth\+\_\+v$<$ T1 $>$==array\+\_\+depth\+\_\+v$<$ T $>$ \&\&array\+\_\+size\+\_\+v$<$ T1 $>$==\+Base\+::\+Size1 \&\&array\+\_\+depth\+\_\+v$<$ T2 $>$==array\+\_\+depth\+\_\+v$<$ T $>$ \&\&array\+\_\+size\+\_\+v$<$ T2 $>$==\+Base\+::\+Size2 \&\&\+Base\+::\+Size2 !=0 $>$  = 0$>$ }\\\mbox{\hyperlink{structMask_a7bf59aacafd325f42a3762312c8d81bc}{Mask}} (const T1 \&a1, const T2 \&a2)
+\begin{DoxyCompactList}\small\item\em Construct from sub-\/arrays. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structMask_af10413209118d5af2577bba390300795}\label{structMask_af10413209118d5af2577bba390300795}} 
+{\footnotesize template$<$typename... Ts, enable\+\_\+if\+\_\+t$<$(sizeof...(\+Ts)==\+Base\+::\+Size$\vert$$\vert$sizeof...(\+Ts)==\+Base\+::\+Actual\+Size) \&\&\+Size\+\_\+ !=1 \&\&std\+::conjunction\+\_\+v$<$ detail\+::is\+\_\+not\+\_\+reinterpret\+\_\+flag$<$ Ts $>$... $>$$>$  = 0$>$ }\\{\bfseries Mask} (Ts \&\&... ts)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename Value\+\_\+, size\+\_\+t Size\+\_\+, bool Approx\+\_\+, Rounding\+Mode Mode\+\_\+$>$\newline
+struct Mask$<$ Value\+\_\+, Size\+\_\+, Approx\+\_\+, Mode\+\_\+ $>$}
+
+Generic mask class, which broadcasts from the outer to inner dimensions. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/include/enoki/array.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,115 @@
+\hypertarget{classunchecked__reference}{}\doxysection{Référence du modèle de la classe unchecked\+\_\+reference$<$ T, Dims $>$}
+\label{classunchecked__reference}\index{unchecked\_reference$<$ T, Dims $>$@{unchecked\_reference$<$ T, Dims $>$}}
+
+
+{\ttfamily \#include $<$numpy.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de unchecked\+\_\+reference$<$ T, Dims $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classunchecked__reference}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\const T \& \mbox{\hyperlink{classunchecked__reference_a0da3998ef32834892f5b59529db3efd5}{operator()}} (Ix... index) const
+\item 
+{\footnotesize template$<$ssize\+\_\+t D = Dims, typename  = enable\+\_\+if\+\_\+t$<$\+D == 1 $\vert$$\vert$ Dynamic$>$$>$ }\\const T \& \mbox{\hyperlink{classunchecked__reference_a97fd086abe6908571f2089398d476105}{operator\mbox{[}$\,$\mbox{]}}} (ssize\+\_\+t index) const
+\item 
+\mbox{\Hypertarget{classunchecked__reference_a993c4ac6e09e82442f1d9741765faa97}\label{classunchecked__reference_a993c4ac6e09e82442f1d9741765faa97}} 
+{\footnotesize template$<$typename... Ix$>$ }\\const T $\ast$ \mbox{\hyperlink{classunchecked__reference_a993c4ac6e09e82442f1d9741765faa97}{data}} (Ix... ix) const
+\begin{DoxyCompactList}\small\item\em Pointer access to the data at the given indices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classunchecked__reference_a5065c039307f9797f8d4dc8f9e422d82}\label{classunchecked__reference_a5065c039307f9797f8d4dc8f9e422d82}} 
+ssize\+\_\+t \mbox{\hyperlink{classunchecked__reference_a5065c039307f9797f8d4dc8f9e422d82}{shape}} (ssize\+\_\+t dim) const
+\begin{DoxyCompactList}\small\item\em Returns the shape (i.\+e. size) of dimension {\ttfamily dim} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classunchecked__reference_a732200223a8d47f248fb9bab843dbe7a}\label{classunchecked__reference_a732200223a8d47f248fb9bab843dbe7a}} 
+ssize\+\_\+t \mbox{\hyperlink{classunchecked__reference_a732200223a8d47f248fb9bab843dbe7a}{ndim}} () const
+\begin{DoxyCompactList}\small\item\em Returns the number of dimensions of the array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classunchecked__reference_af1713056b2abec0c2b0fa62e78464537}\label{classunchecked__reference_af1713056b2abec0c2b0fa62e78464537}} 
+{\footnotesize template$<$bool Dyn = Dynamic$>$ }\\enable\+\_\+if\+\_\+t$<$!Dyn, ssize\+\_\+t $>$ \mbox{\hyperlink{classunchecked__reference_af1713056b2abec0c2b0fa62e78464537}{size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the total number of elements in the referenced array, i.\+e. the product of the shapes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classunchecked__reference_a57965f6ebdfe65d50947decec3a4896b}\label{classunchecked__reference_a57965f6ebdfe65d50947decec3a4896b}} 
+{\footnotesize template$<$bool Dyn = Dynamic$>$ }\\enable\+\_\+if\+\_\+t$<$ Dyn, ssize\+\_\+t $>$ {\bfseries size} () const
+\item 
+ssize\+\_\+t \mbox{\hyperlink{classunchecked__reference_a9c15e1b4f748ca5d8396e637c4d9abb4}{nbytes}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunchecked__reference_a0f060b74bb4c9b5d2f3f87c0671f2766}\label{classunchecked__reference_a0f060b74bb4c9b5d2f3f87c0671f2766}} 
+constexpr static ssize\+\_\+t \mbox{\hyperlink{classunchecked__reference_a0f060b74bb4c9b5d2f3f87c0671f2766}{itemsize}} ()
+\begin{DoxyCompactList}\small\item\em Returns the item size, i.\+e. sizeof(\+T) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunchecked__reference_ae5522c90828ed6a7c58687e6969ef97c}\label{classunchecked__reference_ae5522c90828ed6a7c58687e6969ef97c}} 
+{\footnotesize template$<$bool Dyn = Dynamic$>$ }\\{\bfseries unchecked\+\_\+reference} (const void $\ast$\mbox{\hyperlink{classunchecked__reference_a993c4ac6e09e82442f1d9741765faa97}{data}}, const ssize\+\_\+t $\ast$\mbox{\hyperlink{classunchecked__reference_a5065c039307f9797f8d4dc8f9e422d82}{shape}}, const ssize\+\_\+t $\ast$strides, enable\+\_\+if\+\_\+t$<$!Dyn, ssize\+\_\+t $>$)
+\item 
+\mbox{\Hypertarget{classunchecked__reference_a6872fd3f36835f14b6e943aebdbc0ae4}\label{classunchecked__reference_a6872fd3f36835f14b6e943aebdbc0ae4}} 
+{\footnotesize template$<$bool Dyn = Dynamic$>$ }\\{\bfseries unchecked\+\_\+reference} (const void $\ast$\mbox{\hyperlink{classunchecked__reference_a993c4ac6e09e82442f1d9741765faa97}{data}}, const ssize\+\_\+t $\ast$\mbox{\hyperlink{classunchecked__reference_a5065c039307f9797f8d4dc8f9e422d82}{shape}}, const ssize\+\_\+t $\ast$strides, enable\+\_\+if\+\_\+t$<$ Dyn, ssize\+\_\+t $>$ dims)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunchecked__reference_a0006f51b8177e65603ef3a20c8535432}\label{classunchecked__reference_a0006f51b8177e65603ef3a20c8535432}} 
+const unsigned char $\ast$ {\bfseries data\+\_\+}
+\item 
+\mbox{\Hypertarget{classunchecked__reference_a9369fa82f1cef7ce910e906628d59e7c}\label{classunchecked__reference_a9369fa82f1cef7ce910e906628d59e7c}} 
+conditional\+\_\+t$<$ Dynamic, const ssize\+\_\+t $\ast$, std\+::array$<$ ssize\+\_\+t,(size\+\_\+t) Dims $>$ $>$ {\bfseries shape\+\_\+}
+\item 
+\mbox{\Hypertarget{classunchecked__reference_a2c0c345a2c143eda073394a8fe8f59f9}\label{classunchecked__reference_a2c0c345a2c143eda073394a8fe8f59f9}} 
+conditional\+\_\+t$<$ Dynamic, const ssize\+\_\+t $\ast$, std\+::array$<$ ssize\+\_\+t,(size\+\_\+t) Dims $>$ $>$ {\bfseries strides\+\_\+}
+\item 
+\mbox{\Hypertarget{classunchecked__reference_a40a5d39e1640cb380429e4c678d40103}\label{classunchecked__reference_a40a5d39e1640cb380429e4c678d40103}} 
+const ssize\+\_\+t {\bfseries dims\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunchecked__reference_a4ad5525b6ab61ac1c5536df0249901b3}\label{classunchecked__reference_a4ad5525b6ab61ac1c5536df0249901b3}} 
+static constexpr bool {\bfseries Dynamic} = Dims $<$ 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunchecked__reference_abcb10178a21ebe8e899ca951b2e68608}\label{classunchecked__reference_abcb10178a21ebe8e899ca951b2e68608}} 
+class {\bfseries pybind11\+::array}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$typename T, ssize\+\_\+t Dims$>$\newline
+class unchecked\+\_\+reference$<$ T, Dims $>$}
+
+Proxy class providing unsafe, unchecked const access to array data. This is constructed through the {\ttfamily unchecked$<$T, N$>$()} method of {\ttfamily array} or the {\ttfamily unchecked$<$N$>$()} method of {\ttfamily \mbox{\hyperlink{classarray__t}{array\+\_\+t}}$<$T$>$}. {\ttfamily Dims} will be -\/1 for dimensions determined at runtime. 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classunchecked__reference_a9c15e1b4f748ca5d8396e637c4d9abb4}\label{classunchecked__reference_a9c15e1b4f748ca5d8396e637c4d9abb4}} 
+\index{unchecked\_reference$<$ T, Dims $>$@{unchecked\_reference$<$ T, Dims $>$}!nbytes@{nbytes}}
+\index{nbytes@{nbytes}!unchecked\_reference$<$ T, Dims $>$@{unchecked\_reference$<$ T, Dims $>$}}
+\doxysubsubsection{\texorpdfstring{nbytes()}{nbytes()}}
+{\footnotesize\ttfamily template$<$typename T , ssize\+\_\+t Dims$>$ \\
+ssize\+\_\+t \mbox{\hyperlink{classunchecked__reference}{unchecked\+\_\+reference}}$<$ T, Dims $>$\+::nbytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the total number of bytes used by the referenced data. Note that the actual span in memory may be larger if the referenced array has non-\/contiguous strides (e.\+g. for a slice). \mbox{\Hypertarget{classunchecked__reference_a0da3998ef32834892f5b59529db3efd5}\label{classunchecked__reference_a0da3998ef32834892f5b59529db3efd5}} 
+\index{unchecked\_reference$<$ T, Dims $>$@{unchecked\_reference$<$ T, Dims $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!unchecked\_reference$<$ T, Dims $>$@{unchecked\_reference$<$ T, Dims $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename T , ssize\+\_\+t Dims$>$ \\
+template$<$typename... Ix$>$ \\
+const T\& \mbox{\hyperlink{classunchecked__reference}{unchecked\+\_\+reference}}$<$ T, Dims $>$\+::operator() (\begin{DoxyParamCaption}\item[{Ix...}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unchecked const reference access to data at the given indices. For a compile-\/time known number of dimensions, this requires the correct number of arguments; for run-\/time dimensionality, this is not checked (and so is up to the caller to use safely). \mbox{\Hypertarget{classunchecked__reference_a97fd086abe6908571f2089398d476105}\label{classunchecked__reference_a97fd086abe6908571f2089398d476105}} 
+\index{unchecked\_reference$<$ T, Dims $>$@{unchecked\_reference$<$ T, Dims $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!unchecked\_reference$<$ T, Dims $>$@{unchecked\_reference$<$ T, Dims $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename T , ssize\+\_\+t Dims$>$ \\
+template$<$ssize\+\_\+t D = Dims, typename  = enable\+\_\+if\+\_\+t$<$\+D == 1 $\vert$$\vert$ Dynamic$>$$>$ \\
+const T\& \mbox{\hyperlink{classunchecked__reference}{unchecked\+\_\+reference}}$<$ T, Dims $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{ssize\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unchecked const reference access to data; this operator only participates if the reference is to a 1-\/dimensional array. When present, this is exactly equivalent to {\ttfamily obj(index)}. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/numpy.\+h\end{DoxyCompactItemize}

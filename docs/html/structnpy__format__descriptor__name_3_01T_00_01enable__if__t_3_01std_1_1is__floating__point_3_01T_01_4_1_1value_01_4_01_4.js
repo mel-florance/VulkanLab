@@ -1,0 +1,4 @@
+var structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01std_1_1is__floating__point_3_01T_01_4_1_1value_01_4_01_4 =
+[
+    [ "name", "structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01std_1_1is__floating__point_3_01T_01_4_1_1value_01_4_01_4.html#a3539b56b508a6febec17fb61d25d3c05", null ]
+];

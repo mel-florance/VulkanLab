@@ -1,0 +1,27 @@
+var structbuffer__info =
+[
+    [ "private_ctr_tag", "structbuffer__info_1_1private__ctr__tag.html", null ],
+    [ "buffer_info", "structbuffer__info.html#a7ba465a026eab59b502922baceb7e196", null ],
+    [ "buffer_info", "structbuffer__info.html#a8104f4194a05f50ce3150367dcc52196", null ],
+    [ "buffer_info", "structbuffer__info.html#ac0c1b6032f809ef3ee6cd44af001b573", null ],
+    [ "buffer_info", "structbuffer__info.html#aa127fd9449a1c9c883866b6aa8012843", null ],
+    [ "buffer_info", "structbuffer__info.html#a0d78ac362b1859220c0cb859b5483390", null ],
+    [ "buffer_info", "structbuffer__info.html#a0287798bb2f50c8c19bbe5ee3e913cb6", null ],
+    [ "buffer_info", "structbuffer__info.html#a18bf6023b6d4bb685d345d5acb9b71ca", null ],
+    [ "buffer_info", "structbuffer__info.html#a7c5a7e3878ecda87f0e60448b2bf7d1e", null ],
+    [ "buffer_info", "structbuffer__info.html#a6ea2c0767021b4dc20c6116b6989c3aa", null ],
+    [ "~buffer_info", "structbuffer__info.html#af1f9a46bb7b88c2ff00001b68d21cded", null ],
+    [ "buffer_info", "structbuffer__info.html#ace43580d635d587d7475831fc74394db", null ],
+    [ "operator=", "structbuffer__info.html#a21fc6598b9a1e8df410d1168971a2208", null ],
+    [ "operator=", "structbuffer__info.html#ab55caff9667d44d8ffec6822c4a09068", null ],
+    [ "format", "structbuffer__info.html#af5d89b84be8905b695a23b914e92bbda", null ],
+    [ "itemsize", "structbuffer__info.html#a8a95447f854c217a3b76168627900139", null ],
+    [ "ndim", "structbuffer__info.html#a81d14cf3fc7ceae1b811f335bf35cd97", null ],
+    [ "ownview", "structbuffer__info.html#ade90dcd845c90f78c5f68db0944aa7db", null ],
+    [ "ptr", "structbuffer__info.html#a2976ad4b157156ebbcffe667888e2d28", null ],
+    [ "readonly", "structbuffer__info.html#aaa59cf34240184fc2bcad92bb3cb10bc", null ],
+    [ "shape", "structbuffer__info.html#a69da91575dde98ab488789dfd2d8daf4", null ],
+    [ "size", "structbuffer__info.html#aa8d7471a42f3656b1b7a8b94d8fe03ae", null ],
+    [ "strides", "structbuffer__info.html#abd738097cc1960c4955040eec0619026", null ],
+    [ "view", "structbuffer__info.html#ae697a03b445d86c31a50b04777131881", null ]
+];

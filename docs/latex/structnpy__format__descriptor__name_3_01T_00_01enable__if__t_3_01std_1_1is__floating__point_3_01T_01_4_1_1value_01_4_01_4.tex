@@ -1,0 +1,29 @@
+\hypertarget{structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01std_1_1is__floating__point_3_01T_01_4_1_1value_01_4_01_4}{}\doxysection{Référence du modèle de la structure npy\+\_\+format\+\_\+descriptor\+\_\+name$<$ T, enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+floating\+\_\+point$<$ T $>$\+::value $>$ $>$}
+\label{structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01std_1_1is__floating__point_3_01T_01_4_1_1value_01_4_01_4}\index{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ std::is\_floating\_point$<$ T $>$::value $>$ $>$@{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ std::is\_floating\_point$<$ T $>$::value $>$ $>$}}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr auto {\bfseries name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01std_1_1is__floating__point_3_01T_01_4_1_1value_01_4_01_4_a3539b56b508a6febec17fb61d25d3c05}\label{structnpy__format__descriptor__name_3_01T_00_01enable__if__t_3_01std_1_1is__floating__point_3_01T_01_4_1_1value_01_4_01_4_a3539b56b508a6febec17fb61d25d3c05}} 
+\index{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ std::is\_floating\_point$<$ T $>$::value $>$ $>$@{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ std::is\_floating\_point$<$ T $>$::value $>$ $>$}!name@{name}}
+\index{name@{name}!npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ std::is\_floating\_point$<$ T $>$::value $>$ $>$@{npy\_format\_descriptor\_name$<$ T, enable\_if\_t$<$ std::is\_floating\_point$<$ T $>$::value $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+constexpr auto \mbox{\hyperlink{structnpy__format__descriptor__name}{npy\+\_\+format\+\_\+descriptor\+\_\+name}}$<$ T, enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+floating\+\_\+point$<$ T $>$\+::\mbox{\hyperlink{structdetail_1_1value}{value}} $>$ $>$\+::\mbox{\hyperlink{structname}{name}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \_<std::is\_same<T, float>::value || std::is\_same<T, double>::value>(}
+\DoxyCodeLine{        \_(\textcolor{stringliteral}{"float"}) + \_<sizeof(T)*8>(), \_(\textcolor{stringliteral}{"longdouble"})}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/ext/pybind11/include/pybind11/numpy.\+h\end{DoxyCompactItemize}

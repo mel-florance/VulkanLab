@@ -1,0 +1,252 @@
+\hypertarget{classButton}{}\doxysection{Référence de la classe Button}
+\label{classButton}\index{Button@{Button}}
+
+
+\mbox{[}Normal/\+Toggle/\+Radio/\+Popup\mbox{]} \mbox{\hyperlink{classButton}{Button}} widget.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/button.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Button\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.555556cm]{classButton}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classButton_aa1bc1caf9e9805220f953850d4bb160a}{Flags}} \{ \newline
+\mbox{\hyperlink{classButton_aa1bc1caf9e9805220f953850d4bb160aa3ce3de7d55ff678e277025b63566d912}{Normal\+Button}} = (1 $<$$<$ 0), 
+\mbox{\hyperlink{classButton_aa1bc1caf9e9805220f953850d4bb160aab290081509cf3c9899f6997b2fe7f897}{Radio\+Button}} = (1 $<$$<$ 1), 
+\mbox{\hyperlink{classButton_aa1bc1caf9e9805220f953850d4bb160aa342b6d64ee4a30bca05206f6d2136016}{Toggle\+Button}} = (1 $<$$<$ 2), 
+\mbox{\hyperlink{classButton_aa1bc1caf9e9805220f953850d4bb160aa6e1a02f517e494e9215bcda713218bd2}{Popup\+Button}} = (1 $<$$<$ 3), 
+\newline
+\mbox{\hyperlink{classButton_aa1bc1caf9e9805220f953850d4bb160aaeb47b88f016665687b9096847b46a2ff}{Menu\+Button}} = (1 $<$$<$ 4)
+ \}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structFlags}{Flags}} to specify the button behavior (can be combined with binary OR) \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{classButton_aa53c8366acdf788fda3c496cccafa7d1}{Icon\+Position}} \{ \mbox{\hyperlink{classButton_aa53c8366acdf788fda3c496cccafa7d1a945d5e233cf7d6240f6b783b36a374ff}{Icon\+Position\+::\+Left}}, 
+\mbox{\hyperlink{classButton_aa53c8366acdf788fda3c496cccafa7d1ab9b2e55deaf4ab4f969300c1b0863d3c}{Icon\+Position\+::\+Left\+Centered}}, 
+\mbox{\hyperlink{classButton_aa53c8366acdf788fda3c496cccafa7d1a7c4cb63bf802bdbafa9769261a9ea199}{Icon\+Position\+::\+Right\+Centered}}, 
+\mbox{\hyperlink{classButton_aa53c8366acdf788fda3c496cccafa7d1a92b09c7c48c520c3c55e497875da437c}{Icon\+Position\+::\+Right}}
+ \}
+\begin{DoxyCompactList}\small\item\em The available icon positions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classButton_ad66a3e5ff1b57bd6625a35e089eaf4af}{Button}} (\mbox{\hyperlink{classWidget}{Widget}} $\ast$\mbox{\hyperlink{classWidget_a8e185a157dbf22756147dbae8705316d}{parent}}, const std\+::string \&\mbox{\hyperlink{classButton_aaea8319d4263882e724432cac08bf77e}{caption}}=\char`\"{}Untitled\char`\"{}, int \mbox{\hyperlink{classButton_afee33a5ca02c5fce4989c9772c3f506c}{icon}}=0)
+\begin{DoxyCompactList}\small\item\em Creates a button attached to the specified parent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_aaea8319d4263882e724432cac08bf77e}\label{classButton_aaea8319d4263882e724432cac08bf77e}} 
+const std\+::string \& \mbox{\hyperlink{classButton_aaea8319d4263882e724432cac08bf77e}{caption}} () const
+\begin{DoxyCompactList}\small\item\em Returns the caption of this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_af68f56920db6456f0059a4fae41f3470}\label{classButton_af68f56920db6456f0059a4fae41f3470}} 
+void \mbox{\hyperlink{classButton_af68f56920db6456f0059a4fae41f3470}{set\+\_\+caption}} (const std\+::string \&\mbox{\hyperlink{classButton_aaea8319d4263882e724432cac08bf77e}{caption}})
+\begin{DoxyCompactList}\small\item\em Sets the caption of this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a8471436aca1949c2217a0641cd6643ed}\label{classButton_a8471436aca1949c2217a0641cd6643ed}} 
+const \mbox{\hyperlink{classColor}{Color}} \& \mbox{\hyperlink{classButton_a8471436aca1949c2217a0641cd6643ed}{background\+\_\+color}} () const
+\begin{DoxyCompactList}\small\item\em Returns the background color of this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a9b6dd516d3244e2c2749fbbb11f0d807}\label{classButton_a9b6dd516d3244e2c2749fbbb11f0d807}} 
+void \mbox{\hyperlink{classButton_a9b6dd516d3244e2c2749fbbb11f0d807}{set\+\_\+background\+\_\+color}} (const \mbox{\hyperlink{classColor}{Color}} \&\mbox{\hyperlink{classButton_a8471436aca1949c2217a0641cd6643ed}{background\+\_\+color}})
+\begin{DoxyCompactList}\small\item\em Sets the background color of this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_aa2e1e9260e08a6dab5a196bdb8f704f6}\label{classButton_aa2e1e9260e08a6dab5a196bdb8f704f6}} 
+const \mbox{\hyperlink{classColor}{Color}} \& \mbox{\hyperlink{classButton_aa2e1e9260e08a6dab5a196bdb8f704f6}{text\+\_\+color}} () const
+\begin{DoxyCompactList}\small\item\em Returns the text color of the caption of this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a8d2ff824c2233adc7c849b4f891c3612}\label{classButton_a8d2ff824c2233adc7c849b4f891c3612}} 
+void \mbox{\hyperlink{classButton_a8d2ff824c2233adc7c849b4f891c3612}{set\+\_\+text\+\_\+color}} (const \mbox{\hyperlink{classColor}{Color}} \&\mbox{\hyperlink{classButton_aa2e1e9260e08a6dab5a196bdb8f704f6}{text\+\_\+color}})
+\begin{DoxyCompactList}\small\item\em Sets the text color of the caption of this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_afee33a5ca02c5fce4989c9772c3f506c}\label{classButton_afee33a5ca02c5fce4989c9772c3f506c}} 
+int \mbox{\hyperlink{classButton_afee33a5ca02c5fce4989c9772c3f506c}{icon}} () const
+\begin{DoxyCompactList}\small\item\em Returns the icon of this \mbox{\hyperlink{classButton}{Button}}. See nanogui\+::\+Button\+::m\+\_\+icon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a3e901444796921af4b29cdd4abe3d9fb}\label{classButton_a3e901444796921af4b29cdd4abe3d9fb}} 
+void \mbox{\hyperlink{classButton_a3e901444796921af4b29cdd4abe3d9fb}{set\+\_\+icon}} (int \mbox{\hyperlink{classButton_afee33a5ca02c5fce4989c9772c3f506c}{icon}})
+\begin{DoxyCompactList}\small\item\em Sets the icon of this \mbox{\hyperlink{classButton}{Button}}. See nanogui\+::\+Button\+::m\+\_\+icon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a2f7d4a25d0e87013d170117c79d89ac0}\label{classButton_a2f7d4a25d0e87013d170117c79d89ac0}} 
+int \mbox{\hyperlink{classButton_a2f7d4a25d0e87013d170117c79d89ac0}{flags}} () const
+\begin{DoxyCompactList}\small\item\em The current flags of this \mbox{\hyperlink{classButton}{Button}} (see nanogui\+::\+Button\+::\+Flags for options). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a7a2ceb9360dd659148693b9f157c00aa}\label{classButton_a7a2ceb9360dd659148693b9f157c00aa}} 
+void \mbox{\hyperlink{classButton_a7a2ceb9360dd659148693b9f157c00aa}{set\+\_\+flags}} (int button\+\_\+flags)
+\begin{DoxyCompactList}\small\item\em Sets the flags of this \mbox{\hyperlink{classButton}{Button}} (see nanogui\+::\+Button\+::\+Flags for options). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a1eab758188a30226c76af684d34fe8c6}\label{classButton_a1eab758188a30226c76af684d34fe8c6}} 
+\mbox{\hyperlink{classButton_aa53c8366acdf788fda3c496cccafa7d1}{Icon\+Position}} \mbox{\hyperlink{classButton_a1eab758188a30226c76af684d34fe8c6}{icon\+\_\+position}} () const
+\begin{DoxyCompactList}\small\item\em The position of the icon for this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_ac42c403c86abee3eccfa52d0b58b752c}\label{classButton_ac42c403c86abee3eccfa52d0b58b752c}} 
+void \mbox{\hyperlink{classButton_ac42c403c86abee3eccfa52d0b58b752c}{set\+\_\+icon\+\_\+position}} (\mbox{\hyperlink{classButton_aa53c8366acdf788fda3c496cccafa7d1}{Icon\+Position}} \mbox{\hyperlink{classButton_a1eab758188a30226c76af684d34fe8c6}{icon\+\_\+position}})
+\begin{DoxyCompactList}\small\item\em Sets the position of the icon for this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_aca74757cae16c1fc74e177346cab0033}\label{classButton_aca74757cae16c1fc74e177346cab0033}} 
+bool \mbox{\hyperlink{classButton_aca74757cae16c1fc74e177346cab0033}{pushed}} () const
+\begin{DoxyCompactList}\small\item\em Whether or not this \mbox{\hyperlink{classButton}{Button}} is currently pushed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a7c5cc454a78f46f90cc9faafce7bd95b}\label{classButton_a7c5cc454a78f46f90cc9faafce7bd95b}} 
+void \mbox{\hyperlink{classButton_a7c5cc454a78f46f90cc9faafce7bd95b}{set\+\_\+pushed}} (bool \mbox{\hyperlink{classButton_aca74757cae16c1fc74e177346cab0033}{pushed}})
+\begin{DoxyCompactList}\small\item\em Sets whether or not this \mbox{\hyperlink{classButton}{Button}} is currently pushed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a2e469a9ab29d8f2984ad37e4d5374739}\label{classButton_a2e469a9ab29d8f2984ad37e4d5374739}} 
+std\+::function$<$ void()$>$ \mbox{\hyperlink{classButton_a2e469a9ab29d8f2984ad37e4d5374739}{callback}} () const
+\begin{DoxyCompactList}\small\item\em Return the push callback (for any type of button) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_ac6f2678bdb8e08e65a784a8a1028afd8}\label{classButton_ac6f2678bdb8e08e65a784a8a1028afd8}} 
+void \mbox{\hyperlink{classButton_ac6f2678bdb8e08e65a784a8a1028afd8}{set\+\_\+callback}} (const std\+::function$<$ void()$>$ \&\mbox{\hyperlink{classButton_a2e469a9ab29d8f2984ad37e4d5374739}{callback}})
+\begin{DoxyCompactList}\small\item\em Set the push callback (for any type of button). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a13816dfd5ccc52057668573c21049d8c}\label{classButton_a13816dfd5ccc52057668573c21049d8c}} 
+std\+::function$<$ void(bool)$>$ \mbox{\hyperlink{classButton_a13816dfd5ccc52057668573c21049d8c}{change\+\_\+callback}} () const
+\begin{DoxyCompactList}\small\item\em Return the change callback (for toggle buttons) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a249642256ef83f894723a46ca16ffc1b}\label{classButton_a249642256ef83f894723a46ca16ffc1b}} 
+void \mbox{\hyperlink{classButton_a249642256ef83f894723a46ca16ffc1b}{set\+\_\+change\+\_\+callback}} (const std\+::function$<$ void(bool)$>$ \&\mbox{\hyperlink{classButton_a2e469a9ab29d8f2984ad37e4d5374739}{callback}})
+\begin{DoxyCompactList}\small\item\em Set the change callback (for toggle buttons). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_aa978aac55855fed4e13be1b977b9a564}\label{classButton_aa978aac55855fed4e13be1b977b9a564}} 
+const std\+::vector$<$ \mbox{\hyperlink{classButton}{Button}} $\ast$ $>$ \& \mbox{\hyperlink{classButton_aa978aac55855fed4e13be1b977b9a564}{button\+\_\+group}} () const
+\begin{DoxyCompactList}\small\item\em Return the button group (for radio buttons) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a1a624827bb14fd29be6ece4b386c74da}\label{classButton_a1a624827bb14fd29be6ece4b386c74da}} 
+void \mbox{\hyperlink{classButton_a1a624827bb14fd29be6ece4b386c74da}{set\+\_\+button\+\_\+group}} (const std\+::vector$<$ \mbox{\hyperlink{classButton}{Button}} $\ast$ $>$ \&\mbox{\hyperlink{classButton_aa978aac55855fed4e13be1b977b9a564}{button\+\_\+group}})
+\begin{DoxyCompactList}\small\item\em Set the button group (for radio buttons) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_abed2f9e72d331cc078dbc56feea62ba3}\label{classButton_abed2f9e72d331cc078dbc56feea62ba3}} 
+virtual Vector2i \mbox{\hyperlink{classButton_abed2f9e72d331cc078dbc56feea62ba3}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) const override
+\begin{DoxyCompactList}\small\item\em The preferred size of this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a60bcf3b131c91a7c3056600759402556}\label{classButton_a60bcf3b131c91a7c3056600759402556}} 
+virtual bool \mbox{\hyperlink{classButton_a60bcf3b131c91a7c3056600759402556}{mouse\+\_\+enter\+\_\+event}} (const Vector2i \&p, bool enter) override
+\begin{DoxyCompactList}\small\item\em The callback that is called when any type of mouse button event is issued to this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_ad91fa2a14b7ae09d10d7f41bf5e7ba0e}\label{classButton_ad91fa2a14b7ae09d10d7f41bf5e7ba0e}} 
+virtual bool \mbox{\hyperlink{classButton_ad91fa2a14b7ae09d10d7f41bf5e7ba0e}{mouse\+\_\+button\+\_\+event}} (const Vector2i \&p, int button, bool down, int modifiers) override
+\begin{DoxyCompactList}\small\item\em Handle a mouse button event (default implementation\+: propagate to children) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a36b3dde8fc370e276efa76b5bf19486e}\label{classButton_a36b3dde8fc370e276efa76b5bf19486e}} 
+virtual void \mbox{\hyperlink{classButton_a36b3dde8fc370e276efa76b5bf19486e}{draw}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Responsible for drawing the \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classButton_a0d3dca4ac1192e87eab73a0f61baf23a}\label{classButton_a0d3dca4ac1192e87eab73a0f61baf23a}} 
+std\+::string \mbox{\hyperlink{classButton_a0d3dca4ac1192e87eab73a0f61baf23a}{m\+\_\+caption}}
+\begin{DoxyCompactList}\small\item\em The caption of this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classButton_aee07e220079cfaf3e771b4324fec7319}{m\+\_\+icon}}
+\begin{DoxyCompactList}\small\item\em The icon of this \mbox{\hyperlink{classButton}{Button}} ({\ttfamily 0} means no icon). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a439ea320281ff3819ff086cfdde5e714}\label{classButton_a439ea320281ff3819ff086cfdde5e714}} 
+\mbox{\hyperlink{classButton_aa53c8366acdf788fda3c496cccafa7d1}{Icon\+Position}} \mbox{\hyperlink{classButton_a439ea320281ff3819ff086cfdde5e714}{m\+\_\+icon\+\_\+position}}
+\begin{DoxyCompactList}\small\item\em The position to draw the icon at. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_ac274d0e0d9c0e59b4e11ec9d053b074e}\label{classButton_ac274d0e0d9c0e59b4e11ec9d053b074e}} 
+bool \mbox{\hyperlink{classButton_ac274d0e0d9c0e59b4e11ec9d053b074e}{m\+\_\+pushed}}
+\begin{DoxyCompactList}\small\item\em Whether or not this \mbox{\hyperlink{classButton}{Button}} is currently pushed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a436836dbc3c41f264748ebf1d8a1ce9d}\label{classButton_a436836dbc3c41f264748ebf1d8a1ce9d}} 
+int \mbox{\hyperlink{classButton_a436836dbc3c41f264748ebf1d8a1ce9d}{m\+\_\+flags}}
+\begin{DoxyCompactList}\small\item\em The current flags of this button (see nanogui\+::\+Button\+::\+Flags for options). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a3f9b8aebf71b7560d437815b42687c98}\label{classButton_a3f9b8aebf71b7560d437815b42687c98}} 
+\mbox{\hyperlink{classColor}{Color}} \mbox{\hyperlink{classButton_a3f9b8aebf71b7560d437815b42687c98}{m\+\_\+background\+\_\+color}}
+\begin{DoxyCompactList}\small\item\em The background color of this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a3c65b56d2ef707f84ea3d65a767f63a6}\label{classButton_a3c65b56d2ef707f84ea3d65a767f63a6}} 
+\mbox{\hyperlink{classColor}{Color}} \mbox{\hyperlink{classButton_a3c65b56d2ef707f84ea3d65a767f63a6}{m\+\_\+text\+\_\+color}}
+\begin{DoxyCompactList}\small\item\em The color of the caption text of this \mbox{\hyperlink{classButton}{Button}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_aa7be80fe6cddc05e298362dd26e1bf37}\label{classButton_aa7be80fe6cddc05e298362dd26e1bf37}} 
+std\+::function$<$ void()$>$ \mbox{\hyperlink{classButton_aa7be80fe6cddc05e298362dd26e1bf37}{m\+\_\+callback}}
+\begin{DoxyCompactList}\small\item\em The callback issued for all types of buttons. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_aa5a12b16a7f9ef4223bea40f584ce087}\label{classButton_aa5a12b16a7f9ef4223bea40f584ce087}} 
+std\+::function$<$ void(bool)$>$ \mbox{\hyperlink{classButton_aa5a12b16a7f9ef4223bea40f584ce087}{m\+\_\+change\+\_\+callback}}
+\begin{DoxyCompactList}\small\item\em The callback issued for toggle buttons. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_aa7247eb97ab88a0240915b5505687f75}\label{classButton_aa7247eb97ab88a0240915b5505687f75}} 
+std\+::vector$<$ \mbox{\hyperlink{classButton}{Button}} $\ast$ $>$ \mbox{\hyperlink{classButton_aa7247eb97ab88a0240915b5505687f75}{m\+\_\+button\+\_\+group}}
+\begin{DoxyCompactList}\small\item\em The button group for radio buttons. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\mbox{[}Normal/\+Toggle/\+Radio/\+Popup\mbox{]} \mbox{\hyperlink{classButton}{Button}} widget. 
+
+\doxysubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{classButton_aa1bc1caf9e9805220f953850d4bb160a}\label{classButton_aa1bc1caf9e9805220f953850d4bb160a}} 
+\index{Button@{Button}!Flags@{Flags}}
+\index{Flags@{Flags}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Flags}{Flags}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classButton_aa1bc1caf9e9805220f953850d4bb160a}{Button\+::\+Flags}}}
+
+
+
+\mbox{\hyperlink{structFlags}{Flags}} to specify the button behavior (can be combined with binary OR) 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NormalButton@{NormalButton}!Button@{Button}}\index{Button@{Button}!NormalButton@{NormalButton}}}\mbox{\Hypertarget{classButton_aa1bc1caf9e9805220f953850d4bb160aa3ce3de7d55ff678e277025b63566d912}\label{classButton_aa1bc1caf9e9805220f953850d4bb160aa3ce3de7d55ff678e277025b63566d912}} 
+Normal\+Button&\mbox{\hyperlink{structA}{A}} normal button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RadioButton@{RadioButton}!Button@{Button}}\index{Button@{Button}!RadioButton@{RadioButton}}}\mbox{\Hypertarget{classButton_aa1bc1caf9e9805220f953850d4bb160aab290081509cf3c9899f6997b2fe7f897}\label{classButton_aa1bc1caf9e9805220f953850d4bb160aab290081509cf3c9899f6997b2fe7f897}} 
+Radio\+Button&\mbox{\hyperlink{structA}{A}} radio button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ToggleButton@{ToggleButton}!Button@{Button}}\index{Button@{Button}!ToggleButton@{ToggleButton}}}\mbox{\Hypertarget{classButton_aa1bc1caf9e9805220f953850d4bb160aa342b6d64ee4a30bca05206f6d2136016}\label{classButton_aa1bc1caf9e9805220f953850d4bb160aa342b6d64ee4a30bca05206f6d2136016}} 
+Toggle\+Button&\mbox{\hyperlink{structA}{A}} toggle button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PopupButton@{PopupButton}!Button@{Button}}\index{Button@{Button}!PopupButton@{PopupButton}}}\mbox{\Hypertarget{classButton_aa1bc1caf9e9805220f953850d4bb160aa6e1a02f517e494e9215bcda713218bd2}\label{classButton_aa1bc1caf9e9805220f953850d4bb160aa6e1a02f517e494e9215bcda713218bd2}} 
+Popup\+Button&\mbox{\hyperlink{structA}{A}} popup button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MenuButton@{MenuButton}!Button@{Button}}\index{Button@{Button}!MenuButton@{MenuButton}}}\mbox{\Hypertarget{classButton_aa1bc1caf9e9805220f953850d4bb160aaeb47b88f016665687b9096847b46a2ff}\label{classButton_aa1bc1caf9e9805220f953850d4bb160aaeb47b88f016665687b9096847b46a2ff}} 
+Menu\+Button&\mbox{\hyperlink{structA}{A}} menu button. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classButton_aa53c8366acdf788fda3c496cccafa7d1}\label{classButton_aa53c8366acdf788fda3c496cccafa7d1}} 
+\index{Button@{Button}!IconPosition@{IconPosition}}
+\index{IconPosition@{IconPosition}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{IconPosition}{IconPosition}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classButton_aa53c8366acdf788fda3c496cccafa7d1}{Button\+::\+Icon\+Position}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The available icon positions. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!Button@{Button}}\index{Button@{Button}!Left@{Left}}}\mbox{\Hypertarget{classButton_aa53c8366acdf788fda3c496cccafa7d1a945d5e233cf7d6240f6b783b36a374ff}\label{classButton_aa53c8366acdf788fda3c496cccafa7d1a945d5e233cf7d6240f6b783b36a374ff}} 
+Left&\mbox{\hyperlink{classButton}{Button}} icon on the far left. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftCentered@{LeftCentered}!Button@{Button}}\index{Button@{Button}!LeftCentered@{LeftCentered}}}\mbox{\Hypertarget{classButton_aa53c8366acdf788fda3c496cccafa7d1ab9b2e55deaf4ab4f969300c1b0863d3c}\label{classButton_aa53c8366acdf788fda3c496cccafa7d1ab9b2e55deaf4ab4f969300c1b0863d3c}} 
+Left\+Centered&\mbox{\hyperlink{classButton}{Button}} icon on the left, centered (depends on caption text length). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightCentered@{RightCentered}!Button@{Button}}\index{Button@{Button}!RightCentered@{RightCentered}}}\mbox{\Hypertarget{classButton_aa53c8366acdf788fda3c496cccafa7d1a7c4cb63bf802bdbafa9769261a9ea199}\label{classButton_aa53c8366acdf788fda3c496cccafa7d1a7c4cb63bf802bdbafa9769261a9ea199}} 
+Right\+Centered&\mbox{\hyperlink{classButton}{Button}} icon on the right, centered (depends on caption text length). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!Button@{Button}}\index{Button@{Button}!Right@{Right}}}\mbox{\Hypertarget{classButton_aa53c8366acdf788fda3c496cccafa7d1a92b09c7c48c520c3c55e497875da437c}\label{classButton_aa53c8366acdf788fda3c496cccafa7d1a92b09c7c48c520c3c55e497875da437c}} 
+Right&\mbox{\hyperlink{classButton}{Button}} icon on the far right. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classButton_ad66a3e5ff1b57bd6625a35e089eaf4af}\label{classButton_ad66a3e5ff1b57bd6625a35e089eaf4af}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWidget}{Widget}} $\ast$}]{parent,  }\item[{const std\+::string \&}]{caption = {\ttfamily \char`\"{}Untitled\char`\"{}},  }\item[{int}]{icon = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Creates a button attached to the specified parent. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & The nanogui\+::\+Widget this \mbox{\hyperlink{classButton}{Button}} will be attached to.\\
+\hline
+{\em caption} & The name of the button (default {\ttfamily \char`\"{}\+Untitled\char`\"{}}).\\
+\hline
+{\em icon} & The icon to display with this \mbox{\hyperlink{classButton}{Button}}. See nanogui\+::\+Button\+::m\+Icon. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classButton_aee07e220079cfaf3e771b4324fec7319}\label{classButton_aee07e220079cfaf3e771b4324fec7319}} 
+\index{Button@{Button}!m\_icon@{m\_icon}}
+\index{m\_icon@{m\_icon}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{m\_icon}{m\_icon}}
+{\footnotesize\ttfamily int Button\+::m\+\_\+icon\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The icon of this \mbox{\hyperlink{classButton}{Button}} ({\ttfamily 0} means no icon). 
+
+\textbackslash{}rst The icon to display with this \mbox{\hyperlink{classButton}{Button}}. If not {\ttfamily 0}, may either be a picture icon, or one of the icons enumerated in \+:ref\+:{\ttfamily file\+\_\+nanogui\+\_\+entypo.\+h}. The kind of icon (image or Entypo) is determined by the functions \+:func\+:{\ttfamily nanogui\+::nvg\+Is\+Image\+Icon} and its reciprocal counterpart \+:func\+:{\ttfamily nanogui\+::nvg\+Is\+Font\+Icon}. \textbackslash{}endrst 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{button_8h}{button.\+h}}\item 
+ext/nanogui/src/button.\+cpp\end{DoxyCompactItemize}

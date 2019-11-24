@@ -1,0 +1,4 @@
+var structformat__descriptor_3_01T_00_01detail_1_1enable__if__t_3_01detail_1_1is__pod__struct_3_01T_01_4_1_1value_01_4_01_4 =
+[
+    [ "format", "structformat__descriptor_3_01T_00_01detail_1_1enable__if__t_3_01detail_1_1is__pod__struct_3_01T_01_4_1_1value_01_4_01_4.html#a9fb2753e0a41765a59d716a27e199bd6", null ]
+];

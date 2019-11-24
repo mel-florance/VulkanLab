@@ -1,15 +1,57 @@
-\hypertarget{classTexture}{}\doxysection{Texture Class Reference}
+\hypertarget{classTexture}{}\doxysection{Référence de la classe Texture}
 \label{classTexture}\index{Texture@{Texture}}
-Inheritance diagram for Texture\+:\begin{figure}[H]
+Graphe d\textquotesingle{}héritage de Texture\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classTexture}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Types publics}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classTexture_ad75e18c41a307806cec75852d5142b40}{Texture}} (const char $\ast$name, const char $\ast$path)
+enum \mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6}{Pixel\+Format}} \+: uint8\+\_\+t \{ \newline
+\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6ae1e1d3d40573127e9ee0480caf1283d6}{Pixel\+Format\+::R}}, 
+\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6a36fb81539768d678527f9929625716b7}{Pixel\+Format\+::\+RA}}, 
+\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6a889574aebacda6bfd3e534e2b49b8028}{Pixel\+Format\+::\+R\+GB}}, 
+\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6aea3495a278957dc58165e48a8945469f}{Pixel\+Format\+::\+R\+G\+BA}}, 
+\newline
+\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6a2ad5640ebdec72fc79531d1778c6c2dc}{Pixel\+Format\+::\+B\+GR}}, 
+\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6a5a1fe3c61c9e2fd6dbbc823589f6e697}{Pixel\+Format\+::\+B\+G\+RA}}, 
+\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6a675056ad1441b6375b2c5abd48c27ef1}{Pixel\+Format\+::\+Depth}}, 
+\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6a2fa8076285272883c91e14402975a441}{Pixel\+Format\+::\+Depth\+Stencil}}
+ \}
+\begin{DoxyCompactList}\small\item\em Overall format of the texture (e.\+g. luminance-\/only or R\+G\+BA) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_a129b619e8e93e97e25f3ab879b6bf85c}\label{classTexture_a129b619e8e93e97e25f3ab879b6bf85c}} 
+enum \mbox{\hyperlink{classTexture_a129b619e8e93e97e25f3ab879b6bf85c}{Component\+Format}} \+: uint8\+\_\+t \{ \newline
+{\bfseries U\+Int8} = (uint8\+\_\+t) enoki\+::Enoki\+Type\+::U\+Int8, 
+{\bfseries Int8} = (uint8\+\_\+t) enoki\+::Enoki\+Type\+::Int8, 
+{\bfseries U\+Int16} = (uint8\+\_\+t) enoki\+::Enoki\+Type\+::U\+Int16, 
+{\bfseries Int16} = (uint8\+\_\+t) enoki\+::Enoki\+Type\+::Int16, 
+\newline
+{\bfseries U\+Int32} = (uint8\+\_\+t) enoki\+::Enoki\+Type\+::U\+Int32, 
+{\bfseries Int32} = (uint8\+\_\+t) enoki\+::Enoki\+Type\+::Int32, 
+{\bfseries Float16} = (uint8\+\_\+t) enoki\+::Enoki\+Type\+::Float16, 
+{\bfseries Float32} = (uint8\+\_\+t) enoki\+::Enoki\+Type\+::Float32
+ \}
+\begin{DoxyCompactList}\small\item\em Number format of pixel components. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}{Interpolation\+Mode}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ffa60494f02d440f316319dd0fad40ad007}{Interpolation\+Mode\+::\+Nearest}}, 
+\mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ffaaf17c98bbd83c27d6426d2ff3fa81d7f}{Interpolation\+Mode\+::\+Bilinear}}, 
+\mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ffa969a7b6f1f3951ef293b3ff281dc293d}{Interpolation\+Mode\+::\+Trilinear}}
+ \}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classTexture}{Texture}} interpolation mode. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0}{Wrap\+Mode}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0a74556551231333c36debc3d373261134}{Wrap\+Mode\+::\+Clamp\+To\+Edge}}, 
+\mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0a7020426cfb0a204051be4b3053d2acc8}{Wrap\+Mode\+::\+Repeat}}, 
+\mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0a39a681a9d5ccc902bebd16a343dd7b74}{Wrap\+Mode\+::\+Mirror\+Repeat}}
+ \}
+\begin{DoxyCompactList}\small\item\em How should out-\/of-\/bounds texture evaluations be handled? \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{classTexture_afbaf182c9b78a6a72d8dad86cb3930e4}{Texture\+Flags}} \{ \mbox{\hyperlink{classTexture_afbaf182c9b78a6a72d8dad86cb3930e4ad20b894a2c05470de2ef70e8f5deea98}{Shader\+Read}} = 0x01, 
+\mbox{\hyperlink{classTexture_afbaf182c9b78a6a72d8dad86cb3930e4a2605b707fef40196a75bbc565740e8b9}{Render\+Target}} = 0x02
+ \}
+\begin{DoxyCompactList}\small\item\em How will the texture be used? (Must specify at least one) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTexture_ad75e18c41a307806cec75852d5142b40}{Texture}} (const char $\ast$\mbox{\hyperlink{structname}{name}}, const char $\ast$path)
 \item 
 \mbox{\hyperlink{classTexture_a09c4bcb7462f64c1d20fa69dba3cee8a}{$\sim$\+Texture}} ()
 \item 
@@ -29,7 +71,7 @@ unsigned char $\ast$ \mbox{\hyperlink{classTexture_afca64f882731fce8a46a7c3f78e9
 \item 
 void \mbox{\hyperlink{classTexture_ae04b2aa24224c9ef7286ee27047bed79}{set\+Id}} (unsigned int id)
 \item 
-void \mbox{\hyperlink{classTexture_abc5896b4d20af9e9eb9e78ad6f2755f8}{set\+Name}} (const char $\ast$name)
+void \mbox{\hyperlink{classTexture_abc5896b4d20af9e9eb9e78ad6f2755f8}{set\+Name}} (const char $\ast$\mbox{\hyperlink{structname}{name}})
 \item 
 void \mbox{\hyperlink{classTexture_a52ea6825bd24b11875a37f0715e7b883}{set\+Width}} (int width)
 \item 
@@ -38,8 +80,88 @@ void \mbox{\hyperlink{classTexture_a1945ff1d8c22a3760dadada8b95d065d}{set\+Heigh
 void \mbox{\hyperlink{classTexture_a1ef5de835a3dbbdfff607b38e00e8a25}{set\+Channels}} (int channels)
 \item 
 void \mbox{\hyperlink{classTexture_a1d9d5ee4ee2ca8948f6092ebc029e554}{set\+Data}} (unsigned char $\ast$data)
+\item 
+\mbox{\hyperlink{classTexture_aee5eb93833f20b66c9f3711f8c720666}{Texture}} (\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6}{Pixel\+Format}} \mbox{\hyperlink{classTexture_a1a8f29f5daa0849ece44c17801f721f6}{pixel\+\_\+format}}, \mbox{\hyperlink{classTexture_a129b619e8e93e97e25f3ab879b6bf85c}{Component\+Format}} \mbox{\hyperlink{classTexture_af982ab2f3abefab4208210f809fd5077}{component\+\_\+format}}, const Vector2i \&\mbox{\hyperlink{classTexture_a4c6945288ee5085cef8421401c137fa7}{size}}, \mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}{Interpolation\+Mode}} \mbox{\hyperlink{classTexture_a62ba914026e8ed5e2f2ad773a66e0e52}{min\+\_\+interpolation\+\_\+mode}}=\mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ffaaf17c98bbd83c27d6426d2ff3fa81d7f}{Interpolation\+Mode\+::\+Bilinear}}, \mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}{Interpolation\+Mode}} \mbox{\hyperlink{classTexture_aafadc06c076d3b8f8b540e4fec373c36}{mag\+\_\+interpolation\+\_\+mode}}=\mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ffaaf17c98bbd83c27d6426d2ff3fa81d7f}{Interpolation\+Mode\+::\+Bilinear}}, \mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0}{Wrap\+Mode}} \mbox{\hyperlink{classTexture_af20ffededa75e64db7a6938522b7d074}{wrap\+\_\+mode}}=\mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0a74556551231333c36debc3d373261134}{Wrap\+Mode\+::\+Clamp\+To\+Edge}}, uint8\+\_\+t \mbox{\hyperlink{classTexture_a597396b434e0e2250221e3257c555874}{samples}}=1, uint8\+\_\+t \mbox{\hyperlink{classTexture_a1fce5719b03f48a87ef813133c159c03}{flags}}=(uint8\+\_\+t) Texture\+Flags\+::\+Shader\+Read)
+\begin{DoxyCompactList}\small\item\em Allocate memory for a texture with the given configuration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_a4891e81990cf2d58bae7fdcd8248519e}\label{classTexture_a4891e81990cf2d58bae7fdcd8248519e}} 
+\mbox{\hyperlink{classTexture_a4891e81990cf2d58bae7fdcd8248519e}{Texture}} (const std\+::string \&filename, \mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}{Interpolation\+Mode}} \mbox{\hyperlink{classTexture_a62ba914026e8ed5e2f2ad773a66e0e52}{min\+\_\+interpolation\+\_\+mode}}=\mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ffaaf17c98bbd83c27d6426d2ff3fa81d7f}{Interpolation\+Mode\+::\+Bilinear}}, \mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}{Interpolation\+Mode}} \mbox{\hyperlink{classTexture_aafadc06c076d3b8f8b540e4fec373c36}{mag\+\_\+interpolation\+\_\+mode}}=\mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ffaaf17c98bbd83c27d6426d2ff3fa81d7f}{Interpolation\+Mode\+::\+Bilinear}}, \mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0}{Wrap\+Mode}} \mbox{\hyperlink{classTexture_af20ffededa75e64db7a6938522b7d074}{wrap\+\_\+mode}}=\mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0a74556551231333c36debc3d373261134}{Wrap\+Mode\+::\+Clamp\+To\+Edge}})
+\begin{DoxyCompactList}\small\item\em Load an image from the given file using stb-\/image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_a1a8f29f5daa0849ece44c17801f721f6}\label{classTexture_a1a8f29f5daa0849ece44c17801f721f6}} 
+\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6}{Pixel\+Format}} \mbox{\hyperlink{classTexture_a1a8f29f5daa0849ece44c17801f721f6}{pixel\+\_\+format}} () const
+\begin{DoxyCompactList}\small\item\em Return the pixel format. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_af982ab2f3abefab4208210f809fd5077}\label{classTexture_af982ab2f3abefab4208210f809fd5077}} 
+\mbox{\hyperlink{classTexture_a129b619e8e93e97e25f3ab879b6bf85c}{Component\+Format}} \mbox{\hyperlink{classTexture_af982ab2f3abefab4208210f809fd5077}{component\+\_\+format}} () const
+\begin{DoxyCompactList}\small\item\em Return the component format. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_a62ba914026e8ed5e2f2ad773a66e0e52}\label{classTexture_a62ba914026e8ed5e2f2ad773a66e0e52}} 
+\mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}{Interpolation\+Mode}} \mbox{\hyperlink{classTexture_a62ba914026e8ed5e2f2ad773a66e0e52}{min\+\_\+interpolation\+\_\+mode}} () const
+\begin{DoxyCompactList}\small\item\em Return the interpolation mode for minimization. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_aafadc06c076d3b8f8b540e4fec373c36}\label{classTexture_aafadc06c076d3b8f8b540e4fec373c36}} 
+\mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}{Interpolation\+Mode}} \mbox{\hyperlink{classTexture_aafadc06c076d3b8f8b540e4fec373c36}{mag\+\_\+interpolation\+\_\+mode}} () const
+\begin{DoxyCompactList}\small\item\em Return the interpolation mode for minimization. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_af20ffededa75e64db7a6938522b7d074}\label{classTexture_af20ffededa75e64db7a6938522b7d074}} 
+\mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0}{Wrap\+Mode}} \mbox{\hyperlink{classTexture_af20ffededa75e64db7a6938522b7d074}{wrap\+\_\+mode}} () const
+\begin{DoxyCompactList}\small\item\em Return the wrap mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_a597396b434e0e2250221e3257c555874}\label{classTexture_a597396b434e0e2250221e3257c555874}} 
+uint8\+\_\+t \mbox{\hyperlink{classTexture_a597396b434e0e2250221e3257c555874}{samples}} () const
+\begin{DoxyCompactList}\small\item\em Return the number of samples (M\+S\+AA) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_a1fce5719b03f48a87ef813133c159c03}\label{classTexture_a1fce5719b03f48a87ef813133c159c03}} 
+uint8\+\_\+t \mbox{\hyperlink{classTexture_a1fce5719b03f48a87ef813133c159c03}{flags}} () const
+\begin{DoxyCompactList}\small\item\em Return a combination of flags (from \mbox{\hyperlink{classTexture_afbaf182c9b78a6a72d8dad86cb3930e4}{Texture\+::\+Texture\+Flags}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_a4c6945288ee5085cef8421401c137fa7}\label{classTexture_a4c6945288ee5085cef8421401c137fa7}} 
+const Vector2i \& \mbox{\hyperlink{classTexture_a4c6945288ee5085cef8421401c137fa7}{size}} () const
+\begin{DoxyCompactList}\small\item\em Return the size of this texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_a144241844cda6e939bad672fe266a19c}\label{classTexture_a144241844cda6e939bad672fe266a19c}} 
+size\+\_\+t \mbox{\hyperlink{classTexture_a144241844cda6e939bad672fe266a19c}{bytes\+\_\+per\+\_\+pixel}} () const
+\begin{DoxyCompactList}\small\item\em Return the number of bytes consumed per pixel of this texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_a83e893d1caf9ad069fd70d75f33f1316}\label{classTexture_a83e893d1caf9ad069fd70d75f33f1316}} 
+size\+\_\+t \mbox{\hyperlink{classTexture_a83e893d1caf9ad069fd70d75f33f1316}{channels}} () const
+\begin{DoxyCompactList}\small\item\em Return the number of channels of this texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_aaaab19a84c0b527cb17979c7b638f6ee}\label{classTexture_aaaab19a84c0b527cb17979c7b638f6ee}} 
+void \mbox{\hyperlink{classTexture_aaaab19a84c0b527cb17979c7b638f6ee}{upload}} (const uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em Upload packed pixel data from the C\+PU to the G\+PU. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_ab9d553b0c8a4cb0f485ef0fa2f353144}\label{classTexture_ab9d553b0c8a4cb0f485ef0fa2f353144}} 
+void \mbox{\hyperlink{classTexture_ab9d553b0c8a4cb0f485ef0fa2f353144}{download}} (uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em Download packed pixel data from the G\+PU to the C\+PU. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_ae26d4fa9fbddb6e0bf5055e35f986448}\label{classTexture_ae26d4fa9fbddb6e0bf5055e35f986448}} 
+void \mbox{\hyperlink{classTexture_ae26d4fa9fbddb6e0bf5055e35f986448}{resize}} (const Vector2i \&\mbox{\hyperlink{classTexture_a4c6945288ee5085cef8421401c137fa7}{size}})
+\begin{DoxyCompactList}\small\item\em Resize the texture (discards the current contents) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTexture_af6d9b9a66df1274c704f23316c840899}\label{classTexture_af6d9b9a66df1274c704f23316c840899}} 
+void \mbox{\hyperlink{classTexture_af6d9b9a66df1274c704f23316c840899}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the texture handle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTexture_a4eaff28a38f061c3ed1a21ef210e7030}\label{classTexture_a4eaff28a38f061c3ed1a21ef210e7030}} 
+virtual \mbox{\hyperlink{classTexture_a4eaff28a38f061c3ed1a21ef210e7030}{$\sim$\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Release all resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTexture_a4b37e385b6c3f3f117cfbda6ecffb166}\label{classTexture_a4b37e385b6c3f3f117cfbda6ecffb166}} 
+\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6}{Pixel\+Format}} {\bfseries m\+\_\+pixel\+\_\+format}
+\item 
+\mbox{\Hypertarget{classTexture_ae6a8492379eb3774a5db70daf465bf46}\label{classTexture_ae6a8492379eb3774a5db70daf465bf46}} 
+\mbox{\hyperlink{classTexture_a129b619e8e93e97e25f3ab879b6bf85c}{Component\+Format}} {\bfseries m\+\_\+component\+\_\+format}
+\item 
+\mbox{\Hypertarget{classTexture_a41a1337eec50659a31546b2bfada84ee}\label{classTexture_a41a1337eec50659a31546b2bfada84ee}} 
+\mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}{Interpolation\+Mode}} {\bfseries m\+\_\+min\+\_\+interpolation\+\_\+mode}
+\item 
+\mbox{\Hypertarget{classTexture_aef1f5481ca862e60874b2efd50275df5}\label{classTexture_aef1f5481ca862e60874b2efd50275df5}} 
+\mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}{Interpolation\+Mode}} {\bfseries m\+\_\+mag\+\_\+interpolation\+\_\+mode}
+\item 
+\mbox{\Hypertarget{classTexture_aab5cb03ed4ae435930bee525452710ff}\label{classTexture_aab5cb03ed4ae435930bee525452710ff}} 
+\mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0}{Wrap\+Mode}} {\bfseries m\+\_\+wrap\+\_\+mode}
+\item 
+\mbox{\Hypertarget{classTexture_a01e98ebae6d5075ed46dff33c2530066}\label{classTexture_a01e98ebae6d5075ed46dff33c2530066}} 
+uint8\+\_\+t {\bfseries m\+\_\+samples}
+\item 
+\mbox{\Hypertarget{classTexture_a3fc97e6fe35cb8c22215cbe9af1675d5}\label{classTexture_a3fc97e6fe35cb8c22215cbe9af1675d5}} 
+uint8\+\_\+t {\bfseries m\+\_\+flags}
+\item 
+\mbox{\Hypertarget{classTexture_aee54e5cb05c69827e92b2aa50ac7a94c}\label{classTexture_aee54e5cb05c69827e92b2aa50ac7a94c}} 
+Vector2i {\bfseries m\+\_\+size}
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classTexture_aed42161a5c00b6020c85833401da6da6}\label{classTexture_aed42161a5c00b6020c85833401da6da6}} 
@@ -54,7 +176,7 @@ int {\bfseries width}
 \mbox{\Hypertarget{classTexture_ad37c395c65ff8bde86230908027a6fcd}\label{classTexture_ad37c395c65ff8bde86230908027a6fcd}} 
 int {\bfseries height}
 \item 
-\mbox{\Hypertarget{classTexture_a69c58068e4b82a86d24e8c797705d515}\label{classTexture_a69c58068e4b82a86d24e8c797705d515}} 
+\mbox{\Hypertarget{classTexture_aceccc6cae6f21faaf6906b311010703c}\label{classTexture_aceccc6cae6f21faaf6906b311010703c}} 
 int {\bfseries channels}
 \item 
 \mbox{\Hypertarget{classTexture_ab0308cd773b72a1ba4e061f2145f5bfc}\label{classTexture_ab0308cd773b72a1ba4e061f2145f5bfc}} 
@@ -62,15 +184,130 @@ unsigned char $\ast$ {\bfseries data}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\doxysubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}\label{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}} 
+\index{Texture@{Texture}!InterpolationMode@{InterpolationMode}}
+\index{InterpolationMode@{InterpolationMode}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{InterpolationMode}{InterpolationMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}{Texture\+::\+Interpolation\+Mode}} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+\mbox{\hyperlink{classTexture}{Texture}} interpolation mode. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Nearest@{Nearest}!Texture@{Texture}}\index{Texture@{Texture}!Nearest@{Nearest}}}\mbox{\Hypertarget{classTexture_a68d0894af6158cc39f9cb18ef5d331ffa60494f02d440f316319dd0fad40ad007}\label{classTexture_a68d0894af6158cc39f9cb18ef5d331ffa60494f02d440f316319dd0fad40ad007}} 
+Nearest&Nearest neighbor interpolation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bilinear@{Bilinear}!Texture@{Texture}}\index{Texture@{Texture}!Bilinear@{Bilinear}}}\mbox{\Hypertarget{classTexture_a68d0894af6158cc39f9cb18ef5d331ffaaf17c98bbd83c27d6426d2ff3fa81d7f}\label{classTexture_a68d0894af6158cc39f9cb18ef5d331ffaaf17c98bbd83c27d6426d2ff3fa81d7f}} 
+Bilinear&Bilinear ineterpolation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Trilinear@{Trilinear}!Texture@{Texture}}\index{Texture@{Texture}!Trilinear@{Trilinear}}}\mbox{\Hypertarget{classTexture_a68d0894af6158cc39f9cb18ef5d331ffa969a7b6f1f3951ef293b3ff281dc293d}\label{classTexture_a68d0894af6158cc39f9cb18ef5d331ffa969a7b6f1f3951ef293b3ff281dc293d}} 
+Trilinear&Trilinear interpolation (using M\+IP mapping) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classTexture_a89f17140f54d88caedd976cf48fc33f6}\label{classTexture_a89f17140f54d88caedd976cf48fc33f6}} 
+\index{Texture@{Texture}!PixelFormat@{PixelFormat}}
+\index{PixelFormat@{PixelFormat}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{PixelFormat}{PixelFormat}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6}{Texture\+::\+Pixel\+Format}} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Overall format of the texture (e.\+g. luminance-\/only or R\+G\+BA) 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R@{R}!Texture@{Texture}}\index{Texture@{Texture}!R@{R}}}\mbox{\Hypertarget{classTexture_a89f17140f54d88caedd976cf48fc33f6ae1e1d3d40573127e9ee0480caf1283d6}\label{classTexture_a89f17140f54d88caedd976cf48fc33f6ae1e1d3d40573127e9ee0480caf1283d6}} 
+R&Single-\/channel bitmap. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RA@{RA}!Texture@{Texture}}\index{Texture@{Texture}!RA@{RA}}}\mbox{\Hypertarget{classTexture_a89f17140f54d88caedd976cf48fc33f6a36fb81539768d678527f9929625716b7}\label{classTexture_a89f17140f54d88caedd976cf48fc33f6a36fb81539768d678527f9929625716b7}} 
+RA&Two-\/channel bitmap. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RGB@{RGB}!Texture@{Texture}}\index{Texture@{Texture}!RGB@{RGB}}}\mbox{\Hypertarget{classTexture_a89f17140f54d88caedd976cf48fc33f6a889574aebacda6bfd3e534e2b49b8028}\label{classTexture_a89f17140f54d88caedd976cf48fc33f6a889574aebacda6bfd3e534e2b49b8028}} 
+R\+GB&R\+GB bitmap. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RGBA@{RGBA}!Texture@{Texture}}\index{Texture@{Texture}!RGBA@{RGBA}}}\mbox{\Hypertarget{classTexture_a89f17140f54d88caedd976cf48fc33f6aea3495a278957dc58165e48a8945469f}\label{classTexture_a89f17140f54d88caedd976cf48fc33f6aea3495a278957dc58165e48a8945469f}} 
+R\+G\+BA&R\+GB bitmap + alpha channel. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BGR@{BGR}!Texture@{Texture}}\index{Texture@{Texture}!BGR@{BGR}}}\mbox{\Hypertarget{classTexture_a89f17140f54d88caedd976cf48fc33f6a2ad5640ebdec72fc79531d1778c6c2dc}\label{classTexture_a89f17140f54d88caedd976cf48fc33f6a2ad5640ebdec72fc79531d1778c6c2dc}} 
+B\+GR&B\+GR bitmap. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BGRA@{BGRA}!Texture@{Texture}}\index{Texture@{Texture}!BGRA@{BGRA}}}\mbox{\Hypertarget{classTexture_a89f17140f54d88caedd976cf48fc33f6a5a1fe3c61c9e2fd6dbbc823589f6e697}\label{classTexture_a89f17140f54d88caedd976cf48fc33f6a5a1fe3c61c9e2fd6dbbc823589f6e697}} 
+B\+G\+RA&B\+GR bitmap + alpha channel. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Depth@{Depth}!Texture@{Texture}}\index{Texture@{Texture}!Depth@{Depth}}}\mbox{\Hypertarget{classTexture_a89f17140f54d88caedd976cf48fc33f6a675056ad1441b6375b2c5abd48c27ef1}\label{classTexture_a89f17140f54d88caedd976cf48fc33f6a675056ad1441b6375b2c5abd48c27ef1}} 
+Depth&Depth map. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DepthStencil@{DepthStencil}!Texture@{Texture}}\index{Texture@{Texture}!DepthStencil@{DepthStencil}}}\mbox{\Hypertarget{classTexture_a89f17140f54d88caedd976cf48fc33f6a2fa8076285272883c91e14402975a441}\label{classTexture_a89f17140f54d88caedd976cf48fc33f6a2fa8076285272883c91e14402975a441}} 
+Depth\+Stencil&Combined depth + stencil map. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classTexture_afbaf182c9b78a6a72d8dad86cb3930e4}\label{classTexture_afbaf182c9b78a6a72d8dad86cb3930e4}} 
+\index{Texture@{Texture}!TextureFlags@{TextureFlags}}
+\index{TextureFlags@{TextureFlags}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{TextureFlags}{TextureFlags}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classTexture_afbaf182c9b78a6a72d8dad86cb3930e4}{Texture\+::\+Texture\+Flags}}}
+
+
+
+How will the texture be used? (Must specify at least one) 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ShaderRead@{ShaderRead}!Texture@{Texture}}\index{Texture@{Texture}!ShaderRead@{ShaderRead}}}\mbox{\Hypertarget{classTexture_afbaf182c9b78a6a72d8dad86cb3930e4ad20b894a2c05470de2ef70e8f5deea98}\label{classTexture_afbaf182c9b78a6a72d8dad86cb3930e4ad20b894a2c05470de2ef70e8f5deea98}} 
+Shader\+Read&\mbox{\hyperlink{classTexture}{Texture}} to be read in shaders. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RenderTarget@{RenderTarget}!Texture@{Texture}}\index{Texture@{Texture}!RenderTarget@{RenderTarget}}}\mbox{\Hypertarget{classTexture_afbaf182c9b78a6a72d8dad86cb3930e4a2605b707fef40196a75bbc565740e8b9}\label{classTexture_afbaf182c9b78a6a72d8dad86cb3930e4a2605b707fef40196a75bbc565740e8b9}} 
+Render\+Target&Target framebuffer for rendering. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0}\label{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0}} 
+\index{Texture@{Texture}!WrapMode@{WrapMode}}
+\index{WrapMode@{WrapMode}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{WrapMode}{WrapMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0}{Texture\+::\+Wrap\+Mode}} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+How should out-\/of-\/bounds texture evaluations be handled? 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ClampToEdge@{ClampToEdge}!Texture@{Texture}}\index{Texture@{Texture}!ClampToEdge@{ClampToEdge}}}\mbox{\Hypertarget{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0a74556551231333c36debc3d373261134}\label{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0a74556551231333c36debc3d373261134}} 
+Clamp\+To\+Edge&Clamp evaluations to the edge of the texture. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Repeat@{Repeat}!Texture@{Texture}}\index{Texture@{Texture}!Repeat@{Repeat}}}\mbox{\Hypertarget{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0a7020426cfb0a204051be4b3053d2acc8}\label{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0a7020426cfb0a204051be4b3053d2acc8}} 
+Repeat&Repeat the texture. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MirrorRepeat@{MirrorRepeat}!Texture@{Texture}}\index{Texture@{Texture}!MirrorRepeat@{MirrorRepeat}}}\mbox{\Hypertarget{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0a39a681a9d5ccc902bebd16a343dd7b74}\label{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0a39a681a9d5ccc902bebd16a343dd7b74}} 
+Mirror\+Repeat&Repeat, but flip the texture after crossing the boundary. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
 \mbox{\Hypertarget{classTexture_ad75e18c41a307806cec75852d5142b40}\label{classTexture_ad75e18c41a307806cec75852d5142b40}} 
 \index{Texture@{Texture}!Texture@{Texture}}
 \index{Texture@{Texture}!Texture@{Texture}}
-\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
 
 \mbox{\hyperlink{classTexture}{Texture}} constructor. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em name} & \\
 \hline
 \end{DoxyParams}
@@ -80,9 +317,22 @@ unsigned char $\ast$ {\bfseries data}
 \doxysubsubsection{\texorpdfstring{$\sim$Texture()}{~Texture()}}
 {\footnotesize\ttfamily Texture\+::$\sim$\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\hyperlink{classTexture}{Texture}} destructor. 
+\mbox{\hyperlink{classTexture}{Texture}} destructor. \mbox{\Hypertarget{classTexture_aee5eb93833f20b66c9f3711f8c720666}\label{classTexture_aee5eb93833f20b66c9f3711f8c720666}} 
+\index{Texture@{Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTexture_a89f17140f54d88caedd976cf48fc33f6}{Pixel\+Format}}}]{pixel\+\_\+format,  }\item[{\mbox{\hyperlink{classTexture_a129b619e8e93e97e25f3ab879b6bf85c}{Component\+Format}}}]{component\+\_\+format,  }\item[{const Vector2i \&}]{size,  }\item[{\mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}{Interpolation\+Mode}}}]{min\+\_\+interpolation\+\_\+mode = {\ttfamily \mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ffaaf17c98bbd83c27d6426d2ff3fa81d7f}{Interpolation\+Mode\+::\+Bilinear}}},  }\item[{\mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ff}{Interpolation\+Mode}}}]{mag\+\_\+interpolation\+\_\+mode = {\ttfamily \mbox{\hyperlink{classTexture_a68d0894af6158cc39f9cb18ef5d331ffaaf17c98bbd83c27d6426d2ff3fa81d7f}{Interpolation\+Mode\+::\+Bilinear}}},  }\item[{\mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0}{Wrap\+Mode}}}]{wrap\+\_\+mode = {\ttfamily \mbox{\hyperlink{classTexture_a4d008dec7512ce5cd127d4ec8645c8c0a74556551231333c36debc3d373261134}{Wrap\+Mode\+::\+Clamp\+To\+Edge}}},  }\item[{uint8\+\_\+t}]{samples = {\ttfamily 1},  }\item[{uint8\+\_\+t}]{flags = {\ttfamily (uint8\+\_\+t)~TextureFlags\+:\+:ShaderRead} }\end{DoxyParamCaption})}
 
-\doxysubsection{Member Function Documentation}
+
+
+Allocate memory for a texture with the given configuration. 
+
+\begin{DoxyNote}{Note}
+Certain combinations of pixel and component formats may not be natively supported by the hardware. In this case, \mbox{\hyperlink{classTexture_af6d9b9a66df1274c704f23316c840899}{init()}} chooses a similar supported configuration that can subsequently be queried using \mbox{\hyperlink{classTexture_a1a8f29f5daa0849ece44c17801f721f6}{pixel\+\_\+format()}} and \mbox{\hyperlink{classTexture_af982ab2f3abefab4208210f809fd5077}{component\+\_\+format()}}. Some caution must be exercised in this case, since \mbox{\hyperlink{classTexture_aaaab19a84c0b527cb17979c7b638f6ee}{upload()}} will need to provide the data in a different storage format. 
+\end{DoxyNote}
+
+
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classTexture_ae8b3a55c705a7c66034838b8216e782c}\label{classTexture_ae8b3a55c705a7c66034838b8216e782c}} 
 \index{Texture@{Texture}!bind@{bind}}
 \index{bind@{bind}!Texture@{Texture}}
@@ -113,7 +363,7 @@ Return the height of the texture. \mbox{\Hypertarget{classTexture_a23729cb4e8ed5
 \doxysubsubsection{\texorpdfstring{getId()}{getId()}}
 {\footnotesize\ttfamily unsigned int Texture\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the Open\+GL texture id. \begin{DoxyReturn}{Returns}
+Return the Open\+GL texture id. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classTexture_a40246f1652ecfb4ace0aad3bb00d8f5b}\label{classTexture_a40246f1652ecfb4ace0aad3bb00d8f5b}} 
@@ -122,7 +372,7 @@ Return the Open\+GL texture id. \begin{DoxyReturn}{Returns}
 \doxysubsubsection{\texorpdfstring{getName()}{getName()}}
 {\footnotesize\ttfamily const char$\ast$ Texture\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return the name of the texture. \begin{DoxyReturn}{Returns}
+Return the name of the texture. \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classTexture_a91a6fd3355bc870194851514194daaab}\label{classTexture_a91a6fd3355bc870194851514194daaab}} 
@@ -144,7 +394,7 @@ Set the numbers of channels of the texture. \mbox{\Hypertarget{classTexture_a1d9
 {\footnotesize\ttfamily void Texture\+::set\+Data (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the data of the texture. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em data} & \\
 \hline
 \end{DoxyParams}
@@ -155,7 +405,7 @@ Set the data of the texture.
 {\footnotesize\ttfamily void Texture\+::set\+Height (\begin{DoxyParamCaption}\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the height of the texture. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em height} & \\
 \hline
 \end{DoxyParams}
@@ -166,7 +416,7 @@ Set the height of the texture.
 {\footnotesize\ttfamily void Texture\+::set\+Id (\begin{DoxyParamCaption}\item[{unsigned int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the id of the texture. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em id} & \\
 \hline
 \end{DoxyParams}
@@ -177,7 +427,7 @@ Set the id of the texture.
 {\footnotesize\ttfamily void Texture\+::set\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the name of the texture. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em name} & \\
 \hline
 \end{DoxyParams}
@@ -188,13 +438,15 @@ Set the name of the texture.
 {\footnotesize\ttfamily void Texture\+::set\+Width (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Set the width of the texture. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em width} & \\
 \hline
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
 Engine/src/\+Texturing/Texture.\+h\item 
-Engine/src/\+Texturing/Texture.\+cpp\end{DoxyCompactItemize}
+Engine/src/\+Texturing/Texture.\+cpp\item 
+ext/nanogui/src/texture\+\_\+gl.\+cpp\item 
+ext/nanogui/src/texture\+\_\+metal.\+mm\end{DoxyCompactItemize}

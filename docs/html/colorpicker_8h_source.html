@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="generator" content="Doxygen 1.8.16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vulkan Lab:  Fichier source de ext/nanogui/include/nanogui/colorpicker.h</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom_dark_theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr style="height: 56px;">
+                <td id="projectalign" style="padding-left: 0.5em;">
+                    <div id="projectname">Vulkan Lab
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end header part --><!-- Généré par Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('colorpicker_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">colorpicker.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="colorpicker_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    NanoGUI was developed by Wenzel Jakob &lt;wenzel.jakob@epfl.ch&gt;.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">    The widget drawing code is based on the NanoVG demo application</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    by Mikko Mononen.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    All rights reserved. Use of this source code is governed by a</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    BSD-style license that can be found in the LICENSE.txt file.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="popupbutton_8h.html">nanogui/popupbutton.h</a>&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a>(nanogui)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classColorPicker.html">   22</a></span>&#160;class <a class="code" href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a> <a class="code" href="classColorPicker.html">ColorPicker</a> : public <a class="code" href="classPopupButton.html">PopupButton</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classColorPicker.html">ColorPicker</a>(<a class="code" href="classWidget.html">Widget</a> *parent, <span class="keyword">const</span> <a class="code" href="classColor.html">Color</a>&amp; color = <a class="code" href="classColor.html">Color</a>(1.f, 0.f, 0.f, 1.f));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classColorPicker.html#af75cfd190546a40b666b4ff99d7cd2cb">   37</a></span>&#160;    std::function&lt;void(<span class="keyword">const</span> <a class="code" href="classColor.html">Color</a> &amp;)&gt; <a class="code" href="classColorPicker.html#af75cfd190546a40b666b4ff99d7cd2cb">callback</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_callback; }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classColorPicker.html#aecb61df66da141612f77e1f7e6865f4e">   45</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classColorPicker.html#aecb61df66da141612f77e1f7e6865f4e">set_callback</a>(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> <a class="code" href="classColor.html">Color</a> &amp;)&gt; &amp;callback) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        m_callback = callback;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        m_callback(background_color());</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classColorPicker.html#aa988511b50ea7b2bcc4f956fc24ab697">   55</a></span>&#160;    std::function&lt;void(<span class="keyword">const</span> <a class="code" href="classColor.html">Color</a> &amp;)&gt; <a class="code" href="classColorPicker.html#aa988511b50ea7b2bcc4f956fc24ab697">final_callback</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_final_callback; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classColorPicker.html#ac3235b7fa58d2c723f11b892e8ba0ee9">   62</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classColorPicker.html#ac3235b7fa58d2c723f11b892e8ba0ee9">set_final_callback</a>(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> <a class="code" href="classColor.html">Color</a> &amp;)&gt; &amp;callback) { m_final_callback = callback; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classColor.html">Color</a> color() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> set_color(<span class="keyword">const</span> <a class="code" href="classColor.html">Color</a>&amp; color);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classColorPicker.html#a786e2fbd713445ccdee263b81f1f6269">   70</a></span>&#160;    <span class="keyword">const</span> std::string &amp;<a class="code" href="classColorPicker.html#a786e2fbd713445ccdee263b81f1f6269">pick_button_caption</a>() { <span class="keywordflow">return</span> m_pick_button-&gt;caption(); }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classColorPicker.html#ad1c77b2bab1a7254de9594960a1e1d07">   73</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classColorPicker.html#ad1c77b2bab1a7254de9594960a1e1d07">set_pick_button_caption</a>(<span class="keyword">const</span> std::string &amp;caption) { m_pick_button-&gt;set_caption(caption); }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classColorPicker.html#a8f6d3cd055f5a4e498dbdf252ec7df0a">   76</a></span>&#160;    <span class="keyword">const</span> std::string &amp;<a class="code" href="classColorPicker.html#a8f6d3cd055f5a4e498dbdf252ec7df0a">reset_button_caption</a>() { <span class="keywordflow">return</span> m_reset_button-&gt;caption(); }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classColorPicker.html#ab60daa277e7654b49b2da40ee6f10ccb">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classColorPicker.html#ab60daa277e7654b49b2da40ee6f10ccb">set_reset_button_caption</a>(<span class="keyword">const</span> std::string &amp;caption) { m_reset_button-&gt;set_caption(caption); }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classColorPicker.html#a2f478493d6ed1178affa2e5f650571b4">   82</a></span>&#160;    std::function&lt;void(<span class="keyword">const</span> <a class="code" href="classColor.html">Color</a> &amp;)&gt; <a class="code" href="classColorPicker.html#a2f478493d6ed1178affa2e5f650571b4">m_callback</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classColorPicker.html#a2935dc216e19568d267460be3f443f6a">   89</a></span>&#160;    std::function&lt;void(<span class="keyword">const</span> <a class="code" href="classColor.html">Color</a> &amp;)&gt; <a class="code" href="classColorPicker.html#a2935dc216e19568d267460be3f443f6a">m_final_callback</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classColorPicker.html#ad6a92cef7992b533227543948f005d0f">   92</a></span>&#160;    <a class="code" href="classColorWheel.html">ColorWheel</a> *<a class="code" href="classColorPicker.html#ad6a92cef7992b533227543948f005d0f">m_color_wheel</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classColorPicker.html#a81844e0832d1a1769d7e2f5517189c94">  105</a></span>&#160;    <a class="code" href="classButton.html">Button</a> *<a class="code" href="classColorPicker.html#a81844e0832d1a1769d7e2f5517189c94">m_pick_button</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classColorPicker.html#a3ee6ec1d27067ecb85d3cb2f9917af02">  114</a></span>&#160;    <a class="code" href="classButton.html">Button</a> *<a class="code" href="classColorPicker.html#a3ee6ec1d27067ecb85d3cb2f9917af02">m_reset_button</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<a class="code" href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a>(nanogui)</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a577cd817cb71b655998cad4387cdaeba"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a577cd817cb71b655998cad4387cdaeba">NAMESPACE_BEGIN</a></div><div class="ttdeci">#define NAMESPACE_BEGIN(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:38</div></div>
+<div class="ttc" id="aclassColorPicker_html_a2935dc216e19568d267460be3f443f6a"><div class="ttname"><a href="classColorPicker.html#a2935dc216e19568d267460be3f443f6a">ColorPicker::m_final_callback</a></div><div class="ttdeci">std::function&lt; void(const Color &amp;)&gt; m_final_callback</div><div class="ttdef"><b>Definition:</b> colorpicker.h:89</div></div>
+<div class="ttc" id="aclassColorWheel_html"><div class="ttname"><a href="classColorWheel.html">ColorWheel</a></div><div class="ttdoc">Fancy analog widget to select a color value. This widget was contributed by Dmitriy Morozov.</div><div class="ttdef"><b>Definition:</b> colorwheel.h:28</div></div>
+<div class="ttc" id="aclassColorPicker_html_aecb61df66da141612f77e1f7e6865f4e"><div class="ttname"><a href="classColorPicker.html#aecb61df66da141612f77e1f7e6865f4e">ColorPicker::set_callback</a></div><div class="ttdeci">void set_callback(const std::function&lt; void(const Color &amp;)&gt; &amp;callback)</div><div class="ttdef"><b>Definition:</b> colorpicker.h:45</div></div>
+<div class="ttc" id="aclassButton_html"><div class="ttname"><a href="classButton.html">Button</a></div><div class="ttdoc">[Normal/Toggle/Radio/Popup] Button widget.</div><div class="ttdef"><b>Definition:</b> button.h:25</div></div>
+<div class="ttc" id="aclassColorPicker_html"><div class="ttname"><a href="classColorPicker.html">ColorPicker</a></div><div class="ttdoc">Push button with a popup to tweak a color value.</div><div class="ttdef"><b>Definition:</b> colorpicker.h:22</div></div>
+<div class="ttc" id="aclassColorPicker_html_ad1c77b2bab1a7254de9594960a1e1d07"><div class="ttname"><a href="classColorPicker.html#ad1c77b2bab1a7254de9594960a1e1d07">ColorPicker::set_pick_button_caption</a></div><div class="ttdeci">void set_pick_button_caption(const std::string &amp;caption)</div><div class="ttdoc">Sets the current caption of the nanogui::ColorPicker::m_pick_button.</div><div class="ttdef"><b>Definition:</b> colorpicker.h:73</div></div>
+<div class="ttc" id="aclassColorPicker_html_ac3235b7fa58d2c723f11b892e8ba0ee9"><div class="ttname"><a href="classColorPicker.html#ac3235b7fa58d2c723f11b892e8ba0ee9">ColorPicker::set_final_callback</a></div><div class="ttdeci">void set_final_callback(const std::function&lt; void(const Color &amp;)&gt; &amp;callback)</div><div class="ttdef"><b>Definition:</b> colorpicker.h:62</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a12bb24ea980ca8fb1f46b1992bc9c83a"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a12bb24ea980ca8fb1f46b1992bc9c83a">NAMESPACE_END</a></div><div class="ttdeci">#define NAMESPACE_END(name)</div><div class="ttdoc">Convenience macro for namespace declarations.</div><div class="ttdef"><b>Definition:</b> common.h:50</div></div>
+<div class="ttc" id="aclassColorPicker_html_ab60daa277e7654b49b2da40ee6f10ccb"><div class="ttname"><a href="classColorPicker.html#ab60daa277e7654b49b2da40ee6f10ccb">ColorPicker::set_reset_button_caption</a></div><div class="ttdeci">void set_reset_button_caption(const std::string &amp;caption)</div><div class="ttdoc">Sets the current caption of the nanogui::ColorPicker::m_reset_button.</div><div class="ttdef"><b>Definition:</b> colorpicker.h:79</div></div>
+<div class="ttc" id="aclassColorPicker_html_ad6a92cef7992b533227543948f005d0f"><div class="ttname"><a href="classColorPicker.html#ad6a92cef7992b533227543948f005d0f">ColorPicker::m_color_wheel</a></div><div class="ttdeci">ColorWheel * m_color_wheel</div><div class="ttdoc">The ColorWheel for this ColorPicker (the actual widget allowing selection).</div><div class="ttdef"><b>Definition:</b> colorpicker.h:92</div></div>
+<div class="ttc" id="ainclude_2nanogui_2common_8h_html_a7258172a953ba844ab2900b6bc521b1e"><div class="ttname"><a href="include_2nanogui_2common_8h.html#a7258172a953ba844ab2900b6bc521b1e">NANOGUI_EXPORT</a></div><div class="ttdeci">#define NANOGUI_EXPORT</div><div class="ttdef"><b>Definition:</b> common.h:72</div></div>
+<div class="ttc" id="aclassPopupButton_html"><div class="ttname"><a href="classPopupButton.html">PopupButton</a></div><div class="ttdoc">Button which launches a popup widget.</div><div class="ttdef"><b>Definition:</b> popupbutton.h:30</div></div>
+<div class="ttc" id="aclassColorPicker_html_a786e2fbd713445ccdee263b81f1f6269"><div class="ttname"><a href="classColorPicker.html#a786e2fbd713445ccdee263b81f1f6269">ColorPicker::pick_button_caption</a></div><div class="ttdeci">const std::string &amp; pick_button_caption()</div><div class="ttdoc">The current caption of the nanogui::ColorPicker::m_pick_button.</div><div class="ttdef"><b>Definition:</b> colorpicker.h:70</div></div>
+<div class="ttc" id="aclassColorPicker_html_a81844e0832d1a1769d7e2f5517189c94"><div class="ttname"><a href="classColorPicker.html#a81844e0832d1a1769d7e2f5517189c94">ColorPicker::m_pick_button</a></div><div class="ttdeci">Button * m_pick_button</div><div class="ttdef"><b>Definition:</b> colorpicker.h:105</div></div>
+<div class="ttc" id="aclassColorPicker_html_aa988511b50ea7b2bcc4f956fc24ab697"><div class="ttname"><a href="classColorPicker.html#aa988511b50ea7b2bcc4f956fc24ab697">ColorPicker::final_callback</a></div><div class="ttdeci">std::function&lt; void(const Color &amp;)&gt; final_callback() const</div><div class="ttdef"><b>Definition:</b> colorpicker.h:55</div></div>
+<div class="ttc" id="aclassColorPicker_html_a8f6d3cd055f5a4e498dbdf252ec7df0a"><div class="ttname"><a href="classColorPicker.html#a8f6d3cd055f5a4e498dbdf252ec7df0a">ColorPicker::reset_button_caption</a></div><div class="ttdeci">const std::string &amp; reset_button_caption()</div><div class="ttdoc">The current caption of the nanogui::ColorPicker::m_reset_button.</div><div class="ttdef"><b>Definition:</b> colorpicker.h:76</div></div>
+<div class="ttc" id="aclassColorPicker_html_af75cfd190546a40b666b4ff99d7cd2cb"><div class="ttname"><a href="classColorPicker.html#af75cfd190546a40b666b4ff99d7cd2cb">ColorPicker::callback</a></div><div class="ttdeci">std::function&lt; void(const Color &amp;)&gt; callback() const</div><div class="ttdoc">The callback executed when the ColorWheel changes.</div><div class="ttdef"><b>Definition:</b> colorpicker.h:37</div></div>
+<div class="ttc" id="aclassColorPicker_html_a2f478493d6ed1178affa2e5f650571b4"><div class="ttname"><a href="classColorPicker.html#a2f478493d6ed1178affa2e5f650571b4">ColorPicker::m_callback</a></div><div class="ttdeci">std::function&lt; void(const Color &amp;)&gt; m_callback</div><div class="ttdoc">The &quot;fast&quot; callback executed when the ColorWheel has changed.</div><div class="ttdef"><b>Definition:</b> colorpicker.h:82</div></div>
+<div class="ttc" id="aclassColor_html"><div class="ttname"><a href="classColor.html">Color</a></div><div class="ttdoc">Stores an RGBA floating point color value.</div><div class="ttdef"><b>Definition:</b> common.h:175</div></div>
+<div class="ttc" id="aclassColorPicker_html_a3ee6ec1d27067ecb85d3cb2f9917af02"><div class="ttname"><a href="classColorPicker.html#a3ee6ec1d27067ecb85d3cb2f9917af02">ColorPicker::m_reset_button</a></div><div class="ttdeci">Button * m_reset_button</div><div class="ttdef"><b>Definition:</b> colorpicker.h:114</div></div>
+<div class="ttc" id="aclassWidget_html"><div class="ttname"><a href="classWidget.html">Widget</a></div><div class="ttdoc">Base class of all widgets.</div><div class="ttdef"><b>Definition:</b> test_interpreter.cpp:18</div></div>
+<div class="ttc" id="apopupbutton_8h_html"><div class="ttname"><a href="popupbutton_8h.html">popupbutton.h</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+    <ul>
+        <li class="navelem"><a class="el" href="dir_31cedd4509e06940f559c1ca2f722e02.html">ext</a></li><li class="navelem"><a class="el" href="dir_3b52d0ee0647600b951b1b620984dcd1.html">nanogui</a></li><li class="navelem"><a class="el" href="dir_5721e7ee5207c0c2918a589ae1107b9a.html">include</a></li><li class="navelem"><a class="el" href="dir_7c8bd28dcb08b6a153cc19ab5789aba5.html">nanogui</a></li><li class="navelem"><a class="el" href="colorpicker_8h.html">colorpicker.h</a></li>
+        <li class="footer">
+            Generated on Dimanche 24 Novembre 2019 18:11:48 for Vulkan Lab by <a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16.
+            Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
+        </li>
+    </ul>
+</div>
+<script src="custom.js"></script>
+</body>
+</html>

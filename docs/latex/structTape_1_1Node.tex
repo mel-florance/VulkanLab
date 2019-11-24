@@ -1,0 +1,64 @@
+\hypertarget{structTape_1_1Node}{}\doxysection{Référence de la structure Tape$<$ Type $>$\+::Node}
+\label{structTape_1_1Node}\index{Tape$<$ Type $>$::Node@{Tape$<$ Type $>$::Node}}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_1_1Node_a953d877706dbc7946e8cdee483e1705e}\label{structTape_1_1Node_a953d877706dbc7946e8cdee483e1705e}} 
+{\bfseries Node} (size\+\_\+t \mbox{\hyperlink{structTape_1_1Node_a18d79b897a8c8e3ffe177b2cdf3a540e}{size}}, const char $\ast$\mbox{\hyperlink{structTape_1_1Node_a71477a2403cd287a85ff61fbd02fb507}{label}})
+\item 
+\mbox{\Hypertarget{structTape_1_1Node_a332146babcedf792dd6d3094b9d5a049}\label{structTape_1_1Node_a332146babcedf792dd6d3094b9d5a049}} 
+bool {\bfseries is\+\_\+scalar} () const
+\item 
+\mbox{\Hypertarget{structTape_1_1Node_a2824d8eaf44be90759bad21bff6fca7b}\label{structTape_1_1Node_a2824d8eaf44be90759bad21bff6fca7b}} 
+bool {\bfseries collapse\+\_\+allowed} () const
+\item 
+\mbox{\Hypertarget{structTape_1_1Node_abc52ae4ab93e12d6efc2ea7bff281ce1}\label{structTape_1_1Node_abc52ae4ab93e12d6efc2ea7bff281ce1}} 
+Index {\bfseries score} () const
+\item 
+\mbox{\Hypertarget{structTape_1_1Node_a5d5c420c2d86571b2cb28bd5ed7f4ab8}\label{structTape_1_1Node_a5d5c420c2d86571b2cb28bd5ed7f4ab8}} 
+\mbox{\hyperlink{structTape_1_1Edge}{Edge}} $\ast$ {\bfseries edge} (Index source)
+\item 
+\mbox{\Hypertarget{structTape_1_1Node_aa44f20147b7c4e71af321e91a63d3d78}\label{structTape_1_1Node_aa44f20147b7c4e71af321e91a63d3d78}} 
+\mbox{\hyperlink{structTape_1_1Edge}{Edge}} {\bfseries remove\+\_\+edge} (Index source)
+\item 
+\mbox{\Hypertarget{structTape_1_1Node_a17ad5a5623882b608735b4adb90df0d3}\label{structTape_1_1Node_a17ad5a5623882b608735b4adb90df0d3}} 
+{\bfseries Node} (const \mbox{\hyperlink{structTape_1_1Node}{Node}} \&)=delete
+\item 
+\mbox{\Hypertarget{structTape_1_1Node_a4dc376a72c6fb26e10b9e19bc50c92ab}\label{structTape_1_1Node_a4dc376a72c6fb26e10b9e19bc50c92ab}} 
+{\bfseries Node} (\mbox{\hyperlink{structTape_1_1Node}{Node}} \&\&)=default
+\item 
+\mbox{\Hypertarget{structTape_1_1Node_a8bf3b7cd78a862ddb9f0cfeac2a1c2a4}\label{structTape_1_1Node_a8bf3b7cd78a862ddb9f0cfeac2a1c2a4}} 
+\mbox{\hyperlink{structTape_1_1Node}{Node}} \& {\bfseries operator=} (const \mbox{\hyperlink{structTape_1_1Node}{Node}} \&)=delete
+\item 
+\mbox{\Hypertarget{structTape_1_1Node_aae9c3668579cae7c7ed26866b6051cf0}\label{structTape_1_1Node_aae9c3668579cae7c7ed26866b6051cf0}} 
+\mbox{\hyperlink{structTape_1_1Node}{Node}} \& {\bfseries operator=} (\mbox{\hyperlink{structTape_1_1Node}{Node}} \&\&)=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTape_1_1Node_a71477a2403cd287a85ff61fbd02fb507}\label{structTape_1_1Node_a71477a2403cd287a85ff61fbd02fb507}} 
+std\+::string \mbox{\hyperlink{structTape_1_1Node_a71477a2403cd287a85ff61fbd02fb507}{label}}
+\begin{DoxyCompactList}\small\item\em Descriptive label. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structTape_1_1Node_aa6165bb7f7153d48528c9d3d76cdb951}\label{structTape_1_1Node_aa6165bb7f7153d48528c9d3d76cdb951}} 
+Value \mbox{\hyperlink{structTape_1_1Node_aa6165bb7f7153d48528c9d3d76cdb951}{grad}}
+\begin{DoxyCompactList}\small\item\em Gradient value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structTape_1_1Node_a345a16bf90fb01342fb289251a44540d}\label{structTape_1_1Node_a345a16bf90fb01342fb289251a44540d}} 
+std\+::vector$<$ \mbox{\hyperlink{structTape_1_1Edge}{Edge}} $>$ \mbox{\hyperlink{structTape_1_1Node_a345a16bf90fb01342fb289251a44540d}{edges}}
+\begin{DoxyCompactList}\small\item\em Pointer to incident edge linked list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structTape_1_1Node_accf4c50d94e95bf88b21656b79afbdfc}\label{structTape_1_1Node_accf4c50d94e95bf88b21656b79afbdfc}} 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{structTape_1_1Node_accf4c50d94e95bf88b21656b79afbdfc}{edges\+\_\+rev}}
+\begin{DoxyCompactList}\small\item\em Reverse edge list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structTape_1_1Node_ae4d3d828514ab4ef30802dd9925201c5}\label{structTape_1_1Node_ae4d3d828514ab4ef30802dd9925201c5}} 
+uint32\+\_\+t \mbox{\hyperlink{structTape_1_1Node_ae4d3d828514ab4ef30802dd9925201c5}{ref\+\_\+count\+\_\+ext}} = 0
+\begin{DoxyCompactList}\small\item\em External (i.\+e. by Enoki) reference count. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structTape_1_1Node_a3e839517f21b347e61668b76507beb79}\label{structTape_1_1Node_a3e839517f21b347e61668b76507beb79}} 
+uint32\+\_\+t \mbox{\hyperlink{structTape_1_1Node_a3e839517f21b347e61668b76507beb79}{ref\+\_\+count\+\_\+int}} = 0
+\begin{DoxyCompactList}\small\item\em Internal (i.\+e. within the computation graph) reference count. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structTape_1_1Node_a18d79b897a8c8e3ffe177b2cdf3a540e}\label{structTape_1_1Node_a18d79b897a8c8e3ffe177b2cdf3a540e}} 
+uint32\+\_\+t \mbox{\hyperlink{structTape_1_1Node_a18d79b897a8c8e3ffe177b2cdf3a540e}{size}} = 0
+\begin{DoxyCompactList}\small\item\em Size of the variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/ext/enoki/src/autodiff/autodiff.\+cpp\end{DoxyCompactItemize}

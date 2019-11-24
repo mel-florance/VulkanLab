@@ -1,0 +1,82 @@
+\hypertarget{classLayout}{}\doxysection{Référence de la classe Layout}
+\label{classLayout}\index{Layout@{Layout}}
+
+
+Basic interface of a layout engine.  
+
+
+
+
+{\ttfamily \#include $<$nanogui/layout.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Layout\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classLayout}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classLayout_a351763c0daa5452e7aed501bf194e264}{perform\+\_\+layout}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx, \mbox{\hyperlink{classWidget}{Widget}} $\ast$widget) const =0
+\item 
+virtual Vector2i \mbox{\hyperlink{classLayout_afd3781dffeb7764163c2cc31c41bff63}{preferred\+\_\+size}} (\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$ctx, const \mbox{\hyperlink{classWidget}{Widget}} $\ast$widget) const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLayout_aa00c66d55b4f1fa20707a637d44cd58d}\label{classLayout_aa00c66d55b4f1fa20707a637d44cd58d}} 
+virtual \mbox{\hyperlink{classLayout_aa00c66d55b4f1fa20707a637d44cd58d}{$\sim$\+Layout}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor (exists for inheritance). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Basic interface of a layout engine. 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classLayout_a351763c0daa5452e7aed501bf194e264}\label{classLayout_a351763c0daa5452e7aed501bf194e264}} 
+\index{Layout@{Layout}!perform\_layout@{perform\_layout}}
+\index{perform\_layout@{perform\_layout}!Layout@{Layout}}
+\doxysubsubsection{\texorpdfstring{perform\_layout()}{perform\_layout()}}
+{\footnotesize\ttfamily virtual void Layout\+::perform\+\_\+layout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{classWidget}{Widget}} $\ast$}]{widget }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Performs applies all layout computations for the given widget.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ctx} & The {\ttfamily Nano\+VG} context being used for drawing.\\
+\hline
+{\em widget} & The \mbox{\hyperlink{classWidget}{Widget}} whose child widgets will be positioned by the layout class.. \\
+\hline
+\end{DoxyParams}
+
+
+Implémenté dans \mbox{\hyperlink{classAdvancedGridLayout_a887ea2ed2aeca8287a4e2f7097e9bad6}{Advanced\+Grid\+Layout}}, \mbox{\hyperlink{classGridLayout_a7849d7fb5cffc9c6de948e2c8d996d2c}{Grid\+Layout}}, \mbox{\hyperlink{classGroupLayout_a1cb6cbac6d425e09a2323dd0139800e6}{Group\+Layout}}, et \mbox{\hyperlink{classBoxLayout_a81a87ff0b1e2daacb9a1e648d101200a}{Box\+Layout}}.
+
+\mbox{\Hypertarget{classLayout_afd3781dffeb7764163c2cc31c41bff63}\label{classLayout_afd3781dffeb7764163c2cc31c41bff63}} 
+\index{Layout@{Layout}!preferred\_size@{preferred\_size}}
+\index{preferred\_size@{preferred\_size}!Layout@{Layout}}
+\doxysubsubsection{\texorpdfstring{preferred\_size()}{preferred\_size()}}
+{\footnotesize\ttfamily virtual Vector2i Layout\+::preferred\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNVGcontext}{N\+V\+Gcontext}} $\ast$}]{ctx,  }\item[{const \mbox{\hyperlink{classWidget}{Widget}} $\ast$}]{widget }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Compute the preferred size for a given layout and widget
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ctx} & The {\ttfamily Nano\+VG} context being used for drawing.\\
+\hline
+{\em widget} & \mbox{\hyperlink{classWidget}{Widget}}, whose preferred size should be computed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+The preferred size, accounting for things such as spacing, padding for icons, etc. 
+\end{DoxyReturn}
+
+
+Implémenté dans \mbox{\hyperlink{classAdvancedGridLayout_a5f2635cbe0bf5ff822faca08fd6df3b3}{Advanced\+Grid\+Layout}}, \mbox{\hyperlink{classGridLayout_a4cbaed106fc2b1afd0cf6a9b0eba690c}{Grid\+Layout}}, \mbox{\hyperlink{classGroupLayout_a1502d3e3c11a0f196e7f428de3d5df99}{Group\+Layout}}, et \mbox{\hyperlink{classBoxLayout_a4b7fb818b31ac385877933a79608a306}{Box\+Layout}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+ext/nanogui/include/nanogui/\mbox{\hyperlink{layout_8h}{layout.\+h}}\end{DoxyCompactItemize}
