@@ -6,6 +6,7 @@ syntax: glob
 *.orig
 *~
 
+ext/*
 build
 bin
 obj
